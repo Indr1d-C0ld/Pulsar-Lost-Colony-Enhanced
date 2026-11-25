@@ -195,6 +195,8 @@ namespace Melchior
         {
             var c = Stations.Cfg.Captain; float ini = G(id, "cpx_ini"); if (ini <= 0) { ini = c.Start; Stations.Set(id, "cpx_ini", ini); }
             int dir = (int)G(id, "cpx_dir");
+            // nessun incarico in corso: accetta l'offerta migliore della bacheca
+            if (Ready("contract")) { Wait("contract", 90); Contracts.BotAccept(); }
             // protocollo squadre danni finché ci sono sistemi malridotti
             if (Stations.Cfg.Protocols.Enabled)
             {

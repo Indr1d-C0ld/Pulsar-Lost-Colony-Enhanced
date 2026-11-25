@@ -131,6 +131,18 @@ namespace Melchior
                     return Director.Describe();
                 }
                 case "rival": return RivalForce.Describe();
+                case "map": // map <settore>: apre la mappa stellare su quel settore
+                {
+                    var sec = PLServer.GetSectorWithID(a.Length > 1 ? int.Parse(a[1]) : PLServer.GetCurrentSector().ID); if (sec == null) return "settore non trovato";
+                    var sm = UnityEngine.Object.FindObjectOfType<PLStarmap>(); if (sm == null) return "mappa non trovata";
+                    sm.OpenStarmapToSector(sec); return $"mappa aperta sul settore {sec.ID} (fazione {GalaxyWar.Name(sec.MySPI.Faction)}, vicini {string.Join(",", System.Linq.Enumerable.Range(0, sec.Neighbors.Count).Select(i => sec.Neighbors[i].ID + ":" + sec.Neighbors[i].MySPI.Faction))})";
+                }
+                case "war": if (a.Length > 3 && a[1] == "flip") return GalaxyWar.Flip(int.Parse(a[2]), int.Parse(a[3])); return a.Length > 1 && a[1] == "step" ? GalaxyWar.ForceStep() + " || " + GalaxyWar.Describe() : GalaxyWar.Describe(); // guerra fra fazioni
+                case "fleets": return a.Length > 1 && a[1] == "step" ? Fleets.Step() : a.Length > 1 && a[1] == "near" ? Fleets.Approach(a.Length > 2 ? a[2] : null) : Fleets.Describe(); // flotte con un'agenda
+                case "news": // news: ultime notizie; news diceria: ne genera una subito; news bacheca: stato della bacheca
+                    if (a.Length > 1 && a[1] == "diceria") { News.Rumor(); }
+                    if (a.Length > 1 && a[1] == "bacheca") return string.Join("\n      ", Contracts.Board.Select(o => $"{o.family} «{o.title}» {o.issuer} {o.reward} Cr scade {o.expires}{(o.urgent ? " URGENTE" : "")}").Prepend("bacheca:"));
+                    return string.Join("\n      ", News.Items.TakeLast(8).Select(n => $"[{n.cat}] {n.text}").Prepend("notiziario:"));
                 case "inv": // confronto degli elenchi di componenti della nave
                 {
                     var me = Stations.MyShip; if (me?.MyStats == null) return "nessuna nave"; var st3 = me.MyStats; var sb = new System.Text.StringBuilder();
@@ -174,6 +186,7 @@ namespace Melchior
                 {
                     var me = Stations.MyShip; if (a.Length > 1 && me == null) return "nessuna nave";
                     if (a.Length > 1 && a[1] == "start") return Saga.StartArc(Director.Power(me, out _, out _), a.Length > 2 ? a[2] : null) ? "arco iniziato" : "arco non avviabile";
+                    if (a.Length > 2 && a[1] == "offline") { Saga.OfflineHours = double.Parse(a[2], System.Globalization.CultureInfo.InvariantCulture); return "assenza simulata: " + a[2] + " ore"; }
                     if (a.Length > 1 && a[1] == "due") return Saga.TryDue(me, Director.Power(me, out _, out _), true) ? "conseguenza eseguita" : "niente in attesa";
                     return Saga.Describe();
                 }

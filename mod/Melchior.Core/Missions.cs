@@ -270,6 +270,25 @@ namespace Melchior
             return Start(pool[rng.Next(pool.Count)]);
         }
 
+        // Per la bacheca: una missione a caso del livello indicato (niente parti degli archi, niente ripetizioni recenti).
+        public static int PickId(int tier, int family = -1)
+        {
+            if (!registered) return -1;
+            if (family >= 0)
+            {
+                var fp = catalog.Where(kv => kv.Key < Saga.ChainBase && kv.Value.tier == tier && kv.Value.family == family && !recent.Contains(kv.Key)).Select(kv => kv.Key).ToList();
+                if (fp.Count > 0) { int fid = fp[rng.Next(fp.Count)]; recent.Add(fid); if (recent.Count > 12) recent.RemoveAt(0); return fid; }
+            }
+            var used = recent.Where(catalog.ContainsKey).Select(x => catalog[x].family).TakeLast(3).ToHashSet();
+            var pool = catalog.Where(kv => kv.Key < Saga.ChainBase && kv.Value.tier == tier && !recent.Contains(kv.Key) && !used.Contains(kv.Value.family)).Select(kv => kv.Key).ToList();
+            if (pool.Count == 0) pool = catalog.Where(kv => kv.Key < Saga.ChainBase && kv.Value.tier == tier).Select(kv => kv.Key).ToList();
+            if (pool.Count == 0) return -1;
+            int id = pool[rng.Next(pool.Count)]; recent.Add(id); if (recent.Count > 12) recent.RemoveAt(0);
+            return id;
+        }
+        public static PickupMissionData Data(int id) { try { return PLCampaignIO.Instance.GetAllPickupMissionData().ToArray().FirstOrDefault(x => x.MissionID == id); } catch { return null; } }
+        public static int FamilyOf(int id) => catalog.TryGetValue(id, out var c) ? c.family : 0;
+
         public static readonly string[] Labels = { "Caccia", "Soccorso", "Ricognizione", "Scorta", "Primo contatto", "Recupero", "Anomalia temporale", "Evacuazione", "Interdizione" };
         public static string Label(int family) => Labels[Math.Clamp(family, 0, Labels.Length - 1)];
 

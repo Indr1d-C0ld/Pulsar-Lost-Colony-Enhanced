@@ -240,6 +240,7 @@ function chart(id, series, opts = {}) {
 // ---- schede
 const SYS = [['shields', 'Scudi'], ['weapons', 'Armi'], ['engines', 'Motori'], ['sensors', 'Sensori'], ['warp', 'Curvatura'], ['life', 'Supporto vitale']];
 const ORDERS = ['nessuno', 'battaglia', 'danni', 'regime', 'silenzio'], DOCS = ['nessuna', 'precisa', 'rapida', 'continua'], AIMS = ['misto', 'scudi', 'scafo'], BANDS = ['nessuna', 'corta', 'media', 'lunga'], PHASES = ['calma', 'allerta', 'crisi', 'respiro'];
+const FACTIONS = { 0: 'Colonial Union', 1: 'Alliance of Gentlemen', 2: 'W.D. Corporation', 3: 'Fluffy Biscuit', 4: 'Infetti', 5: 'Polytechnic' };
 const PROTO = ['squadre danni', 'fuoco mirato', 'scansione prioritaria', 'disciplina termica'];
 const BANTIME = [['0', 'Per sempre'], ['60', '1 ora'], ['1440', '1 giorno'], ['10080', '1 settimana'], ['43200', '30 giorni']];
 
@@ -328,8 +329,12 @@ const renderers = {
         ${meter('Onore', Math.min(1, (g.onore || 0) / 30), g.onore || 0, 'var(--good)')}${meter('Infamia', Math.min(1, (g.infamia || 0) / 30), g.infamia || 0, 'var(--bad)')}
         <div class="row"><span class="tag">archi compiuti ${g.archiCompiuti || 0}</span><span class="tag">archi perduti ${g.archiPerduti || 0}</span><span class="tag">${g.arc ? `in corso: ${esc(ARC[g.arc.arc] || g.arc.arc)}, parte ${g.arc.node + 1}` : 'nessun arco in corso'}</span>
         ${(g.pending || []).map((p) => `<span class="tag warn">${esc(p.kind)} al salto ${p.due}</span>`).join('')}</div>
+        ${g.war && g.war.counts && Object.keys(g.war.counts).length ? `<h3>Fronte</h3>${Object.entries(g.war.counts).sort((a, b) => b[1] - a[1]).map(([n, c]) => meter(n, c / Math.max(...Object.values(g.war.counts)), c + ' settori', 'var(--arm)')).join('')}<div class="row">${Object.entries(g.war.momentum || {}).map(([f, m]) => `<span class="tag">slancio ${esc(FACTIONS[f] || f)}: ${Math.round(m)}</span>`).join('')}<span class="tag">${g.war.conquests || 0} conquiste</span></div>` : ''}
+        ${(g.fleets || []).length ? `<h3>Flotte in movimento</h3><div class="row">${g.fleets.map((f) => `<span class="tag">${esc(f.kind)} ${esc(f.name)} → settore ${f.dest}</span>`).join('')}</div>` : ''}
+        ${(g.board || []).length ? `<h3>Bacheca</h3>${g.board.map((o) => `<div class="note">${o.urgent ? '<b style="color:var(--bad)">URGENTE</b> ' : ''}${esc(o.title)} · ${esc(o.issuer)} · ${num(o.reward)} Cr</div>`).join('')}` : ''}
         <div class="row"><button class="btn bad" data-a="delsaga" data-seed="${g.seed}">Elimina cronaca</button></div></div>
-        <div class="journal" style="--acc:var(--eng)">${(g.log || []).slice().reverse().slice(0, 14).map((n) => `<div><b>${when(n.t)}</b>${esc(n.text)}</div>`).join('') || '<span class="empty">Ancora nessun evento.</span>'}</div></div>`).join('') : '<p class="empty">Nessuna cronaca.</p>', '--eng')
+        <div><h3>Notiziario</h3><div class="journal" style="--acc:var(--sci)">${(g.news || []).slice().reverse().slice(0, 10).map((n) => `<div><b>${esc((n.cat || '').toUpperCase())}</b>${esc(n.text)}</div>`).join('') || '<span class="empty">Nessuna notizia.</span>'}</div>
+        <h3>Cronaca</h3><div class="journal" style="--acc:var(--eng)">${(g.log || []).slice().reverse().slice(0, 14).map((n) => `<div><b>${when(n.t)}</b>${esc(n.text)}</div>`).join('') || '<span class="empty">Ancora nessun evento.</span>'}</div></div></div>`).join('') : '<p class="empty">Nessuna cronaca.</p>', '--eng')
       + sec('Fazioni rivali', 'Forze ostili persistenti: crescono col tempo reale e ricordano gli scontri.', rv.length ? rv.map((f) => `<h3>${esc(f.name)} · galassia ${f.seed}</h3><div class="cols2"><div>
         ${meter('Forza', f.strength / 100, f.strength, 'var(--bad)')}${meter('Rancore', f.grudge / 100, f.grudge, 'var(--warn)')}
         <div class="row"><span class="tag">capo: ${esc(f.leader)} (${esc(f.temper)})</span><span class="tag">${f.encounters} scontri</span><span class="tag">${f.defeats} sconfitte</span><span class="tag">${f.victories} vittorie</span><span class="tag">${f.leaderDefeats || 0} capi caduti</span></div>

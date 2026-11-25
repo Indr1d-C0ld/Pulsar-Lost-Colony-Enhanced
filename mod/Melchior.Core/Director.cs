@@ -236,7 +236,7 @@ namespace Melchior
                     return true;
                 }
                 case "rivali": return RivalForce.Spawn(ship, power);
-                case "missione": return (Saga.State.arc == null && rng.NextDouble() < 0.35 && Saga.StartArc(power)) || Missions.Offer(power);
+                case "missione": return (Saga.State.arc == null && rng.NextDouble() < 0.35 && Saga.StartArc(power)) || Contracts.PostUrgent(power);
                 case "tempesta":
                     Hurt(id, "sensors", 35 + power); Hurt(id, "shields", 15 + power / 2);
                     Notify("ANOMALIA", "Tempesta ionica: sensori e scudi danneggiati. Ingegneria, squadre ai sistemi.");

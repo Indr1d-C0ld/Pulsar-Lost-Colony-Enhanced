@@ -536,6 +536,9 @@ namespace Melchior
                 Plugin.L.LogInfo("[server] " + text); Panels.RefreshAll(); return;
             }
             if (msg.StartsWith("req|officina|")) { Loot.OnRequest(msg); return; }
+            if (msg.StartsWith("req|bacheca|")) { Contracts.OnRequest(msg); return; }
+            if (msg.StartsWith("board|")) { Contracts.Receive(msg); return; }
+            if (msg.StartsWith("news|")) { News.Receive(msg); return; }
             if (msg.StartsWith("note|"))
             {
                 var np = msg.Split('|', 3); if (np.Length == 3) ShowNotice(np[1], np[2]); return;
@@ -966,7 +969,7 @@ namespace Melchior
 
             // schede
             var names = new List<string>();
-            if (station == 0) { names.Add("Assetti"); if (Stations.Cfg.Captain.Enabled) { names.Add("Ordini"); names.Add("Quadro"); if (Stations.Cfg.Protocols.Enabled) names.Add("Protocolli"); names.Add("Giornale"); } }
+            if (station == 0) { names.Add("Assetti"); if (Stations.Cfg.Captain.Enabled) { names.Add("Ordini"); names.Add("Quadro"); if (Stations.Cfg.Protocols.Enabled) names.Add("Protocolli"); names.Add("Bacheca"); names.Add("Giornale"); } }
             names.AddRange(Stations.Cfg.Controls.Where(c => c.Station == station).Select(c => c.Page).Distinct());
             if (station == 4 && Stations.Cfg.Core.Enabled) names.Add("Nucleo");
             if (station == 4 && Stations.Cfg.Damage.Enabled) names.Add("Danni");
@@ -977,7 +980,7 @@ namespace Melchior
             if (station == 3 && Stations.Cfg.Damage.Enabled && Stations.Cfg.Sensors.Enabled) names.Add("Bersaglio");
             if (station == 1 && Stations.Cfg.Pilot.Enabled) { names.Add("Manovre"); names.Add("Rotta"); }
             if (station == 1 && Stations.Cfg.Engage.Enabled) names.Add("Ingaggio");
-            int nt = Math.Min(names.Count, 5); float tw = (Kit.W - (nt - 1) * 6f) / Math.Max(1, nt);
+            int nt = Math.Min(names.Count, 6); float tw = (Kit.W - (nt - 1) * 6f) / Math.Max(1, nt);
             for (int i = 0; i < nt; i++)
             {
                 pg.TabButtons.Add(k.Button("tab|" + i, Kit.L + i * (tw + 6f), -32f, tw, 22f, names[i].ToUpperInvariant(), cPanel, cWhite, nt > 3 ? 11 : 12));
@@ -997,6 +1000,7 @@ namespace Melchior
                     case "Rotta": BuildRoute(sk); break;
                     case "Danni": BuildDamage(sk); break;
                     case "Officina": BuildWorkshop(sk); break;
+                    case "Bacheca": BuildContracts(sk); break;
                     case "Sensori": BuildSensors(sk); break;
                     case "Bersaglio": BuildTarget(sk); break;
                     case "Ingaggio": BuildEngage(sk); break;
@@ -1549,20 +1553,38 @@ namespace Melchior
 
         static void BuildJournal(Kit k)
         {
-            k.Section(-4f, "Giornale di bordo", "");
-            var times = new UILabel[15]; var lines = new UILabel[15];
+            k.Section(-4f, "Notiziario del subspazio", "");
+            var ncat = new UILabel[4]; var ntext = new UILabel[4]; var ntext2 = new UILabel[4];
+            for (int i = 0; i < ncat.Length; i++)
+            {
+                float y = -30f - i * 34f;
+                ncat[i] = k.Text(Kit.L, y, 84f, "", 10, cGrey);
+                ntext[i] = k.Text(Kit.L + 90f, y, Kit.W - 90f, "", 10, i == 0 ? cWhite : cGrey);
+                ntext2[i] = k.Text(Kit.L + 90f, y - 14f, Kit.W - 90f, "", 10, i == 0 ? cWhite : cGrey);
+            }
+            k.Rule(-170f);
+            k.Section(-180f, "Giornale di bordo", "");
+            var times = new UILabel[8]; var lines = new UILabel[8];
             for (int i = 0; i < lines.Length; i++)
             {
-                times[i] = k.Text(Kit.L, -30f - i * 23f, 64f, "", 11, k.accent);
-                lines[i] = k.Text(Kit.L + 72f, -30f - i * 23f, Kit.W - 72f, "", 11, i == 0 ? cWhite : cGrey);
+                times[i] = k.Text(Kit.L, -206f - i * 22f, 64f, "", 11, k.accent);
+                lines[i] = k.Text(Kit.L + 72f, -206f - i * 22f, Kit.W - 72f, "", 11, i == 0 ? cWhite : cGrey);
             }
             k.pg.Updaters.Add((id, now) =>
             {
+                var nw = News.Items;
+                for (int i = 0; i < ncat.Length; i++)
+                {
+                    var n = i < nw.Count ? nw[nw.Count - 1 - i] : null;
+                    ncat[i].text = n == null ? "" : (News.Cats.TryGetValue(n.cat, out var c) ? Hex(c.color) + c.label + End : n.cat);
+                    if (n == null) { ntext[i].text = i == 0 ? Grey + "Nessuna notizia, per ora." + End : ""; ntext2[i].text = ""; }
+                    else { var (l1, l2) = TwoLines(n.text, 54); ntext[i].text = l1; ntext2[i].text = l2; }
+                }
                 var j = Stations.Journal;
                 for (int i = 0; i < lines.Length; i++)
                 {
                     string e = i < j.Count ? j[j.Count - 1 - i] : ""; int cut = e.IndexOf("   ");
-                    times[i].text = cut > 0 ? e[..cut] : ""; lines[i].text = cut > 0 ? e[(cut + 3)..] : i == 0 ? "Nessun evento registrato." : "";
+                    times[i].text = cut > 0 ? e[..cut] : ""; lines[i].text = cut > 0 ? TwoLines(e[(cut + 3)..], 50).Item1 + (e.Length - cut - 3 > 50 ? "…" : "") : i == 0 ? "Nessun evento registrato." : "";
                 }
             });
         }
@@ -1639,6 +1661,66 @@ namespace Melchior
                 var setCount = equipped.Select(c => Rarity.Get(c.Pointer)).Where(x => x != null && x.Legend >= 0).Select(x => Rarity.Cfg.Legendaries[x.Legend].Set).Where(x => x.Length > 0).GroupBy(x => x).ToList();
                 sets.text = setCount.Count == 0 ? "" : string.Join("  ", setCount.Select(g => $"{g.Key} {g.Count()}/4"));
             });
+        }
+
+        // Bacheca dei contratti: quattro offerte con committente, compenso, rischio e scadenza; accetta o rifiuta.
+        static void BuildContracts(Kit k)
+        {
+            k.Section(-4f, "Bacheca dei contratti", "Scegli tu l'incarico. La fiducia dei committenti migliora le offerte.");
+            var title = new UILabel[Contracts.Size]; var who = new UILabel[Contracts.Size]; var pay = new UILabel[Contracts.Size]; var desc = new UILabel[Contracts.Size]; var desc2 = new UILabel[Contracts.Size];
+            var acc = new (UITexture box, UILabel label)[Contracts.Size]; var dec = new (UITexture box, UILabel label)[Contracts.Size]; var strip = new UITexture[Contracts.Size];
+            for (int i = 0; i < Contracts.Size; i++)
+            {
+                float y = -44f - i * 74f;
+                strip[i] = k.Box(Kit.L, y, 4f, 64f, k.accent);
+                title[i] = k.Text(Kit.L + 10f, y, 300f, "", 12, cWhite);
+                pay[i] = k.Text(Kit.L + 312f, y, 70f, "", 12, cGood, NGUIText.Alignment.Right);
+                who[i] = k.Text(Kit.L + 10f, y - 20f, 372f, "", 10, cGrey);
+                desc[i] = k.Text(Kit.L + 10f, y - 34f, 372f, "", 10, cGrey); desc2[i] = k.Text(Kit.L + 10f, y - 48f, 372f, "", 10, cGrey);
+                acc[i] = k.Button("bc|accetta|" + i, Kit.L + 390f, y, 82f, 26f, "ACCETTA", k.accent, cInk, 11);
+                dec[i] = k.Button("bc|rifiuta|" + i, Kit.L + 390f, y - 32f, 82f, 22f, "RIFIUTA", cPanel, cWhite, 10);
+                k.Rule(y - 66f);
+            }
+            var foot = k.Text(Kit.L, -344f, Kit.W, "", 10, cWhite);
+            var trust = k.Text(Kit.L, -362f, Kit.W, "", 9, cGrey);
+
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var board = Contracts.Board;
+                for (int i = 0; i < Contracts.Size; i++)
+                {
+                    var o = i < board.Count ? board[i] : null; bool on = o != null;
+                    if (acc[i].box.gameObject.activeSelf != on) { acc[i].box.gameObject.SetActive(on); acc[i].label.gameObject.SetActive(on); dec[i].box.gameObject.SetActive(on); dec[i].label.gameObject.SetActive(on); strip[i].gameObject.SetActive(on); }
+                    if (!on) { title[i].text = i == 0 && board.Count == 0 ? Grey + "Nessuna offerta: ne arriveranno al prossimo salto." + End : ""; pay[i].text = who[i].text = desc[i].text = desc2[i].text = ""; continue; }
+                    strip[i].color = o.urgent ? cBad : k.accent;
+                    title[i].text = (o.urgent ? Bad + "URGENTE " + End : "") + o.family.ToUpperInvariant() + Grey + " · " + End + o.title.Replace(o.family + ": ", "");
+                    pay[i].text = $"{o.reward:N0} Cr".Replace(",", ".");
+                    int left = Contracts.JumpsLeft(o);
+                    who[i].text = Hex(o.color) + o.issuer + End + Grey + $"   rischio {new string('|', o.tier + 1)}{new string('.', 4 - o.tier)}   scade {(left <= 0 ? "a questo salto" : left == 1 ? "fra 1 salto" : $"fra {left} salti")}   fiducia {Contracts.Trust(o.issuer):+0;-0;0}" + End;
+                    var (l1, l2) = TwoLines(o.desc, 64); desc[i].text = l1; desc2[i].text = l2;
+                }
+                var cur = Contracts.Current;
+                foot.text = cur != null ? Good + $"In corso: {cur.title} per {cur.issuer}, {cur.reward:N0} crediti alla consegna.".Replace(",", ".") + End : Grey + "Nessun contratto in corso." + End;
+                var tr = Saga.State.trust.Where(x => x.Value != 0).OrderByDescending(x => x.Value).Take(4).Select(x => $"{x.Key} {x.Value:+0;-0}");
+                trust.text = tr.Any() ? "Fiducia: " + string.Join("   ", tr) : "";
+            });
+        }
+
+        // Divide un testo in due righe a fine parola; se avanza, la seconda finisce con i puntini.
+        static (string, string) TwoLines(string text, int max)
+        {
+            text = (text ?? "").Trim(); if (text.Length <= max) return (text, "");
+            int cut = text.LastIndexOf(' ', max); if (cut < max / 2) cut = max;
+            string a = text[..cut].TrimEnd(), b = text[cut..].Trim();
+            if (b.Length > max) { int c2 = b.LastIndexOf(' ', max - 1); b = b[..(c2 > max / 2 ? c2 : max - 1)].TrimEnd() + "…"; }
+            return (a, b);
+        }
+
+        static void ContractsClick(PanelPage pg, string[] a)
+        {
+            int i = int.Parse(a[3]); var board = Contracts.Board; if (i >= board.Count) return;
+            if (a[2] == "accetta" && !Stations.CanEdit(0)) { Say(pg, "Solo il capitano firma i contratti."); return; }
+            Contracts.Request(a[2], board[i].id); Say(pg, a[2] == "accetta" ? "Contratto in firma..." : "Offerta rifiutata.");
         }
 
         static void WorkshopClick(PanelPage pg, string[] a)
@@ -2026,6 +2108,7 @@ namespace Melchior
             else if (a[1] == "cap") CaptainClick(pg, a, mine.ShipID);
             else if (a[1] == "dmg") DamageClick(pg, a, mine.ShipID);
             else if (a[1] == "wk") WorkshopClick(pg, a);
+            else if (a[1] == "bc") ContractsClick(pg, a);
             else if (a[1] == "c")
             {
                 var c = Stations.Find(a[2]); if (c == null) return true; float v = Stations.Get(mine.ShipID, c.Id);

@@ -18,6 +18,7 @@ Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viv
 - [In breve](#in-breve)
 - [Le stazioni di plancia](#le-stazioni-di-plancia)
 - [Il direttore e la galassia viva](#il-direttore-e-la-galassia-viva)
+- [Una galassia che vive da sola](#una-galassia-che-vive-da-sola)
 - [Missioni procedurali](#missioni-procedurali)
 - [Archi narrativi e conseguenze](#archi-narrativi-e-conseguenze)
 - [Bottino, obiettivi e carriera](#bottino-obiettivi-e-carriera)
@@ -39,11 +40,11 @@ Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viv
 
 | Area | Cosa aggiunge |
 |---|---|
-| **Stazioni** | 22 schede LCARS sui pannelli fisici della nave, una o più per ogni ruolo, con regolazioni continue, procedure a tempo e scelte tattiche che si influenzano a vicenda |
+| **Stazioni** | 23 schede LCARS sui pannelli fisici della nave, una o più per ogni ruolo, con regolazioni continue, procedure a tempo e scelte tattiche che si influenzano a vicenda |
 | **Ufficiali automatici** | I bot dell'equipaggio usano davvero i pannelli: spurghi, scansioni, mira, fasce d'ingaggio, ordini |
 | **Direttore** | Misura la tensione a bordo e alterna calma, allerta, crisi e respiro; sceglie eventi in proporzione alla potenza dell'equipaggio |
 | **Missioni** | 570 missioni nel sistema nativo del gioco: 9 famiglie × 5 livelli × 6 varianti, più 3 archi narrativi |
-| **Galassia viva** | Fazioni rivali persistenti per ogni galassia, onore e infamia, conseguenze ritardate, cronaca salvata sul server |
+| **Galassia viva** | Guerra fra fazioni sulla mappa stellare, flotte con un'agenda (convogli, pattuglie, predoni), bacheca dei contratti, notiziario del subspazio, tempo che passa anche senza giocatori, fazioni rivali persistenti, onore e infamia, conseguenze ritardate |
 | **Bottino** | 8 gradi di rarità, 72 affissi (statistici, di stazione, condizionali, difetti), 24 leggendari con nome e storia, 4 set, Officina per smontare e potenziare |
 | **Carriera** | 47 obiettivi interni (con le icone originali), 14 gradi, 5 specializzazioni, classifica di rete |
 | **Lingua** | Traduzione italiana completa: 10.690 stringhe, glossario e controlli automatici |
@@ -57,7 +58,7 @@ Ogni ruolo ha la sua postazione **fisica** a bordo: le regolazioni non stanno in
 
 | Stazione | Schede | In sintesi |
 |---|---|---|
-| **Capitano** | Assetti · Ordini · Quadro · Protocolli · Giornale | Assetti di bordo con stato d'allarme, iniziativa di comando alimentata dai successi dell'equipaggio, ordini di plancia (battaglia, danni, regime, silenzio), interventi d'emergenza, protocolli permanenti, quadro di situazione e giornale di bordo condiviso |
+| **Capitano** | Assetti · Ordini · Quadro · Protocolli · Bacheca · Giornale | Assetti di bordo con stato d'allarme, iniziativa di comando alimentata dai successi dell'equipaggio, ordini di plancia (battaglia, danni, regime, silenzio), interventi d'emergenza, protocolli permanenti, quadro di situazione e giornale di bordo condiviso |
 | **Pilota** | Regolazioni · Manovre · Rotta · Ingaggio | Assetto dei propulsori, ugelli che si sbilanciano e vanno tenuti in asse, manovra evasiva (riduce i danni subiti), spinta d'emergenza, deriva silenziosa, calcolo di rotta su tre assi, fascia di distanza d'ingaggio da tenere |
 | **Scienza** | Regolazioni · Scudi · Analisi · Sensori | Armonica degli scudi che il nemico impara col tempo, impulso attivo dei sensori, decrittazione della firma nemica (soluzione tattica alle armi), scansione del bersaglio con dati, sistemi e punto debole |
 | **Armi** | Regolazioni · Tiro · Raffica · Bersaglio | Dottrina di tiro che matura, puntamento su scudi o scafo, sovraccarico dei condensatori (scaricare prima del segno rosso), fuoco mirato sui sottosistemi nemici |
@@ -91,6 +92,32 @@ Il **direttore** gira sull'host e ogni due secondi valuta la **tensione** a bord
 La difficoltà segue la **potenza dell'equipaggio**, calcolata da livello, persone a bordo (giocatori e bot) e rarità media dell'equipaggiamento: cambiano i tipi di nave, il loro numero e i modificatori (da *trascurata* e *vulnerabile* fino a *corazzata*, *brutale*, *d'élite*). Gli eventi recenti diventano meno probabili, per non ripetersi.
 
 **Fazioni rivali.** Ogni galassia ha una forza ostile generata dal server, con nome, capo e carattere (per esempio *Flotta del Sole Spento*, guidata dal *Comandante Kor*). Cresce col **tempo reale** anche quando nessuno gioca, si indebolisce quando la sconfiggete e si rafforza se fuggite. Con il rancore alto arriva il capo in persona; se cade, un successore prende il comando e giura vendetta. Al rientro in partita l'equipaggio riceve i **rapporti d'intelligence** arrivati nel frattempo.
+
+---
+
+## Una galassia che vive da sola
+
+La galassia non aspetta l'equipaggio: si muove per conto suo, anche mentre nessuno gioca, e l'equipaggio ci entra dentro invece di esserne il centro.
+
+**Guerra fra fazioni.** Unione Coloniale, Alliance of Gentlemen, W.D. Corporation, Polytechnic e Infetti si contendono i settori di confine. Ogni fazione ha uno *slancio* che cresce con le vittorie, cala con le sconfitte e ogni tanto esplode in un'**offensiva** su più settori. Le conquiste cambiano davvero il colore dei settori sulla **mappa stellare**, per tutti i giocatori, e restano nel salvataggio. I contratti eseguiti per una fazione la rafforzano sul fronte. Il settore in cui vi trovate, la destinazione del salto, i negozi e i luoghi delle missioni non cambiano mai padrone sotto i vostri piedi.
+
+**Flotte con un'agenda.** Convogli mercantili viaggiano fra settori lontani, pattuglie delle fazioni presidiano il fronte, predoni danno la caccia ai convogli. Sono navi vere del gioco che si spostano di settore in settore: se due flotte si incontrano lontano da voi lo scontro si risolve da solo (un convoglio assaltato, una pattuglia che annienta i predoni) e finisce nel notiziario, a volte con una taglia sulla bacheca; se una flotta entra nel vostro settore, ve la trovate davanti.
+
+**Bacheca dei contratti.** Al posto di missioni imposte, il capitano sceglie fra offerte con **committente** (le fazioni della galassia e tre indipendenti: Gilda dei Mercanti, Comando di Flotta, Accademia delle Scienze), **compenso**, **rischio** e **scadenza** in salti. Le richieste urgenti del direttore pagano di più e scadono prima. Ogni contratto onorato aumenta la **fiducia** del committente, che migliora le offerte successive; uno mancato la fa scendere. Se il capitano è un bot, sceglie lui l'offerta migliore.
+
+<table>
+<tr>
+<td><img src="docs/bacheca-contratti.png" alt="Bacheca dei contratti"></td>
+<td><img src="docs/notiziario.png" alt="Notiziario del subspazio"></td>
+</tr>
+<tr><td align="center">Bacheca dei contratti</td><td align="center">Notiziario del subspazio e giornale di bordo</td></tr>
+</table>
+
+**Notiziario del subspazio.** Notizie per categoria — fronte, commercio, flotta, rivali, taglie, scienza, dicerie — costruite sui fatti veri della partita e su dicerie. Alcune dicerie sono fondate e si trasformano in un'offerta sulla bacheca.
+
+**Il tempo passa davvero.** La cronaca ricorda quando la galassia è stata giocata l'ultima volta. Al rientro arriva un riassunto: il fronte è avanzato in proporzione alle ore trascorse («Infetti +10 settori, Alliance of Gentlemen −11»), sono maturate notizie nuove, e la fazione rivale è cresciuta sul server.
+
+Tutto vive sull'host ed è salvato su Balthasar insieme alla cronaca della galassia; la console di amministrazione lo mostra nella sezione Galassie.
 
 ---
 
@@ -316,7 +343,7 @@ mod/tools/prova/cmd.sh "panels" "shot prova"    # elenca i pannelli e scatta una
 mod/tools/prova/famiglie.sh scorta              # avvia una missione, salta nel settore e la porta a termine
 ```
 
-Alcuni comandi della console: `loot` (bottino: `list`, `give`, `forge`, `bonus`), `ships`, `spawn`, `target`, `hit`, `panels click`, `con get|set`, `dir` (direttore), `mis` (missioni, anche `mis warp`), `saga` (cronaca), `rival`, `journal`, `svc`, `ach`. Con `MELCHIOR_INSTANCE=2` si avvia una seconda istanza sullo stesso computer per le prove a due giocatori.
+Alcuni comandi della console: `war` (`step`, `flip`), `fleets` (`step`, `near`), `news` (`diceria`, `bacheca`), `map`, `saga offline <ore>`, `loot` (bottino: `list`, `give`, `forge`, `bonus`), `ships`, `spawn`, `target`, `hit`, `panels click`, `con get|set`, `dir` (direttore), `mis` (missioni, anche `mis warp`), `saga` (cronaca), `rival`, `journal`, `svc`, `ach`. Con `MELCHIOR_INSTANCE=2` si avvia una seconda istanza sullo stesso computer per le prove a due giocatori.
 
 ---
 
@@ -357,7 +384,9 @@ Ancora da verificare o da fare:
 - una partita giocata a mano, con persone vere alle stazioni, e su due computer diversi;
 - l'avvio su Windows del pacchetto (provato finora sotto Wine);
 - salvataggio e caricamento con una missione in corso; chi entra a partita già iniziata;
-- alcuni testi ancora in inglese (per esempio *Press [F8] to skip warp*);
+- alcuni testi ancora in inglese (per esempio *Press [F8] to skip warp* e alcuni nomi di componenti);
+- l'economia per settore: i prezzi dei negozi si calcolano sul client, quindi servirebbe il mod anche lì;
+- la galassia viva in una partita lunga con più giocatori (provata finora con prove guidate da console);
 - HTTPS per la console di amministrazione (oggi è HTTP sulla rete di casa).
 
 ---

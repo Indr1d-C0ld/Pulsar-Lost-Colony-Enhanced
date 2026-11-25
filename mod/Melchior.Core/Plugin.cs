@@ -163,6 +163,10 @@ namespace Melchior
             Missions.Tick();
             Saga.Tick();
             Loot.Tick();
+            Contracts.Tick();
+            News.Tick();
+            GalaxyWar.Tick();
+            Fleets.Tick();
             Panels.Tick();
             StationBots.Tick();
             Service.Tick();

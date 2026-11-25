@@ -27,7 +27,7 @@ namespace Melchior
         static readonly System.Diagnostics.Stopwatch clock = System.Diagnostics.Stopwatch.StartNew();
         static readonly System.Random rng = new();
         static RivalInfo cur; static int curSeed = int.MinValue; static long nextFetch, nextCheck; static bool busy;
-        static readonly Queue<string> pending = new();
+        static readonly Queue<string> pending = new(), newsQueue = new();
         static Dictionary<string, long> seen = new(); // seme -> ultima notizia mostrata
         static readonly List<int> squad = new(); static int leaderShip = -1, squadSector = -1, killed; static bool leaderDown;
         public static RivalInfo Current => cur;
@@ -42,6 +42,7 @@ namespace Melchior
             try
             {
                 lock (pending) while (pending.Count > 0) Director.Notify("RAPPORTI DI INTELLIGENCE", pending.Dequeue());
+                lock (pending) while (newsQueue.Count > 0) News.Post("rivali", newsQueue.Dequeue());
                 if (!PhotonNetwork.inRoom || !PhotonNetwork.isMasterClient || PLServer.Instance == null || Stations.MyShip == null) return;
                 int seed = Seed(); if (seed == int.MinValue) return;
                 if (seed != curSeed) { curSeed = seed; cur = null; nextFetch = 0; squad.Clear(); }
@@ -63,7 +64,7 @@ namespace Melchior
                     var info = JsonSerializer.Deserialize<RivalInfo>(await http.GetStringAsync(url), json);
                     if (info == null) return;
                     cur = info;
-                    lock (pending) foreach (var n in info.news) pending.Enqueue(n.text);
+                    lock (pending) foreach (var n in info.news) { pending.Enqueue(n.text); newsQueue.Enqueue(n.text); }
                     if (info.news.Count > 0) { seen[seed.ToString()] = info.news.Max(n => n.t); try { File.WriteAllText(SeenPath, JsonSerializer.Serialize(seen)); } catch { } }
                     Plugin.L.LogInfo($"[rivali] {info.name}, guidati da {info.leader}: forza {info.strength}, rancore {info.grudge}");
                 }

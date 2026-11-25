@@ -22,6 +22,10 @@ namespace Melchior
     {
         public int onore, infamia, archiCompiuti, archiPerduti;
         public SagaArcRun arc; public List<SagaPending> pending = new(); public List<SagaEntry> log = new(); public List<string> recentArcs = new();
+        public List<ContractOffer> board = new(); public Dictionary<string, int> trust = new(); public ContractOffer contract;
+        public List<NewsItem> news = new();
+        public WarState war = new(); public List<FleetInfo> fleets = new();
+        public long lastPlayed; // ultima volta che la galassia è stata giocata (ms UTC)
     }
 
     public static class Saga
@@ -39,12 +43,16 @@ namespace Melchior
         static readonly Dictionary<int, (int arc, int tier, int variant, int node)> chainIds = new();
         static readonly Dictionary<string, string> arcTitles = new();
 
-        static SagaState st = new(); static int seed = int.MinValue; static bool loaded, dirty, busy; static long nextSave;
+        static SagaState st = new(); static int seed = int.MinValue; static bool loaded, dirty, busy; static long nextSave, nextKeepAlive;
         static readonly System.Random rng = new();
         static readonly HttpClient http = new() { Timeout = TimeSpan.FromSeconds(5) };
         static readonly JsonSerializerOptions json = new() { IncludeFields = true, PropertyNameCaseInsensitive = true };
         static readonly System.Diagnostics.Stopwatch clock = System.Diagnostics.Stopwatch.StartNew();
         public static SagaState State => st;
+        public static bool Loaded => loaded;
+        // Ore passate dall'ultima partita su questa galassia: le consumano il notiziario e la guerra fra fazioni.
+        public static double OfflineHours;
+        public static void MarkDirty() => dirty = true;
 
         // ---- nomi e titoli dell'arco, deterministici dal numero di variante
         static (Dictionary<string, string>[] ov, string title) ArcCast(int arc, int variant)
@@ -134,6 +142,8 @@ namespace Melchior
                 int s = Seed(); if (s == int.MinValue) return;
                 if (s != seed) { seed = s; st = new SagaState(); loaded = false; Load(); }
                 long now = clock.ElapsedMilliseconds;
+                if (loaded && OfflineHours > 0) { double h = OfflineHours; OfflineHours = 0; News.Digest(h); GalaxyWar.Offline(h); }
+                if (loaded && now >= nextKeepAlive) { nextKeepAlive = now + 300000; dirty = true; } // segna la partita come giocata anche senza eventi
                 if (dirty && loaded && !busy && now >= nextSave) { nextSave = now + 3000; dirty = false; Save(); }
             }
             catch (Exception e) { Plugin.L.LogWarning("Cronaca: " + e.Message); }
@@ -148,7 +158,8 @@ namespace Melchior
                 {
                     var txt = await http.GetStringAsync($"{Service.Base}/api/saga?seed={s}");
                     var got = JsonSerializer.Deserialize<SagaState>(txt, json);
-                    if (got != null && s == seed) { got.pending ??= new(); got.log ??= new(); got.recentArcs ??= new(); st = got; }
+                    if (got != null && s == seed && got.lastPlayed > 0) OfflineHours = (DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - got.lastPlayed) / 3600000.0;
+                    if (got != null && s == seed) { got.pending ??= new(); got.log ??= new(); got.recentArcs ??= new(); got.board ??= new(); got.trust ??= new(); got.news ??= new(); got.war ??= new(); got.war.momentum ??= new(); got.war.counts ??= new(); got.fleets ??= new(); st = got; }
                     Plugin.L.LogInfo($"[cronaca] galassia {s}: onore {st.onore}, infamia {st.infamia}, arco {(st.arc == null ? "nessuno" : st.arc.arc + " parte " + (st.arc.node + 1))}, conseguenze in attesa {st.pending.Count}");
                 }
                 catch (Exception e) { Plugin.L.LogWarning("Cronaca non letta dal server (resta in memoria): " + e.Message); }
@@ -158,6 +169,7 @@ namespace Melchior
 
         static void Save()
         {
+            st.lastPlayed = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
             int s = seed; string body = JsonSerializer.Serialize(st, json); busy = true;
             Task.Run(async () =>
             {
@@ -202,6 +214,7 @@ namespace Melchior
             if (success && fam == "recupero" && !IsChain(id) && st.arc == null && rng.NextDouble() < 0.5) Later("scoperta", 1, 3);
             if (success && fam == "eco" && rng.NextDouble() < 0.5) Later("paradosso", 1, 3);
             if (!success && fam == "contatto" && !IsChain(id)) Later("rappresaglia", 1, 3, mainName, "", tier);
+            string deal = Contracts.OnOutcome(id, success); if (deal != null) { Director.Notify("BACHECA", deal); Chronicle(deal); }
             if (success) { var got = Loot.Grant(Stations.MyShip, 1 + tier / 2, Math.Min(6, 3 + tier), "missione"); if (got != null) Director.Notify("RICOMPENSA", $"Il committente aggiunge un pezzo alla stiva: {got.Name}."); }
             Chronicle($"{Missions.Label(family)} «{mainName}»: {(success ? "riuscita" : "fallita")}{(dOn != 0 ? $", onore {dOn:+0;-0}" : "")}{(dInf != 0 ? $", infamia +{dInf}" : "")}");
             // archi
