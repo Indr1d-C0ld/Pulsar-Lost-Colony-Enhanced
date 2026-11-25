@@ -39,12 +39,12 @@ Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viv
 
 | Area | Cosa aggiunge |
 |---|---|
-| **Stazioni** | 21 schede LCARS sui pannelli fisici della nave, una o più per ogni ruolo, con regolazioni continue, procedure a tempo e scelte tattiche che si influenzano a vicenda |
+| **Stazioni** | 22 schede LCARS sui pannelli fisici della nave, una o più per ogni ruolo, con regolazioni continue, procedure a tempo e scelte tattiche che si influenzano a vicenda |
 | **Ufficiali automatici** | I bot dell'equipaggio usano davvero i pannelli: spurghi, scansioni, mira, fasce d'ingaggio, ordini |
 | **Direttore** | Misura la tensione a bordo e alterna calma, allerta, crisi e respiro; sceglie eventi in proporzione alla potenza dell'equipaggio |
 | **Missioni** | 570 missioni nel sistema nativo del gioco: 9 famiglie × 5 livelli × 6 varianti, più 3 archi narrativi |
 | **Galassia viva** | Fazioni rivali persistenti per ogni galassia, onore e infamia, conseguenze ritardate, cronaca salvata sul server |
-| **Bottino** | 8 gradi di rarità, livelli nascosti e 23 affissi per i componenti della nave |
+| **Bottino** | 8 gradi di rarità, 72 affissi (statistici, di stazione, condizionali, difetti), 24 leggendari con nome e storia, 4 set, Officina per smontare e potenziare |
 | **Carriera** | 47 obiettivi interni (con le icone originali), 14 gradi, 5 specializzazioni, classifica di rete |
 | **Lingua** | Traduzione italiana completa: 10.690 stringhe, glossario e controlli automatici |
 | **Rete** | Server compatibile con Photon per la LAN, con console di amministrazione LCARS riservata |
@@ -61,7 +61,7 @@ Ogni ruolo ha la sua postazione **fisica** a bordo: le regolazioni non stanno in
 | **Pilota** | Regolazioni · Manovre · Rotta · Ingaggio | Assetto dei propulsori, ugelli che si sbilanciano e vanno tenuti in asse, manovra evasiva (riduce i danni subiti), spinta d'emergenza, deriva silenziosa, calcolo di rotta su tre assi, fascia di distanza d'ingaggio da tenere |
 | **Scienza** | Regolazioni · Scudi · Analisi · Sensori | Armonica degli scudi che il nemico impara col tempo, impulso attivo dei sensori, decrittazione della firma nemica (soluzione tattica alle armi), scansione del bersaglio con dati, sistemi e punto debole |
 | **Armi** | Regolazioni · Tiro · Raffica · Bersaglio | Dottrina di tiro che matura, puntamento su scudi o scafo, sovraccarico dei condensatori (scaricare prima del segno rosso), fuoco mirato sui sottosistemi nemici |
-| **Ingegneria** | Regolazioni · Rete EPS · Nucleo · Danni | Rete EPS a bilancio zero su sei canali, stress del nucleo con spurgo del plasma e riallineamento della matrice, arresto di sicurezza, controllo danni con due squadre, derivazione d'emergenza |
+| **Ingegneria** | Regolazioni · Rete EPS · Nucleo · Danni · Officina | Rete EPS a bilancio zero su sei canali, stress del nucleo con spurgo del plasma e riallineamento della matrice, arresto di sicurezza, controllo danni con due squadre, derivazione d'emergenza, officina per smontare e potenziare i pezzi della stiva |
 
 I sistemi sono intrecciati: la Scienza scansiona e rende possibile il fuoco mirato delle Armi; ogni raffica scalda il nucleo dell'Ingegneria; i colpi allo scafo guastano scudi, armi, motori, sensori, curvatura e supporto vitale, che rendono meno finché le squadre non li riparano; il capitano spende l'iniziativa guadagnata dagli altri.
 
@@ -128,9 +128,41 @@ Gli **archi** sono storie in tre parti con gli stessi personaggi, in cui l'esito
 
 ## Bottino, obiettivi e carriera
 
-**Rarità.** Ogni componente della nave ha un grado fra otto — da *Standard* a *Singolare* — che porta livelli nascosti in più e fino a quattro **affissi** scelti fra 23 per tipo di componente. Il grado è salvato nell'identificativo del componente, quindi sopravvive a salvataggi, negozi e rete.
+**Gradi di rarità.** Ogni componente della nave ha uno di otto gradi, ciascuno con il suo colore:
 
-![Scheda della nave con un componente di grado Singolare](docs/rarita-scheda-nave.png)
+| Grado | Colore | Livelli nascosti | Affissi | Note |
+|---|---|---|---|---|
+| Standard | grigio | — | — | |
+| Raffinato | verde | — | 1 | |
+| Avanzato | blu | +1 | 2 | |
+| Sperimentale | viola | +1 | 2 | da qui i ritrovamenti vengono annunciati |
+| Prototipo | arancio | +2 | 3 | |
+| Reliquia | oro | +2 | 3 | |
+| Anomalo | ciano | +3 | 4 | instabile: spesso un difetto, ma affissi più forti del 25% |
+| Leggendario | rosso | +4 | — | pezzo unico con nome, storia ed effetti propri |
+
+Il grado viaggia dentro l'identificativo del componente, quindi sopravvive a salvataggi, negozi e rete, e ogni macchina ricalcola gli stessi affissi.
+
+**72 affissi, di quattro tipi.**
+
+- **Statistici** — potenza e calore del reattore, refrigerante, scudi (capienza, ricarica, deflessione, recupero), scafo (integrità, corazza, difesa, protezione dei sistemi, massa), curvatura, spinte, torrette, quattro tipi di rilevamento e di firma, difese e attacchi informatici, ossigeno, diplomazia, intimidazione.
+- **Di stazione** — agiscono sui sistemi dei pannelli: stress e raffreddamento del nucleo, velocità di scansione, tenuta dell'armonica, squadre di riparazione, margine dei condensatori, potenza della raffica, ricarica dell'evasiva, iniziativa del capitano, danni subiti, danno ai sistemi nemici, punto debole, resistenza dei sistemi, assestamento nella fascia d'ingaggio.
+- **Condizionali** — valgono solo in certe situazioni: in allarme rosso, con lo scafo sotto il 35%, a scudi abbattuti, in fascia corta o lunga, nei 30 secondi dopo un salto, durante una crisi, con l'ordine SILENZIO, con il nucleo oltre il 60%.
+- **Difetti** — degli oggetti instabili: firma che sale, surriscaldamento, interferenze sugli scudi, zavorra, codice instabile, nucleo sotto sforzo, circuiti fragili.
+
+**24 leggendari e 4 set.** Il grado più alto non è un pezzo qualsiasi ma un **leggendario**: «Cuore di Vega», «Egida di Aldebaran», «Lama di Kessar», «Sguardo di Argo», «Ombra di Teth»… ognuno con una riga di storia, effetti propri e a volte un prezzo da pagare. Molti appartengono a un **set** — *Corredo dell'Ammiraglia*, *Rotta dei Navigatori*, *Eredità di Lume*, *Fucina di Vulcano* — che dà bonus crescenti con 2, 3 e 4 pezzi montati.
+
+**Ritrovamenti in evidenza.** Dal grado Sperimentale in su, ogni pezzo che arriva in stiva viene annunciato a schermo nel colore del suo grado (in coda, se ne arrivano diversi insieme), finisce nel giornale di bordo e conta nelle statistiche di servizio.
+
+![Ritrovamenti di grado diverso](docs/ritrovamenti.png)
+
+**Officina dell'Ingegneria.** Una scheda del pannello dell'Ingegneria elenca i pezzi in stiva ordinati per grado e colorati, con affissi, difetti e set. Si può **smontare** un pezzo per ricavarne crediti, oppure **tentare di potenziarlo** di un grado: costa crediti, la riuscita scende salendo di grado e, dal grado Sperimentale in su, un fallimento distrugge il pezzo. Leggendari non si diventa in officina: si trovano.
+
+![Officina di bordo](docs/officina-bottino.png)
+
+**Da dove arriva.** Oltre ai negozi e ai rottami, il bottino arriva in proporzione al rischio: ogni missione riuscita lascia un pezzo del livello giusto, gli archi narrativi conclusi bene almeno un Prototipo, le squadre rivali da Avanzato a Reliquia, il capo rivale Reliquia o Anomalo, e una crisi superata a volte lascia qualcosa fra i rottami.
+
+![Scheda della nave con un componente raro](docs/rarita-scheda-nave.png)
 
 **Obiettivi.** 47 obiettivi interni: i 41 originali con le loro icone e il testo in italiano, più quelli legati alle aggiunte del mod. Si consultano con **F9**.
 
@@ -261,7 +293,7 @@ Tutti i file si trovano in `BepInEx/config/` e vengono creati con i valori prede
 | `melchior.core.cfg` | Relay (host, riserva, porta), strumenti di sviluppo e diagnostica |
 | `melchior.stations.json` | Comandi delle stazioni e loro effetti, assetti, bilanci, nucleo, scienza, armi, pilota, capitano, danni, sensori, ingaggio, protocolli, ufficiali automatici |
 | `melchior.director.json` | Tempi di calma, allerta e respiro, soglie di tensione, pesi degli eventi, navi per fascia di potenza |
-| `melchior.rarity.json` | Gradi di rarità, probabilità, livelli bonus, affissi |
+| `melchior.rarity.json` | Gradi di rarità (colori, pesi, livelli, affissi, difetti), catalogo degli affissi, leggendari e set: tutto modificabile |
 | `melchior.ranking.json` | Statistiche, gradi e specializzazioni dello stato di servizio |
 | `melchior.ui.json` | Lingua e pulizia dell'interfaccia |
 | `server/config.json` | Porte, indirizzi, credenziali (hash), messaggio di benvenuto, limiti, manutenzione, conservazione dei dati |
@@ -284,7 +316,7 @@ mod/tools/prova/cmd.sh "panels" "shot prova"    # elenca i pannelli e scatta una
 mod/tools/prova/famiglie.sh scorta              # avvia una missione, salta nel settore e la porta a termine
 ```
 
-Alcuni comandi della console: `ships`, `spawn`, `target`, `hit`, `panels click`, `con get|set`, `dir` (direttore), `mis` (missioni, anche `mis warp`), `saga` (cronaca), `rival`, `journal`, `svc`, `ach`. Con `MELCHIOR_INSTANCE=2` si avvia una seconda istanza sullo stesso computer per le prove a due giocatori.
+Alcuni comandi della console: `loot` (bottino: `list`, `give`, `forge`, `bonus`), `ships`, `spawn`, `target`, `hit`, `panels click`, `con get|set`, `dir` (direttore), `mis` (missioni, anche `mis warp`), `saga` (cronaca), `rival`, `journal`, `svc`, `ach`. Con `MELCHIOR_INSTANCE=2` si avvia una seconda istanza sullo stesso computer per le prove a due giocatori.
 
 ---
 
@@ -305,7 +337,7 @@ Il progetto Ghidra e le uscite (`re/out`) non sono nel repository: si rigenerano
 
 | Percorso | Contenuto |
 |---|---|
-| `mod/Melchior.Core/` | Il plugin: `Stations.cs` (stazioni e pannelli LCARS), `Director.cs`, `Missions.cs`, `Saga.cs`, `Rivals.cs`, `Bots.cs`, `Rarity.cs`, `Achievements.cs`, `Service.cs`, `Ui.cs`, `DevConsole.cs`, `Plugin.cs` |
+| `mod/Melchior.Core/` | Il plugin: `Stations.cs` (stazioni e pannelli LCARS), `Director.cs`, `Missions.cs`, `Saga.cs`, `Rivals.cs`, `Bots.cs`, `Rarity.cs` e `Loot.cs` (bottino), `Achievements.cs`, `Service.cs`, `Ui.cs`, `DevConsole.cs`, `Plugin.cs` |
 | `mod/i18n/` | Traduzione italiana: blocchi di testo, glossario, correzioni, script di controllo e generazione |
 | `mod/achievements/` | Definizioni e icone degli obiettivi |
 | `mod/tools/` | Lettore delle firme interop e script di prova in gioco |

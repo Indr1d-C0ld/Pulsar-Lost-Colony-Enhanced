@@ -123,7 +123,11 @@ namespace Melchior
             }
             if (sector != squadSector && alive.Count > 0) { squad.Clear(); Report("ritirata"); return; }
             squad.Clear(); squad.AddRange(alive);
-            if (alive.Count == 0) { Report("vittoria"); Service.Add("rivali.vittorie", 1); Director.Notify("RAPPORTO DI PLANCIA", leaderDown ? "Il capo nemico è stato abbattuto. La sua flotta perderà terreno, ma qualcuno ne prenderà il posto." : $"Squadra di {cur?.name} distrutta."); }
+            if (alive.Count == 0)
+            {
+                var got = Loot.Grant(Stations.MyShip, leaderDown ? 5 : 2, leaderDown ? 6 : 5, leaderDown ? "capo rivale" : "rivali");
+                if (got != null) Director.Notify("RITROVAMENTO", (leaderDown ? "Tra i rottami dell'ammiraglia nemica: " : "Recuperato dai rottami della squadra rivale: ") + got.Name + ".");
+                Report("vittoria"); Service.Add("rivali.vittorie", 1); Director.Notify("RAPPORTO DI PLANCIA", leaderDown ? "Il capo nemico è stato abbattuto. La sua flotta perderà terreno, ma qualcuno ne prenderà il posto." : $"Squadra di {cur?.name} distrutta."); }
         }
 
         static string ToRoman(int n) { string[] r = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" }; return n >= 1 && n <= 10 ? r[n] : n.ToString(); }

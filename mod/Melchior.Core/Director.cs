@@ -150,7 +150,11 @@ namespace Melchior
                         break;
                     case 2: // crisi: finisce quando la tensione resta bassa per 16 secondi
                         lowTime = t < Cfg.CalmAt && hostiles == 0 ? lowTime + 2f : 0f;
-                        if (lowTime >= 16f) { lowTime = 0; SetPhase(id, 3, "Situazione sotto controllo. Squadre danni al lavoro."); Service.Add("direttore.crisi.superate", 1); Stations.Initiative(id, Stations.Cfg.Captain.GainPerSuccess); }
+                        if (lowTime >= 16f)
+                        {
+                            lowTime = 0; SetPhase(id, 3, "Situazione sotto controllo. Squadre danni al lavoro."); Service.Add("direttore.crisi.superate", 1); Stations.Initiative(id, Stations.Cfg.Captain.GainPerSuccess);
+                            if (rng.NextDouble() < 0.4) { var got = Loot.Grant(ship, 1, 4, "crisi"); if (got != null) Notify("RITROVAMENTO", "Dai rottami del combattimento recuperiamo: " + got.Name + "."); }
+                        }
                         break;
                     case 3: // respiro
                         if (t >= Cfg.CrisisAt) SetPhase(id, 2, null);

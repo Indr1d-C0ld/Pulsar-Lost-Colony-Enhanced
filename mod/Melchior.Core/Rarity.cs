@@ -29,16 +29,36 @@ namespace Melchior
         public int LevelBonus;          // livelli nascosti aggiunti
         public double PriceMult = 1;    // moltiplicatore del prezzo, oltre all'effetto dei livelli
         public int Affixes;             // quanti affissi riceve
+        public double DrawbackChance;   // probabilità di un difetto (oggetti instabili)
     }
 
+    // Un affisso ritocca una statistica della nave ("Stat") oppure un sistema delle stazioni ("Key", vedi Loot.KeyLabels).
+    // Con "Cond" vale solo in una situazione (allarme rosso, scafo basso, fascia d'ingaggio...). I difetti hanno Drawback.
     public class AffixDef
     {
         public string Name = "";
         public string Label = "";       // testo mostrato nella descrizione
         public string Stat = "";        // proprietà float di PLShipStats
-        public string Mode = "mul";     // "mul": percentuale sul valore della nave; "add": valore fisso
+        public string Key = "";         // bonus di stazione (in alternativa a Stat)
+        public string Mode = "mul";     // "mul": percentuale; "add": valore fisso
+        public string Cond = "";        // condizione di validità (vuota = sempre)
+        public bool Drawback;           // difetto degli oggetti instabili
         public float Min, Max;
         public int[] Slots = Array.Empty<int>(); // tipi di componente ammessi (ESlotType); vuoto = tutti
+    }
+
+    // Leggendari: pezzi unici con nome, storia ed effetti fissi; alcuni appartengono a un set.
+    public class LegendaryDef
+    {
+        public string Name = "", Lore = "", Set = "";
+        public int[] Slots = Array.Empty<int>();
+        public AffixDef[] Effects = Array.Empty<AffixDef>();
+    }
+
+    public class SetDef
+    {
+        public string Name = "";
+        public AffixDef[] Bonus2 = Array.Empty<AffixDef>(), Bonus3 = Array.Empty<AffixDef>(), Bonus4 = Array.Empty<AffixDef>();
     }
 
     public class RarityConfig
@@ -46,56 +66,33 @@ namespace Melchior
         public bool Enabled = true;
         public bool ColorNames = true;      // colora il grado nelle descrizioni (i titoli restano testo semplice)
         public string NameFormat = "{name} ({tier})";
+        public string LegendFormat = "«{legend}» ({tier})";
         public double Luck = 1.0;          // fortuna di base: >1 sposta le estrazioni verso i gradi alti
         public double LuckPerLevel = 0.04; // fortuna aggiunta per ogni livello base dell'oggetto
         public double LuckPerChaos = 0.05; // fortuna aggiunta per ogni punto di Caos della galassia
+        public int AnnounceFrom = 3;       // dal grado Sperimentale in su i ritrovamenti vengono annunciati
         public int[] Slots = { 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 16, 19, 20, 24, 25, 26, 28, 32, 33, 34 };
         public TierDef[] Tiers =
         {
-            new() { Name = "Standard",     Color = "#FFFFFF", Weight = 620, LevelBonus = 0, PriceMult = 1.0, Affixes = 0 },
-            new() { Name = "Raffinato",    Color = "#7CD992", Weight = 200, LevelBonus = 0, PriceMult = 1.1, Affixes = 1 },
-            new() { Name = "Avanzato",     Color = "#6FA8FF", Weight = 100, LevelBonus = 1, PriceMult = 1.15, Affixes = 1 },
-            new() { Name = "Sperimentale", Color = "#C58AF9", Weight = 45,  LevelBonus = 1, PriceMult = 1.3, Affixes = 2 },
-            new() { Name = "Prototipo",    Color = "#F2A65A", Weight = 20,  LevelBonus = 2, PriceMult = 1.4, Affixes = 2 },
-            new() { Name = "Reliquia",     Color = "#FFD75E", Weight = 10,  LevelBonus = 2, PriceMult = 1.6, Affixes = 3 },
-            new() { Name = "Anomalo",      Color = "#5EF0E0", Weight = 4,   LevelBonus = 3, PriceMult = 1.8, Affixes = 3 },
-            new() { Name = "Singolare",    Color = "#FF5E7A", Weight = 1,   LevelBonus = 4, PriceMult = 2.2, Affixes = 4 },
+            new() { Name = "Standard",     Color = "#D8D8D8", Weight = 600, LevelBonus = 0, PriceMult = 1.0,  Affixes = 0 },
+            new() { Name = "Raffinato",    Color = "#7CD992", Weight = 210, LevelBonus = 0, PriceMult = 1.1,  Affixes = 1 },
+            new() { Name = "Avanzato",     Color = "#6FA8FF", Weight = 105, LevelBonus = 1, PriceMult = 1.2,  Affixes = 2 },
+            new() { Name = "Sperimentale", Color = "#C58AF9", Weight = 48,  LevelBonus = 1, PriceMult = 1.35, Affixes = 2 },
+            new() { Name = "Prototipo",    Color = "#F2A65A", Weight = 22,  LevelBonus = 2, PriceMult = 1.5,  Affixes = 3 },
+            new() { Name = "Reliquia",     Color = "#FFD75E", Weight = 10,  LevelBonus = 2, PriceMult = 1.75, Affixes = 3 },
+            new() { Name = "Anomalo",      Color = "#5EF0E0", Weight = 4,   LevelBonus = 3, PriceMult = 2.0,  Affixes = 4, DrawbackChance = 0.6 },
+            new() { Name = "Leggendario",  Color = "#FF5E7A", Weight = 1,   LevelBonus = 4, PriceMult = 2.6,  Affixes = 4 },
         };
-        // Slots indica i tipi di componente (ESlotType) che possono avere l'affisso; vuoto = riserva universale,
-        // usata solo quando quelli specifici non bastano.
-        public AffixDef[] Affixes =
-        {
-            new() { Name = "a matrice di dilitio",        Label = "Potenza del reattore",         Stat = "ReactorOutputMax",         Min = 0.06f, Max = 0.15f, Slots = new[] { 3 } },
-            new() { Name = "a raffreddamento criogenico", Label = "Temperatura massima reattore", Stat = "ReactorTempMax",           Min = 0.05f, Max = 0.12f, Slots = new[] { 3 } },
-            new() { Name = "a emettitori multifasici",    Label = "Scudi massimi",                Stat = "ShieldsMax",               Min = 0.06f, Max = 0.15f, Slots = new[] { 1 } },
-            new() { Name = "rigenerativo",                Label = "Ricarica degli scudi",         Stat = "ShieldsChargeRateMax",     Min = 0.08f, Max = 0.20f, Slots = new[] { 1 } },
-            new() { Name = "in duranio rinforzato",       Label = "Integrità dello scafo",        Stat = "HullMax",                  Min = 0.06f, Max = 0.15f, Slots = new[] { 6, 16 } },
-            new() { Name = "ad armatura ablativa",        Label = "Corazza dello scafo",          Stat = "HullArmor",                Min = 0.05f, Max = 0.12f, Slots = new[] { 6, 16 } },
-            new() { Name = "a bobine ricalibrate",        Label = "Carica della curvatura",       Stat = "WarpChargeRate",           Min = 0.10f, Max = 0.25f, Slots = new[] { 2 } },
-            new() { Name = "a geometria variabile",       Label = "Raggio di curvatura",          Stat = "WarpRange",                Min = 0.08f, Max = 0.20f, Slots = new[] { 2 } },
-            new() { Name = "a impulso potenziato",        Label = "Spinta principale",            Stat = "ThrustOutputMax",          Min = 0.06f, Max = 0.15f, Slots = new[] { 9 } },
-            new() { Name = "con smorzatori inerziali",    Label = "Spinta inerziale",             Stat = "InertiaThrustOutputMax",   Min = 0.08f, Max = 0.18f, Slots = new[] { 25, 9 } },
-            new() { Name = "a manovra fine",              Label = "Spinta di manovra",            Stat = "ManeuverThrustOutputMax",  Min = 0.08f, Max = 0.18f, Slots = new[] { 26, 9 } },
-            new() { Name = "a banchi sincronizzati",      Label = "Danno delle torrette",         Stat = "TurretDamageFactor",       Min = 0.04f, Max = 0.10f, Slots = new[] { 10, 11, 24 } },
-            new() { Name = "a condensatori rapidi",       Label = "Carica delle torrette",        Stat = "TurretChargeFactor",       Min = 0.05f, Max = 0.12f, Slots = new[] { 10, 11, 24, 7 } },
-            new() { Name = "a dissipatori attivi",        Label = "Raffreddamento torrette",      Stat = "TurretCoolingSpeedFactor", Min = 0.08f, Max = 0.20f, Slots = new[] { 10, 11, 24 } },
-            new() { Name = "con sensori laterali",        Label = "Rilevamento EM",               Stat = "EMDetection",              Min = 0.10f, Max = 0.25f, Slots = new[] { 5, 32 } },
-            new() { Name = "a firewall adattivo",         Label = "Difesa informatica",           Stat = "CyberDefenseRating",       Min = 0.10f, Max = 0.25f, Slots = new[] { 7 } },
-            new() { Name = "a riciclo atmosferico",       Label = "Rigenerazione ossigeno",       Stat = "OxygenRefillRate",         Min = 0.15f, Max = 0.35f, Slots = new[] { 8 } },
-            new() { Name = "a campo di occultamento",     Label = "Firma EM",                     Stat = "EMSignature",              Min = -0.30f, Max = -0.12f, Slots = new[] { 33 } },
-            new() { Name = "schermato",                   Label = "Firma EM",                     Stat = "EMSignature",              Min = -0.12f, Max = -0.04f },
-            new() { Name = "a paratie rinforzate",        Label = "Integrità dello scafo",        Stat = "HullMax",                  Min = 0.02f, Max = 0.06f },
-            new() { Name = "con scudo ausiliario",        Label = "Scudi massimi",                Stat = "ShieldsMax",               Min = 0.02f, Max = 0.06f },
-            new() { Name = "a condotti EPS ottimizzati",  Label = "Potenza del reattore",         Stat = "ReactorOutputMax",         Min = 0.02f, Max = 0.05f },
-            new() { Name = "a subroutine difensive",      Label = "Difesa informatica",           Stat = "CyberDefenseRating",       Min = 0.04f, Max = 0.10f },
-        };
+        public AffixDef[] Affixes = Loot.DefaultAffixes();
+        public LegendaryDef[] Legendaries = Loot.DefaultLegendaries();
+        public SetDef[] Sets = Loot.DefaultSets();
     }
 
     // Etichetta associata a un componente vivo.
     public sealed class RarityTag
     {
-        public int Tier, Bonus, Slot;
-        public int[] Affix = Array.Empty<int>();
+        public int Tier, Bonus, Slot, Legend = -1;
+        public AffixDef[] Defs = Array.Empty<AffixDef>();   // affissi (o effetti del leggendario), difetti compresi
         public float[] Value = Array.Empty<float>();
     }
 
@@ -129,14 +126,15 @@ namespace Melchior
             catch (Exception e) { Plugin.L.LogError($"melchior.rarity.json non valido, uso i valori predefiniti: {e.Message}"); Cfg = new RarityConfig(); }
             if (Cfg.Tiers.Length == 0 || Cfg.Tiers.Length > 8) { Plugin.L.LogError("Servono da 1 a 8 gradi di rarità: uso i predefiniti."); Cfg = new RarityConfig(); }
             stats.Clear();
-            foreach (var a in Cfg.Affixes)
+            var all = Cfg.Affixes.Concat(Cfg.Legendaries.SelectMany(l => l.Effects)).Concat(Cfg.Sets.SelectMany(x => x.Bonus2.Concat(x.Bonus3).Concat(x.Bonus4)));
+            foreach (var a in all)
             {
-                if (stats.ContainsKey(a.Stat)) continue;
+                if (a.Stat.Length == 0 || stats.ContainsKey(a.Stat)) continue;
                 var acc = Accessor(a.Stat);
                 if (acc.get == null) Plugin.L.LogWarning($"Affisso '{a.Name}': statistica '{a.Stat}' sconosciuta, ignorato.");
                 else stats[a.Stat] = acc;
             }
-            Plugin.L.LogInfo($"Rarità: {Cfg.Tiers.Length} gradi, {stats.Count} statistiche per {Cfg.Affixes.Length} affissi ({(Cfg.Enabled ? "attiva" : "disattivata")}).");
+            Plugin.L.LogInfo($"Rarità: {Cfg.Tiers.Length} gradi, {stats.Count} statistiche, {Cfg.Affixes.Length} affissi, {Cfg.Legendaries.Length} leggendari, {Cfg.Sets.Length} set ({(Cfg.Enabled ? "attiva" : "disattivata")}).");
         }
 
         static readonly Dictionary<string, (Func<PLShipStats, float> get, Action<PLShipStats, float> set)> accessors = new();
@@ -163,28 +161,47 @@ namespace Melchior
         public static TierDef Tier(int i) => Cfg.Tiers[Math.Clamp(i, 0, Cfg.Tiers.Length - 1)];
         public static bool SlotAllowed(int slot) => Array.IndexOf(Cfg.Slots, slot) >= 0;
 
-        // Affissi: scelti in modo deterministico dall'identità dell'oggetto (hash senza livello nascosto).
+        public static bool Usable(AffixDef a) => a.Key.Length > 0 || stats.ContainsKey(a.Stat);
+        static string Target(AffixDef a) => a.Key.Length > 0 ? "k:" + a.Key : "s:" + a.Stat + "|" + a.Cond;
+
+        // Affissi: scelti in modo deterministico dall'identità dell'oggetto (hash senza livello nascosto),
+        // quindi ogni client ricalcola gli stessi. Il grado più alto diventa un leggendario, se ce n'è uno per quel tipo.
         public static RarityTag MakeTag(uint identity, int tier, int bonus)
         {
             int slot = (int)(identity & 0x3F);
             var tag = new RarityTag { Tier = tier, Bonus = bonus, Slot = slot };
-            int want = Tier(tier).Affixes;
-            if (want <= 0) return tag;
-            bool Usable(int i) => stats.ContainsKey(Cfg.Affixes[i].Stat);
-            var own = Enumerable.Range(0, Cfg.Affixes.Length).Where(i => Usable(i) && Array.IndexOf(Cfg.Affixes[i].Slots, slot) >= 0).ToList();
-            var any = Enumerable.Range(0, Cfg.Affixes.Length).Where(i => Usable(i) && Cfg.Affixes[i].Slots.Length == 0).ToList();
             uint s = Mix((identity & BodyMask) | ((uint)tier << 29));
-            var ids = new List<int>(); var vals = new List<float>(); var used = new HashSet<string>();
+            if (tier == Cfg.Tiers.Length - 1)
+            {
+                var leg = Enumerable.Range(0, Cfg.Legendaries.Length).Where(i => Array.IndexOf(Cfg.Legendaries[i].Slots, slot) >= 0).ToList();
+                if (leg.Count > 0)
+                {
+                    tag.Legend = leg[(int)(Mix(s ^ 0x1E6E) % (uint)leg.Count)];
+                    var eff = Cfg.Legendaries[tag.Legend].Effects.Where(Usable).ToArray();
+                    tag.Defs = eff; tag.Value = eff.Select(e => e.Min).ToArray();
+                    return tag;
+                }
+            }
+            int want = Tier(tier).Affixes;
+            var ids = new List<AffixDef>(); var vals = new List<float>(); var used = new HashSet<string>();
+            var own = Cfg.Affixes.Where(a => !a.Drawback && Usable(a) && Array.IndexOf(a.Slots, slot) >= 0).ToList();
+            var any = Cfg.Affixes.Where(a => !a.Drawback && Usable(a) && a.Slots.Length == 0).ToList();
             while (ids.Count < want && own.Count + any.Count > 0)
             {
                 var pool = own.Count > 0 ? own : any;
-                s = Mix(s); int k = (int)(s % (uint)pool.Count); int id = pool[k]; pool.RemoveAt(k);
-                var a = Cfg.Affixes[id];
-                if (!used.Add(a.Stat)) continue; // una sola modifica per statistica
+                s = Mix(s); int k = (int)(s % (uint)pool.Count); var a = pool[k]; pool.RemoveAt(k);
+                if (!used.Add(Target(a))) continue; // una sola modifica per bersaglio
                 s = Mix(s); float t = (s & 0xFFFF) / 65535f;
-                ids.Add(id); vals.Add(a.Min + (a.Max - a.Min) * t);
+                ids.Add(a); vals.Add(a.Min + (a.Max - a.Min) * t);
             }
-            tag.Affix = ids.ToArray(); tag.Value = vals.ToArray();
+            // oggetti instabili: un difetto, ma più potenza (i suoi affissi valgono di più)
+            if (Tier(tier).DrawbackChance > 0 && (Mix(s ^ 0xD3F) & 0xFFFF) / 65535.0 < Tier(tier).DrawbackChance)
+            {
+                for (int i = 0; i < vals.Count; i++) vals[i] *= 1.25f;
+                var bad = Cfg.Affixes.Where(a => a.Drawback && Usable(a) && !used.Contains(Target(a))).ToList();
+                if (bad.Count > 0) { s = Mix(s ^ 0xBAD); var a = bad[(int)(s % (uint)bad.Count)]; s = Mix(s); ids.Add(a); vals.Add(a.Min + (a.Max - a.Min) * ((s & 0xFFFF) / 65535f)); }
+            }
+            tag.Defs = ids.ToArray(); tag.Value = vals.ToArray();
             return tag;
         }
 
@@ -226,29 +243,14 @@ namespace Melchior
         public static string Colored(int tier, string text) =>
             Cfg.ColorNames ? $"<color={Tier(tier).Color}>{text}</color>" : text;
 
-        public static string Describe(RarityTag tag)
-        {
-            var sb = new StringBuilder();
-            sb.Append(Colored(tag.Tier, Tier(tag.Tier).Name));
-            if (tag.Bonus > 0) sb.Append($" (+{tag.Bonus} liv.)");
-            for (int i = 0; i < tag.Affix.Length; i++)
-            {
-                var a = Cfg.Affixes[tag.Affix[i]];
-                string v = a.Mode == "add" ? $"{tag.Value[i]:+0.#;-0.#}" : $"{tag.Value[i] * 100:+0;-0}%";
-                sb.Append($"\n{a.Label} {v} — {a.Name}");
-            }
-            return sb.ToString();
-        }
+        public static string Describe(RarityTag tag) => Loot.Describe(tag);
 
-        public static void Apply(PLShipStats s, RarityTag tag)
+        // Applica una statistica (i bonus di stazione li raccoglie Loot).
+        public static void ApplyStat(PLShipStats s, AffixDef a, float value)
         {
-            for (int i = 0; i < tag.Affix.Length; i++)
-            {
-                var a = Cfg.Affixes[tag.Affix[i]];
-                if (!stats.TryGetValue(a.Stat, out var acc)) continue;
-                float cur = acc.get(s);
-                acc.set(s, a.Mode == "add" ? cur + tag.Value[i] : cur * (1f + tag.Value[i]));
-            }
+            if (!stats.TryGetValue(a.Stat, out var acc)) return;
+            float cur = acc.get(s);
+            acc.set(s, a.Mode == "add" ? cur + value : cur * Math.Max(0.05f, 1f + value));
         }
 
         // Tutte le implementazioni di un metodo nella gerarchia dei componenti.
@@ -342,7 +344,9 @@ namespace Melchior
             var tag = Rarity.Get(__instance.Pointer);
             if (tag == null) return;
             // I titoli del gioco non interpretano i tag colore: nel nome va solo testo.
-            __result = Rarity.Cfg.NameFormat.Replace("{name}", __result).Replace("{tier}", Rarity.Tier(tag.Tier).Name);
+            __result = tag.Legend >= 0
+                ? Rarity.Cfg.LegendFormat.Replace("{legend}", Rarity.Cfg.Legendaries[tag.Legend].Name).Replace("{name}", __result).Replace("{tier}", Rarity.Tier(tag.Tier).Name)
+                : Rarity.Cfg.NameFormat.Replace("{name}", __result).Replace("{tier}", Rarity.Tier(tag.Tier).Name);
         }
     }
 
@@ -377,17 +381,7 @@ namespace Melchior
         {
             Rarity.CalcCalls++;
             Stations.Apply(__instance);
-            if (Rarity.TagCount == 0) return;
-            var list = __instance.m_AllComponents;
-            if (list == null) return;
-            for (int i = 0, n = list.Count; i < n; i++)
-            {
-                var c = list[i];
-                if (c == null) continue;
-                var tag = Rarity.Get(c.Pointer);
-                if (tag == null || tag.Affix.Length == 0 || !c.IsEquipped) continue;
-                Rarity.Apply(__instance, tag);
-            }
+            try { Loot.ApplyShip(__instance); } catch (Exception e) { Plugin.L.LogWarning("Bottino: " + e.Message); }
         }
     }
 

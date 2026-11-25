@@ -247,8 +247,23 @@ namespace Melchior
         public static readonly string[] ProtocolNames = { "SQUADRE DANNI", "FUOCO MIRATO", "SCANSIONE PRIORITARIA", "DISCIPLINA TERMICA" };
         public static readonly List<string> Journal = new();
         // ultimo messaggio del server, mostrato a schermo per qualche secondo
-        public static string Notice = "", NoticeTitle = ""; public static float NoticeUntil;
-        static void ShowNotice(string title, string text) { NoticeTitle = title; Notice = text; NoticeUntil = Time.realtimeSinceStartup + 10f; }
+        public static string Notice = "", NoticeTitle = "", NoticeColor = "#F2A65A"; public static float NoticeUntil;
+        // Gli annunci arrivati a breve distanza si mettono in coda: ognuno resta a schermo almeno 4 secondi.
+        static readonly Queue<(string title, string text, string color)> notices = new();
+        static void ShowNotice(string title, string text, string color = "#F2A65A")
+        {
+            float now = Time.realtimeSinceStartup;
+            if (Notice.Length > 0 && now < NoticeUntil && NoticeUntil - now > 6f) { if (notices.Count < 8) notices.Enqueue((title, text, color)); return; }
+            NoticeTitle = title; Notice = text; NoticeColor = color; NoticeUntil = now + 10f;
+        }
+        // chiamato dall'interfaccia: quando l'annuncio corrente ha avuto il suo tempo, passa al successivo
+        public static void NextNotice()
+        {
+            float now = Time.realtimeSinceStartup;
+            if (notices.Count > 0 && (now >= NoticeUntil || NoticeUntil - now <= 6f)) { var n = notices.Dequeue(); NoticeTitle = n.title; Notice = n.text; NoticeColor = n.color; NoticeUntil = now + 10f; }
+        }
+        // Ritrovamento di un pezzo raro: solo su questa macchina (ognuna vede i pezzi arrivare nella propria stiva).
+        public static void ShowFound(string tier, string name, string color) => ShowNotice("RITROVAMENTO · " + tier, name, color);
 
         // Messaggio a tutto l'equipaggio, a schermo: compare qui e viene inviato agli altri giocatori.
         public static void Announce(string title, string text)
@@ -346,17 +361,18 @@ namespace Melchior
                 if ((int)Get(aid, "scx_tgt") == vid + 1)
                 {
                     float scan = Get(aid, "scx_scan"); int want = (int)Get(aid, "wpx_sub");
-                    if (scan >= 100f) dmg *= 1f + Cfg.Sensors.WeakPointDamage / 100f;
+                    if (scan >= 100f) dmg *= 1f + Cfg.Sensors.WeakPointDamage / 100f + Loot.Bonus(aid, "weakpoint");
                     if (dg.Enabled && want > 0 && want <= SysIds.Length && scan >= Cfg.Sensors.SubsystemAt)
-                    { sub = want; factor = dg.FocusFactor * (Protocol(aid, 1) ? 1f + Cfg.Protocols.FocusBoost / 100f : 1f); dmg *= 1f - dg.FocusHullPenalty / 100f; }
+                    { sub = want; factor = dg.FocusFactor * (Protocol(aid, 1) ? 1f + Cfg.Protocols.FocusBoost / 100f : 1f) * (1f + Loot.Bonus(aid, "subsystem")); dmg *= 1f - dg.FocusHullPenalty / 100f; }
                 }
                 var me = MyShip; ours = me != null && me.ShipID == aid;
             }
             if (state.Count > 0 && Get(vid, "plx_evade") > 0) dmg *= 1f - Cfg.Pilot.EvadeIncoming / 100f;
+            dmg *= 1f - Math.Clamp(Loot.Bonus(vid, "incoming"), 0f, 0.5f);
             if (!dg.Enabled) return;
             bool host = false; try { host = PhotonNetwork.inRoom && PhotonNetwork.isMasterClient; } catch { }
             float max = vs.HullMax; if (!host || max <= 1f) return;
-            float pts = dmg / max * 100f * dg.PointsPerHullPercent * factor; if (pts < 0.05f) return;
+            float pts = dmg / max * 100f * dg.PointsPerHullPercent * factor * (1f - Math.Clamp(Loot.Bonus(vid, "sys_resist"), -1f, 0.7f)); if (pts < 0.05f) return;
             if (sub == 0) sub = 1 + simRng.Next(SysIds.Length);
             string key = "dmx_" + SysIds[sub - 1]; float before = Get(vid, key), after = Math.Min(100f, before + pts);
             SetLocal(vid, key, after);
@@ -519,6 +535,7 @@ namespace Melchior
                 AddJournal("Server: " + text); ShowNotice("MESSAGGIO DAL SERVER", text);
                 Plugin.L.LogInfo("[server] " + text); Panels.RefreshAll(); return;
             }
+            if (msg.StartsWith("req|officina|")) { Loot.OnRequest(msg); return; }
             if (msg.StartsWith("note|"))
             {
                 var np = msg.Split('|', 3); if (np.Length == 3) ShowNotice(np[1], np[2]); return;
@@ -568,7 +585,8 @@ namespace Melchior
                 if (ship == ownId) { SimulateScan(own, ship); SimulateEngage(own, ship); }
                 float stress = Get(ship, "core_stress"), s0 = stress, lockLeft = Get(ship, "core_lock"), align = Get(ship, "core_align");
                 float load = Get(ship, "eng_overdrive") / 100f * k.PerOverdrive + Cfg.Controls.Where(c => c.Group == "eps").Sum(c => Math.Max(0f, Get(ship, c.Id))) * k.PerEpsNotch;
-                stress = Math.Clamp(stress + load - k.Cooling - ((int)Get(ship, "cpx_dir") == 3 ? Cfg.Captain.EfficiencyCooling : 0f) - (Protocol(ship, 3) ? Cfg.Protocols.ThermalCooling : 0f), 0f, 100f);
+                load *= 1f - Math.Clamp(Loot.Bonus(ship, "core_load"), -1f, 0.6f);
+                stress = Math.Clamp(stress + load - k.Cooling * (1f + Loot.Bonus(ship, "core_cooling")) - ((int)Get(ship, "cpx_dir") == 3 ? Cfg.Captain.EfficiencyCooling : 0f) - (Protocol(ship, 3) ? Cfg.Protocols.ThermalCooling : 0f), 0f, 100f);
                 if (lockLeft > 0) SetLocal(ship, "core_lock", Math.Max(0f, lockLeft - 1));
                 if (align > 0) SetLocal(ship, "core_align", Math.Max(0f, align - 1));
                 if (stress >= 100f && lockLeft <= 0)
@@ -586,7 +604,7 @@ namespace Melchior
                 {
                     var c = Cfg.Captain; float ini = Get(ship, "cpx_ini"), tired = Get(ship, "cpx_tired"); int dirNow = (int)Get(ship, "cpx_dir");
                     if (tired > 0) SetLocal(ship, "cpx_tired", Math.Max(0f, tired - 1));
-                    ini += c.Regen - (dirNow > 0 ? c.OrderDrain : 0f) - (Cfg.Protocols.Enabled ? Bits((int)Get(ship, "cpx_proto")) * Cfg.Protocols.RegenCost : 0f);
+                    ini += c.Regen * (1f + Loot.Bonus(ship, "initiative")) - (dirNow > 0 ? c.OrderDrain : 0f) - (Cfg.Protocols.Enabled ? Bits((int)Get(ship, "cpx_proto")) * Cfg.Protocols.RegenCost : 0f);
                     if (ini <= 0.01f && dirNow > 0) { SetLocal(ship, "cpx_dir", 0); SetLocal(ship, "cpx_tired", c.TiredSeconds); }
                     SetLocal(ship, "cpx_ini", Math.Clamp(ini, 0.01f, 100f));
                 }
@@ -607,7 +625,7 @@ namespace Melchior
                 if (Get(ship, "scx_band") > 0)
                 {
                     int alert = 1; try { var mine = MyShip; if (mine != null && mine.ShipID == ship) alert = mine.m_AlertLevel; } catch { }
-                    float rate = alert >= 2 ? Cfg.Science.DecayRed : alert == 1 ? Cfg.Science.DecayYellow : Cfg.Science.DecayCalm;
+                    float rate = (alert >= 2 ? Cfg.Science.DecayRed : alert == 1 ? Cfg.Science.DecayYellow : Cfg.Science.DecayCalm) * (1f - Math.Clamp(Loot.Bonus(ship, "harmonic_decay"), 0f, 0.85f));
                     float eff = Get(ship, "scx_eff"); if (eff > 0) SetLocal(ship, "scx_eff", Math.Max(0f, eff - rate));
                 }
             }
@@ -622,7 +640,7 @@ namespace Melchior
             {
                 float dm = Get(ship, "dmx_" + SysIds[i]); if (dm <= 0) continue;
                 int teams = (t1 == i + 1 ? 1 : 0) + (t2 == i + 1 ? 1 : 0);
-                float nd = Math.Max(0f, dm - dg.PassiveRepair - teams * dg.RepairPerTeam * boost);
+                float nd = Math.Max(0f, dm - dg.PassiveRepair - teams * dg.RepairPerTeam * boost * (1f + Loot.Bonus(ship, "repair_speed")));
                 SetLocal(ship, "dmx_" + SysIds[i], nd);
                 if (nd <= 0 && teams > 0)
                 {
@@ -648,7 +666,7 @@ namespace Melchior
             }
             if (tid == 0 || Get(ship, "scx_scanon") <= 0 || scan >= 100f) return;
             float rate = sn.ScanPerSecond * (1f + Get(ship, "sci_gain") / 100f * sn.GainBoost / 100f + Math.Max(-2f, Get(ship, "eps_sensors")) * sn.EpsBoost / 100f)
-                * (Protocol(ship, 2) ? 1f + Cfg.Protocols.ScanBoost / 100f : 1f) * (1f - Get(ship, "dmx_sensors") / 100f * 0.7f);
+                * (Protocol(ship, 2) ? 1f + Cfg.Protocols.ScanBoost / 100f : 1f) * (1f - Get(ship, "dmx_sensors") / 100f * 0.7f) * (1f + Loot.Bonus(ship, "scan_speed"));
             float ns = Math.Min(100f, scan + Math.Max(0.2f, rate));
             SetLocal(ship, "scx_scan", ns);
             if (scan < sn.SubsystemAt && ns >= sn.SubsystemAt && ns < 100f) LogEvent(ship, "Scienza: sistemi del bersaglio identificati");
@@ -659,7 +677,7 @@ namespace Melchior
         {
             var en = Cfg.Engage; int band = (int)Get(ship, "plx_band"); if (!en.Enabled || band <= 0) return;
             bool inb = BandOf(TargetDistance(mine)) == band; float pos = Get(ship, "plx_pos");
-            float np = Math.Clamp(pos + (inb ? en.PosGain : -en.PosLoss), 0f, 100f);
+            float np = Math.Clamp(pos + (inb ? en.PosGain * (1f + Loot.Bonus(ship, "engage_gain")) : -en.PosLoss), 0f, 100f);
             if (Math.Abs(np - pos) > 0.001f) SetLocal(ship, "plx_pos", np);
             if (pos < 100f && np >= 100f) { LogEvent(ship, "Pilota: posizione d'ingaggio consolidata"); Service.Add("pilota.posizioni", 1); Initiative(ship, Cfg.Captain.GainPerSuccess); }
         }
@@ -829,6 +847,7 @@ namespace Melchior
         public long ChargeStart = -1, BurstReady;
         public long EvadeReady, BurnReady, RouteReady, RouteAxisStart; public int RouteAxis = -1; public bool RouteShown; public readonly float[] RouteErr = new float[3];
         public long BypassReady;
+        public int WorkSel = -1, WorkPage; public string WorkArmed = ""; public long WorkArmedUntil; public readonly List<int> WorkRows = new();
     }
 
     static class Panels
@@ -951,6 +970,7 @@ namespace Melchior
             names.AddRange(Stations.Cfg.Controls.Where(c => c.Station == station).Select(c => c.Page).Distinct());
             if (station == 4 && Stations.Cfg.Core.Enabled) names.Add("Nucleo");
             if (station == 4 && Stations.Cfg.Damage.Enabled) names.Add("Danni");
+            if (station == 4 && Rarity.Cfg.Enabled) names.Add("Officina");
             if (station == 2 && Stations.Cfg.Science.Enabled) { names.Add("Scudi"); names.Add("Analisi"); }
             if (station == 2 && Stations.Cfg.Sensors.Enabled) names.Add("Sensori");
             if (station == 3 && Stations.Cfg.Weapons.Enabled) { names.Add("Tiro"); names.Add("Raffica"); }
@@ -976,6 +996,7 @@ namespace Melchior
                     case "Manovre": BuildManeuvers(sk); break;
                     case "Rotta": BuildRoute(sk); break;
                     case "Danni": BuildDamage(sk); break;
+                    case "Officina": BuildWorkshop(sk); break;
                     case "Sensori": BuildSensors(sk); break;
                     case "Bersaglio": BuildTarget(sk); break;
                     case "Ingaggio": BuildEngage(sk); break;
@@ -1546,6 +1567,95 @@ namespace Melchior
             });
         }
 
+        static string Hex(string color) => "[" + color.TrimStart('#') + "]";
+
+        // Officina: pezzi in stiva ordinati per grado; si sceglie una riga, poi si smonta o si potenzia (conferma col secondo clic).
+        static void BuildWorkshop(Kit k)
+        {
+            const int Rows = 8;
+            k.Section(-4f, "Officina di bordo", "Pezzi in stiva. Scegline uno, poi smontalo o tenta il potenziamento.");
+            var rowBtn = new (UITexture box, UILabel label)[Rows]; var rowName = new UILabel[Rows]; var rowInfo = new UILabel[Rows];
+            for (int i = 0; i < Rows; i++)
+            {
+                float y = -44f - i * 24f;
+                rowBtn[i] = k.Button("wk|sel|" + i, Kit.L, y, Kit.W, 21f, "", cPanel, cWhite, 11);
+                rowName[i] = k.Text(Kit.L + 8f, y - 3f, 330f, "", 11, cWhite);
+                rowInfo[i] = k.Text(Kit.L + 340f, y - 3f, 124f, "", 10, cGrey, NGUIText.Alignment.Right);
+            }
+            k.Button("wk|prev", Kit.L, -238f, 60f, 20f, "<", cPanel, cWhite, 12); k.Button("wk|next", Kit.L + 66f, -238f, 60f, 20f, ">", cPanel, cWhite, 12);
+            var page = k.Text(Kit.L + 134f, -240f, 200f, "", 10, cGrey);
+            k.Rule(-264f);
+            var det = new UILabel[5]; for (int i = 0; i < det.Length; i++) det[i] = k.Text(Kit.L, -272f - i * 17f, Kit.W, "", 10, cWhite);
+            var bSalv = k.Button("wk|smonta", Kit.L, -360f, 150f, 22f, "SMONTA", cPanel, cWhite, 12);
+            var bUp = k.Button("wk|potenzia", Kit.L + 158f, -360f, 150f, 22f, "POTENZIA", k.accent, cInk, 12);
+            var sets = k.Text(Kit.L + 316f, -363f, 156f, "", 9, cGrey, NGUIText.Alignment.Right);
+
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var pg = k.pg; var ship = Stations.MyShip; pg.WorkRows.Clear();
+                var cargo = new List<PLShipComponent>(); var equipped = new List<PLShipComponent>();
+                try
+                {
+                    var all = ship?.MyStats?.m_AllComponents;
+                    if (all != null) for (int i = 0; i < all.Count; i++) { var c = all[i]; if (c == null) continue; if (c.InCargoSlot()) cargo.Add(c); else if (c.IsEquipped) equipped.Add(c); }
+                }
+                catch { }
+                int Tier(PLShipComponent c) => Rarity.Get(c.Pointer)?.Tier ?? 0;
+                cargo = cargo.OrderByDescending(Tier).ThenBy(c => c.Name).ToList();
+                int pages = Math.Max(1, (cargo.Count + Rows - 1) / Rows); pg.WorkPage = Math.Clamp(pg.WorkPage, 0, pages - 1);
+                for (int i = 0; i < Rows; i++)
+                {
+                    int idx = pg.WorkPage * Rows + i; var c = idx < cargo.Count ? cargo[idx] : null;
+                    bool on = rowBtn[i].box.gameObject.activeSelf; if (on != (c != null)) { rowBtn[i].box.gameObject.SetActive(c != null); }
+                    if (c == null) { rowName[i].text = ""; rowInfo[i].text = ""; pg.WorkRows.Add(-1); continue; }
+                    var tag = Rarity.Get(c.Pointer); var t = Rarity.Tier(tag?.Tier ?? 0); pg.WorkRows.Add(c.NetID);
+                    rowBtn[i].box.color = c.NetID == pg.WorkSel ? Color.Lerp(cPanel, cWhite, 0.22f) : cPanel;
+                    rowName[i].text = Hex(t.Color) + c.Name + End;
+                    rowInfo[i].text = $"liv. {c.GetLevel()}   {t.Name.ToLowerInvariant()}";
+                }
+                page.text = cargo.Count == 0 ? Grey + "La stiva è vuota." + End : $"pagina {pg.WorkPage + 1} di {pages} · {cargo.Count} pezzi in stiva";
+                var sel = cargo.FirstOrDefault(c => c.NetID == pg.WorkSel);
+                for (int i = 0; i < det.Length; i++) det[i].text = "";
+                if (sel == null) { pg.WorkSel = -1; det[0].text = Grey + "Nessun pezzo scelto." + End; }
+                else
+                {
+                    var tag = Rarity.Get(sel.Pointer); int tier = tag?.Tier ?? 0; var t = Rarity.Tier(tier);
+                    det[0].text = Hex(t.Color) + sel.Name + End + Grey + $"   {t.Name}" + (tag != null && tag.Bonus > 0 ? $", +{tag.Bonus} liv." : "") + End;
+                    int line = 1;
+                    if (tag != null) for (int i = 0; i < tag.Defs.Length && line < 4; i++, line++)
+                    {
+                        var a = tag.Defs[i]; string v = a.Mode == "add" ? $"{tag.Value[i]:+0;-0}" : $"{tag.Value[i] * 100:+0;-0}%";
+                        string cond = a.Cond.Length > 0 && Loot.CondLabels.TryGetValue(a.Cond, out var cl) ? " (" + cl + ")" : "";
+                        det[line].text = (a.Drawback ? Bad + "Difetto: " : Good) + (a.Label.Length > 0 ? a.Label : a.Key) + " " + v + cond + End;
+                    }
+                    int max = Rarity.Cfg.Tiers.Length - 2;
+                    det[4].text = $"Smontaggio: +{Loot.SalvageValue(sel)} crediti   ·   " + (tier >= max ? Grey + "non potenziabile oltre questo grado" + End
+                        : $"Potenziamento: {Loot.UpgradeCost(sel, tier)} crediti, riuscita {Loot.UpgradeChance(tier) * 100:0}%" + (tier >= 3 ? Bad + ", se fallisce il pezzo va perso" + End : ""));
+                }
+                bool armedS = pg.WorkArmed == "smonta" && now < pg.WorkArmedUntil, armedU = pg.WorkArmed == "potenzia" && now < pg.WorkArmedUntil;
+                bSalv.label.text = armedS ? "CONFERMA" : "SMONTA"; bSalv.box.color = armedS ? cBad : cPanel; bSalv.label.color = armedS ? cInk : cWhite;
+                bUp.label.text = armedU ? "CONFERMA" : "POTENZIA"; bUp.box.color = armedU ? cBad : k.accent;
+                // set dei leggendari montati
+                var setCount = equipped.Select(c => Rarity.Get(c.Pointer)).Where(x => x != null && x.Legend >= 0).Select(x => Rarity.Cfg.Legendaries[x.Legend].Set).Where(x => x.Length > 0).GroupBy(x => x).ToList();
+                sets.text = setCount.Count == 0 ? "" : string.Join("  ", setCount.Select(g => $"{g.Key} {g.Count()}/4"));
+            });
+        }
+
+        static void WorkshopClick(PanelPage pg, string[] a)
+        {
+            long now = clock.ElapsedMilliseconds;
+            switch (a[2])
+            {
+                case "sel": { int i = int.Parse(a[3]); if (i < pg.WorkRows.Count && pg.WorkRows[i] >= 0) { pg.WorkSel = pg.WorkRows[i]; pg.WorkArmed = ""; } return; }
+                case "prev": pg.WorkPage--; return;
+                case "next": pg.WorkPage++; return;
+                case "smonta": case "potenzia":
+                    if (pg.WorkSel < 0) { Say(pg, "Scegli prima un pezzo della stiva."); return; }
+                    if (pg.WorkArmed != a[2] || now > pg.WorkArmedUntil) { pg.WorkArmed = a[2]; pg.WorkArmedUntil = now + 4000; Say(pg, "Premi di nuovo per confermare."); return; }
+                    pg.WorkArmed = ""; Loot.Request(a[2], pg.WorkSel); pg.WorkSel = -1; return;
+            }
+        }
+
         static void DamageClick(PanelPage pg, string[] a, int id)
         {
             var c = Stations.Cfg.Damage; long now = clock.ElapsedMilliseconds;
@@ -1643,7 +1753,7 @@ namespace Melchior
         {
             var c = Stations.Cfg.Core; var w = Stations.Cfg.Weapons;
             if (pg.VentOrder.Length > 0 && now > pg.VentDeadline) { pg.VentOrder = ""; Stations.Set(id, "core_stress", Math.Min(100f, Stations.Get(id, "core_stress") + c.VentFailPenalty)); Say(pg, "Spurgo fallito: tempo scaduto."); }
-            if (ChargeLevel(pg, now) >= w.ChargeMax) Overload(pg, id, now);
+            if (ChargeLevel(pg, now) >= w.ChargeMax + Loot.Bonus(id, "overload_margin")) Overload(pg, id, now);
         }
 
         public static void Refresh(PanelPage pg)
@@ -1814,9 +1924,9 @@ namespace Melchior
             {
                 float lvl = ChargeLevel(pg, now);
                 if (lvl < 0) { Say(pg, "Niente da scaricare: avvia la carica."); return; }
-                if (lvl > w.OverloadAt) { Overload(pg, id, now); return; }
+                if (lvl > w.OverloadAt + Loot.Bonus(id, "overload_margin")) { Overload(pg, id, now); return; }
                 pg.ChargeStart = -1; pg.BurstReady = now + w.BurstCooldown * 1000L;
-                float pct = (float)Math.Round(w.BurstMaxDamage * lvl / 100f);
+                float pct = (float)Math.Round(w.BurstMaxDamage * lvl / 100f * (1f + Loot.Bonus(id, "burst_damage")));
                 Stations.Set(id, "wpx_burstp", pct); Stations.Set(id, "wpx_burst", w.BurstSeconds);
                 Stations.Set(id, "core_stress", Math.Min(100f, Stations.Get(id, "core_stress") + w.CoreStressPerBurst * lvl / 100f));
                 Service.Add("armi.raffiche", 1); if (lvl >= 80f) Stations.Initiative(id, Stations.Cfg.Captain.GainPerSuccess); Stations.LogEvent(id, $"Armi: raffica al {lvl:0}%"); Say(pg, $"Raffica al {lvl:0}%: danno +{pct:0}%.");
@@ -1830,7 +1940,7 @@ namespace Melchior
             if (a[2] == "evade")
             {
                 if (now < pg.EvadeReady) { Say(pg, "Manovra evasiva in ricarica."); return; }
-                pg.EvadeReady = now + k.EvadeCooldown * 1000L; Stations.Set(id, "plx_evade", k.EvadeSeconds); Service.Add("pilota.manovre", 1); Stations.LogEvent(id, "Pilota: manovra evasiva"); Say(pg, "Manovra evasiva!"); return;
+                pg.EvadeReady = now + (long)(k.EvadeCooldown * 1000L * (1f - Math.Clamp(Loot.Bonus(id, "evade_cooldown"), 0f, 0.7f))); Stations.Set(id, "plx_evade", k.EvadeSeconds); Service.Add("pilota.manovre", 1); Stations.LogEvent(id, "Pilota: manovra evasiva"); Say(pg, "Manovra evasiva!"); return;
             }
             if (a[2] == "burn")
             {
@@ -1915,6 +2025,7 @@ namespace Melchior
             else if (a[1] == "plt") PilotClick(pg, a, mine.ShipID);
             else if (a[1] == "cap") CaptainClick(pg, a, mine.ShipID);
             else if (a[1] == "dmg") DamageClick(pg, a, mine.ShipID);
+            else if (a[1] == "wk") WorkshopClick(pg, a);
             else if (a[1] == "c")
             {
                 var c = Stations.Find(a[2]); if (c == null) return true; float v = Stations.Get(mine.ShipID, c.Id);

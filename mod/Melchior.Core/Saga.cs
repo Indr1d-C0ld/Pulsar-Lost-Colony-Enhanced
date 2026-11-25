@@ -202,6 +202,7 @@ namespace Melchior
             if (success && fam == "recupero" && !IsChain(id) && st.arc == null && rng.NextDouble() < 0.5) Later("scoperta", 1, 3);
             if (success && fam == "eco" && rng.NextDouble() < 0.5) Later("paradosso", 1, 3);
             if (!success && fam == "contatto" && !IsChain(id)) Later("rappresaglia", 1, 3, mainName, "", tier);
+            if (success) { var got = Loot.Grant(Stations.MyShip, 1 + tier / 2, Math.Min(6, 3 + tier), "missione"); if (got != null) Director.Notify("RICOMPENSA", $"Il committente aggiunge un pezzo alla stiva: {got.Name}."); }
             Chronicle($"{Missions.Label(family)} «{mainName}»: {(success ? "riuscita" : "fallita")}{(dOn != 0 ? $", onore {dOn:+0;-0}" : "")}{(dInf != 0 ? $", infamia +{dInf}" : "")}");
             // archi
             if (chainIds.TryGetValue(id, out var c) && st.arc != null && Arcs[c.arc].Id == st.arc.arc && st.arc.node == c.node) Advance(c, success);
@@ -222,7 +223,7 @@ namespace Melchior
                 return;
             }
             bool won = success && (def.Id != "silenzio" || c.node == 2);
-            if (won) { st.archiCompiuti++; st.onore += 2; } else st.archiPerduti++;
+            if (won) { st.archiCompiuti++; st.onore += 2; var got = Loot.Grant(Stations.MyShip, 4, 6, "arco"); if (got != null) Director.Notify("RICOMPENSA", $"Per la conclusione della storia: {got.Name}."); } else st.archiPerduti++;
             Chronicle($"{title}: {(won ? "conclusa con successo" : "conclusa male")}.");
             Director.Notify("CRONACA", won ? $"{title} si chiude. Se ne parlerà nei porti per molto tempo." : $"{title} si chiude, non come speravamo.");
             Service.Add(won ? "cronaca.archi.compiuti" : "cronaca.archi.perduti", 1);

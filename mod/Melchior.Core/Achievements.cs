@@ -110,7 +110,7 @@ namespace Melchior
             Unlock("MEL_RARITY_FIRST");
             if (tag.Tier >= 4) Unlock("MEL_RARITY_PROTO");
             if (tag.Tier >= 7) Unlock("MEL_RARITY_SINGULAR");
-            if (tag.Affix.Length >= 4) Unlock("MEL_AFFIX_FOUR");
+            if (tag.Defs.Count(d => !d.Drawback) >= 4) Unlock("MEL_AFFIX_FOUR");
             AddFlag("MEL_RARITY_SET", tag.Tier);
         }
     }
@@ -222,13 +222,15 @@ namespace Melchior
                 GUI.Label(new Rect(x + 92, y + 28, w - 100, 28), toast.Title, title);
                 GUI.Label(new Rect(x + 92, y + 56, w - 100, 40), toast.Desc, wrap);
             }
+            Stations.NextNotice();
             if (Stations.Notice.Length > 0 && Time.realtimeSinceStartup < Stations.NoticeUntil)
             {
                 float w = Math.Min(760, Screen.width - 48), x = (Screen.width - w) / 2, y = 28;
                 float th = Math.Max(22f, body.CalcHeight(new GUIContent(Stations.Notice), w - 34)), h = th + 40;
                 GUI.Box(new Rect(x, y, w, h), "", box);
-                GUI.DrawTexture(new Rect(x, y, 8, h), Texture2D.whiteTexture, ScaleMode.StretchToFill, false, 0, new Color(0.95f, 0.65f, 0.35f, 1f), 0, 0);
-                GUI.Label(new Rect(x + 22, y + 8, w - 34, 18), "<color=#F2A65A>" + Stations.NoticeTitle + "</color>", small);
+                Color bar = ColorUtility.TryParseHtmlString(Stations.NoticeColor, out var nc) ? nc : new Color(0.95f, 0.65f, 0.35f, 1f);
+                GUI.DrawTexture(new Rect(x, y, 8, h), Texture2D.whiteTexture, ScaleMode.StretchToFill, false, 0, bar, 0, 0);
+                GUI.Label(new Rect(x + 22, y + 8, w - 34, 18), $"<color={Stations.NoticeColor}>" + Stations.NoticeTitle + "</color>", small);
                 GUI.Label(new Rect(x + 22, y + 28, w - 34, th + 4), Stations.Notice, body);
             }
             if (DebugTexture != null && Plugin.DevConsoleOn.Value) GUI.DrawTextureWithTexCoords(new Rect(0, 0, 720, 720), DebugTexture, DebugCoords);

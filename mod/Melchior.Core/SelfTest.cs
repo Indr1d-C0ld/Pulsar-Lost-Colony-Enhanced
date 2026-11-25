@@ -85,7 +85,7 @@ namespace Melchior
                     // Stesso hash, stessi affissi.
                     var twin = PLShipComponent.CreateShipComponentFromHash((int)h, null);
                     var a = Rarity.Get(c.Pointer); var b = Rarity.Get(twin.Pointer);
-                    if (t > 0) Check(a != null && b != null && a.Affix.SequenceEqual(b.Affix) && a.Value.SequenceEqual(b.Value) && a.Affix.Length == Math.Min(def.Affixes, a.Affix.Length), $"tipo {slot} grado {t}: affissi deterministici ({a?.Affix.Length})");
+                    if (t > 0) Check(a != null && b != null && a.Defs.SequenceEqual(b.Defs) && a.Value.SequenceEqual(b.Value) && a.Legend == b.Legend, $"tipo {slot} grado {t}: affissi deterministici ({a?.Defs.Length}{(a != null && a.Legend >= 0 ? ", leggendario " + Rarity.Cfg.Legendaries[a.Legend].Name : "")})");
                 }
             }
 

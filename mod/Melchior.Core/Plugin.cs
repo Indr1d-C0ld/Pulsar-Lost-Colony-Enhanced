@@ -162,6 +162,7 @@ namespace Melchior
             RivalForce.Tick();
             Missions.Tick();
             Saga.Tick();
+            Loot.Tick();
             Panels.Tick();
             StationBots.Tick();
             Service.Tick();

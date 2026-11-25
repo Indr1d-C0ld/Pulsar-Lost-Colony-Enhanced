@@ -131,6 +131,45 @@ namespace Melchior
                     return Director.Describe();
                 }
                 case "rival": return RivalForce.Describe();
+                case "inv": // confronto degli elenchi di componenti della nave
+                {
+                    var me = Stations.MyShip; if (me?.MyStats == null) return "nessuna nave"; var st3 = me.MyStats; var sb = new System.Text.StringBuilder();
+                    sb.Append($"m_AllComponents {st3.m_AllComponents?.Count} · AllSlotItems {st3.AllSlotItems?.Count} · powered {st3.m_AllPoweredComponents?.Count}");
+                    var items = st3.AllSlotItems; if (items != null) for (int i = 0; i < items.Count && i < 30; i++) { var it = items[i]; var c = it?.TryCast<PLShipComponent>(); sb.Append($"\n      {it?.NetID} {it?.Name} slot {it?.ActualSlotType} equip {c?.IsEquipped} carico {c?.InCargoSlot()}"); }
+                    return sb.ToString();
+                }
+                case "loot": // loot list | loot give <grado> [quanti] | loot equip <netid> | loot bonus
+                {
+                    var me = Stations.MyShip; if (me?.MyStats == null) return "nessuna nave";
+                    var st2 = me.MyStats; var all = st2.m_AllComponents;
+                    if (a.Length > 2 && a[1] == "give") { int t = int.Parse(a[2]), n = a.Length > 3 ? int.Parse(a[3]) : 1; var got = new System.Collections.Generic.List<string>(); for (int i = 0; i < n; i++) { var c = Loot.Grant(me, t, t, "console"); if (c != null) got.Add(c.Name); } return "aggiunti: " + string.Join(", ", got); }
+                    if (a.Length > 2 && a[1] == "equip")
+                    {
+                        var c = st2.GetComponentFromNetID(int.Parse(a[2])); if (c == null) return "pezzo non trovato";
+                        PLShipComponent cur = null; for (int i = 0; i < all.Count; i++) { var x = all[i]; if (x != null && x.IsEquipped && !x.InCargoSlot() && (x.getHash() & 0x3F) == (c.getHash() & 0x3F)) { cur = x; break; } }
+                        if (cur == null) return "nessun pezzo montato dello stesso tipo";
+                        st2.Swap(c, cur); return $"montato {c.Name} al posto di {cur.Name}";
+                    }
+                    if (a.Length > 3 && a[1] == "forge") // loot forge <netid> <grado>: dà un grado a un pezzo già montato (solo per le prove)
+                    {
+                        var c = st2.GetComponentFromNetID(int.Parse(a[2])); if (c == null) return "pezzo non trovato";
+                        uint h = c.getHash(); Rarity.Register(c.Pointer, Rarity.MakeTag(h & Rarity.BodyMask, int.Parse(a[3]), 0));
+                        return $"{c.Name} ora ha grado {a[3]}: {Rarity.Describe(Rarity.Get(c.Pointer)).Replace("\n", " | ")}";
+                    }
+                    if (a.Length > 1 && a[1] == "bonus")
+                    {
+                        var keys = Loot.KeyLabels.Keys.Where(k => Loot.Bonus(me, k) != 0).Select(k => $"{k}={Loot.Bonus(me, k):0.###}");
+                        return $"bonus di stazione: {string.Join(" ", keys.DefaultIfEmpty("nessuno"))} | scudi {st2.ShieldsMax:0} scafo {st2.HullMax:0} reattore {st2.ReactorOutputMax:0} danno {st2.TurretDamageFactor:0.###} firmaEM {st2.EMSignature:0.##}";
+                    }
+                    var sb = new System.Text.StringBuilder();
+                    for (int i = 0; i < all.Count; i++)
+                    {
+                        var c = all[i]; if (c == null) continue; var tag = Rarity.Get(c.Pointer); if (tag == null && !c.InCargoSlot() && !(a.Length > 1 && a[1] == "all")) continue;
+                        sb.Append($"\n      {c.NetID,4} {(c.InCargoSlot() ? "stiva " : c.IsEquipped ? "montato" : "altro ")} {c.Name} [{Rarity.Tier(tag?.Tier ?? 0).Name}]");
+                        if (tag != null) sb.Append(" " + string.Join("; ", tag.Defs.Select((d, k) => (d.Drawback ? "DIFETTO " : "") + (d.Key.Length > 0 ? d.Key : d.Stat) + (d.Cond.Length > 0 ? "[" + d.Cond + "]" : "") + "=" + tag.Value[k].ToString("0.###"))));
+                    }
+                    return sb.Length == 0 ? "niente da mostrare" : sb.ToString();
+                }
                 case "saga": // saga: stato; saga start [silenzio|taglia|colonia]: inizia un arco; saga due: esegue subito la prossima conseguenza
                 {
                     var me = Stations.MyShip; if (a.Length > 1 && me == null) return "nessuna nave";
