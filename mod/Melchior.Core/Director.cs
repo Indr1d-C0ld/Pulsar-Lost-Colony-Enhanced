@@ -36,6 +36,8 @@ namespace Melchior
             new() { Id = "sovraccarico", Weight = 1.2f },
             new() { Id = "interferenza", Weight = 1f },
             new() { Id = "microfratture", Weight = 1f },
+            new() { Id = "nemesi", Weight = 1.6f, NeedsOpenSpace = true },
+            new() { Id = "intercettazione", Weight = 2f, NeedsOpenSpace = true },
         };
         // navi per fascia di potenza: la fascia è potenza / 4
         public string[][] ShipTiers =
@@ -68,6 +70,9 @@ namespace Melchior
                 else File.WriteAllText(path, JsonSerializer.Serialize(Cfg, opt));
             }
             catch (Exception e) { Plugin.L.LogError("melchior.director.json non valido, uso i valori predefiniti: " + e.Message); Cfg = new DirectorConfig(); }
+            // eventi aggiunti nelle versioni successive: entrano anche nei file di configurazione già esistenti
+            var missing = new DirectorConfig().Events.Where(d => !Cfg.Events.Any(e => e.Id == d.Id)).ToArray();
+            if (missing.Length > 0) { Cfg.Events = Cfg.Events.Concat(missing).ToArray(); try { File.WriteAllText(path, JsonSerializer.Serialize(Cfg, opt)); } catch { } }
             Plugin.L.LogInfo($"Direttore: {Cfg.Events.Length} eventi ({(Cfg.Enabled ? "attivo" : "spento")}).");
         }
 
@@ -168,7 +173,7 @@ namespace Melchior
 
         static float NewCalm(float power)
         {
-            float f = 1f - Math.Clamp((power - 5f) * Cfg.FasterWhenStrong, 0f, 0.5f);
+            float f = (1f - Math.Clamp((power - 5f) * Cfg.FasterWhenStrong, 0f, 0.5f)) * Factions.CalmFactor();
             return (float)(Cfg.CalmMin + rng.NextDouble() * (Cfg.CalmMax - Cfg.CalmMin)) * f;
         }
 
@@ -236,6 +241,8 @@ namespace Melchior
                     return true;
                 }
                 case "rivali": return RivalForce.Spawn(ship, power);
+                case "nemesi": return Nemesis.Appear(ship, power);
+                case "intercettazione": return Factions.Intercept(ship, power);
                 case "missione": return (Saga.State.arc == null && rng.NextDouble() < 0.35 && Saga.StartArc(power)) || Contracts.PostUrgent(power);
                 case "tempesta":
                     Hurt(id, "sensors", 35 + power); Hurt(id, "shields", 15 + power / 2);

@@ -7,7 +7,7 @@
 ![Server](https://img.shields.io/badge/server-Node.js%2020-3c873a)
 ![Multigiocatore](https://img.shields.io/badge/cooperativo-LAN%20senza%20Steam-d97706)
 
-Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viva e in omaggio alla fantascienza televisiva: postazioni di plancia in stile **LCARS** con vere procedure da eseguire, un **direttore** che dà ritmo alla partita, **missioni procedurali** e **archi narrativi** con conseguenze che durano, **fazioni rivali** che crescono anche mentre non giocate, un sistema di **rarità del bottino**, **obiettivi** e **stato di servizio**. Il tutto **completamente in italiano** e **senza Steam**, con un server cooperativo proprio per la rete di casa: il **Subspace Relay**.
+Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viva e in omaggio alla fantascienza televisiva: postazioni di plancia in stile **LCARS** con vere procedure da eseguire, un **direttore** che dà ritmo alla partita, **missioni procedurali** e **archi narrativi** con conseguenze che durano, una galassia con **guerre, crisi, reputazione e personaggi ricorrenti** che si ricordano di voi, **fazioni rivali** che crescono anche mentre non giocate, un sistema di **rarità del bottino**, **obiettivi** e **stato di servizio**. Il tutto **completamente in italiano** e **senza Steam**, con un server cooperativo proprio per la rete di casa: il **Subspace Relay**.
 
 ![Le cinque stazioni di plancia](docs/pannelli-tutte-le-stazioni.png)
 
@@ -45,6 +45,9 @@ Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viv
 | **Direttore** | Misura la tensione a bordo e alterna calma, allerta, crisi e respiro; sceglie eventi in proporzione alla potenza dell'equipaggio |
 | **Missioni** | 570 missioni nel sistema nativo del gioco: 9 famiglie × 5 livelli × 6 varianti, più 3 archi narrativi |
 | **Galassia viva** | Guerra fra fazioni sulla mappa stellare, flotte con un'agenda (convogli, pattuglie, predoni), bacheca dei contratti, notiziario del subspazio, tempo che passa anche senza giocatori, fazioni rivali persistenti, onore e infamia, conseguenze ritardate |
+| **Reputazione** | Da guerra aperta a leggenda presso ogni fazione: prezzi dei negozi, pattuglie che vi intercettano, rifugi e rifornimenti, compensi; legata alla reputazione nativa del gioco e salvata |
+| **Personaggi ricorrenti** | Pirati, trafficanti e comandanti ribelli con soprannome, grado e tratti, che ricordano ogni incontro, tornano sfregiati dalle capsule di salvataggio e lasciano eredi in cerca di vendetta; taglie con rotta tracciata |
+| **Crisi galattiche** | Epidemia, guerra aperta, corsa all'anomalia, blocco delle rotte: eventi in tre fasi che cambiano la galassia e si risolvono (o no) con l'equipaggio |
 | **Bottino** | 8 gradi di rarità, 72 affissi (statistici, di stazione, condizionali, difetti), 24 leggendari con nome e storia, 4 set, Officina per smontare e potenziare |
 | **Carriera** | 47 obiettivi interni (con le icone originali), 14 gradi, 5 specializzazioni, classifica di rete |
 | **Lingua** | Traduzione italiana completa: 10.690 stringhe, glossario e controlli automatici |
@@ -58,7 +61,7 @@ Ogni ruolo ha la sua postazione **fisica** a bordo: le regolazioni non stanno in
 
 | Stazione | Schede | In sintesi |
 |---|---|---|
-| **Capitano** | Assetti · Ordini · Quadro · Protocolli · Bacheca · Giornale | Assetti di bordo con stato d'allarme, iniziativa di comando alimentata dai successi dell'equipaggio, ordini di plancia (battaglia, danni, regime, silenzio), interventi d'emergenza, protocolli permanenti, quadro di situazione e giornale di bordo condiviso |
+| **Capitano** | Assetti · Ordini · Quadro · Protocolli · Bacheca · Giornale · Galassia | Assetti di bordo con stato d'allarme, iniziativa di comando alimentata dai successi dell'equipaggio, ordini di plancia (battaglia, danni, regime, silenzio), interventi d'emergenza, protocolli permanenti, quadro di situazione, giornale di bordo condiviso, bacheca dei contratti e quadro della galassia (reputazione, crisi, ricercati) |
 | **Pilota** | Regolazioni · Manovre · Rotta · Ingaggio | Assetto dei propulsori, ugelli che si sbilanciano e vanno tenuti in asse, manovra evasiva (riduce i danni subiti), spinta d'emergenza, deriva silenziosa, calcolo di rotta su tre assi, fascia di distanza d'ingaggio da tenere |
 | **Scienza** | Regolazioni · Scudi · Analisi · Sensori | Armonica degli scudi che il nemico impara col tempo, impulso attivo dei sensori, decrittazione della firma nemica (soluzione tattica alle armi), scansione del bersaglio con dati, sistemi e punto debole |
 | **Armi** | Regolazioni · Tiro · Raffica · Bersaglio | Dottrina di tiro che matura, puntamento su scudi o scafo, sovraccarico dei condensatori (scaricare prima del segno rosso), fuoco mirato sui sottosistemi nemici |
@@ -117,7 +120,45 @@ La galassia non aspetta l'equipaggio: si muove per conto suo, anche mentre nessu
 
 **Il tempo passa davvero.** La cronaca ricorda quando la galassia è stata giocata l'ultima volta. Al rientro arriva un riassunto: il fronte è avanzato in proporzione alle ore trascorse («Infetti +10 settori, Alliance of Gentlemen −11»), sono maturate notizie nuove, e la fazione rivale è cresciuta sul server.
 
-Tutto vive sull'host ed è salvato su Balthasar insieme alla cronaca della galassia; la console di amministrazione lo mostra nella sezione Galassie.
+### Reputazione, personaggi ricorrenti e crisi
+
+**Reputazione presso le fazioni.** Ogni fazione giudica l'equipaggio su una scala da −100 a +100, in sette livelli: *guerra aperta, ostilità, diffidenza, neutralità, cordialità, alleanza, leggenda*. Sale con i contratti onorati e con le crisi risolte; scende con i contratti mancati, lavorando per i nemici della fazione e aprendo il fuoco sulle sue navi. Le conseguenze sono concrete:
+
+- **prezzi**: il mod guida la reputazione nativa del gioco, che decide i prezzi dei negozi del settore (fino a −40% presso chi vi venera, fino a +65% presso chi vi odia) e viene sincronizzata a tutti i giocatori; il gioco originale non la salvava, ora resta nella cronaca della galassia;
+- **intercettazioni**: nello spazio di una fazione ostile il direttore manda pattuglie che vi intimano di fermarvi (o che, in guerra aperta, sparano senza avvisare); con la reputazione dell'equipaggio rivelata dal pannello Comunicazioni anche le navi native diventano ostili;
+- **rifugio**: nello spazio di una fazione alleata la calma dura di più e, all'arrivo, una stazione amica ripara lo scafo e fornisce crediti;
+- **lavoro**: chi vi considera nemici non vi offre contratti; chi vi stima paga di più.
+
+**Personaggi ricorrenti.** Nella galassia girano sempre quattro nomi noti nei porti — *pirati*, *trafficanti* e *comandanti ribelli* di una fazione — con un soprannome, un grado da 1 a 5 e due tratti che cambiano la loro nave (corazzatura pesante, ferocia, motori truccati, gusto dell'azzardo, contromisure antimissile, gregari fedeli, capsula sempre pronta, memoria lunga). Si spostano di settore in settore, compiono imprese raccontate dal notiziario e salgono di grado. Quando vi incontrano vi salutano ricordando l'ultima volta:
+
+- se fuggite in curvatura, se ne vantano nei porti e diventano più forti;
+- se abbattete la loro ammiraglia possono salvarsi in una **capsula**: tornano con un nuovo soprannome («Mezzafaccia», «Fenice», «Due Volte»…), un grado in più e il rancore di chi è stato umiliato; alla terza volta non c'è capsula che tenga;
+- se muoiono, spesso qualcuno al loro fianco ne **raccoglie l'eredità** e giura vendetta contro la vostra nave.
+
+Le **taglie** compaiono sulla bacheca (anche da una diceria fondata del notiziario) con l'ultima posizione nota: accettata una taglia, la **rotta viene tracciata sulla mappa stellare** per tutto l'equipaggio e si aggiorna se il bersaglio si sposta. Arrivati nel settore, il bersaglio si fa vedere.
+
+**Crisi galattiche.** Ogni otto-quattordici salti la galassia entra in una crisi in tre fasi:
+
+| Crisi | Cosa succede | Come aiutare | Se nessuno interviene |
+|---|---|---|---|
+| **Epidemia** | Gli Infetti dilagano da un focolaio | Bonificare il focolaio (rotta tracciata), abbattere navi infette, contratti di soccorso | Gli Infetti si prendono i settori intorno |
+| **Guerra aperta** | Due fazioni confinanti rompono la tregua | Schierarsi: contratti per una parte, navi dell'altra abbattute | Vince la più forte, con o senza di voi |
+| **Corsa all'anomalia** | Un segnale sconosciuto da un settore lontano | Arrivare per primi e tenere il campo contro le spedizioni di fazione | Una fazione si prende la sorgente e ne esce rafforzata |
+| **Blocco delle rotte** | I predoni raddoppiano, i convogli restano nei porti | Contratti della Gilda, flotte di predoni disperse | Le colonie restano senza rifornimenti |
+
+Risolvere una crisi porta un pezzo raro, onore e riconoscenza; anche durante l'assenza dei giocatori le crisi avanzano di fase.
+
+<table>
+<tr>
+<td><img src="docs/scheda-galassia.png" alt="Scheda Galassia del capitano"></td>
+<td><img src="docs/rotta-tracciata.png" alt="Rotta tracciata sulla mappa stellare"></td>
+</tr>
+<tr><td align="center">Scheda Galassia: reputazione, crisi, ricercati</td><td align="center">Rotta tracciata verso il settore della crisi</td></tr>
+</table>
+
+Tutto vive sull'host ed è salvato su Balthasar insieme alla cronaca della galassia; la console di amministrazione lo mostra nella sezione Galassie (reputazione, crisi in corso e concluse, personaggi con grado, rancore e memoria).
+
+![Console di amministrazione: reputazione, crisi e personaggi](docs/console-galassie-crisi.png)
 
 ---
 
@@ -385,7 +426,8 @@ Ancora da verificare o da fare:
 - l'avvio su Windows del pacchetto (provato finora sotto Wine);
 - salvataggio e caricamento con una missione in corso; chi entra a partita già iniziata;
 - alcuni testi ancora in inglese (per esempio *Press [F8] to skip warp* e alcuni nomi di componenti);
-- l'economia per settore: i prezzi dei negozi si calcolano sul client, quindi servirebbe il mod anche lì;
+- i prezzi dei negozi in funzione della reputazione: il mod scrive il valore nativo e il gioco lo sincronizza, ma lo sconto non è ancora stato osservato aprendo un negozio;
+- le crisi e le taglie in una sessione lunga con salti veri dati dal pilota (provate con salti comandati da console);
 - la galassia viva in una partita lunga con più giocatori (provata finora con prove guidate da console);
 - HTTPS per la console di amministrazione (oggi è HTTP sulla rete di casa).
 

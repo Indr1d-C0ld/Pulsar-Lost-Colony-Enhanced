@@ -25,6 +25,8 @@ namespace Melchior
         public List<ContractOffer> board = new(); public Dictionary<string, int> trust = new(); public ContractOffer contract;
         public List<NewsItem> news = new();
         public WarState war = new(); public List<FleetInfo> fleets = new();
+        public List<Figure> figures = new(); public Dictionary<string, int> standing = new(); public CrisisState crisis; public List<string> crises = new();
+        public int jumps;     // salti compiuti in questa galassia (contati dal mod)
         public long lastPlayed; // ultima volta che la galassia è stata giocata (ms UTC)
     }
 
@@ -132,7 +134,7 @@ namespace Melchior
 
         // ---- stato per galassia
         static int Seed() { try { return (int)PLServer.Instance.GalaxySeed; } catch { return int.MinValue; } }
-        static int Jumps() { try { return (int)PLServer.Instance.NumJumps; } catch { return 0; } }
+        static int Jumps() { try { return Obscured.Jumps(); } catch { return 0; } }
 
         public static void Tick()
         {
@@ -140,9 +142,9 @@ namespace Melchior
             {
                 if (!PhotonNetwork.inRoom || !PhotonNetwork.isMasterClient || PLServer.Instance == null) return;
                 int s = Seed(); if (s == int.MinValue) return;
-                if (s != seed) { seed = s; st = new SagaState(); loaded = false; Load(); }
+                if (s != seed) { seed = s; st = new SagaState(); loaded = false; Obscured.Reset(); Load(); }
                 long now = clock.ElapsedMilliseconds;
-                if (loaded && OfflineHours > 0) { double h = OfflineHours; OfflineHours = 0; News.Digest(h); GalaxyWar.Offline(h); }
+                if (loaded && OfflineHours > 0) { double h = OfflineHours; OfflineHours = 0; News.Digest(h); GalaxyWar.Offline(h); Nemesis.Offline(h); Crises.Offline(h); }
                 if (loaded && now >= nextKeepAlive) { nextKeepAlive = now + 300000; dirty = true; } // segna la partita come giocata anche senza eventi
                 if (dirty && loaded && !busy && now >= nextSave) { nextSave = now + 3000; dirty = false; Save(); }
             }
@@ -159,7 +161,7 @@ namespace Melchior
                     var txt = await http.GetStringAsync($"{Service.Base}/api/saga?seed={s}");
                     var got = JsonSerializer.Deserialize<SagaState>(txt, json);
                     if (got != null && s == seed && got.lastPlayed > 0) OfflineHours = (DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - got.lastPlayed) / 3600000.0;
-                    if (got != null && s == seed) { got.pending ??= new(); got.log ??= new(); got.recentArcs ??= new(); got.board ??= new(); got.trust ??= new(); got.news ??= new(); got.war ??= new(); got.war.momentum ??= new(); got.war.counts ??= new(); got.fleets ??= new(); st = got; }
+                    if (got != null && s == seed) { got.pending ??= new(); got.log ??= new(); got.recentArcs ??= new(); got.board ??= new(); got.trust ??= new(); got.news ??= new(); got.war ??= new(); got.war.momentum ??= new(); got.war.counts ??= new(); got.fleets ??= new(); got.figures ??= new(); foreach (var f in got.figures) f.traits ??= new(); got.standing ??= new(); got.crises ??= new(); st = got; }
                     Plugin.L.LogInfo($"[cronaca] galassia {s}: onore {st.onore}, infamia {st.infamia}, arco {(st.arc == null ? "nessuno" : st.arc.arc + " parte " + (st.arc.node + 1))}, conseguenze in attesa {st.pending.Count}");
                 }
                 catch (Exception e) { Plugin.L.LogWarning("Cronaca non letta dal server (resta in memoria): " + e.Message); }
@@ -179,7 +181,7 @@ namespace Melchior
             });
         }
 
-        static void Chronicle(string text)
+        public static void Chronicle(string text)
         {
             st.log.Add(new SagaEntry { t = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(), text = text }); if (st.log.Count > 80) st.log.RemoveAt(0);
             dirty = true;
@@ -315,7 +317,8 @@ namespace Melchior
         // Influenza della fama sugli eventi del direttore.
         public static float Weight(string ev) => ev switch
         {
-            "taglia" or "rivali" => 1f + st.infamia / 5f,
+            "taglia" or "rivali" or "nemesi" => 1f + st.infamia / 5f,
+            "intercettazione" => Factions.InterceptWeight(),
             "missione" => 1f + st.onore / 12f,
             _ => 1f,
         };

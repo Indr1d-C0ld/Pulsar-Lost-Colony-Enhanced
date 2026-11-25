@@ -219,7 +219,7 @@ http.createServer((req, res) => {
   if (route === '/api/saga' && post) {
     const seed = Number(q.get('seed'));
     return body(req, (o) => {
-      if (!Number.isInteger(seed) || !o || typeof o !== 'object' || Array.isArray(o) || JSON.stringify(o).length > 60000) return json({ ok: false }, 400);
+      if (!Number.isInteger(seed) || !o || typeof o !== 'object' || Array.isArray(o) || JSON.stringify(o).length > 200000) return json({ ok: false }, 400);
       const prev = sagas[seed] || { first: Date.now() };
       if (Array.isArray(o.log) && (!prev.state || JSON.stringify(prev.state.log) !== JSON.stringify(o.log))) {
         const last = o.log[o.log.length - 1]; if (last && last.text) log(`[cronaca] galassia ${seed}: ${String(last.text).slice(0, 120)}`);

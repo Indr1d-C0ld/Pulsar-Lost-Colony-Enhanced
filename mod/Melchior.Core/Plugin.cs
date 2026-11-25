@@ -162,11 +162,16 @@ namespace Melchior
             RivalForce.Tick();
             Missions.Tick();
             Saga.Tick();
+            Obscured.Tick();
             Loot.Tick();
             Contracts.Tick();
             News.Tick();
             GalaxyWar.Tick();
             Fleets.Tick();
+            Factions.Tick();
+            Nemesis.Tick();
+            Crises.Tick();
+            GalaxyView.Tick();
             Panels.Tick();
             StationBots.Tick();
             Service.Tick();

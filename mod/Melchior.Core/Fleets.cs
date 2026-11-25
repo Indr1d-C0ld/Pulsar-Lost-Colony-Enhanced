@@ -70,7 +70,7 @@ namespace Melchior
             if (!Host || !Saga.Loaded || Stations.MyShip == null) return;
             int seed = 0; try { seed = (int)PLServer.Instance.GalaxySeed; } catch { }
             if (seed != lastSeed) { lastSeed = seed; Relink(); }
-            int j = 0; try { j = (int)PLServer.Instance.NumJumps; } catch { }
+            int j = 0; try { j = Obscured.Jumps(); } catch { }
             bool jumped = lastJumps >= 0 && j != lastJumps; lastJumps = j;
             // le navi delle flotte in vista portano il loro nome (il gioco ne darebbe uno generico)
             foreach (var (name, p) in live) try { if (p != null && Alive(p.ShipInstance)) Director.Names[p.ShipInstance.ShipID] = name; } catch { }
@@ -84,12 +84,19 @@ namespace Melchior
             bool warp = false; try { warp = Stations.MyShip.InWarp; } catch { }
             var cur = PLServer.GetCurrentSector(); var notes = new List<string>();
             // popolazione: 3 convogli, 2 pattuglie, 2 gruppi di predoni
-            foreach (var (kind, want) in new[] { ("convoglio", 3), ("pattuglia", 2), ("predoni", 2) })
+            foreach (var (kind, want) in new[] { ("convoglio", Crises.Cur?.kind == "blocco" ? 1 : 3), ("pattuglia", 2), ("predoni", 2 + Crises.RaiderBonus) })
                 if (State.Count(x => x.kind == kind) < want) Create(kind);
             foreach (var f in State.ToList())
             {
                 if (!live.TryGetValue(f.name, out var psi) || psi == null) { State.Remove(f); continue; }
-                if (psi.IsShipDestroyed) { State.Remove(f); live.Remove(f.name); notes.Add($"{Label(f)} non risponde più."); if (f.kind == "convoglio") News.Post("commercio", $"Perso {Label(f)}."); continue; }
+                if (psi.IsShipDestroyed)
+                {
+                    bool here = cur != null && psi.MyCurrentSector != null && psi.MyCurrentSector.ID == cur.ID;
+                    State.Remove(f); live.Remove(f.name); notes.Add($"{Label(f)} non risponde più.");
+                    if (f.kind == "convoglio") News.Post("commercio", $"Perso {Label(f)}.");
+                    if (f.kind == "predoni" && here) { News.Post("flotta", $"I predoni dell'«{f.name}» sono stati dispersi dalla «{(string)Stations.MyShip.ShipName}»."); Crises.OnRaidersDown(); }
+                    continue;
+                }
                 if (Alive(psi.ShipInstance)) continue; // è nel settore dell'equipaggio: si muove da sola
                 var at = psi.MyCurrentSector; if (at == null) continue;
                 // i predoni puntano al convoglio più vicino
@@ -133,7 +140,8 @@ namespace Melchior
                 else if (raiders.Count > 0 && convoys.Count > 0)
                 {
                     var c = convoys[0]; Remove(c);
-                    News.Post("commercio", $"Il convoglio «{c.name}» è stato assaltato dai predoni dell'«{raiders[0].name}» nel settore {g.Key}. Nessun superstite.");
+                    string boss = Nemesis.Blame();
+                    News.Post("commercio", $"Il convoglio «{c.name}» è stato assaltato dai predoni dell'«{raiders[0].name}» nel settore {g.Key}{(boss != null ? $", al comando di {boss}" : "")}. Nessun superstite.");
                     if (Stations.MyShip != null) Contracts.PostLead(Director.Power(Stations.MyShip, out _, out _), 0); // taglia sui predoni
                 }
             }

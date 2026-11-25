@@ -137,10 +137,37 @@ namespace Melchior
                     var sm = UnityEngine.Object.FindObjectOfType<PLStarmap>(); if (sm == null) return "mappa non trovata";
                     sm.OpenStarmapToSector(sec); return $"mappa aperta sul settore {sec.ID} (fazione {GalaxyWar.Name(sec.MySPI.Faction)}, vicini {string.Join(",", System.Linq.Enumerable.Range(0, sec.Neighbors.Count).Select(i => sec.Neighbors[i].ID + ":" + sec.Neighbors[i].MySPI.Faction))})";
                 }
+                case "nem": // nem: personaggi; nem appear [nome]: compare subito; nem life [passi]: vita nella galassia
+                    if (a.Length > 1 && a[1] == "appear") return Nemesis.Force(a.Length > 2 ? string.Join(" ", a.Skip(2)) : null);
+                    if (a.Length > 1 && a[1] == "life") return Nemesis.ForceLife(a.Length > 2 ? int.Parse(a[2]) : 1);
+                    return Nemesis.Describe();
+                case "crisis": // crisis: stato; crisis start [tipo]; crisis stage; crisis win|lose; crisis arrive (porta la crisi nel settore corrente)
+                    if (a.Length > 1 && a[1] == "start") return Crises.Start(a.Length > 2 ? a[2] : null);
+                    if (a.Length > 1 && a[1] == "stage") return Crises.ForceStage();
+                    if (a.Length > 1 && (a[1] == "win" || a[1] == "lose")) return Crises.ForceEnd(a[1] == "win");
+                    if (a.Length > 1 && a[1] == "here" && Crises.Cur != null) { Crises.Cur.sector = PLServer.GetCurrentSector().ID; Crises.Cur.spawned = false; return "settore della crisi: qui"; }
+                    return Crises.Describe();
+                case "rep": // rep: reputazione; rep set <fazione> <valore>
+                    if (a.Length > 3 && a[1] == "set") return Factions.Set(int.Parse(a[2]), int.Parse(a[3]));
+                    return Factions.Describe();
+                case "bounty": // bounty: mette subito una taglia sulla bacheca; bounty here: sposta il bersaglio della taglia in corso nel settore corrente
+                    if (a.Length > 1 && a[1] == "here") { var c = Saga.State.contract; var f = c == null ? null : Nemesis.Find(c.target); if (f == null) return "nessuna taglia in corso"; f.sector = c.sector = PLServer.GetCurrentSector().ID; return $"{f.Full} ora qui"; }
+                    return Contracts.ForceBounty();
+                case "jump": // jump [settore]: salto immediato verso un settore (predefinito: il primo vicino)
+                {
+                    var me = Stations.MyShip; var cur = PLServer.GetCurrentSector(); if (me == null || cur == null) return "nessuna nave";
+                    int to = a.Length > 1 ? int.Parse(a[1]) : cur.Neighbors[0].ID;
+                    me.WarpTargetID = to; PLServer.Instance.CPEI_HandleActivateWarpDrive(me.ShipID, to, PLNetworkManager.Instance.LocalPlayer.GetPlayerID());
+                    return $"salto verso il settore {to}";
+                }
+                case "jumps": return $"salti: gioco {(int)PLServer.Instance.NumJumps}, mod {Obscured.Jumps()}";
+                case "skip": { var me = Stations.MyShip; if (me == null) return "nessuna nave"; me.SkipWarp(); return "salto accelerato"; } // come premere F8 nel tunnel di curvatura
+                case "course": if (a.Length == 1) return Course.Describe(); if (a.Length > 1 && a[1] == "clear") { Course.Clear(); return "rotta cancellata"; } Course.Plot(int.Parse(a[1])); return "meta aggiunta: " + a[1];
                 case "war": if (a.Length > 3 && a[1] == "flip") return GalaxyWar.Flip(int.Parse(a[2]), int.Parse(a[3])); return a.Length > 1 && a[1] == "step" ? GalaxyWar.ForceStep() + " || " + GalaxyWar.Describe() : GalaxyWar.Describe(); // guerra fra fazioni
                 case "fleets": return a.Length > 1 && a[1] == "step" ? Fleets.Step() : a.Length > 1 && a[1] == "near" ? Fleets.Approach(a.Length > 2 ? a[2] : null) : Fleets.Describe(); // flotte con un'agenda
                 case "news": // news: ultime notizie; news diceria: ne genera una subito; news bacheca: stato della bacheca
                     if (a.Length > 1 && a[1] == "diceria") { News.Rumor(); }
+                    if (a.Length > 2 && a[1] == "accetta") { var o = Contracts.Board[int.Parse(a[2])]; Contracts.Request("accetta", o.id); return "accetto: " + o.title; }
                     if (a.Length > 1 && a[1] == "bacheca") return string.Join("\n      ", Contracts.Board.Select(o => $"{o.family} «{o.title}» {o.issuer} {o.reward} Cr scade {o.expires}{(o.urgent ? " URGENTE" : "")}").Prepend("bacheca:"));
                     return string.Join("\n      ", News.Items.TakeLast(8).Select(n => $"[{n.cat}] {n.text}").Prepend("notiziario:"));
                 case "inv": // confronto degli elenchi di componenti della nave

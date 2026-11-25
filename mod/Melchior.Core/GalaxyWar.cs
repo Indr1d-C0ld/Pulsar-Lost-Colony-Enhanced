@@ -30,7 +30,7 @@ namespace Melchior
             return f switch { 0 => "Colonial Union", 1 => "Alliance of Gentlemen", 2 => "W.D. Corporation", 4 => "Infetti", 5 => "Polytechnic Federation", _ => "nessuno" };
         }
         static string SectorName(PLSectorInfo s) { string n = s.Name; return string.IsNullOrEmpty(n) || int.TryParse(n, out _) ? $"il settore {s.ID}" : $"il settore {s.ID} «{n}»"; }
-        static float Mom(int f) => W.momentum.TryGetValue(f.ToString(), out var m) ? m : 50f;
+        public static float Mom(int f) => W.momentum.TryGetValue(f.ToString(), out var m) ? m : 50f;
         static void AddMom(int f, float d) => W.momentum[f.ToString()] = Math.Clamp(Mom(f) + d, 5f, 95f);
 
         static List<PLSectorInfo> Sectors()
@@ -80,12 +80,13 @@ namespace Melchior
                 var atks = front.Select(x => x.atk).Distinct().ToList(); w.offensive = atks[rng.Next(atks.Count)]; w.offensiveTicks = 5; AddMom(w.offensive, 15);
                 events.Add($"Offensiva lungo il fronte: {Name(w.offensive)} attacca su più settori.");
             }
-            int attempts = 1 + (w.offensive >= 0 ? 2 : 0);
+            int attempts = 1 + (w.offensive >= 0 ? 2 : 0) + (Crises.Cur != null && Crises.Cur.kind is "epidemia" or "guerra" ? 1 : 0);
             for (int k = 0; k < attempts; k++)
             {
                 // l'attaccante si sceglie in proporzione allo slancio
-                var byAtk = front.GroupBy(x => x.atk).ToList(); double tot = byAtk.Sum(g => Mom(g.Key) * (g.Key == w.offensive ? 2 : 1)), r = rng.NextDouble() * tot;
-                var grp = byAtk[^1]; foreach (var g in byAtk) { r -= Mom(g.Key) * (g.Key == w.offensive ? 2 : 1); if (r <= 0) { grp = g; break; } }
+                double Wt(int f) => Mom(f) * (f == w.offensive ? 2 : 1) * Crises.WarBias(f);
+                var byAtk = front.GroupBy(x => x.atk).ToList(); double tot = byAtk.Sum(g => Wt(g.Key)), r = rng.NextDouble() * tot;
+                var grp = byAtk[^1]; foreach (var g in byAtk) { r -= Wt(g.Key); if (r <= 0) { grp = g; break; } }
                 var pick = grp.ElementAt(rng.Next(grp.Count()));
                 double chance = Math.Clamp(0.5 + (Mom(pick.atk) - (pick.def >= 0 ? Mom(pick.def) : 30)) / 160.0, 0.15, 0.85);
                 if (rng.NextDouble() > chance) { AddMom(pick.atk, -0.5f); continue; }
@@ -114,7 +115,7 @@ namespace Melchior
         public static void Tick()
         {
             if (!Host || !Saga.Loaded || Stations.MyShip == null) return;
-            int j = 0; try { j = (int)PLServer.Instance.NumJumps; } catch { }
+            int j = 0; try { j = Obscured.Jumps(); } catch { }
             bool jumped = lastJumps >= 0 && j != lastJumps; lastJumps = j;
             if (!jumped && UnityEngine.Time.time < nextStep) return;
             nextStep = UnityEngine.Time.time + 150f + rng.Next(90);
@@ -157,6 +158,35 @@ namespace Melchior
         public static string Describe()
         {
             var w = W; return $"slancio: {string.Join(", ", Factions.Select(f => $"{Name(f)} {Mom(f):0}"))} · offensiva {(w.offensive >= 0 ? Name(w.offensive) + " " + w.offensiveTicks : "nessuna")} · conquiste {w.conquests} · settori {string.Join(", ", w.counts.Select(x => x.Key + " " + x.Value))}";
+        }
+
+        // Con chi confina una fazione: fazione vicina -> numero di settori di contatto.
+        public static Dictionary<int, int> FrontCounts(int f)
+        {
+            var d = new Dictionary<int, int>();
+            foreach (var s in Sectors())
+            {
+                if (s.MySPI == null || s.MySPI.Faction != f || s.Neighbors == null) continue;
+                for (int i = 0; i < s.Neighbors.Count; i++) { int g = s.Neighbors[i]?.MySPI?.Faction ?? -1; if (g != f && Array.IndexOf(Factions, g) >= 0) d[g] = d.GetValueOrDefault(g) + 1; }
+            }
+            return d;
+        }
+
+        // Spostamenti di slancio decisi da fuori (crisi, contratti).
+        public static void Shift(int f, float d) { AddMom(f, d); if (d < 0 && W.offensive == f) { W.offensive = -1; W.offensiveTicks = 0; } Saga.MarkDirty(); }
+
+        // Una fazione si prende fino a n settori contesi: vicino a un settore dato, oppure (se from >= 0) solo dalla fazione indicata.
+        public static int Spread(int f, int near, int n, int from = -1)
+        {
+            var cur = PLServer.GetCurrentSector(); PLSectorInfo target = null; try { target = PLServer.GetTargetWarpSector(); } catch { }
+            var origin = near >= 0 ? PLServer.GetSectorWithID(near) : null; int done = 0;
+            var cand = Sectors().Where(s => Contestable(s, cur, target) && s.MySPI.Faction != f && (from < 0 || s.MySPI.Faction == from)
+                && s.Neighbors != null && s.Neighbors.ToArray().Any(x => x?.MySPI != null && x.MySPI.Faction == f || (origin != null && x?.ID == origin.ID))).ToList();
+            if (origin != null) cand = cand.OrderBy(s => (s.Position - origin.Position).sqrMagnitude).ToList(); else cand = cand.OrderBy(_ => rng.Next()).ToList();
+            if (origin != null && Contestable(origin, cur, target) && origin.MySPI.Faction != f) { Conquer(origin, f); done++; }
+            foreach (var s in cand) { if (done >= n) break; if (s.MySPI.Faction == f) continue; Conquer(s, f); done++; }
+            W.conquests += done; AddMom(f, done * 2); if (from >= 0) AddMom(from, -done * 2);
+            Saga.MarkDirty(); return done;
         }
 
         // Solo per le prove: cambia la fazione di un settore scelto.

@@ -47,7 +47,7 @@ namespace Melchior
                 () => ("dicerie", $"Nei bar di {P(Places)} si dice che «{legend}» sia nella stiva di {P(Traders)}. Nessuno sa per quanto.", -1),
                 () => ("commercio", $"Prezzi del carburante in salita verso {P(Places)}: le rotte commerciali evitano i settori di confine.", -1),
                 () => ("scienza", $"L'Accademia registra un'anomalia gravitazionale vicino a {P(Places)} e cerca un equipaggio disposto a indagare.", 2),
-                () => ("taglie", $"{P(new[] { "Il pirata Vasquez", "La contrabbandiera Ilsa Marr", "Il mercenario Draal", "Il traditore Halloran" })} è stato avvistato vicino a {P(Places)}. La taglia è ancora aperta.", 0),
+                () => { var f = Nemesis.Alive.OrderBy(_ => rng.Next()).FirstOrDefault(); return f == null ? ("taglie", $"Il traditore Halloran è stato avvistato vicino a {P(Places)}. La taglia è ancora aperta.", 0) : ("taglie", $"Avvistamenti di {f.Full} nel settore {f.sector}. Nei porti si parla di una taglia.", -2); },
                 () => ("flotta", $"Il Comando di Flotta segnala convogli civili in difficoltà nei settori esterni: chi può, risponda alle chiamate.", 3),
                 () => ("dicerie", $"Un relitto senza nome alla deriva oltre {P(Places)}: chi l'ha visto giura che la scatola nera trasmette ancora.", 5),
                 () => ("scienza", $"Segnali di una specie sconosciuta captati da {P(Traders)}: il Comando raccomanda prudenza e armi a riposo.", 4),
@@ -55,6 +55,8 @@ namespace Melchior
             if (rival != null) options.Add(() => ("rivali", $"{rival.name} raduna navi: chi li ha incrociati parla di {rival.leader} e di una flotta più grande del solito.", -1));
             var (cat, text, family) = options[rng.Next(options.Count)]();
             Post(cat, text);
+            if (family == -2 && rng.NextDouble() < 0.5 && Stations.MyShip != null && Contracts.PostBounty(Director.Power(Stations.MyShip, out _, out _)))
+                Post(cat, "La diceria è fondata: c'è una taglia sulla bacheca.");
             if (family >= 0 && rng.NextDouble() < 0.4 && Stations.MyShip != null && Contracts.PostLead(Director.Power(Stations.MyShip, out _, out _), family))
                 Post(cat, "La diceria sembra fondata: c'è un'offerta sulla bacheca.");
         }

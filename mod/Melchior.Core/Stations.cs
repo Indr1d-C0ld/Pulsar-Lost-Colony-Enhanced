@@ -539,6 +539,7 @@ namespace Melchior
             if (msg.StartsWith("req|bacheca|")) { Contracts.OnRequest(msg); return; }
             if (msg.StartsWith("board|")) { Contracts.Receive(msg); return; }
             if (msg.StartsWith("news|")) { News.Receive(msg); return; }
+            if (msg.StartsWith("gal|")) { GalaxyView.Receive(msg); return; }
             if (msg.StartsWith("note|"))
             {
                 var np = msg.Split('|', 3); if (np.Length == 3) ShowNotice(np[1], np[2]); return;
@@ -969,7 +970,7 @@ namespace Melchior
 
             // schede
             var names = new List<string>();
-            if (station == 0) { names.Add("Assetti"); if (Stations.Cfg.Captain.Enabled) { names.Add("Ordini"); names.Add("Quadro"); if (Stations.Cfg.Protocols.Enabled) names.Add("Protocolli"); names.Add("Bacheca"); names.Add("Giornale"); } }
+            if (station == 0) { names.Add("Assetti"); if (Stations.Cfg.Captain.Enabled) { names.Add("Ordini"); names.Add("Quadro"); if (Stations.Cfg.Protocols.Enabled) names.Add("Protocolli"); names.Add("Bacheca"); names.Add("Giornale"); names.Add("Galassia"); } }
             names.AddRange(Stations.Cfg.Controls.Where(c => c.Station == station).Select(c => c.Page).Distinct());
             if (station == 4 && Stations.Cfg.Core.Enabled) names.Add("Nucleo");
             if (station == 4 && Stations.Cfg.Damage.Enabled) names.Add("Danni");
@@ -980,10 +981,10 @@ namespace Melchior
             if (station == 3 && Stations.Cfg.Damage.Enabled && Stations.Cfg.Sensors.Enabled) names.Add("Bersaglio");
             if (station == 1 && Stations.Cfg.Pilot.Enabled) { names.Add("Manovre"); names.Add("Rotta"); }
             if (station == 1 && Stations.Cfg.Engage.Enabled) names.Add("Ingaggio");
-            int nt = Math.Min(names.Count, 6); float tw = (Kit.W - (nt - 1) * 6f) / Math.Max(1, nt);
+            int nt = Math.Min(names.Count, 7); float tw = (Kit.W - (nt - 1) * 6f) / Math.Max(1, nt);
             for (int i = 0; i < nt; i++)
             {
-                pg.TabButtons.Add(k.Button("tab|" + i, Kit.L + i * (tw + 6f), -32f, tw, 22f, names[i].ToUpperInvariant(), cPanel, cWhite, nt > 3 ? 11 : 12));
+                pg.TabButtons.Add(k.Button("tab|" + i, Kit.L + i * (tw + 6f), -32f, tw, 22f, names[i].ToUpperInvariant(), cPanel, cWhite, nt > 6 ? 9 : nt > 3 ? 11 : 12));
                 var sub = sc.CreateBlankPanel("MelchiorScheda" + i, V(0f, -64f), new Vector2(504f, 388f), pg.Page.transform, TL);
                 var sk = new Kit { sc = sc, pg = pg, t = sub.transform, accent = accent };
                 switch (names[i])
@@ -1006,6 +1007,7 @@ namespace Melchior
                     case "Ingaggio": BuildEngage(sk); break;
                     case "Protocolli": BuildProtocols(sk); break;
                     case "Giornale": BuildJournal(sk); break;
+                    case "Galassia": BuildGalaxy(sk); break;
                     default: BuildControls(sk, Stations.Cfg.Controls.Where(c => c.Station == station && c.Page == names[i]).ToList()); break;
                 }
                 sub.gameObject.SetActive(i == 0);
@@ -1590,6 +1592,71 @@ namespace Melchior
         }
 
         static string Hex(string color) => "[" + color.TrimStart('#') + "]";
+
+        // Galassia: reputazione presso le fazioni, crisi in corso, personaggi ricercati.
+        static void BuildGalaxy(Kit k)
+        {
+            const int NF = 5, NP = 4;
+            k.Section(-4f, "Reputazione presso le fazioni", "");
+            var fname = new UILabel[NF]; var fbar = new Action<float, float, float, Color>[NF]; var flvl = new UILabel[NF]; var fwar = new UILabel[NF];
+            for (int i = 0; i < NF; i++)
+            {
+                float y = -26f - i * 19f;
+                fname[i] = k.Text(Kit.L, y, 140f, "", 10, cWhite);
+                fbar[i] = k.Bipolar(Kit.L + 142f, y - 5f, 100f, 6f);
+                flvl[i] = k.Text(Kit.L + 250f, y, 110f, "", 10, cWhite);
+                fwar[i] = k.Text(Kit.L + 360f, y, 112f, "", 10, cGrey, NGUIText.Alignment.Right);
+            }
+            k.Rule(-124f);
+            k.Section(-132f, "Crisi", "");
+            var ctitle = k.Text(Kit.L + 60f, -132f, Kit.W - 60f, "", 11, cWhite, NGUIText.Alignment.Right);
+            var cstage = k.Text(Kit.L, -154f, 230f, "", 10, cGrey);
+            var cmeter = k.Meter(Kit.L + 236f, -159f, Kit.W - 236f, 6f);
+            var chint = k.Text(Kit.L, -170f, Kit.W, "", 10, cGrey); var chint2 = k.Text(Kit.L, -184f, Kit.W, "", 10, cGrey);
+            k.Rule(-204f);
+            k.Section(-212f, "Ricercati", "");
+            var pname = new UILabel[NP]; var pinfo = new UILabel[NP]; var pmem = new UILabel[NP];
+            for (int i = 0; i < NP; i++)
+            {
+                float y = -236f - i * 34f;
+                pname[i] = k.Text(Kit.L, y, 300f, "", 11, cWhite);
+                pinfo[i] = k.Text(Kit.L + 300f, y, 172f, "", 10, cGrey, NGUIText.Alignment.Right);
+                pmem[i] = k.Text(Kit.L, y - 15f, Kit.W, "", 10, cGrey);
+            }
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var v = GalaxyView.Current;
+                for (int i = 0; i < NF; i++)
+                {
+                    var f = i < v.factions.Count ? v.factions[i] : null;
+                    if (f == null) { fname[i].text = flvl[i].text = fwar[i].text = ""; fbar[i](0, -100, 100, cTrack); continue; }
+                    fname[i].text = Hex(f.color) + f.name + End;
+                    var col = f.standing <= -25 ? cBad : f.standing >= 35 ? cGood : f.standing >= 10 ? k.accent : cGrey;
+                    fbar[i](f.standing, -100, 100, col);
+                    flvl[i].text = (f.standing <= -25 ? Bad : f.standing >= 35 ? Good : "") + f.level + (f.standing <= -25 || f.standing >= 35 ? End : "") + Grey + $" {f.standing:+0;-0;0}" + End;
+                    fwar[i].text = f.offensive ? Bad + $"{f.sectors} settori, attacca" + End : $"{f.sectors} settori";
+                }
+                var c = v.crisis;
+                if (c == null) { ctitle.text = Grey + "nessuna" + End; cstage.text = Grey + "La galassia è tranquilla. Per ora." + End; chint.text = chint2.text = ""; cmeter(0, cTrack); }
+                else
+                {
+                    ctitle.text = Hex(c.color) + c.title + End;
+                    cstage.text = $"Fase {c.stage + 1} di 3 · {c.progress}";
+                    cmeter(c.frac, Crises.Kinds.TryGetValue(c.kind, out var kc) ? Color32(kc.color) : k.accent);
+                    var (l1, l2) = TwoLines("Come aiutare: " + c.hint, 78); chint.text = l1; chint2.text = l2;
+                }
+                for (int i = 0; i < NP; i++)
+                {
+                    var p = i < v.wanted.Count ? v.wanted[i] : null;
+                    if (p == null) { pname[i].text = i == 0 ? Grey + "Nessun nome sulla bocca di tutti." + End : ""; pinfo[i].text = pmem[i].text = ""; continue; }
+                    string tier = p.rank >= 4 ? "#F2A65A" : p.rank >= 2 ? "#C58AF9" : "#9DB4FF";
+                    pname[i].text = Hex(tier) + p.name + End + Grey + "  " + p.role + End + (p.hunted ? Bad + "  TAGLIA IN CORSO" + End : "");
+                    pinfo[i].text = $"grado {p.rank}/5 · settore {p.sector} ({p.jumps} salti)";
+                    pmem[i].text = p.memory;
+                }
+            });
+        }
+        static Color Color32(string hex) { ColorUtility.TryParseHtmlString(hex, out var c); return c; }
 
         // Officina: pezzi in stiva ordinati per grado; si sceglie una riga, poi si smonta o si potenzia (conferma col secondo clic).
         static void BuildWorkshop(Kit k)

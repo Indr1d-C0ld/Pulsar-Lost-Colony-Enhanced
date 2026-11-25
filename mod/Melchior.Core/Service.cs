@@ -151,7 +151,7 @@ namespace Melchior
             Add("tempo.totale", 1);
             int cls = me.GetClassID(); if (cls >= 0 && cls <= 4) Add("classe." + cls, 1);
             if (ship.m_AlertLevel >= 2) Add("allarme.rosso", 1);
-            Add("salti", Delta(ref lastJumps, (int)srv.NumJumps));
+            Add("salti", Delta(ref lastJumps, Obscured.Jumps()));
             Add("salti.ciechi", Delta(ref lastBlind, (int)srv.BlindJumpCount));
             Add("nemici", Delta(ref lastKills, (int)srv.EnemyKills));
             Add("crediti.spesi", Delta(ref lastSpent, (int)srv.CreditsSpent_InRun));

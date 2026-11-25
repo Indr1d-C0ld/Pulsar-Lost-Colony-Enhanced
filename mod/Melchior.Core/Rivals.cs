@@ -114,6 +114,8 @@ namespace Melchior
         {
             if (squad.Count == 0) return;
             int sector = -1; try { sector = PLServer.GetCurrentSector().ID; } catch { }
+            bool warp = false; try { warp = Stations.MyShip.InWarp; } catch { }
+            if (warp) { squad.Clear(); Report("ritirata"); return; } // le navi spariscono col salto: non sono state abbattute
             var alive = new List<int>();
             foreach (int id in squad)
             {
