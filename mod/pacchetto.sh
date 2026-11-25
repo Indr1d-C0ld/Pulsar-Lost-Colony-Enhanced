@@ -8,7 +8,7 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SRC="$ROOT/pre_assets/Pulsar.Lost.Colony.v1.2.10"
 DEST="${1:?indica la cartella di destinazione}"; NAME="${2:-Ufficiale}"; ZIP="${3:-}"
 [ "$NAME" = "--zip" ] && { NAME="Ufficiale"; ZIP="--zip"; }
-HOST="${MELCHIOR_HOST:-balthasar.local}"
+HOST="${MELCHIOR_HOST:-balthasar.local}"; FALLBACK="${MELCHIOR_FALLBACK:-192.168.178.27}"
 OUT="$DEST/PULSAR-Melchior"
 [ -d "$SRC" ] || { echo "Gioco non trovato in $SRC"; exit 1; }
 [ -e "$OUT" ] && { echo "$OUT esiste già: rimuovila o scegli un'altra destinazione"; exit 1; }
@@ -28,7 +28,8 @@ sed -i "s|<PlayerName>.*</PlayerName>|<PlayerName>$NAME</PlayerName>|; s|<LastCr
 
 # configurazione del mod: server Balthasar, niente strumenti di sviluppo
 CFG="$OUT/BepInEx/config/melchior.core.cfg"
-sed -i "s/^Host = .*/Host = $HOST/; s/^DevConsole = .*/DevConsole = false/; s/^NetTrace = .*/NetTrace = false/; s/^AutoHostTest = .*/AutoHostTest = false/; s/^RaritySelfTest = .*/RaritySelfTest = false/; s/^RarityShipTest = .*/RarityShipTest = false/; s/^RarityLog = .*/RarityLog = false/" "$CFG"
+sed -i "s/^Host = .*/Host = $HOST/; s/^Fallback = .*/Fallback = $FALLBACK/; s/^DevConsole = .*/DevConsole = false/; s/^NetTrace = .*/NetTrace = false/; s/^AutoHostTest = .*/AutoHostTest = false/; s/^RaritySelfTest = .*/RaritySelfTest = false/; s/^RarityShipTest = .*/RarityShipTest = false/; s/^RarityLog = .*/RarityLog = false/" "$CFG"
+grep -q "^Fallback = $FALLBACK" "$CFG" || echo "ATTENZIONE: indirizzo di riserva non impostato in $CFG"
 grep -q '^UnityLogListening = false' "$OUT/BepInEx/config/BepInEx.cfg" || echo "ATTENZIONE: UnityLogListening non è false in BepInEx.cfg"
 
 # avvio su Linux con Wine, con un prefisso proprio
@@ -49,17 +50,24 @@ WINEDLLOVERRIDES="winhttp=n,b;mscoree,mshtml=" exec wine PULSAR_LostColony.exe "
 SH
 chmod +x "$OUT/gioca.sh"
 
-cat > "$OUT/LEGGIMI.txt" <<TXT
+cat > "$OUT/LEGGIMI.txt.tmp" <<TXT
 PULSAR: Lost Colony con il mod Melchior
 ========================================
 
 Giocatore: $NAME
-Server: $HOST (Subspace Relay su Balthasar, porte 4530 e 4531 TCP)
+Server: $HOST, di riserva $FALLBACK (Subspace Relay su Balthasar, porte 4530 e 4531 TCP)
 
-WINDOWS
-  Avvia PULSAR_LostColony.exe da questa cartella. Il mod si carica da solo
-  tramite winhttp.dll (BepInEx). Se l'antivirus blocca winhttp.dll o la
-  cartella BepInEx, aggiungi un'eccezione per questa cartella.
+WINDOWS (10 o 11, 64 bit)
+  1. Copia l'intera cartella PULSAR-Melchior dove preferisci, per esempio
+     in C:\Giochi. Evita "Programmi": lì il gioco non può scrivere.
+  2. Avvia PULSAR_LostColony.exe. Il primo avvio dura un po' di più.
+  3. Il mod si carica da solo tramite winhttp.dll (BepInEx): niente da
+     installare. Se l'antivirus mette in quarantena winhttp.dll o file
+     nella cartella BepInEx, ripristinali e aggiungi un'eccezione per
+     questa cartella.
+  Per il trasporto vanno bene una chiavetta (lo zip pesa circa 3,3 GB e
+  nessun file supera 1 GB) o una cartella condivisa in rete. Su Windows
+  si estrae con il tasto destro > Estrai tutto.
 
 LINUX
   Serve Wine 8 o superiore. Avvia ./gioca.sh (la prima volta prepara un
@@ -71,12 +79,18 @@ PER GIOCARE INSIEME
   Gioca > Unisciti. Tutti devono avere questa stessa versione del mod.
 
 SE NON SI COLLEGA
-  Se il nome balthasar.local non si risolve, apri
-  BepInEx/config/melchior.core.cfg e metti "Host = 192.168.178.27".
+  Se il nome $HOST non si risolve il gioco usa da solo l'indirizzo di
+  riserva $FALLBACK. Se anche questo non va, controlla che Balthasar sia
+  acceso e raggiungibile, poi apri BepInEx/config/melchior.core.cfg e
+  correggi le voci Host e Fallback. Il registro del mod, utile per capire
+  cosa succede, è in BepInEx/LogOutput.log.
 
 NOME DEL GIOCATORE
-  Si cambia in settings.xml, alla voce <PlayerName>.
+  Si cambia in settings.xml (aprilo con il Blocco note), alla voce
+  <PlayerName>. Va fatto a gioco chiuso.
 TXT
+# a capo di Windows, così il Blocco note lo mostra bene ovunque
+sed 's/$/\r/' "$OUT/LEGGIMI.txt.tmp" > "$OUT/LEGGIMI.txt" && rm "$OUT/LEGGIMI.txt.tmp"
 
 SIZE=$(du -sh "$OUT" | cut -f1)
 echo "Pacchetto pronto: $OUT ($SIZE), giocatore \"$NAME\", server $HOST"

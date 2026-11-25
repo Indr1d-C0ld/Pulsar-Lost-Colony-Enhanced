@@ -10,6 +10,7 @@ Mod e server per PULSAR: Lost Colony v1.2.10 (Unity 2020.3, IL2CPP), giocato sot
 | `mod/i18n/` | Traduzione italiana del gioco: blocchi di testo, glossario, correzioni, script di controllo e generazione. |
 | `mod/achievements/` | Obiettivi interni con le icone originali. |
 | `mod/tools/` | `sig.sh` per leggere le firme interop; `prova/` con gli script di collaudo in gioco (avvio in finestra, console di sviluppo, missioni, archi). |
+| `mod/pacchetto.sh` | Copia pulita del gioco con il mod per un altro PC (Windows o Linux): `mod/pacchetto.sh dist "Nome" --zip`. |
 | `mod/play.sh` | Avvio del gioco con il mod; `MELCHIOR_WINDOW=1280x720` lo apre in una finestra. |
 | `server/` | Subspace Relay: server compatibile con Photon (master e partite), pannello di amministrazione LCARS, classifiche, cronache, fazioni rivali. Collaudo: `node test/smoke.js`. |
 | `server/deploy/` | Installazione su Balthasar come servizio utente systemd (`installa.sh`). |

@@ -27,24 +27,29 @@ namespace Melchior
             get
             {
                 if (relayAddress != null) return relayAddress;
-                string host = RelayHost.Value.Trim();
+                string host = RelayHost.Value.Trim(), fallback = RelayFallback.Value.Trim();
                 try
                 {
                     if (!System.Net.IPAddress.TryParse(host, out _))
                     {
                         var v4 = System.Net.Dns.GetHostAddresses(host).FirstOrDefault(a => a.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork);
                         if (v4 != null) { L.LogInfo($"Relay {host} risolto in {v4}"); host = v4.ToString(); }
+                        else if (fallback.Length > 0) { L.LogWarning($"Relay {host}: nessun indirizzo IPv4, uso l'indirizzo di riserva {fallback}."); host = fallback; }
                         else L.LogWarning($"Relay {host}: nessun indirizzo IPv4 trovato, uso il nome così com'è.");
                     }
                 }
-                catch (Exception e) { L.LogWarning($"Relay {host} non risolto ({e.Message}): uso il nome così com'è."); }
+                catch (Exception e)
+                {
+                    if (fallback.Length > 0) { L.LogWarning($"Relay {host} non risolto ({e.Message}): uso l'indirizzo di riserva {fallback}."); host = fallback; }
+                    else L.LogWarning($"Relay {host} non risolto ({e.Message}): uso il nome così com'è.");
+                }
                 return relayAddress = host;
             }
         }
 
         internal static string PerInstance(string file) => Inst.Length == 0 ? file : file + "." + Inst;
         internal static ConfigEntry<bool> RelayEnabled;
-        internal static ConfigEntry<string> RelayHost;
+        internal static ConfigEntry<string> RelayHost, RelayFallback;
         internal static ConfigEntry<int> RelayPort;
         internal static ConfigEntry<bool> RelayTcp;
         internal static ConfigEntry<bool> NetTrace;
@@ -59,6 +64,7 @@ namespace Melchior
             L = Log;
             RelayEnabled = Config.Bind("Relay", "Enabled", true, "Collega il gioco al server locale invece che al cloud Photon.");
             RelayHost = Config.Bind("Relay", "Host", "127.0.0.1", "Indirizzo del master server (Subspace Relay).");
+            RelayFallback = Config.Bind("Relay", "Fallback", "", "Indirizzo IP da usare se il nome in Host non si risolve (es. 192.168.178.27 per Balthasar).");
             RelayPort = Config.Bind("Relay", "Port", 4530, "Porta TCP del master server.");
             RelayTcp = Config.Bind("Relay", "ForceTcp", true, "Il Subspace Relay parla solo TCP: lasciare attivo.");
             NetTrace = Config.Bind("Debug", "NetTrace", true, "Scrive nel log i cambi di stato della connessione.");
