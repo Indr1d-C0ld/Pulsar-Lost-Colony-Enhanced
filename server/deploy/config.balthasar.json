@@ -1,0 +1,14 @@
+{
+  "bind": "::",
+  "publicHost": "auto",
+  "masterPort": 4530,
+  "gamePort": 4531,
+  "adminBind": "::",
+  "adminPort": 4580,
+  "adminToken": "",
+  "motd": "Benvenuti a bordo. Server di Balthasar in linea.",
+  "maxRooms": 0,
+  "maxPerAddress": 0,
+  "backupDays": 14,
+  "appIds": []
+}

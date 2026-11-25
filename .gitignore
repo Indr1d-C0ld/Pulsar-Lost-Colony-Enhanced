@@ -1,0 +1,25 @@
+# Gioco originale e ambiente di esecuzione: non si versionano (materiale protetto, molto grande)
+/pre_assets/
+/wineprefix/
+
+# Reverse engineering: il progetto Ghidra e le uscite si rigenerano con re/tools
+/re/ghidra_proj/
+/re/out/
+
+# Pacchetti scaricati (BepInEx, .NET) e file grezzi degli obiettivi Steam
+/mod/dl/
+/mod/achievements/dl/
+
+# Compilazioni
+bin/
+obj/
+
+# Dati e configurazione locale del relay (la configurazione di esempio è in server/deploy)
+/server/data/
+/server/config.json
+node_modules/
+
+# File temporanei delle prove
+/docs/prove/
+*.log
+*.tmp

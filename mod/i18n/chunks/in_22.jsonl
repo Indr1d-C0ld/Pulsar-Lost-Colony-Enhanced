@@ -1,0 +1,1327 @@
+{"id": 9313, "en": "Sh", "fr": "Sh"}
+{"id": 9314, "en": "Increases the charge rate of shields by +30 for 15 seconds.", "fr": "Augmente le taux de charge des boucliers de +30 pendant 15 secondes."}
+{"id": 9315, "en": "MS", "fr": "MS"}
+{"id": 9316, "en": "Ensures quantum shields hold for 30 seconds.", "fr": "Assure le maintien des boucliers quantiques pendant 30 secondes."}
+{"id": 9317, "en": "QD", "fr": "QD"}
+{"id": 9318, "en": "Fully recharges the warp drive on execution.", "fr": "Recharge complètement le moteur de distorsion lors de l'exécution."}
+{"id": 9319, "en": "WC", "fr": "WC"}
+{"id": 9320, "en": "Provides 3 warp program charges on execution.", "fr": "Fournit 3 charges de programme de distorsion lors de l'exécution."}
+{"id": 9321, "en": "Ca", "fr": "Ca"}
+{"id": 9322, "en": "Triples effective detection levels for all sensors for 60 seconds.", "fr": "Triple les niveaux de détection effectifs pour tous les capteurs pendant 60 secondes."}
+{"id": 9323, "en": "De", "fr": "De"}
+{"id": 9324, "en": "Adds +6 main thruster output for 30 seconds.", "fr": "Ajoute +6 à la puissance du propulseur principal pendant 30 secondes."}
+{"id": 9325, "en": "TB", "fr": "TB"}
+{"id": 9326, "en": "Fully heals all ship systems on execution.", "fr": "Guérit complètement tous les systèmes du vaisseau lors de l'exécution."}
+{"id": 9327, "en": "FH", "fr": "FH"}
+{"id": 9328, "en": "Instantly removes all hostile viruses from the ship on execution.", "fr": "Supprime instantanément tous les virus hostiles du vaisseau lors de l'exécution."}
+{"id": 9329, "en": "RV", "fr": "VR"}
+{"id": 9330, "en": "Broadcasts [0x84B7A2] virus to nearby ships on activation.$$0x84B7A2: Unknown/random function", "fr": "Diffuse un virus [0x84B7A2] aux vaisseaux proches lors de l'activation.$$0x84B7A2 : Fonction inconnue/aléatoire"}
+{"id": 9331, "en": "84", "fr": "84"}
+{"id": 9332, "en": "Broadcasts [0xF592B1] virus to nearby ships on activation.$$0xF592B1: Unknown/random function", "fr": "Diffuse le virus [0xF592B1] aux vaisseaux proches lors de l'activation.$$0xF592B1 : Fonction inconnue/aléatoire"}
+{"id": 9333, "en": "F5", "fr": "F5"}
+{"id": 9334, "en": "Increases turret damage and cooling rate by 35% for 15 seconds.", "fr": "Augmente les dégâts de la tourelle et la vitesse de refroidissement de 35 % pendant 15 secondes."}
+{"id": 9335, "en": "Increases reactor output by 50% for 10 seconds.", "fr": "Augmente la puissance du réacteur de 50 % pendant 10 secondes."}
+{"id": 9336, "en": "OV", "fr": "OV"}
+{"id": 9337, "en": "Broadcasts [Syber's Shield] virus to nearby ships on activation.$$Syber's Shield: Reduces turret damage by 30% for 90 seconds", "fr": "Diffuse le virus [Bouclier de Syber] aux vaisseaux proches lors de l'activation : Réduit les dégâts des tourelles de 30% pendant 90 secondes."}
+{"id": 9338, "en": "SS", "fr": "SS"}
+{"id": 9339, "en": "Increases turret charge rate by 20% for 60 seconds.", "fr": "Augmente le taux de charge de la tourelle de 20 % pendant 60 secondes."}
+{"id": 9340, "en": "ST", "fr": "ST"}
+{"id": 9341, "en": "Broadcasts [Armor Flaw] virus to nearby ships on activation.$$Armor Flaw: Reduces armor effectiveness by 50% for 30 seconds", "fr": "Diffuse le virus [Défaut d'armure] aux vaisseaux proches lors de l'activation.$$Défaut d'armure : Réduit l'efficacité de l'armure de 50 % pendant 30 secondes."}
+{"id": 9342, "en": "AF", "fr": "AF"}
+{"id": 9343, "en": "Broadcasts [Shutdown Defenses] virus to nearby ships on activation.$$Shutdown Defenses: Disables defensive systems for 20 seconds", "fr": "Diffuse le virus [Shutdown Defenses] aux vaisseaux proches lors de l'activation.$$Shutdown Defenses : Désactive les systèmes défensifs pendant 20 secondes"}
+{"id": 9344, "en": "Immediately removes 50% overcharge from the ship.", "fr": "Supprime immédiatement la surcharge de 50 % du vaisseau."}
+{"id": 9345, "en": "DS", "fr": "DS"}
+{"id": 9346, "en": "Removes 35% of max reactor temperature to immediately cool the reactor.", "fr": "Retire 35 % de la température maximale du réacteur pour refroidir immédiatement le réacteur."}
+{"id": 9347, "en": "DC", "fr": "DC"}
+{"id": 9348, "en": "Fully recharges shields and shuts down the ship.", "fr": "Recharge complètement les boucliers et éteint le vaisseau."}
+{"id": 9349, "en": "Replaces itself with a random program from cargo.", "fr": "Se remplace par un programme aléatoire de la cargaison."}
+{"id": 9350, "en": "++", "fr": "++"}
+{"id": 9351, "en": "Advances current research by 1 step.", "fr": "Fait progresser la recherche actuelle d'un pas."}
+{"id": 9352, "en": "QT", "fr": "QT"}
+{"id": 9353, "en": "Increases max shields by +80 for 60 seconds.", "fr": "Augmente les boucliers maximum de +80 pendant 60 secondes."}
+{"id": 9354, "en": "ES", "fr": "ES"}
+{"id": 9355, "en": "Removes one random active hostile virus from the ship.", "fr": "Supprime un virus hostile actif aléatoire du vaisseau."}
+{"id": 9356, "en": "BV", "fr": "BV"}
+{"id": 9357, "en": "Provides 5 warp program charges on execution.", "fr": "Fournit 5 charges de programme de distorsion lors de l'exécution."}
+{"id": 9358, "en": "SC", "fr": "SC"}
+{"id": 9359, "en": "Fully recharges one random uncharged program.", "fr": "Recharge complètement un programme aléatoire non chargé."}
+{"id": 9360, "en": "RA", "fr": "RA"}
+{"id": 9361, "en": "Reset all active program timers", "fr": "Réinitialisation de toutes les minuteries de programme actives"}
+{"id": 9362, "en": "RC", "fr": "RC"}
+{"id": 9363, "en": "+50% CyberAttack (virus broadcast rate) for 30 seconds", "fr": "+50% CyberAttack (taux de diffusion de virus) pendant 30 secondes"}
+{"id": 9364, "en": "SW", "fr": "SW"}
+{"id": 9365, "en": "Sitting Duck [VIRUS]", "fr": "Sitting Duck [VIRUS]"}
+{"id": 9366, "en": "Gentleman's Welcome [VIRUS]", "fr": "Gentleman's Welcome [VIRUS]"}
+{"id": 9367, "en": "Siphon Credits [VIRUS]", "fr": "Siphonner les crédits [VIRUS]"}
+{"id": 9368, "en": "Warp Disable [VIRUS]", "fr": "Désactivation de la distorsion [VIRUS]"}
+{"id": 9369, "en": "Phalanx [VIRUS]", "fr": "Phalanx [VIRUS]"}
+{"id": 9370, "en": "Backdoor [VIRUS]", "fr": "Porte dérobée [VIRUS]"}
+{"id": 9371, "en": "Block Long Range Comms", "fr": "Blocage des communications à longue portée"}
+{"id": 9372, "en": "Emergency Shield Boosting", "fr": "Renforcement du bouclier d'urgence"}
+{"id": 9373, "en": "Military-Grade Shield Boosting", "fr": "Renforcement du bouclier de qualité militaire"}
+{"id": 9374, "en": "Quantum Defenses", "fr": "Défenses quantiques"}
+{"id": 9375, "en": "Instant Warp Charge", "fr": "Charge de distorsion instantanée"}
+{"id": 9376, "en": "Capacitor", "fr": "Condensateur"}
+{"id": 9377, "en": "Detector", "fr": "Détecteur"}
+{"id": 9378, "en": "Thrust Booster", "fr": "Booster de poussée"}
+{"id": 9379, "en": "Instant System Self-Healing", "fr": "Auto-guérison instantanée du système"}
+{"id": 9380, "en": "Instant AntiVirus", "fr": "AntiVirus instantané"}
+{"id": 9381, "en": "0x84B7A2 [VIRUS]", "fr": "0x84B7A2 [VIRUS]"}
+{"id": 9382, "en": "0xF592B1 [VIRUS]", "fr": "0xF592B1 [VIRUS]"}
+{"id": 9383, "en": "Barrage", "fr": "Barrage"}
+{"id": 9384, "en": "OverDrive", "fr": "OverDrive"}
+{"id": 9385, "en": "Syber's Shield [VIRUS]", "fr": "Bouclier de Syber [VIRUS]"}
+{"id": 9386, "en": "Syber's Threat", "fr": "La menace de Syber"}
+{"id": 9387, "en": "Armor Flaw [VIRUS]", "fr": "Défaut d'armure [VIRUS]"}
+{"id": 9388, "en": "Shutdown Defenses [VIRUS]", "fr": "Arrêter les défenses [VIRUS]"}
+{"id": 9389, "en": "Discharge", "fr": "Décharge"}
+{"id": 9390, "en": "Digital Coolant", "fr": "Liquide de refroidissement numérique"}
+{"id": 9391, "en": "Shock The System", "fr": "Changer le système"}
+{"id": 9392, "en": "Quantum Tunnel", "fr": "Tunnel quantique"}
+{"id": 9393, "en": "Reinstall++", "fr": "Réinstaller++"}
+{"id": 9394, "en": "Extended Shields", "fr": "Boucliers étendus"}
+{"id": 9395, "en": "Burst AV", "fr": "Burst AV"}
+{"id": 9396, "en": "Sylvassi Capacitor", "fr": "Condensateur Sylvassi"}
+{"id": 9397, "en": "Random Access", "fr": "Accès aléatoire"}
+{"id": 9398, "en": "Active Reset", "fr": "Réinitialisation active"}
+{"id": 9399, "en": "SyberWar", "fr": "SyberWar"}
+{"id": 9400, "en": "OBJECTIVE COMPLETED", "fr": "OBJECTIF ATTEINT"}
+{"id": 9401, "en": "Collect Lost Colony Data Fragments", "fr": "Collecter les fragments de données de la colonie perdue"}
+{"id": 9402, "en": "Collect a Lost Colony Data Fragment", "fr": "Collecte d'un fragment de données sur la colonie perdue"}
+{"id": 9403, "en": "Drop warp core", "fr": "Dépose du noyau de distorsion"}
+{"id": 9404, "en": "Complete mission within", "fr": "Terminer la mission dans un délai de"}
+{"id": 9405, "en": "jumps.", "fr": "sauts."}
+{"id": 9406, "en": "Destroy", "fr": "Détruire"}
+{"id": 9407, "en": "Neutralize", "fr": "Neutraliser"}
+{"id": 9408, "en": "Sector Commanders", "fr": "Commandants de secteur"}
+{"id": 9409, "en": "Neutralize a Sector Commander", "fr": "Neutraliser un commandant de secteur"}
+{"id": 9410, "en": "Complete bounty contracts for the Grey Huntsmen", "fr": "Remplir les contrats de prime pour les Chasseurs gris."}
+{"id": 9411, "en": "Complete a bounty contract for the Grey Huntsmen", "fr": "Remplir un contrat de prime pour les Chasseurs gris"}
+{"id": 9412, "en": "Kill", "fr": "Tuer"}
+{"id": 9413, "en": "crewmen", "fr": "hommes d'équipage"}
+{"id": 9414, "en": "metal bandits", "fr": "bandits métalliques"}
+{"id": 9415, "en": "heavy metal bandits", "fr": "heavy metal bandits"}
+{"id": 9416, "en": "land drones", "fr": "drones terrestres"}
+{"id": 9417, "en": "crystals", "fr": "cristaux"}
+{"id": 9418, "en": "Destroy the", "fr": "Détruire le"}
+{"id": 9419, "en": "Small Security Drone(s)", "fr": "Petit(s) drone(s) de sécurité"}
+{"id": 9420, "en": "Security Drone(s)", "fr": "Drone(s) de sécurité"}
+{"id": 9421, "en": "Tactical Security Drone(s)", "fr": "Drone(s) tactique(s) de sécurité"}
+{"id": 9422, "en": "Intrepid-class starship(s)", "fr": "Vaisseau(x) de classe Intrepid"}
+{"id": 9423, "en": "Stargazer-class starship(s)", "fr": "Vaisseau(x) de classe Stargazer"}
+{"id": 9424, "en": "Carrier-class starship(s)", "fr": "Vaisseau(x) de classe porteuse"}
+{"id": 9425, "en": "W.D. Cruiser-class starship(s)", "fr": "Vaisseau(x) de classe W.D. Cruiser"}
+{"id": 9426, "en": "W.D. Annihilator-class starship(s)", "fr": "Vaisseau(x) de classe W.D. Annihilator"}
+{"id": 9427, "en": "W.D. Destroyer-class starship(s)", "fr": "Vaisseau(x) de classe W.D. Destroyer"}
+{"id": 9428, "en": "W.D. Transport Drone(s)", "fr": "Drone(s) de transport W.D."}
+{"id": 9429, "en": "Ancient Sentry", "fr": "Ancienne Sentinelle"}
+{"id": 9430, "en": "Civilian Fuel Ship(s)", "fr": "Vaisseau(s) civil(s) de ravitaillement en carburant"}
+{"id": 9431, "en": "Find and retrieve", "fr": "Trouver et récupérer"}
+{"id": 9432, "en": "Reach Sector", "fr": "Secteur Reach"}
+{"id": 9433, "en": "Find", "fr": "Trouver"}
+{"id": 9434, "en": "left)", "fr": "gauche)"}
+{"id": 9435, "en": "due to mission start", "fr": "en raison du début de la mission"}
+{"id": 9436, "en": "[STR1] Credits ([STR0])", "fr": "[STR1] Crédits ([STR0])"}
+{"id": 9437, "en": "+#;-#", "fr": "+#;-#"}
+{"id": 9438, "en": "[STR1] XP ([STR0])", "fr": "[STR1] XP ([STR0])"}
+{"id": 9439, "en": "+0.##;-#.##", "fr": "+0.##;-#.##"}
+{"id": 9440, "en": "[STR1] Chaos ([STR0])", "fr": "[STR1] Chaos ([STR0])"}
+{"id": 9441, "en": "[STR1] Rep for [STR2] ([STR0])", "fr": "[STR1] Rep pour [STR2] ([STR0])"}
+{"id": 9442, "en": "Your ship has been flagged due to mission: [STR0]", "fr": "Votre vaisseau a été signalé en raison de la mission : [STR0]"}
+{"id": 9443, "en": "due to mission success", "fr": "en raison de la réussite de la mission"}
+{"id": 9444, "en": "MISSION FAILED", "fr": "MISSION ÉCHOUÉE"}
+{"id": 9445, "en": "due to mission failure", "fr": "en raison de l'échec de la mission"}
+{"id": 9446, "en": "[End Conversation]", "fr": "[Fin de la conversation]"}
+{"id": 9447, "en": "MissileLockUI", "fr": "MissileLockUI"}
+{"id": 9448, "en": "MissileLockTimer", "fr": "MissileLockTimer"}
+{"id": 9449, "en": "LockOnSprite", "fr": "LockOnSprite"}
+{"id": 9450, "en": "SystemLockOnIcon", "fr": "SystemLockOnIcon"}
+{"id": 9451, "en": "MissileInfo", "fr": "MissileInfo"}
+{"id": 9452, "en": "MissileAmmo", "fr": "MissileAmmo"}
+{"id": 9453, "en": "FillSlow", "fr": "FillSlow"}
+{"id": 9454, "en": "Talking", "fr": "Parler"}
+{"id": 9455, "en": "At Ease", "fr": "A l'aise"}
+{"id": 9456, "en": "At Attention", "fr": "À votre attention"}
+{"id": 9457, "en": "Hide From Sensors", "fr": "Se cacher des capteurs"}
+{"id": 9458, "en": "Stay Close To Captain", "fr": "Rester près du capitaine"}
+{"id": 9459, "en": "Offensive Attack", "fr": "Attaque offensive"}
+{"id": 9460, "en": "Abandon Ship", "fr": "Abandon du vaisseau"}
+{"id": 9461, "en": "Board The Enemy", "fr": "Embarquement de l'ennemi"}
+{"id": 9462, "en": "Repel Invaders", "fr": "Repousser les envahisseurs"}
+{"id": 9463, "en": "StatusName", "fr": "Nom du statut"}
+{"id": 9464, "en": "FillBG", "fr": "FillBG"}
+{"id": 9465, "en": "StatusTime", "fr": "StatusTime"}
+{"id": 9466, "en": "Press [{0}] to skip warp", "fr": "Appuyez sur [{0}] pour sauter la chaîne."}
+{"id": 9467, "en": "Lvl {0}  {1}  {2}", "fr": "Niveau {0} {1}  {2}"}
+{"id": 9468, "en": "{0}/{1}", "fr": "{0}/{1}"}
+{"id": 9469, "en": "{0}%", "fr": "{0}%"}
+{"id": 9470, "en": "{0} m/s", "fr": "{0} m/s"}
+{"id": 9489, "en": "Dead", "fr": "Mort"}
+{"id": 9490, "en": "Danger: Return to mission area!", "fr": "Danger : Retournez dans la zone de mission !"}
+{"id": 9491, "en": "HH:mm:ss:ff", "fr": "HH:mm:ss:ff"}
+{"id": 9492, "en": "JUMPS", "fr": "JUMPS"}
+{"id": 9493, "en": "Defeated!", "fr": "Vaincu !"}
+{"id": 9494, "en": "BOUNTY HUNTER", "fr": "CHASSEUR DE BOULES"}
+{"id": 9495, "en": "SECTOR COMMANDER", "fr": "COMMANDANT DE SECTEUR"}
+{"id": 9496, "en": "VRUIMargin", "fr": "Marge VRUIM"}
+{"id": 9497, "en": "UIMargin", "fr": "Marge UIM"}
+{"id": 9498, "en": "<color=#FFFFFFAA><size=20>", "fr": "<color=#FFFFAA><size=20>"}
+{"id": 9499, "en": "</size></color>$", "fr": "</size></color>$"}
+{"id": 9500, "en": "<color=#77777777>", "fr": "<color=#77777777>"}
+{"id": 9501, "en": "$<size=11>", "fr": "$<size=11>"}
+{"id": 9502, "en": "total", "fr": "total"}
+{"id": 9503, "en": "Sold", "fr": "Vendu"}
+{"id": 9504, "en": "(Offline mode)", "fr": "(Mode hors ligne)"}
+{"id": 9505, "en": "ShowInGameControls", "fr": "ShowInGameControls"}
+{"id": 9506, "en": "zoom in", "fr": "zoom avant"}
+{"id": 9507, "en": "zoom out", "fr": "dézoomer"}
+{"id": 9508, "en": "center on crew", "fr": "centre sur l'équipage"}
+{"id": 9509, "en": "assign waypoint", "fr": "assigner un point de passage"}
+{"id": 9510, "en": "clear route (on crew)", "fr": "voie libre (sur l'équipage)"}
+{"id": 9511, "en": "changes camera mode", "fr": "change le mode de l'appareil photo"}
+{"id": 9512, "en": "<color=#AAAAAA><color=#FFFFFF>", "fr": "<color=#AAAAAA><color=#FFFFFF>"}
+{"id": 9513, "en": "</color> toggles sectors$<color=#FFFFFF>", "fr": "</color> bascule les secteurs$<color=#FFFFFF>"}
+{"id": 9514, "en": "</color> changes camera mode</color>$", "fr": "</color> change le mode de la caméra</color>$"}
+{"id": 9515, "en": "changes flight mode", "fr": "change de mode de vol"}
+{"id": 9516, "en": "manuever mode (hold)", "fr": "mode manœuvre (maintien)"}
+{"id": 9517, "en": "full throttle", "fr": "plein gaz"}
+{"id": 9518, "en": "reverse throttle", "fr": "accélérateur de marche arrière"}
+{"id": 9519, "en": "roll (left)", "fr": "rouleau (gauche)"}
+{"id": 9520, "en": "roll (right)", "fr": "rouleau (à droite)"}
+{"id": 9521, "en": "</color> changes flight mode", "fr": "</color> change le mode de vol"}
+{"id": 9522, "en": "$<color=#FFFFFF>", "fr": "$<color=#FFFFFF>"}
+{"id": 9523, "en": "</color> manuever mode (hold)$<color=#FFFFFF>", "fr": "</color> mode manœuvre (maintien)$<color=#FFFFFF>"}
+{"id": 9524, "en": "</color> forward throttle$<color=#FFFFFF>", "fr": "</color> accélérateur avant$<color=#FFFFFF>"}
+{"id": 9525, "en": "</color> reverse throttle", "fr": "</color> accélérateur inversé"}
+{"id": 9526, "en": "toggles sectors", "fr": "voir Secteurs"}
+{"id": 9527, "en": "open tab menu", "fr": "menu Tab"}
+{"id": 9528, "en": "activate/use", "fr": "activer/utiliser"}
+{"id": 9529, "en": "unlock cursor", "fr": "curseur libre"}
+{"id": 9530, "en": "order menu", "fr": "menu Ordres"}
+{"id": 9531, "en": "use jetpack", "fr": "utiliser le jetpack"}
+{"id": 9532, "en": "switch equipment", "fr": "changer équipement"}
+{"id": 9533, "en": "</color> Open Tab Menu</color>$", "fr": "</color> Ouvrir le menu Tab</color>$"}
+{"id": 9534, "en": "</color> Move$", "fr": "</color> Move$"}
+{"id": 9535, "en": "</color> Activate Stations</color>$", "fr": "</color> Activer les stations</color>$"}
+{"id": 9536, "en": "</color> Unlock Mouse</color>$", "fr": "</color> Déverrouiller la souris</color>$"}
+{"id": 9537, "en": "</color> Game Menu$", "fr": "</color> Game Menu$"}
+{"id": 9538, "en": "</color> Flashlight</color>$", "fr": "</color> Lampe de poche</color>$"}
+{"id": 9539, "en": "skip warp", "fr": "sauter la chaîne"}
+{"id": 9540, "en": "</color> Skip Warp</color>$", "fr": "</color> Skip Warp</color>$"}
+{"id": 9541, "en": "zoom turret", "fr": "tourelle zoom"}
+{"id": 9542, "en": "</color> Zoom Turret</color>$", "fr": "</color>Tourelle zoom</color>$"}
+{"id": 9543, "en": "fire pulse laser (click)", "fr": "laser à impulsion de feu (clic)"}
+{"id": 9544, "en": "(click)</color> Fire Pulse Laser</color>$", "fr": "(clic)</color>Laser à impulsion</color>$"}
+{"id": 9545, "en": "</color> Fire Pulse Laser</color>$", "fr": "</color> Laser à impulsion</color>$"}
+{"id": 9546, "en": "fire missile (hold)", "fr": "tir de missile (attente)"}
+{"id": 9547, "en": "(hold)</color> Fire Missile</color>$", "fr": "(maintenir)</color>Missile de feu</color>$"}
+{"id": 9548, "en": "target engineering", "fr": "ingénierie ciblée"}
+{"id": 9549, "en": "target weapons", "fr": "armes cibles"}
+{"id": 9550, "en": "target life support", "fr": "système de survie cible"}
+{"id": 9551, "en": "target science lab", "fr": "laboratoire scientifique cible"}
+{"id": 9552, "en": "</color> Target Engineering</color>$", "fr": "</color> Target Engineering</color>$"}
+{"id": 9553, "en": "</color> Target Weapons</color>$", "fr": "</color> Armes cibles</color>$"}
+{"id": 9554, "en": "</color> Target Life Support</color>$", "fr": "</color> Cibler le soutien de la vie</color>$"}
+{"id": 9555, "en": "</color> Target Science Lab</color>$", "fr": "</color> Target Science Lab</color>$"}
+{"id": 9556, "en": "toggle external camera mode", "fr": "basculer le mode caméra externe"}
+{"id": 9557, "en": "</color> Toggle External Camera Mode</color>$", "fr": "</color> Basculer le mode caméra externe</color>$"}
+{"id": 9558, "en": "TEMP", "fr": "TEMP"}
+{"id": 9559, "en": "Hybrid", "fr": "Hybride"}
+{"id": 9560, "en": "Fixed", "fr": "Fixe"}
+{"id": 9561, "en": "First Person", "fr": "Première personne"}
+{"id": 9562, "en": "Auto", "fr": "Auto"}
+{"id": 9572, "en": "Alert", "fr": "Alerte"}
+{"id": 9573, "en": "SECTOR CMDR.", "fr": "SECTEUR CMDR."}
+{"id": 9574, "en": "beacontitle", "fr": "beacontitle"}
+{"id": 9575, "en": "BEACONS", "fr": "BEACONS"}
+{"id": 9577, "en": "SHIPS", "fr": "SHIPS"}
+{"id": 9579, "en": "You don't have permission to buy fuel at this time!", "fr": "Vous n'avez pas l'autorisation d'acheter du carburant pour le moment !"}
+{"id": 9580, "en": "You don't have permission to buy coolant at this time!", "fr": "Vous n'avez pas l'autorisation d'acheter du liquide de refroidissement pour le moment !"}
+{"id": 9581, "en": "You don't have permission to buy missile refills at this time!", "fr": "Vous n'êtes pas autorisé à acheter des recharges de missiles pour le moment !"}
+{"id": 9582, "en": "Fuel Capsule", "fr": "Capsule de combustible"}
+{"id": 9583, "en": "COOLANT", "fr": "COOLANT"}
+{"id": 9584, "en": "StatLeft", "fr": "StatLeft"}
+{"id": 9585, "en": "StatRight", "fr": "StatRight"}
+{"id": 9586, "en": "Not enough credits to complete transaction!", "fr": "Pas assez de crédits pour terminer la transaction !"}
+{"id": 9587, "en": "You don't have permission to trade components at this time!", "fr": "Vous n'êtes pas autorisé à échanger des composants pour le moment !"}
+{"id": 9588, "en": "em signature", "fr": "signature em"}
+{"id": 9589, "en": "power usage", "fr": "l'utilisation de l'énergie"}
+{"id": 9590, "en": "charge time", "fr": "temps de charge"}
+{"id": 9591, "en": "emer. cooldown", "fr": "emer. temps de recharge"}
+{"id": 9592, "en": "min integrity", "fr": "Intégrité minimale"}
+{"id": 9593, "en": "min for qt shields", "fr": "min pour les boucliers qt"}
+{"id": 9594, "en": "heat output", "fr": "puissance calorifique"}
+{"id": 9595, "en": "BEFORE", "fr": "AVANT"}
+{"id": 9597, "en": "AFTER", "fr": "APRÈS"}
+{"id": 9599, "en": "<color=red>(+", "fr": "<color=red>(+)"}
+{"id": 9600, "en": ")</color>$", "fr": ")</color>$"}
+{"id": 9601, "en": "<color=green>(", "fr": "<color=green>("}
+{"id": 9602, "en": "<color=green>(+", "fr": "<color=green>(+)"}
+{"id": 9603, "en": "<color=red>(", "fr": "<color=red>("}
+{"id": 9604, "en": "\\d+", "fr": "\\d+"}
+{"id": 9605, "en": "AVAILABLE CREDITS", "fr": "CRÉDITS DISPONIBLES"}
+{"id": 9608, "en": "REPUTATION PRICE CHANGE", "fr": "CHANGEMENT DE PRIX DE LA RÉPUTATION"}
+{"id": 9609, "en": "%</color>", "fr": "%</color>"}
+{"id": 9610, "en": "Cr (TOTAL)", "fr": "Cr (TOTAL)"}
+{"id": 9613, "en": "Level", "fr": "Niveau"}
+{"id": 9616, "en": "COMPARE", "fr": "COMPARER"}
+{"id": 9619, "en": "Fuel Capsules (", "fr": "Capsules de carburant ("}
+{"id": 9620, "en": "/ 200)", "fr": "/ 200)"}
+{"id": 9621, "en": "Coolant (", "fr": "Liquide de refroidissement ("}
+{"id": 9622, "en": "%)", "fr": "%)"}
+{"id": 9623, "en": "Refill", "fr": "Recharge"}
+{"id": 9624, "en": "MISSILE REFILL", "fr": "MISSILE RECHARGE"}
+{"id": 9626, "en": "XP$", "fr": "XP$"}
+{"id": 9627, "en": "Chaos", "fr": "Le chaos"}
+{"id": 9628, "en": "CU Rep", "fr": "Représentant de l'Union européenne"}
+{"id": 9629, "en": "AOG Rep", "fr": "Représentant de l'AOG"}
+{"id": 9630, "en": "FB Rep", "fr": "Représentant du FB"}
+{"id": 9631, "en": "WD Rep", "fr": "Représentant du ministère de la Défense"}
+{"id": 9632, "en": "PT Rep", "fr": "Représentant PT"}
+{"id": 9633, "en": "Role Available", "fr": "Rôle disponible"}
+{"id": 9634, "en": "THE CAPTAIN", "fr": "LE CAPITAINE"}
+{"id": 9635, "en": "THE PILOT", "fr": "LE PILOTE"}
+{"id": 9636, "en": "THE SCIENTIST", "fr": "LE SCIENTIFIQUE"}
+{"id": 9637, "en": "THE WEAPONS SPECIALIST", "fr": "LE SPÉCIALISTE DE L'ARMEMENT"}
+{"id": 9638, "en": "THE ENGINEER", "fr": "L'INGÉNIEUR"}
+{"id": 9639, "en": "Add PiBot", "fr": "Ajouter PiBot"}
+{"id": 9640, "en": "Add SciBot", "fr": "Ajouter SciBot"}
+{"id": 9641, "en": "Add WeapBot", "fr": "Ajouter WeapBot"}
+{"id": 9642, "en": "Add EngBot", "fr": "Ajouter EngBot"}
+{"id": 9643, "en": "AI Priorities", "fr": "Priorités en matière d'IA"}
+{"id": 9644, "en": "Remove Bot", "fr": "Supprimer le robot"}
+{"id": 9645, "en": "Add Friend", "fr": "Ajouter un ami"}
+{"id": 9646, "en": "friendadd", "fr": "friendadd"}
+{"id": 9647, "en": "View Profile", "fr": "Voir le profil"}
+{"id": 9648, "en": "steamid", "fr": "vapeur d'eau"}
+{"id": 9649, "en": "Mute", "fr": "Muet"}
+{"id": 9650, "en": "Unmute", "fr": "Unmute"}
+{"id": 9651, "en": "Items", "fr": "Articles"}
+{"id": 9652, "en": "CR", "fr": "CR"}
+{"id": 9653, "en": "Can't buy or sell components while crew purchase limits are enabled", "fr": "Impossible d'acheter ou de vendre des composants lorsque les limites d'achat de l'équipage sont activées."}
+{"id": 9654, "en": "CR$ <size=11>(-50%)</size>", "fr": "CR$ <size=11>(-50%)</size>"}
+{"id": 9655, "en": "Can't trade component. It is in a locked slot!", "fr": "Impossible d'échanger le composant. Il se trouve dans un emplacement verrouillé !"}
+{"id": 9656, "en": "TalentName", "fr": "Nom du Talent"}
+{"id": 9657, "en": "TalentDesc", "fr": "TalentDesc"}
+{"id": 9658, "en": "BGTexture", "fr": "BGTexture"}
+{"id": 9659, "en": "AddRankBtn", "fr": "AddRankBtn"}
+{"id": 9660, "en": "Choice", "fr": "Choix"}
+{"id": 9661, "en": "points", "fr": "points"}
+{"id": 9662, "en": "point", "fr": "point"}
+{"id": 9663, "en": "[b]", "fr": "[b]"}
+{"id": 9664, "en": "[/b] talent", "fr": "[/b] talent"}
+{"id": 9665, "en": "available", "fr": "disponible"}
+{"id": 9666, "en": "Ship Security", "fr": "Sûreté des vaisseaus"}
+{"id": 9667, "en": "Nuke Usage", "fr": "Utilisation de Nuke"}
+{"id": 9668, "en": "Lead Boarding Party", "fr": "Chef d'embarquement"}
+{"id": 9669, "en": "Repair Hull", "fr": "Réparation de la coque"}
+{"id": 9670, "en": "Collect Scrap", "fr": "Collecter la ferraille"}
+{"id": 9671, "en": "Line Up Ship For Warp", "fr": "Line Up Ship For Warp"}
+{"id": 9672, "en": "Use Warp Station", "fr": "Utiliser la station Warp"}
+{"id": 9673, "en": "Fly Ship", "fr": "Vaisseau volant"}
+{"id": 9674, "en": "Avoid Detection", "fr": "Éviter la détection"}
+{"id": 9675, "en": "Avoid Black Hole", "fr": "Éviter le trou noir"}
+{"id": 9676, "en": "Defensive", "fr": "Défensif"}
+{"id": 9677, "en": "Patrol", "fr": "Patrouille"}
+{"id": 9678, "en": "Shutdown Ship", "fr": "Vaisseau à l'arrêt"}
+{"id": 9679, "en": "Eject Reactor Core", "fr": "Éjecter le cœur du réacteur"}
+{"id": 9680, "en": "Shoot Down Missiles", "fr": "Abattre des missiles"}
+{"id": 9681, "en": "Lower Shields For Repairs", "fr": "Basse-Chaussure pour les réparations"}
+{"id": 9682, "en": "Aggressive", "fr": "Agressif"}
+{"id": 9683, "en": "Weapons Use", "fr": "Utilisation des armes"}
+{"id": 9684, "en": "Vocal / Comms", "fr": "Vocal / Comms"}
+{"id": 9685, "en": "Sensor Sweep", "fr": "Balayage du capteur"}
+{"id": 9686, "en": "Relay Info", "fr": "Info relais"}
+{"id": 9687, "en": "Use Programs", "fr": "Programmes d'utilisation"}
+{"id": 9688, "en": "Cyberwarfare", "fr": "La cyberguerre"}
+{"id": 9689, "en": "Protect Systems", "fr": "Protéger les systèmes"}
+{"id": 9690, "en": "Evade Enemy Ships", "fr": "Éviter les vaisseaus ennemis"}
+{"id": 9691, "en": "Keep Coolant Reserves", "fr": "Conserver des réserves de liquide de refroidissement"}
+{"id": 9692, "en": "Keep Fuel Reserves", "fr": "Conserver des réserves de carburant"}
+{"id": 9693, "en": "Manual Program Charge", "fr": "Frais de programme manuel"}
+{"id": 9694, "en": "Minimize Power Usage", "fr": "Réduire la consommation d'énergie"}
+{"id": 9695, "en": "Reactor Safety", "fr": "Sûreté des réacteurs"}
+{"id": 9696, "en": "Charge Warp Drive", "fr": "Chargez le moteur à distorsion"}
+{"id": 9697, "en": "Jump Ship", "fr": "Sauter le vaisseau"}
+{"id": 9698, "en": "Board Enemy Ship", "fr": "Aborder un vaisseau ennemi"}
+{"id": 9699, "en": "Sell Biscuits", "fr": "Vendre des biscuits"}
+{"id": 9700, "en": "Cloaking Sys", "fr": "Système d'occultation"}
+{"id": 9701, "en": "Repair Crewmate", "fr": "Equipier de réparation"}
+{"id": 9702, "en": "Heal Crewmate", "fr": "Soigner le coéquipier"}
+{"id": 9703, "en": "Revive Crewmate", "fr": "Revive Crewmate"}
+{"id": 9704, "en": "Close To Captain", "fr": "Près du capitaine"}
+{"id": 9705, "en": "Man Turret", "fr": "Tourelle homme"}
+{"id": 9706, "en": "Man Station", "fr": "Man Station"}
+{"id": 9707, "en": "Defend Self (Ship)", "fr": "Se défendre (vaisseau)"}
+{"id": 9708, "en": "Fire Patrol", "fr": "Patrouille de pompiers"}
+{"id": 9709, "en": "Repair System", "fr": "Système de réparation"}
+{"id": 9710, "en": "Missile Usage", "fr": "Utilisation des missiles"}
+{"id": 9711, "en": "Combat Assist", "fr": "Assistance au combat"}
+{"id": 9712, "en": "Search For Ships", "fr": "Recherche de vaisseaus"}
+{"id": 9713, "en": "Heal Myself", "fr": "Se soigner"}
+{"id": 9714, "en": "Startup Ship", "fr": "Vaisseau de démarrage"}
+{"id": 9715, "en": "Target Life Support", "fr": "Supports de vie cibles"}
+{"id": 9716, "en": "Target Science Lab", "fr": "Laboratoire scientifique Target"}
+{"id": 9717, "en": "Target Weapon Sys", "fr": "Système d'armement cible"}
+{"id": 9718, "en": "Target Engineering", "fr": "Ingénierie de la cible"}
+{"id": 9719, "en": "Target Random System", "fr": "Système aléatoire cible"}
+{"id": 9720, "en": "Power Level: Science Lab", "fr": "Niveau de puissance : Laboratoire scientifique"}
+{"id": 9721, "en": "Power Level: Weapons", "fr": "Niveau de puissance : Armes"}
+{"id": 9722, "en": "Power Level: Engineering", "fr": "Niveau de pouvoir : Ingénierie"}
+{"id": 9723, "en": "Power Level: Shields", "fr": "Niveau de puissance : Boucliers"}
+{"id": 9724, "en": "Defend Self (Planet)", "fr": "Se défendre (Planète)"}
+{"id": 9725, "en": "Get Ammo", "fr": "Obtenir des munitions"}
+{"id": 9726, "en": "Launch Nuclear Device", "fr": "Lancement d'un engin nucléaire"}
+{"id": 9727, "en": "Manage Reactor", "fr": "Gérer le réacteur"}
+{"id": 9728, "en": "Modulate Shields", "fr": "Moduler les boucliers"}
+{"id": 9729, "en": "Static Shields", "fr": "Boucliers statiques"}
+{"id": 9730, "en": "Stay Together", "fr": "Rester ensemble"}
+{"id": 9731, "en": "Neutralize Crew", "fr": "Neutralize Crew"}
+{"id": 9732, "en": "Capture Screens", "fr": "Capture d'écran"}
+{"id": 9733, "en": "Destroy Ship Systems", "fr": "Détruire les systèmes des vaisseaus"}
+{"id": 9734, "en": "Go To Enemy Ship", "fr": "Aller au vaisseau ennemi"}
+{"id": 9735, "en": "PressPD", "fr": "PressPD"}
+{"id": 9736, "en": "Can't upgrade Talent. It needs to be researched!", "fr": "Impossible d'améliorer le talent. Il doit faire l'objet d'une recherche !"}
+{"id": 9737, "en": "Can't upgrade Talent. It requires", "fr": "Impossible de mettre à jour Talent. Il faut"}
+{"id": 9738, "en": "to be fully upgraded!", "fr": "à rénover entièrement !"}
+{"id": 9739, "en": "Can't upgrade Talent. Crew level is below", "fr": "Impossible d'améliorer le talent. Le niveau de l'équipage est inférieur à"}
+{"id": 9740, "en": "LOAD AI FILE$$Are you sure you want to LOAD AI file: <", "fr": "LOAD AI FILE$$Est-ce que vous êtes sûr de vouloir charger le fichier AI : <"}
+{"id": 9741, "en": ">? This will overwrite any loaded AI settings.", "fr": "> ? Cela remplacera tous les paramètres AI chargés."}
+{"id": 9742, "en": "DELETE AI FILE$$Are you sure you want to PERMANENTLY DELETE AI file: <", "fr": "DELETE AI FILE$$Etes-vous sûr de vouloir EFFACER PERMANENTEMENT le fichier AI : <"}
+{"id": 9745, "en": "RESET AI SETTINGS$$Are you sure you want to reset AI bots to default settings? This will overwrite any loaded AI settings.", "fr": "RÉINITIALISER LES PARAMÈTRES DE L'IA$$Vous êtes sûr de vouloir réinitialiser les paramètres par défaut des robots de l'IA ? Cela écrasera tous les paramètres IA chargés."}
+{"id": 9749, "en": ": Could not create Saves/AI directory!", "fr": ": Impossible de créer le répertoire Saves/AI !"}
+{"id": 9753, "en": "CLASS SPECIFIC", "fr": "SPÉCIFIQUE À LA CLASSE"}
+{"id": 9759, "en": "BASE IMPORTANCE", "fr": "IMPORTANCE DE LA BASE"}
+{"id": 9760, "en": "PriorityOverrideDisplay", "fr": "Affichage de la priorité"}
+{"id": 9761, "en": "G", "fr": "G"}
+{"id": 9762, "en": "InputData", "fr": "Données d'entrée"}
+{"id": 9763, "en": "InputDataBG", "fr": "InputDataBG"}
+{"id": 9764, "en": "InputDataText", "fr": "InputDataText"}
+{"id": 9765, "en": "^", "fr": "^"}
+{"id": 9766, "en": "UpdateTDs", "fr": "Mise à jour des DT"}
+{"id": 9767, "en": "talent", "fr": "talent"}
+{"id": 9768, "en": "UpdatePIDs", "fr": "Mise à jour des IDP"}
+{"id": 9769, "en": "Change Slot", "fr": "Changer de place"}
+{"id": 9770, "en": "Unequip", "fr": "Déséquiper"}
+{"id": 9771, "en": "Drop", "fr": "Jeter"}
+{"id": 9772, "en": "(THIS ITEM)", "fr": "(CE POINT)"}
+{"id": 9773, "en": "(EMPTY)", "fr": "(VIDE)"}
+{"id": 9774, "en": "[PL] has sent a [[STR0]] to [[STR1]]", "fr": "[PL] a envoyé un [[STR0]] à [[STR1]]"}
+{"id": 9775, "en": "You have recieved a [[STR0]] from [STR1]", "fr": "Vous avez reçu un [[STR0]] de [STR1]"}
+{"id": 9776, "en": "No room for component in destination slot", "fr": "Il n'y a pas de place pour le composant dans l'emplacement de destination"}
+{"id": 9777, "en": "You need to be the Captain to move components", "fr": "Vous devez être le capitaine pour déplacer les composants"}
+{"id": 9781, "en": "Flagged", "fr": "Marqué"}
+{"id": 9782, "en": "Attributes$", "fr": "Attributs$"}
+{"id": 9783, "en": "Hull", "fr": "Coque"}
+{"id": 9784, "en": "Hull Armor", "fr": "Armure de la coque"}
+{"id": 9785, "en": "<color=#00FF00>(+", "fr": "<color=#00FF00>(+)"}
+{"id": 9786, "en": "%)</color>", "fr": "%)</color>"}
+{"id": 9787, "en": "Shields", "fr": "Boucliers"}
+{"id": 9788, "en": "Shield Charge Rate", "fr": "Taux de charge du bouclier"}
+{"id": 9789, "en": "Reactor Output", "fr": "Sortie du réacteur"}
+{"id": 9790, "en": "Reactor Temp", "fr": "Température du réacteur"}
+{"id": 9791, "en": "$<color=#00FF00>Turret Charge Speed (+", "fr": "$<color=#00FF00>Vitesse de charge de la tourelle (+)"}
+{"id": 9792, "en": "$<color=#FF0000>Turret Charge Speed (-", "fr": "$<color=#FF0000>Vitesse de charge de la tourelle (-"}
+{"id": 9793, "en": "Warp Range", "fr": "Gamme Warp"}
+{"id": 9794, "en": "$<color=#00FF00>Turret Damage (+", "fr": "$<color=#00FF00>Dégâts de la tourelle (+)"}
+{"id": 9795, "en": "$<color=#FF0000>Turret Damage (-", "fr": "$<color=#FF0000>Dégâts de la tourelle (-"}
+{"id": 9796, "en": "Move to Cargo", "fr": "Déplacer vers Cargo"}
+{"id": 9797, "en": "Equip Component", "fr": "Composant de l'équipement"}
+{"id": 9798, "en": "Empty", "fr": "Vide"}
+{"id": 9799, "en": "Slot", "fr": "Fente"}
+{"id": 9800, "en": "UpdateMDs", "fr": "UpdateMDs"}
+{"id": 9801, "en": "!!", "fr": "! !"}
+{"id": 9802, "en": "!!!", "fr": "! !!"}
+{"id": 9803, "en": "SE", "fr": "SE"}
+{"id": 9804, "en": "<color=#AAAAAA>(√)", "fr": "<color=#AAAAAA>(?)"}
+{"id": 9805, "en": "<color=#FFFFFF>( )", "fr": "<color=#FFFFFF>( )"}
+{"id": 9806, "en": "Chaos", "fr": "Le chaos"}
+{"id": 9807, "en": "Forced Respawn", "fr": "Renouvellement forcé"}
+{"id": 9808, "en": "You don't have permission to take that item!", "fr": "Vous n'avez pas la permission de prendre cet objet !"}
+{"id": 9809, "en": "My Inventory <color=red>(", "fr": "Mon inventaire <color=red>("}
+{"id": 9810, "en": ")</color>", "fr": ")</color>"}
+{"id": 9811, "en": "My Inventory (", "fr": "Mon inventaire ("}
+{"id": 9812, "en": "<color=red>(", "fr": "<color=red>("}
+{"id": 9813, "en": "{0}", "fr": "{0}"}
+{"id": 9814, "en": "{0} / {1}", "fr": "{0} / {1}"}
+{"id": 9815, "en": "{0:F1}", "fr": "{0:F1}"}
+{"id": 9816, "en": "WEIGHT:  {0:F1} / {1:F1}", "fr": "POIDS : {0:F1} / {1:F1}"}
+{"id": 9817, "en": "CREW PURCHASE LIMITS ARE ENABLED$$Crew allowance ENABLED$Only the Captain can buy or sell ship components$Crew CAN buy or sell items", "fr": "Les limites d'achat de l'équipage sont activées$$L'allocation de l'équipage est activée$Seul le capitaine peut acheter ou vendre des composants du vaisseau$L'équipage peut acheter ou vendre des objets"}
+{"id": 9818, "en": "CREW PURCHASE LIMITS ARE DISABLED$$Crew allowance DISABLED$Crew CAN buy or sell ship components$Crew CAN buy or sell items", "fr": "Les limites d'achat de l'équipage sont désactivées$$L'allocation de l'équipage est désactivée$L'équipage peut acheter ou vendre des composants de vaisseau$L'équipage peut acheter ou vendre des objets"}
+{"id": 9823, "en": "A.O.G. Fragment", "fr": "Fragment A.O.G."}
+{"id": 9824, "en": "Your ship will become unflagged each jump", "fr": "Votre vaisseau sera dépourvu de pavillon à chaque saut."}
+{"id": 9825, "en": "Auction Fragment", "fr": "Fragment de vente aux enchères"}
+{"id": 9826, "en": "Gain access to special deals in general stores across the galaxy", "fr": "Accédez à des offres spéciales dans les magasins généraux de la galaxie."}
+{"id": 9827, "en": "Colonial Union Fragment", "fr": "Fragment d'union coloniale"}
+{"id": 9828, "en": "+50% max shield integrity$+15% warp range", "fr": "+50% intégrité maximale du bouclier$+15% portée de distorsion"}
+{"id": 9829, "en": "High Roller Fragment", "fr": "Fragment High Roller"}
+{"id": 9830, "en": "Random chance to either gain credits, processed scrap or coolant each jump", "fr": "Chance aléatoire de gagner des crédits, de la ferraille traitée ou du liquide de refroidissement à chaque saut."}
+{"id": 9831, "en": "Fluffy Biscuit Fragment", "fr": "Fragment de biscuit moelleux"}
+{"id": 9832, "en": "2x fluffy oven food supply$2x credits earned for biscuit sales", "fr": "2x les crédits obtenus pour les ventes de biscuits"}
+{"id": 9833, "en": "Racing Fragment", "fr": "Fragment de course"}
+{"id": 9834, "en": "+30% thrust", "fr": "+30% de poussée"}
+{"id": 9835, "en": "Commander Fragment", "fr": "Fragment du commandant"}
+{"id": 9836, "en": "5% hull repair per jump", "fr": "5% de réparation de la coque par saut"}
+{"id": 9837, "en": "Cypher Fragment", "fr": "Fragment de cypher"}
+{"id": 9838, "en": "Increases ship program slots to 12", "fr": "Augmentation du nombre de places dans les programmes de vaisseaus à 12"}
+{"id": 9839, "en": "Grey Huntsmen Fragment", "fr": "Fragment de chasseur gris"}
+{"id": 9840, "en": "No effect", "fr": "Pas d'effet"}
+{"id": 9841, "en": "Warger's Fragment", "fr": "Fragment de Warger"}
+{"id": 9842, "en": "Cursed Fragment", "fr": "Fragment maudit"}
+{"id": 9843, "en": "A supposedly 'cursed' data fragment. If you believe in that sort of thing ...", "fr": "Un fragment de données prétendument \"maudit\". Si vous croyez à ce genre de choses ..."}
+{"id": 9844, "en": "W.D. Corp Fragment", "fr": "W.D. Corp Fragment"}
+{"id": 9845, "en": "Installed tracker missiles are refilled by 10% each jump", "fr": "Les missiles de suivi installés sont rechargés de 10 % à chaque saut."}
+{"id": 9846, "en": "{0} Cr <color=#777777>/ {1} Cr</color>", "fr": "{0} Cr <color=#777777>/ {1} Cr</color>"}
+{"id": 9847, "en": "s Inventory", "fr": "s Inventaire"}
+{"id": 9848, "en": "fps", "fr": "fps"}
+{"id": 9849, "en": "(RTT:", "fr": "(RTT :"}
+{"id": 9850, "en": "ms)", "fr": "ms)"}
+{"id": 9851, "en": "<color=green>Good Connection (", "fr": "<color=green>Bonne connexion ("}
+{"id": 9852, "en": "% PL)</color>", "fr": "% PL)</color>"}
+{"id": 9853, "en": "<color=green>Stable Connection (", "fr": "<color=green>Connexion stable ("}
+{"id": 9854, "en": "<color=yellow>Mixed Connection (", "fr": "<color=yellow>Connexion mixte ("}
+{"id": 9855, "en": "<color=red>Unstable Connection (", "fr": "<color=red>Connexion instable ("}
+{"id": 9856, "en": "Crew Faction", "fr": "Faction de l'équipage"}
+{"id": 9857, "en": "The faction that you currently aligned to and will recieve missions / support from", "fr": "La faction à laquelle vous êtes actuellement aligné et de laquelle vous recevrez des missions / du soutien."}
+{"id": 9858, "en": "Ship Registration", "fr": "Enregistrement des vaisseaus"}
+{"id": 9859, "en": "How other ships will see your crew (when not revealed)", "fr": "Comment les autres vaisseaux verront votre équipage (lorsqu'il n'est pas révélé)"}
+{"id": 9860, "en": "Crew Reputation", "fr": "Réputation de l'équipage"}
+{"id": 9861, "en": "How other ships will see your crew (when revealed)", "fr": "Comment les autres vaisseaux verront votre équipage (lorsqu'il sera révélé)"}
+{"id": 9864, "en": "Priority has the maximum number of overrides!", "fr": "La priorité a le plus grand nombre de dérogations !"}
+{"id": 9869, "en": "Plus", "fr": "Plus"}
+{"id": 9870, "en": "Minus", "fr": "Moins"}
+{"id": 9872, "en": "Food", "fr": "Alimentation"}
+{"id": 9873, "en": "Artifact", "fr": "Artéfact"}
+{"id": 9874, "en": "Fire Extinguisher", "fr": "Extincteur"}
+{"id": 9875, "en": "Repair Tool", "fr": "Outil de réparation"}
+{"id": 9876, "en": "Bolt Pistol", "fr": "Pistolet à verrou"}
+{"id": 9877, "en": "Beam Pistol", "fr": "Pistolet à rayons"}
+{"id": 9878, "en": "Sell Tool", "fr": "Vendre un outil"}
+{"id": 9879, "en": "Your [", "fr": "Votre ["}
+{"id": 9880, "en": "] has degraded to Level", "fr": "Le [...] s'est dégradé au niveau"}
+{"id": 9881, "en": "Weight", "fr": "Poids"}
+{"id": 9882, "en": "Ammo Clip", "fr": "Clip à munitions"}
+{"id": 9883, "en": "Refills your currently equipped handheld item to full ammo.", "fr": "Remplit l'objet portable actuellement équipé de toutes ses munitions."}
+{"id": 9884, "en": "Fire-Killer' Grenade", "fr": "Grenade \"tueuse de feu"}
+{"id": 9885, "en": "Launches special grenades that can extinguish nearby fires. The #1 solution for killing fires dead the quick and easy way.", "fr": "Lance des grenades spéciales qui peuvent éteindre les incendies à proximité. La solution n°1 pour tuer les incendies de manière rapide et facile."}
+{"id": 9886, "en": "Fire-Killer Grenade Launcher", "fr": "Lance-grenades Fire-Killer"}
+{"id": 9887, "en": "Anti-Fire Power", "fr": "Pouvoir anti-incendie"}
+{"id": 9888, "en": "A sandstone statuette from an extinct civilization. It bears the likeness of a sacred creature.", "fr": "Statuette en grès provenant d'une civilisation disparue. Elle représente une créature sacrée."}
+{"id": 9889, "en": "A broken sandstone statuette from an extinct civilization. It bears the likeness of a sacred creature.", "fr": "Statuette de grès brisée provenant d'une civilisation éteinte. Elle représente une créature sacrée."}
+{"id": 9890, "en": "An artifact from an extinct civilization. It has a strange symbol carved on its surface.", "fr": "Un artefact d'une civilisation disparue. Un étrange symbole est gravé sur sa surface."}
+{"id": 9891, "en": "A broken artifact from an extinct civilization. It has a strange symbol carved on its surface.", "fr": "Un artefact brisé provenant d'une civilisation disparue. Un étrange symbole est gravé sur sa surface."}
+{"id": 9892, "en": "A strange object from a long forgotten culture. The markings seem to glow.", "fr": "Un objet étrange provenant d'une culture oubliée depuis longtemps. Les marques semblent briller."}
+{"id": 9893, "en": "A crystal used in the production of the drug sundust. It is illegal to have this substance in your possession.", "fr": "Cristal utilisé dans la production de la drogue sundust. Il est illégal d'être en possession de cette substance."}
+{"id": 9894, "en": "An extremely old coronet from an extinct civilization. Simple in its design.", "fr": "Une couronne très ancienne d'une civilisation éteinte. Sa conception est simple."}
+{"id": 9895, "en": "An extremely old coronet from an extinct civilization.", "fr": "Une couronne très ancienne d'une civilisation éteinte."}
+{"id": 9896, "en": "An extremely old coronet from an extinct civilization. It must have belonged to an individual of great importance.", "fr": "Une couronne très ancienne provenant d'une civilisation éteinte. Elle a dû appartenir à un individu de grande importance."}
+{"id": 9897, "en": "Unrecognizable fragment of a larger object. It has been worn down by harsh weather for a long time.", "fr": "Fragment méconnaissable d'un objet plus grand. Il a été usé par les intempéries pendant longtemps."}
+{"id": 9898, "en": "Useless debris that is beyond repurposing. It won’t fetch much of a price.", "fr": "Des débris inutiles qui ne peuvent pas être réutilisés. Ils n'ont pas beaucoup de valeur."}
+{"id": 9899, "en": "Thrown away long ago, this scrap remained undisturbed for many years until you picked it up.", "fr": "Jetée il y a longtemps, cette ferraille est restée intacte pendant de nombreuses années jusqu'à ce que vous la ramassiez."}
+{"id": 9900, "en": "Metal scrap that has been badly bent out of shape.", "fr": "Ferraille métallique qui a été fortement déformée."}
+{"id": 9901, "en": "An old battery produced by the W.D. Corporation. Might still have some power in it, but it’s unlikely.", "fr": "Une vieille batterie produite par la W.D. Corporation. Il est possible qu'elle ait encore de l'énergie, mais c'est peu probable."}
+{"id": 9902, "en": "Sell", "fr": "Vendre"}
+{"id": 9903, "en": "Ancient Statuette", "fr": "Statuette ancienne"}
+{"id": 9904, "en": "Broken Ancient Statuette", "fr": "Statuette antique brisée"}
+{"id": 9905, "en": "Ancient Sculpture", "fr": "Sculpture ancienne"}
+{"id": 9906, "en": "Broken Ancient Sculpture", "fr": "Sculpture antique brisée"}
+{"id": 9907, "en": "Dark Artifact", "fr": "Artéfact sombre"}
+{"id": 9908, "en": "Ancient Sculpture 6", "fr": "Sculpture ancienne 6"}
+{"id": 9909, "en": "Borthix Crystal", "fr": "Cristal Borthix"}
+{"id": 9910, "en": "Simple Coronet", "fr": "Couronne simple"}
+{"id": 9911, "en": "Ancient Coronet", "fr": "Couronne ancienne"}
+{"id": 9912, "en": "Regal Coronet", "fr": "Coronet royal"}
+{"id": 9913, "en": "Weathered Object", "fr": "Objet usé"}
+{"id": 9914, "en": "Junk Metal", "fr": "Junk Metal"}
+{"id": 9915, "en": "Discarded Scrap", "fr": "Ferraille mise au rebut"}
+{"id": 9916, "en": "Deformed Metal Piece", "fr": "Pièce métallique déformée"}
+{"id": 9917, "en": "Old Battery", "fr": "Ancienne batterie"}
+{"id": 9918, "en": "Fires an accurate burst of three shots that deals significant damage.", "fr": "Tire une rafale précise de trois coups qui inflige des dégâts importants."}
+{"id": 9919, "en": "Burst Rifle", "fr": "Fusil à rafales"}
+{"id": 9920, "en": "A unique tool for Fluffy Biscuit Company employees. Fixes damage caused to the main ship systems and allows you to sell biscuits in person.", "fr": "Un outil unique pour les employés de la Fluffy Biscuit Company. Répare les dommages causés aux systèmes principaux du vaisseau et vous permet de vendre des biscuits en personne."}
+{"id": 9921, "en": "FB MultiTool", "fr": "FB MultiTool"}
+{"id": 9922, "en": "Repair Speed", "fr": "Vitesse de réparation"}
+{"id": 9923, "en": "Used to put out fires. Designed for ease of use.", "fr": "Utilisé pour éteindre les incendies. Conçus pour être faciles à utiliser."}
+{"id": 9924, "en": "Anti-Fire Gun", "fr": "Pistolet anti-incendie"}
+{"id": 9925, "en": "FireSprayShot", "fr": "FireSprayShot"}
+{"id": 9926, "en": "VolumeSoundEffects", "fr": "VolumeSoundEffects"}
+{"id": 9927, "en": "Exactly as it sounds. A dehydrated sandwich.", "fr": "Exactement comme ça en a l'air. Un sandwich déshydraté."}
+{"id": 9928, "en": "Chewy and substantial. It’s difficult to tell where the meat came from.", "fr": "Mâcheux et substantiel. Il est difficile de savoir d'où vient la viande."}
+{"id": 9929, "en": "Someone took four zesty jerky sticks and lumped them together for even greater effect. Chewy and substantial. It’s difficult to tell where the meat came from.", "fr": "Quelqu'un a pris quatre bâtonnets de viande séchée piquante et les a rassemblés pour un effet encore plus grand. Mâcheux et substantiel. Il est difficile de savoir d'où vient la viande."}
+{"id": 9930, "en": "Standard ration package often used to supply the Colonial Union Fleet. Contains all the necessary nutrients for a crew on a long voyage across the galaxy.", "fr": "Ration standard souvent utilisée pour approvisionner la flotte de l'Union Coloniale. Contient tous les nutriments nécessaires à un équipage pour un long voyage à travers la galaxie."}
+{"id": 9931, "en": "Ration package often used to supply the Colonial Union Fleet. Its condensed contents were designed specifically for use in emergency situations.", "fr": "Colis de rations souvent utilisé pour approvisionner la flotte de l'Union coloniale. Son contenu condensé a été conçu spécifiquement pour les situations d'urgence."}
+{"id": 9932, "en": "Tasteless rations produced by the W.D. Corporation. Can last for centuries in storage without expiring.", "fr": "Rations insipides produites par la W.D. Corporation. Elles peuvent être stockées pendant des siècles sans être périmées."}
+{"id": 9933, "en": "Fillet from the sandshark creature native to certain desert planets. It is heavily marinated to tenderize the meat and reduce its natural pungent flavor.", "fr": "Filet du sandshark, créature originaire de certaines planètes désertiques. Il est fortement mariné afin d'attendrir la viande et d'atténuer sa saveur piquante naturelle."}
+{"id": 9934, "en": "Powdered supplement that contains high amounts of protein.", "fr": "Supplément en poudre contenant de grandes quantités de protéines."}
+{"id": 9935, "en": "Grown to be a cubic shape for maximum storage efficiency.", "fr": "Cultivé en forme cubique pour une efficacité de stockage maximale."}
+{"id": 9936, "en": "The Fluffy Biscuit Company’s signature biscuit. Fills you with a fluffy feeling when eaten.", "fr": "Le biscuit emblématique de la Fluffy Biscuit Company. Il vous remplit d'une sensation de fluffy lorsque vous le mangez."}
+{"id": 9937, "en": "Produced from the Fluffy Biscuit Company’s top-secret perfect biscuit formula. It has an ideal texture and a secret blend of flavor additives to please even the pickiest of palates.", "fr": "Produit à partir de la formule top secrète du biscuit parfait de la Fluffy Biscuit Company. Il a une texture idéale et un mélange secret d'additifs de saveur pour satisfaire même les palais les plus difficiles."}
+{"id": 9938, "en": "Contains no nutrients. Stick to your vegetable rations.", "fr": "Ne contient aucun nutriment. Contentez-vous de vos rations de légumes."}
+{"id": 9939, "en": "A strong greasy drink. Large enough doses are said to be lethal. Many crewmen try to prove their grit by drinking an entire cup. Most fail.", "fr": "Une boisson grasse et forte. On dit que des doses suffisamment importantes peuvent être mortelles. De nombreux membres d'équipage tentent de prouver leur courage en buvant une tasse entière. La plupart échouent."}
+{"id": 9940, "en": "A common drink at space ports and planetary stations. A cheap solution for crews to forget about their troubles for a short time.", "fr": "Une boisson courante dans les ports spatiaux et les stations planétaires. Une solution bon marché pour permettre aux équipages d'oublier leurs problèmes pendant un court laps de temps."}
+{"id": 9941, "en": "Reproduction of a traditional Sylvassi beverage. It has a bitter flavor. In recent years, Sylvassi brew has become an unexpectedly popular drink among humans.", "fr": "Reproduction d'une boisson traditionnelle de Sylvassi. Elle a une saveur amère. Ces dernières années, l'infusion de Sylvassi est devenue une boisson étonnamment populaire parmi les humains."}
+{"id": 9942, "en": "A rare and acidic fruit that grows only in specific environments. Often used to produce expensive wines.", "fr": "Fruit rare et acide qui ne pousse que dans des environnements spécifiques. Il est souvent utilisé pour produire des vins coûteux."}
+{"id": 9943, "en": "Bottled reproduction of a traditional Sylvassi beverage. It has a bitter flavor. In recent years, Sylvassi brew has become an unexpectedly popular drink among humans.", "fr": "Reproduction en bouteille d'une boisson traditionnelle de Sylvassi. Elle a une saveur amère. Ces dernières années, l'infusion de Sylvassi est devenue une boisson étonnamment populaire parmi les humains."}
+{"id": 9944, "en": "A glowing egg-shaped pod filled with spores. It feels solid enough.", "fr": "Une capsule ovoïde incandescente remplie de spores. Elle semble assez solide."}
+{"id": 9945, "en": "A unique blend of spices and spirits created by Bram Hully. Often believed to be the biggest reason Gentlemen return to the Estate.", "fr": "Un mélange unique d'épices et de spiritueux créé par Bram Hully. Il est souvent considéré comme la principale raison pour laquelle les messieurs reviennent au domaine."}
+{"id": 9946, "en": "A sour wine made from the balmy gloom fruit. It’s an acquired taste.", "fr": "Un vin aigre fabriqué à partir du fruit de l'aubier. C'est un goût qui s'acquiert."}
+{"id": 9947, "en": "A sweet drink originally made for children that is sometimes given to new crewmen as a joke. Served warm.", "fr": "Une boisson sucrée faite à l'origine pour les enfants et qui est parfois donnée aux nouveaux membres d'équipage en guise de plaisanterie. Elle est servie chaude."}
+{"id": 9948, "en": "An ice cold drink served in a temperature stabilizing container.", "fr": "Une boisson glacée servie dans un récipient stabilisant la température."}
+{"id": 9949, "en": "A hearty chunk of drone meat. Best served roasted. Just don't eat the exoskeleton.", "fr": "Un gros morceau de viande de bourdon. Il est préférable de le servir rôti. Ne mangez pas l'exosquelette."}
+{"id": 9950, "en": "Allows the player to hold their breath for longer", "fr": "Permet au joueur de retenir sa respiration plus longtemps"}
+{"id": 9951, "en": "A special biscuit that increases fire resistance and decreases damage in no oxygen environments for 2 minutes. Its benefits outweigh its bland flavor.", "fr": "Un biscuit spécial qui augmente la résistance au feu et diminue les dégâts dans les environnements sans oxygène pendant 2 minutes. Ses avantages l'emportent sur sa saveur fade."}
+{"id": 9952, "en": "A special biscuit that increases stamina regeneration for 2 minutes. It has an invigorating flavor.", "fr": "Un biscuit spécial qui augmente la régénération de l'endurance pendant 2 minutes. Il a un goût revigorant."}
+{"id": 9953, "en": "A special biscuit that increases armor for 2 minutes. It’s very dense and crunchy.", "fr": "Un biscuit spécial qui augmente l'armure pendant 2 minutes. Il est très dense et croquant."}
+{"id": 9954, "en": "A special biscuit that increases maximum health and adds a small amount of health regeneration for 2 minutes. This biscuit is low sodium and packed with nutritious vegetables.", "fr": "Un biscuit spécial qui augmente la santé maximale et ajoute une petite quantité de régénération de la santé pendant 2 minutes. Ce biscuit est pauvre en sodium et regorge de légumes nutritifs."}
+{"id": 9955, "en": "A special biscuit that increases handheld weapon accuracy for 2 minutes. After years of debate, it’s now considered cheating to eat a carrot cake biscuit in combat-oriented competitions.", "fr": "Un biscuit spécial qui augmente la précision des armes de poing pendant 2 minutes. Après des années de débat, il est désormais considéré comme une tricherie de manger un biscuit au carrot cake dans les compétitions axées sur le combat."}
+{"id": 9956, "en": "Increased armor at the cost of decreased movement speed for 5 minutes", "fr": "Augmentation de l'armure au prix d'une diminution de la vitesse de déplacement pendant 5 minutes"}
+{"id": 9957, "en": "A special biscuit that heals nearby crewmates over time for 5 minutes. It has a fruity flavor.", "fr": "Un biscuit spécial qui soigne les équipiers proches pendant 5 minutes. Il a un goût fruité."}
+{"id": 9958, "en": "A special biscuit that causes damage dealt to enemies to slightly heal you for 2 minutes. The garlic packs quite a punch. Don’t stand too close to your crewmates when you talk to them.", "fr": "Un biscuit spécial qui fait que les dégâts infligés aux ennemis vous soignent légèrement pendant 2 minutes. L'ail est très puissant. Ne vous tenez pas trop près de vos équipiers lorsque vous leur parlez."}
+{"id": 9959, "en": "A special biscuit that causes handheld weapons to cool down faster for 2 minutes. When eaten, it makes your hands feel quite cold.", "fr": "Un biscuit spécial qui accélère le refroidissement des armes de poing pendant 2 minutes. Lorsqu'il est mangé, il donne une sensation de froid aux mains."}
+{"id": 9960, "en": "Increased grenade damage by 25% for 2 minutes", "fr": "Augmentation des dégâts de la grenade de 25 % pendant 2 minutes"}
+{"id": 9961, "en": "A special biscuit that has a random effect and a flavor that can be described only as funky.", "fr": "Un biscuit spécial qui a un effet aléatoire et une saveur qui ne peut être décrite que comme funky."}
+{"id": 9962, "en": "A special biscuit that increases the chance of selling biscuits to customers in person. A staple among Fluffy Biscuit Co. employees.", "fr": "Un biscuit spécial qui augmente les chances de vendre des biscuits aux clients en personne. Un produit de base pour les employés de Fluffy Biscuit Co."}
+{"id": 9963, "en": "A special biscuit that increases handheld weapon damage for 2 minutes. When eaten, it makes your mouth feel ablaze.", "fr": "Un biscuit spécial qui augmente les dégâts des armes de poing pendant 2 minutes. Lorsqu'on le mange, la bouche s'enflamme."}
+{"id": 9964, "en": "A special biscuit that increases handheld weapon damage for nearby crewmates for 5 minutes. It ignites the fire of teamwork.", "fr": "Un biscuit spécial qui augmente les dégâts des armes de poing pour les membres d'équipage proches pendant 5 minutes. Il allume le feu du travail d'équipe."}
+{"id": 9965, "en": "Damages nearby enemies over time for 2 minutes", "fr": "Inflige des dégâts aux ennemis proches sur la durée pendant 2 minutes"}
+{"id": 9966, "en": "A special biscuit that will prevent lethal damage once in the next 5 minutes. It is rumored that eating a long life biscuit every day could be the secret to immortality.", "fr": "Un biscuit spécial qui permet d'éviter les dégâts mortels une fois au cours des 5 prochaines minutes. La rumeur veut que manger un biscuit longue vie tous les jours soit le secret de l'immortalité."}
+{"id": 9967, "en": "Special noodles made for racing events. They go down fast.", "fr": "Des nouilles spéciales pour les courses. Elles descendent rapidement."}
+{"id": 9968, "en": "Noodles served in a cold broth. A favorite among Sylvassi racers.", "fr": "Nouilles servies dans un bouillon froid. Un des plats préférés des coureurs de Sylvassi."}
+{"id": 9969, "en": "Despite being soaked in broth, these noodles are mysteriously crunchy.", "fr": "Bien qu'elles soient imbibées de bouillon, ces nouilles sont mystérieusement croustillantes."}
+{"id": 9970, "en": "Something still seems to be moving in the bowl.", "fr": "Quelque chose semble encore bouger dans le bol."}
+{"id": 9971, "en": "Slimy noodles served in a thick broth with a medley of strange ingredients. It's very nutritious.", "fr": "Des nouilles gluantes servies dans un bouillon épais avec un mélange d'ingrédients étranges. C'est très nourrissant."}
+{"id": 9972, "en": "The best quality noodles, made fresh daily.", "fr": "Des nouilles de la meilleure qualité, fraîchement préparées chaque jour."}
+{"id": 9973, "en": "Hot.", "fr": "Chaud."}
+{"id": 9974, "en": "A bigger version of the Classic Biscuit", "fr": "Une version plus grande du biscuit classique"}
+{"id": 9975, "en": "A sweeter version of the Classic Biscuit", "fr": "Une version plus sucrée du biscuit classique"}
+{"id": 9976, "en": "Drink", "fr": "Boire"}
+{"id": 9977, "en": "Eat", "fr": "Manger"}
+{"id": 9978, "en": "Heal Amount", "fr": "Montant de la guérison"}
+{"id": 9979, "en": "Alcohol", "fr": "Alcool"}
+{"id": 9980, "en": "The \\^Jumbo\\^ Biscuit", "fr": "Le biscuit \\^Jumbo\\^ Biscuit"}
+{"id": 9981, "en": "Sylvaassi Brew", "fr": "Brasserie Sylvaassi"}
+{"id": 9982, "en": "Classic Biscuit", "fr": "Biscuit classique"}
+{"id": 9983, "en": "Perfect Biscuit", "fr": "Biscuit parfait"}
+{"id": 9984, "en": "Dehydrated Sandwich", "fr": "Sandwich déshydraté"}
+{"id": 9985, "en": "Zesty Jerky Stick", "fr": "Bâton Jerky piquant"}
+{"id": 9986, "en": "Collection of Zesty Jerky Sticks", "fr": "Collection de bâtonnets Jerky piquants"}
+{"id": 9987, "en": "Marinated Sandshark Fillet", "fr": "Filet de requin tacheté mariné"}
+{"id": 9988, "en": "Earl Grey Tea", "fr": "Thé Earl Grey"}
+{"id": 9989, "en": "Space Apple", "fr": "Pomme de l'espace"}
+{"id": 9990, "en": "CU Rations", "fr": "Rations CU"}
+{"id": 9991, "en": "CU Emergency Rations", "fr": "Rations d'urgence CU"}
+{"id": 9992, "en": "W.D. Rations", "fr": "Rations W.D."}
+{"id": 9993, "en": "Protein Packet", "fr": "Paquet de protéines"}
+{"id": 9994, "en": "Candy Pack", "fr": "Paquet de bonbons"}
+{"id": 9995, "en": "Port Ale", "fr": "Ale de Porto"}
+{"id": 9996, "en": "Sylvassi Brew", "fr": "Infusion de sylvestre"}
+{"id": 9997, "en": "Balmy Gloom", "fr": "La grisaille"}
+{"id": 9998, "en": "Bottled Sylvassi Brew", "fr": "Brassage de Sylvassi en bouteille"}
+{"id": 9999, "en": "Fungal Spore Pod", "fr": "Gousse de spores fongiques"}
+{"id": 10000, "en": "Hully's Special", "fr": "Spécial Hully"}
+{"id": 10001, "en": "Gloom Wine", "fr": "Vin de lugubre"}
+{"id": 10002, "en": "Rookie's Rum", "fr": "Rhum pour débutants"}
+{"id": 10003, "en": "Gentlemen's Cooler", "fr": "Glacière pour hommes"}
+{"id": 10004, "en": "Drone Meat", "fr": "Viande de drone"}
+{"id": 10005, "en": "Vacuum Biscuit", "fr": "Biscuit sous vide"}
+{"id": 10006, "en": "Emergency Biscuit", "fr": "Biscuit d'urgence"}
+{"id": 10007, "en": "Energy Biscuit", "fr": "Biscuit énergétique"}
+{"id": 10008, "en": "Hearty Biscuit", "fr": "Biscuit copieux"}
+{"id": 10009, "en": "Healthy Biscuit", "fr": "Biscuits sains"}
+{"id": 10010, "en": "Carrot Cake Biscuit", "fr": "Biscuit au gâteau de carotte"}
+{"id": 10011, "en": "Whole Wheat Biscuit", "fr": "Biscuit de blé entier"}
+{"id": 10012, "en": "Healberry Crumbly Biscuit", "fr": "Biscuit friable à la myrtille"}
+{"id": 10013, "en": "Sugar Biscuit", "fr": "Biscuit au sucre"}
+{"id": 10014, "en": "Garlic Biscuit", "fr": "Biscuit à l'ail"}
+{"id": 10015, "en": "Funky Biscuit", "fr": "Biscuit funky"}
+{"id": 10016, "en": "Spicy Biscuit", "fr": "Biscuit épicé"}
+{"id": 10017, "en": "Spicy Crumbly Biscuit", "fr": "Biscuit croustillant épicé"}
+{"id": 10018, "en": "Frozen Biscuit", "fr": "Biscuit surgelé"}
+{"id": 10019, "en": "Molten Biscuit", "fr": "Biscuit fondu"}
+{"id": 10020, "en": "Grenade Dmg Biscuit", "fr": "Grenade Dmg Biscuit"}
+{"id": 10021, "en": "Lucky Biscuit", "fr": "Biscuit chanceux"}
+{"id": 10022, "en": "Racing Noodles", "fr": "Nouilles de course"}
+{"id": 10023, "en": "Chilled Noodles", "fr": "Nouilles réfrigérées"}
+{"id": 10024, "en": "Crispy Noodles", "fr": "Nouilles croustillantes"}
+{"id": 10025, "en": "Grubhaven Noodles", "fr": "Nouilles Grubhaven"}
+{"id": 10026, "en": "Swamp Noodles", "fr": "Nouilles des marais"}
+{"id": 10027, "en": "Premium Noodles", "fr": "Nouilles Premium"}
+{"id": 10028, "en": "LeftHandEquip", "fr": "Équipement de la main gauche"}
+{"id": 10029, "en": "Fires a devastating shot at short range. A deadly weapon during ship boarding.", "fr": "Tire un coup de feu dévastateur à courte portée. Une arme mortelle lors de l'abordage d'un vaisseau."}
+{"id": 10030, "en": "FireHeavyShot", "fr": "Tir lourd"}
+{"id": 10031, "en": "SplitShot", "fr": "SplitShot"}
+{"id": 10032, "en": "Heal Grenade", "fr": "Grenade de guérison"}
+{"id": 10033, "en": "Launches special grenades that provide gradual healing in an area of effect. The heal grenades can be detonated early for a quicker burst of healing.", "fr": "Lance des grenades spéciales qui soignent progressivement dans une zone d'effet. Les grenades de soins peuvent être déclenchées plus tôt pour obtenir des soins plus rapides."}
+{"id": 10034, "en": "Heal Grenade Launcher", "fr": "Lance-grenades de guérison"}
+{"id": 10035, "en": "Healing Power", "fr": "Pouvoir de guérison"}
+{"id": 10036, "en": "Fires projectiles that deal considerable damage.", "fr": "Tire des projectiles qui infligent des dégâts considérables."}
+{"id": 10037, "en": "Fires a powerful sustained beam capable of piercing targets.", "fr": "Tire un puissant faisceau soutenu capable de transpercer les cibles."}
+{"id": 10038, "en": "Beam Rifle", "fr": "Fusil à poutre"}
+{"id": 10039, "en": "beamPistol_Charge", "fr": "charge_pistolet"}
+{"id": 10040, "en": "Fires a sustained beam that can heal fellow crewmembers. It is also capable of piercing enemy targets.", "fr": "Tire un rayon soutenu qui peut soigner les autres membres de l'équipage. Il est également capable de transpercer les cibles ennemies."}
+{"id": 10041, "en": "Healing", "fr": "Guérison"}
+{"id": 10042, "en": "S.P.I.K.E.R. Prototype", "fr": "Prototype S.P.I.K.E.R."}
+{"id": 10043, "en": "Generates a field of ice spikes on the ground that harms and slows enemies. Also known as the \\^Sporadic Point Industrial Kinetic Energy Reducer\\^.", "fr": "Génère un champ de pointes de glace sur le sol qui blesse et ralentit les ennemis. Également connu sous le nom de Réducteur d'énergie cinétique industrielle ponctuelle sporadique."}
+{"id": 10044, "en": "IceSpikes", "fr": "Pointes de glace"}
+{"id": 10045, "en": "IceSpikesPreview", "fr": "IceSpikesPreview"}
+{"id": 10046, "en": "Keycard that opens the doors of a train car.", "fr": "Carte-clé permettant d'ouvrir les portes d'un wagon de train."}
+{"id": 10047, "en": "Keycard that permits entrance to the Outpost 448 research wing.", "fr": "Carte-clé permettant d'entrer dans l'aile de recherche de l'avant-poste 448."}
+{"id": 10048, "en": "Keycard that grants level 1 access to some administration areas of the Outpost 448 research wing.", "fr": "Carte-clé donnant accès au niveau 1 à certaines zones administratives de l'aile de recherche de l'avant-poste 448."}
+{"id": 10049, "en": "Keycard that grants level 2 access to some administration areas of the Outpost 448 research wing.", "fr": "Carte-clé donnant accès au niveau 2 à certaines zones administratives de l'aile de recherche de l'avant-poste 448."}
+{"id": 10050, "en": "Keycard that grants level 3 access to some administration areas of the Outpost 448 research wing.", "fr": "Carte-clé donnant accès au niveau 3 à certaines zones administratives de l'aile de recherche de l'avant-poste 448."}
+{"id": 10051, "en": "Keycard that grants access to the Colonial Union Command Center in Outpost 448.", "fr": "Carte-clé permettant d'accéder au centre de commandement de l'Union coloniale dans l'avant-poste 448."}
+{"id": 10052, "en": "Keycard that grants access to the Aberrant Organisms Main Lab in the Outpost 448 research wing.", "fr": "Carte-clé donnant accès au laboratoire principal des organismes aberrants dans l'aile de recherche de l'avant-poste 448."}
+{"id": 10053, "en": "Strange key found in an ancient Sylvassi tomb. It hums with energy and emits and blue glow.", "fr": "Étrange clé trouvée dans un ancien tombeau sylvestre. Elle bourdonne d'énergie et émet une lueur bleue."}
+{"id": 10054, "en": "Strange key found in an ancient Sylvassi tomb. It hums with energy and emits and orange glow.", "fr": "Étrange clé trouvée dans un ancien tombeau sylvestre. Elle bourdonne d'énergie et émet une lueur orange."}
+{"id": 10055, "en": "Keycard that grants security clearance to use the short range transporters leading to the W.D. Control Room.", "fr": "Carte-clé permettant d'obtenir une autorisation de sécurité pour utiliser les téléporteurs à courte portée menant à la salle de contrôle de W.D."}
+{"id": 10056, "en": "Badge that grants access to the weapons section of the W.D. Flagship.", "fr": "Badge donnant accès à la section des armes du vaisseau amiral W.D."}
+{"id": 10057, "en": "Keycard that grants access to the captain's quarters on the Estate.", "fr": "Carte-clé permettant d'accéder aux quartiers du capitaine sur le Domaine."}
+{"id": 10058, "en": "Keycard that grants access to main facilities of the Lost Colony", "fr": "Carte-clé permettant d'accéder aux principales installations de la colonie perdue."}
+{"id": 10059, "en": "Keycard that grants access to a secure storage locker.", "fr": "Carte-clé donnant accès à un casier de stockage sécurisé."}
+{"id": 10060, "en": "Keycard that grants access to the lower labratories of the Lost Colony.", "fr": "Carte-clé permettant d'accéder aux laboratoires inférieurs de la Colonie Perdue."}
+{"id": 10061, "en": "Keycard", "fr": "Carte-clé"}
+{"id": 10062, "en": "Train Keycard", "fr": "Carte-clé du train"}
+{"id": 10063, "en": "Entrance Security Keycard", "fr": "Carte de sécurité d'entrée"}
+{"id": 10064, "en": "Level 1 Admin Access Card", "fr": "Carte d'accès administrateur niveau 1"}
+{"id": 10065, "en": "Level 2 Admin Access Card", "fr": "Carte d'accès administrateur niveau 2"}
+{"id": 10066, "en": "Level 3 Admin Access Card", "fr": "Carte d'accès administrateur niveau 3"}
+{"id": 10067, "en": "Command Center Keycard", "fr": "Command Center Keycard"}
+{"id": 10068, "en": "Aberrant Organisms Lab Access Card", "fr": "Carte d'accès au laboratoire pour les organismes aberrants"}
+{"id": 10069, "en": "Blue Tomb Key", "fr": "Clé de la tombe bleue"}
+{"id": 10070, "en": "Orange Tomb Key", "fr": "Clé de la tombe orange"}
+{"id": 10071, "en": "W.D. Control Room Access Card", "fr": "Carte d'accès à la salle de contrôle W.D."}
+{"id": 10072, "en": "W.D. Flagship Weapons Badge", "fr": "Insigne d'armement W.D. Flagship"}
+{"id": 10073, "en": "Estate Access Card", "fr": "Carte d'accès au patrimoine"}
+{"id": 10074, "en": "Facility Keycard", "fr": "Carte-clé de l'installation"}
+{"id": 10075, "en": "Storage Keycard", "fr": "Carte-clé de stockage"}
+{"id": 10076, "en": "Lower Facilities Keycard", "fr": "Carte-clé des installations inférieures"}
+{"id": 10077, "en": "Laser Pistol", "fr": "Pistolet laser"}
+{"id": 10078, "en": "FireSmallShot", "fr": "FireSmallShot"}
+{"id": 10079, "en": "Mini Grenades", "fr": "Mini grenades"}
+{"id": 10080, "en": "A fast-firing launcher that spits out small explosives. Though it doesn’t do as much damage as a pulse grenade launcher, it can hold much more ammunition.", "fr": "Un lanceur à tir rapide qui crache de petits explosifs. Bien qu'il ne fasse pas autant de dégâts qu'un lance-grenades à impulsion, il peut contenir beaucoup plus de munitions."}
+{"id": 10081, "en": "Mini Grenade Launcher", "fr": "Mini lance-grenades"}
+{"id": 10082, "en": "A simple yet effective weapon that has been in circulation for many years. Fires blasts of plasma.", "fr": "Une arme simple mais efficace, en circulation depuis de nombreuses années. Elle tire des rafales de plasma."}
+{"id": 10083, "en": "Phase Pistol", "fr": "Pistolet à phase"}
+{"id": 10089, "en": "Fire Rate", "fr": "Taux d'incendie"}
+{"id": 10090, "en": "Accuracy", "fr": "Précision"}
+{"id": 10091, "en": "Fires a powerful beam capable of piercing targets.", "fr": "Tire un puissant faisceau capable de transpercer les cibles."}
+{"id": 10092, "en": "Pulse Grenade", "fr": "Grenade à impulsion"}
+{"id": 10093, "en": "The standard explosive-launching device for decades.", "fr": "Il s'agit de l'engin de lancement d'explosifs standard depuis des décennies."}
+{"id": 10094, "en": "Pulse Grenade Launcher", "fr": "Lanceur de grenades à impulsion"}
+{"id": 10095, "en": "Shipping logs that contain information about an organized group of outlaws.", "fr": "Registres d'expédition contenant des informations sur un groupe organisé de hors-la-loi."}
+{"id": 10096, "en": "Highly encrypted data logs. It's impossible to tell what information is stored without a lot of computing power and time.", "fr": "Journaux de données hautement cryptés. Il est impossible de savoir quelles informations sont stockées sans disposer d'une grande puissance de calcul et de beaucoup de temps."}
+{"id": 10097, "en": "A priceless medal that identifies a deceased member of a missing research team.", "fr": "Une médaille inestimable qui permet d'identifier un membre décédé d'une équipe de recherche disparue."}
+{"id": 10098, "en": "An essential component commonly found in the heating systems of planetary bases.", "fr": "Composant essentiel que l'on trouve couramment dans les systèmes de chauffage des bases planétaires."}
+{"id": 10099, "en": "An odd relic that emits a warm, reddish glow. It may never have been intended to be removed from its pedestal.", "fr": "Une étrange relique qui émet une chaude lueur rougeâtre. Il est possible qu'elle n'ait jamais été destinée à être retirée de son piédestal."}
+{"id": 10100, "en": "A battery for a short range sensor station.", "fr": "Une batterie pour une station de détection à courte portée."}
+{"id": 10101, "en": "A crucial part for creating a warp drive. Raw warp coils are notoriously difficult to manufacture.", "fr": "Un élément crucial pour la création d'une chaîne de transmission. Les bobines de distorsion brutes sont notoirement difficiles à fabriquer."}
+{"id": 10102, "en": "A container specifically built to be invisible from most sensors. It’s impossible to open without the appropriate key.", "fr": "Un conteneur spécialement conçu pour être invisible de la plupart des détecteurs. Il est impossible de l'ouvrir sans la clé appropriée."}
+{"id": 10103, "en": "An egg laid by a sandshark. Sandshark eggs are often closely guarded by the creature that laid them.", "fr": "Œuf pondu par un sandshark. Les œufs de sandshark sont souvent étroitement surveillés par la créature qui les a pondus."}
+{"id": 10104, "en": "Classified research logs from a Colonial Union lab.", "fr": "Journaux de recherche classifiés d'un laboratoire de l'Union coloniale."}
+{"id": 10105, "en": "A metal sphere with no visible openings. Its purpose is utterly foreign.", "fr": "Une sphère métallique sans ouverture visible. Sa fonction est totalement étrangère."}
+{"id": 10106, "en": "Carved stone tablet from a deceased civilization.", "fr": "Tablette de pierre sculptée provenant d'une civilisation disparue."}
+{"id": 10107, "en": "An egg from an alien creature.", "fr": "Un œuf d'une créature extraterrestre."}
+{"id": 10108, "en": "A unusual looking key found on Lotharus 9.", "fr": "Une clé d'aspect inhabituel trouvée sur Lotharus 9."}
+{"id": 10109, "en": "Log from a sensor that contains data about an unknown dimension.", "fr": "Journal d'un capteur contenant des données sur une dimension inconnue."}
+{"id": 10110, "en": "A personal message from Bakul Faros to his grandson.", "fr": "Un message personnel de Bakul Faros à son petit-fils."}
+{"id": 10111, "en": "A piece of Fluffy Biscuit technology that concentrates flavor components.", "fr": "Un élément de la technologie Fluffy Biscuit qui concentre les composants de la saveur."}
+{"id": 10112, "en": "Filter for a Fluffy Biscuit Company waste disposal system.", "fr": "Filtre pour un système d'élimination des déchets de la société Fluffy Biscuit."}
+{"id": 10113, "en": "Grants access to a raider hideout found in Cornelia Station.", "fr": "Permet d'accéder à une cachette de pillards située à Cornelia Station."}
+{"id": 10114, "en": "A data pad that contains information on various prototypes and experiments from the Outpost 448 research wing.", "fr": "Un bloc de données contenant des informations sur divers prototypes et expériences de l'aile de recherche de l'avant-poste 448."}
+{"id": 10115, "en": "An emergency package of medicine mainly used when regeneration atriums are unavailable.", "fr": "Un paquet de médicaments d'urgence utilisé principalement lorsque les atriums de régénération ne sont pas disponibles."}
+{"id": 10116, "en": "Detailed instructions for building a highly advanced intergalactic warp jump processor. Unrivaled in its complexity.", "fr": "Instructions détaillées pour la construction d'un processeur de saut de distorsion intergalactique très avancé. D'une complexité inégalée."}
+{"id": 10117, "en": "These logs contain findings about the Infected.", "fr": "Ces journaux contiennent des informations sur les personnes infectées."}
+{"id": 10118, "en": "A chip that provides coodinates for Conrad's 'Personal Universal Null-Point Teleporter' System.", "fr": "Une puce qui fournit des coodinats pour le système de téléportation personnelle universelle à point zéro de Conrad."}
+{"id": 10119, "en": "Ancient tablet given as a reward for completing a Sylvassi Cypher. Only someone with extensive knowledge of ancient Sylvassi language can decipher it.", "fr": "Ancienne tablette donnée en récompense de l'accomplissement d'un cryptogramme sylvassien. Seule une personne ayant une connaissance approfondie de l'ancienne langue sylvassienne peut la déchiffrer."}
+{"id": 10120, "en": "An old artifact that glows. It's hot to the touch.", "fr": "Un vieil artefact qui brille. Il est chaud au toucher."}
+{"id": 10121, "en": "A old object that seems to contain a glowing red liquid.", "fr": "Un vieil objet qui semble contenir un liquide rougeoyant."}
+{"id": 10122, "en": "Quest Item", "fr": "Objet de la quête"}
+{"id": 10123, "en": "Shipping Logs", "fr": "Registres d'expédition"}
+{"id": 10124, "en": "Encrypted Logs", "fr": "Journaux cryptés"}
+{"id": 10125, "en": "Research Medal", "fr": "Médaille de la recherche"}
+{"id": 10126, "en": "Thermal Regulator", "fr": "Régulateur thermique"}
+{"id": 10127, "en": "Ancient Green Artifact", "fr": "Ancien artefact vert"}
+{"id": 10128, "en": "Ancient Red Artifact", "fr": "Ancien artefact rouge"}
+{"id": 10129, "en": "Sensor Station Battery", "fr": "Batterie de la station de détection"}
+{"id": 10130, "en": "Raw Warp Coil", "fr": "Bobine de chaîne brute"}
+{"id": 10131, "en": "Sealed Box", "fr": "Boîte scellée"}
+{"id": 10132, "en": "Sandshark Egg", "fr": "Œuf de sandshark"}
+{"id": 10133, "en": "Research Logs", "fr": "Journaux de recherche"}
+{"id": 10134, "en": "Metal Sphere", "fr": "Sphère en métal"}
+{"id": 10135, "en": "Large Egg", "fr": "Grand œuf"}
+{"id": 10136, "en": "Strange Key", "fr": "Clé étrange"}
+{"id": 10137, "en": "Sensor Logs", "fr": "Journaux des capteurs"}
+{"id": 10138, "en": "Faros's Audio Log", "fr": "Journal de bord de Faros"}
+{"id": 10139, "en": "Fluffy Biscuit Flavor Coil", "fr": "Fluffy Biscuit Flavor Coil (bobine d'arôme de biscuit moelleux)"}
+{"id": 10140, "en": "Fluffy Biscuit Waste Filter", "fr": "Filtre à déchets Fluffy Biscuit"}
+{"id": 10141, "en": "Unnamed Keycard", "fr": "Carte-clé sans nom"}
+{"id": 10142, "en": "Data Pad", "fr": "Bloc de données"}
+{"id": 10143, "en": "Medicine Pack", "fr": "Paquet de médicaments"}
+{"id": 10144, "en": "Flagship Intergalactic Warp Schematics", "fr": "Schémas de la distorsion intergalactique du vaisseau amiral"}
+{"id": 10145, "en": "Doctor Petru's Logs", "fr": "Journal de bord du docteur Petru"}
+{"id": 10146, "en": "The P.U.N.T. Chip", "fr": "La puce P.U.N.T."}
+{"id": 10147, "en": "Ancient Sylvassi Tablet", "fr": "Ancienne tablette de Sylvassi"}
+{"id": 10148, "en": "Ancient Spherical Artifact", "fr": "Ancien artefact sphérique"}
+{"id": 10149, "en": "Poison Capsule", "fr": "Capsule de poison"}
+{"id": 10150, "en": "A beam pistol designed for high damage at range.", "fr": "Un pistolet à rayon conçu pour infliger des dégâts importants à distance."}
+{"id": 10151, "en": "Heavy Beam Pistol", "fr": "Pistolet à faisceau lourd"}
+{"id": 10152, "en": "Repair Grenade", "fr": "Grenade de réparation"}
+{"id": 10153, "en": "Launches special grenades that can repair nearby ship systems. It can save a lot of time when your ship is in a pinch.", "fr": "Lance des grenades spéciales qui peuvent réparer les systèmes des vaisseaux proches. Cela peut vous faire gagner beaucoup de temps lorsque votre vaisseau est en difficulté."}
+{"id": 10154, "en": "Repair Grenade Launcher", "fr": "Réparer le lanceur de grenades"}
+{"id": 10155, "en": "Repair Power", "fr": "Puissance de réparation"}
+{"id": 10156, "en": "Fixes damage caused to the main ship systems.", "fr": "Corrige les dommages causés aux principaux systèmes du vaisseau."}
+{"id": 10157, "en": "Repair Gun", "fr": "Pistolet de réparation"}
+{"id": 10158, "en": "Curling blue stems that look similar to motifs in Sylvassi art. Sylvassi stems are a highly adaptable species and can thrive in even the driest of climates.", "fr": "Tiges bleues enroulées qui ressemblent aux motifs de l'art Sylvassien. Les tiges de Sylvassi sont une espèce très adaptable et peuvent prospérer même dans les climats les plus secs."}
+{"id": 10159, "en": "IU-03020", "fr": "IU-03020"}
+{"id": 10160, "en": "A jagged blue crystal that appears to have red veins running through its core. IU-03020 is extremely rare to find and may have played a part in the sudden destruction of a warship in the past.", "fr": "Un cristal bleu déchiqueté dont le cœur semble parcouru de veines rouges. IU-03020 est extrêmement rare et pourrait avoir joué un rôle dans la destruction soudaine d'un vaisseau de guerre dans le passé."}
+{"id": 10161, "en": "HG-77328", "fr": "HG-77328"}
+{"id": 10162, "en": "A sharp, dark mineral that has glowing slivers in its surface. It feels hot to the touch.", "fr": "Minéral sombre et pointu dont la surface présente des éclats brillants. Il est chaud au toucher."}
+{"id": 10163, "en": "Bulbtooth", "fr": "Bulbtooth"}
+{"id": 10164, "en": "A round bulb with a circling pattern of light blue spines. Its exterior is hard and almost rock-like, while its spines are sharp enough to cut through an exosuit if not careful.", "fr": "Un bulbe rond avec un motif circulaire d'épines bleu clair. Son extérieur est dur et ressemble presque à de la pierre, tandis que ses épines sont suffisamment acérées pour couper une exosuite si l'on n'y prend pas garde."}
+{"id": 10165, "en": "Sargastia Tribulen", "fr": "Sargastia Tribulen"}
+{"id": 10166, "en": "Green, viscous substance that is believed to be the product of the complex decomposition of a certain plant. It is very nutrient-rich.", "fr": "Substance verte et visqueuse qui serait le produit de la décomposition complexe d'une certaine plante. Elle est très riche en nutriments."}
+{"id": 10167, "en": "LL-09332", "fr": "LL-09332"}
+{"id": 10168, "en": "A gritty, reddish substance with unknown origins. It has been banned from research at many laboratories due to its volatile properties.", "fr": "Substance granuleuse et rougeâtre d'origine inconnue. Elle a été interdite à la recherche dans de nombreux laboratoires en raison de ses propriétés volatiles."}
+{"id": 10169, "en": "Greywrack", "fr": "Gris-gris"}
+{"id": 10170, "en": "Pitch black sludge that is highly corrosive and can be difficult to remove. For centuries it has been widely considered the bane of ship hulls.", "fr": "Boue noire qui est très corrosive et peut être difficile à éliminer. Pendant des siècles, elle a été largement considérée comme le fléau des coques de vaisseaus."}
+{"id": 10171, "en": "AC-88436", "fr": "AC-88436"}
+{"id": 10172, "en": "A slippery goop that glows a bright purple color. Even in larger quantities, it seems to hardly weigh anything at all.", "fr": "Il s'agit d'une substance glissante qui brille d'un violet éclatant. Même en grande quantité, elle semble ne pas peser grand-chose."}
+{"id": 10173, "en": "Gracilia Floris", "fr": "Gracilia Floris"}
+{"id": 10174, "en": "Sharp seed-like grains suspended in a thick slime. Although difficult to find, it is highly valued by scientists in the study of biological resilience.", "fr": "Grains pointus ressemblant à des graines en suspension dans un épais bouillon. Bien que difficile à trouver, elle est très appréciée des scientifiques qui étudient la résilience biologique."}
+{"id": 10175, "en": "Gaxil Filamentosa", "fr": "Gaxil Filamentosa"}
+{"id": 10176, "en": "A runny substance that seems to shimmer when held to a light. Upon closer examination, it contains hundreds of small, nearly transparent strands.", "fr": "Une substance coulante qui semble scintiller lorsqu'elle est exposée à la lumière. En y regardant de plus près, on s'aperçoit qu'elle contient des centaines de petits fils presque transparents."}
+{"id": 10177, "en": "Bluffstem", "fr": "Tige blanche"}
+{"id": 10178, "en": "Long tube-like plant cluster with wiry roots. It is sometimes difficult to collect as it has been known to periodically vanish from its location.", "fr": "Plante en forme de tube long avec des racines filiformes. Elle est parfois difficile à récolter car elle est connue pour disparaître périodiquement de son emplacement."}
+{"id": 10179, "en": "Fenrasil", "fr": "Fenrasil"}
+{"id": 10180, "en": "A glowing red flower with a long stem. Researchers believe that in close proximities, fenrasil may communicate to adjacent plants through their hypersensitive tendrils.", "fr": "Une fleur rouge vif avec une longue tige. Les chercheurs pensent qu'à proximité immédiate, les fenrasils peuvent communiquer avec les plantes adjacentes par l'intermédiaire de leurs vrilles hypersensibles."}
+{"id": 10181, "en": "Creeping Lung", "fr": "Poumon rampant"}
+{"id": 10182, "en": "A firm, almost lung-shaped plant material. It has a very long lifecycle that includes a bout of tremendous, rapid growth. Only in its early years is it considered to be manageable.", "fr": "Matériau végétal ferme, presque en forme de poumon. Elle a un cycle de vie très long qui comprend une période de croissance rapide et énorme. Ce n'est que dans les premières années qu'elle est considérée comme gérable."}
+{"id": 10183, "en": "Waxthorn", "fr": "L'argousier"}
+{"id": 10184, "en": "Pod with a thorn and strong suction at the bottom. It is suspected of excreting a poison when disturbed, but its reported effects have been inconsistent.", "fr": "Gousse munie d'une épine et d'une forte aspiration au fond. Elle est soupçonnée d'excréter un poison lorsqu'elle est dérangée, mais les effets rapportés ne sont pas constants."}
+{"id": 10185, "en": "Hooked Bristlepod", "fr": "Bristlepod à crochets"}
+{"id": 10186, "en": "A rubbery pod surrounded by hearty leaves. The pod itself is covered in thin, sharp thorns and exudes a sweet fragrance.", "fr": "Une gousse caoutchouteuse entourée de feuilles robustes. La gousse elle-même est couverte d'épines fines et acérées et dégage un doux parfum."}
+{"id": 10187, "en": "BH-00300", "fr": "BH-00300"}
+{"id": 10188, "en": "A collection of transparent stems. They are barely visible to the naked eye and are somehow difficult to separate from the other stems in their cluster.", "fr": "Une collection de tiges transparentes. Elles sont à peine visibles à l'œil nu et sont en quelque sorte difficiles à séparer des autres tiges de leur groupe."}
+{"id": 10189, "en": "SD-10899", "fr": "SD-10899"}
+{"id": 10190, "en": "A perfectly round sphere that flashes with light. It is presumed to encase some kind of energy, but very little else is known about it.", "fr": "Une sphère parfaitement ronde qui émet des éclairs de lumière. On suppose qu'elle renferme une sorte d'énergie, mais on ne sait pas grand-chose d'autre à son sujet."}
+{"id": 10191, "en": "A naturally forming pod that radiates intense heat. It has many unconventional applications.", "fr": "Une gousse qui se forme naturellement et qui dégage une chaleur intense. Elle a de nombreuses applications non conventionnelles."}
+{"id": 10192, "en": "Strange Ore", "fr": "Minerai étrange"}
+{"id": 10193, "en": "Piece of a strange ore. It emits a frequency that is inaudible to humans.", "fr": "Morceau d'un minerai étrange. Il émet une fréquence inaudible pour les humains."}
+{"id": 10194, "en": "Contains", "fr": "Contient"}
+{"id": 10195, "en": "<color=#4493BD>Stamans</color>", "fr": "<color=#4493BD>Stamans</color>"}
+{"id": 10196, "en": "<color=#977C4F>Aedificiates</color>", "fr": "<color=#977C4F>Aedificiates</color>"}
+{"id": 10197, "en": "<color=#70A56E>Aevameres</color>", "fr": "<color=#70A56E>Aevameres</color>"}
+{"id": 10198, "en": "<color=#732968>Sensusites</color>", "fr": "<color=#732968>Sensusites</color>"}
+{"id": 10199, "en": "<color=#FFFFFF>Mutoumates</color>", "fr": "<color=#FFFFFF>Mutumates</color>"}
+{"id": 10200, "en": ">Vortosites</color>", "fr": ">Vortosites</color>"}
+{"id": 10201, "en": "Stamans", "fr": "Stamans"}
+{"id": 10202, "en": "Aedificiates", "fr": "Les édificateurs"}
+{"id": 10203, "en": "Aevameres", "fr": "Aevameres"}
+{"id": 10204, "en": "Sensusites", "fr": "Sensusites"}
+{"id": 10205, "en": "Mutoumates", "fr": "Mutoumates"}
+{"id": 10206, "en": "Vortosites", "fr": "Vortosités"}
+{"id": 10207, "en": ",$", "fr": ",$"}
+{"id": 10208, "en": "Research Sample", "fr": "Échantillon de recherche"}
+{"id": 10209, "en": "A handheld device that scans an area to detect points of interest.", "fr": "Appareil portatif qui scanne une zone pour détecter les points d'intérêt."}
+{"id": 10210, "en": "Custom modified weapon with a higher fire rate than a normal phase pistol. Often used by raiders and smugglers.", "fr": "Arme modifiée sur mesure avec une cadence de tir supérieure à celle d'un pistolet à phase normal. Souvent utilisée par les raiders et les contrebandiers."}
+{"id": 10211, "en": "Smuggler's Pistol", "fr": "Pistolet du contrebandier"}
+{"id": 10212, "en": "Stun Grenade", "fr": "Grenade paralysante"}
+{"id": 10213, "en": "Launches special grenades that can stun nearby enemies.", "fr": "Lance des grenades spéciales qui peuvent étourdir les ennemis proches."}
+{"id": 10214, "en": "Stun Grenade Launcher", "fr": "Lanceur de grenades assourdissantes"}
+{"id": 10215, "en": "Stun Amt.", "fr": "Amt. d'étourdissement"}
+{"id": 10216, "en": "Fully heals self and restores full health bonus", "fr": "Se soigne entièrement et rétablit le bonus de santé complet"}
+{"id": 10217, "en": "Use", "fr": "Utilisation"}
+{"id": 10218, "en": "Revitalizing Syringe", "fr": "Seringue revitalisante"}
+{"id": 10219, "en": "Syringe", "fr": "Seringue"}
+{"id": 10220, "en": "Fires a short-range blast that bludgeons enemies and propels them backward. Also known as the \\^Inter-Manifold Projector Arc / Combatant Thrower\\^.", "fr": "Tire une explosion à courte portée qui assomme les ennemis et les propulse vers l'arrière. Également connu sous le nom d'Arc de projection inter-manifold / Lanceur de combat."}
+{"id": 10221, "en": "Fires a concentrated beam capable of piercing targets. It deals a significant amount of damage but also generates a lot of heat.", "fr": "Tire un faisceau concentré capable de transpercer les cibles. Il inflige des dégâts importants mais génère aussi beaucoup de chaleur."}
+{"id": 10224, "en": "IN", "fr": "IN"}
+{"id": 10225, "en": "OUT", "fr": "OUT"}
+{"id": 10226, "en": "Race Registration", "fr": "Inscription à la course"}
+{"id": 10227, "en": "REGISTRATION", "fr": "INSCRIPTION"}
+{"id": 10228, "en": "W.D. Mining Station 41X", "fr": "Station minière W.D. 41X"}
+{"id": 10229, "en": "Enter_Race", "fr": "Enter_Race"}
+{"id": 10230, "en": "Enter Race", "fr": "Saisir la race"}
+{"id": 10231, "en": "Race In Progress", "fr": "Course en cours"}
+{"id": 10232, "en": "Visit again to retry!", "fr": "Visitez à nouveau le site pour réessayer !"}
+{"id": 10233, "en": "Race Ended", "fr": "Course terminée"}
+{"id": 10234, "en": "Can't start race. Not the Captain!", "fr": "Impossible de prendre le départ de la course. Pas le capitaine !"}
+{"id": 10235, "en": "LIABILITY RELEASE", "fr": "DÉCHARGE DE RESPONSABILITÉ"}
+{"id": 10236, "en": "W.D. LABS - WEAPONS DEMONSTRATION", "fr": "W.D. LABS - DÉMONSTRATION D'ARMES"}
+{"id": 10237, "en": "DEFEAT 5 WAVES", "fr": "DEFEAT 5 WAVES"}
+{"id": 10238, "en": "Start", "fr": "Démarrage"}
+{"id": 10239, "en": "Start Demo", "fr": "Démarrer la démo"}
+{"id": 10240, "en": "Start (Captain Only)", "fr": "Départ (Capitaine uniquement)"}
+{"id": 10241, "en": "SHIP STATUS", "fr": "STATUT DU NAVIRE"}
+{"id": 10242, "en": "ENEMY SHIP STATUS", "fr": "STATUT DU NAVIRE ENNEMI"}
+{"id": 10244, "en": "SHLD", "fr": "SHLD"}
+{"id": 10245, "en": "n / n", "fr": "n / n"}
+{"id": 10246, "en": "QT SHLD", "fr": "QT SHLD"}
+{"id": 10247, "en": "O2 DELTA", "fr": "O2 DELTA"}
+{"id": 10250, "en": "CLAIM SHIP", "fr": "RÉCLAMER UN NAVIRE"}
+{"id": 10251, "en": "--", "fr": "--"}
+{"id": 10256, "en": "Only the Captain can claim ships!", "fr": "Seul le capitaine peut revendiquer des vaisseaus !"}
+{"id": 10257, "en": "You cannot claim a ship as a Polytechnic crew!", "fr": "Vous ne pouvez pas revendiquer un vaisseau en tant qu'équipage polytechnicien !"}
+{"id": 10258, "en": "REMOVE CLAIM", "fr": "RETIRER LA RÉCLAMATION"}
+{"id": 10259, "en": "Ready to Remove Claim!", "fr": "Prêt à retirer la demande d'indemnisation !"}
+{"id": 10260, "en": "Ready to Claim!", "fr": "Prêt à être réclamé !"}
+{"id": 10261, "en": "Unlock more screens to claim!", "fr": "Déverrouillez plus d'écrans à réclamer !"}
+{"id": 10262, "en": "CHARGE ERROR", "fr": "ERREUR DE CHARGE"}
+{"id": 10263, "en": "[{0}] {1:F1} [-]", "fr": "[{0}] {1:F1} [-]"}
+{"id": 10264, "en": "00FF00", "fr": "00FF00"}
+{"id": 10265, "en": "FF0000", "fr": "FF0000"}
+{"id": 10266, "en": "{1:F1}", "fr": "{1:F1}"}
+{"id": 10267, "en": "[AAAAAA]", "fr": "[AAAAAA]"}
+{"id": 10268, "en": "[00FF00]", "fr": "[00FF00]"}
+{"id": 10269, "en": "[FF0000]", "fr": "[FF0000]"}
+{"id": 10270, "en": "IN MELTDOWN!", "fr": "EN FUSION !"}
+{"id": 10271, "en": "CRITICAL!", "fr": "CRITIQUE !"}
+{"id": 10272, "en": "TEMP HIGH", "fr": "TEMP HAUTE"}
+{"id": 10273, "en": "OK", "fr": "OK"}
+{"id": 10279, "en": "Comms", "fr": "Communications"}
+{"id": 10280, "en": "Close Transmission", "fr": "Fermer la transmission"}
+{"id": 10281, "en": "Aux Reactor Config", "fr": "Config du réacteur auxiliaire"}
+{"id": 10283, "en": "TOTAL AUX BOOST", "fr": "TOTAL AUX BOOST"}
+{"id": 10286, "en": "Adjusting reactor coolant pump to OFF", "fr": "Réglage de la pompe de refroidissement du réacteur sur OFF"}
+{"id": 10287, "en": "Adjusting reactor coolant pump to LOW", "fr": "Réglage de la pompe de refroidissement du réacteur sur BAS"}
+{"id": 10288, "en": "Adjusting reactor coolant pump to HIGH", "fr": "Réglage de la pompe de refroidissement du réacteur sur HAUT"}
+{"id": 10289, "en": "Jump Fuel", "fr": "Combustible de saut"}
+{"id": 10290, "en": "Coolant Reserves", "fr": "Réserves de liquide de refroidissement"}
+{"id": 10291, "en": "Pump Control", "fr": "Contrôle de la pompe"}
+{"id": 10293, "en": "off", "fr": "éteint"}
+{"id": 10295, "en": "low", "fr": "faible"}
+{"id": 10297, "en": "high", "fr": "élevé"}
+{"id": 10298, "en": "Fuel Capsules", "fr": "Capsules de carburant"}
+{"id": 10300, "en": "Load Fuel", "fr": "Chargement du carburant"}
+{"id": 10303, "en": "on", "fr": "sur"}
+{"id": 10304, "en": "Unload Fuel", "fr": "Décharger le carburant"}
+{"id": 10305, "en": "Turns the coolant pump off", "fr": "Désactive la pompe à liquide de refroidissement"}
+{"id": 10306, "en": "Turns the coolant pump on at a low speed", "fr": "Met en marche la pompe à liquide de refroidissement à faible vitesse"}
+{"id": 10307, "en": "Turns the coolant pump on at a high speed", "fr": "Met la pompe à liquide de refroidissement en marche à grande vitesse"}
+{"id": 10308, "en": "Loads and unloads a fuel capsule that can be used to manually recharge programs", "fr": "Chargement et déchargement d'une capsule de carburant qui peut être utilisée pour recharger manuellement les programmes."}
+{"id": 10309, "en": "Activates the distress signal. Can bring fuel ships or enemies", "fr": "Active le signal de détresse. Peut amener des vaisseaus de ravitaillement ou des ennemis"}
+{"id": 10310, "en": "Deactivates the distress signal", "fr": "Désactive le signal de détresse"}
+{"id": 10311, "en": "Cooling off the reactor!", "fr": "Refroidissement du réacteur !"}
+{"id": 10312, "en": "MainComponentPanel", "fr": "Panneau principal"}
+{"id": 10313, "en": "Temp", "fr": "Temp"}
+{"id": 10314, "en": "0", "fr": "0"}
+{"id": 10315, "en": "OC", "fr": "OC"}
+{"id": 10316, "en": "MeltdownPanel", "fr": "Panneau Meltdown"}
+{"id": 10317, "en": "EJECT THE REACTOR CORE!", "fr": "ÉJECTEZ LE CŒUR DU RÉACTEUR !"}
+{"id": 10318, "en": "UNTIL CORE IMPLOSION", "fr": "JUSQU'À L'IMPLOSION DU NOYAU"}
+{"id": 10319, "en": "/{0}", "fr": "/{0}"}
+{"id": 10320, "en": "Overclock Reactor Toggle: Increases output and heat generation while enabled!", "fr": "Overclock Reactor Toggle : Augmente la puissance et la production de chaleur lorsqu'elle est activée !"}
+{"id": 10321, "en": "No Reactor Installed", "fr": "Pas de réacteur installé"}
+{"id": 10322, "en": "No Value", "fr": "Aucune valeur"}
+{"id": 10323, "en": "Total Usage", "fr": "Utilisation totale"}
+{"id": 10325, "en": "{0}", "fr": "{0}"}
+{"id": 10326, "en": "{1}", "fr": "{1}"}
+{"id": 10327, "en": "SPD", "fr": "DOCUP"}
+{"id": 10328, "en": "{2}/{3}", "fr": "{2}/{3}"}
+{"id": 10329, "en": "AMMO", "fr": "AMMO"}
+{"id": 10330, "en": "Missile Launcher Setup", "fr": "Configuration du lanceur de missiles"}
+{"id": 10331, "en": "TARGET ENEMY SYSTEM", "fr": "SYSTÈME CIBLE-ENNEMI"}
+{"id": 10332, "en": "Engineering System", "fr": "Système d'ingénierie"}
+{"id": 10333, "en": "Weapons System", "fr": "Système d'armes"}
+{"id": 10334, "en": "Life Support System", "fr": "Système de survie"}
+{"id": 10335, "en": "Science System", "fr": "Système scientifique"}
+{"id": 10336, "en": "Target", "fr": "Cible"}
+{"id": 10337, "en": "Hull damage dealt by tracker missiles will cause extra damage to the", "fr": "Les dégâts à la coque infligés par les missiles à tête chercheuse causent des dégâts supplémentaires au"}
+{"id": 10338, "en": "directly", "fr": "directement"}
+{"id": 10339, "en": "Security Console", "fr": "Console de sécurité"}
+{"id": 10342, "en": "UNLOCKED", "fr": "NON VERROUILLÉ"}
+{"id": 10345, "en": "<-", "fr": "<-"}
+{"id": 10348, "en": ">>", "fr": ">>"}
+{"id": 10358, "en": "Mouse ScrollWheel", "fr": "Roue de défilement de la souris"}
+{"id": 10359, "en": "Repair Vessel", "fr": "Réparation du vaisseau"}
+{"id": 10361, "en": "REPAIR 50 HULL FOR 100 CR", "fr": "RÉPARER 50 COQUES POUR 100 CR"}
+{"id": 10364, "en": "REPAIR ALL HULL [FREE]", "fr": "RÉPARATION DE LA COQUE [GRATUIT]"}
+{"id": 10365, "en": "Target:", "fr": "Cible :"}
+{"id": 10366, "en": "[ff0000]SHLD: ACTIVE[-]", "fr": "[ff0000]SHLD : ACTIF[-]"}
+{"id": 10367, "en": "[00ff00]SHLD: INACTIVE[-]", "fr": "[00ff00]SHLD : INACTIVE[-]"}
+{"id": 10368, "en": "HULL:", "fr": "COQUE :"}
+{"id": 10369, "en": "REPAIR", "fr": "RÉPARATION"}
+{"id": 10370, "en": "HULL FOR", "fr": "COQUE POUR"}
+{"id": 10371, "en": "Target: NONE", "fr": "Cible : AUCUN"}
+{"id": 10372, "en": "[00FF00]{0}%", "fr": "[00FF00]{0}%"}
+{"id": 10373, "en": "ENERGY DEFENSE", "fr": "DÉFENSE ÉNERGÉTIQUE"}
+{"id": 10374, "en": "[-]$[FF0000]-{1}%", "fr": "[-]$[FF0000]-{1}%"}
+{"id": 10375, "en": "PHYSICAL DEFENSE", "fr": "DÉFENSE PHYSIQUE"}
+{"id": 10376, "en": "[-]$[FF0000]+{1}%", "fr": "[-]$[FF0000]+{1}%"}
+{"id": 10377, "en": "SIGNATURE", "fr": "SIGNATURE"}
+{"id": 10383, "en": "Crew Control", "fr": "Contrôle de l'équipage"}
+{"id": 10384, "en": "Local control of ship systems has been automatically disabled for your safety.", "fr": "Le contrôle local des systèmes du vaisseau a été automatiquement désactivé pour votre sécurité."}
+{"id": 10386, "en": "Manual Override", "fr": "Commande manuelle"}
+{"id": 10398, "en": "ShipOS", "fr": "ShipOS"}
+{"id": 10400, "en": "v268.0 \\^Pretty Parakeet\\^", "fr": "v268.0 \\N- Jolie perruche\\N- Jolie perruche\\N- Jolie perruche\\N- Jolie perruche"}
+{"id": 10402, "en": "Our Emitted Signatures", "fr": "Nos signatures émises"}
+{"id": 10404, "en": "EM Detection", "fr": "Détection EM"}
+{"id": 10408, "en": "LF", "fr": "LF"}
+{"id": 10414, "en": "Cyberdefense", "fr": "Cyberdéfense"}
+{"id": 10416, "en": "SHIELD FREQ. MODE", "fr": "SHIELD FREQ. MODE"}
+{"id": 10419, "en": "ModulateBtn", "fr": "ModulateBtn"}
+{"id": 10420, "en": "MODULATE", "fr": "MODULER"}
+{"id": 10421, "en": "StaticBtn", "fr": "StaticBtn"}
+{"id": 10422, "en": "STATIC", "fr": "STATIQUE"}
+{"id": 10425, "en": "Flush Cache", "fr": "Vider le cache"}
+{"id": 10428, "en": "User Permissions", "fr": "Autorisations des utilisateurs"}
+{"id": 10431, "en": "Disable Sensors", "fr": "Désactiver les capteurs"}
+{"id": 10434, "en": "Shutdown System", "fr": "Système d'arrêt"}
+{"id": 10435, "en": "Search_SE_Btn", "fr": "Bouton Search_SE_Btn"}
+{"id": 10436, "en": "SE", "fr": "SE"}
+{"id": 10437, "en": "Search_TI_Btn", "fr": "Bouton Search_TI_Btn"}
+{"id": 10438, "en": "TI", "fr": "TI"}
+{"id": 10439, "en": "Search_UU_Btn", "fr": "Bouton de recherche_UU_Btn"}
+{"id": 10440, "en": "UU", "fr": "UU"}
+{"id": 10441, "en": "Search_GX_Btn", "fr": "Recherche_GX_Btn"}
+{"id": 10442, "en": "GX", "fr": "GX"}
+{"id": 10443, "en": "Searching_Label", "fr": "Label_recherche"}
+{"id": 10444, "en": "Searching . . .", "fr": "Recherche . . ."}
+{"id": 10451, "en": "FIND", "fr": "FIND"}
+{"id": 10455, "en": "EXECUTE PROGRAM", "fr": "EXÉCUTER LE PROGRAMME"}
+{"id": 10458, "en": "Not Found", "fr": "Non trouvé"}
+{"id": 10459, "en": "Has Planet: $", "fr": "A la planète : $"}
+{"id": 10460, "en": "Yes$", "fr": "Oui$"}
+{"id": 10461, "en": "No$", "fr": "No$"}
+{"id": 10462, "en": "Distance", "fr": "Distance"}
+{"id": 10463, "en": "NOT READY", "fr": "PAS PRÊT"}
+{"id": 10464, "en": "I just enabled crew control for the screens!", "fr": "Je viens d'activer le contrôle de l'équipage pour les écrans !"}
+{"id": 10465, "en": "I just ran the <", "fr": "Je viens d'exécuter la commande <"}
+{"id": 10466, "en": "> program!", "fr": "> programme !"}
+{"id": 10467, "en": "{0:F1} km", "fr": "{0:F1} km"}
+{"id": 10472, "en": "ACTIVE SCAN IN PROGRESS", "fr": "BALAYAGE ACTIF EN COURS"}
+{"id": 10479, "en": "Detected Objects", "fr": "Objets détectés"}
+{"id": 10482, "en": "EM Sensor Sweep", "fr": "Balayage du capteur EM"}
+{"id": 10483, "en": "QT Sensor Sweep", "fr": "Balayage du capteur QT"}
+{"id": 10486, "en": "99.9", "fr": "99.9"}
+{"id": 10487, "en": "ENG", "fr": "ENG"}
+{"id": 10488, "en": "SCI", "fr": "SCI"}
+{"id": 10489, "en": "WPN", "fr": "WPN"}
+{"id": 10509, "en": "Targeted Scans", "fr": "Scans ciblés"}
+{"id": 10512, "en": "results", "fr": "résultats"}
+{"id": 10514, "en": "Lifeforms", "fr": "Formes de vie"}
+{"id": 10515, "en": "Components", "fr": "Composants"}
+{"id": 10516, "en": "{0} s", "fr": "{0} s"}
+{"id": 10517, "en": "[000000]", "fr": "[000000]"}
+{"id": 10518, "en": "DIST", "fr": "DIST"}
+{"id": 10519, "en": "EM SIG", "fr": "EM SIG"}
+{"id": 10520, "en": "km$", "fr": "km$"}
+{"id": 10522, "en": "---", "fr": "---"}
+{"id": 10523, "en": "--Type/Level--", "fr": "--Type/Niveau..."}
+{"id": 10524, "en": "(Level", "fr": "(Niveau"}
+{"id": 10525, "en": "None", "fr": "Aucun"}
+{"id": 10526, "en": "$--Stats--", "fr": "$--Stats--"}
+{"id": 10529, "en": "Reactor Scan", "fr": "Scan du réacteur"}
+{"id": 10530, "en": "Hull Scan", "fr": "Analyse de la coque"}
+{"id": 10531, "en": "Shield Scan", "fr": "Balayage du bouclier"}
+{"id": 10532, "en": "--Main Turret--", "fr": "--Tourelle principale..."}
+{"id": 10533, "en": "--Other Turrets--", "fr": "--Autres tourelles..."}
+{"id": 10534, "en": "Weapon Scan", "fr": "Balayage d'armes"}
+{"id": 10535, "en": "--Processors--", "fr": "--Processeurs..."}
+{"id": 10536, "en": "CPU Scan", "fr": "Analyse de l'unité centrale"}
+{"id": 10537, "en": "--Programs--", "fr": "--Programmes..."}
+{"id": 10538, "en": "Program Scan", "fr": "Analyse des programmes"}
+{"id": 10539, "en": "--Warp Drive--", "fr": "--Warp Drive--"}
+{"id": 10540, "en": "$--Sensors--", "fr": "$--Sensors--"}
+{"id": 10541, "en": "$--Thrusters--", "fr": "$--Thrusters--"}
+{"id": 10542, "en": "Misc Scan", "fr": "Scan divers"}
+{"id": 10543, "en": "--Cargo--", "fr": "--Cargo..."}
+{"id": 10544, "en": "Cargo Scan", "fr": "Analyse des cargaisons"}
+{"id": 10545, "en": "--Crew Members--", "fr": "--Membres de l'équipage..."}
+{"id": 10546, "en": "piloting", "fr": "pilotage"}
+{"id": 10547, "en": "using [", "fr": "en utilisant ["}
+{"id": 10548, "en": "in", "fr": "en"}
+{"id": 10549, "en": "Lifeform Scan", "fr": "Balayage des formes de vie"}
+{"id": 10551, "en": "Starts the process of scanning for nearby ships and objects outside of normal detection range. Your ship will be easier to detect by enemies while your sensors are boosted", "fr": "Lance le processus de balayage des vaisseaux et objets proches en dehors de la portée de détection normale. Votre vaisseau sera plus facile à détecter par les ennemis lorsque vos capteurs sont renforcés."}
+{"id": 10552, "en": "Scan Reactor", "fr": "Réacteur de balayage"}
+{"id": 10553, "en": "Scan Shields", "fr": "Boucliers de balayage"}
+{"id": 10554, "en": "Scan Weapons", "fr": "Scanner des armes"}
+{"id": 10555, "en": "Scan Processors", "fr": "Processeurs de numérisation"}
+{"id": 10556, "en": "Scan Misc", "fr": "Scan Divers"}
+{"id": 10557, "en": "Scan Programs", "fr": "Programmes de numérisation"}
+{"id": 10558, "en": "Scan Cargo", "fr": "Scan Cargo"}
+{"id": 10559, "en": "Scan Hull", "fr": "Scan Hull"}
+{"id": 10560, "en": "Scan Lifeforms", "fr": "Scanner les formes de vie"}
+{"id": 10561, "en": "Sensor Focus: Engineering", "fr": "Focus capteur : Ingénierie"}
+{"id": 10562, "en": "Hull damage to target ship will be directed towards the Engineering system for 30 seconds", "fr": "Les dommages causés à la coque du vaisseau cible sont dirigés vers le système d'ingénierie pendant 30 secondes."}
+{"id": 10563, "en": "Sensor Focus: Weapons", "fr": "Capteur Focus : Armes"}
+{"id": 10564, "en": "Hull damage to target ship will be directed towards the Weapons system for 30 seconds", "fr": "Les dommages causés à la coque du vaisseau cible sont dirigés vers le système d'armement pendant 30 secondes."}
+{"id": 10565, "en": "weaknessScanAttuneDmg2", "fr": "weaknessScanAttuneDmg2"}
+{"id": 10566, "en": "Sensor Focus: Life Support", "fr": "Focus capteur : Soutien à la vie"}
+{"id": 10567, "en": "Hull damage to target ship will be directed towards the Life Support system for 30 seconds", "fr": "Les dommages causés à la coque du vaisseau cible sont dirigés vers le système de survie pendant 30 secondes."}
+{"id": 10568, "en": "Sensor Focus: Science Lab", "fr": "Focus capteur : Laboratoire scientifique"}
+{"id": 10569, "en": "Hull damage to target ship will be directed towards the Science Lab system for 30 seconds", "fr": "Les dommages causés à la coque du vaisseau cible sont dirigés vers le système du laboratoire scientifique pendant 30 secondes."}
+{"id": 10570, "en": "Cyber Defense Flaw", "fr": "Faille dans la cyberdéfense"}
+{"id": 10571, "en": "Target ship will be 40% more susceptible to viruses for 60 seconds", "fr": "Le vaisseau cible sera 40% plus sensible aux virus pendant 60 secondes."}
+{"id": 10572, "en": "Weaken Shields", "fr": "Affaiblir les boucliers"}
+{"id": 10573, "en": "Target ship's shields won't reduce damage based on shield frequency for 60 seconds", "fr": "Les boucliers du vaisseau cible ne réduisent pas les dégâts en fonction de la fréquence des boucliers pendant 60 secondes"}
+{"id": 10574, "en": "Reactor Protocol", "fr": "Protocole sur les réacteurs"}
+{"id": 10575, "en": "Target ship's reactor will generate 20% more heat for 60 seconds", "fr": "Le réacteur du vaisseau cible génère 20 % de chaleur en plus pendant 60 secondes."}
+{"id": 10576, "en": "Ship Screens", "fr": "Écrans des vaisseaus"}
+{"id": 10577, "en": "Target ship's screens will be more likely to explode for 60 seconds", "fr": "Les écrans du vaisseau cible sont plus susceptibles d'exploser pendant 60 secondes."}
+{"id": 10578, "en": "weaknessScanQtShlds", "fr": "weaknessScanQtShlds"}
+{"id": 10579, "en": "DecryptPanel", "fr": "Panneau de décryptage"}
+{"id": 10580, "en": "Decrypt Virus:", "fr": "Décrypter le virus :"}
+{"id": 10581, "en": "Select non-matching memory address to scan", "fr": "Sélection de l'adresse mémoire non correspondante à scanner"}
+{"id": 10600, "en": "SUCCESS$Virus deleted:", "fr": "SUCCESS$Virus supprimé :"}
+{"id": 10601, "en": "ERROR$Failed deletion:", "fr": "ERROR$Echec de la suppression :"}
+{"id": 10603, "en": "Decrypt Virus", "fr": "Décrypter le virus"}
+{"id": 10604, "en": "CYBER-ATK", "fr": "CYBER-ATK"}
+{"id": 10605, "en": "s)", "fr": "s)"}
+{"id": 10606, "en": "(NO SIGNAL)", "fr": "(PAS DE SIGNAL)"}
+{"id": 10607, "en": ")", "fr": ")"}
+{"id": 10608, "en": ". . .", "fr": ". . ."}
+{"id": 10609, "en": "ACTIVE (", "fr": "ACTIF ("}
+{"id": 10610, "en": "DONE", "fr": "FAIT"}
+{"id": 10611, "en": "ATTEMPT", "fr": "ATTEMPT"}
+{"id": 10612, "en": "NO SIGNAL", "fr": "PAS DE SIGNAL"}
+{"id": 10613, "en": "Ship Diagnostic", "fr": "Diagnostic du vaisseau"}
+{"id": 10615, "en": "Teleport", "fr": "Téléportation"}
+{"id": 10619, "en": "Step", "fr": "Étape"}
+{"id": 10621, "en": "Boot Ship OS", "fr": "Boot Ship OS"}
+{"id": 10623, "en": "Prime Warp Core", "fr": "Noyau de distorsion primaire"}
+{"id": 10625, "en": "Toggle Reactor Cooling", "fr": "Toggle Reactor Cooling (refroidissement du réacteur)"}
+{"id": 10627, "en": "Toggle Ship Lights", "fr": "Lumières de bateau à bascule"}
+{"id": 10628, "en": "Pull Lever 1", "fr": "Levier de traction 1"}
+{"id": 10629, "en": "Boot ShipOS", "fr": "Démarrer ShipOS"}
+{"id": 10630, "en": "Pull Lever 2", "fr": "Levier de traction 2"}
+{"id": 10631, "en": "Enable Shields$$Pull Lever 3", "fr": "Activer les boucliers$$Tirer le levier 3"}
+{"id": 10632, "en": "System Is Active", "fr": "Le système est actif"}
+{"id": 10633, "en": "Step", "fr": "Étape"}
+{"id": 10634, "en": "TELEPORT TO CREW", "fr": "SE TÉLÉPORTER VERS L'ÉQUIPAGE"}
+{"id": 10635, "en": "Target", "fr": "Cible"}
+{"id": 10636, "en": "Teleport to:", "fr": "Téléportation vers :"}
+{"id": 10637, "en": "directly", "fr": "directement"}
+{"id": 10638, "en": "Teleportation to destination is currently blocked!", "fr": "La téléportation vers la destination est actuellement bloquée !"}
+{"id": 10640, "en": "{0} m", "fr": "{0} m"}
+{"id": 10643, "en": "Select", "fr": "Sélectionner"}
+{"id": 10644, "en": "BLOCKED", "fr": "BLOQUÉ"}
+{"id": 10646, "en": "Call Elevator", "fr": "Appeler l'ascenseur"}
+{"id": 10647, "en": "CallElevator", "fr": "Appeler l'ascenseur"}
+{"id": 10648, "en": "CALL", "fr": "APPEL"}
+{"id": 10650, "en": "Click", "fr": "Cliquez sur"}
+{"id": 10652, "en": "Select Floor", "fr": "Sélectionner l'étage"}
+{"id": 10653, "en": "Thrust Controls", "fr": "Contrôles de la poussée"}
+{"id": 10655, "en": "Binary", "fr": "Binaire"}
+{"id": 10657, "en": "Precise", "fr": "Précision"}
+{"id": 10658, "en": "Show Sectors", "fr": "Secteurs d'exposition"}
+{"id": 10675, "en": "Jump Calculation", "fr": "Calcul des sauts"}
+{"id": 10676, "en": "Warp Drive Charge", "fr": "Chargement du moteur de distorsion"}
+{"id": 10677, "en": "Finalize Jump Data", "fr": "Finaliser les données de saut"}
+{"id": 10678, "en": "Jump Computer", "fr": "Sauter l'ordinateur"}
+{"id": 10679, "en": "Emergency Blind Jump", "fr": "Saut d'urgence à l'aveugle"}
+{"id": 10680, "en": "Initiate Jump Prep", "fr": "Initier la préparation au saut"}
+{"id": 10681, "en": "BlindJump", "fr": "Saut à l'aveugle"}
+{"id": 10682, "en": "Perform Blind Jump", "fr": "Effectuer un saut à l'aveugle"}
+{"id": 10683, "en": "Warp Drive Unavailable", "fr": "Warp Drive Indisponible"}
+{"id": 10684, "en": "Something is preventing the warp drive from responding!", "fr": "Quelque chose empêche le moteur de distorsion de répondre !"}
+{"id": 10685, "en": "ERROR", "fr": "ERREUR"}
+{"id": 10686, "en": "ERROR: Blind Jump Unavailable!", "fr": "ERREUR : Saut aveugle indisponible !"}
+{"id": 10688, "en": "BLIND JUMP", "fr": "SAUT À L'AVEUGLE"}
+{"id": 10689, "en": "EXTREME DANGER: Blind Jumps can cause ship destruction", "fr": "DANGER EXTRÊME : Les sauts à l'aveugle peuvent entraîner la destruction du vaisseau."}
+{"id": 10690, "en": "SYSTEM LOCKED", "fr": "SYSTÈME VERROUILLÉ"}
+{"id": 10691, "en": "CLICK TO UNLOCK", "fr": "CLIQUER POUR DÉVERROUILLER"}
+{"id": 10692, "en": "This system is locked until the Captain unlocks it", "fr": "Ce système est verrouillé jusqu'à ce que le capitaine le déverrouille."}
+{"id": 10693, "en": "Charging Warp Drive", "fr": "Chargement du moteur de distorsion"}
+{"id": 10694, "en": "Jump Prep Paused", "fr": "Préparation du saut en pause"}
+{"id": 10695, "en": "Not Responding", "fr": "Ne pas répondre"}
+{"id": 10696, "en": "No Fuel!", "fr": "Pas de carburant !"}
+{"id": 10697, "en": "Jump to Comet", "fr": "Sauter à Comète"}
+{"id": 10698, "en": "Jump to", "fr": "Sauter à"}
+{"id": 10699, "en": "Align Ship To Target", "fr": "Aligner le vaisseau sur la cible"}
+{"id": 10700, "en": "Jump In Progress", "fr": "Sauts en cours"}
+{"id": 10701, "en": "JMP", "fr": "JMP"}
+{"id": 10702, "en": "[STR0] has initiated a blind jump!", "fr": "[STR0] a initié un saut aveugle !"}
+{"id": 10703, "en": "Charging the warp drive!", "fr": "Chargement du moteur de distorsion !"}
+{"id": 10704, "en": "Blind Jump: Jumps the ship immediately without proper navigation. Can result in ship destruction", "fr": "Saut aveugle : Fait sauter le vaisseau immédiatement sans navigation appropriée. Peut entraîner la destruction du vaisseau"}
+{"id": 10705, "en": "Toggle warp drive charging. Once charging is complete, press to initiate a warp jump", "fr": "Permet d'activer le chargement du moteur de distorsion. Une fois le chargement terminé, appuyez sur pour lancer un saut en distorsion."}
+{"id": 10706, "en": "Long Range Warp Controls", "fr": "Contrôles de distorsion à longue portée"}
+{"id": 10707, "en": "WTI_", "fr": "WTI_"}
+{"id": 10708, "en": "PAID: [00ff00]IN FULL[-]", "fr": "PAID : [00ff00]IN FULL[-]"}
+{"id": 10709, "en": "PAID: [ff0000]NO[-]", "fr": "PAID : [ff0000]NO[-]"}
+{"id": 10710, "en": "PAID: [00ff00]OVERRIDE[-]", "fr": "PAID : [00ff00]OVERRIDE[-]"}
+{"id": 10711, "en": "ALIGNED: [00ff00]YES[-]", "fr": "ALIGNÉ : [00ff00]OUI[-]"}
+{"id": 10712, "en": "ALIGNED: [ff0000]NO[-]", "fr": "ALIGNÉ : [ff0000]NO[-]"}
+{"id": 10713, "en": "READY FOR WARP: [00ff00]YES[-]", "fr": "PRET POUR LE WARP : [00ff00]OUI[-]"}
+{"id": 10714, "en": "READY FOR WARP: [ff0000]NO[-]", "fr": "PRET POUR LE WARP : [ff0000]NO[-]"}
+{"id": 10715, "en": "CHAMBER EMPTY", "fr": "CHAMBRE VIDE"}
+{"id": 10716, "en": "CHAMBER LOADED", "fr": "CHAMBRE CHARGÉE"}
+{"id": 10717, "en": "DEVICE ARMED", "fr": "DISPOSITIF ARMÉ"}
+{"id": 10718, "en": "DEVICE AWAY", "fr": "DEVICE AWAY"}
+{"id": 10720, "en": "Load Nuclear Device", "fr": "Chargement d'un engin nucléaire"}
+{"id": 10721, "en": "UnloadNuclearDevice", "fr": "Décharger l'appareil nucléaire"}
+{"id": 10722, "en": "Unload Nuclear Device", "fr": "Décharger l'engin nucléaire"}
+{"id": 10724, "en": "LAUNCH DEVICE", "fr": "DISPOSITIF DE LANCEMENT"}
+{"id": 10725, "en": "DEVICE READY FOR LAUNCH", "fr": "DISPOSITIF PRÊT À ÊTRE LANCÉ"}
+{"id": 10726, "en": "No targets found!", "fr": "Aucune cible trouvée !"}
+{"id": 10727, "en": "Pull the two levers at the arming station$in quick succession to arm the loaded$nuclear device!", "fr": "Tirez les deux leviers du poste d'armement en succession rapide pour armer l'engin nucléaire chargé !"}
+{"id": 10729, "en": "DIST TO TARGET", "fr": "DISTANCE PAR RAPPORT À LA CIBLE"}
+{"id": 10730, "en": "DMG RADIUS", "fr": "DMG RADIUS"}
+{"id": 10732, "en": "Detonate Device", "fr": "Déclencher le dispositif"}
+{"id": 10734, "en": "m", "fr": "m"}
+{"id": 10735, "en": "%", "fr": "%"}
+{"id": 10736, "en": "NO TARGETED SHIP", "fr": "PAS DE NAVIRE CIBLÉ"}
+{"id": 10737, "en": "TARGET", "fr": "CIBLE"}
+{"id": 10738, "en": "Unloads the current nuclear device", "fr": "Décharge l'engin nucléaire en cours"}
+{"id": 10739, "en": "Launch Device", "fr": "Dispositif de lancement"}
+{"id": 10740, "en": "Launch the currently loaded nuclear device at the target ship", "fr": "Lancer l'engin nucléaire actuellement chargé sur le vaisseau cible"}
+{"id": 10741, "en": "Immediately detonate the active nuclear device", "fr": "Déclencher immédiatement l'engin nucléaire actif"}
+{"id": 10742, "en": "Electromagnetic Sensor", "fr": "Capteur électromagnétique"}
+{"id": 10743, "en": "EM", "fr": "EM"}
+{"id": 10744, "en": "Provides information on a target ship's systems and power levels.", "fr": "Fournit des informations sur les systèmes et les niveaux de puissance d'un vaisseau cible."}
+{"id": 10745, "en": "Light Frigate", "fr": "Frégate légère"}
+{"id": 10746, "en": "+30% EM Detection", "fr": "+30% Détection EM"}
+{"id": 10747, "en": "+20% Warp Range", "fr": "+20% de portée de la distorsion"}
+{"id": 10748, "en": "+15% Diplomacy", "fr": "+15% de diplomatie"}
+{"id": 10749, "en": "Caustic Corsair", "fr": "Corsaire caustique"}
+{"id": 10750, "en": "Armor is immune to acid", "fr": "L'armure est immunisée contre l'acide"}
+{"id": 10751, "en": "Special", "fr": "Spécial"}
+{"id": 10752, "en": "Shield Boosting Beacon", "fr": "Balise de renforcement du bouclier"}
+{"id": 10753, "en": "Boosts shield charging rate for all ships", "fr": "Augmente le taux de chargement des boucliers pour tous les vaisseaus"}
+{"id": 10754, "en": "Sniper Beacon", "fr": "Balise de sniper"}
+{"id": 10755, "en": "Equipped with a long range laser weapon", "fr": "Équipé d'une arme laser à longue portée"}
+{"id": 10756, "en": "Warp Disable Beacon", "fr": "Balise de désactivation de la distorsion"}
+{"id": 10757, "en": "Disables the ability for ships to jump or blind jump", "fr": "Désactive la possibilité pour les vaisseaus de sauter ou de sauter à l'aveuglette."}
+{"id": 10758, "en": "Virus Booster Beacon", "fr": "Virus Booster Beacon"}
+{"id": 10759, "en": "Reduces cyberdefense for all ships in sector and broadcasts viruses", "fr": "Réduit la cyberdéfense de tous les vaisseaus du secteur et diffuse des virus"}
+{"id": 10760, "en": "Thrust Booster Beacon", "fr": "Balise de poussée"}
+{"id": 10761, "en": "Boosts main thrusters capabilities for all ships", "fr": "Augmentation des capacités des propulseurs principaux pour tous les vaisseaus"}
+{"id": 10762, "en": "Power Booster Beacon", "fr": "Balise de renforcement de la puissance"}
+{"id": 10763, "en": "Boosts reactor power output for all ships", "fr": "Augmentation de la puissance des réacteurs de tous les vaisseaus"}
+{"id": 10764, "en": "Boarding Beacon", "fr": "Balise d'embarquement"}
+{"id": 10765, "en": "Spawns boarding bots if your quantum shields are down", "fr": "Lance des robots d'abordage si vos boucliers quantiques sont désactivés."}
+{"id": 10766, "en": "Signal Jammer Beacon", "fr": "Brouilleur de signal Balise"}
+{"id": 10767, "en": "Reduces EM detection for all ships in sector and blocks long range comms", "fr": "Réduit la détection électromagnétique pour tous les vaisseaus dans le secteur et bloque les communications à longue portée."}
+{"id": 10768, "en": "Energy Dmg. Booster Beacon", "fr": "Energie Dmg. Balise de renforcement"}
+{"id": 10769, "en": "Energy damage is boosted for all ships", "fr": "Les dégâts énergétiques sont augmentés pour tous les vaisseaus"}
+{"id": 10770, "en": "Corrupted Beacon", "fr": "Balise corrompue"}
+{"id": 10771, "en": "Broadcasts Corruption to all ships", "fr": "Diffuse la corruption à tous les vaisseaus"}
+{"id": 10772, "en": "Cloak Disable Beacon", "fr": "Balise de désactivation de l'occultation"}
+{"id": 10773, "en": "Disables cloaking systems on all ships", "fr": "Désactive les systèmes d'occultation sur tous les vaisseaus"}
+{"id": 10774, "en": "Program Charging Beacon", "fr": "Programme de la balise de recharge"}
+{"id": 10775, "en": "Recharging programs is more effective in this sector", "fr": "Les programmes de recharge sont plus efficaces dans ce secteur"}
+{"id": 10776, "en": "Fire Spread Beacon", "fr": "Balise de propagation de l'incendie"}
+{"id": 10777, "en": "Fires spread rapidly in this sector", "fr": "Les incendies se propagent rapidement dans ce secteur"}
+{"id": 10778, "en": "Overcharge Beacon", "fr": "Balise de surcharge"}
+{"id": 10779, "en": "Causes Overcharging when ships are close to each other", "fr": "Causes de la surcharge lorsque les vaisseaus sont proches les uns des autres"}
+{"id": 10780, "en": "Efficiency Beacon", "fr": "Balise d'efficacité"}
+{"id": 10781, "en": "Causes all", "fr": "Causes toutes"}
+{"id": 10782, "en": "(s) to consume much less power", "fr": "(s) consommer beaucoup moins d'énergie"}
+{"id": 10783, "en": "Armor Reduction Beacon", "fr": "Balise de réduction d'armure"}
+{"id": 10784, "en": "Causes ships to have a 30% armor reduction", "fr": "Les vaisseaus subissent une réduction d'armure de 30 %."}
+{"id": 10785, "en": "Physical Dmg. Booster Beacon", "fr": "Dmg physique. Balise de renforcement"}
+{"id": 10786, "en": "Physical damage is boosted for all ships", "fr": "Les dégâts physiques sont augmentés pour tous les vaisseaus"}
+{"id": 10787, "en": "Warp Range Booster Beacon", "fr": "Balise de renforcement de la portée de la distorsion"}
+{"id": 10788, "en": "Warp range is boosted for all ships", "fr": "La portée de la distorsion est augmentée pour tous les vaisseaux"}
+{"id": 10789, "en": "W.D. Transport Ship", "fr": "Vaisseau de transport W.D."}
+{"id": 10790, "en": "PLRoboticPawn", "fr": "PLRoboticPawn"}
+{"id": 10791, "en": "Bounty Hunter", "fr": "Chasseur de primes"}
+{"id": 10792, "en": "Carrier-class starship", "fr": "Vaisseau porte-avions"}
+{"id": 10793, "en": "SwitchON", "fr": "SwitchON"}
+{"id": 10794, "en": "Scrap is more likely to$contain components", "fr": "La ferraille est plus susceptible de contenir des composants"}
+{"id": 10795, "en": "Cargo Hauler", "fr": "Transporteur de fret"}
+{"id": 10796, "en": "Civilian Ship", "fr": "Vaisseau civil"}
+{"id": 10797, "en": "ECONOMIC ALL-PURPOSE SPACE VEHICLE", "fr": "VÉHICULE SPATIAL POLYVALENT ÉCONOMIQUE"}
+{"id": 10798, "en": "Starts at Chaos level 3.0", "fr": "Commence au niveau 3.0 du Chaos"}
+{"id": 10799, "en": "Equipped with a powerful EMP weapon", "fr": "Équipé d'une puissante arme EMP"}
+{"id": 10800, "en": "corrupted_drone", "fr": "drone_ corrompu"}
+{"id": 10801, "en": "Cruiser-class starship", "fr": "Vaisseau de croisière"}
+{"id": 10802, "en": "+35% Turret Charge Speed", "fr": "+35% Vitesse de charge de la tourelle"}
+{"id": 10803, "en": "+15% Turret Cooling", "fr": "+15% Refroidissement de la tourelle"}
+{"id": 10804, "en": "+10% Intimidation", "fr": "+10% Intimidation"}
+{"id": 10805, "en": "Strike Vessel", "fr": "Vaisseau d'attaque"}
+{"id": 10806, "en": "Deathwarden", "fr": "Gardien de la mort"}
+{"id": 10807, "en": "Ranger", "fr": "Ranger"}
+{"id": 10808, "en": "Scout", "fr": "Éclaireur"}
+{"id": 10809, "en": "Clunker", "fr": "Baisse de régime"}
+{"id": 10810, "en": "C.U.", "fr": "C.U."}
+{"id": 10811, "en": "Neutral", "fr": "Neutre"}
+{"id": 10812, "en": "W.D.", "fr": "W.D."}
+{"id": 10813, "en": "Bandit", "fr": "Bandit"}
+{"id": 10814, "en": "You won!", "fr": "Vous avez gagné !"}
+{"id": 10815, "en": "[F.B. Company Admin] has remotely shutdown the ship", "fr": "[F.B. Company Admin] a mis le vaisseau hors service à distance"}
+{"id": 10816, "en": "[F.B. Company Admin] has remotely captured the ship", "fr": "[F.B. Company Admin] a capturé le vaisseau à distance"}
+{"id": 10817, "en": "[F.B. Company Admin] has remotely disabled the air filter", "fr": "[F.B. Company Admin] a désactivé à distance le filtre à air"}
+{"id": 10818, "en": "[F.B. Company Admin] has remotely disabled the exosuits", "fr": "[F.B. Company Admin] a désactivé à distance les exosuits"}
+{"id": 10819, "en": "[F.B. Company Admin] has remotely enabled [REDACTED SYSTEM]", "fr": "[F.B. Company Admin] a activé à distance [SYSTÈME ÉDITÉ]."}
+{"id": 10821, "en": "SOMETHING IS WRONG", "fr": "QUELQUE CHOSE NE VA PAS"}
+{"id": 10822, "en": "Delivery Ship", "fr": "Livraison"}
+{"id": 10823, "en": "Starts at Chaos level 2.0", "fr": "Commence au niveau 2.0 du Chaos"}
+{"id": 10825, "en": "x", "fr": "x"}
+{"id": 10826, "en": "Final Table Available", "fr": "Tableau final disponible"}
+{"id": 10827, "en": "Earn 3 Chips To Join Finals Game", "fr": "Gagner 3 jetons pour participer à la finale"}
+{"id": 10828, "en": "Intrepid-class starship", "fr": "Vaisseau de classe Intrepid"}
+{"id": 10829, "en": "RESTORED OLD WARS RELIC", "fr": "RELIQUE DE L'ANCIENNE GUERRE RESTAURÉE"}
+{"id": 10830, "en": "Ultra-dense armored hull", "fr": "Coque blindée ultra-dense"}
+{"id": 10831, "en": "Sword", "fr": "L'épée"}
+{"id": 10832, "en": "Powerful forward beam attack \\^Sword\\^", "fr": "Attaque puissante par faisceau avant \\N^Sword\\^"}
+{"id": 10833, "en": "Cloaking system priming speed x2", "fr": "Vitesse d'amorçage du système d'occultation x2"}
+{"id": 10834, "en": "Research Vessel", "fr": "Vaisseau de recherche"}
+{"id": 10835, "en": "Earn 20 levels aligned with the Colonial Union (", "fr": "Gagnez 20 niveaux alignés sur l'Union coloniale ("}
+{"id": 10836, "en": "/20 earned)", "fr": "/20 gagné)"}
+{"id": 10837, "en": "Outrider-class starship", "fr": "Vaisseau de classe Outrider"}
+{"id": 10838, "en": "Extra research materials", "fr": "Matériel de recherche supplémentaire"}
+{"id": 10839, "en": "+30% Diplomacy", "fr": "+30% de diplomatie"}
+{"id": 10840, "en": "Paladin-class starship", "fr": "Vaisseau de classe Paladin"}
+{"id": 10841, "en": "Can install/swap ship components at any time", "fr": "Possibilité d'installer/de remplacer les composants du vaisseau à tout moment"}
+{"id": 10842, "en": "Can upgrade ship components at any time", "fr": "Possibilité d'améliorer les éléments du vaisseau à tout moment"}
+{"id": 10843, "en": "Polytechnic Fighter", "fr": "Combattant polytechnique"}
+{"id": 10844, "en": "Polytech-class starship", "fr": "Vaisseau de classe Polytech"}
+{"id": 10845, "en": "Drone Overseer", "fr": "Superviseur de drones"}
+{"id": 10846, "en": "Roland-class starship", "fr": "Vaisseau de classe Roland"}
+{"id": 10847, "en": "Heavy Attack Vessel", "fr": "Vaisseau d'attaque lourd"}
+{"id": 10848, "en": "+100% EM SIG", "fr": "+100% EM SIG"}
+{"id": 10849, "en": "+25% Shield Recharge Rate", "fr": "Taux de recharge du bouclier : +25"}
+{"id": 10850, "en": "Stealth Transport", "fr": "Transport furtif"}
+{"id": 10851, "en": "-50% EM SIG", "fr": "-50 % EM SIG"}
+{"id": 10852, "en": "swarm_speed", "fr": "vitesse de l'essaim"}
+{"id": 10853, "en": "HitPS", "fr": "HitPS"}
+{"id": 10854, "en": "SwarmIsFree", "fr": "SwarmIsFree"}
+{"id": 10855, "en": "Swarm", "fr": "Essaim"}
+{"id": 10856, "en": "Dathestru", "fr": "Dathestru"}
+{"id": 10857, "en": "Keeper", "fr": "Gardien"}
+{"id": 10858, "en": "Unseen Fighter", "fr": "Combattant invisible"}
+{"id": 10859, "en": "TempTransfom", "fr": "TempTransfom"}
+{"id": 10860, "en": "Earn 20 levels aligned with the W.D. Corp (", "fr": "Gagnez 20 niveaux alignés sur la norme W.D. Corp ("}
+{"id": 10861, "en": "Prototype", "fr": "Prototype"}
+{"id": 10862, "en": "Damage to enemies charges shields", "fr": "Les dégâts infligés aux ennemis chargent les boucliers"}
+{"id": 10863, "en": "Flaky internal systems", "fr": "Systèmes internes défaillants"}
+{"id": 10864, "en": "Armored Warship", "fr": "Vaisseau de guerre blindé"}
+{"id": 10865, "en": "+20% Turret Damage", "fr": "+20% de dégâts à la tourelle"}
+{"id": 10866, "en": "+50% Armor", "fr": "+50% d'armure"}
+{"id": 10867, "en": "Guardian", "fr": "Gardien de la paix"}
+{"id": 10868, "en": "Warrior", "fr": "Guerrier"}
+{"id": 10869, "en": "Ripper", "fr": "Ripper"}
+{"id": 10870, "en": "Arbiter", "fr": "Arbitre"}
+{"id": 10871, "en": "Vindicator", "fr": "Vindicateur"}
+{"id": 10872, "en": "Marauder", "fr": "Maraudeur"}
+{"id": 10873, "en": "] Pilot the ship", "fr": "] Piloter le vaisseau"}
+{"id": 10874, "en": "PLWeaponsSystem exception!", "fr": "Exception PLWeaponsSystem !"}
+{"id": 10875, "en": "] use <", "fr": "] utiliser <"}
+{"id": 10876, "en": "You need the <Advanced Operator> talent to use this station", "fr": "Vous devez avoir le talent d'opérateur avancé pour utiliser cette station."}
+{"id": 10877, "en": "You hand control of the Infected to the Alliance of Gentlemen.", "fr": "Vous confiez le contrôle des infectés à l'Alliance des Gentlemen."}
+{"id": 10878, "en": "The Caretaker thanks you for your contribution and uses the Infected to achieve even the most ambitious of Alliance goals.", "fr": "Le Gardien vous remercie de votre contribution et utilise les infectés pour atteindre les objectifs les plus ambitieux de l'Alliance."}
+{"id": 10879, "en": "The Estate emerges from the shadows and holds its own against all who try to subdue it—including the Colonial Union and W.D. fleets.", "fr": "Le Domaine sort de l'ombre et tient tête à tous ceux qui tentent de le soumettre, y compris les flottes de l'Union coloniale et de W.D.."}
+{"id": 10880, "en": "The Alliance of Gentlemen sees a surge of new members, enough to make it a truly formidable force in intergalactic society.", "fr": "L'Alliance des Gentlemen voit affluer de nouveaux membres, suffisamment pour devenir une force redoutable dans la société intergalactique."}
+{"id": 10881, "en": "The names of your crew go down in legend and are echoed by pirates and smugglers throughout the galaxies.", "fr": "Les noms de votre équipage entrent dans la légende et sont repris par les pirates et les contrebandiers de toutes les galaxies."}
+{"id": 10882, "en": "You are known as heroes who gave the outcasts a chance at power.", "fr": "Vous êtes connus comme des héros qui ont donné aux exclus une chance d'accéder au pouvoir."}
+{"id": 10883, "en": "Your influence in the Alliance of Gentlemen is as great as the Caretaker’s, and you are never wanting for profitable job opportunities for the rest of your days.", "fr": "Votre influence au sein de l'Alliance des Gentlemen est aussi grande que celle du Gardien, et vous ne manquerez jamais d'opportunités de travail rentables pour le reste de vos jours."}
+{"id": 10884, "en": "You hand control of the Infected to the Colonial Union.", "fr": "Vous remettez le contrôle des infectés à l'Union coloniale."}
+{"id": 10885, "en": "Your findings are used to reverse the spread of the Infected, containing them and ending their scourge upon the galaxies.", "fr": "Vos découvertes sont utilisées pour inverser la propagation des Infectés, les contenir et mettre fin à leur fléau sur les galaxies."}
+{"id": 10886, "en": "In the following months, you hear rumors that the Colonial Union is conducting further research on the Infected.", "fr": "Dans les mois qui suivent, vous entendez des rumeurs selon lesquelles l'Union coloniale poursuit ses recherches sur les infectés."}
+{"id": 10887, "en": "A few leaks suggest that despite the events of the Wasted Wing, some of the Colonial Union’s research practices may be questionable.", "fr": "Quelques fuites suggèrent que, malgré les événements de l'Aile gâchée, certaines pratiques de recherche de l'Union coloniale pourraient être remises en question."}
+{"id": 10888, "en": "However, all information on the subject is classified.", "fr": "Cependant, toutes les informations sur le sujet sont classifiées."}
+{"id": 10889, "en": "The Colonial Union commends you for your loyalty and promotes your crew as officers of the highest order.", "fr": "L'Union Coloniale vous félicite pour votre loyauté et promeut votre équipage en tant qu'officiers du plus haut niveau."}
+{"id": 10890, "en": "You are honored among Colonial Union ranks, and the citizens of the galaxy see you as heroes.", "fr": "Vous êtes honorés dans les rangs de l'Union coloniale et les citoyens de la galaxie vous considèrent comme des héros."}
+{"id": 10891, "en": "You destroy the Infected.", "fr": "Vous détruisez les infectés."}
+{"id": 10892, "en": "Their power is never wielded by any individual or faction.", "fr": "Leur pouvoir n'est jamais exercé par un individu ou une faction."}
+{"id": 10893, "en": "Their scourge upon the galaxy ends, and order is slowly restored.", "fr": "Leur fléau sur la galaxie prend fin et l'ordre est lentement rétabli."}
+{"id": 10894, "en": "For the most part, you are considered heroes.", "fr": "Pour la plupart, vous êtes considérés comme des héros."}
+{"id": 10895, "en": "Regardless of your reasons for destroying the Infected, you are lauded for your foresight that their power was too great for anyone to wield.", "fr": "Quelles que soient les raisons qui vous ont poussé à détruire les Infectés, vous êtes loué pour votre clairvoyance, car vous avez compris que leur pouvoir était trop grand pour être maîtrisé par qui que ce soit."}
+{"id": 10896, "en": "Though the leaders of prominent factions criticize your decision,", "fr": "Bien que les chefs des principales factions critiquent votre décision,"}
+{"id": 10897, "en": "history looks upon you favorably for saving the galaxy from both the Infected and itself.", "fr": "L'histoire vous voit d'un bon œil pour avoir sauvé la galaxie des Infectés et d'elle-même."}
+{"id": 10898, "en": "You hand control of the Infected to the Fluffy Biscuit Company.", "fr": "Vous confiez le contrôle des infectés à la Fluffy Biscuit Company."}
+{"id": 10899, "en": "The Infected are used to protect deliveries and funnel space traffic towards Fluffy Biscuit shops.", "fr": "Les infectés sont utilisés pour protéger les livraisons et canaliser le trafic spatial vers les magasins Fluffy Biscuit."}
+{"id": 10900, "en": "Profits soar.", "fr": "Les bénéfices s'envolent."}
+{"id": 10901, "en": "You also hear rumors of a new secret ingredient that makes the biscuits especially delicious.", "fr": "Vous entendez également des rumeurs sur un nouvel ingrédient secret qui rend les biscuits particulièrement délicieux."}
+{"id": 10902, "en": "The nutritional facts list it only as “naturally sourced flavor enhancer”.", "fr": "Le tableau des valeurs nutritionnelles le mentionne uniquement comme \"exhausteur de goût d'origine naturelle\"."}

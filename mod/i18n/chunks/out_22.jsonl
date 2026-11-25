@@ -1,0 +1,1327 @@
+{"id": 9313, "it": "Sh"}
+{"id": 9314, "it": "Aumenta di +30 la velocità di ricarica degli scudi per 15 secondi."}
+{"id": 9315, "it": "MS"}
+{"id": 9316, "it": "Garantisce la tenuta degli scudi quantici per 30 secondi."}
+{"id": 9317, "it": "QD"}
+{"id": 9318, "it": "Ricarica completamente il motore a curvatura all'esecuzione."}
+{"id": 9319, "it": "WC"}
+{"id": 9320, "it": "Fornisce 3 cariche di programma di curvatura all'esecuzione."}
+{"id": 9321, "it": "Ca"}
+{"id": 9322, "it": "Triplica i livelli di rilevamento effettivi di tutti i sensori per 60 secondi."}
+{"id": 9323, "it": "De"}
+{"id": 9324, "it": "Aggiunge +6 alla potenza del propulsore principale per 30 secondi."}
+{"id": 9325, "it": "TB"}
+{"id": 9326, "it": "Ripara completamente tutti i sistemi della nave all'esecuzione."}
+{"id": 9327, "it": "FH"}
+{"id": 9328, "it": "Rimuove istantaneamente dalla nave tutti i virus ostili all'esecuzione."}
+{"id": 9329, "it": "RV"}
+{"id": 9330, "it": "Trasmette il virus [0x84B7A2] alle navi vicine all'attivazione.$$0x84B7A2: funzione sconosciuta/casuale"}
+{"id": 9331, "it": "84"}
+{"id": 9332, "it": "Trasmette il virus [0xF592B1] alle navi vicine all'attivazione.$$0xF592B1: funzione sconosciuta/casuale"}
+{"id": 9333, "it": "F5"}
+{"id": 9334, "it": "Aumenta del 35% il danno delle torrette e la velocità di raffreddamento per 15 secondi."}
+{"id": 9335, "it": "Aumenta del 50% la potenza del reattore per 10 secondi."}
+{"id": 9336, "it": "OV"}
+{"id": 9337, "it": "Trasmette il virus [Syber's Shield] alle navi vicine all'attivazione.$$Syber's Shield: riduce del 30% il danno delle torrette per 90 secondi"}
+{"id": 9338, "it": "SS"}
+{"id": 9339, "it": "Aumenta del 20% la velocità di carica delle torrette per 60 secondi."}
+{"id": 9340, "it": "ST"}
+{"id": 9341, "it": "Trasmette il virus [Armor Flaw] alle navi vicine all'attivazione.$$Armor Flaw: riduce del 50% l'efficacia della corazza per 30 secondi"}
+{"id": 9342, "it": "AF"}
+{"id": 9343, "it": "Trasmette il virus [Shutdown Defenses] alle navi vicine all'attivazione.$$Shutdown Defenses: disattiva i sistemi difensivi per 20 secondi"}
+{"id": 9344, "it": "Rimuove immediatamente dalla nave il 50% di sovraccarico."}
+{"id": 9345, "it": "DS"}
+{"id": 9346, "it": "Rimuove il 35% della temperatura massima del reattore, raffreddandolo immediatamente."}
+{"id": 9347, "it": "DC"}
+{"id": 9348, "it": "Ricarica completamente gli scudi e spegne la nave."}
+{"id": 9349, "it": "Si sostituisce con un programma casuale presente nella stiva."}
+{"id": 9350, "it": "++"}
+{"id": 9351, "it": "Fa avanzare la ricerca in corso di 1 passo."}
+{"id": 9352, "it": "QT"}
+{"id": 9353, "it": "Aumenta di +80 gli scudi massimi per 60 secondi."}
+{"id": 9354, "it": "ES"}
+{"id": 9355, "it": "Rimuove dalla nave un virus ostile attivo scelto a caso."}
+{"id": 9356, "it": "BV"}
+{"id": 9357, "it": "Fornisce 5 cariche di programma di curvatura all'esecuzione."}
+{"id": 9358, "it": "SC"}
+{"id": 9359, "it": "Ricarica completamente un programma scarico scelto a caso."}
+{"id": 9360, "it": "RA"}
+{"id": 9361, "it": "Azzera tutti i timer dei programmi attivi"}
+{"id": 9362, "it": "RC"}
+{"id": 9363, "it": "+50% di CyberAttacco (frequenza di trasmissione dei virus) per 30 secondi"}
+{"id": 9364, "it": "SW"}
+{"id": 9365, "it": "Bersaglio facile [VIRUS]"}
+{"id": 9366, "it": "Benvenuto del Gentiluomo [VIRUS]"}
+{"id": 9367, "it": "Risucchio di crediti [VIRUS]"}
+{"id": 9368, "it": "Disattivazione curvatura [VIRUS]"}
+{"id": 9369, "it": "Falange [VIRUS]"}
+{"id": 9370, "it": "Backdoor [VIRUS]"}
+{"id": 9371, "it": "Blocco comunicazioni a lungo raggio"}
+{"id": 9372, "it": "Potenziamento scudi d'emergenza"}
+{"id": 9373, "it": "Potenziamento scudi di grado militare"}
+{"id": 9374, "it": "Difese quantiche"}
+{"id": 9375, "it": "Carica istantanea della curvatura"}
+{"id": 9376, "it": "Condensatore"}
+{"id": 9377, "it": "Rilevatore"}
+{"id": 9378, "it": "Potenziatore di spinta"}
+{"id": 9379, "it": "Autoriparazione istantanea dei sistemi"}
+{"id": 9380, "it": "Antivirus istantaneo"}
+{"id": 9381, "it": "0x84B7A2 [VIRUS]"}
+{"id": 9382, "it": "0xF592B1 [VIRUS]"}
+{"id": 9383, "it": "Sbarramento"}
+{"id": 9384, "it": "OverDrive"}
+{"id": 9385, "it": "Syber's Shield [VIRUS]"}
+{"id": 9386, "it": "Minaccia di Syber"}
+{"id": 9387, "it": "Armor Flaw [VIRUS]"}
+{"id": 9388, "it": "Shutdown Defenses [VIRUS]"}
+{"id": 9389, "it": "Scarica"}
+{"id": 9390, "it": "Refrigerante digitale"}
+{"id": 9391, "it": "Shock al sistema"}
+{"id": 9392, "it": "Tunnel quantico"}
+{"id": 9393, "it": "Reinstalla++"}
+{"id": 9394, "it": "Scudi estesi"}
+{"id": 9395, "it": "Antivirus a raffica"}
+{"id": 9396, "it": "Condensatore Sylvassi"}
+{"id": 9397, "it": "Accesso casuale"}
+{"id": 9398, "it": "Reset attivo"}
+{"id": 9399, "it": "SyberWar"}
+{"id": 9400, "it": "OBIETTIVO COMPLETATO"}
+{"id": 9401, "it": "Raccogli i frammenti di dati di Lost Colony"}
+{"id": 9402, "it": "Raccogli un frammento di dati di Lost Colony"}
+{"id": 9403, "it": "Sgancia il nucleo di curvatura"}
+{"id": 9404, "it": "Completa la missione entro"}
+{"id": 9405, "it": "salti."}
+{"id": 9406, "it": "Distruggi"}
+{"id": 9407, "it": "Neutralizza"}
+{"id": 9408, "it": "Comandanti di settore"}
+{"id": 9409, "it": "Neutralizza un comandante di settore"}
+{"id": 9410, "it": "Completa contratti di taglia per i Grey Huntsmen"}
+{"id": 9411, "it": "Completa un contratto di taglia per i Grey Huntsmen"}
+{"id": 9412, "it": "Uccidi"}
+{"id": 9413, "it": "membri dell'equipaggio"}
+{"id": 9414, "it": "banditi del metallo"}
+{"id": 9415, "it": "banditi del metallo pesanti"}
+{"id": 9416, "it": "droni terrestri"}
+{"id": 9417, "it": "cristalli"}
+{"id": 9418, "it": "Distruggi il/la"}
+{"id": 9419, "it": "Drone/i di sicurezza piccolo/i"}
+{"id": 9420, "it": "Drone/i di sicurezza"}
+{"id": 9421, "it": "Drone/i di sicurezza tattico/i"}
+{"id": 9422, "it": "Astronave/i classe Intrepid"}
+{"id": 9423, "it": "Astronave/i classe Stargazer"}
+{"id": 9424, "it": "Astronave/i classe Carrier"}
+{"id": 9425, "it": "Astronave/i classe W.D. Cruiser"}
+{"id": 9426, "it": "Astronave/i classe W.D. Annihilator"}
+{"id": 9427, "it": "Astronave/i classe W.D. Destroyer"}
+{"id": 9428, "it": "Drone/i da trasporto W.D."}
+{"id": 9429, "it": "Sentinella antica"}
+{"id": 9430, "it": "Nave/i civile/i di carburante"}
+{"id": 9431, "it": "Trova e recupera"}
+{"id": 9432, "it": "Raggiungi il settore"}
+{"id": 9433, "it": "Trova"}
+{"id": 9434, "it": "rimasti)"}
+{"id": 9435, "it": "per l'inizio della missione"}
+{"id": 9436, "it": "[STR1] crediti ([STR0])"}
+{"id": 9437, "it": "+#;-#"}
+{"id": 9438, "it": "[STR1] XP ([STR0])"}
+{"id": 9439, "it": "+0.##;-#.##"}
+{"id": 9440, "it": "[STR1] Caos ([STR0])"}
+{"id": 9441, "it": "[STR1] Rep. per [STR2] ([STR0])"}
+{"id": 9442, "it": "La tua nave è stata segnalata a causa della missione: [STR0]"}
+{"id": 9443, "it": "per il successo della missione"}
+{"id": 9444, "it": "MISSIONE FALLITA"}
+{"id": 9445, "it": "per il fallimento della missione"}
+{"id": 9446, "it": "[Termina conversazione]"}
+{"id": 9447, "it": "MissileLockUI"}
+{"id": 9448, "it": "MissileLockTimer"}
+{"id": 9449, "it": "LockOnSprite"}
+{"id": 9450, "it": "SystemLockOnIcon"}
+{"id": 9451, "it": "MissileInfo"}
+{"id": 9452, "it": "MissileAmmo"}
+{"id": 9453, "it": "FillSlow"}
+{"id": 9454, "it": "Talking"}
+{"id": 9455, "it": "A riposo"}
+{"id": 9456, "it": "Attenti"}
+{"id": 9457, "it": "Nasconditi dai sensori"}
+{"id": 9458, "it": "Resta vicino al Capitano"}
+{"id": 9459, "it": "Attacco offensivo"}
+{"id": 9460, "it": "Abbandona la nave"}
+{"id": 9461, "it": "Abborda il nemico"}
+{"id": 9462, "it": "Respingi gli invasori"}
+{"id": 9463, "it": "StatusName"}
+{"id": 9464, "it": "FillBG"}
+{"id": 9465, "it": "StatusTime"}
+{"id": 9466, "it": "Premi [{0}] per saltare la curvatura"}
+{"id": 9467, "it": "Liv. {0}  {1}  {2}"}
+{"id": 9468, "it": "{0}/{1}"}
+{"id": 9469, "it": "{0}%"}
+{"id": 9470, "it": "{0} m/s"}
+{"id": 9489, "it": "Morto"}
+{"id": 9490, "it": "Pericolo: torna nell'area della missione!"}
+{"id": 9491, "it": "HH:mm:ss:ff"}
+{"id": 9492, "it": "SALTI"}
+{"id": 9493, "it": "Sconfitto!"}
+{"id": 9494, "it": "CACCIATORE DI TAGLIE"}
+{"id": 9495, "it": "COMANDANTE DI SETTORE"}
+{"id": 9496, "it": "VRUIMargin"}
+{"id": 9497, "it": "UIMargin"}
+{"id": 9498, "it": "<color=#FFFFFFAA><size=20>"}
+{"id": 9499, "it": "</size></color>$"}
+{"id": 9500, "it": "<color=#77777777>"}
+{"id": 9501, "it": "$<size=11>"}
+{"id": 9502, "it": "totale"}
+{"id": 9503, "it": "Venduto"}
+{"id": 9504, "it": "(Modalità offline)"}
+{"id": 9505, "it": "ShowInGameControls"}
+{"id": 9506, "it": "ingrandisci"}
+{"id": 9507, "it": "riduci"}
+{"id": 9508, "it": "centra sull'equipaggio"}
+{"id": 9509, "it": "assegna punto di passaggio"}
+{"id": 9510, "it": "cancella percorso (sull'equipaggio)"}
+{"id": 9511, "it": "cambia modalità telecamera"}
+{"id": 9512, "it": "<color=#AAAAAA><color=#FFFFFF>"}
+{"id": 9513, "it": "</color> attiva/disattiva i settori$<color=#FFFFFF>"}
+{"id": 9514, "it": "</color> cambia modalità telecamera</color>$"}
+{"id": 9515, "it": "cambia modalità di volo"}
+{"id": 9516, "it": "modalità manovra (tieni premuto)"}
+{"id": 9517, "it": "massima spinta"}
+{"id": 9518, "it": "spinta inversa"}
+{"id": 9519, "it": "rollio (sinistra)"}
+{"id": 9520, "it": "rollio (destra)"}
+{"id": 9521, "it": "</color> cambia modalità di volo"}
+{"id": 9522, "it": "$<color=#FFFFFF>"}
+{"id": 9523, "it": "</color> modalità manovra (tieni premuto)$<color=#FFFFFF>"}
+{"id": 9524, "it": "</color> spinta in avanti$<color=#FFFFFF>"}
+{"id": 9525, "it": "</color> spinta inversa"}
+{"id": 9526, "it": "attiva/disattiva i settori"}
+{"id": 9527, "it": "apri il menu Tab"}
+{"id": 9528, "it": "attiva/usa"}
+{"id": 9529, "it": "sblocca il cursore"}
+{"id": 9530, "it": "menu degli ordini"}
+{"id": 9531, "it": "usa lo jetpack"}
+{"id": 9532, "it": "cambia equipaggiamento"}
+{"id": 9533, "it": "</color> Apri il menu Tab</color>$"}
+{"id": 9534, "it": "</color> Muoviti$"}
+{"id": 9535, "it": "</color> Attiva le postazioni</color>$"}
+{"id": 9536, "it": "</color> Sblocca il mouse</color>$"}
+{"id": 9537, "it": "</color> Menu di gioco$"}
+{"id": 9538, "it": "</color> Torcia</color>$"}
+{"id": 9539, "it": "salta la curvatura"}
+{"id": 9540, "it": "</color> Salta la curvatura</color>$"}
+{"id": 9541, "it": "zoom torretta"}
+{"id": 9542, "it": "</color> Zoom torretta</color>$"}
+{"id": 9543, "it": "spara il laser a impulsi (clic)"}
+{"id": 9544, "it": "(clic)</color> Spara il laser a impulsi</color>$"}
+{"id": 9545, "it": "</color> Spara il laser a impulsi</color>$"}
+{"id": 9546, "it": "lancia missile (tieni premuto)"}
+{"id": 9547, "it": "(tieni premuto)</color> Lancia missile</color>$"}
+{"id": 9548, "it": "bersaglio: ingegneria"}
+{"id": 9549, "it": "bersaglio: armi"}
+{"id": 9550, "it": "bersaglio: supporto vitale"}
+{"id": 9551, "it": "bersaglio: laboratorio scientifico"}
+{"id": 9552, "it": "</color> Bersaglio: ingegneria</color>$"}
+{"id": 9553, "it": "</color> Bersaglio: armi</color>$"}
+{"id": 9554, "it": "</color> Bersaglio: supporto vitale</color>$"}
+{"id": 9555, "it": "</color> Bersaglio: laboratorio scientifico</color>$"}
+{"id": 9556, "it": "attiva/disattiva la modalità telecamera esterna"}
+{"id": 9557, "it": "</color> Attiva/disattiva la modalità telecamera esterna</color>$"}
+{"id": 9558, "it": "TEMP"}
+{"id": 9559, "it": "Ibrida"}
+{"id": 9560, "it": "Fissa"}
+{"id": 9561, "it": "Prima persona"}
+{"id": 9562, "it": "Auto"}
+{"id": 9572, "it": "Allarme"}
+{"id": 9573, "it": "COMANDANTE DI SETTORE"}
+{"id": 9574, "it": "beacontitle"}
+{"id": 9575, "it": "BOE"}
+{"id": 9577, "it": "NAVI"}
+{"id": 9579, "it": "Al momento non hai il permesso di acquistare carburante!"}
+{"id": 9580, "it": "Al momento non hai il permesso di acquistare refrigerante!"}
+{"id": 9581, "it": "Al momento non hai il permesso di acquistare ricariche di missili!"}
+{"id": 9582, "it": "Capsula di carburante"}
+{"id": 9583, "it": "REFRIGERANTE"}
+{"id": 9584, "it": "StatLeft"}
+{"id": 9585, "it": "StatRight"}
+{"id": 9586, "it": "Crediti insufficienti per completare la transazione!"}
+{"id": 9587, "it": "Al momento non hai il permesso di scambiare componenti!"}
+{"id": 9588, "it": "firma em"}
+{"id": 9589, "it": "consumo energetico"}
+{"id": 9590, "it": "tempo di carica"}
+{"id": 9591, "it": "ricarica emerg."}
+{"id": 9592, "it": "integrità min."}
+{"id": 9593, "it": "min. per scudi QT"}
+{"id": 9594, "it": "calore prodotto"}
+{"id": 9595, "it": "PRIMA"}
+{"id": 9597, "it": "DOPO"}
+{"id": 9599, "it": "<color=red>(+"}
+{"id": 9600, "it": ")</color>$"}
+{"id": 9601, "it": "<color=green>("}
+{"id": 9602, "it": "<color=green>(+"}
+{"id": 9603, "it": "<color=red>("}
+{"id": 9604, "it": "\\d+"}
+{"id": 9605, "it": "CREDITI DISPONIBILI"}
+{"id": 9608, "it": "VARIAZIONE PREZZI PER REPUTAZIONE"}
+{"id": 9609, "it": "%</color>"}
+{"id": 9610, "it": "Cr (TOTALE)"}
+{"id": 9613, "it": "Livello"}
+{"id": 9616, "it": "CONFRONTA"}
+{"id": 9619, "it": "Capsule di carburante ("}
+{"id": 9620, "it": "/ 200)"}
+{"id": 9621, "it": "Refrigerante ("}
+{"id": 9622, "it": "%)"}
+{"id": 9623, "it": "Rifornisci"}
+{"id": 9624, "it": "RICARICA MISSILI"}
+{"id": 9626, "it": "XP$"}
+{"id": 9627, "it": "Caos"}
+{"id": 9628, "it": "Rep. CU"}
+{"id": 9629, "it": "Rep. AOG"}
+{"id": 9630, "it": "Rep. FB"}
+{"id": 9631, "it": "Rep. WD"}
+{"id": 9632, "it": "Rep. PT"}
+{"id": 9633, "it": "Ruolo disponibile"}
+{"id": 9634, "it": "IL CAPITANO"}
+{"id": 9635, "it": "IL PILOTA"}
+{"id": 9636, "it": "LO SCIENZIATO"}
+{"id": 9637, "it": "LO SPECIALISTA D'ARMI"}
+{"id": 9638, "it": "L'INGEGNERE"}
+{"id": 9639, "it": "Aggiungi PiBot"}
+{"id": 9640, "it": "Aggiungi SciBot"}
+{"id": 9641, "it": "Aggiungi WeapBot"}
+{"id": 9642, "it": "Aggiungi EngBot"}
+{"id": 9643, "it": "Priorità IA"}
+{"id": 9644, "it": "Rimuovi bot"}
+{"id": 9645, "it": "Aggiungi amico"}
+{"id": 9646, "it": "friendadd"}
+{"id": 9647, "it": "Vedi profilo"}
+{"id": 9648, "it": "steamid"}
+{"id": 9649, "it": "Silenzia"}
+{"id": 9650, "it": "Riattiva audio"}
+{"id": 9651, "it": "Oggetti"}
+{"id": 9652, "it": "CR"}
+{"id": 9653, "it": "Non puoi comprare o vendere componenti mentre sono attivi i limiti di acquisto dell'equipaggio"}
+{"id": 9654, "it": "CR$ <size=11>(-50%)</size>"}
+{"id": 9655, "it": "Impossibile scambiare il componente. Si trova in uno slot bloccato!"}
+{"id": 9656, "it": "TalentName"}
+{"id": 9657, "it": "TalentDesc"}
+{"id": 9658, "it": "BGTexture"}
+{"id": 9659, "it": "AddRankBtn"}
+{"id": 9660, "it": "Scelta"}
+{"id": 9661, "it": "punti"}
+{"id": 9662, "it": "punto"}
+{"id": 9663, "it": "[b]"}
+{"id": 9664, "it": "[/b] talento"}
+{"id": 9665, "it": "disponibile"}
+{"id": 9666, "it": "Sicurezza della nave"}
+{"id": 9667, "it": "Uso delle testate nucleari"}
+{"id": 9668, "it": "Guida la squadra d'abbordaggio"}
+{"id": 9669, "it": "Ripara lo scafo"}
+{"id": 9670, "it": "Raccogli rottami"}
+{"id": 9671, "it": "Allinea la nave per la curvatura"}
+{"id": 9672, "it": "Usa la postazione di curvatura"}
+{"id": 9673, "it": "Pilota la nave"}
+{"id": 9674, "it": "Evita il rilevamento"}
+{"id": 9675, "it": "Evita i buchi neri"}
+{"id": 9676, "it": "Difensivo"}
+{"id": 9677, "it": "Pattuglia"}
+{"id": 9678, "it": "Spegni la nave"}
+{"id": 9679, "it": "Espelli il nucleo del reattore"}
+{"id": 9680, "it": "Abbatti i missili"}
+{"id": 9681, "it": "Abbassa gli scudi per le riparazioni"}
+{"id": 9682, "it": "Aggressivo"}
+{"id": 9683, "it": "Uso delle armi"}
+{"id": 9684, "it": "Voce / Comunicazioni"}
+{"id": 9685, "it": "Scansione dei sensori"}
+{"id": 9686, "it": "Trasmetti informazioni"}
+{"id": 9687, "it": "Usa i programmi"}
+{"id": 9688, "it": "Guerra cibernetica"}
+{"id": 9689, "it": "Proteggi i sistemi"}
+{"id": 9690, "it": "Evita le navi nemiche"}
+{"id": 9691, "it": "Mantieni riserve di refrigerante"}
+{"id": 9692, "it": "Mantieni riserve di carburante"}
+{"id": 9693, "it": "Carica manuale dei programmi"}
+{"id": 9694, "it": "Riduci al minimo il consumo energetico"}
+{"id": 9695, "it": "Sicurezza del reattore"}
+{"id": 9696, "it": "Carica il motore a curvatura"}
+{"id": 9697, "it": "Fai saltare la nave"}
+{"id": 9698, "it": "Abborda la nave nemica"}
+{"id": 9699, "it": "Vendi biscotti"}
+{"id": 9700, "it": "Sist. di occultamento"}
+{"id": 9701, "it": "Ripara un compagno"}
+{"id": 9702, "it": "Cura un compagno"}
+{"id": 9703, "it": "Rianima un compagno"}
+{"id": 9704, "it": "Vicino al Capitano"}
+{"id": 9705, "it": "Presidia la torretta"}
+{"id": 9706, "it": "Presidia la postazione"}
+{"id": 9707, "it": "Difendi te stesso (nave)"}
+{"id": 9708, "it": "Pattuglia antincendio"}
+{"id": 9709, "it": "Ripara il sistema"}
+{"id": 9710, "it": "Uso dei missili"}
+{"id": 9711, "it": "Assistenza in combattimento"}
+{"id": 9712, "it": "Cerca navi"}
+{"id": 9713, "it": "Curati"}
+{"id": 9714, "it": "Avvia la nave"}
+{"id": 9715, "it": "Bersaglio: supporto vitale"}
+{"id": 9716, "it": "Bersaglio: laboratorio scientifico"}
+{"id": 9717, "it": "Bersaglio: sistema d'armi"}
+{"id": 9718, "it": "Bersaglio: ingegneria"}
+{"id": 9719, "it": "Bersaglio: sistema casuale"}
+{"id": 9720, "it": "Livello di energia: laboratorio scientifico"}
+{"id": 9721, "it": "Livello di energia: armi"}
+{"id": 9722, "it": "Livello di energia: ingegneria"}
+{"id": 9723, "it": "Livello di energia: scudi"}
+{"id": 9724, "it": "Difendi te stesso (pianeta)"}
+{"id": 9725, "it": "Prendi munizioni"}
+{"id": 9726, "it": "Lancia testata nucleare"}
+{"id": 9727, "it": "Gestisci il reattore"}
+{"id": 9728, "it": "Modula gli scudi"}
+{"id": 9729, "it": "Scudi statici"}
+{"id": 9730, "it": "Restate uniti"}
+{"id": 9731, "it": "Neutralizza l'equipaggio"}
+{"id": 9732, "it": "Cattura gli schermi"}
+{"id": 9733, "it": "Distruggi i sistemi della nave"}
+{"id": 9734, "it": "Vai alla nave nemica"}
+{"id": 9735, "it": "PressPD"}
+{"id": 9736, "it": "Impossibile potenziare il talento. Deve essere prima ricercato!"}
+{"id": 9737, "it": "Impossibile potenziare il talento. Richiede"}
+{"id": 9738, "it": "potenziato al massimo!"}
+{"id": 9739, "it": "Impossibile potenziare il talento. Il livello dell'equipaggio è inferiore a"}
+{"id": 9740, "it": "CARICA FILE IA$$Vuoi davvero CARICARE il file IA: <"}
+{"id": 9741, "it": ">? Questo sovrascriverà le impostazioni IA caricate."}
+{"id": 9742, "it": "ELIMINA FILE IA$$Vuoi davvero ELIMINARE DEFINITIVAMENTE il file IA: <"}
+{"id": 9745, "it": "RIPRISTINA IMPOSTAZIONI IA$$Vuoi davvero riportare i bot IA alle impostazioni predefinite? Questo sovrascriverà le impostazioni IA caricate."}
+{"id": 9749, "it": ": impossibile creare la cartella Saves/AI!"}
+{"id": 9753, "it": "SPECIFICO DELLA CLASSE"}
+{"id": 9759, "it": "IMPORTANZA DI BASE"}
+{"id": 9760, "it": "PriorityOverrideDisplay"}
+{"id": 9761, "it": "G"}
+{"id": 9762, "it": "InputData"}
+{"id": 9763, "it": "InputDataBG"}
+{"id": 9764, "it": "InputDataText"}
+{"id": 9765, "it": "^"}
+{"id": 9766, "it": "UpdateTDs"}
+{"id": 9767, "it": "talento"}
+{"id": 9768, "it": "UpdatePIDs"}
+{"id": 9769, "it": "Cambia slot"}
+{"id": 9770, "it": "Rimuovi"}
+{"id": 9771, "it": "Lascia"}
+{"id": 9772, "it": "(QUESTO OGGETTO)"}
+{"id": 9773, "it": "(VUOTO)"}
+{"id": 9774, "it": "[PL] ha inviato [[STR0]] a [[STR1]]"}
+{"id": 9775, "it": "Hai ricevuto [[STR0]] da [STR1]"}
+{"id": 9776, "it": "Nessuno spazio per il componente nello slot di destinazione"}
+{"id": 9777, "it": "Devi essere il Capitano per spostare i componenti"}
+{"id": 9781, "it": "Segnalata"}
+{"id": 9782, "it": "Attributi$"}
+{"id": 9783, "it": "Scafo"}
+{"id": 9784, "it": "Corazza dello scafo"}
+{"id": 9785, "it": "<color=#00FF00>(+"}
+{"id": 9786, "it": "%)</color>"}
+{"id": 9787, "it": "Scudi"}
+{"id": 9788, "it": "Velocità di ricarica degli scudi"}
+{"id": 9789, "it": "Potenza del reattore"}
+{"id": 9790, "it": "Temp. del reattore"}
+{"id": 9791, "it": "$<color=#00FF00>Velocità di carica delle torrette (+"}
+{"id": 9792, "it": "$<color=#FF0000>Velocità di carica delle torrette (-"}
+{"id": 9793, "it": "Raggio di curvatura"}
+{"id": 9794, "it": "$<color=#00FF00>Danno delle torrette (+"}
+{"id": 9795, "it": "$<color=#FF0000>Danno delle torrette (-"}
+{"id": 9796, "it": "Sposta nella stiva"}
+{"id": 9797, "it": "Equipaggia componente"}
+{"id": 9798, "it": "Vuoto"}
+{"id": 9799, "it": "Slot"}
+{"id": 9800, "it": "UpdateMDs"}
+{"id": 9801, "it": "!!"}
+{"id": 9802, "it": "!!!"}
+{"id": 9803, "it": "SE"}
+{"id": 9804, "it": "<color=#AAAAAA>(√)"}
+{"id": 9805, "it": "<color=#FFFFFF>( )"}
+{"id": 9806, "it": "Caos"}
+{"id": 9807, "it": "Rigenerazione forzata"}
+{"id": 9808, "it": "Non hai il permesso di prendere quell'oggetto!"}
+{"id": 9809, "it": "Il mio inventario <color=red>("}
+{"id": 9810, "it": ")</color>"}
+{"id": 9811, "it": "Il mio inventario ("}
+{"id": 9812, "it": "<color=red>("}
+{"id": 9813, "it": "{0}"}
+{"id": 9814, "it": "{0} / {1}"}
+{"id": 9815, "it": "{0:F1}"}
+{"id": 9816, "it": "PESO:  {0:F1} / {1:F1}"}
+{"id": 9817, "it": "LIMITI DI ACQUISTO DELL'EQUIPAGGIO ATTIVI$$Autorizzazione equipaggio ATTIVA$Solo il Capitano può comprare o vendere componenti della nave$L'equipaggio PUÒ comprare o vendere oggetti"}
+{"id": 9818, "it": "LIMITI DI ACQUISTO DELL'EQUIPAGGIO DISATTIVATI$$Autorizzazione equipaggio DISATTIVATA$L'equipaggio PUÒ comprare o vendere componenti della nave$L'equipaggio PUÒ comprare o vendere oggetti"}
+{"id": 9823, "it": "Frammento A.O.G."}
+{"id": 9824, "it": "La tua nave perderà la segnalazione a ogni salto"}
+{"id": 9825, "it": "Frammento dell'asta"}
+{"id": 9826, "it": "Accedi a offerte speciali nei negozi generici di tutta la galassia"}
+{"id": 9827, "it": "Frammento della Colonial Union"}
+{"id": 9828, "it": "+50% di integrità massima degli scudi$+15% di raggio di curvatura"}
+{"id": 9829, "it": "Frammento dell'High Roller"}
+{"id": 9830, "it": "Possibilità casuale di ottenere crediti, rottami lavorati o refrigerante a ogni salto"}
+{"id": 9831, "it": "Frammento Fluffy Biscuit"}
+{"id": 9832, "it": "Doppia scorta di cibo del forno Fluffy$Doppi crediti guadagnati dalla vendita di biscotti"}
+{"id": 9833, "it": "Frammento da corsa"}
+{"id": 9834, "it": "+30% di spinta"}
+{"id": 9835, "it": "Frammento del Comandante"}
+{"id": 9836, "it": "5% di riparazione dello scafo per salto"}
+{"id": 9837, "it": "Frammento Cypher"}
+{"id": 9838, "it": "Aumenta a 12 gli slot per i programmi della nave"}
+{"id": 9839, "it": "Frammento dei Grey Huntsmen"}
+{"id": 9840, "it": "Nessun effetto"}
+{"id": 9841, "it": "Frammento di Warger"}
+{"id": 9842, "it": "Frammento maledetto"}
+{"id": 9843, "it": "Un frammento di dati presumibilmente «maledetto». Se credi a certe cose..."}
+{"id": 9844, "it": "Frammento W.D. Corp"}
+{"id": 9845, "it": "I missili inseguitori installati vengono ricaricati del 10% a ogni salto"}
+{"id": 9846, "it": "{0} Cr <color=#777777>/ {1} Cr</color>"}
+{"id": 9847, "it": "- Inventario"}
+{"id": 9848, "it": "fps"}
+{"id": 9849, "it": "(RTT:"}
+{"id": 9850, "it": "ms)"}
+{"id": 9851, "it": "<color=green>Connessione buona ("}
+{"id": 9852, "it": "% PL)</color>"}
+{"id": 9853, "it": "<color=green>Connessione stabile ("}
+{"id": 9854, "it": "<color=yellow>Connessione mista ("}
+{"id": 9855, "it": "<color=red>Connessione instabile ("}
+{"id": 9856, "it": "Fazione dell'equipaggio"}
+{"id": 9857, "it": "La fazione a cui sei attualmente allineato e da cui riceverai missioni e supporto"}
+{"id": 9858, "it": "Registrazione della nave"}
+{"id": 9859, "it": "Come le altre navi vedranno il tuo equipaggio (quando non rivelato)"}
+{"id": 9860, "it": "Reputazione dell'equipaggio"}
+{"id": 9861, "it": "Come le altre navi vedranno il tuo equipaggio (quando rivelato)"}
+{"id": 9864, "it": "La priorità ha raggiunto il numero massimo di sostituzioni!"}
+{"id": 9869, "it": "Più"}
+{"id": 9870, "it": "Meno"}
+{"id": 9872, "it": "Cibo"}
+{"id": 9873, "it": "Manufatto"}
+{"id": 9874, "it": "Estintore"}
+{"id": 9875, "it": "Attrezzo di riparazione"}
+{"id": 9876, "it": "Pistola a proiettili"}
+{"id": 9877, "it": "Pistola a raggio"}
+{"id": 9878, "it": "Attrezzo di vendita"}
+{"id": 9879, "it": "Il tuo ["}
+{"id": 9880, "it": "] è sceso al livello"}
+{"id": 9881, "it": "Peso"}
+{"id": 9882, "it": "Caricatore"}
+{"id": 9883, "it": "Ricarica al massimo le munizioni dell'oggetto portatile attualmente equipaggiato."}
+{"id": 9884, "it": "Granata 'Fire-Killer'"}
+{"id": 9885, "it": "Lancia granate speciali in grado di spegnere gli incendi vicini. La soluzione numero 1 per spegnere gli incendi in modo rapido e semplice."}
+{"id": 9886, "it": "Lanciagranate Fire-Killer"}
+{"id": 9887, "it": "Potere antincendio"}
+{"id": 9888, "it": "Una statuetta di arenaria di una civiltà estinta. Raffigura una creatura sacra."}
+{"id": 9889, "it": "Una statuetta di arenaria spezzata di una civiltà estinta. Raffigura una creatura sacra."}
+{"id": 9890, "it": "Un manufatto di una civiltà estinta. Sulla superficie è inciso uno strano simbolo."}
+{"id": 9891, "it": "Un manufatto spezzato di una civiltà estinta. Sulla superficie è inciso uno strano simbolo."}
+{"id": 9892, "it": "Uno strano oggetto di una cultura da tempo dimenticata. I segni sembrano brillare."}
+{"id": 9893, "it": "Un cristallo usato nella produzione della droga sundust. Possederlo è illegale."}
+{"id": 9894, "it": "Un diadema antichissimo di una civiltà estinta. Dal design semplice."}
+{"id": 9895, "it": "Un diadema antichissimo di una civiltà estinta."}
+{"id": 9896, "it": "Un diadema antichissimo di una civiltà estinta. Deve essere appartenuto a una persona di grande importanza."}
+{"id": 9897, "it": "Frammento irriconoscibile di un oggetto più grande. È stato consumato a lungo da un clima rigido."}
+{"id": 9898, "it": "Detriti inutili, impossibili da riutilizzare. Non varranno molto."}
+{"id": 9899, "it": "Gettato via molto tempo fa, questo rottame è rimasto indisturbato per molti anni finché non l'hai raccolto."}
+{"id": 9900, "it": "Rottame di metallo piegato in modo irrecuperabile."}
+{"id": 9901, "it": "Una vecchia batteria prodotta dalla W.D. Corporation. Potrebbe avere ancora un po' di carica, ma è improbabile."}
+{"id": 9902, "it": "Vendi"}
+{"id": 9903, "it": "Statuetta antica"}
+{"id": 9904, "it": "Statuetta antica spezzata"}
+{"id": 9905, "it": "Scultura antica"}
+{"id": 9906, "it": "Scultura antica spezzata"}
+{"id": 9907, "it": "Manufatto oscuro"}
+{"id": 9908, "it": "Scultura antica 6"}
+{"id": 9909, "it": "Cristallo di Borthix"}
+{"id": 9910, "it": "Diadema semplice"}
+{"id": 9911, "it": "Diadema antico"}
+{"id": 9912, "it": "Diadema regale"}
+{"id": 9913, "it": "Oggetto consumato"}
+{"id": 9914, "it": "Metallo di scarto"}
+{"id": 9915, "it": "Rottame scartato"}
+{"id": 9916, "it": "Pezzo di metallo deformato"}
+{"id": 9917, "it": "Vecchia batteria"}
+{"id": 9918, "it": "Spara una raffica precisa di tre colpi che infligge danni considerevoli."}
+{"id": 9919, "it": "Fucile a raffica"}
+{"id": 9920, "it": "Uno strumento esclusivo per i dipendenti della Fluffy Biscuit Company. Ripara i danni ai sistemi principali della nave e permette di vendere biscotti di persona."}
+{"id": 9921, "it": "Multiutensile FB"}
+{"id": 9922, "it": "Velocità di riparazione"}
+{"id": 9923, "it": "Serve a spegnere gli incendi. Progettato per essere facile da usare."}
+{"id": 9924, "it": "Pistola antincendio"}
+{"id": 9925, "it": "FireSprayShot"}
+{"id": 9926, "it": "VolumeSoundEffects"}
+{"id": 9927, "it": "Esattamente quello che sembra. Un panino disidratato."}
+{"id": 9928, "it": "Gommoso e sostanzioso. È difficile capire da dove venga la carne."}
+{"id": 9929, "it": "Qualcuno ha preso quattro bastoncini di carne secca piccante e li ha uniti per un effetto ancora maggiore. Gommoso e sostanzioso. È difficile capire da dove venga la carne."}
+{"id": 9930, "it": "Razione standard spesso usata per rifornire la flotta della Colonial Union. Contiene tutti i nutrienti necessari a un equipaggio in un lungo viaggio attraverso la galassia."}
+{"id": 9931, "it": "Razione spesso usata per rifornire la flotta della Colonial Union. Il suo contenuto concentrato è stato progettato appositamente per le situazioni di emergenza."}
+{"id": 9932, "it": "Razioni insapori prodotte dalla W.D. Corporation. Si conservano per secoli senza scadere."}
+{"id": 9933, "it": "Filetto di squalo delle sabbie, creatura originaria di certi pianeti desertici. È marinato a lungo per ammorbidire la carne e attenuarne il sapore naturale pungente."}
+{"id": 9934, "it": "Integratore in polvere ad alto contenuto proteico."}
+{"id": 9935, "it": "Coltivata a forma di cubo per la massima efficienza di stivaggio."}
+{"id": 9936, "it": "Il biscotto simbolo della Fluffy Biscuit Company. Quando lo mangi ti riempie di una sensazione soffice."}
+{"id": 9937, "it": "Prodotto con la formula segreta del biscotto perfetto della Fluffy Biscuit Company. Ha una consistenza ideale e una miscela segreta di aromi per accontentare anche i palati più difficili."}
+{"id": 9938, "it": "Non contiene nutrienti. Attieniti alle tue razioni di verdure."}
+{"id": 9939, "it": "Una bevanda forte e unta. Si dice che dosi abbastanza grandi siano letali. Molti membri dell'equipaggio cercano di dimostrare il proprio coraggio bevendo un'intera tazza. Quasi tutti falliscono."}
+{"id": 9940, "it": "Una bevanda comune negli spazioporti e nelle stazioni planetarie. Una soluzione economica per far dimenticare per un po' i problemi all'equipaggio."}
+{"id": 9941, "it": "Riproduzione di una bevanda tradizionale Sylvassi. Ha un sapore amaro. Negli ultimi anni l'infuso Sylvassi è diventato una bevanda inaspettatamente popolare tra gli umani."}
+{"id": 9942, "it": "Un frutto raro e acido che cresce solo in ambienti particolari. Spesso usato per produrre vini costosi."}
+{"id": 9943, "it": "Riproduzione in bottiglia di una bevanda tradizionale Sylvassi. Ha un sapore amaro. Negli ultimi anni l'infuso Sylvassi è diventato una bevanda inaspettatamente popolare tra gli umani."}
+{"id": 9944, "it": "Un baccello luminoso a forma di uovo pieno di spore. Sembra abbastanza solido."}
+{"id": 9945, "it": "Una miscela unica di spezie e liquori creata da Bram Hully. Spesso ritenuta il motivo principale per cui i Gentlemen tornano alla Tenuta."}
+{"id": 9946, "it": "Un vino aspro ricavato dal frutto balmy gloom. È un gusto da acquisire."}
+{"id": 9947, "it": "Una bevanda dolce nata per i bambini, a volte data per scherzo ai nuovi membri dell'equipaggio. Servita calda."}
+{"id": 9948, "it": "Una bevanda ghiacciata servita in un contenitore a temperatura stabilizzata."}
+{"id": 9949, "it": "Un sostanzioso pezzo di carne di drone. Meglio se arrosto. Basta non mangiare l'esoscheletro."}
+{"id": 9950, "it": "Permette al giocatore di trattenere il respiro più a lungo"}
+{"id": 9951, "it": "Un biscotto speciale che aumenta la resistenza al fuoco e riduce i danni in ambienti senza ossigeno per 2 minuti. I suoi benefici compensano il sapore insipido."}
+{"id": 9952, "it": "Un biscotto speciale che aumenta il recupero della resistenza per 2 minuti. Ha un sapore rinvigorente."}
+{"id": 9953, "it": "Un biscotto speciale che aumenta la corazza per 2 minuti. È molto denso e croccante."}
+{"id": 9954, "it": "Un biscotto speciale che aumenta la salute massima e aggiunge una piccola rigenerazione di salute per 2 minuti. Questo biscotto è povero di sodio e ricco di verdure nutrienti."}
+{"id": 9955, "it": "Un biscotto speciale che aumenta la precisione delle armi portatili per 2 minuti. Dopo anni di dibattiti, mangiare un biscotto alla torta di carote è ora considerato scorretto nelle competizioni di combattimento."}
+{"id": 9956, "it": "Corazza aumentata al prezzo di una ridotta velocità di movimento per 5 minuti"}
+{"id": 9957, "it": "Un biscotto speciale che cura gradualmente i compagni vicini per 5 minuti. Ha un sapore fruttato."}
+{"id": 9958, "it": "Un biscotto speciale che fa sì che i danni inflitti ai nemici ti curino leggermente per 2 minuti. L'aglio ha un bel sapore deciso. Non stare troppo vicino ai compagni quando parli con loro."}
+{"id": 9959, "it": "Un biscotto speciale che fa raffreddare più in fretta le armi portatili per 2 minuti. Quando lo mangi, ti fa sentire le mani piuttosto fredde."}
+{"id": 9960, "it": "Aumenta del 25% il danno delle granate per 2 minuti"}
+{"id": 9961, "it": "Un biscotto speciale con un effetto casuale e un sapore che si può definire solo bizzarro."}
+{"id": 9962, "it": "Un biscotto speciale che aumenta la probabilità di vendere biscotti ai clienti di persona. Un classico tra i dipendenti della Fluffy Biscuit Co."}
+{"id": 9963, "it": "Un biscotto speciale che aumenta il danno delle armi portatili per 2 minuti. Quando lo mangi, ti sembra di avere la bocca in fiamme."}
+{"id": 9964, "it": "Un biscotto speciale che aumenta il danno delle armi portatili dei compagni vicini per 5 minuti. Accende il fuoco del lavoro di squadra."}
+{"id": 9965, "it": "Danneggia gradualmente i nemici vicini per 2 minuti"}
+{"id": 9966, "it": "Un biscotto speciale che impedisce un danno letale una volta nei prossimi 5 minuti. Si mormora che mangiare ogni giorno un biscotto della lunga vita possa essere il segreto dell'immortalità."}
+{"id": 9967, "it": "Noodle speciali pensati per le gare. Scendono giù in fretta."}
+{"id": 9968, "it": "Noodle serviti in brodo freddo. Un favorito dei piloti da corsa Sylvassi."}
+{"id": 9969, "it": "Pur essendo inzuppati nel brodo, questi noodle sono misteriosamente croccanti."}
+{"id": 9970, "it": "Qualcosa nella ciotola sembra ancora muoversi."}
+{"id": 9971, "it": "Noodle viscidi serviti in un brodo denso con un miscuglio di strani ingredienti. Molto nutrienti."}
+{"id": 9972, "it": "I noodle di migliore qualità, preparati freschi ogni giorno."}
+{"id": 9973, "it": "Caldo."}
+{"id": 9974, "it": "Una versione più grande del biscotto classico"}
+{"id": 9975, "it": "Una versione più dolce del biscotto classico"}
+{"id": 9976, "it": "Bevi"}
+{"id": 9977, "it": "Mangia"}
+{"id": 9978, "it": "Quantità di cura"}
+{"id": 9979, "it": "Alcol"}
+{"id": 9980, "it": "Il biscotto \\^Jumbo\\^"}
+{"id": 9981, "it": "Infuso Sylvaassi"}
+{"id": 9982, "it": "Biscotto classico"}
+{"id": 9983, "it": "Biscotto perfetto"}
+{"id": 9984, "it": "Panino disidratato"}
+{"id": 9985, "it": "Bastoncino di carne secca piccante"}
+{"id": 9986, "it": "Raccolta di bastoncini di carne secca piccante"}
+{"id": 9987, "it": "Filetto di squalo delle sabbie marinato"}
+{"id": 9988, "it": "Tè Earl Grey"}
+{"id": 9989, "it": "Mela spaziale"}
+{"id": 9990, "it": "Razioni CU"}
+{"id": 9991, "it": "Razioni d'emergenza CU"}
+{"id": 9992, "it": "Razioni W.D."}
+{"id": 9993, "it": "Pacchetto proteico"}
+{"id": 9994, "it": "Confezione di caramelle"}
+{"id": 9995, "it": "Birra del porto"}
+{"id": 9996, "it": "Infuso Sylvassi"}
+{"id": 9997, "it": "Balmy Gloom"}
+{"id": 9998, "it": "Infuso Sylvassi in bottiglia"}
+{"id": 9999, "it": "Baccello di spore fungine"}
+{"id": 10000, "it": "Speciale di Hully"}
+{"id": 10001, "it": "Vino Gloom"}
+{"id": 10002, "it": "Rum del Novellino"}
+{"id": 10003, "it": "Cooler dei Gentlemen"}
+{"id": 10004, "it": "Carne di drone"}
+{"id": 10005, "it": "Biscotto del vuoto"}
+{"id": 10006, "it": "Biscotto d'emergenza"}
+{"id": 10007, "it": "Biscotto energetico"}
+{"id": 10008, "it": "Biscotto sostanzioso"}
+{"id": 10009, "it": "Biscotto salutare"}
+{"id": 10010, "it": "Biscotto alla torta di carote"}
+{"id": 10011, "it": "Biscotto integrale"}
+{"id": 10012, "it": "Biscotto friabile alla Healberry"}
+{"id": 10013, "it": "Biscotto allo zucchero"}
+{"id": 10014, "it": "Biscotto all'aglio"}
+{"id": 10015, "it": "Biscotto bizzarro"}
+{"id": 10016, "it": "Biscotto piccante"}
+{"id": 10017, "it": "Biscotto friabile piccante"}
+{"id": 10018, "it": "Biscotto surgelato"}
+{"id": 10019, "it": "Biscotto fuso"}
+{"id": 10020, "it": "Biscotto danno granate"}
+{"id": 10021, "it": "Biscotto fortunato"}
+{"id": 10022, "it": "Noodle da corsa"}
+{"id": 10023, "it": "Noodle freddi"}
+{"id": 10024, "it": "Noodle croccanti"}
+{"id": 10025, "it": "Noodle di Grubhaven"}
+{"id": 10026, "it": "Noodle della palude"}
+{"id": 10027, "it": "Noodle premium"}
+{"id": 10028, "it": "LeftHandEquip"}
+{"id": 10029, "it": "Spara un colpo devastante a corto raggio. Un'arma letale durante gli abbordaggi."}
+{"id": 10030, "it": "FireHeavyShot"}
+{"id": 10031, "it": "SplitShot"}
+{"id": 10032, "it": "Granata curativa"}
+{"id": 10033, "it": "Lancia granate speciali che curano gradualmente in un'area d'effetto. Le granate curative possono essere fatte detonare in anticipo per una cura più rapida."}
+{"id": 10034, "it": "Lanciagranate curative"}
+{"id": 10035, "it": "Potere curativo"}
+{"id": 10036, "it": "Spara proiettili che infliggono danni considerevoli."}
+{"id": 10037, "it": "Spara un potente raggio continuo in grado di trapassare i bersagli."}
+{"id": 10038, "it": "Fucile a raggio"}
+{"id": 10039, "it": "beamPistol_Charge"}
+{"id": 10040, "it": "Spara un raggio continuo che può curare i compagni di equipaggio. Può anche trapassare i bersagli nemici."}
+{"id": 10041, "it": "Cura"}
+{"id": 10042, "it": "Prototipo S.P.I.K.E.R."}
+{"id": 10043, "it": "Genera sul terreno un campo di spuntoni di ghiaccio che danneggia e rallenta i nemici. Noto anche come \\^Sporadic Point Industrial Kinetic Energy Reducer\\^."}
+{"id": 10044, "it": "IceSpikes"}
+{"id": 10045, "it": "IceSpikesPreview"}
+{"id": 10046, "it": "Tessera magnetica che apre le porte di un vagone del treno."}
+{"id": 10047, "it": "Tessera magnetica che consente l'ingresso nell'ala di ricerca dell'Outpost 448."}
+{"id": 10048, "it": "Tessera magnetica che concede l'accesso di livello 1 ad alcune aree amministrative dell'ala di ricerca dell'Outpost 448."}
+{"id": 10049, "it": "Tessera magnetica che concede l'accesso di livello 2 ad alcune aree amministrative dell'ala di ricerca dell'Outpost 448."}
+{"id": 10050, "it": "Tessera magnetica che concede l'accesso di livello 3 ad alcune aree amministrative dell'ala di ricerca dell'Outpost 448."}
+{"id": 10051, "it": "Tessera magnetica che concede l'accesso al Centro di comando della Colonial Union nell'Outpost 448."}
+{"id": 10052, "it": "Tessera magnetica che concede l'accesso al laboratorio principale degli organismi aberranti nell'ala di ricerca dell'Outpost 448."}
+{"id": 10053, "it": "Una strana chiave trovata in un'antica tomba Sylvassi. Vibra di energia ed emette un bagliore blu."}
+{"id": 10054, "it": "Una strana chiave trovata in un'antica tomba Sylvassi. Vibra di energia ed emette un bagliore arancione."}
+{"id": 10055, "it": "Tessera magnetica che concede l'autorizzazione a usare i teletrasporti a corto raggio che portano alla sala di controllo W.D."}
+{"id": 10056, "it": "Distintivo che concede l'accesso alla sezione armi della nave ammiraglia W.D."}
+{"id": 10057, "it": "Tessera magnetica che concede l'accesso agli alloggi del capitano nella Tenuta."}
+{"id": 10058, "it": "Tessera magnetica che concede l'accesso alle strutture principali della Lost Colony"}
+{"id": 10059, "it": "Tessera magnetica che concede l'accesso a un armadietto di sicurezza."}
+{"id": 10060, "it": "Tessera magnetica che concede l'accesso ai laboratori inferiori della Lost Colony."}
+{"id": 10061, "it": "Tessera magnetica"}
+{"id": 10062, "it": "Tessera del treno"}
+{"id": 10063, "it": "Tessera di sicurezza d'ingresso"}
+{"id": 10064, "it": "Tessera amministrativa di livello 1"}
+{"id": 10065, "it": "Tessera amministrativa di livello 2"}
+{"id": 10066, "it": "Tessera amministrativa di livello 3"}
+{"id": 10067, "it": "Tessera del Centro di comando"}
+{"id": 10068, "it": "Tessera del laboratorio degli organismi aberranti"}
+{"id": 10069, "it": "Chiave blu della tomba"}
+{"id": 10070, "it": "Chiave arancione della tomba"}
+{"id": 10071, "it": "Tessera d'accesso della sala di controllo W.D."}
+{"id": 10072, "it": "Distintivo armi dell'ammiraglia W.D."}
+{"id": 10073, "it": "Tessera d'accesso della Tenuta"}
+{"id": 10074, "it": "Tessera delle strutture"}
+{"id": 10075, "it": "Tessera del deposito"}
+{"id": 10076, "it": "Tessera delle strutture inferiori"}
+{"id": 10077, "it": "Pistola laser"}
+{"id": 10078, "it": "FireSmallShot"}
+{"id": 10079, "it": "Mini granate"}
+{"id": 10080, "it": "Un lanciatore a fuoco rapido che sputa piccoli esplosivi. Anche se non fa tanti danni quanto un lanciagranate a impulsi, può contenere molte più munizioni."}
+{"id": 10081, "it": "Mini lanciagranate"}
+{"id": 10082, "it": "Un'arma semplice ma efficace, in circolazione da molti anni. Spara getti di plasma."}
+{"id": 10083, "it": "Pistola a fase"}
+{"id": 10089, "it": "Cadenza di fuoco"}
+{"id": 10090, "it": "Precisione"}
+{"id": 10091, "it": "Spara un potente raggio in grado di trapassare i bersagli."}
+{"id": 10092, "it": "Granata a impulsi"}
+{"id": 10093, "it": "Il dispositivo standard per lanciare esplosivi da decenni."}
+{"id": 10094, "it": "Lanciagranate a impulsi"}
+{"id": 10095, "it": "Registri di spedizione con informazioni su un gruppo organizzato di fuorilegge."}
+{"id": 10096, "it": "Registri di dati fortemente criptati. Senza molta potenza di calcolo e molto tempo è impossibile sapere quali informazioni contengano."}
+{"id": 10097, "it": "Una medaglia inestimabile che identifica un membro defunto di un'équipe di ricerca scomparsa."}
+{"id": 10098, "it": "Un componente essenziale comunemente presente negli impianti di riscaldamento delle basi planetarie."}
+{"id": 10099, "it": "Una strana reliquia che emette un caldo bagliore rossastro. Forse non era mai stata pensata per essere tolta dal suo piedistallo."}
+{"id": 10100, "it": "Una batteria per una stazione sensori a corto raggio."}
+{"id": 10101, "it": "Un componente fondamentale per costruire un motore a curvatura. Le bobine di curvatura grezze sono notoriamente difficili da produrre."}
+{"id": 10102, "it": "Un contenitore costruito appositamente per essere invisibile alla maggior parte dei sensori. È impossibile aprirlo senza la chiave giusta."}
+{"id": 10103, "it": "Un uovo deposto da uno squalo delle sabbie. Le uova di squalo delle sabbie sono spesso sorvegliate gelosamente dalla creatura che le ha deposte."}
+{"id": 10104, "it": "Registri di ricerca riservati di un laboratorio della Colonial Union."}
+{"id": 10105, "it": "Una sfera di metallo senza aperture visibili. Il suo scopo è del tutto sconosciuto."}
+{"id": 10106, "it": "Tavoletta di pietra scolpita di una civiltà scomparsa."}
+{"id": 10107, "it": "Un uovo di una creatura aliena."}
+{"id": 10108, "it": "Una chiave dall'aspetto insolito trovata su Lotharus 9."}
+{"id": 10109, "it": "Registro di un sensore contenente dati su una dimensione sconosciuta."}
+{"id": 10110, "it": "Un messaggio personale di Bakul Faros a suo nipote."}
+{"id": 10111, "it": "Un componente tecnologico Fluffy Biscuit che concentra gli elementi aromatici."}
+{"id": 10112, "it": "Filtro per un sistema di smaltimento dei rifiuti della Fluffy Biscuit Company."}
+{"id": 10113, "it": "Concede l'accesso a un nascondiglio di predoni nella Cornelia Station."}
+{"id": 10114, "it": "Un data pad contenente informazioni su vari prototipi ed esperimenti dell'ala di ricerca dell'Outpost 448."}
+{"id": 10115, "it": "Un pacchetto di medicinali d'emergenza usato soprattutto quando gli atri di rigenerazione non sono disponibili."}
+{"id": 10116, "it": "Istruzioni dettagliate per costruire un processore di salto intergalattico estremamente avanzato. Di una complessità senza pari."}
+{"id": 10117, "it": "Questi registri contengono scoperte sugli Infetti."}
+{"id": 10118, "it": "Un chip che fornisce le coordinate per il sistema 'Personal Universal Null-Point Teleporter' di Conrad."}
+{"id": 10119, "it": "Antica tavoletta data come ricompensa per aver completato un Cypher Sylvassi. Solo chi conosce a fondo l'antica lingua Sylvassi può decifrarla."}
+{"id": 10120, "it": "Un antico manufatto che brilla. È caldo al tatto."}
+{"id": 10121, "it": "Un vecchio oggetto che sembra contenere un liquido rosso luminoso."}
+{"id": 10122, "it": "Oggetto di missione"}
+{"id": 10123, "it": "Registri di spedizione"}
+{"id": 10124, "it": "Registri criptati"}
+{"id": 10125, "it": "Medaglia di ricerca"}
+{"id": 10126, "it": "Regolatore termico"}
+{"id": 10127, "it": "Antico manufatto verde"}
+{"id": 10128, "it": "Antico manufatto rosso"}
+{"id": 10129, "it": "Batteria della stazione sensori"}
+{"id": 10130, "it": "Bobina di curvatura grezza"}
+{"id": 10131, "it": "Scatola sigillata"}
+{"id": 10132, "it": "Uovo di squalo delle sabbie"}
+{"id": 10133, "it": "Registri di ricerca"}
+{"id": 10134, "it": "Sfera di metallo"}
+{"id": 10135, "it": "Uovo grande"}
+{"id": 10136, "it": "Chiave strana"}
+{"id": 10137, "it": "Registri dei sensori"}
+{"id": 10138, "it": "Registro audio di Faros"}
+{"id": 10139, "it": "Bobina aromatica Fluffy Biscuit"}
+{"id": 10140, "it": "Filtro rifiuti Fluffy Biscuit"}
+{"id": 10141, "it": "Tessera magnetica senza nome"}
+{"id": 10142, "it": "Data pad"}
+{"id": 10143, "it": "Kit medico"}
+{"id": 10144, "it": "Schemi di curvatura intergalattica dell'ammiraglia"}
+{"id": 10145, "it": "Registri del dottor Petru"}
+{"id": 10146, "it": "Il chip P.U.N.T."}
+{"id": 10147, "it": "Antica tavoletta Sylvassi"}
+{"id": 10148, "it": "Antico manufatto sferico"}
+{"id": 10149, "it": "Capsula di veleno"}
+{"id": 10150, "it": "Una pistola a raggio progettata per infliggere danni elevati a distanza."}
+{"id": 10151, "it": "Pistola a raggio pesante"}
+{"id": 10152, "it": "Granata riparatrice"}
+{"id": 10153, "it": "Lancia granate speciali che riparano i sistemi della nave vicini. Può far risparmiare molto tempo quando la nave è in difficoltà."}
+{"id": 10154, "it": "Lanciagranate riparatrici"}
+{"id": 10155, "it": "Potere di riparazione"}
+{"id": 10156, "it": "Ripara i danni ai sistemi principali della nave."}
+{"id": 10157, "it": "Riparatore"}
+{"id": 10158, "it": "Steli blu arricciati che ricordano i motivi dell'arte Sylvassi. Gli steli Sylvassi sono una specie molto adattabile e prosperano anche nei climi più aridi."}
+{"id": 10159, "it": "IU-03020"}
+{"id": 10160, "it": "Un cristallo blu frastagliato con venature rosse che attraversano il nucleo. L'IU-03020 è estremamente raro e potrebbe aver avuto un ruolo nell'improvvisa distruzione di una nave da guerra in passato."}
+{"id": 10161, "it": "HG-77328"}
+{"id": 10162, "it": "Un minerale scuro e tagliente con schegge luminose sulla superficie. È caldo al tatto."}
+{"id": 10163, "it": "Bulbtooth"}
+{"id": 10164, "it": "Un bulbo tondo con un motivo circolare di spine azzurre. L'esterno è duro, quasi come roccia, mentre le spine sono abbastanza affilate da tagliare un esoscafandro se non si fa attenzione."}
+{"id": 10165, "it": "Sargastia Tribulen"}
+{"id": 10166, "it": "Sostanza verde e viscosa che si ritiene derivi dalla complessa decomposizione di una certa pianta. È molto ricca di nutrienti."}
+{"id": 10167, "it": "LL-09332"}
+{"id": 10168, "it": "Una sostanza granulosa e rossastra di origine sconosciuta. È stata vietata nella ricerca di molti laboratori a causa delle sue proprietà volatili."}
+{"id": 10169, "it": "Greywrack"}
+{"id": 10170, "it": "Fanghiglia nera come la pece, altamente corrosiva e difficile da rimuovere. Da secoli è considerata la rovina degli scafi delle navi."}
+{"id": 10171, "it": "AC-88436"}
+{"id": 10172, "it": "Una melma scivolosa che brilla di un viola intenso. Anche in grandi quantità sembra non pesare quasi nulla."}
+{"id": 10173, "it": "Gracilia Floris"}
+{"id": 10174, "it": "Granelli appuntiti simili a semi sospesi in una densa melma. Pur essendo difficile da trovare, è molto apprezzata dagli scienziati nello studio della resilienza biologica."}
+{"id": 10175, "it": "Gaxil Filamentosa"}
+{"id": 10176, "it": "Una sostanza fluida che sembra scintillare se tenuta contro la luce. A un esame più attento contiene centinaia di piccoli filamenti quasi trasparenti."}
+{"id": 10177, "it": "Bluffstem"}
+{"id": 10178, "it": "Un lungo grappolo di piante tubolari con radici filiformi. A volte è difficile da raccogliere perché è noto per scomparire periodicamente dalla sua posizione."}
+{"id": 10179, "it": "Fenrasil"}
+{"id": 10180, "it": "Un fiore rosso luminoso con un lungo stelo. I ricercatori ritengono che, a distanza ravvicinata, il fenrasil possa comunicare con le piante vicine tramite i suoi viticci ipersensibili."}
+{"id": 10181, "it": "Creeping Lung"}
+{"id": 10182, "it": "Un materiale vegetale compatto, quasi a forma di polmone. Ha un ciclo vitale molto lungo che include una fase di crescita rapida e impressionante. Solo nei primi anni è considerato gestibile."}
+{"id": 10183, "it": "Waxthorn"}
+{"id": 10184, "it": "Un baccello con una spina e una forte ventosa sul fondo. Si sospetta che secerna un veleno se disturbato, ma gli effetti segnalati sono incoerenti."}
+{"id": 10185, "it": "Hooked Bristlepod"}
+{"id": 10186, "it": "Un baccello gommoso circondato da foglie robuste. Il baccello è ricoperto di spine sottili e affilate ed emana un dolce profumo."}
+{"id": 10187, "it": "BH-00300"}
+{"id": 10188, "it": "Un insieme di steli trasparenti. Sono a malapena visibili a occhio nudo ed è difficile separarli dagli altri steli del loro grappolo."}
+{"id": 10189, "it": "SD-10899"}
+{"id": 10190, "it": "Una sfera perfettamente rotonda che emette lampi di luce. Si presume che racchiuda una qualche forma di energia, ma si sa ben poco altro."}
+{"id": 10191, "it": "Un baccello che si forma in natura e irradia un calore intenso. Ha molte applicazioni non convenzionali."}
+{"id": 10192, "it": "Minerale strano"}
+{"id": 10193, "it": "Frammento di un minerale strano. Emette una frequenza inudibile per gli umani."}
+{"id": 10194, "it": "Contiene"}
+{"id": 10195, "it": "<color=#4493BD>Stamans</color>"}
+{"id": 10196, "it": "<color=#977C4F>Aedificiates</color>"}
+{"id": 10197, "it": "<color=#70A56E>Aevameres</color>"}
+{"id": 10198, "it": "<color=#732968>Sensusites</color>"}
+{"id": 10199, "it": "<color=#FFFFFF>Mutoumates</color>"}
+{"id": 10200, "it": ">Vortosites</color>"}
+{"id": 10201, "it": "Stamans"}
+{"id": 10202, "it": "Aedificiates"}
+{"id": 10203, "it": "Aevameres"}
+{"id": 10204, "it": "Sensusites"}
+{"id": 10205, "it": "Mutoumates"}
+{"id": 10206, "it": "Vortosites"}
+{"id": 10207, "it": ",$"}
+{"id": 10208, "it": "Campione di ricerca"}
+{"id": 10209, "it": "Un dispositivo portatile che scansiona un'area per individuare punti di interesse."}
+{"id": 10210, "it": "Arma modificata su misura con una cadenza di fuoco superiore a quella di una normale pistola a fase. Spesso usata da predoni e contrabbandieri."}
+{"id": 10211, "it": "Pistola del contrabbandiere"}
+{"id": 10212, "it": "Granata stordente"}
+{"id": 10213, "it": "Lancia granate speciali che possono stordire i nemici vicini."}
+{"id": 10214, "it": "Lanciagranate stordenti"}
+{"id": 10215, "it": "Stordimento"}
+{"id": 10216, "it": "Cura completamente chi la usa e ripristina l'intero bonus di salute"}
+{"id": 10217, "it": "Usa"}
+{"id": 10218, "it": "Siringa rivitalizzante"}
+{"id": 10219, "it": "Siringa"}
+{"id": 10220, "it": "Spara un'esplosione a corto raggio che colpisce i nemici e li spinge all'indietro. Nota anche come \\^Inter-Manifold Projector Arc / Combatant Thrower\\^."}
+{"id": 10221, "it": "Spara un raggio concentrato in grado di trapassare i bersagli. Infligge danni considerevoli ma genera anche molto calore."}
+{"id": 10224, "it": "IN"}
+{"id": 10225, "it": "OUT"}
+{"id": 10226, "it": "Iscrizione alla gara"}
+{"id": 10227, "it": "ISCRIZIONE"}
+{"id": 10228, "it": "Stazione mineraria W.D. 41X"}
+{"id": 10229, "it": "Enter_Race"}
+{"id": 10230, "it": "Entra in gara"}
+{"id": 10231, "it": "Gara in corso"}
+{"id": 10232, "it": "Torna più tardi per riprovare!"}
+{"id": 10233, "it": "Gara terminata"}
+{"id": 10234, "it": "Impossibile avviare la gara. Non sei il Capitano!"}
+{"id": 10235, "it": "LIBERATORIA DI RESPONSABILITÀ"}
+{"id": 10236, "it": "W.D. LABS - DIMOSTRAZIONE DI ARMI"}
+{"id": 10237, "it": "SCONFIGGI 5 ONDATE"}
+{"id": 10238, "it": "Avvia"}
+{"id": 10239, "it": "Avvia dimostrazione"}
+{"id": 10240, "it": "Avvia (solo Capitano)"}
+{"id": 10241, "it": "STATO DELLA NAVE"}
+{"id": 10242, "it": "STATO DELLA NAVE NEMICA"}
+{"id": 10244, "it": "SCUDI"}
+{"id": 10245, "it": "n / n"}
+{"id": 10246, "it": "SCUDI QT"}
+{"id": 10247, "it": "DELTA O2"}
+{"id": 10250, "it": "REIVINDICA NAVE"}
+{"id": 10251, "it": "--"}
+{"id": 10256, "it": "Solo il Capitano può reclamare le navi!"}
+{"id": 10257, "it": "Non puoi reclamare una nave come equipaggio Polytechnic!"}
+{"id": 10258, "it": "RIMUOVI RECLAMO"}
+{"id": 10259, "it": "Pronto a rimuovere il reclamo!"}
+{"id": 10260, "it": "Pronto a reclamare!"}
+{"id": 10261, "it": "Sblocca altri schermi per reclamare!"}
+{"id": 10262, "it": "ERRORE DI CARICA"}
+{"id": 10263, "it": "[{0}] {1:F1} [-]"}
+{"id": 10264, "it": "00FF00"}
+{"id": 10265, "it": "FF0000"}
+{"id": 10266, "it": "{1:F1}"}
+{"id": 10267, "it": "[AAAAAA]"}
+{"id": 10268, "it": "[00FF00]"}
+{"id": 10269, "it": "[FF0000]"}
+{"id": 10270, "it": "IN FUSIONE!"}
+{"id": 10271, "it": "CRITICO!"}
+{"id": 10272, "it": "TEMP. ALTA"}
+{"id": 10273, "it": "OK"}
+{"id": 10279, "it": "Comunicazioni"}
+{"id": 10280, "it": "Chiudi trasmissione"}
+{"id": 10281, "it": "Config. reattore ausiliario"}
+{"id": 10283, "it": "POTENZIAMENTO AUSILIARIO TOTALE"}
+{"id": 10286, "it": "Impostazione della pompa del refrigerante del reattore su OFF"}
+{"id": 10287, "it": "Impostazione della pompa del refrigerante del reattore su BASSO"}
+{"id": 10288, "it": "Impostazione della pompa del refrigerante del reattore su ALTO"}
+{"id": 10289, "it": "Carburante per il salto"}
+{"id": 10290, "it": "Riserve di refrigerante"}
+{"id": 10291, "it": "Controllo pompa"}
+{"id": 10293, "it": "off"}
+{"id": 10295, "it": "basso"}
+{"id": 10297, "it": "alto"}
+{"id": 10298, "it": "Capsule di carburante"}
+{"id": 10300, "it": "Carica carburante"}
+{"id": 10303, "it": "on"}
+{"id": 10304, "it": "Scarica carburante"}
+{"id": 10305, "it": "Spegne la pompa del refrigerante"}
+{"id": 10306, "it": "Accende la pompa del refrigerante a bassa velocità"}
+{"id": 10307, "it": "Accende la pompa del refrigerante ad alta velocità"}
+{"id": 10308, "it": "Carica e scarica una capsula di carburante utilizzabile per ricaricare manualmente i programmi"}
+{"id": 10309, "it": "Attiva il segnale di soccorso. Può attirare navi di carburante o nemici"}
+{"id": 10310, "it": "Disattiva il segnale di soccorso"}
+{"id": 10311, "it": "Raffreddamento del reattore in corso!"}
+{"id": 10312, "it": "MainComponentPanel"}
+{"id": 10313, "it": "Temp."}
+{"id": 10314, "it": "0"}
+{"id": 10315, "it": "OC"}
+{"id": 10316, "it": "MeltdownPanel"}
+{"id": 10317, "it": "ESPELLI IL NUCLEO DEL REATTORE!"}
+{"id": 10318, "it": "ALL'IMPLOSIONE DEL NUCLEO"}
+{"id": 10319, "it": "/{0}"}
+{"id": 10320, "it": "Overclock del reattore: aumenta potenza e generazione di calore finché è attivo!"}
+{"id": 10321, "it": "Nessun reattore installato"}
+{"id": 10322, "it": "Nessun valore"}
+{"id": 10323, "it": "Utilizzo totale"}
+{"id": 10325, "it": "{0}"}
+{"id": 10326, "it": "{1}"}
+{"id": 10327, "it": "VEL"}
+{"id": 10328, "it": "{2}/{3}"}
+{"id": 10329, "it": "MUNIZ."}
+{"id": 10330, "it": "Configurazione lanciamissili"}
+{"id": 10331, "it": "BERSAGLIO: SISTEMA NEMICO"}
+{"id": 10332, "it": "Sistema di ingegneria"}
+{"id": 10333, "it": "Sistema d'armi"}
+{"id": 10334, "it": "Sistema di supporto vitale"}
+{"id": 10335, "it": "Sistema scientifico"}
+{"id": 10336, "it": "Bersaglio"}
+{"id": 10337, "it": "Il danno allo scafo inflitto dai missili inseguitori causerà danni extra al"}
+{"id": 10338, "it": "direttamente"}
+{"id": 10339, "it": "Console di sicurezza"}
+{"id": 10342, "it": "SBLOCCATO"}
+{"id": 10345, "it": "<-"}
+{"id": 10348, "it": ">>"}
+{"id": 10358, "it": "Mouse ScrollWheel"}
+{"id": 10359, "it": "Ripara la nave"}
+{"id": 10361, "it": "RIPARA 50 DI SCAFO PER 100 CR"}
+{"id": 10364, "it": "RIPARA TUTTO LO SCAFO [FREE]"}
+{"id": 10365, "it": "Bersaglio:"}
+{"id": 10366, "it": "[ff0000]SCUDI: ATTIVI[-]"}
+{"id": 10367, "it": "[00ff00]SCUDI: INATTIVI[-]"}
+{"id": 10368, "it": "SCAFO:"}
+{"id": 10369, "it": "RIPARA"}
+{"id": 10370, "it": "DI SCAFO PER"}
+{"id": 10371, "it": "Bersaglio: NESSUNO"}
+{"id": 10372, "it": "[00FF00]{0}%"}
+{"id": 10373, "it": "DIFESA ENERGETICA"}
+{"id": 10374, "it": "[-]$[FF0000]-{1}%"}
+{"id": 10375, "it": "DIFESA FISICA"}
+{"id": 10376, "it": "[-]$[FF0000]+{1}%"}
+{"id": 10377, "it": "FIRMA"}
+{"id": 10383, "it": "Controllo dell'equipaggio"}
+{"id": 10384, "it": "Il controllo locale dei sistemi della nave è stato disattivato automaticamente per la tua sicurezza."}
+{"id": 10386, "it": "Controllo manuale"}
+{"id": 10398, "it": "ShipOS"}
+{"id": 10400, "it": "v268.0 \\^Pretty Parakeet\\^"}
+{"id": 10402, "it": "Le nostre firme emesse"}
+{"id": 10404, "it": "Rilevamento EM"}
+{"id": 10408, "it": "LF"}
+{"id": 10414, "it": "Difesa cibernetica"}
+{"id": 10416, "it": "MODALITÀ FREQ. SCUDI"}
+{"id": 10419, "it": "ModulateBtn"}
+{"id": 10420, "it": "MODULA"}
+{"id": 10421, "it": "StaticBtn"}
+{"id": 10422, "it": "STATICA"}
+{"id": 10425, "it": "Svuota cache"}
+{"id": 10428, "it": "Permessi utente"}
+{"id": 10431, "it": "Disattiva sensori"}
+{"id": 10434, "it": "Spegni il sistema"}
+{"id": 10435, "it": "Search_SE_Btn"}
+{"id": 10436, "it": "SE"}
+{"id": 10437, "it": "Search_TI_Btn"}
+{"id": 10438, "it": "TI"}
+{"id": 10439, "it": "Search_UU_Btn"}
+{"id": 10440, "it": "UU"}
+{"id": 10441, "it": "Search_GX_Btn"}
+{"id": 10442, "it": "GX"}
+{"id": 10443, "it": "Searching_Label"}
+{"id": 10444, "it": "Ricerca in corso . . ."}
+{"id": 10451, "it": "CERCA"}
+{"id": 10455, "it": "ESEGUI PROGRAMMA"}
+{"id": 10458, "it": "Non trovato"}
+{"id": 10459, "it": "Ha un pianeta: $"}
+{"id": 10460, "it": "Sì$"}
+{"id": 10461, "it": "No$"}
+{"id": 10462, "it": "Distanza"}
+{"id": 10463, "it": "NON PRONTO"}
+{"id": 10464, "it": "Ho appena attivato il controllo dell'equipaggio per gli schermi!"}
+{"id": 10465, "it": "Ho appena eseguito il programma <"}
+{"id": 10466, "it": ">!"}
+{"id": 10467, "it": "{0:F1} km"}
+{"id": 10472, "it": "SCANSIONE ATTIVA IN CORSO"}
+{"id": 10479, "it": "Oggetti rilevati"}
+{"id": 10482, "it": "Scansione sensori EM"}
+{"id": 10483, "it": "Scansione sensori QT"}
+{"id": 10486, "it": "99.9"}
+{"id": 10487, "it": "ING"}
+{"id": 10488, "it": "SCI"}
+{"id": 10489, "it": "ARM"}
+{"id": 10509, "it": "Scansioni mirate"}
+{"id": 10512, "it": "risultati"}
+{"id": 10514, "it": "Forme di vita"}
+{"id": 10515, "it": "Componenti"}
+{"id": 10516, "it": "{0} s"}
+{"id": 10517, "it": "[000000]"}
+{"id": 10518, "it": "DIST"}
+{"id": 10519, "it": "FIRMA EM"}
+{"id": 10520, "it": "km$"}
+{"id": 10522, "it": "---"}
+{"id": 10523, "it": "--Tipo/Livello--"}
+{"id": 10524, "it": "(Livello"}
+{"id": 10525, "it": "Nessuno"}
+{"id": 10526, "it": "$--Statistiche--"}
+{"id": 10529, "it": "Scansione del reattore"}
+{"id": 10530, "it": "Scansione dello scafo"}
+{"id": 10531, "it": "Scansione degli scudi"}
+{"id": 10532, "it": "--Torretta principale--"}
+{"id": 10533, "it": "--Altre torrette--"}
+{"id": 10534, "it": "Scansione delle armi"}
+{"id": 10535, "it": "--Processori--"}
+{"id": 10536, "it": "Scansione del processore"}
+{"id": 10537, "it": "--Programmi--"}
+{"id": 10538, "it": "Scansione dei programmi"}
+{"id": 10539, "it": "--Motore a curvatura--"}
+{"id": 10540, "it": "$--Sensori--"}
+{"id": 10541, "it": "$--Propulsori--"}
+{"id": 10542, "it": "Scansione varia"}
+{"id": 10543, "it": "--Stiva--"}
+{"id": 10544, "it": "Scansione della stiva"}
+{"id": 10545, "it": "--Membri dell'equipaggio--"}
+{"id": 10546, "it": "pilota"}
+{"id": 10547, "it": "usa ["}
+{"id": 10548, "it": "in"}
+{"id": 10549, "it": "Scansione delle forme di vita"}
+{"id": 10551, "it": "Avvia la scansione di navi e oggetti vicini al di fuori del normale raggio di rilevamento. La tua nave sarà più facile da rilevare per i nemici mentre i sensori sono potenziati"}
+{"id": 10552, "it": "Scansiona reattore"}
+{"id": 10553, "it": "Scansiona scudi"}
+{"id": 10554, "it": "Scansiona armi"}
+{"id": 10555, "it": "Scansiona processori"}
+{"id": 10556, "it": "Scansiona varie"}
+{"id": 10557, "it": "Scansiona programmi"}
+{"id": 10558, "it": "Scansiona stiva"}
+{"id": 10559, "it": "Scansiona scafo"}
+{"id": 10560, "it": "Scansiona forme di vita"}
+{"id": 10561, "it": "Focus sensori: ingegneria"}
+{"id": 10562, "it": "Per 30 secondi il danno allo scafo della nave bersaglio verrà diretto al sistema di ingegneria"}
+{"id": 10563, "it": "Focus sensori: armi"}
+{"id": 10564, "it": "Per 30 secondi il danno allo scafo della nave bersaglio verrà diretto al sistema d'armi"}
+{"id": 10565, "it": "weaknessScanAttuneDmg2"}
+{"id": 10566, "it": "Focus sensori: supporto vitale"}
+{"id": 10567, "it": "Per 30 secondi il danno allo scafo della nave bersaglio verrà diretto al sistema di supporto vitale"}
+{"id": 10568, "it": "Focus sensori: laboratorio scientifico"}
+{"id": 10569, "it": "Per 30 secondi il danno allo scafo della nave bersaglio verrà diretto al sistema del laboratorio scientifico"}
+{"id": 10570, "it": "Falla nella difesa cibernetica"}
+{"id": 10571, "it": "La nave bersaglio sarà più vulnerabile del 40% ai virus per 60 secondi"}
+{"id": 10572, "it": "Indebolisci gli scudi"}
+{"id": 10573, "it": "Per 60 secondi gli scudi della nave bersaglio non ridurranno il danno in base alla frequenza degli scudi"}
+{"id": 10574, "it": "Protocollo del reattore"}
+{"id": 10575, "it": "Il reattore della nave bersaglio genererà il 20% di calore in più per 60 secondi"}
+{"id": 10576, "it": "Schermi della nave"}
+{"id": 10577, "it": "Per 60 secondi gli schermi della nave bersaglio avranno maggiori probabilità di esplodere"}
+{"id": 10578, "it": "weaknessScanQtShlds"}
+{"id": 10579, "it": "DecryptPanel"}
+{"id": 10580, "it": "Decifra virus:"}
+{"id": 10581, "it": "Seleziona un indirizzo di memoria non corrispondente da scansionare"}
+{"id": 10600, "it": "SUCCESSO$Virus eliminato:"}
+{"id": 10601, "it": "ERRORE$Eliminazione fallita:"}
+{"id": 10603, "it": "Decifra virus"}
+{"id": 10604, "it": "CYBER-ATT"}
+{"id": 10605, "it": "s)"}
+{"id": 10606, "it": "(NESSUN SEGNALE)"}
+{"id": 10607, "it": ")"}
+{"id": 10608, "it": ". . ."}
+{"id": 10609, "it": "ATTIVO ("}
+{"id": 10610, "it": "FATTO"}
+{"id": 10611, "it": "TENTATIVO"}
+{"id": 10612, "it": "NESSUN SEGNALE"}
+{"id": 10613, "it": "Diagnostica della nave"}
+{"id": 10615, "it": "Teletrasporto"}
+{"id": 10619, "it": "Passo"}
+{"id": 10621, "it": "Avvia ShipOS"}
+{"id": 10623, "it": "Innesca il nucleo di curvatura"}
+{"id": 10625, "it": "Attiva/disattiva raffreddamento reattore"}
+{"id": 10627, "it": "Attiva/disattiva luci della nave"}
+{"id": 10628, "it": "Tira la leva 1"}
+{"id": 10629, "it": "Avvia ShipOS"}
+{"id": 10630, "it": "Tira la leva 2"}
+{"id": 10631, "it": "Attiva gli scudi$$Tira la leva 3"}
+{"id": 10632, "it": "Il sistema è attivo"}
+{"id": 10633, "it": "Passo"}
+{"id": 10634, "it": "TELETRASPORTA DALL'EQUIPAGGIO"}
+{"id": 10635, "it": "Bersaglio"}
+{"id": 10636, "it": "Teletrasporta a:"}
+{"id": 10637, "it": "direttamente"}
+{"id": 10638, "it": "Il teletrasporto verso la destinazione è attualmente bloccato!"}
+{"id": 10640, "it": "{0} m"}
+{"id": 10643, "it": "Seleziona"}
+{"id": 10644, "it": "BLOCCATO"}
+{"id": 10646, "it": "Chiama l'ascensore"}
+{"id": 10647, "it": "CallElevator"}
+{"id": 10648, "it": "CHIAMA"}
+{"id": 10650, "it": "Clic"}
+{"id": 10652, "it": "Seleziona il piano"}
+{"id": 10653, "it": "Controlli di spinta"}
+{"id": 10655, "it": "Binario"}
+{"id": 10657, "it": "Preciso"}
+{"id": 10658, "it": "Mostra settori"}
+{"id": 10675, "it": "Calcolo del salto"}
+{"id": 10676, "it": "Carica del motore a curvatura"}
+{"id": 10677, "it": "Finalizza i dati del salto"}
+{"id": 10678, "it": "Computer di salto"}
+{"id": 10679, "it": "Salto alla cieca d'emergenza"}
+{"id": 10680, "it": "Avvia preparazione al salto"}
+{"id": 10681, "it": "BlindJump"}
+{"id": 10682, "it": "Esegui salto alla cieca"}
+{"id": 10683, "it": "Motore a curvatura non disponibile"}
+{"id": 10684, "it": "Qualcosa impedisce al motore a curvatura di rispondere!"}
+{"id": 10685, "it": "ERRORE"}
+{"id": 10686, "it": "ERRORE: salto alla cieca non disponibile!"}
+{"id": 10688, "it": "SALTO ALLA CIECA"}
+{"id": 10689, "it": "PERICOLO ESTREMO: i salti alla cieca possono causare la distruzione della nave"}
+{"id": 10690, "it": "SISTEMA BLOCCATO"}
+{"id": 10691, "it": "CLICCA PER SBLOCCARE"}
+{"id": 10692, "it": "Questo sistema resta bloccato finché il Capitano non lo sblocca"}
+{"id": 10693, "it": "Carica del motore a curvatura in corso"}
+{"id": 10694, "it": "Preparazione al salto in pausa"}
+{"id": 10695, "it": "Non risponde"}
+{"id": 10696, "it": "Niente carburante!"}
+{"id": 10697, "it": "Salta verso la cometa"}
+{"id": 10698, "it": "Salta verso"}
+{"id": 10699, "it": "Allinea la nave al bersaglio"}
+{"id": 10700, "it": "Salto in corso"}
+{"id": 10701, "it": "SLT"}
+{"id": 10702, "it": "[STR0] ha avviato un salto alla cieca!"}
+{"id": 10703, "it": "Carica del motore a curvatura in corso!"}
+{"id": 10704, "it": "Salto alla cieca: fa saltare subito la nave senza una navigazione adeguata. Può causare la distruzione della nave"}
+{"id": 10705, "it": "Attiva/disattiva la carica del motore a curvatura. A carica completata, premi per avviare un salto a curvatura"}
+{"id": 10706, "it": "Controlli di curvatura a lungo raggio"}
+{"id": 10707, "it": "WTI_"}
+{"id": 10708, "it": "PAGATO: [00ff00]PER INTERO[-]"}
+{"id": 10709, "it": "PAGATO: [ff0000]NO[-]"}
+{"id": 10710, "it": "PAGATO: [00ff00]FORZATO[-]"}
+{"id": 10711, "it": "ALLINEATO: [00ff00]SÌ[-]"}
+{"id": 10712, "it": "ALLINEATO: [ff0000]NO[-]"}
+{"id": 10713, "it": "PRONTO PER LA CURVATURA: [00ff00]SÌ[-]"}
+{"id": 10714, "it": "PRONTO PER LA CURVATURA: [ff0000]NO[-]"}
+{"id": 10715, "it": "CAMERA VUOTA"}
+{"id": 10716, "it": "CAMERA CARICA"}
+{"id": 10717, "it": "ORDIGNO ARMATO"}
+{"id": 10718, "it": "ORDIGNO LANCIATO"}
+{"id": 10720, "it": "Carica testata nucleare"}
+{"id": 10721, "it": "UnloadNuclearDevice"}
+{"id": 10722, "it": "Scarica testata nucleare"}
+{"id": 10724, "it": "LANCIA ORDIGNO"}
+{"id": 10725, "it": "ORDIGNO PRONTO AL LANCIO"}
+{"id": 10726, "it": "Nessun bersaglio trovato!"}
+{"id": 10727, "it": "Tira le due leve della postazione di armamento$in rapida successione per armare la$testata nucleare caricata!"}
+{"id": 10729, "it": "DIST. DAL BERSAGLIO"}
+{"id": 10730, "it": "RAGGIO DANNI"}
+{"id": 10732, "it": "Fai detonare l'ordigno"}
+{"id": 10734, "it": "m"}
+{"id": 10735, "it": "%"}
+{"id": 10736, "it": "NESSUNA NAVE BERSAGLIO"}
+{"id": 10737, "it": "BERSAGLIO"}
+{"id": 10738, "it": "Scarica la testata nucleare attuale"}
+{"id": 10739, "it": "Lancia ordigno"}
+{"id": 10740, "it": "Lancia la testata nucleare attualmente caricata contro la nave bersaglio"}
+{"id": 10741, "it": "Fa detonare immediatamente la testata nucleare attiva"}
+{"id": 10742, "it": "Sensore elettromagnetico"}
+{"id": 10743, "it": "EM"}
+{"id": 10744, "it": "Fornisce informazioni sui sistemi e sui livelli di energia di una nave bersaglio."}
+{"id": 10745, "it": "Fregata leggera"}
+{"id": 10746, "it": "+30% di rilevamento EM"}
+{"id": 10747, "it": "+20% di raggio di curvatura"}
+{"id": 10748, "it": "+15% di diplomazia"}
+{"id": 10749, "it": "Caustic Corsair"}
+{"id": 10750, "it": "La corazza è immune all'acido"}
+{"id": 10751, "it": "Speciale"}
+{"id": 10752, "it": "Boa di potenziamento scudi"}
+{"id": 10753, "it": "Aumenta la velocità di ricarica degli scudi per tutte le navi"}
+{"id": 10754, "it": "Boa cecchino"}
+{"id": 10755, "it": "Dotata di un'arma laser a lungo raggio"}
+{"id": 10756, "it": "Boa di blocco della curvatura"}
+{"id": 10757, "it": "Impedisce alle navi di saltare o di fare salti alla cieca"}
+{"id": 10758, "it": "Boa potenziatrice di virus"}
+{"id": 10759, "it": "Riduce la difesa cibernetica di tutte le navi nel settore e trasmette virus"}
+{"id": 10760, "it": "Boa di potenziamento della spinta"}
+{"id": 10761, "it": "Potenzia le capacità dei propulsori principali di tutte le navi"}
+{"id": 10762, "it": "Boa di potenziamento energetico"}
+{"id": 10763, "it": "Aumenta la potenza del reattore di tutte le navi"}
+{"id": 10764, "it": "Boa d'abbordaggio"}
+{"id": 10765, "it": "Genera bot d'abbordaggio se i tuoi scudi quantici sono abbassati"}
+{"id": 10766, "it": "Boa disturbatrice di segnale"}
+{"id": 10767, "it": "Riduce il rilevamento EM di tutte le navi nel settore e blocca le comunicazioni a lungo raggio"}
+{"id": 10768, "it": "Boa potenziatrice danno energetico"}
+{"id": 10769, "it": "Il danno energetico è potenziato per tutte le navi"}
+{"id": 10770, "it": "Boa corrotta"}
+{"id": 10771, "it": "Trasmette la Corruzione a tutte le navi"}
+{"id": 10772, "it": "Boa di blocco dell'occultamento"}
+{"id": 10773, "it": "Disattiva i sistemi di occultamento di tutte le navi"}
+{"id": 10774, "it": "Boa di carica dei programmi"}
+{"id": 10775, "it": "In questo settore la ricarica dei programmi è più efficace"}
+{"id": 10776, "it": "Boa di propagazione degli incendi"}
+{"id": 10777, "it": "In questo settore gli incendi si propagano rapidamente"}
+{"id": 10778, "it": "Boa di sovraccarico"}
+{"id": 10779, "it": "Provoca sovraccarico quando le navi sono vicine tra loro"}
+{"id": 10780, "it": "Boa di efficienza"}
+{"id": 10781, "it": "Fa sì che tutti i/le"}
+{"id": 10782, "it": "consumino molta meno energia"}
+{"id": 10783, "it": "Boa di riduzione della corazza"}
+{"id": 10784, "it": "Riduce del 30% la corazza delle navi"}
+{"id": 10785, "it": "Boa potenziatrice danno fisico"}
+{"id": 10786, "it": "Il danno fisico è potenziato per tutte le navi"}
+{"id": 10787, "it": "Boa potenziatrice del raggio di curvatura"}
+{"id": 10788, "it": "Il raggio di curvatura è potenziato per tutte le navi"}
+{"id": 10789, "it": "Nave da trasporto W.D."}
+{"id": 10790, "it": "PLRoboticPawn"}
+{"id": 10791, "it": "Cacciatore di taglie"}
+{"id": 10792, "it": "Astronave classe Carrier"}
+{"id": 10793, "it": "SwitchON"}
+{"id": 10794, "it": "È più probabile che i rottami$contengano componenti"}
+{"id": 10795, "it": "Cargo da trasporto"}
+{"id": 10796, "it": "Nave civile"}
+{"id": 10797, "it": "VEICOLO SPAZIALE ECONOMICO MULTIUSO"}
+{"id": 10798, "it": "Parte dal livello di Caos 3.0"}
+{"id": 10799, "it": "Dotata di una potente arma EMP"}
+{"id": 10800, "it": "corrupted_drone"}
+{"id": 10801, "it": "Astronave classe Cruiser"}
+{"id": 10802, "it": "+35% di velocità di carica delle torrette"}
+{"id": 10803, "it": "+15% di raffreddamento delle torrette"}
+{"id": 10804, "it": "+10% di intimidazione"}
+{"id": 10805, "it": "Nave d'assalto"}
+{"id": 10806, "it": "Deathwarden"}
+{"id": 10807, "it": "Ranger"}
+{"id": 10808, "it": "Esploratore"}
+{"id": 10809, "it": "Rottame"}
+{"id": 10810, "it": "C.U."}
+{"id": 10811, "it": "Neutrale"}
+{"id": 10812, "it": "W.D."}
+{"id": 10813, "it": "Bandito"}
+{"id": 10814, "it": "Hai vinto!"}
+{"id": 10815, "it": "[F.B. Company Admin] ha spento la nave da remoto"}
+{"id": 10816, "it": "[F.B. Company Admin] ha catturato la nave da remoto"}
+{"id": 10817, "it": "[F.B. Company Admin] ha disattivato da remoto il filtro dell'aria"}
+{"id": 10818, "it": "[F.B. Company Admin] ha disattivato da remoto gli esoscafandri"}
+{"id": 10819, "it": "[F.B. Company Admin] ha attivato da remoto [SISTEMA OSCURATO]"}
+{"id": 10821, "it": "QUALCOSA NON VA"}
+{"id": 10822, "it": "Nave di consegna"}
+{"id": 10823, "it": "Parte dal livello di Caos 2.0"}
+{"id": 10825, "it": "x"}
+{"id": 10826, "it": "Tavolo finale disponibile"}
+{"id": 10827, "it": "Guadagna 3 fiche per accedere alla partita finale"}
+{"id": 10828, "it": "Astronave classe Intrepid"}
+{"id": 10829, "it": "RELIQUIA DELLE VECCHIE GUERRE RESTAURATA"}
+{"id": 10830, "it": "Scafo corazzato ultradenso"}
+{"id": 10831, "it": "Spada"}
+{"id": 10832, "it": "Potente attacco a raggio frontale \\^Spada\\^"}
+{"id": 10833, "it": "Velocità di innesco dell'occultamento x2"}
+{"id": 10834, "it": "Nave di ricerca"}
+{"id": 10835, "it": "Guadagna 20 livelli allineato con la Colonial Union ("}
+{"id": 10836, "it": "/20 ottenuti)"}
+{"id": 10837, "it": "Astronave classe Outrider"}
+{"id": 10838, "it": "Materiali di ricerca extra"}
+{"id": 10839, "it": "+30% di diplomazia"}
+{"id": 10840, "it": "Astronave classe Paladin"}
+{"id": 10841, "it": "Può installare/sostituire i componenti della nave in qualsiasi momento"}
+{"id": 10842, "it": "Può potenziare i componenti della nave in qualsiasi momento"}
+{"id": 10843, "it": "Caccia Polytechnic"}
+{"id": 10844, "it": "Astronave classe Polytech"}
+{"id": 10845, "it": "Sorvegliante di droni"}
+{"id": 10846, "it": "Astronave classe Roland"}
+{"id": 10847, "it": "Nave d'attacco pesante"}
+{"id": 10848, "it": "+100% di FIRMA EM"}
+{"id": 10849, "it": "+25% di velocità di ricarica degli scudi"}
+{"id": 10850, "it": "Trasporto furtivo"}
+{"id": 10851, "it": "-50% di FIRMA EM"}
+{"id": 10852, "it": "swarm_speed"}
+{"id": 10853, "it": "HitPS"}
+{"id": 10854, "it": "SwarmIsFree"}
+{"id": 10855, "it": "Swarm"}
+{"id": 10856, "it": "Dathestru"}
+{"id": 10857, "it": "Keeper"}
+{"id": 10858, "it": "Caccia invisibile"}
+{"id": 10859, "it": "TempTransfom"}
+{"id": 10860, "it": "Guadagna 20 livelli allineato con la W.D. Corp ("}
+{"id": 10861, "it": "Prototipo"}
+{"id": 10862, "it": "Il danno ai nemici carica gli scudi"}
+{"id": 10863, "it": "Sistemi interni inaffidabili"}
+{"id": 10864, "it": "Nave da guerra corazzata"}
+{"id": 10865, "it": "+20% di danno delle torrette"}
+{"id": 10866, "it": "+50% di corazza"}
+{"id": 10867, "it": "Guardian"}
+{"id": 10868, "it": "Warrior"}
+{"id": 10869, "it": "Ripper"}
+{"id": 10870, "it": "Arbiter"}
+{"id": 10871, "it": "Vindicator"}
+{"id": 10872, "it": "Marauder"}
+{"id": 10873, "it": "] Pilota la nave"}
+{"id": 10874, "it": "PLWeaponsSystem exception!"}
+{"id": 10875, "it": "] usa <"}
+{"id": 10876, "it": "Ti serve il talento <Operatore avanzato> per usare questa postazione"}
+{"id": 10877, "it": "Consegni il controllo degli Infetti all'Alliance of Gentlemen."}
+{"id": 10878, "it": "Il Custode ti ringrazia per il tuo contributo e usa gli Infetti per raggiungere anche gli obiettivi più ambiziosi dell'Alleanza."}
+{"id": 10879, "it": "La Tenuta emerge dall'ombra e tiene testa a chiunque tenti di sottometterla, comprese le flotte della Colonial Union e della W.D."}
+{"id": 10880, "it": "L'Alliance of Gentlemen vede un'impennata di nuovi membri, abbastanza da farne una forza davvero formidabile nella società intergalattica."}
+{"id": 10881, "it": "I nomi del tuo equipaggio entrano nella leggenda e vengono ripetuti da pirati e contrabbandieri in tutte le galassie."}
+{"id": 10882, "it": "Siete conosciuti come eroi che hanno dato agli emarginati una possibilità di potere."}
+{"id": 10883, "it": "La tua influenza nell'Alliance of Gentlemen è grande quanto quella del Custode e per il resto dei tuoi giorni non ti mancheranno mai lavori redditizi."}
+{"id": 10884, "it": "Consegni il controllo degli Infetti alla Colonial Union."}
+{"id": 10885, "it": "Le tue scoperte vengono usate per invertire la diffusione degli Infetti, contenerli e porre fine alla loro piaga sulle galassie."}
+{"id": 10886, "it": "Nei mesi seguenti senti voci secondo cui la Colonial Union starebbe conducendo ulteriori ricerche sugli Infetti."}
+{"id": 10887, "it": "Alcune fughe di notizie suggeriscono che, nonostante gli eventi del Wasted Wing, alcune pratiche di ricerca della Colonial Union potrebbero essere discutibili."}
+{"id": 10888, "it": "Tuttavia, tutte le informazioni in merito sono riservate."}
+{"id": 10889, "it": "La Colonial Union elogia la tua lealtà e promuove il tuo equipaggio al rango di ufficiali di massimo livello."}
+{"id": 10890, "it": "Sei onorato tra i ranghi della Colonial Union e i cittadini della galassia ti vedono come un eroe."}
+{"id": 10891, "it": "Distruggi gli Infetti."}
+{"id": 10892, "it": "Il loro potere non sarà mai usato da nessun individuo o fazione."}
+{"id": 10893, "it": "La loro piaga sulla galassia finisce e l'ordine viene lentamente ristabilito."}
+{"id": 10894, "it": "Per la maggior parte, siete considerati eroi."}
+{"id": 10895, "it": "Qualunque fossero le tue ragioni per distruggere gli Infetti, vieni lodato per la lungimiranza di aver capito che il loro potere era troppo grande perché qualcuno potesse impugnarlo."}
+{"id": 10896, "it": "Anche se i leader delle fazioni più importanti criticano la tua decisione,"}
+{"id": 10897, "it": "la storia ti guarderà con favore per aver salvato la galassia sia dagli Infetti sia da se stessa."}
+{"id": 10898, "it": "Consegni il controllo degli Infetti alla Fluffy Biscuit Company."}
+{"id": 10899, "it": "Gli Infetti vengono usati per proteggere le consegne e convogliare il traffico spaziale verso i negozi Fluffy Biscuit."}
+{"id": 10900, "it": "I profitti volano."}
+{"id": 10901, "it": "Senti anche voci di un nuovo ingrediente segreto che rende i biscotti particolarmente deliziosi."}
+{"id": 10902, "it": "Le informazioni nutrizionali lo indicano solo come «esaltatore di sapidità di origine naturale»."}

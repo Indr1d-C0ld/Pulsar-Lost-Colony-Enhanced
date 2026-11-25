@@ -1,0 +1,1276 @@
+{"id": 4413, "it": "Trova la Tessera di accesso amministratore di livello 1"}
+{"id": 4414, "it": "Trova la Tessera di accesso amministratore di livello 2"}
+{"id": 4415, "it": "Trova la Tessera di accesso amministratore di livello 3"}
+{"id": 4416, "it": "Trova il data pad"}
+{"id": 4417, "it": "Riferisci ad Alarick Soun nel Centro di comando di Outpost 448"}
+{"id": 4418, "it": "Ripara l'unità sensori su Tallus-18"}
+{"id": 4419, "it": "Ripara 5 sensori per rimettere in linea l'unità sensori"}
+{"id": 4420, "it": "Riferisci alla dottoressa Mirta Baird"}
+{"id": 4423, "it": "Parla con Viar Tothim del giornale di bordo"}
+{"id": 4424, "it": "Elimina lo Stalker"}
+{"id": 4425, "it": "^A causa dei danni subiti dall'ala di ricerca durante la sequenza di curvatura del Codice Nero, un pericoloso soggetto di ricerca è evaso dalla sua camera di contenimento. È libero e ucciderà qualunque cosa incontri. Se vuoi evitarlo, evita il buio. Se non puoi evitare il buio, tieni sempre con te una fonte di luce. E se hai modo di combatterlo, ti prego, per il bene di tutti i sopravvissuti, uccidilo. Insieme sopravviviamo.^"}
+{"id": 4426, "it": "Elimina il soggetto di ricerca ^Stalker^"}
+{"id": 4427, "it": "Elimina gli scienziati infetti"}
+{"id": 4428, "it": "^I cristalli sono semplicemente... esplosi fuori da lui... Ora non c'è più. Sono tutti spariti. Ti prego, poni fine alle loro sofferenze...^"}
+{"id": 4429, "it": "Elimina gli scienziati infettati da escrescenze cristalline"}
+{"id": 4430, "it": "Recupera le medicine per Vilvard"}
+{"id": 4431, "it": "^Il dottor Vilvard ha bisogno di medicine per attenuare il dolore e rallentare l'emorragia della sua ferita. Vicino agli uffici amministrativi dovrebbe esserci una stazione medica di emergenza con delle scorte, per il caso in cui gli atri di rigenerazione siano fuori uso, come adesso. In quella stazione medica di emergenza troverai le medicine di cui il dottor Vilvard ha bisogno. So che hai questioni più urgenti da affrontare, ma se trovi l'occasione di portare a Vilvard una dose di quella medicina, potrebbe fare la differenza tra la vita e la morte per lui.^"}
+{"id": 4432, "it": "Riferisci a Noemi Prast"}
+{"id": 4433, "it": "Riferisci al comandante"}
+{"id": 4434, "it": "Riferisci al comandante Darine Hatham nel Centro di comando di Outpost 448 per ricevere una ricompensa aggiuntiva per l'aiuto prestato alla Colonial Union.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4435, "it": "Riferisci al comandante Darine Hatham nel Centro di comando di Outpost 448"}
+{"id": 4436, "it": "Dimostrazione di armi"}
+{"id": 4437, "it": "Il tuo equipaggio è stato selezionato per partecipare a una dimostrazione privata di tre prototipi di armi della W.D. Raggiungi il settore indicato sulla mappa stellare e presentati a Tyna Jelic. Ulteriori informazioni ti saranno fornite all'arrivo.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4438, "it": "Raggiungi la struttura di collaudo delle armi"}
+{"id": 4439, "it": "Presentati a Tyna Jelic"}
+{"id": 4440, "it": "Completa la dimostrazione di armi"}
+{"id": 4441, "it": "Bombardamento planetario"}
+{"id": 4442, "it": "Un gruppo coordinato dell'Alliance of Gentlemen ha rubato un prototipo cruciale della tecnologia W.D. Hanno catturato cinque membri dell'equipaggio W.D. che trasportavano il prototipo e si sono ritirati sul pianeta Rivan-12. Entra nella loro base sotterranea, elimina gli ultimi ladri dell'Alliance, libera l'equipaggio W.D. catturato e recupera la tecnologia rubata.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4443, "it": "Raggiungi il pianeta Rivan-12 ed elimina tutti i nemici"}
+{"id": 4444, "it": "Libera l'equipaggio W.D. catturato"}
+{"id": 4445, "it": "Trova il prototipo rubato"}
+{"id": 4446, "it": "L'ammiraglia abbandonata"}
+{"id": 4447, "it": "^L'ammiraglia della W.D. è stata completamente perduta a causa degli Infetti. Il suo equipaggio è dato per morto e la nave si trova ancora in un settore dello spazio infetto. Non c'è nulla da fare per salvarla. Ma non possiamo lasciare l'ammiraglia nello spazio infetto. I nostri scienziati hanno raccolto di recente alcune prove inquietanti, in gran parte grazie alla missione in cui hai rintracciato uno dei nostri droni di sicurezza fuori linea. Temiamo che se l'ammiraglia rimane sotto il controllo degli Infetti, potrebbe significare un disastro per la nostra galassia. Perciò ho bisogno di un equipaggio capace, disposto a salire a bordo dell'ammiraglia e ad avviare la sua sequenza di autodistruzione.^$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4448, "it": "Raggiungi l'ammiraglia della W.D."}
+{"id": 4449, "it": "Raggiungi la plancia dell'ammiraglia"}
+{"id": 4450, "it": "Avvia la sequenza di autodistruzione dell'ammiraglia"}
+{"id": 4451, "it": "Presentati a Sullivan Vorcolp"}
+{"id": 4452, "it": "La tua presenza è richiesta al Quartier generale della W.D. Presentati al Supervisore capo Sullivan Vorcolp nella Sala di controllo per ricevere un incarico riservato. Il tuo livello di autorizzazione è stato elevato per consentirti l'accesso alla Sala di controllo, raggiungibile tramite il teletrasporto a corto raggio al livello superiore della stazione.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4453, "it": "Presentati al Supervisore capo Sullivan Vorcolp al Quartier generale della W.D."}
+{"id": 4454, "it": "Compiti aggiuntivi"}
+{"id": 4455, "it": "^Negli alloggi del capitano dell'ammiraglia dovrebbe esserci un nucleo di memoria contenente gli schemi del motore a curvatura intergalattico dell'ammiraglia. Se la situazione con gli Infetti dovesse peggiorare ulteriormente, ci serve un piano di riserva per trasportare fuori da questa galassia i beni più preziosi della nostra filiale. Quegli schemi ci sarebbero di enorme aiuto. Vorcolp richiede anche un registro scientifico dell'ammiraglia. La dottoressa Aina Petru, scienziata capo a bordo dell'ammiraglia, documentava le sue ricerche con grande scrupolo. È probabile che abbia registrato le sue scoperte sugli Infetti prima che la nave fosse sopraffatta. Il suo lavoro potrebbe essere vitale per combattere gli Infetti in futuro.^"}
+{"id": 4456, "it": "Trova gli schemi della curvatura dell'ammiraglia"}
+{"id": 4457, "it": "Trova il registro scientifico della dottoressa Petru"}
+{"id": 4458, "it": "Riferisci a Oskal Shardes al Quartier generale della W.D."}
+{"id": 4459, "it": "Chiamata aperta"}
+{"id": 4460, "it": "Il Custode della Tenuta ha chiesto a tutti gli equipaggi capaci di intercettare una nave della W.D. Corporation in possesso di un carico pericoloso. Il carico in questione è un prototipo segreto della W.D. di tecnologia di occultamento, e il Custode desidera ostacolarne il trasporto. Ottieni la tecnologia con ogni mezzo necessario e sarai ricompensato dal Custode in persona. Che le stelle favoriscano i tuoi viaggi.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4461, "it": "Raggiungi il punto di intercettazione della rotta di trasporto della W.D."}
+{"id": 4462, "it": "Ruba il prototipo segreto dalla nave da trasporto della W.D."}
+{"id": 4463, "it": "Evadere Conrad"}
+{"id": 4464, "it": "^Il tuo primo compito è salvare un mio associato: un umano di nome Conrad. È stato portato a Hollow Rock, una prigione di massima sicurezza che usa la tecnologia quantistica per contenere i prigionieri. Una volta che Conrad sarà in una di quelle celle, sarà impossibile farlo evadere. Per fortuna non è ancora stato rinchiuso. Dobbiamo muoverci in fretta e intercettarlo mentre viene ancora registrato. Dovrai infiltrarti a Hollow Rock, introdurti nella sala di detenzione dove Conrad è trattenuto temporaneamente e consegnargli questo dispositivo. Si chiama P.U.N.T. Chip. Saprà cosa farne.^$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4465, "it": "Raggiungi la prigione di Hollow Rock"}
+{"id": 4466, "it": "Salva Conrad"}
+{"id": 4467, "it": "Riferisci al Custode negli Alloggi del capitano della Tenuta"}
+{"id": 4468, "it": "Recupera la testa del robot"}
+{"id": 4469, "it": "^C'era un gruppo che possedeva diverse fabbriche nascoste in questa galassia per produrre banditi di metallo, oltre a un sito di collaudo dove realizzava alcuni dei suoi progetti più innovativi. C'era un robot, un tipo enorme, con un raggio abbastanza potente da rivaleggiare con le armi delle astronavi ma molto più compatto. È proprio il genere di raggio che ci serve. Vai alla fabbrica di collaudo e portami la testa del robot gigante. Poi potrò apportare qualche modifica al suo raggio e usarlo per tagliare le porte del caveau.^$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4470, "it": "Raggiungi la fabbrica dei banditi di metallo"}
+{"id": 4471, "it": "Trova la testa del robot"}
+{"id": 4472, "it": "Riferisci a Conrad negli Alloggi del capitano della Tenuta"}
+{"id": 4473, "it": "La villa del pazzo"}
+{"id": 4474, "it": "^Voglio qualcosa dalla collezione di Rowe: gli schemi della curvatura intergalattica dell'ammiraglia della W.D. Dovrai introdurti di nascosto nella villa di Rowe e sbloccare il teletrasporto di carico sicuro davanti al caveau. Poi Conrad e la testa del robot modificata, che lui chiama ^il tagliatore^, potranno essere teletrasportati direttamente nella villa e tagliare la porta del caveau. I sistemi di difesa di Rowe si attiveranno senza dubbio, quindi dovrai proteggere Conrad mentre usa il tagliatore. Quando il tagliatore avrà aperto la porta del caveau, recupera gli schemi della curvatura intergalattica.^$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4475, "it": "Raggiungi la villa di Torsten Rowe"}
+{"id": 4476, "it": "Raggiungi il caveau"}
+{"id": 4477, "it": "Di' a Conrad di avviare il tagliatore"}
+{"id": 4478, "it": "Difendi Conrad"}
+{"id": 4479, "it": "Trova gli schemi della curvatura intergalattica"}
+{"id": 4480, "it": "Riferisci al Custode"}
+{"id": 4481, "it": "Il Custode è colpito dal tuo successo nell'intercettare la nave da trasporto della W.D. Ti ringrazia per aver recuperato il prototipo della W.D. e desidera che glielo porti di persona. Ti è stato concesso l'accesso agli Alloggi del capitano nella Tenuta, dove risiede il Custode.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4482, "it": "Non perdere il prototipo segreto della W.D."}
+{"id": 4483, "it": "Raggiungi la Tenuta"}
+{"id": 4484, "it": "Riferisci al Custode negli Alloggi del capitano"}
+{"id": 4485, "it": "Rimuovi le interferenze nella sala del reattore"}
+{"id": 4486, "it": "^L'ammiraglia è andata perduta a causa degli Infetti. Non c'è modo di salvarla. Come ultima risorsa ho avviato la sequenza di autodistruzione dell'ammiraglia. Tuttavia sembra che qualcosa legato all'output del reattore stia impedendo la detonazione della testata nucleare. Quel 'qualcosa' è con ogni probabilità la carne infetta che si sta diffondendo per la nave, e va fermata. Rimuovi le interferenze nella sala del reattore in modo che la sequenza di autodistruzione possa procedere, poi esci dall'ammiraglia il più in fretta possibile.^$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4487, "it": "Rimuovi le interferenze nella sala del reattore"}
+{"id": 4488, "it": "Rintraccia il drone di sicurezza"}
+{"id": 4489, "it": "Un drone di sicurezza della W.D. è andato fuori linea in un settore vicino alla tua posizione. Indaga nel settore e raccogli informazioni sul motivo per cui è sparito dal sistema di tracciamento dei droni. Se il drone di sicurezza è stato compromesso o è comunque guasto, eliminalo.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4490, "it": "Trova ed elimina il drone di sicurezza fuori linea"}
+{"id": 4491, "it": "Riferisci al Quartier generale"}
+{"id": 4492, "it": "I tuoi superiori della W.D. Corporation sono soddisfatti dei risultati del tuo lavoro sull'ammiraglia. Riferisci al Supervisore capo Sullivan Vorcolp al Quartier generale della W.D. per ricevere una ricompensa aggiuntiva.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4493, "it": "Riferisci a Sullivan Vorcolp al Quartier generale della W.D."}
+{"id": 4494, "it": "Ispeziona la cella della prigione"}
+{"id": 4495, "it": "^Ti stai infiltrando a Hollow Rock, e questo significa che abbiamo un'occasione rara. Nessun Gentleman è mai tornato da un contenimento quantistico, e questa è la nostra occasione per indagare. Se riesci ad accedere al blocco di celle quantistiche, forse potrai dare un'occhiata alla tecnologia. Ci sarà sicuramente una cella disattivata per trasferire Conrad nel contenimento quantistico. Dai un'occhiata all'interno della cella e riferiscimi cosa vedi.^"}
+{"id": 4496, "it": "Entra in una cella di contenimento quantistico aperta per osservarne l'interno"}
+{"id": 4497, "it": "Riferisci a Saliki negli Alloggi del capitano della Tenuta"}
+{"id": 4501, "it": "Cifrari Sylvassi"}
+{"id": 4502, "it": "Trova 4 antiche tavolette Sylvassi dai Cifrari"}
+{"id": 4503, "it": "Riferisci a Ika al Sylvassi Cypher Lab"}
+{"id": 4504, "it": "Sconfiggi 3 Comandanti di settore"}
+{"id": 4505, "it": "^La galassia è un posto pericoloso in questi giorni. Navi potenti e strane tecnologie aliene continuano a comparire, prendendo il controllo di interi settori e distruggendo qualunque nave arrivi in curvatura. Ora abbiamo un nome per questi formidabili avversari: Comandanti di settore. Molte persone nella galassia si sentirebbero molto più al sicuro se questi Comandanti di settore fossero neutralizzati. Dare la caccia ai Comandanti di settore è un lavoro pericoloso, ma se ne sconfiggi tre, mi assicurerò che tu sia ricompensato generosamente.^"}
+{"id": 4506, "it": "Distruggi 3 Comandanti di settore"}
+{"id": 4507, "it": "Riferisci a Skiah a Cornelia Station"}
+{"id": 4508, "it": "Trova l'ingegnere"}
+{"id": 4509, "it": "^La mia ingegnere, Brodi Anders, è partita diverse ore fa per riparare una stazione sensori qui vicino. Non è ancora tornata e comincio a preoccuparmi, perché le creature di questo pianeta sono state ostili ultimamente. Sembri ben equipaggiato: andresti a cercarla per assicurarti che stia bene?^"}
+{"id": 4510, "it": "Trova Brodi Anders, ingegnere della stazione di ricerca"}
+{"id": 4511, "it": "Riferisci a Maegan Fujita"}
+{"id": 4512, "it": "Recupera le medicine per Anders"}
+{"id": 4513, "it": "^Mentre venivo qui, un crawler mi ha trapassato la tuta e mi ha ferito la gamba. Al momento non riesco a camminare. Ma se non ti dispiace farmi un favore, c'è una scorta di emergenza qui vicino. Ci si entra da un portello metallico nel terreno. Dentro la sala dei rifornimenti dovrebbe esserci un kit di medicine che posso usare per medicarmi la gamba. Me lo porteresti?^"}
+{"id": 4514, "it": "Riferisci a Brodi Anders"}
+{"id": 4515, "it": "Accademia Hailing"}
+{"id": 4516, "it": "Tutorial sulle comunicazioni Hailing"}
+{"id": 4517, "it": "Asta"}
+{"id": 4518, "it": "Asta 100k"}
+{"id": 4519, "it": "Asta 40k"}
+{"id": 4520, "it": "Asta 60k"}
+{"id": 4521, "it": "Asta 80k"}
+{"id": 4522, "it": "Asta 200k"}
+{"id": 4523, "it": "Gli scommettitori"}
+{"id": 4524, "it": "Trova la Colonia perduta"}
+{"id": 4525, "it": "Trova 4 frammenti di dati"}
+{"id": 4526, "it": "Raggiungi il Grand Warp Gate"}
+{"id": 4527, "it": "Raggiungi la Colonia perduta"}
+{"id": 4529, "it": "Recupero di manufatti IV"}
+{"id": 4530, "it": "^Qualche settimana fa ho mandato una squadra a recuperare un particolare manufatto alieno, ma si è rifiutata di proseguire il lavoro. Hanno sostenuto di aver quasi distrutto il loro atrio di rigenerazione nel tentativo di 'trovare la strada giusta'. Non so bene di cosa si lamentassero, ma dubito che sia qualcosa che non sai gestire.^"}
+{"id": 4531, "it": "Raggiungi il quarto Settore segreto di Warger"}
+{"id": 4532, "it": "Ricompensa dei Grey Huntsmen"}
+{"id": 4533, "it": "Raggiungi l'agenzia di taglie Grey Hunstmen"}
+{"id": 4534, "it": "Presentati a Remigus Nalidak"}
+{"id": 4537, "it": "Indaga sulla Colonia perduta"}
+{"id": 4538, "it": "Raggiungi il livello più profondo della Colonia perduta"}
+{"id": 4539, "it": "Prendi la tua decisione"}
+{"id": 4540, "it": "Incontra il Compilatore per un briefing completo sulla missione. Lo troverai sul pianeta, presso la Base della Polytechnic Federation.$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4541, "it": "Base P.F."}
+{"id": 4542, "it": "Incontra il Compilatore"}
+{"id": 4543, "it": "Pronti al dispiegamento"}
+{"id": 4544, "it": "La finestra d'attacco è aperta"}
+{"id": 4545, "it": "^[PLAYERSHIP_NAME], la Minaccia Invisibile è ora a distanza d'attacco dall'Horizon Bridge. La prima ondata delle nostre navi è stata inviata attraverso il Bridge. Secondo i rapporti, sono impegnate con ostili e stanno subendo gravi perdite. Abbiamo ricevuto anche segnalazioni di strani incendi a bordo delle nostre navi. Non comprendiamo appieno la natura di questi incendi, ma i primi dati suggeriscono che generino ossigeno, il che potrebbe anche aumentare il rischio di incendi ordinari. Si consiglia di tenere gli estintori a portata di mano nel caso vi imbattiate in questo fenomeno. Buona fortuna, amici. Se intendete unirvi alla battaglia, presentatevi all'Horizon Bridge il prima possibile!^$$<b>MISSIONE AD ALTA PRIORITÀ</b>"}
+{"id": 4546, "it": "AVVISO SULLE CRISI EPILETTICHE FOTOSENSIBILI: alcune scene o effetti potrebbero causare crisi epilettiche in persone sensibili a luci o colori lampeggianti. Si consiglia la discrezione dello spettatore."}
+{"id": 4547, "it": "GIOCO ONLINE: questo gioco offre multigiocatore globale e chat vocale. La tua esperienza potrebbe variare."}
+{"id": 4548, "it": "Copyright 2021 Leafy Games, LLC"}
+{"id": 4549, "it": "EQUIPAGGIO"}
+{"id": 4550, "it": "NAVE"}
+{"id": 4551, "it": "INVENTARIO"}
+{"id": 4552, "it": "MISSIONI"}
+{"id": 4553, "it": "Bersaglio automatico sulle navi"}
+{"id": 4554, "it": "Annulla bersaglio"}
+{"id": 4555, "it": "Opzione A"}
+{"id": 4556, "it": "BERSAGLIO NAVI"}
+{"id": 4557, "it": "Mappa stellare"}
+{"id": 4558, "it": "Talenti"}
+{"id": 4559, "it": "IA dell'equipaggio"}
+{"id": 4560, "it": "LIVELLO"}
+{"id": 4561, "it": "2"}
+{"id": 4562, "it": "XP"}
+{"id": 4563, "it": "CREDITI"}
+{"id": 4564, "it": "CAOS"}
+{"id": 4565, "it": "NOME"}
+{"id": 4566, "it": "CLASSE"}
+{"id": 4567, "it": "Pulsante"}
+{"id": 4568, "it": "Registro di bordo"}
+{"id": 4569, "it": "1 fps"}
+{"id": 4570, "it": "Conn"}
+{"id": 4571, "it": "Nome della partita"}
+{"id": 4572, "it": "<"}
+{"id": 4573, "it": "indietro"}
+{"id": 4574, "it": "NomeGiocatore"}
+{"id": 4575, "it": ">"}
+{"id": 4576, "it": "reimposta talenti dei bot"}
+{"id": 4577, "it": "LIMITA GLI ACQUISTI DELL'EQUIPAGGIO"}
+{"id": 4578, "it": "500 Cr"}
+{"id": 4579, "it": "Attiva/disattiva"}
+{"id": 4580, "it": "Inserisci testo..."}
+{"id": 4581, "it": "Ordine personalizzato 1"}
+{"id": 4582, "it": "Ordine personalizzato 2$"}
+{"id": 4583, "it": "Ordine personalizzato 3"}
+{"id": 4584, "it": "Ordine personalizzato 4$"}
+{"id": 4585, "it": "Ordine personalizzato 5"}
+{"id": 4586, "it": "Ordine personalizzato 6"}
+{"id": 4587, "it": "Ordine personalizzato 7"}
+{"id": 4588, "it": "Ordine personalizzato 8"}
+{"id": 4589, "it": "L'EQUIPAGGIO PUÒ ACQUISTARE COMPONENTI"}
+{"id": 4590, "it": "Priorità massime"}
+{"id": 4591, "it": "Tutte le priorità principali"}
+{"id": 4592, "it": "Tutte le priorità di classe"}
+{"id": 4593, "it": "Ritocchi al comportamento"}
+{"id": 4594, "it": "Personalizza l'aspetto"}
+{"id": 4595, "it": "Salva / Carica"}
+{"id": 4596, "it": "Nome/Aspetto"}
+{"id": 4597, "it": "Impostazioni dell'equipaggio"}
+{"id": 4598, "it": "+NUOVO"}
+{"id": 4599, "it": "Aggiungi nuova priorità forzata"}
+{"id": 4600, "it": "x"}
+{"id": 4601, "it": "Livello di allerta"}
+{"id": 4602, "it": "Allerta rossa"}
+{"id": 4603, "it": "Allerta gialla"}
+{"id": 4604, "it": "Allerta verde"}
+{"id": 4605, "it": "0"}
+{"id": 4606, "it": "1"}
+{"id": 4607, "it": "3"}
+{"id": 4608, "it": "PRIORITÀ FORZATE PERSONALIZZATE"}
+{"id": 4609, "it": "PERSONALE"}
+{"id": 4610, "it": "SETTORE"}
+{"id": 4611, "it": "Modifica priorità dei programmi"}
+{"id": 4612, "it": "Salva"}
+{"id": 4613, "it": "Carica"}
+{"id": 4614, "it": "Ripristina predefiniti"}
+{"id": 4615, "it": "Reimposta"}
+{"id": 4616, "it": "Equipaggiamento"}
+{"id": 4617, "it": "Pistola a fase + 3"}
+{"id": 4618, "it": "Nozioni base"}
+{"id": 4619, "it": "Computer"}
+{"id": 4620, "it": "Armi"}
+{"id": 4621, "it": "Varie"}
+{"id": 4622, "it": "Spinta"}
+{"id": 4623, "it": "PESO: 20.0 / 20.0"}
+{"id": 4624, "it": "EQUIPAGGIAMENTO"}
+{"id": 4625, "it": "4"}
+{"id": 4626, "it": "5"}
+{"id": 4627, "it": "6"}
+{"id": 4628, "it": "Il mio inventario"}
+{"id": 4629, "it": "Inventario del bot"}
+{"id": 4630, "it": "Attive"}
+{"id": 4631, "it": "Abbandonate"}
+{"id": 4632, "it": "Completate"}
+{"id": 4633, "it": "Nuovo testo"}
+{"id": 4634, "it": "Componente della nave"}
+{"id": 4635, "it": "TIPO COMP."}
+{"id": 4636, "it": "Descrizione del componente della nave"}
+{"id": 4637, "it": "STAT"}
+{"id": 4638, "it": "Equipaggia"}
+{"id": 4639, "it": "Scarta$"}
+{"id": 4640, "it": "Oggetto"}
+{"id": 4641, "it": "Descr."}
+{"id": 4642, "it": "Scarta"}
+{"id": 4643, "it": "Invia"}
+{"id": 4644, "it": "Missione"}
+{"id": 4645, "it": "Abbandona"}
+{"id": 4646, "it": "REGISTRAZIONE DELLA NAVE"}
+{"id": 4647, "it": "W.D. Corp"}
+{"id": 4648, "it": "Come ti vedranno le altre navi (quando NON sei rivelato)"}
+{"id": 4649, "it": "REPUTAZIONE DELL'EQUIPAGGIO"}
+{"id": 4650, "it": "C.U."}
+{"id": 4651, "it": "Come le fazioni vedono il tuo equipaggio (quando è rivelato)"}
+{"id": 4652, "it": "-2"}
+{"id": 4653, "it": "Odiato"}
+{"id": 4654, "it": "FAZIONE DELL'EQUIPAGGIO"}
+{"id": 4655, "it": "La fazione che ti assegnerà le missioni"}
+{"id": 4656, "it": "Comunicazioni a lungo raggio disattivate"}
+{"id": 4657, "it": "FRAMMENTI DI DATI"}
+{"id": 4658, "it": "Frammento"}
+{"id": 4659, "it": "Descr.$"}
+{"id": 4660, "it": "lorem"}
+{"id": 4661, "it": "test"}
+{"id": 4663, "it": "EQUIPAGGIA OGGETTO"}
+{"id": 4664, "it": "Pistola a fuoco"}
+{"id": 4665, "it": "[1] Nome"}
+{"id": 4666, "it": "[2] Nome"}
+{"id": 4667, "it": "[3] Nome"}
+{"id": 4668, "it": "[4] Nome"}
+{"id": 4669, "it": "[5] Nome"}
+{"id": 4670, "it": "[6] Nome"}
+{"id": 4671, "it": "CONTENITORE"}
+{"id": 4672, "it": "INVIA OGGETTO"}
+{"id": 4673, "it": "ACQUISTA"}
+{"id": 4674, "it": "VENDI"}
+{"id": 4675, "it": "Nome"}
+{"id": 4676, "it": "Prezzo"}
+{"id": 4677, "it": "ORDINA"}
+{"id": 4678, "it": "SCAMBIA"}
+{"id": 4679, "it": "TipoComp"}
+{"id": 4680, "it": "DA CEDERE"}
+{"id": 4681, "it": "DA OTTENERE"}
+{"id": 4682, "it": "Variazioni delle statistiche"}
+{"id": 4683, "it": "Cyberdifesa"}
+{"id": 4684, "it": "+1"}
+{"id": 4685, "it": "Conferma scambio"}
+{"id": 4686, "it": "Annulla scambio"}
+{"id": 4687, "it": "Rilassati"}
+{"id": 4688, "it": "Esplora"}
+{"id": 4689, "it": "Mani"}
+{"id": 4690, "it": "SNACK"}
+{"id": 4691, "it": "10"}
+{"id": 4692, "it": "Reimposta orientamento VR"}
+{"id": 4693, "it": "Attiva/disattiva torcia"}
+{"id": 4694, "it": "Salta la curvatura"}
+{"id": 4695, "it": "Occultamento personale"}
+{"id": 4696, "it": "Forza$Rigenerazione"}
+{"id": 4697, "it": "GAME OVER TRA"}
+{"id": 4698, "it": "02:00"}
+{"id": 4699, "it": "CARBURANTE"}
+{"id": 4700, "it": "CALORE"}
+{"id": 4701, "it": "SURRISCALDATO"}
+{"id": 4702, "it": "RESISTENZA"}
+{"id": 4703, "it": "RADIAZIONI"}
+{"id": 4704, "it": "SOVRACCARICO"}
+{"id": 4705, "it": "LA FONTE"}
+{"id": 4706, "it": "La Fonte"}
+{"id": 4707, "it": "4,400 / 12,200"}
+{"id": 4708, "it": "CACCIATORE DI RELIQUIE"}
+{"id": 4709, "it": "RAGGIO PRINCIPALE"}
+{"id": 4710, "it": "MISSILI"}
+{"id": 4711, "it": "200 m/s"}
+{"id": 4712, "it": "Orbita"}
+{"id": 4713, "it": "REATTORE"}
+{"id": 4714, "it": "TEMP 80%"}
+{"id": 4715, "it": "SPINTA 80MW"}
+{"id": 4716, "it": "T"}
+{"id": 4717, "it": "Trancia"}
+{"id": 4718, "it": "POTENZIAMENTO"}
+{"id": 4720, "it": "Chiudi"}
+{"id": 4721, "it": "Consigli"}
+{"id": 4722, "it": "AL COMPLETAMENTO DELLA RICARICA DEI MISSILI"}
+{"id": 4723, "it": "30.0 sec"}
+{"id": 4724, "it": "00:00:00"}
+{"id": 4725, "it": "@$@$"}
+{"id": 4726, "it": "HP"}
+{"id": 4727, "it": "O2"}
+{"id": 4728, "it": "CL"}
+{"id": 4729, "it": "100/100"}
+{"id": 4730, "it": "Biscotto del risveglio"}
+{"id": 4731, "it": "----------------"}
+{"id": 4732, "it": "TM"}
+{"id": 4733, "it": "100"}
+{"id": 4734, "it": "Hub"}
+{"id": 4735, "it": "Negozio esotico"}
+{"id": 4736, "it": "Negozio / Riparazioni"}
+{"id": 4737, "it": "Stazione di curvatura"}
+{"id": 4738, "it": "Cmdt. di settore"}
+{"id": 4739, "it": "Gara"}
+{"id": 4740, "it": "Cantiere di rottami"}
+{"id": 4741, "it": "Neutrale"}
+{"id": 4742, "it": "F.B."}
+{"id": 4743, "it": "Infetti"}
+{"id": 4744, "it": "10,000 Cr$<size=12>5,000 Cr</size>"}
+{"id": 4745, "it": "+150 Cr"}
+{"id": 4746, "it": "10,000 Cr"}
+{"id": 4747, "it": "+10"}
+{"id": 4748, "it": "v1.1 i84"}
+{"id": 4749, "it": "Gioca"}
+{"id": 4750, "it": "Carica partita"}
+{"id": 4751, "it": "Opzioni"}
+{"id": 4752, "it": "Aspetto"}
+{"id": 4753, "it": "NUOVO"}
+{"id": 4754, "it": "Statistiche"}
+{"id": 4755, "it": "Manuale$"}
+{"id": 4756, "it": "Crediti"}
+{"id": 4757, "it": "Esci dal gioco"}
+{"id": 4758, "it": "Segnala bug / Suggerimento"}
+{"id": 4759, "it": "Stato online"}
+{"id": 4760, "it": "Connesso a Steam"}
+{"id": 4761, "it": "------"}
+{"id": 4762, "it": "Steam Cloud"}
+{"id": 4763, "it": "Addestramento al combattimento"}
+{"id": 4764, "it": "Ordina per"}
+{"id": 4765, "it": "MOSTRA PARTITE PIENE"}
+{"id": 4766, "it": "Intrepid"}
+{"id": 4767, "it": "2 / 5"}
+{"id": 4768, "it": "MOSTRA PARTITE PRIVATE"}
+{"id": 4769, "it": "Password"}
+{"id": 4770, "it": "Unisciti a una partita privata"}
+{"id": 4771, "it": "Unisciti alla partita"}
+{"id": 4772, "it": "Annulla"}
+{"id": 4773, "it": "Unisciti a un equipaggio"}
+{"id": 4774, "it": "Regione"}
+{"id": 4775, "it": "Impossibile trovare equipaggi in modalità offline"}
+{"id": 4776, "it": "Vai online"}
+{"id": 4777, "it": "modifica"}
+{"id": 4778, "it": "Trova equipaggio"}
+{"id": 4779, "it": "Ricerca equipaggio"}
+{"id": 4780, "it": "Spec. d'armi"}
+{"id": 4781, "it": "Classi preferite per la ricerca"}
+{"id": 4782, "it": "OFFLINE"}
+{"id": 4783, "it": "ONLINE"}
+{"id": 4784, "it": "20 / 100 slot usati su Steam Cloud"}
+{"id": 4785, "it": "Pagina 1 / 4"}
+{"id": 4786, "it": "Nome della nave"}
+{"id": 4787, "it": "Modalità Ironman"}
+{"id": 4788, "it": "È una partita privata"}
+{"id": 4789, "it": "AVVIA"}
+{"id": 4790, "it": "Partita protetta$<color=#aaa>(solo giocatori Steam)</color>"}
+{"id": 4791, "it": "Ripristina impostazioni IA"}
+{"id": 4792, "it": "Personalizzata"}
+{"id": 4793, "it": "Esperto"}
+{"id": 4794, "it": "Standard"}
+{"id": 4795, "it": "Gioca online"}
+{"id": 4796, "it": "La Colonia perduta"}
+{"id": 4797, "it": "CAMPAGNA PRINCIPALE"}
+{"id": 4798, "it": "CAMPAGNA POLYTECHNIC"}
+{"id": 4799, "it": "In sviluppo"}
+{"id": 4800, "it": "Partita privata"}
+{"id": 4801, "it": "I salvataggi vengono eliminati al game over"}
+{"id": 4802, "it": "Inserisci la password..."}
+{"id": 4803, "it": "Partita protetta"}
+{"id": 4804, "it": "Le partite protette richiedono che tutti i giocatori siano connessi a Steam. Ciò consente di unirsi agli amici tramite l'elenco amici e di espellere i giocatori in base all'account."}
+{"id": 4805, "it": "Usa impostazioni personalizzate"}
+{"id": 4806, "it": "Galassia speculare"}
+{"id": 4807, "it": "Disattiva timer"}
+{"id": 4808, "it": "Dettagli"}
+{"id": 4809, "it": "Classe della nave"}
+{"id": 4810, "it": "TIPO DI NAVE"}
+{"id": 4811, "it": "Seleziona classe"}
+{"id": 4812, "it": "-"}
+{"id": 4813, "it": "Spec. d'armi"}
+{"id": 4814, "it": "Pronto"}
+{"id": 4815, "it": "Abbandona la partita"}
+{"id": 4816, "it": "Personalizza"}
+{"id": 4817, "it": "Personalizza aspetto"}
+{"id": 4818, "it": "Componenti della nave"}
+{"id": 4819, "it": "Modifica impostazioni di gioco"}
+{"id": 4820, "it": "Comandi"}
+{"id": 4821, "it": "Video"}
+{"id": 4822, "it": "Audio"}
+{"id": 4823, "it": "Gioco"}
+{"id": 4824, "it": "VR"}
+{"id": 4825, "it": "Disconnetti"}
+{"id": 4826, "it": "Statistiche"}
+{"id": 4827, "it": "Esci dal gioco"}
+{"id": 4828, "it": "Segnala un bug"}
+{"id": 4829, "it": "Qualità grafica$"}
+{"id": 4830, "it": "Minima"}
+{"id": 4831, "it": "Risoluzione$"}
+{"id": 4832, "it": "1024x768 @59hz"}
+{"id": 4833, "it": "Limite di frame rate"}
+{"id": 4834, "it": "Illimitato"}
+{"id": 4835, "it": "Qualità dell'illuminazione"}
+{"id": 4836, "it": "Minimo"}
+{"id": 4837, "it": "Texture"}
+{"id": 4838, "it": "Dimensione piena"}
+{"id": 4839, "it": "SMAA$"}
+{"id": 4840, "it": "No"}
+{"id": 4841, "it": "VSync"}
+{"id": 4842, "it": "Schermo intero"}
+{"id": 4843, "it": "Bloom"}
+{"id": 4844, "it": "Raggi solari"}
+{"id": 4845, "it": "SSAO"}
+{"id": 4846, "it": "Luminosità"}
+{"id": 4847, "it": "60"}
+{"id": 4848, "it": "Campo visivo"}
+{"id": 4849, "it": "Scala di rendering"}
+{"id": 4850, "it": "100%"}
+{"id": 4851, "it": "Volume della musica"}
+{"id": 4852, "it": "Volume effetti sonori"}
+{"id": 4853, "it": "Volume della chat vocale"}
+{"id": 4854, "it": "Chat vocale attiva"}
+{"id": 4855, "it": "Microfono attivo"}
+{"id": 4856, "it": "Premi per parlare"}
+{"id": 4857, "it": "Microfono (chat vocale)$"}
+{"id": 4858, "it": "Uscita audio (chat vocale)$"}
+{"id": 4859, "it": "Gestisci i ban"}
+{"id": 4860, "it": "Cambia regione"}
+{"id": 4861, "it": "Nome giocatore"}
+{"id": 4862, "it": "Consenti ai compagni di vedere il profilo Steam"}
+{"id": 4863, "it": "Mostra comandi"}
+{"id": 4864, "it": "Mostra numeri dei danni"}
+{"id": 4865, "it": "Mostra interfaccia di gioco"}
+{"id": 4866, "it": "Mostra notifiche"}
+{"id": 4867, "it": "Mostra interfaccia della salute dell'equipaggio"}
+{"id": 4868, "it": "Preferisci temperatura metrica"}
+{"id": 4869, "it": "Preferisci temperatura in Kelvin"}
+{"id": 4870, "it": "Dimensione del carattere della chat"}
+{"id": 4871, "it": "Larghezza schermo chat$"}
+{"id": 4872, "it": "Numero di righe chat$"}
+{"id": 4873, "it": "Scala interfaccia"}
+{"id": 4874, "it": "Margine interfaccia"}
+{"id": 4875, "it": "Inclinazione schermo"}
+{"id": 4876, "it": "Timer salvataggio automatico"}
+{"id": 4877, "it": "Salvataggio automatico"}
+{"id": 4878, "it": "Filtro volgarità"}
+{"id": 4879, "it": "Invia dati analitici"}
+{"id": 4880, "it": "Apri pagina sulla privacy dei dati"}
+{"id": 4881, "it": "Scuotimento della camera"}
+{"id": 4882, "it": "Cambia lingua"}
+{"id": 4883, "it": "Offset personalizzati del controller"}
+{"id": 4884, "it": "Metodo di controllo VR$"}
+{"id": 4885, "it": "Comandi standard"}
+{"id": 4886, "it": "Tipo di configurazione VR$"}
+{"id": 4887, "it": "In piedi / Seduto"}
+{"id": 4888, "it": "Regolazione automatica"}
+{"id": 4889, "it": "Scala di rendering VR"}
+{"id": 4890, "it": "Equipaggia nella mano sinistra"}
+{"id": 4891, "it": "Vignettatura di movimento"}
+{"id": 4892, "it": "Offset personalizzati"}
+{"id": 4893, "it": "Offset di profondità dell'interfaccia"}
+{"id": 4894, "it": "Rotazione a scatti"}
+{"id": 4895, "it": "Angolo di rotazione a scatti"}
+{"id": 4896, "it": "Camera di volo VR$(Prima persona forzata)"}
+{"id": 4897, "it": "Oculus Touch (sinistro)"}
+{"id": 4898, "it": "X"}
+{"id": 4899, "it": "Y"}
+{"id": 4900, "it": "Z"}
+{"id": 4901, "it": "POSIZIONE"}
+{"id": 4902, "it": "ROTAZIONE"}
+{"id": 4903, "it": "Oculus Touch (destro)"}
+{"id": 4904, "it": "Indietro"}
+{"id": 4905, "it": "SteamVR (destro)"}
+{"id": 4906, "it": "SteamVR (sinistro)"}
+{"id": 4907, "it": "Reimposta offset"}
+{"id": 4908, "it": "Menu collegato (destro)"}
+{"id": 4909, "it": "Menu collegato (sinistro)"}
+{"id": 4910, "it": "Carica profilo"}
+{"id": 4911, "it": "Salva profilo"}
+{"id": 4912, "it": "Reimposta associazioni"}
+{"id": 4913, "it": "Impostazioni di input"}
+{"id": 4914, "it": "Tastiera + mouse"}
+{"id": 4915, "it": "Associazioni tasti"}
+{"id": 4916, "it": "Gamepad / HOTAS"}
+{"id": 4917, "it": "Oculus Touch"}
+{"id": 4918, "it": "Controller Vive"}
+{"id": 4919, "it": "Usa cursore virtuale"}
+{"id": 4920, "it": "Il cursore virtuale è attivo anche quando si usano i gamepad"}
+{"id": 4921, "it": "Scatto (usa interruttore)"}
+{"id": 4922, "it": "Camera torretta fluida"}
+{"id": 4923, "it": "Smussamento del mouse"}
+{"id": 4924, "it": "Inverti Y (a piedi)"}
+{"id": 4925, "it": "Inverti Y (torretta/antenna)"}
+{"id": 4926, "it": "Inverti Y (pilotaggio)"}
+{"id": 4927, "it": "Sensibilità del mouse (a piedi)"}
+{"id": 4928, "it": "Sensibilità del mouse (pilotaggio)"}
+{"id": 4929, "it": "Sensibilità del mouse (torretta/antenna)"}
+{"id": 4930, "it": "Sensibilità del joystick"}
+{"id": 4931, "it": "Sensibilità del joystick (cursore)"}
+{"id": 4932, "it": "1/3"}
+{"id": 4933, "it": "Azione"}
+{"id": 4934, "it": "Dispositivo"}
+{"id": 4935, "it": "Tasto"}
+{"id": 4936, "it": "CONNESSO$-Controller Vive sinistro$-Controller Vive destro"}
+{"id": 4937, "it": "MODIFICA AZIONE"}
+{"id": 4938, "it": "Attiva postazione"}
+{"id": 4939, "it": "MODIFICA ASSE DI INPUT"}
+{"id": 4940, "it": "Nome dell'asse"}
+{"id": 4941, "it": "+0%"}
+{"id": 4942, "it": "Sensibilità"}
+{"id": 4943, "it": "Offset"}
+{"id": 4944, "it": "Joystick"}
+{"id": 4945, "it": "Asse"}
+{"id": 4946, "it": "-1.0"}
+{"id": 4947, "it": "Anteprima"}
+{"id": 4948, "it": "Inverti"}
+{"id": 4949, "it": "MODIFICA ASSE DEL PULSANTE VIRTUALE DI INPUT"}
+{"id": 4950, "it": "Impostazioni galassia personalizzate"}
+{"id": 4951, "it": "Settori e navi"}
+{"id": 4952, "it": "Modificatori"}
+{"id": 4953, "it": "Altro"}
+{"id": 4954, "it": "Reimposta (Standard)"}
+{"id": 4955, "it": "Dimensione della galassia"}
+{"id": 4956, "it": "Velocità di crescita del Caos"}
+{"id": 4957, "it": "Seme della galassia"}
+{"id": 4958, "it": "291029129"}
+{"id": 4959, "it": "Caos massimo"}
+{"id": 4960, "it": "Potenza delle navi nemiche"}
+{"id": 4961, "it": "Potenza dei modificatori dei droni"}
+{"id": 4962, "it": "Colonial Union (diffusione iniziale)"}
+{"id": 4963, "it": "Colonial Union (diffusione continua)"}
+{"id": 4964, "it": "W.D. Corp (diffusione iniziale)"}
+{"id": 4965, "it": "W.D. Corp (diffusione continua)"}
+{"id": 4966, "it": "Infetti (diffusione iniziale)"}
+{"id": 4967, "it": "Infetti (diffusione continua)"}
+{"id": 4968, "it": "Frequenza di comparsa dei negozi generici"}
+{"id": 4969, "it": "Frequenza di comparsa delle stazioni di curvatura"}
+{"id": 4970, "it": "Frequenza di comparsa dei cantieri di rottami"}
+{"id": 4971, "it": "Frequenza di comparsa delle nebulose"}
+{"id": 4972, "it": "Frequenza di comparsa dei cimiteri"}
+{"id": 4973, "it": "Frequenza di comparsa delle battaglie tra fazioni"}
+{"id": 4974, "it": "Frequenza di comparsa dei campi di asteroidi"}
+{"id": 4975, "it": "Frequenza di comparsa delle lune"}
+{"id": 4976, "it": "Frequenza di ricomparsa dei nemici planetari"}
+{"id": 4977, "it": "Frequenza di comparsa dei segnali"}
+{"id": 4978, "it": "Frequenza di comparsa dei cacciatori di taglie"}
+{"id": 4979, "it": "Frequenza dei rinforzi delle navi nemiche"}
+{"id": 4980, "it": "Nave dei giocatori"}
+{"id": 4981, "it": "Altre navi"}
+{"id": 4982, "it": "Velocità di ricarica degli scudi"}
+{"id": 4983, "it": "Velocità di carica della curvatura"}
+{"id": 4984, "it": "Potenza di spinta"}
+{"id": 4985, "it": "Output del reattore"}
+{"id": 4986, "it": "Danno energetico (inflitto)"}
+{"id": 4987, "it": "Danno fisico (inflitto)"}
+{"id": 4988, "it": "Reimposta (Esperto)"}
+{"id": 4989, "it": "q"}
+{"id": 4990, "it": "w"}
+{"id": 4991, "it": "r"}
+{"id": 4992, "it": "e"}
+{"id": 4993, "it": "y"}
+{"id": 4994, "it": "t"}
+{"id": 4995, "it": "u"}
+{"id": 4996, "it": "i"}
+{"id": 4997, "it": "k"}
+{"id": 4998, "it": "o"}
+{"id": 4999, "it": "p"}
+{"id": 5000, "it": "l"}
+{"id": 5001, "it": "j"}
+{"id": 5002, "it": "f"}
+{"id": 5003, "it": "h"}
+{"id": 5004, "it": "g"}
+{"id": 5005, "it": "d"}
+{"id": 5006, "it": "s"}
+{"id": 5007, "it": "a"}
+{"id": 5008, "it": "z"}
+{"id": 5009, "it": "c"}
+{"id": 5010, "it": "v"}
+{"id": 5011, "it": "n"}
+{"id": 5012, "it": "b"}
+{"id": 5013, "it": "m"}
+{"id": 5014, "it": ""}
+{"id": 5015, "it": "shift"}
+{"id": 5016, "it": "enter"}
+{"id": 5017, "it": "9"}
+{"id": 5018, "it": "7"}
+{"id": 5019, "it": "8"}
+{"id": 5020, "it": "<<"}
+{"id": 5021, "it": "Elenco statistiche"}
+{"id": 5022, "it": "Nome del tipo di nave"}
+{"id": 5023, "it": "Titolo"}
+{"id": 5024, "it": "Nome della lingua"}
+{"id": 5025, "it": "Inserisci qui la descrizione ..."}
+{"id": 5026, "it": "Descrizione"}
+{"id": 5027, "it": "Percorso della cartella dei contenuti"}
+{"id": 5028, "it": "Percorso dei contenuti"}
+{"id": 5029, "it": "Apri cartella"}
+{"id": 5030, "it": "Info sui contenuti"}
+{"id": 5031, "it": "Inserisci il percorso del file della miniatura (jpg/png)"}
+{"id": 5032, "it": "Percorso della miniatura"}
+{"id": 5033, "it": "Seleziona file"}
+{"id": 5034, "it": "Elimina"}
+{"id": 5035, "it": "Invia"}
+{"id": 5036, "it": "Visualizza su Steam Workshop"}
+{"id": 5037, "it": "Aggiornamento linguistico sul posto"}
+{"id": 5038, "it": "Da destra a sinistra"}
+{"id": 5039, "it": "Condividi su Workshop"}
+{"id": 5040, "it": "In una galassia ai margini dello spazio conosciuto, ogni nave e ogni stazione ricevette una strana trasmissione."}
+{"id": 5041, "it": "Parlava di un luogo chiamato la Colonia perduta, un resto delle Antiche Guerre che custodisce un segreto, capace di cambiare per sempre il corso della storia."}
+{"id": 5042, "it": "Quando il messaggio fu inviato, le sue coordinate andarono corrotte, frammentate. Per risalire all'origine della trasmissione bisogna raccogliere diversi pezzi dei dati dispersi."}
+{"id": 5043, "it": "Centinaia di persone sono partite alla ricerca della Colonia perduta, convinte che il primo a trovarla otterrà ricchezza e potere senza pari."}
+{"id": 5044, "it": "Alcuni equipaggi disperati cercano di ottenere questi cosiddetti “frammenti di dati” con ogni mezzo a loro disposizione."}
+{"id": 5045, "it": "Tuttavia, la frenetica caccia ai frammenti di dati non è l'unico fermento di guai nella galassia."}
+{"id": 5046, "it": "Con la rete di curvatura intergalattica interrotta e una specie invasiva nota come gli Infetti che si diffonde tra i settori, il caos sta crescendo."}
+{"id": 5047, "it": "Nessuno sa cosa ne sarà di questa galassia e dei suoi abitanti a tempo debito."}
+{"id": 5048, "it": "Come ufficiali della legittima Colonial Union"}
+{"id": 5049, "it": "dipendenti della W.D. Corporation, produttrice di armi"}
+{"id": 5050, "it": "membri della piratesca Alliance of Gentlemen"}
+{"id": 5051, "it": "un equipaggio di consegne della Fluffy Biscuit Company"}
+{"id": 5052, "it": "o civili neutrali privi di fazione"}
+{"id": 5053, "it": "sta a te decidere cosa farai."}
+{"id": 5054, "it": "Aiuterai a ristabilire l'ordine?"}
+{"id": 5055, "it": "Precipiterai la galassia ancora più nel caos?"}
+{"id": 5056, "it": "O ti unirai alla caccia alla leggendaria Colonia perduta?"}
+{"id": 5057, "it": "Danno"}
+{"id": 5058, "it": "Rifornimento munizioni"}
+{"id": 5059, "it": "Salute"}
+{"id": 5060, "it": "250/250"}
+{"id": 5061, "it": "Opzione 1"}
+{"id": 5062, "it": "Opzione 2"}
+{"id": 5063, "it": "+20"}
+{"id": 5064, "it": "Tenta di vendere 20 biscotti. Conclude l'interazione."}
+{"id": 5065, "it": "50%"}
+{"id": 5066, "it": "Nessuna vendita"}
+{"id": 5067, "it": "Troppi rifiuti. Riprova più tardi."}
+{"id": 5068, "it": "Rifiuti"}
+{"id": 5069, "it": "Casuale"}
+{"id": 5070, "it": "Genere"}
+{"id": 5071, "it": "Maschile"}
+{"id": 5072, "it": "Colore dei capelli (rosso)"}
+{"id": 5073, "it": "Colore dei capelli (verde)"}
+{"id": 5074, "it": "Colore dei capelli (blu)"}
+{"id": 5075, "it": "Colore tecnologico (blu)"}
+{"id": 5076, "it": "Colore tecnologico (verde)"}
+{"id": 5077, "it": "Colore tecnologico (rosso)"}
+{"id": 5078, "it": "Accessorio tecnologico"}
+{"id": 5079, "it": "Viso"}
+{"id": 5080, "it": "Capelli"}
+{"id": 5081, "it": "Barba e baffi$"}
+{"id": 5082, "it": "Basso"}
+{"id": 5083, "it": "Medio"}
+{"id": 5084, "it": "Alto"}
+{"id": 5085, "it": "Ultra"}
+{"id": 5086, "it": "240"}
+{"id": 5087, "it": "144"}
+{"id": 5088, "it": "90"}
+{"id": 5089, "it": "30"}
+{"id": 5090, "it": "Metà dimensione"}
+{"id": 5091, "it": "Un quarto di dimensione"}
+{"id": 5092, "it": "60%"}
+{"id": 5093, "it": "70%"}
+{"id": 5094, "it": "80%"}
+{"id": 5095, "it": "90%"}
+{"id": 5096, "it": "Controller di movimento"}
+{"id": 5097, "it": "Scala della stanza"}
+{"id": 5098, "it": "Razza/Genere"}
+{"id": 5099, "it": "Accessorio"}
+{"id": 5100, "it": "Barba e baffi"}
+{"id": 5101, "it": "Uniforme"}
+{"id": 5102, "it": "Tratti umani"}
+{"id": 5103, "it": "HA BISOGNO DI OSSIGENO"}
+{"id": 5104, "it": "SUBISCE DANNI DA TUTTI I TIPI DI AMBIENTE OSTILE"}
+{"id": 5105, "it": "PUÒ ESSERE RIANIMATO UNA VOLTA PER SALTO"}
+{"id": 5106, "it": "IMMUNITÀ AMBIENTALI"}
+{"id": 5107, "it": "CALORE ESTREMO"}
+{"id": 5108, "it": "TOSSICO"}
+{"id": 5109, "it": "FREDDO ESTREMO"}
+{"id": 5110, "it": "ASSENZA DI OSSIGENO"}
+{"id": 5111, "it": "Gli umani hanno recuperato parte della loro antica gloria dopo l'era oscura seguita alle Antiche Guerre e sono diventati una presenza intergalattica di primo piano. La loro innata spinta all'esplorazione li ha lanciati attraverso molte galassie, alla scoperta di nuovi mondi e aprendo la strada a chi sarebbe venuto dopo. Benché siano poco adatti a molti ambienti, la loro tenacia, il loro ingegno e la loro volontà di sopravvivere rivaleggiano con quelli delle specie più resistenti."}
+{"id": 5112, "it": "PUÒ OCCULTARSI PER BREVE TEMPO"}
+{"id": 5113, "it": "DEBOLEZZA CRITICA AL FUOCO"}
+{"id": 5114, "it": "IMMUNE AGLI AMBIENTI SENZA OSSIGENO E FREDDI"}
+{"id": 5115, "it": "CORAZZA DI BASE INFERIORE"}
+{"id": 5116, "it": "Tratti dei Sylvassi"}
+{"id": 5117, "it": "I mondi natali dei Sylvassi sono freddi e composti in gran parte da metano liquido, anche se molti Sylvassi sono cresciuti chiusi nelle loro tute. Un buon numero di quelli viventi oggi fa parte della prima generazione nata libera dai mondi di lavoro della W.D. Corporation dalla fine delle Antiche Guerre. Nell'ultimo secolo, sempre più Sylvassi hanno iniziato a seguire la propria strada: alcuni si sono uniti alla Colonial Union, altri hanno trovato rifugio nell'Alliance of Gentlemen, altri ancora hanno inseguito le proprie ambizioni e sono entrati per scelta nella W.D. Corporation."}
+{"id": 5118, "it": "Tratti dei robot"}
+{"id": 5119, "it": "IMMUNE AGLI AMBIENTI OSTILI"}
+{"id": 5120, "it": "PUÒ ESSERE CURATO CON IL RIPARATORE"}
+{"id": 5121, "it": "ELEVATA CAPACITÀ DI CARICO"}
+{"id": 5122, "it": "SALUTE DI BASE DI 60"}
+{"id": 5123, "it": "I robot umanoidi sono comuni nelle galassie della Colonial Union e sono spesso impiegati nelle stazioni commerciali automatizzate o in lavori svolti in condizioni altrimenti pericolose per gli organismi viventi. Di recente, però, è aumentato il numero di macchine apparentemente senzienti che si uniscono agli equipaggi e ricoprono ruoli tradizionalmente svolti da persone biologiche. Poiché i robot sono particolarmente resistenti agli ambienti ostili, sono ideali per le missioni planetarie e per i pericoli imprevisti del lavoro a bordo di un'astronave."}
+{"id": 5124, "it": "Umano"}
+{"id": 5125, "it": "Robot"}
+{"id": 5126, "it": "Femminile"}
+{"id": 5127, "it": "Colore della pelle"}
+{"id": 5128, "it": "Anteprima della fazione"}
+{"id": 5129, "it": "Saturazione"}
+{"id": 5130, "it": "Tonalità"}
+{"id": 5131, "it": "Colore degli occhi"}
+{"id": 5132, "it": "Colore delle labbra"}
+{"id": 5133, "it": "Colore dei capelli"}
+{"id": 5134, "it": "Colore alternativo del corpo"}
+{"id": 5135, "it": "Colore del corpo"}
+{"id": 5136, "it": "Visita un chiosco del barbiere per modificare l'aspetto"}
+{"id": 5137, "it": "La nave dei giocatori {0}è in allerta rossa"}
+{"id": 5138, "it": "NON"}
+{"id": 5139, "it": "La nave dei giocatori {0}è in allerta gialla"}
+{"id": 5140, "it": "La nave dei giocatori {0}è in allerta verde"}
+{"id": 5141, "it": "L'ordine attuale del Capitano è {0}{1}"}
+{"id": 5142, "it": "(C"}
+{"id": 5143, "it": ")"}
+{"id": 5144, "it": "L'integrità dello scafo è inferiore alla percentuale indicata."}
+{"id": 5145, "it": "L'integrità dello scafo è superiore o uguale alla percentuale indicata."}
+{"id": 5146, "it": "L'integrità degli scudi è inferiore alla percentuale indicata."}
+{"id": 5147, "it": "L'integrità degli scudi è superiore o uguale alla percentuale indicata."}
+{"id": 5148, "it": "La temperatura del reattore è superiore alla percentuale indicata."}
+{"id": 5149, "it": "La temperatura del reattore è inferiore o uguale alla percentuale indicata."}
+{"id": 5150, "it": "L'utilizzo del reattore è superiore alla percentuale indicata."}
+{"id": 5151, "it": "L'utilizzo del reattore è inferiore o uguale alla percentuale indicata."}
+{"id": 5152, "it": "La velocità di produzione di ossigeno è inferiore al valore indicato."}
+{"id": 5153, "it": "La velocità di produzione di ossigeno è superiore o uguale al valore indicato."}
+{"id": 5154, "it": "Il motore a curvatura è attualmente in carica."}
+{"id": 5155, "it": "Il motore a curvatura non è attualmente in carica."}
+{"id": 5156, "it": "Non c'è nessuna nave bersaglio."}
+{"id": 5157, "it": "C'è una nave bersaglio."}
+{"id": 5158, "it": "La nave ha subito danni allo scafo negli ultimi secondi indicati."}
+{"id": 5159, "it": "La nave non ha subito danni allo scafo negli ultimi secondi indicati."}
+{"id": 5160, "it": "La nave ha subito danni agli scudi negli ultimi secondi indicati."}
+{"id": 5161, "it": "La nave non ha subito danni agli scudi negli ultimi secondi indicati."}
+{"id": 5162, "it": "Lo scafo della nave bersaglio è inferiore alla percentuale indicata."}
+{"id": 5163, "it": "Lo scafo della nave bersaglio è superiore o uguale alla percentuale indicata."}
+{"id": 5164, "it": "Il motore a curvatura è completamente carico e la nave è pronta al salto."}
+{"id": 5165, "it": "Il motore a curvatura non è completamente carico."}
+{"id": 5166, "it": "Un nuovo ordine del Capitano è stato annunciato negli ultimi secondi indicati."}
+{"id": 5167, "it": "Un nuovo ordine del Capitano non è stato annunciato negli ultimi secondi indicati."}
+{"id": 5168, "it": "Il membro d'equipaggio IA ha subito danni personali negli ultimi secondi indicati."}
+{"id": 5169, "it": "Il membro d'equipaggio IA non ha subito danni personali negli ultimi secondi indicati."}
+{"id": 5170, "it": "La salute personale del membro d'equipaggio IA è superiore alla percentuale indicata."}
+{"id": 5171, "it": "La salute personale del membro d'equipaggio IA è inferiore o uguale alla percentuale indicata."}
+{"id": 5172, "it": "Il membro d'equipaggio IA è vivo da più dei secondi indicati."}
+{"id": 5173, "it": "Il membro d'equipaggio IA non è vivo da più dei secondi indicati."}
+{"id": 5174, "it": "Gli scudi della nave bersaglio sono inferiori alla percentuale indicata."}
+{"id": 5175, "it": "Gli scudi della nave bersaglio sono superiori o uguali alla percentuale indicata."}
+{"id": 5176, "it": "Il refrigerante è inferiore alla percentuale indicata."}
+{"id": 5177, "it": "Il refrigerante è superiore o uguale alla percentuale indicata."}
+{"id": 5178, "it": "L'interruttore 1 del quadro di avvio della nave è acceso."}
+{"id": 5179, "it": "L'interruttore 1 del quadro di avvio della nave è spento."}
+{"id": 5180, "it": "L'interruttore 2 del quadro di avvio della nave è acceso."}
+{"id": 5181, "it": "L'interruttore 2 del quadro di avvio della nave è spento."}
+{"id": 5182, "it": "L'interruttore 3 del quadro di avvio della nave è acceso."}
+{"id": 5183, "it": "L'interruttore 3 del quadro di avvio della nave è spento."}
+{"id": 5184, "it": "Il membro d'equipaggio IA è a bordo di una nave nemica."}
+{"id": 5185, "it": "Il membro d'equipaggio IA non è a bordo di una nave nemica."}
+{"id": 5186, "it": "Il Capitano non si trova in questo luogo (altra nave, pianeta, stazione, ecc.)"}
+{"id": 5187, "it": "Il Capitano si trova in questo luogo (stessa nave, pianeta, stazione, ecc.)"}
+{"id": 5188, "it": "Un altro membro dell'equipaggio sta pilotando la nave."}
+{"id": 5189, "it": "Un altro membro dell'equipaggio non sta pilotando la nave."}
+{"id": 5190, "it": "Il numero di incendi sulla nave è superiore al valore indicato."}
+{"id": 5191, "it": "Il numero di incendi sulla nave è inferiore o uguale al valore indicato."}
+{"id": 5192, "it": "La media ponderata dei danni ai sistemi della nave è superiore alla percentuale indicata."}
+{"id": 5193, "it": "La media ponderata dei danni ai sistemi della nave è inferiore o uguale alla percentuale indicata."}
+{"id": 5194, "it": "Il numero di invasori a bordo della nave è superiore al valore indicato."}
+{"id": 5195, "it": "Il numero di invasori a bordo della nave è inferiore o uguale al valore indicato."}
+{"id": 5196, "it": "Una nave è disponibile per l'abbordaggio. (Gli scudi quantistici della nave bersaglio sono offline)."}
+{"id": 5197, "it": "Nessuna nave è disponibile per l'abbordaggio. (Gli scudi quantistici della nave bersaglio sono online)."}
+{"id": 5198, "it": "Il numero di navi attualmente ostili nel settore è superiore al valore indicato."}
+{"id": 5199, "it": "Il numero di navi attualmente ostili nel settore è inferiore o uguale al valore indicato."}
+{"id": 5200, "it": "Il numero di navi attualmente neutrali nel settore è superiore al valore indicato."}
+{"id": 5201, "it": "Il numero di navi attualmente neutrali nel settore è inferiore o uguale al valore indicato."}
+{"id": 5202, "it": "Non ancora implementato"}
+{"id": 5203, "it": "C'è un buco nero nel settore attuale."}
+{"id": 5204, "it": "Non c'è un buco nero nel settore attuale."}
+{"id": 5205, "it": "C'è una stella pericolosa nel settore attuale."}
+{"id": 5206, "it": "Non c'è una stella pericolosa nel settore attuale."}
+{"id": 5207, "it": "Il numero di virus che colpiscono la nave è superiore al valore indicato."}
+{"id": 5208, "it": "Il numero di virus che colpiscono la nave è inferiore o uguale al valore indicato."}
+{"id": 5209, "it": "Il numero di rottami spaziali non raccolti nel settore è superiore al valore indicato."}
+{"id": 5210, "it": "Il numero di rottami spaziali non raccolti nel settore è inferiore o uguale al valore indicato."}
+{"id": 5211, "it": "Il numero di mine nel settore è superiore al valore indicato."}
+{"id": 5212, "it": "Il numero di mine nel settore è inferiore o uguale al valore indicato."}
+{"id": 5213, "it": "Una testata nucleare è stata armata sulla nave attuale."}
+{"id": 5214, "it": "Nessuna testata nucleare è stata armata sulla nave attuale."}
+{"id": 5215, "it": "Il numero di missili installati sulla nave attuale è superiore al valore indicato."}
+{"id": 5216, "it": "Il numero di missili installati sulla nave attuale è inferiore o uguale al valore indicato."}
+{"id": 5217, "it": "Il numero di slot di stiva vuoti sulla nave attuale è superiore al valore indicato."}
+{"id": 5218, "it": "Il numero di slot di stiva vuoti sulla nave attuale è inferiore o uguale al valore indicato."}
+{"id": 5219, "it": "C'è un deposito di riparazione nel settore attuale."}
+{"id": 5220, "it": "Non c'è un deposito di riparazione nel settore attuale."}
+{"id": 5221, "it": "Il Capitano ha impostato un punto di passaggio attivo sulla mappa stellare."}
+{"id": 5222, "it": "Il Capitano non ha impostato un punto di passaggio attivo sulla mappa stellare."}
+{"id": 5223, "it": "I sistemi ingegneristici della nave bersaglio sono superiori alla percentuale indicata."}
+{"id": 5224, "it": "I sistemi ingegneristici della nave bersaglio sono inferiori o uguali alla percentuale indicata."}
+{"id": 5225, "it": "I sistemi scientifici della nave bersaglio sono superiori alla percentuale indicata."}
+{"id": 5226, "it": "I sistemi scientifici della nave bersaglio sono inferiori o uguali alla percentuale indicata."}
+{"id": 5227, "it": "I sistemi di supporto vitale della nave bersaglio sono superiori alla percentuale indicata."}
+{"id": 5228, "it": "I sistemi di supporto vitale della nave bersaglio sono inferiori o uguali alla percentuale indicata."}
+{"id": 5229, "it": "I sistemi d'arma della nave bersaglio sono superiori alla percentuale indicata."}
+{"id": 5230, "it": "I sistemi d'arma della nave bersaglio sono inferiori o uguali alla percentuale indicata."}
+{"id": 5231, "it": "La salute del sistema ingegneristico è superiore alla percentuale indicata."}
+{"id": 5232, "it": "La salute del sistema ingegneristico è inferiore o uguale alla percentuale indicata."}
+{"id": 5233, "it": "La salute del sistema scientifico è superiore alla percentuale indicata."}
+{"id": 5234, "it": "La salute del sistema scientifico è inferiore o uguale alla percentuale indicata."}
+{"id": 5235, "it": "La salute del sistema di supporto vitale è superiore alla percentuale indicata."}
+{"id": 5236, "it": "La salute del sistema di supporto vitale è inferiore o uguale alla percentuale indicata."}
+{"id": 5237, "it": "La salute del sistema d'arma è superiore alla percentuale indicata."}
+{"id": 5238, "it": "La salute del sistema d'arma è inferiore o uguale alla percentuale indicata."}
+{"id": 5239, "it": "La nave bersaglio è un veicolo senza equipaggio."}
+{"id": 5240, "it": "La nave bersaglio è un veicolo con equipaggio."}
+{"id": 5241, "it": "La nave bersaglio è una creatura Infetta."}
+{"id": 5242, "it": "La nave bersaglio non è una creatura Infetta."}
+{"id": 5243, "it": "La nave bersaglio si trova entro il numero di chilometri indicato."}
+{"id": 5244, "it": "La nave bersaglio non si trova entro il numero di chilometri indicato."}
+{"id": 5245, "it": "Un bersaglio ostile è in vista del membro d'equipaggio IA."}
+{"id": 5246, "it": "Un bersaglio ostile non è in vista del membro d'equipaggio IA."}
+{"id": 5247, "it": "Il membro d'equipaggio IA si trova sulla superficie di un pianeta."}
+{"id": 5248, "it": "Il membro d'equipaggio IA non si trova sulla superficie di un pianeta."}
+{"id": 5249, "it": "La nave ha subito perlopiù danni energetici negli ultimi 10 secondi"}
+{"id": 5250, "it": "La nave ha subito perlopiù danni fisici negli ultimi 10 secondi"}
+{"id": 5251, "it": "La distanza dall'incendio più vicino è inferiore al numero di metri indicato."}
+{"id": 5252, "it": "La distanza dall'incendio più vicino è superiore o uguale al numero di metri indicato."}
+{"id": 5253, "it": "La salute del sistema di bordo vicino è inferiore alla percentuale indicata."}
+{"id": 5254, "it": "La salute del sistema di bordo vicino è superiore o uguale alla percentuale indicata."}
+{"id": 5255, "it": "La scorta complessiva di munizioni è inferiore alla percentuale indicata."}
+{"id": 5256, "it": "La scorta complessiva di munizioni è superiore o uguale alla percentuale indicata."}
+{"id": 5257, "it": "Ci sono munizioni disponibili nelle vicinanze."}
+{"id": 5258, "it": "NON ci sono munizioni disponibili nelle vicinanze."}
+{"id": 5259, "it": "La nave attuale è in condizioni critiche"}
+{"id": 5260, "it": "La nave attuale NON è in condizioni critiche"}
+{"id": 5261, "it": "La nave attuale è allineata al settore bersaglio"}
+{"id": 5262, "it": "La nave attuale NON è allineata al settore bersaglio"}
+{"id": 5263, "it": "Nel settore ci sono potenziali clienti di biscotti"}
+{"id": 5264, "it": "Nel settore NON ci sono potenziali clienti di biscotti"}
+{"id": 5265, "it": "Può vendere biscotti"}
+{"id": 5266, "it": "NON può vendere biscotti"}
+{"id": 5267, "it": "La nave attuale dispone di un sistema di occultamento"}
+{"id": 5268, "it": "La nave attuale NON dispone di un sistema di occultamento"}
+{"id": 5269, "it": "La nave attuale sta preparando il sistema di occultamento"}
+{"id": 5270, "it": "La nave attuale NON sta preparando il sistema di occultamento"}
+{"id": 5271, "it": "La nave attuale è occultata"}
+{"id": 5272, "it": "La nave attuale NON è occultata"}
+{"id": 5273, "it": "Un compagno riparabile è nelle vicinanze"}
+{"id": 5274, "it": "Un compagno riparabile NON è nelle vicinanze"}
+{"id": 5275, "it": "Il riparatore è equipaggiato"}
+{"id": 5276, "it": "Il riparatore NON è equipaggiato"}
+{"id": 5277, "it": "Un compagno vicino può essere rianimato"}
+{"id": 5278, "it": "Un compagno vicino NON può essere rianimato"}
+{"id": 5279, "it": "L'equipaggio è attualmente in gara"}
+{"id": 5280, "it": "L'equipaggio NON è attualmente in gara"}
+{"id": 5281, "it": "L'oggetto curativo è equipaggiato"}
+{"id": 5282, "it": "L'oggetto curativo NON è equipaggiato"}
+{"id": 5283, "it": "Un compagno curabile è nelle vicinanze"}
+{"id": 5284, "it": "Un compagno curabile NON è nelle vicinanze"}
+{"id": 5285, "it": "Le capsule di carburante sulla nave attuale sono maggiori o uguali a X"}
+{"id": 5286, "it": "Le capsule di carburante sulla nave attuale sono meno di X"}
+{"id": 5287, "it": "Le cariche di programma non riempite sulla nave attuale sono maggiori o uguali a X"}
+{"id": 5288, "it": "Le cariche di programma non riempite sulla nave attuale sono meno di X"}
+{"id": 5289, "it": "La nave attuale ha una testata nucleare installata"}
+{"id": 5290, "it": "La nave attuale NON ha una testata nucleare installata"}
+{"id": 5291, "it": "Stazione di curvatura a lungo raggio attiva nel settore"}
+{"id": 5292, "it": "Nessuna stazione di curvatura a lungo raggio attiva nel settore"}
+{"id": 5293, "it": "{0}Allerta rossa"}
+{"id": 5294, "it": "{0}Allerta gialla"}
+{"id": 5295, "it": "{0}Allerta verde"}
+{"id": 5296, "it": "Scafo {1} {0}%"}
+{"id": 5297, "it": ">="}
+{"id": 5298, "it": "Scudi {1} {0}%"}
+{"id": 5299, "it": "Temp. reattore {1} {0}%"}
+{"id": 5300, "it": "<="}
+{"id": 5301, "it": "Utilizzo reattore {1} {0}%"}
+{"id": 5302, "it": "Velocità ricarica ossigeno {1} {0}"}
+{"id": 5303, "it": "Motore a curvatura{0} in carica"}
+{"id": 5304, "it": "NON"}
+{"id": 5305, "it": "{0} nave bersaglio"}
+{"id": 5306, "it": "CON"}
+{"id": 5307, "it": "{1}danni allo scafo (ultimi {0} secondi)"}
+{"id": 5308, "it": "SENZA"}
+{"id": 5309, "it": "{1}danni agli scudi (ultimi {0} secondi)"}
+{"id": 5310, "it": "Scafo nave bersaglio {1} {0}%"}
+{"id": 5311, "it": "Motore a curvatura{0} pronto"}
+{"id": 5312, "it": "{1}nuovo ordine del Capitano (ultimi {0} secondi)"}
+{"id": 5313, "it": "{1} danno personale (ultimi {0} secondi)"}
+{"id": 5314, "it": "Subito"}
+{"id": 5315, "it": "Salute personale {1} {0}%"}
+{"id": 5316, "it": "Tempo in vita {1} {0} secondi"}
+{"id": 5317, "it": "Scudi nave bersaglio {1} {0}%"}
+{"id": 5318, "it": "Refrigerante {1} {0}%"}
+{"id": 5319, "it": "L'interruttore di avvio 1 è {0}"}
+{"id": 5320, "it": "ON"}
+{"id": 5321, "it": "OFF"}
+{"id": 5322, "it": "L'interruttore di avvio 2 è {0}"}
+{"id": 5323, "it": "L'interruttore di avvio 3 è {0}"}
+{"id": 5324, "it": "{0}su nave ostile"}
+{"id": 5325, "it": "Capitano {0}in un'altra area"}
+{"id": 5326, "it": "{0} altro sta pilotando"}
+{"id": 5327, "it": "Qualcuno"}
+{"id": 5328, "it": "Nessuno"}
+{"id": 5329, "it": "Incendi sulla nave attuale {1} {0}"}
+{"id": 5330, "it": "Importanza riparazione sist. {1} {0}%"}
+{"id": 5331, "it": "N. invasori a bordo {1} {0}"}
+{"id": 5332, "it": "Nave da abbordare {0}"}
+{"id": 5333, "it": "Esiste"}
+{"id": 5334, "it": "NON esiste"}
+{"id": 5335, "it": "Numero di navi ostili {1} {0}"}
+{"id": 5336, "it": "Numero di navi neutrali {1} {0}"}
+{"id": 5337, "it": "La scansione EM ha restituito{0} risultati"}
+{"id": 5338, "it": "ZERO"}
+{"id": 5339, "it": "Buco nero{0} nel settore"}
+{"id": 5340, "it": "Stella pericolosa{0} nel settore"}
+{"id": 5341, "it": "Numero di virus sulla nave {1} {0}"}
+{"id": 5342, "it": "Numero di rottami nel settore {1} {0}"}
+{"id": 5343, "it": "Numero di mine nel settore {1} {0}"}
+{"id": 5344, "it": "Testata nucleare{0} armata"}
+{"id": 5345, "it": "Missili installati {1} {0}"}
+{"id": 5346, "it": "Numero di slot di stiva vuoti {1} {0}"}
+{"id": 5347, "it": "Deposito di riparazione{0} nelle vicinanze"}
+{"id": 5348, "it": "{0}punto di passaggio attivo"}
+{"id": 5349, "it": "Ingegneria nave bersaglio {1} {0}%"}
+{"id": 5350, "it": "Scienza nave bersaglio {1} {0}%"}
+{"id": 5351, "it": "Supporto vitale nave bersaglio {1} {0}%"}
+{"id": 5352, "it": "Sist. armi nave bersaglio {1} {0}%"}
+{"id": 5353, "it": "Ingegneria {1} {0}%"}
+{"id": 5354, "it": "Scienza {1} {0}%"}
+{"id": 5355, "it": "Supporto vitale {1} {0}%"}
+{"id": 5356, "it": "Sist. armi {1} {0}%"}
+{"id": 5357, "it": "La nave bersaglio {0}è un drone"}
+{"id": 5358, "it": "La nave bersaglio {0}è Infetta"}
+{"id": 5359, "it": "La nave bersaglio {1}è entro {0} km"}
+{"id": 5360, "it": "{0}bersaglio ostile in vista"}
+{"id": 5361, "it": "{0}sulla superficie del pianeta"}
+{"id": 5362, "it": "Danno energetico subito {0} fisico (ultimi 10 sec)"}
+{"id": 5363, "it": "Distanza dall'incendio più vicino {1} {0}m"}
+{"id": 5364, "it": "Salute del sistema di bordo vicino {1} {0}%"}
+{"id": 5365, "it": "Munizioni rimaste {1} {0}%"}
+{"id": 5366, "it": "Le munizioni sono {0}nelle vicinanze"}
+{"id": 5367, "it": "La nave attuale è {0}in condizioni critiche"}
+{"id": 5368, "it": "La nave è {0}allineata"}
+{"id": 5369, "it": "Potenziali clienti {0}nel settore"}
+{"id": 5370, "it": "{0}Può vendere biscotti"}
+{"id": 5371, "it": "La nave attuale {0}dispone di un sistema di occultamento"}
+{"id": 5372, "it": "La nave attuale {0}sta preparando il sistema di occultamento"}
+{"id": 5373, "it": "La nave attuale {0}è occultata"}
+{"id": 5374, "it": "Un compagno riparabile {0}è nelle vicinanze"}
+{"id": 5375, "it": "Il riparatore {0}è equipaggiato"}
+{"id": 5376, "it": "Un compagno vicino {0}può essere rianimato"}
+{"id": 5377, "it": "L'equipaggio {0}è attualmente in gara"}
+{"id": 5378, "it": "L'oggetto curativo {0}è equipaggiato"}
+{"id": 5379, "it": "Un compagno ferito {0}è nelle vicinanze"}
+{"id": 5380, "it": "Capsule di carburante della nave attuale {1} {0}"}
+{"id": 5381, "it": "Cariche di programma non riempite della nave attuale {1} {0}"}
+{"id": 5382, "it": "La nave attuale ha una testata nucleare"}
+{"id": 5383, "it": "La nave attuale NON ha una testata nucleare"}
+{"id": 5384, "it": "Livello di combattimento della nave bersaglio {1} {0}% del nostro"}
+{"id": 5385, "it": "Il Capitano {0}è seduto sulla Poltrona del Capitano"}
+{"id": 5386, "it": "La stabilità del reattore è {1} {0}%"}
+{"id": 5387, "it": "La nave è fuori curvatura da {1} {0} secondi"}
+{"id": 5388, "it": "La nave è in curvatura da {1} {0} secondi"}
+{"id": 5389, "it": "Il motore a curvatura della nave bersaglio è carico {1} {0}%"}
+{"id": 5390, "it": "Il segnale di soccorso della nave bersaglio {0}è attivo"}
+{"id": 5391, "it": "La traiettoria della testata nucleare {0}è libera"}
+{"id": 5392, "it": "La nave {0}è all'interno di un deposito di riparazione"}
+{"id": 5393, "it": "Il Capitano {0}è a bordo di una nave"}
+{"id": 5394, "it": "Scafo della nave bersaglio {1} {0}% del nostro"}
+{"id": 5395, "it": "L'ultima volta che si è svolta questa priorità {1} {0} sec fa"}
+{"id": 5396, "it": "Corazza della nave bersaglio {1} {0}% della nostra"}
+{"id": 5397, "it": "Scudi della nave bersaglio {1} {0}% dei nostri"}
+{"id": 5398, "it": "Tempo dalla ricarica manuale del programma {1} {0} sec"}
+{"id": 5399, "it": "Il reattore è attualmente {0}in overclock"}
+{"id": 5400, "it": "La sicurezza del nucleo del reattore è {0}attiva"}
+{"id": 5401, "it": "La nave bersaglio {0}può essere rilevata al momento"}
+{"id": 5402, "it": "Gli scudi quantistici sono {0}online"}
+{"id": 5403, "it": "Sovraccarico {1} {0}%"}
+{"id": 5404, "it": "Il nucleo del reattore {0}è in fusione"}
+{"id": 5405, "it": "La nave {0}ha un reattore installato"}
+{"id": 5406, "it": "Il nucleo del reattore è stato {0}espulso di recente"}
+{"id": 5407, "it": "L'estintore {0}è equipaggiato"}
+{"id": 5408, "it": "I membri dell'equipaggio sono {0}tutti robot"}
+{"id": 5409, "it": "Scafo < X%"}
+{"id": 5410, "it": "Scudi < X%"}
+{"id": 5411, "it": "Temp. reattore > X%"}
+{"id": 5412, "it": "Utilizzo reattore > X%"}
+{"id": 5413, "it": "Velocità ricarica ossigeno < X"}
+{"id": 5414, "it": "Motore a curvatura in carica"}
+{"id": 5415, "it": "Nessuna nave bersaglio"}
+{"id": 5416, "it": "Danni allo scafo subiti (ultimi X secondi)"}
+{"id": 5417, "it": "Danni agli scudi subiti (ultimi X secondi)"}
+{"id": 5418, "it": "Scafo nave bersaglio < X%"}
+{"id": 5419, "it": "Motore a curvatura pronto"}
+{"id": 5420, "it": "Nuovo ordine del Capitano (ultimi X secondi)"}
+{"id": 5421, "it": "Danni di combattimento personali subiti (ultimi X secondi)"}
+{"id": 5422, "it": "Salute personale > X%"}
+{"id": 5423, "it": "Tempo in vita > X secondi"}
+{"id": 5424, "it": "Refrigerante < X%"}
+{"id": 5425, "it": "Su nave ostile"}
+{"id": 5426, "it": "La nave ha {0}pilota attivo"}
+{"id": 5427, "it": "Salute media sist. {1} {0}%"}
+{"id": 5428, "it": "N. invasori a bordo > X"}
+{"id": 5429, "it": "La nave da abbordare esiste"}
+{"id": 5430, "it": "Deposito di riparazione nel settore"}
+{"id": 5431, "it": "Punto di passaggio attivo"}
+{"id": 5432, "it": "Distanza dalla nave bersaglio (km)"}
+{"id": 5433, "it": "Bersaglio ostile in vista"}
+{"id": 5434, "it": "Sulla superficie del pianeta"}
+{"id": 5435, "it": "Incendio vicino (entro X m)"}
+{"id": 5436, "it": "Salute del sistema di bordo vicino < X%"}
+{"id": 5437, "it": "Un compagno vicino ha bisogno di rianimazione"}
+{"id": 5438, "it": "La nave è in gara"}
+{"id": 5439, "it": "Ha un oggetto curativo equipaggiato"}
+{"id": 5440, "it": "La nave attuale ha almeno X capsule di carburante"}
+{"id": 5441, "it": "La nave attuale ha almeno X cariche di programma non riempite"}
+{"id": 5442, "it": "Stazione di curvatura a lungo raggio attiva"}
+{"id": 5443, "it": "Ha un estintore equipaggiato"}
+{"id": 5444, "it": "I membri dell'equipaggio sono {0}tutti androidi"}
+{"id": 5445, "it": "investigator_speed"}
+{"id": 5446, "it": "CRW"}
+{"id": 5447, "it": "La tua nave è stata segnalata a causa di un'ispezione fallita!"}
+{"id": 5448, "it": "Contrabbando trovato!"}
+{"id": 5449, "it": "[SRCH]"}
+{"id": 5450, "it": "Ricerca completata!"}
+{"id": 5451, "it": "Guardia"}
+{"id": 5452, "it": "PLRoamingSecurityGuardRobot::Update"}
+{"id": 5453, "it": "Bandito"}
+{"id": 5454, "it": "Élite"}
+{"id": 5481, "it": ": +"}
+{"id": 5482, "it": "munizioni grazie a"}
+{"id": 5483, "it": "FRG"}
+{"id": 5484, "it": "Scafo riparato di"}
+{"id": 5485, "it": "integrità di"}
+{"id": 5486, "it": "+"}
+{"id": 5487, "it": "Cr grazie a"}
+{"id": 5488, "it": "+1 rottame lavorato grazie a"}
+{"id": 5489, "it": "+15% di ricarica del refrigerante grazie a"}
+{"id": 5507, "it": "WD"}
+{"id": 5508, "it": "CU"}
+{"id": 5509, "it": "GT"}
+{"id": 5510, "it": "FL"}
+{"id": 5511, "it": "PT"}
+{"id": 5512, "it": "Mine"}
+{"id": 5513, "it": "Rottami"}
+{"id": 5525, "it": "Outrider"}
+{"id": 5528, "it": "Stargazer"}
+{"id": 5540, "it": "Roland"}
+{"id": 5544, "it": "Carrier"}
+{"id": 5548, "it": "Alchemist"}
+{"id": 5562, "it": "Grim Cutlass"}
+{"id": 5563, "it": "U.S.S."}
+{"id": 5564, "it": "The"}
+{"id": 5565, "it": "Unità"}
+{"id": 5566, "it": ", Div #"}
+{"id": 5567, "it": "N/A"}
+{"id": 5568, "it": "Cacciatore di reliquie rilevato"}
+{"id": 5569, "it": "WRN"}
+{"id": 5570, "it": "frontlines sec ship:    fac:"}
+{"id": 5571, "it": "type:"}
+{"id": 5572, "it": "PlayerEnter: setup drone mods"}
+{"id": 5573, "it": "DelayedSetup"}
+{"id": 5574, "it": "dso - new data:"}
+{"id": 5575, "it": "dso - found data:"}
+{"id": 5576, "it": "Health:"}
+{"id": 5577, "it": "DestroyedMsgSent:"}
+{"id": 5578, "it": "RuinsLavaOffset"}
+{"id": 5579, "it": "RuinsLavaMoving"}
+{"id": 5580, "it": "TRUE"}
+{"id": 5581, "it": "InitGameCustomLoadFunction     LevelID"}
+{"id": 5582, "it": "StormPS"}
+{"id": 5583, "it": "SpaceInteriorAABB"}
+{"id": 5584, "it": "Instance"}
+{"id": 5585, "it": "(Instance)"}
+{"id": 5586, "it": "Yellow Bolt"}
+{"id": 5587, "it": "Upshot"}
+{"id": 5588, "it": "Clean Getaway"}
+{"id": 5589, "it": "Misdirection"}
+{"id": 5590, "it": "Driftmaster"}
+{"id": 5591, "it": "Slipstream"}
+{"id": 5592, "it": "Guasto critico del sistema!"}
+{"id": 5593, "it": "The Breakneck Bunch"}
+{"id": 5594, "it": "Dominator"}
+{"id": 5595, "it": "Right of Way"}
+{"id": 5596, "it": "Solar Flare"}
+{"id": 5597, "it": "After-Image"}
+{"id": 5598, "it": "Warp Driver"}
+{"id": 5599, "it": "Flying Dutchman"}
+{"id": 5600, "it": "Time Slicer"}
+{"id": 5601, "it": "The Ghost"}
+{"id": 5602, "it": "Shock Absorber"}
+{"id": 5603, "it": "Triple Time"}
+{"id": 5604, "it": ":"}
+{"id": 5605, "it": "[ACTIVE]"}
+{"id": 5606, "it": "0.0 s"}
+{"id": 5607, "it": "Velocità ventola CPU1 (%)"}
+{"id": 5608, "it": "Velocità ventola CPU2 (%)"}
+{"id": 5609, "it": "Modalità di controllo degli errori"}
+{"id": 5610, "it": "Forza codice non gest."}
+{"id": 5611, "it": "Modalità parità"}
+{"id": 5612, "it": "MODALITÀ 71"}
+{"id": 5613, "it": "MODALITÀ 989"}
+{"id": 5614, "it": "Sfiato"}
+{"id": 5615, "it": "Ossigeno"}
+{"id": 5616, "it": "Pompa del refrigerante"}
+{"id": 5617, "it": "Distr. cibo autom."}
+{"id": 5618, "it": "Ricombinazione genetica"}
+{"id": 5619, "it": "Smorzatore cinetico"}
+{"id": 5620, "it": "Sensori dei segni vitali"}
+{"id": 5621, "it": "Sensibilità dello scanner di particelle"}
+{"id": 5622, "it": "Priorità regolazione plasmidi"}
+{"id": 5623, "it": "Pompa 1$Filtro"}
+{"id": 5624, "it": "Filtro della pompa 1"}
+{"id": 5625, "it": "Pressione della pompa 1"}
+{"id": 5626, "it": "Pompa 2$Filtro"}
+{"id": 5627, "it": "Filtro della pompa 2"}
+{"id": 5628, "it": "Pressione della pompa 2"}
+{"id": 5629, "it": "Pressione della pompa 3"}
+{"id": 5630, "it": "Pompa 3$Filtro"}
+{"id": 5631, "it": "Filtro della pompa 3"}
+{"id": 5632, "it": "Difese quantiche"}
+{"id": 5633, "it": "Smorzatore di radiazioni"}
+{"id": 5634, "it": "Recinto ultramagn."}
+{"id": 5635, "it": "Recinto ultramagnetizzato"}
+{"id": 5636, "it": "Dispersione dell'acqua"}
+{"id": 5637, "it": "Serratura della porta"}
+{"id": 5638, "it": "Output reattore 1"}
+{"id": 5639, "it": "Output reattore 2"}
+{"id": 5640, "it": "Output reattore 3"}
+{"id": 5641, "it": "Azoto"}
+{"id": 5642, "it": "Metano"}
+{"id": 5643, "it": "Equalizzatore di alloc."}
+{"id": 5644, "it": "Regolatore di densità di energia"}
+{"id": 5645, "it": "Velocità del miscelatore"}
+{"id": 5646, "it": "Potenza del miscelatore"}
+{"id": 5647, "it": "Regolazione termica"}
+{"id": 5648, "it": "Miscela antigelo"}
+{"id": 5649, "it": "Sensibilità dei nanobot"}
+{"id": 5650, "it": "Tipo di nanobot"}
+{"id": 5651, "it": "Potenza dello scanner composito"}
+{"id": 5652, "it": "Compositore di fullerene"}
+{"id": 5653, "it": "Compositore di biomateriali"}
+{"id": 5654, "it": "Scanner dei tessuti profondi"}
+{"id": 5655, "it": "Parametro senza nome"}
+{"id": 5656, "it": "Supporto vitale"}
+{"id": 5657, "it": "Ricerca biologica"}
+{"id": 5658, "it": "Sistemi informatici"}
+{"id": 5659, "it": "Ricerca sui materiali"}
+{"id": 5660, "it": "Acqua"}
+{"id": 5661, "it": "Energia"}
+{"id": 5662, "it": "SCONOSCIUTO"}
+{"id": 5663, "it": "- nessun messaggio di aggiornamento"}
+{"id": 5664, "it": "autotest: SUPERATO"}
+{"id": 5665, "it": "autotest: FALLITO"}
+{"id": 5666, "it": "0.0"}
+{"id": 5667, "it": "è impostato su"}
+{"id": 5668, "it": "- Valore previsto di"}
+{"id": 5669, "it": "Il valore attuale è"}
+{"id": 5670, "it": "- Dovrebbe essere ON"}
+{"id": 5671, "it": "- Dovrebbe essere OFF"}
+{"id": 5672, "it": "- Dovrebbe essere"}
+{"id": 5673, "it": "- collegamento non sicuro - PIN"}
+{"id": 5674, "it": "- impostato su"}
+{"id": 5675, "it": "BASSO"}
+{"id": 5676, "it": "MEDIO"}
+{"id": 5677, "it": "ALTO"}
+{"id": 5678, "it": "PREVENIRE"}
+{"id": 5679, "it": "ACCELERARE"}
+{"id": 5680, "it": "PASSIVO"}
+{"id": 5681, "it": "ATTIVO"}
+{"id": 5682, "it": "AGGRESSIVO"}
+{"id": 5683, "it": "----------------------------------------------------"}
+{"id": 5684, "it": "--------------- NESSUN ERRORE RILEVATO! ----------------"}
+{"id": 5685, "it": "------- ORA È POSSIBILE APRIRE LA PORTA DI CONTENIMENTO! --------"}
+{"id": 5686, "it": "- RIAVVIO DEL SISTEMA AVVIATO - RILEVATI ERRORI FATALI -"}
+{"id": 5687, "it": "----   CONSULTARE IL MANUALE OPERATIVO DI CONTENIMENTO   ----"}
+{"id": 5688, "it": "Riavvio del dispositivo 0x"}
+{"id": 5689, "it": ": riuscito"}
+{"id": 5690, "it": "Dati del sensore ignorati 0x"}
+{"id": 5691, "it": ": i dati non superano i controlli di convalida"}
+{"id": 5692, "it": "L'uso della memoria di sistema è nominale"}
+{"id": 5693, "it": "exo_names"}
+{"id": 5694, "it": "Outpost 448 (0)"}
+{"id": 5695, "it": "Keeper ("}
+{"id": 5696, "it": "Swarm ("}
+{"id": 5697, "it": "Tea Timers"}
+{"id": 5698, "it": "Flavor’s Fury"}
+{"id": 5699, "it": "Hungry Hucksters"}
+{"id": 5700, "it": "Necessary Nutritions"}
+{"id": 5701, "it": "Biscuit Boys"}
+{"id": 5702, "it": "Wandering Wafer"}
+{"id": 5703, "it": "Muffin Mashers"}
+{"id": 5704, "it": "Crispy Cruiser"}
+{"id": 5705, "it": "Tasty Toasters"}
+{"id": 5706, "it": "Delivery Dogs"}
+{"id": 5707, "it": "Hunger Hinderers"}
+{"id": 5708, "it": "Bombastic Bites"}
+{"id": 5709, "it": "Goodstuff Foodstuff"}
+{"id": 5710, "it": "Merry Meals"}
+{"id": 5711, "it": "Fasting Foodies"}
+{"id": 5712, "it": "Sugar Speeders"}
+{"id": 5713, "it": "Generic Grillers"}
+{"id": 5714, "it": "Ham Hoarders"}
+{"id": 5715, "it": "Ration Replacers"}
+{"id": 5716, "it": "Rapid Responders"}
+{"id": 5717, "it": "Mad Merchants"}
+{"id": 5718, "it": "Voracious Vendors"}
+{"id": 5719, "it": "Palatable Peddlers"}
+{"id": 5720, "it": "Meuva 7 ("}
+{"id": 5721, "it": "Sys ("}
+{"id": 5722, "it": "Sylvassi Cypher Lab"}
+{"id": 5723, "it": "Agenzia di taglie GH"}
+{"id": 5724, "it": "The Burrow"}
+{"id": 5725, "it": "Fluffy Factory 1 ("}
+{"id": 5726, "it": "Fluffy Factory 2 ("}
+{"id": 5727, "it": "Fluffy Factory 3 ("}
+{"id": 5728, "it": "Karattis ("}
+{"id": 5729, "it": "Negozio Sylvassi ("}
+{"id": 5730, "it": "Negozio di processori ("}
+{"id": 5731, "it": "Negozio di virus ("}
+{"id": 5732, "it": "Negozio di programmi ("}
+{"id": 5733, "it": "Comet"}
+{"id": 5734, "it": "Grand Warp Gate"}
+{"id": 5735, "it": "Dutain's Garage"}
+{"id": 5736, "it": "Stazione W.D. 41X"}
+{"id": 5737, "it": "The Ion Port"}
+{"id": 5738, "it": "SpaceNode"}
+{"id": 5739, "it": "BuildStaticNeighbors"}
+{"id": 5740, "it": "GetPathToNode"}
+{"id": 5741, "it": "clean up references"}
+{"id": 5742, "it": "GameOver"}
+{"id": 5743, "it": "Torretta"}
+{"id": 5744, "it": "QualityLevel"}
+{"id": 5745, "it": "ServerLoadLevel"}
+{"id": 5746, "it": "Integrità dello scafo:"}
+{"id": 5747, "it": "/"}
+{"id": 5748, "it": "Scudi:"}
+{"id": 5749, "it": "scudi"}
+{"id": 5750, "it": "scafo"}
+{"id": 5751, "it": "ossigeno"}
+{"id": 5752, "it": "curvatura"}
+{"id": 5753, "it": "("}
+{"id": 5754, "it": ")"}
+{"id": 5755, "it": "<color=#333333>(</color>"}
+{"id": 5756, "it": "<color=#333333>)</color>"}
+{"id": 5757, "it": "<color=green>+"}
+{"id": 5758, "it": "</color>"}
+{"id": 5759, "it": "+"}
+{"id": 5760, "it": "<color=red>-"}
+{"id": 5761, "it": "-"}
+{"id": 5762, "it": "<color=grey>"}
+{"id": 5763, "it": "%"}
+{"id": 5764, "it": "/"}
+{"id": 5765, "it": "Rilevato cheat di injection!"}
+{"id": 5766, "it": "Rilevato cheat di injection!:"}
+{"id": 5767, "it": "Rilevato cheat di speed hack!"}
+{"id": 5768, "it": "Rilevato cheat sul tempo!"}
+{"id": 5769, "it": "Rilevato cheat Obscured"}
+{"id": 5770, "it": "Rilevato cheat Obscured!"}
+{"id": 5771, "it": "ShadowQuality"}
+{"id": 5772, "it": "Exterior_RayCast"}
+{"id": 5773, "it": "PlanetFar"}
+{"id": 5774, "it": "Posizione"}
+{"id": 5775, "it": "pianeta"}
+{"id": 5776, "it": "interno"}
+{"id": 5777, "it": "esterno"}
+{"id": 5778, "it": "[-]"}
+{"id": 5779, "it": "<color=red>[-]</color>"}
+{"id": 5780, "it": "["}
+{"id": 5781, "it": "]"}
+{"id": 5782, "it": "Siediti sulla poltrona"}
+{"id": 5783, "it": "Solo il Capitano può usarlo"}
+{"id": 5784, "it": "Lascia la poltrona"}

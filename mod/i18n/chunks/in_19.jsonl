@@ -1,0 +1,1276 @@
+{"id": 4413, "en": "Find Level 1 Admin Access Card", "fr": "Trouver le niveau 1 de la carte d'accès administrateur"}
+{"id": 4414, "en": "Find Level 2 Admin Access Card", "fr": "Trouver la carte d'accès administrateur niveau 2"}
+{"id": 4415, "en": "Find Level 3 Admin Access Card", "fr": "Trouver la carte d'accès administrateur niveau 3"}
+{"id": 4416, "en": "Find data pad", "fr": "Trouver le bloc de données"}
+{"id": 4417, "en": "Report back to Alarick Soun in the Outpost 448 Command Center", "fr": "Rapport à Alarick Soun au centre de commandement de l'avant-poste 448"}
+{"id": 4418, "en": "Repair Sensor Unit on Tallus-18", "fr": "Réparation de l'unité de détection sur le Tallus-18"}
+{"id": 4419, "en": "Repair 5 sensors to bring sensor unit back online", "fr": "Réparer 5 capteurs pour remettre en service l'unité de détection"}
+{"id": 4420, "en": "Report back to Doctor Mirta Baird", "fr": "Rapport au Docteur Mirta Baird"}
+{"id": 4423, "en": "Speak with Viar Tothim about log", "fr": "S'entretenir avec Viar Tothim à propos du journal de bord"}
+{"id": 4424, "en": "Eliminate Stalker", "fr": "Éliminer le harceleur"}
+{"id": 4425, "en": "^Due to the damage the research wing sustained during the Code Black warp sequence, a dangerous research subject has broken out of its containment chamber. It is loose, and it will kill anything it comes into contact with. If you want to avoid it, avoid the darkness. If you cannot avoid the darkness, then keep a light source with you at all times. And if you have the ability to fight it off, please, for the sake of everyone left alive, kill it. Together we survive.^", "fr": "En raison des dommages subis par l'aile de recherche lors de la séquence de distorsion du Code Noir, un dangereux sujet de recherche s'est échappé de sa chambre de confinement. Il est en liberté et tuera tout ce qui entrera en contact avec lui. Si vous voulez l'éviter, évitez l'obscurité. Si vous ne pouvez pas éviter l'obscurité, gardez toujours une source de lumière avec vous. Et si vous avez la possibilité de la combattre, s'il vous plaît, pour le bien de tous ceux qui restent en vie, tuez-la. Ensemble, nous survivrons."}
+{"id": 4426, "en": "Eliminate the ^Stalker^ research subject", "fr": "Éliminer le sujet de recherche ^Stalker^."}
+{"id": 4427, "en": "Eliminate Infected Scientists", "fr": "Éliminer les scientifiques infectés"}
+{"id": 4428, "en": "^The crystals just...erupted out of him... Now he's gone. They're all gone. Please, put them out of their misery...^", "fr": "Les cristaux sont sortis de lui... Maintenant, il n'est plus là. Ils sont tous partis. S'il vous plaît, mettez fin à leurs souffrances...^"}
+{"id": 4429, "en": "Eliminate scientists infected with crystalline growths", "fr": "Éliminer les scientifiques infectés par des excroissances cristallines"}
+{"id": 4430, "en": "Retrieve Medicine for Vilvard", "fr": "Recherche de médicaments pour Vilvard"}
+{"id": 4431, "en": "^Doctor Vilvard needs medicine to numb the pain and slow down the bleeding of his wound. Near the administration offices, there should be an emergency medical station with supplies, just in case the regeneration atriums are down like they are now. That emergency medical station will have the medicine Doctor Vilvard needs. I know you have more pressing matters to deal with, but if you find the opportunity to bring Vilvard a dose of that medicine, it could mean the difference between life and death for him.^", "fr": "Le docteur Vilvard a besoin de médicaments pour endormir la douleur et ralentir l'hémorragie de sa blessure. Près des bureaux de l'administration, il devrait y avoir une station médicale d'urgence avec des fournitures, juste au cas où les atriums de régénération seraient en panne, comme c'est le cas actuellement. Cette station médicale d'urgence contiendra les médicaments dont le docteur Vilvard a besoin. Je sais que vous avez des choses plus urgentes à régler, mais si vous trouvez l'occasion d'apporter à Vilvard une dose de ce médicament, cela pourrait faire la différence entre la vie et la mort pour lui."}
+{"id": 4432, "en": "Report back to Noemi Prast", "fr": "Rapport à Noemi Prast"}
+{"id": 4433, "en": "Report Back to the Commander", "fr": "Rapport au commandant"}
+{"id": 4434, "en": "Report back to Commander Darine Hatham in the Outpost 448 Command Center to receive an additional reward for your assistance to the Colonial Union.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Faites un rapport au commandant Darine Hatham au centre de commandement de l'avant-poste 448 pour recevoir une récompense supplémentaire pour votre aide à l'Union coloniale.$$<b>MISSION HAUTE PRIORITE</b>"}
+{"id": 4435, "en": "Report back to Commander Darine Hatham in the Outpost 448 Command Center", "fr": "Faites votre rapport au commandant Darine Hatham au centre de commandement de l'avant-poste 448."}
+{"id": 4436, "en": "Weapon Demonstration", "fr": "Démonstration d'armes"}
+{"id": 4437, "en": "Your crew has been selected to participate in a private demonstration of three W.D. weapon prototypes. Proceed to the sector indicated on your starmap and report to Tyna Jelic. Further information will be provided upon arrival.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Votre équipage a été sélectionné pour participer à une démonstration privée de trois prototypes d'armes W.D. Rendez-vous dans le secteur indiqué sur votre carte stellaire et faites votre rapport à Tyna Jelic. De plus amples informations vous seront fournies à votre arrivée.$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4438, "en": "Reach the weapons testing facility", "fr": "Atteindre l'installation d'essais d'armes"}
+{"id": 4439, "en": "Report to Tyna Jelic", "fr": "Rapport à Tyna Jelic"}
+{"id": 4440, "en": "Complete weapon demonstration", "fr": "Démonstration complète de l'armement"}
+{"id": 4441, "en": "Planet Bombardment", "fr": "Bombardement de planètes"}
+{"id": 4442, "en": "A coordinated group from the Alliance of Gentlemen stole a crucial prototype of W.D. technology. They captured five members of the W.D. crew transporting the prototype and retreated to the planet Rivan-12. Enter their subsurface base, eliminate the last of the Alliance thieves, free the captured W.D. crew, and retrieve the stolen technology.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Un groupe coordonné de l'Alliance des Gentlemen a volé un prototype crucial de la technologie de W.D.. Ils ont capturé cinq membres de l'équipage de W.D. qui transportaient le prototype et se sont retirés sur la planète Rivan-12. Entrez dans leur base souterraine, éliminez les derniers voleurs de l'Alliance, libérez les membres de l'équipage de W.D. et récupérez la technologie volée."}
+{"id": 4443, "en": "Reach the planet Rivan-12 and eliminate all enemies", "fr": "Atteignez la planète Rivan-12 et éliminez tous les ennemis."}
+{"id": 4444, "en": "Free captured W.D. crew", "fr": "L'équipage de W.D. capturé gratuitement"}
+{"id": 4445, "en": "Find stolen prototype", "fr": "Retrouver le prototype volé"}
+{"id": 4446, "en": "The Forsaken Flagship", "fr": "Le vaisseau amiral abandonné"}
+{"id": 4447, "en": "^The W.D. flagship was entirely lost to the Infected. Its crew is presumed dead, and the ship itself remains in a sector of Infected space. It is beyond saving. But we cannot leave the flagship in Infected space. Our scientists have gathered some disturbing evidence as of late, in great part due to the mission in which you tracked down one of our offline security drones. We fear that if the flagship remains under Infected control, it could spell out disaster for our galaxy. Thus, I need a capable crew willing to enter the flagship and initiate its self destruct sequence.^$$<b>HIGH PRIORITY MISSION</b>", "fr": "Le vaisseau amiral de la W.D. a été entièrement perdu par les Infectés. Son équipage est présumé mort, et le vaisseau lui-même se trouve dans un secteur de l'espace infecté. Il ne peut être sauvé. Mais nous ne pouvons pas laisser le vaisseau amiral dans l'espace infecté. Nos scientifiques ont recueilli des preuves inquiétantes ces derniers temps, en grande partie grâce à la mission au cours de laquelle vous avez traqué l'un de nos drones de sécurité hors ligne. Nous craignons que si le vaisseau amiral reste sous le contrôle des Infectés, cela pourrait entraîner un désastre pour notre galaxie. J'ai donc besoin d'un équipage capable de pénétrer dans le vaisseau amiral et de lancer sa séquence d'autodestruction.^$$<b>MISSION HAUTE PRIORITE</b>"}
+{"id": 4448, "en": "Reach the W.D. flagship", "fr": "Atteindre l'emblème du W.D."}
+{"id": 4449, "en": "Reach the flagship's bridge", "fr": "Atteindre le pont du vaisseau amiral"}
+{"id": 4450, "en": "Initiate the flagship's self destruct sequence", "fr": "Lancer la séquence d'autodestruction du vaisseau amiral"}
+{"id": 4451, "en": "Report to Sullivan Vorcolp", "fr": "Rapport à Sullivan Vorcolp"}
+{"id": 4452, "en": "Your presence has been requested at W.D. Headquarters. Report to Chief Supervisor Sullivan Vorcolp in the Control Room to receive a classified assignment. Your security clearance has been upgraded to permit entry to the Control Room, which can be accessed through the short range teleporter on the upper level of the station.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Votre présence a été demandée au quartier général de W.D.. Présentez-vous au superviseur en chef Sullivan Vorcolp dans la salle de contrôle pour recevoir une mission classifiée. Votre habilitation de sécurité a été améliorée pour vous permettre d'entrer dans la salle de contrôle, qui est accessible par le téléporteur à courte portée situé au niveau supérieur de la station.$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4453, "en": "Report to Chief Supervisor Sullivan Vorcolp at W.D. Headquarters", "fr": "Rapport au superviseur en chef Sullivan Vorcolp au siège de W.D."}
+{"id": 4454, "en": "Additional Tasks", "fr": "Tâches supplémentaires"}
+{"id": 4455, "en": "^In the captain's quarters of the flagship, there should be a memory core on which are the schematics for the flagship's intergalactic warp drive. Should the situation with the Infected deteriorate further, we need a backup plan to transport our branch's most valuable assets out of this galaxy. Those schematics would help us immensely. Vorcolp also requires a scientific log from the flagship. Doctor Aina Petru, the Chief Scientist aboard the flagship, was thorough in documenting her research. It is likely she recorded her findings on the Infected before the ship was overtaken. Her work could be vital to combating the Infected in the future.^", "fr": "Dans les quartiers du capitaine du vaisseau amiral, il devrait y avoir un noyau de mémoire sur lequel se trouvent les schémas du moteur de distorsion intergalactique du vaisseau amiral. Si la situation avec les infectés se détériore encore, nous avons besoin d'un plan de secours pour transporter les ressources les plus précieuses de notre branche hors de cette galaxie. Ces schémas nous aideraient énormément. Le Vorcolp a également besoin d'un journal scientifique du vaisseau amiral. Le docteur Aina Petru, scientifique en chef à bord du vaisseau amiral, a soigneusement documenté ses recherches. Il est probable qu'elle ait enregistré ses découvertes sur les infectés avant que le vaisseau ne soit pris d'assaut. Son travail pourrait s'avérer vital pour combattre les Infectés à l'avenir."}
+{"id": 4456, "en": "Find flagship's warp schematics", "fr": "Trouver les schémas de distorsion du vaisseau amiral"}
+{"id": 4457, "en": "Find Doctor Petru's scientific log", "fr": "Trouver le journal scientifique du docteur Petru"}
+{"id": 4458, "en": "Report back to Oskal Shardes at W.D. Headquarters", "fr": "Rapport à Oskal Shardes au siège de la W.D."}
+{"id": 4459, "en": "Open Call", "fr": "Appel ouvert"}
+{"id": 4460, "en": "The Caretaker of the Estate has requested any able crews to intercept a W.D. Corporation vessel in possession of dangerous cargo. The cargo in question is a secret W.D. prototype of cloaking technology, and the Caretaker wishes to interfere with its transport. Acquire the technology by any means necessary, and you will be rewarded by the Caretaker himself. May the stars favor your voyages.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Le gardien du domaine a demandé à tout équipage capable d'intercepter un vaisseau de la W.D. Corporation en possession d'une cargaison dangereuse. La cargaison en question est un prototype secret de la technologie d'occultation de la W.D. Corporation, et le Gardien souhaite interférer avec son transport. Acquérez la technologie par tous les moyens nécessaires, et vous serez récompensés par le Gardien lui-même. Que les étoiles favorisent vos voyages.$$<b>MISSION HAUTE PRIORITE</b>"}
+{"id": 4461, "en": "Reach intercept point of W.D. transport route", "fr": "Atteindre le point d'interception de l'itinéraire de transport W.D."}
+{"id": 4462, "en": "Steal secret prototype from W.D. transport ship", "fr": "Vol d'un prototype secret sur un vaisseau de transport W.D."}
+{"id": 4463, "en": "Break Out Conrad", "fr": "Break Out Conrad"}
+{"id": 4464, "en": "^Your first task is to rescue an associate of mine --  a human named Conrad. He was taken to to Hollow Rock, a high security prison that uses quantum technology to contain prisoners. Once Conrad is put in one of those cells, it'll be impossible to break him out. Luckily, he hasn't been locked up quite yet. We need to move quickly and intercept him while he's still being processed. You will have to infiltrate Hollow Rock, break into the holding room where Conrad is temporarily being detained, and give this device to him. It's called a P.U.N.T. Chip. He'll know what to do with it.^$$<b>HIGH PRIORITY MISSION</b>", "fr": "Votre première tâche est de sauver un de mes associés, un humain nommé Conrad. Il a été emmené à Hollow Rock, une prison de haute sécurité qui utilise la technologie quantique pour contenir les prisonniers. Une fois Conrad enfermé dans une de ces cellules, il sera impossible de l'en faire sortir. Heureusement, il n'a pas encore été enfermé. Nous devons agir rapidement et l'intercepter pendant qu'il est encore en cours de traitement. Vous devrez infiltrer Hollow Rock, vous introduire dans la salle de détention où Conrad est temporairement détenu, et lui donner cet appareil. Il s'agit d'une puce P.U.N.T.. Il saura quoi en faire.^$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4465, "en": "Reach the Hollow Rock prison facility", "fr": "Atteindre la prison de Hollow Rock"}
+{"id": 4466, "en": "Rescue Conrad", "fr": "Sauvetage Conrad"}
+{"id": 4467, "en": "Report back to the Caretaker in the Captain's Quarters of the Estate", "fr": "Faire un rapport au concierge dans les quartiers du capitaine du domaine."}
+{"id": 4468, "en": "Retrieve Robot Head", "fr": "Récupérer la tête du robot"}
+{"id": 4469, "en": "^There was a group that had several hidden factories in this galaxy for manufacturing metal bandits, as well as a testing site where it produced some of its more innovative designs. There was one robot, a big guy, with a beam strong enough to rival starship weapons but much more compact. It's exactly the kind of beam we need. Go to the testing factory and bring me the head of the big robot. Then I can make some adjustments to its beam and use it to slice through the doors of the vault.^$$<b>HIGH PRIORITY MISSION</b>", "fr": "Il y avait un groupe qui avait plusieurs usines cachées dans cette galaxie pour fabriquer des bandits métalliques, ainsi qu'un site d'essai où il produisait certains de ses modèles les plus innovants. Il y avait un robot, un grand type, avec un rayon assez puissant pour rivaliser avec les armes des vaisseaux spatiaux, mais beaucoup plus compact. C'est exactement le type de rayon dont nous avons besoin. Allez à l'usine de test et ramenez-moi la tête du gros robot. Je pourrai alors ajuster son rayon et l'utiliser pour percer les portes de la chambre forte.^$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4470, "en": "Reach the metal bandit factory", "fr": "Atteindre l'usine de bandits métalliques"}
+{"id": 4471, "en": "Find the robot head", "fr": "Trouver la tête du robot"}
+{"id": 4472, "en": "Report back to Conrad in the Captain's Quarters of the Estate", "fr": "Rapport à Conrad dans les quartiers du capitaine du domaine."}
+{"id": 4473, "en": "The Madman's Mansion", "fr": "Le manoir du fou"}
+{"id": 4474, "en": "^I want something from Rowe's collection: intergalactic warp schematics for the W.D. flagship. You’ll need to sneak into Rowe’s mansion and unlock the secure cargo teleporter in front of the vault. Then Conrad and the modified robot head, which he’s been calling ^the cutter^, can be teleported directly into the mansion and slice through the vault door. Rowe’s defense systems will no doubt activate, so you’ll need to protect Conrad while he operates the cutter. Once the cutter has blasted through the vault door, retrieve the intergalactic warp schematics.^$$<b>HIGH PRIORITY MISSION</b>", "fr": "Je veux quelque chose de la collection de Rowe : des schémas de distorsion intergalactique pour le vaisseau amiral W.D. Tu dois te faufiler dans le manoir de Rowe et déverrouiller le téléporteur de fret sécurisé devant la chambre forte. Ensuite, Conrad et la tête de robot modifiée, qu'il appelle ^le cutter^, peuvent être téléportés directement dans le manoir et couper la porte de la chambre forte. Les systèmes de défense de Rowe vont sans aucun doute s'activer, vous devrez donc protéger Conrad pendant qu'il manipule le cutter. Une fois que le cutter a franchi la porte de la chambre forte, récupérez les schémas de la distorsion intergalactique.^$$<b>MISSION DE HAUTE PRIORITÉ</b>"}
+{"id": 4475, "en": "Reach Torsten Rowe's mansion", "fr": "Atteindre le manoir de Torsten Rowe"}
+{"id": 4476, "en": "Get to the vault", "fr": "Accéder à la chambre forte"}
+{"id": 4477, "en": "Tell Conrad to start the cutter", "fr": "Dites à Conrad de démarrer le cutter"}
+{"id": 4478, "en": "Defend Conrad", "fr": "Défendre Conrad"}
+{"id": 4479, "en": "Find intergalactic warp schematics", "fr": "Trouver les schémas de la distorsion intergalactique"}
+{"id": 4480, "en": "Report to the Caretaker", "fr": "Rapport au gardien"}
+{"id": 4481, "en": "The Caretaker is impressed with your success intercepting the W.D. transport vessel. He thanks you for retrieving the W.D. prototype and wishes for you to bring it to him in person. You have been given access to the Captain's Quarters in the Estate, where the Caretaker resides.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Le gardien est impressionné par votre succès lors de l'interception du vaisseau de transport de W.D. Il vous remercie d'avoir récupéré le prototype de W.D. et souhaite que vous le lui apportiez en personne. Il vous remercie d'avoir récupéré le prototype W.D. et souhaite que vous le lui apportiez en personne. Vous avez accès aux quartiers du capitaine dans le domaine, où réside le gardien.$$<b>MISSION HAUTE PRIORITE</b>"}
+{"id": 4482, "en": "Do not lose secret W.D. prototype", "fr": "Ne perdez pas le prototype secret W.D."}
+{"id": 4483, "en": "Reach the Estate", "fr": "Atteindre le domaine"}
+{"id": 4484, "en": "Report to the Caretaker in the Captain's Quarters", "fr": "Rapport au concierge dans les quartiers du capitaine"}
+{"id": 4485, "en": "Remove Interference in Reactor Room", "fr": "Supprimer les interférences dans la salle du réacteur"}
+{"id": 4486, "en": "^The flagship has been lost to the Infected. It is beyond saving. As a last resort, I initiated the flagship's self-destruct sequence. However, it seems that something tied to the reactor output is preventing the detonation of the nuke. That 'something' is likely the Infected flesh spreading throughout the ship, and it needs to be stopped. Remove the interference in the reactor room so the self-destruct sequence can proceed, and then get out of the flagship as quickly as possible.^$$<b>HIGH PRIORITY MISSION</b>", "fr": "Le vaisseau amiral a été perdu par les infectés. Il ne peut plus être sauvé. En dernier recours, j'ai lancé la séquence d'autodestruction du vaisseau amiral. Cependant, il semble que quelque chose lié à la sortie du réacteur empêche la détonation de l'ogive. Ce \"quelque chose\" est probablement la chair infectée qui se répand dans le vaisseau, et il faut l'arrêter. Supprimez les interférences dans la salle du réacteur pour que la séquence d'autodestruction puisse se dérouler, puis quittez le vaisseau amiral aussi vite que possible.^$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4487, "en": "Remove interference in reactor room", "fr": "Éliminer les interférences dans la salle du réacteur"}
+{"id": 4488, "en": "Track Down Security Drone", "fr": "Traquer le drone de sécurité"}
+{"id": 4489, "en": "A W.D. Security Drone has gone offline in a sector near your location. Investigate the sector and gather intel as to why it vanished from the drone tracking system. If the security drone has been compromised or is otherwise malfunctioning, eliminate it.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Un drone de sécurité W.D. a disparu dans un secteur proche de votre position. Enquêtez sur le secteur et recueillez des informations sur la raison pour laquelle il a disparu du système de suivi des drones. Si le drone de sécurité a été compromis ou fonctionne mal, éliminez-le.$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4490, "en": "Find and eliminate offline security drone", "fr": "Trouver et éliminer les drones de sécurité hors ligne"}
+{"id": 4491, "en": "Report Back to Headquarters", "fr": "Rapport au siège"}
+{"id": 4492, "en": "Your supervisors at the W.D. Corporation are pleased with the results of your work on the flagship. Report back to Chief Supervisor Sullivan Vorcolp at W.D. Headquarters to receive an additional reward.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Vos supérieurs à la W.D. Corporation sont satisfaits des résultats de votre travail sur le vaisseau amiral. Faites un rapport au superviseur en chef Sullivan Vorcolp au siège de W.D. pour recevoir une récompense supplémentaire.$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4493, "en": "Report back to Sullivan Vorcolp at W.D. Headquarters", "fr": "Rapport à Sullivan Vorcolp au siège de la W.D."}
+{"id": 4494, "en": "Investigate Prison Cell", "fr": "Enquêter sur une cellule de prison"}
+{"id": 4495, "en": "^You're breaking into Hollow Rock, which means we have a rare opportunity. No Gentleman has ever come back from quantum containment, and this is our chance to investigate. If you manage to gain access to the quantum cell block, perhaps you can get a look at the technology. There's bound to be a cell that's deactivated so Conrad can be transferred into quantum containment. Just have a look inside the cell, and report back to me what you see.^", "fr": "Vous vous introduisez dans le Rocher creux, ce qui signifie que nous avons une opportunité rare. Aucun Gentleman n'est jamais revenu d'un confinement quantique, et c'est notre chance d'enquêter. Si vous parvenez à accéder au bloc cellulaire quantique, vous pourrez peut-être jeter un coup d'œil à la technologie. Il y a forcément une cellule désactivée pour que Conrad puisse être transféré dans le confinement quantique. Jetez un coup d'œil à l'intérieur de la cellule et faites-moi un rapport sur ce que vous voyez."}
+{"id": 4496, "en": "Step inside an open quantum containment cell to observe interior", "fr": "Entrez dans une cellule de confinement quantique ouverte pour observer l'intérieur."}
+{"id": 4497, "en": "Report back to Saliki in the Captain's Quarters of the Estate", "fr": "Rapport à Saliki dans les quartiers du capitaine du domaine."}
+{"id": 4501, "en": "Sylvassi Cyphers", "fr": "Sylvassi Cyphers"}
+{"id": 4502, "en": "Find 4 ancient Sylvassi tablets from Cyphers", "fr": "Trouver 4 tablettes anciennes de Sylvassi provenant de Cyphers"}
+{"id": 4503, "en": "Report back to Ika at the Sylvassi Cypher Lab", "fr": "Rendre compte à Ika au Sylvassi Cypher Lab"}
+{"id": 4504, "en": "Defeat 3 Sector Commanders", "fr": "Vaincre 3 commandants de secteur"}
+{"id": 4505, "en": "^The galaxy is a dangerous place these days. Powerful ships and strange alien technologies keep cropping up, taking over entire sectors and destroying any ships that warp in. We have a name for these formidable adversaries now: Sector Commanders. Many people in the galaxy would feel a lot safer if these Sector Commanders were neutralized. Hunting down Sector Commanders is a dangerous job, but if you can defeat three of them, I'll make sure you're well rewarded.^", "fr": "La galaxie est un endroit dangereux de nos jours. De puissants vaisseaux et d'étranges technologies extraterrestres ne cessent d'apparaître, s'emparant de secteurs entiers et détruisant tous les vaisseaux qui s'y aventurent. Nous avons désormais un nom pour ces redoutables adversaires : Les commandants de secteur. De nombreuses personnes dans la galaxie se sentiraient beaucoup plus en sécurité si ces commandants de secteur étaient neutralisés. La chasse aux commandants de secteur est un travail dangereux, mais si vous parvenez à vaincre trois d'entre eux, je ferai en sorte que vous soyez bien récompensés."}
+{"id": 4506, "en": "Destroy 3 Sector Commanders", "fr": "Détruire 3 commandants de secteur"}
+{"id": 4507, "en": "Report back to Skiah at Cornelia Station", "fr": "Rapport à Skiah à Cornelia Station"}
+{"id": 4508, "en": "Find the Engineer", "fr": "Trouver l'ingénieur"}
+{"id": 4509, "en": "^My engineer, Brodi Anders, left several hours ago to repair a sensor station nearby. She still hasn't returned, and I'm getting worried since the creatures on this planet have been hostile lately. You seem well equipped; would you look for her and make sure she's all right?^", "fr": "Mon ingénieur, Brodi Anders, est partie il y a quelques heures pour réparer une station de détection à proximité. Elle n'est toujours pas revenue, et je commence à m'inquiéter car les créatures de cette planète sont hostiles depuis quelque temps. Vous semblez bien équipé, pourriez-vous partir à sa recherche et vous assurer qu'elle va bien ?"}
+{"id": 4510, "en": "Find research station engineer Brodi Anders", "fr": "Trouver l'ingénieur de la station de recherche Brodi Anders"}
+{"id": 4511, "en": "Report back to Maegan Fujita", "fr": "Rapport à Maegan Fujita"}
+{"id": 4512, "en": "Retrieve Medicine for Anders", "fr": "Recherche de médicaments pour Anders"}
+{"id": 4513, "en": "^On my way here, a crawler pierced through my suit and injured my leg. I can't walk right now. But if you don't mind doing me a favor, there's an emergency supply stash nearby. You can enter it from a metal hatch in the ground. Inside the supply room, there should be a medicine pack that I can use to patch up my leg. Would you get it for me?^", "fr": "En venant ici, une chenille a transpercé ma combinaison et m'a blessé à la jambe. Je ne peux pas marcher pour l'instant. Mais si vous voulez bien me rendre service, il y a une réserve d'urgence à proximité. Vous pouvez y accéder par une trappe métallique dans le sol. Dans la salle d'approvisionnement, il devrait y avoir un paquet de médicaments que je pourrais utiliser pour réparer ma jambe. Pourriez-vous aller la chercher pour moi ?"}
+{"id": 4514, "en": "Report back to Brodi Anders", "fr": "Rapport à Brodi Anders"}
+{"id": 4515, "en": "Academy Hailing", "fr": "Académie Hailing"}
+{"id": 4516, "en": "Hailing Tutorial", "fr": "Tutoriel sur l'interpellation"}
+{"id": 4517, "en": "Auction", "fr": "Vente aux enchères"}
+{"id": 4518, "en": "Auction 100k", "fr": "Vente aux enchères 100k"}
+{"id": 4519, "en": "Auction 40k", "fr": "Vente aux enchères 40k"}
+{"id": 4520, "en": "Auction 60k", "fr": "Vente aux enchères 60k"}
+{"id": 4521, "en": "Auction 80k", "fr": "Vente aux enchères 80k"}
+{"id": 4522, "en": "Auction 200k", "fr": "Vente aux enchères 200k"}
+{"id": 4523, "en": "High Rollers", "fr": "Les gros bonnets"}
+{"id": 4524, "en": "Find the Lost Colony", "fr": "Trouver la colonie perdue"}
+{"id": 4525, "en": "Find 4 data fragments", "fr": "Trouver 4 fragments de données"}
+{"id": 4526, "en": "Reach the Grand Warp Gate", "fr": "Atteindre le Grand Warp Gate"}
+{"id": 4527, "en": "Reach the Lost Colony", "fr": "Atteindre la colonie perdue"}
+{"id": 4529, "en": "Artifact Retrieval IV", "fr": "Récupération d'artefacts IV"}
+{"id": 4530, "en": "^A few weeks ago, I sent a team to retrieve a particular alien artifact, but they refused to continue the job. They claimed to have nearly broken their regeneration atrium trying to 'find the right path'. I'm not sure what they were complaining about, but I doubt it's anything you can't handle.^", "fr": "Il y a quelques semaines, j'ai envoyé une équipe pour récupérer un artefact extraterrestre particulier, mais ils ont refusé de continuer le travail. Ils ont prétendu avoir presque brisé leur atrium de régénération en essayant de \"trouver le bon chemin\". Je ne sais pas trop de quoi ils se plaignaient, mais je doute que ce soit quelque chose que vous ne puissiez pas gérer."}
+{"id": 4531, "en": "Reach Warger's Fourth Secret Sector", "fr": "Atteindre le quatrième secteur secret de Warger"}
+{"id": 4532, "en": "Grey Huntsmen Reward", "fr": "Récompense des chasseurs gris"}
+{"id": 4533, "en": "Reach the Grey Hunstmen Bounty Agency", "fr": "Atteindre l'agence de primes Grey Hunstmen"}
+{"id": 4534, "en": "Report to Remigus Nalidak", "fr": "Rapport à Remigus Nalidak"}
+{"id": 4537, "en": "Investigate the Lost Colony", "fr": "Enquête sur la colonie perdue"}
+{"id": 4538, "en": "Reach deepest level of the Lost Colony", "fr": "Atteindre le niveau le plus profond de la colonie perdue"}
+{"id": 4539, "en": "Make your decision", "fr": "Prenez votre décision"}
+{"id": 4540, "en": "Meet with the Compiler for a full mission briefing. They can be found planetside at the Polytechnic Federation Base.$$<b>HIGH PRIORITY MISSION</b>", "fr": "Rencontrez le compilateur pour un briefing complet de la mission. Ils se trouvent sur la planète, à la base de la Fédération polytechnique.$$<b>MISSION DE HAUTE PRIORITÉ</b>"}
+{"id": 4541, "en": "P.F. Base", "fr": "Base P.F."}
+{"id": 4542, "en": "Meet with the Compiler", "fr": "Rencontre avec le compilateur"}
+{"id": 4543, "en": "Ready For Deployment", "fr": "Prêt pour le déploiement"}
+{"id": 4544, "en": "Strike Window Is Open", "fr": "La fenêtre de grève est ouverte"}
+{"id": 4545, "en": "^[PLAYERSHIP_NAME], the Unseen Threat is now within strike distance of the Horizon Bridge. The first wave of our ships has been sent through the Bridge. They are reportedly engaging with hostiles and taking heavy losses. We have also received reports of strange fires onboard our ships. We do not fully understand the nature of these fires, but early data suggests they generate oxygen which may also increase the risk of ordinary fires. It is advised to have fire extinguishers equipped in case you run into this phenomenon yourselves. Good luck, friends. If you plan to join the fight, report to the Horizon Bridge as soon as you are able!^$$<b>HIGH PRIORITY MISSION</b>", "fr": "^[NOM_DE_JOUEUR], la menace invisible est maintenant à distance de frappe du pont Horizon. La première vague de nos vaisseaux a été envoyée sur le pont. Il semblerait qu'ils soient aux prises avec des ennemis et qu'ils subissent de lourdes pertes. Nous avons également reçu des rapports faisant état d'étranges incendies à bord de nos vaisseaux. Nous ne comprenons pas entièrement la nature de ces incendies, mais les premières données suggèrent qu'ils génèrent de l'oxygène, ce qui peut également augmenter le risque d'incendies ordinaires. Il est conseillé de se munir d'extincteurs au cas où vous seriez vous-mêmes confrontés à ce phénomène. Bonne chance, chers amis. Si vous avez l'intention de participer à la lutte, rendez-vous sur le pont Horizon dès que possible!^$$<b>MISSION HAUTE PRIORITÉ</b>"}
+{"id": 4546, "en": "PHOTOSENSITIVE SEIZURE WARNING: Some scenes or effects might cause seizures for those sensitive to flashing lights or colors. Viewer discretion is advised.", "fr": "AVERTISSEMENT SUR LES CONVULSIONS PHOTOSENSIBLES : Certaines scènes ou certains effets peuvent provoquer des convulsions chez les personnes sensibles aux lumières ou aux couleurs clignotantes. La discrétion du spectateur est conseillée."}
+{"id": 4547, "en": "ONLINE PLAY: This game features global multiplayer and voice chat. Your experience may vary.", "fr": "JEU EN LIGNE : Ce jeu propose un mode multijoueur global et un chat vocal. Votre expérience peut varier."}
+{"id": 4548, "en": "Copyright 2021 Leafy Games, LLC", "fr": "Copyright 2021 Leafy Games, LLC"}
+{"id": 4549, "en": "CREW", "fr": "CREW"}
+{"id": 4550, "en": "SHIP", "fr": "SHIP"}
+{"id": 4551, "en": "INVENTORY", "fr": "INVENTAIRE"}
+{"id": 4552, "en": "MISSIONS", "fr": "MISSIONS"}
+{"id": 4553, "en": "Auto Target Ships", "fr": "Vaisseaus à cible automatique"}
+{"id": 4554, "en": "Clear Target", "fr": "Cible claire"}
+{"id": 4555, "en": "Option A", "fr": "Option A"}
+{"id": 4556, "en": "SHIP TARGETING", "fr": "CIBLAGE DES NAVIRES"}
+{"id": 4557, "en": "Starmap", "fr": "Starmap"}
+{"id": 4558, "en": "Talents", "fr": "Talents"}
+{"id": 4559, "en": "Crew AI", "fr": "Équipage AI"}
+{"id": 4560, "en": "LEVEL", "fr": "NIVEAU"}
+{"id": 4561, "en": "2", "fr": "2"}
+{"id": 4562, "en": "XP", "fr": "XP"}
+{"id": 4563, "en": "CREDITS", "fr": "CRÉDITS"}
+{"id": 4564, "en": "CHAOS", "fr": "CHAOS"}
+{"id": 4565, "en": "NAME", "fr": "NOM"}
+{"id": 4566, "en": "CLASS", "fr": "CLASSE"}
+{"id": 4567, "en": "Button", "fr": "Bouton"}
+{"id": 4568, "en": "Ship Log", "fr": "Journal de bord"}
+{"id": 4569, "en": "1 fps", "fr": "1 fps"}
+{"id": 4570, "en": "Conn", "fr": "Conn"}
+{"id": 4571, "en": "Game Name", "fr": "Nom du jeu"}
+{"id": 4572, "en": "<", "fr": "<"}
+{"id": 4573, "en": "back", "fr": "retour"}
+{"id": 4574, "en": "PlayerName", "fr": "Nom du joueur"}
+{"id": 4575, "en": ">", "fr": ">"}
+{"id": 4576, "en": "reset bot talents", "fr": "réinitialiser les talents du bot"}
+{"id": 4577, "en": "LIMIT CREW PURCHASES", "fr": "LIMITER LES ACHATS DE L'ÉQUIPAGE"}
+{"id": 4578, "en": "500 Cr", "fr": "500 Cr"}
+{"id": 4579, "en": "Toggle", "fr": "Toggle"}
+{"id": 4580, "en": "Enter text...", "fr": "Saisir le texte..."}
+{"id": 4581, "en": "Custom Order 1", "fr": "Commande personnalisée 1"}
+{"id": 4582, "en": "Custom Order 2$", "fr": "Commande personnalisée 2$"}
+{"id": 4583, "en": "Custom Order 3", "fr": "Commande personnalisée 3"}
+{"id": 4584, "en": "Custom Order 4$", "fr": "Commande personnalisée 4$"}
+{"id": 4585, "en": "Custom Order 5", "fr": "Commande personnalisée 5"}
+{"id": 4586, "en": "Custom Order 6", "fr": "Commande personnalisée 6"}
+{"id": 4587, "en": "Custom Order 7", "fr": "Commande personnalisée 7"}
+{"id": 4588, "en": "Custom Order 8", "fr": "Commande personnalisée 8"}
+{"id": 4589, "en": "CREW CAN PURCHASE COMPONENTS", "fr": "L'ÉQUIPAGE PEUT ACHETER DES COMPOSANTS"}
+{"id": 4590, "en": "Top Priorities", "fr": "Priorités absolues"}
+{"id": 4591, "en": "All Main Priorities", "fr": "Toutes les grandes priorités"}
+{"id": 4592, "en": "All Class Priorities", "fr": "Toutes les classes Priorités"}
+{"id": 4593, "en": "Behavior Tweaks", "fr": "Modifications du comportement"}
+{"id": 4594, "en": "Customize Apperance", "fr": "Personnaliser l'apparence"}
+{"id": 4595, "en": "Save / Load", "fr": "Sauvegarder / Charger"}
+{"id": 4596, "en": "Name/Appearance", "fr": "Nom/apparence"}
+{"id": 4597, "en": "Crew Settings", "fr": "Réglages de l'équipage"}
+{"id": 4598, "en": "+NEW", "fr": "#NAME?"}
+{"id": 4599, "en": "Add New Override", "fr": "Ajouter une nouvelle dérogation"}
+{"id": 4600, "en": "x", "fr": "x"}
+{"id": 4601, "en": "Alert Level", "fr": "Niveau d'alerte"}
+{"id": 4602, "en": "Red Alert", "fr": "Alerte rouge"}
+{"id": 4603, "en": "Yellow Alert", "fr": "Alerte jaune"}
+{"id": 4604, "en": "Green Alert", "fr": "Alerte verte"}
+{"id": 4605, "en": "0", "fr": "0"}
+{"id": 4606, "en": "1", "fr": "1"}
+{"id": 4607, "en": "3", "fr": "3"}
+{"id": 4608, "en": "CUSTOM OVERRIDES", "fr": "LES DÉROGATIONS PERSONNALISÉES"}
+{"id": 4609, "en": "PERSONAL", "fr": "PERSONNEL"}
+{"id": 4610, "en": "SECTOR", "fr": "SECTEUR"}
+{"id": 4611, "en": "Edit Program Priorities", "fr": "Modifier les priorités du programme"}
+{"id": 4612, "en": "Save", "fr": "Économiser"}
+{"id": 4613, "en": "Load", "fr": "Chargement"}
+{"id": 4614, "en": "Reset To Defaults", "fr": "Réinitialisation aux valeurs par défaut"}
+{"id": 4615, "en": "Reset", "fr": "Remise à zéro"}
+{"id": 4616, "en": "Equipment", "fr": "Equipement"}
+{"id": 4617, "en": "Phase Pistol + 3", "fr": "Pistolet à phase + 3"}
+{"id": 4618, "en": "Basics", "fr": "Principes de base"}
+{"id": 4619, "en": "Computer", "fr": "Ordinateur"}
+{"id": 4620, "en": "Weapons", "fr": "Armes"}
+{"id": 4621, "en": "Misc", "fr": "Divers"}
+{"id": 4622, "en": "Thrust", "fr": "Poussée"}
+{"id": 4623, "en": "WGT: 20.0 / 20.0", "fr": "WGT : 20.0 / 20.0"}
+{"id": 4624, "en": "EQUIPMENT", "fr": "ÉQUIPEMENT"}
+{"id": 4625, "en": "4", "fr": "4"}
+{"id": 4626, "en": "5", "fr": "5"}
+{"id": 4627, "en": "6", "fr": "6"}
+{"id": 4628, "en": "My Inventory", "fr": "Mon inventaire"}
+{"id": 4629, "en": "bot's Inventory", "fr": "Inventaire du bot"}
+{"id": 4630, "en": "Active", "fr": "Actif"}
+{"id": 4631, "en": "Abandoned", "fr": "Abandonné"}
+{"id": 4632, "en": "Completed", "fr": "Terminé"}
+{"id": 4633, "en": "New Text", "fr": "Nouveau texte"}
+{"id": 4634, "en": "Ship Component", "fr": "Composant du vaisseau"}
+{"id": 4635, "en": "COMP TYPE", "fr": "TYPE DE COMP"}
+{"id": 4636, "en": "Description of the ship component", "fr": "Description de l'élément du vaisseau"}
+{"id": 4637, "en": "STAT", "fr": "STAT"}
+{"id": 4638, "en": "Equip", "fr": "Équiper"}
+{"id": 4639, "en": "Discard$", "fr": "Rejeter$"}
+{"id": 4640, "en": "Item", "fr": "Objet"}
+{"id": 4641, "en": "Desc", "fr": "Desc"}
+{"id": 4642, "en": "Discard", "fr": "Rejeter"}
+{"id": 4643, "en": "Send", "fr": "Envoyer"}
+{"id": 4644, "en": "Mission", "fr": "La mission"}
+{"id": 4645, "en": "Abandon", "fr": "Abandon"}
+{"id": 4646, "en": "SHIP REGISTRATION", "fr": "IMMATRICULATION DES NAVIRES"}
+{"id": 4647, "en": "W.D. Corp", "fr": "W.D. Corp"}
+{"id": 4648, "en": "How other ships will see you (when NOT revealed)", "fr": "Comment les autres vaisseaus vous verront (lorsqu'il n'y a pas de révélation)"}
+{"id": 4649, "en": "CREW REPUTATION", "fr": "RÉPUTATION DE L'ÉQUIPAGE"}
+{"id": 4650, "en": "C.U.", "fr": "C.U."}
+{"id": 4651, "en": "How factions see your crew (when revealed)", "fr": "Comment les factions voient votre équipage (lorsqu'il est révélé)"}
+{"id": 4652, "en": "-2", "fr": "-2"}
+{"id": 4653, "en": "Hated", "fr": "Détesté"}
+{"id": 4654, "en": "CREW FACTION", "fr": "FACTION DE L'ÉQUIPE"}
+{"id": 4655, "en": "The faction that will assign you missions", "fr": "La faction qui vous confiera des missions"}
+{"id": 4656, "en": "Long Range Comms Disabled", "fr": "Communications à longue distance désactivées"}
+{"id": 4657, "en": "DATA FRAGMENTS", "fr": "FRAGMENTS DE DONNÉES"}
+{"id": 4658, "en": "Fragment", "fr": "Fragment"}
+{"id": 4659, "en": "Desc$", "fr": "Desc$"}
+{"id": 4660, "en": "lorem", "fr": "lorem"}
+{"id": 4661, "en": "test", "fr": "test"}
+{"id": 4663, "en": "EQUIP ITEM", "fr": "ÉLÉMENT D'ÉQUIPEMENT"}
+{"id": 4664, "en": "Fire Gun", "fr": "Pistolet à feu"}
+{"id": 4665, "en": "[1] Name", "fr": "[1] Nom"}
+{"id": 4666, "en": "[2] Name", "fr": "[2] Nom"}
+{"id": 4667, "en": "[3] Name", "fr": "[3] Nom"}
+{"id": 4668, "en": "[4] Name", "fr": "[4] Nom"}
+{"id": 4669, "en": "[5] Name", "fr": "[5] Nom"}
+{"id": 4670, "en": "[6] Name", "fr": "[6] Nom"}
+{"id": 4671, "en": "CONTAINER", "fr": "CONTENEUR"}
+{"id": 4672, "en": "SEND ITEM", "fr": "ENVOYER LE POINT"}
+{"id": 4673, "en": "BUY", "fr": "ACHETER"}
+{"id": 4674, "en": "SELL", "fr": "VENDRE"}
+{"id": 4675, "en": "Name", "fr": "Nom"}
+{"id": 4676, "en": "Price", "fr": "Prix"}
+{"id": 4677, "en": "SORT", "fr": "TRIER"}
+{"id": 4678, "en": "SWAP", "fr": "SWAP"}
+{"id": 4679, "en": "CompType", "fr": "CompType"}
+{"id": 4680, "en": "TRADE IN", "fr": "ÉCHANGES"}
+{"id": 4681, "en": "TO ACQUIRE", "fr": "À ACQUÉRIR"}
+{"id": 4682, "en": "Stat Changes", "fr": "Changements de statuts"}
+{"id": 4683, "en": "CyberDefense", "fr": "Cyberdéfense"}
+{"id": 4684, "en": "+1", "fr": "1"}
+{"id": 4685, "en": "Confirm Trade", "fr": "Confirmer l'échange"}
+{"id": 4686, "en": "Cancel Trade", "fr": "Annuler le commerce"}
+{"id": 4687, "en": "Relax", "fr": "Se détendre"}
+{"id": 4688, "en": "Explore", "fr": "Explorer"}
+{"id": 4689, "en": "Hands", "fr": "Mains"}
+{"id": 4690, "en": "SNACKS", "fr": "SNACKS"}
+{"id": 4691, "en": "10", "fr": "10"}
+{"id": 4692, "en": "Reset VR Orientation", "fr": "Réinitialiser l'orientation de la RV"}
+{"id": 4693, "en": "Toggle Flashlight", "fr": "Basculer la lampe de poche"}
+{"id": 4694, "en": "Skip Warp", "fr": "Sauter la chaîne"}
+{"id": 4695, "en": "Personal Cloak", "fr": "Cape personnelle"}
+{"id": 4696, "en": "Force$Respawn", "fr": "Force$Respawn"}
+{"id": 4697, "en": "GAME OVER IN", "fr": "GAME OVER IN"}
+{"id": 4698, "en": "02:00", "fr": "02:00"}
+{"id": 4699, "en": "FUEL", "fr": "CARBURANT"}
+{"id": 4700, "en": "HEAT", "fr": "CHALEUR"}
+{"id": 4701, "en": "OVERHEATED", "fr": "SURCHAUFFÉ"}
+{"id": 4702, "en": "STAMINA", "fr": "STAMINA"}
+{"id": 4703, "en": "RADIATION", "fr": "RADIATION"}
+{"id": 4704, "en": "OVERCHARGE", "fr": "SURCHARGE"}
+{"id": 4705, "en": "THE SOURCE", "fr": "LA SOURCE"}
+{"id": 4706, "en": "The Source", "fr": "La Source"}
+{"id": 4707, "en": "4,400 / 12,200", "fr": "4,400 / 12,200"}
+{"id": 4708, "en": "RELIC HUNTER", "fr": "CHASSEUR DE RELIQUES"}
+{"id": 4709, "en": "MAIN BEAM", "fr": "FAISCEAU PRINCIPAL"}
+{"id": 4710, "en": "MISSILES", "fr": "MISSILES"}
+{"id": 4711, "en": "200 m/s", "fr": "200 m/s"}
+{"id": 4712, "en": "Orbit", "fr": "Orbite"}
+{"id": 4713, "en": "REACTOR", "fr": "RÉACTEUR"}
+{"id": 4714, "en": "TEMP 80%", "fr": "TEMP 80"}
+{"id": 4715, "en": "THRUST 80MW", "fr": "THRUST 80MW"}
+{"id": 4716, "en": "T", "fr": "T"}
+{"id": 4717, "en": "Slicer", "fr": "Trancheur"}
+{"id": 4718, "en": "BOOST", "fr": "BOOST"}
+{"id": 4720, "en": "Close", "fr": "Fermer"}
+{"id": 4721, "en": "Tips", "fr": "Conseils"}
+{"id": 4722, "en": "UNTIL MISSILE RELOAD COMPLETE", "fr": "JUSQU'À CE QUE LE RECHARGEMENT DU MISSILE SOIT TERMINÉ"}
+{"id": 4723, "en": "30.0 sec", "fr": "30.0 sec"}
+{"id": 4724, "en": "00:00:00", "fr": "00:00:00"}
+{"id": 4725, "en": "@$@$", "fr": "@$@$"}
+{"id": 4726, "en": "HP", "fr": "HP"}
+{"id": 4727, "en": "O2", "fr": "O2"}
+{"id": 4728, "en": "CL", "fr": "CL"}
+{"id": 4729, "en": "100/100", "fr": "100/100"}
+{"id": 4730, "en": "Revival Biscuit", "fr": "Biscuit de réveil"}
+{"id": 4731, "en": "----------------", "fr": "----------------"}
+{"id": 4732, "en": "TM", "fr": "TM"}
+{"id": 4733, "en": "100", "fr": "100"}
+{"id": 4734, "en": "Hub", "fr": "Hub"}
+{"id": 4735, "en": "Exotic Shop", "fr": "Boutique exotique"}
+{"id": 4736, "en": "Shop / Repair", "fr": "Atelier / Réparation"}
+{"id": 4737, "en": "Warp Station", "fr": "Station Warp"}
+{"id": 4738, "en": "Sector Cmdr", "fr": "Cmdt du secteur"}
+{"id": 4739, "en": "Race", "fr": "Course"}
+{"id": 4740, "en": "Scrapyard", "fr": "La ferraille"}
+{"id": 4741, "en": "Neutral", "fr": "Neutre"}
+{"id": 4742, "en": "F.B.", "fr": "F.B."}
+{"id": 4743, "en": "Infected", "fr": "Infecté"}
+{"id": 4744, "en": "10,000 Cr$<size=12>5,000 Cr</size>", "fr": "10 000 Cr$<size=12>5 000 Cr</size>"}
+{"id": 4745, "en": "+150 Cr", "fr": "+150 Cr"}
+{"id": 4746, "en": "10,000 Cr", "fr": "10 000 Cr"}
+{"id": 4747, "en": "+10", "fr": "+10"}
+{"id": 4748, "en": "v1.1 i84", "fr": "v1.1 i84"}
+{"id": 4749, "en": "Play", "fr": "Jouer"}
+{"id": 4750, "en": "Load Game", "fr": "Charger"}
+{"id": 4751, "en": "Options", "fr": "Options"}
+{"id": 4752, "en": "Appearance", "fr": "Apparence"}
+{"id": 4753, "en": "NEW", "fr": "NOUVEAU"}
+{"id": 4754, "en": "Statistics", "fr": "Statistiques"}
+{"id": 4755, "en": "Manual$", "fr": "Manuel"}
+{"id": 4756, "en": "Credits", "fr": "Crédits"}
+{"id": 4757, "en": "Quit", "fr": "Quitter le jeu"}
+{"id": 4758, "en": "Report Bug / Suggestion", "fr": "Signaler un bug / Suggestion"}
+{"id": 4759, "en": "Online Status", "fr": "Statut en ligne"}
+{"id": 4760, "en": "Connected to Steam", "fr": "Connecté à Steam"}
+{"id": 4761, "en": "------", "fr": "------"}
+{"id": 4762, "en": "Steam Cloud", "fr": "Nuage de vapeur"}
+{"id": 4763, "en": "Combat Training", "fr": "Entraînement au combat"}
+{"id": 4764, "en": "Sort By", "fr": "Trier par"}
+{"id": 4765, "en": "SHOW FULL GAMES", "fr": "AFFICHER LES JEUX COMPLETS"}
+{"id": 4766, "en": "Intrepid", "fr": "Intrépide"}
+{"id": 4767, "en": "2 / 5", "fr": "2 / 5"}
+{"id": 4768, "en": "SHOW PRIVATE GAMES", "fr": "MONTRER LES JEUX PRIVÉS"}
+{"id": 4769, "en": "Password", "fr": "Mot de passe"}
+{"id": 4770, "en": "Join Private Game", "fr": "Participer à un jeu privé"}
+{"id": 4771, "en": "Join Game", "fr": "Participer au jeu"}
+{"id": 4772, "en": "Cancel", "fr": "Annuler"}
+{"id": 4773, "en": "Join a Crew", "fr": "Rejoindre un équipage"}
+{"id": 4774, "en": "Region", "fr": "Région"}
+{"id": 4775, "en": "Can't find crews in offline mode", "fr": "Impossible de trouver des équipages en mode hors ligne"}
+{"id": 4776, "en": "Go Online", "fr": "Aller en ligne"}
+{"id": 4777, "en": "edit", "fr": "éditer"}
+{"id": 4778, "en": "Find Crew", "fr": "Trouver un équipage"}
+{"id": 4779, "en": "Crew Finder", "fr": "Recherche d'équipage"}
+{"id": 4780, "en": "Weapons Spec.", "fr": "Spécialiste des armes."}
+{"id": 4781, "en": "Preferred Classes For Search", "fr": "Classes préférées pour la recherche"}
+{"id": 4782, "en": "OFFLINE", "fr": "HORS LIGNE"}
+{"id": 4783, "en": "ONLINE", "fr": "EN LIGNE"}
+{"id": 4784, "en": "20 / 100 used slots in Steam Cloud", "fr": "20 / 100 emplacements utilisés dans Steam Cloud"}
+{"id": 4785, "en": "Page 1 / 4", "fr": "Page 1 / 4"}
+{"id": 4786, "en": "Ship Name", "fr": "Nom du vaisseau"}
+{"id": 4787, "en": "Ironman Mode", "fr": "Mode Ironman"}
+{"id": 4788, "en": "Is Private Game", "fr": "Est un jeu privé"}
+{"id": 4789, "en": "ENGAGE", "fr": "S'ENGAGER"}
+{"id": 4790, "en": "Secured Game$<color=#aaa>(Steam Players Only)</color>", "fr": "Jeu sécurisé$<color=#aaa>(Joueurs Steam uniquement)</color>"}
+{"id": 4791, "en": "Reset AI Settings", "fr": "Réinitialiser les paramètres de l'IA"}
+{"id": 4792, "en": "Custom", "fr": "Sur mesure"}
+{"id": 4793, "en": "Expert", "fr": "Expert"}
+{"id": 4794, "en": "Standard", "fr": "Standard"}
+{"id": 4795, "en": "Play Online", "fr": "Jouer en ligne"}
+{"id": 4796, "en": "The Lost Colony", "fr": "La colonie perdue"}
+{"id": 4797, "en": "MAIN CAMPAIGN", "fr": "CAMPAGNE PRINCIPALE"}
+{"id": 4798, "en": "POLYTECHNIC CAMPAIGN", "fr": "CAMPAGNE POLYTECHNIQUE"}
+{"id": 4799, "en": "In Development", "fr": "En cours de développement"}
+{"id": 4800, "en": "Private Game", "fr": "Jeu privé"}
+{"id": 4801, "en": "Saves are deleted upon game over", "fr": "Les sauvegardes sont supprimées à la fin du jeu"}
+{"id": 4802, "en": "Enter password...", "fr": "Entrez le mot de passe..."}
+{"id": 4803, "en": "Secured Game", "fr": "Jeu sécurisé"}
+{"id": 4804, "en": "Secured Games require all players to be logged into Steam. This enables joining friends via the friends list and account-based kicking.", "fr": "Les jeux sécurisés exigent que tous les joueurs soient connectés à Steam. Cela permet de rejoindre des amis via la liste d'amis et les coups de pied basés sur le compte."}
+{"id": 4805, "en": "Use Custom Settings", "fr": "Utiliser les paramètres personnalisés"}
+{"id": 4806, "en": "Reflected Galaxy", "fr": "Galaxie réfléchie"}
+{"id": 4807, "en": "Disable Timer", "fr": "Désactiver la minuterie"}
+{"id": 4808, "en": "Details", "fr": "Détails"}
+{"id": 4809, "en": "Ship Class", "fr": "Classe de vaisseau"}
+{"id": 4810, "en": "SHIP TYPE", "fr": "TYPE DE NAVIRE"}
+{"id": 4811, "en": "Select Class", "fr": "Sélectionner la classe"}
+{"id": 4812, "en": "-", "fr": "-"}
+{"id": 4813, "en": "Weap. Specialist", "fr": "Bassin. Spécialiste"}
+{"id": 4814, "en": "Ready", "fr": "Prêt"}
+{"id": 4815, "en": "Leave Game", "fr": "Quitter le jeu"}
+{"id": 4816, "en": "Customize", "fr": "Personnaliser"}
+{"id": 4817, "en": "Customize Appearance", "fr": "Personnaliser l'apparence"}
+{"id": 4818, "en": "Ship Components", "fr": "Composants des vaisseaus"}
+{"id": 4819, "en": "Edit Game Settings", "fr": "Modifier les paramètres du jeu"}
+{"id": 4820, "en": "Controls", "fr": "Contrôles"}
+{"id": 4821, "en": "Video", "fr": "Vidéo"}
+{"id": 4822, "en": "Audio", "fr": "Audio"}
+{"id": 4823, "en": "Game", "fr": "Jeu"}
+{"id": 4824, "en": "VR", "fr": "VR"}
+{"id": 4825, "en": "Disconnect", "fr": "Déconnexion"}
+{"id": 4826, "en": "Stats", "fr": "Statistiques"}
+{"id": 4827, "en": "Quit Game", "fr": "Quitter le jeu"}
+{"id": 4828, "en": "Report A Bug", "fr": "Signaler un bogue"}
+{"id": 4829, "en": "Graphics Quality$", "fr": "Qualité graphique"}
+{"id": 4830, "en": "Lowest", "fr": "Le plus bas"}
+{"id": 4831, "en": "Resolution$", "fr": "Résolution"}
+{"id": 4832, "en": "1024x768 @59hz", "fr": "1024x768 @59hz"}
+{"id": 4833, "en": "Framerate Limit", "fr": "Limite de fréquence"}
+{"id": 4834, "en": "Unlimited", "fr": "Illimité"}
+{"id": 4835, "en": "Lighting Quality", "fr": "Qualité de l'éclairage"}
+{"id": 4836, "en": "Minimum", "fr": "Minimum"}
+{"id": 4837, "en": "Textures", "fr": "Textures"}
+{"id": 4838, "en": "Full Size", "fr": "Taille réelle"}
+{"id": 4839, "en": "SMAA$", "fr": "SMAA$"}
+{"id": 4840, "en": "Off", "fr": "Arrêt"}
+{"id": 4841, "en": "VSync", "fr": "VSync"}
+{"id": 4842, "en": "Fullscreen", "fr": "Plein écran"}
+{"id": 4843, "en": "Bloom", "fr": "Fleurir"}
+{"id": 4844, "en": "Sun Shafts", "fr": "Pare-soleil"}
+{"id": 4845, "en": "SSAO", "fr": "SSAO"}
+{"id": 4846, "en": "Brightness", "fr": "Luminosité"}
+{"id": 4847, "en": "60", "fr": "60"}
+{"id": 4848, "en": "Field Of View", "fr": "Champ de vision"}
+{"id": 4849, "en": "Render Scale", "fr": "Échelle de rendu"}
+{"id": 4850, "en": "100%", "fr": "100%"}
+{"id": 4851, "en": "Music Volume", "fr": "Volume de la musique"}
+{"id": 4852, "en": "SFX Volume", "fr": "Volume SFX"}
+{"id": 4853, "en": "Voice Chat Volume", "fr": "Volume du chat vocal"}
+{"id": 4854, "en": "Voice Chat Enabled", "fr": "Chat vocal activé"}
+{"id": 4855, "en": "Microphone Enabled", "fr": "Microphone activé"}
+{"id": 4856, "en": "Push To Talk", "fr": "Pousser pour parler"}
+{"id": 4857, "en": "Microphone (Voice Chat)$", "fr": "Microphone (chat vocal)$"}
+{"id": 4858, "en": "Audio Output (Voice Chat)$", "fr": "Sortie audio (chat vocal)$"}
+{"id": 4859, "en": "Manage Bans", "fr": "Gérer les bannissements"}
+{"id": 4860, "en": "Change Region", "fr": "Changer de région"}
+{"id": 4861, "en": "Player Name", "fr": "Nom du joueur"}
+{"id": 4862, "en": "Allow Crewmates To View Steam Profile", "fr": "Autoriser les équipiers à voir le profil Steam"}
+{"id": 4863, "en": "Show Controls", "fr": "Afficher les contrôles"}
+{"id": 4864, "en": "Show Damage Numbers", "fr": "Afficher les numéros de dommages"}
+{"id": 4865, "en": "Show In-Game UI", "fr": "Afficher l'interface utilisateur du jeu"}
+{"id": 4866, "en": "Show Notifications", "fr": "Afficher les notifications"}
+{"id": 4867, "en": "Show Crew Health UI", "fr": "Afficher l'interface utilisateur de Crew Health"}
+{"id": 4868, "en": "Prefer Metric Temp", "fr": "Préférer la température métrique"}
+{"id": 4869, "en": "Prefer Kelvin Temp", "fr": "Préférer la température Kelvin"}
+{"id": 4870, "en": "Chat Font Size", "fr": "Taille de la police du chat"}
+{"id": 4871, "en": "Chat Screen Width$", "fr": "Chat Screen Width$ (écran de chat)"}
+{"id": 4872, "en": "Chat Num Lines$", "fr": "Chat Num Lines$"}
+{"id": 4873, "en": "UI Scale", "fr": "Échelle de l'interface utilisateur"}
+{"id": 4874, "en": "UI Margin", "fr": "Marge de l'interface utilisateur"}
+{"id": 4875, "en": "Screen Tilt", "fr": "Inclinaison de l'écran"}
+{"id": 4876, "en": "Autosave Timer", "fr": "Minuteur de sauvegarde automatique"}
+{"id": 4877, "en": "Autosave", "fr": "Sauvegarde automatique"}
+{"id": 4878, "en": "Profanity Filter", "fr": "Filtre de grossièretés"}
+{"id": 4879, "en": "Send Analytics", "fr": "Envoyer des analyses"}
+{"id": 4880, "en": "Open Data Privacy Page", "fr": "Page sur la confidentialité des données ouvertes"}
+{"id": 4881, "en": "Camera Shake", "fr": "Le bougé de l'appareil photo"}
+{"id": 4882, "en": "Change Language", "fr": "Changer de langue"}
+{"id": 4883, "en": "Custom Controller Offsets", "fr": "Décalages personnalisés du contrôleur"}
+{"id": 4884, "en": "VR Control Method$", "fr": "Méthode de contrôle de la RV"}
+{"id": 4885, "en": "Standard Controls", "fr": "Contrôles standard"}
+{"id": 4886, "en": "VR Setup Type$", "fr": "Type de configuration de la RV$"}
+{"id": 4887, "en": "Standing / Seated", "fr": "Debout / Assis"}
+{"id": 4888, "en": "Auto Adjust", "fr": "Ajustement automatique"}
+{"id": 4889, "en": "VR Render Scale", "fr": "Échelle de rendu VR"}
+{"id": 4890, "en": "Equip To Left Hand", "fr": "Equiper la main gauche"}
+{"id": 4891, "en": "Motion Vignette", "fr": "Vignette de mouvement"}
+{"id": 4892, "en": "Custom Offsets", "fr": "Décalages personnalisés"}
+{"id": 4893, "en": "UI Depth Offset", "fr": "Décalage de la profondeur de l'interface utilisateur"}
+{"id": 4894, "en": "Snap Turning", "fr": "Retournement rapide"}
+{"id": 4895, "en": "Snap Turn Angle", "fr": "Angle de rotation de l'encliquetage"}
+{"id": 4896, "en": "VR Flight Camera$(First Person Override)", "fr": "Caméra de vol VR$(First Person Override)"}
+{"id": 4897, "en": "Oculus Touch (Left)", "fr": "Oculus Touch (gauche)"}
+{"id": 4898, "en": "X", "fr": "X"}
+{"id": 4899, "en": "Y", "fr": "Y"}
+{"id": 4900, "en": "Z", "fr": "Z"}
+{"id": 4901, "en": "POSITION", "fr": "POSITION"}
+{"id": 4902, "en": "ROTATION", "fr": "ROTATION"}
+{"id": 4903, "en": "Oculus Touch (Right)", "fr": "Oculus Touch (à droite)"}
+{"id": 4904, "en": "Back", "fr": "Retour"}
+{"id": 4905, "en": "SteamVR (Right)", "fr": "SteamVR (à droite)"}
+{"id": 4906, "en": "SteamVR (Left)", "fr": "SteamVR (gauche)"}
+{"id": 4907, "en": "Reset Offsets", "fr": "Remise à zéro des décalages"}
+{"id": 4908, "en": "Attached Menu (Right)", "fr": "Menu joint (à droite)"}
+{"id": 4909, "en": "Attached Menu (Left)", "fr": "Menu joint (à gauche)"}
+{"id": 4910, "en": "Load Profile", "fr": "Profil de charge"}
+{"id": 4911, "en": "Save Profile", "fr": "Sauvegarder le profil"}
+{"id": 4912, "en": "Reset Bindings", "fr": "Remise à zéro des fixations"}
+{"id": 4913, "en": "Input Settings", "fr": "Paramètres d'entrée"}
+{"id": 4914, "en": "Keyboard + Mouse", "fr": "Clavier + souris"}
+{"id": 4915, "en": "Keybindings", "fr": "Raccords de touches"}
+{"id": 4916, "en": "Gamepad / HOTAS", "fr": "Manette de jeu / HOTAS"}
+{"id": 4917, "en": "Oculus Touch", "fr": "Oculus Touch"}
+{"id": 4918, "en": "Vive Controllers", "fr": "Contrôleurs Vive"}
+{"id": 4919, "en": "Use Virtual Cursor", "fr": "Utiliser le curseur virtuel"}
+{"id": 4920, "en": "Virtual cursor is also enabled when using gamepads", "fr": "Le curseur virtuel est également activé lors de l'utilisation de manettes de jeu."}
+{"id": 4921, "en": "Sprint (Use Toggle)", "fr": "Sprint (utiliser la bascule)"}
+{"id": 4922, "en": "Smooth Turret Camera", "fr": "Caméra à tourelle lisse"}
+{"id": 4923, "en": "Mouse Smoothing", "fr": "Lissage de la souris"}
+{"id": 4924, "en": "Invert Y (On Foot)", "fr": "Y inversé (à pied)"}
+{"id": 4925, "en": "Invert Y (Turret/Dish)", "fr": "Inverser Y (tourelle/plat)"}
+{"id": 4926, "en": "Invert Y (Piloting)", "fr": "Y inversé (pilotage)"}
+{"id": 4927, "en": "Mouse Sensitivity (On Foot)", "fr": "Sensibilité de la souris (au pied)"}
+{"id": 4928, "en": "Mouse Sensitivity (Piloting)", "fr": "Sensibilité de la souris (pilotage)"}
+{"id": 4929, "en": "Mouse Sensitivity (Turret/Dish)", "fr": "Sensibilité de la souris (tourelle/plateau)"}
+{"id": 4930, "en": "Joystick Sensitivity", "fr": "Sensibilité du joystick"}
+{"id": 4931, "en": "Joystick Sensitivity (Cursor)", "fr": "Sensibilité du joystick (curseur)"}
+{"id": 4932, "en": "1/3", "fr": "1/3"}
+{"id": 4933, "en": "Action", "fr": "Action"}
+{"id": 4934, "en": "Device", "fr": "Dispositif"}
+{"id": 4935, "en": "Key", "fr": "Clé"}
+{"id": 4936, "en": "CONNECTED$-Left Vive Controller$-Right Vive Controller", "fr": "CONNECTED$-Contrôleur Vive gauche$-Contrôleur Vive droit"}
+{"id": 4937, "en": "EDIT ACTION", "fr": "EDIT ACTION"}
+{"id": 4938, "en": "Activate Station", "fr": "Activer la station"}
+{"id": 4939, "en": "EDIT INPUT AXIS", "fr": "ÉDITER L'AXE D'ENTRÉE"}
+{"id": 4940, "en": "Axis Name", "fr": "Nom de l'axe"}
+{"id": 4941, "en": "+0%", "fr": "0"}
+{"id": 4942, "en": "Sensitivity", "fr": "Sensibilité"}
+{"id": 4943, "en": "Offset", "fr": "Décalage"}
+{"id": 4944, "en": "Joystick", "fr": "Manette"}
+{"id": 4945, "en": "Axis", "fr": "Axe"}
+{"id": 4946, "en": "-1.0", "fr": "-1.0"}
+{"id": 4947, "en": "Preview", "fr": "Avant-première"}
+{"id": 4948, "en": "Invert", "fr": "Inverser"}
+{"id": 4949, "en": "EDIT INPUT VIRTUAL BUTTON AXIS", "fr": "EDIT INPUT VIRTUAL BUTTON AXIS"}
+{"id": 4950, "en": "Custom Galaxy Settings", "fr": "Paramètres personnalisés de Galaxy"}
+{"id": 4951, "en": "Sectors & Ships", "fr": "Secteurs et vaisseaus"}
+{"id": 4952, "en": "Modifiers", "fr": "Modificateurs"}
+{"id": 4953, "en": "Other", "fr": "Autres"}
+{"id": 4954, "en": "Reset (Standard)", "fr": "Réinitialisation (standard)"}
+{"id": 4955, "en": "Galaxy Size", "fr": "Taille de la galaxie"}
+{"id": 4956, "en": "Chaos Growth Rate", "fr": "Taux de croissance du chaos"}
+{"id": 4957, "en": "Galaxy Seed", "fr": "Graine de galaxie"}
+{"id": 4958, "en": "291029129", "fr": "291029129"}
+{"id": 4959, "en": "Max Chaos", "fr": "Max Chaos"}
+{"id": 4960, "en": "Enemy Ship Power", "fr": "Puissance des vaisseaus ennemis"}
+{"id": 4961, "en": "Drone Modifier Power", "fr": "Pouvoir modificateur du drone"}
+{"id": 4962, "en": "Colonial Union (Initial Spread)", "fr": "Union coloniale (diffusion initiale)"}
+{"id": 4963, "en": "Colonial Union (Continuous Spread)", "fr": "Union coloniale (diffusion continue)"}
+{"id": 4964, "en": "W.D. Corp (Initial Spread)", "fr": "W.D. Corp (diffusion initiale)"}
+{"id": 4965, "en": "W.D. Corp (Continuous Spread)", "fr": "W.D. Corp (diffusion continue)"}
+{"id": 4966, "en": "Infected (Initial Spread)", "fr": "Infectés (propagation initiale)"}
+{"id": 4967, "en": "Infected (Continuous Spread)", "fr": "Infecté (diffusion continue)"}
+{"id": 4968, "en": "General Store Spawn Rate", "fr": "Taux de ponte du magasin général"}
+{"id": 4969, "en": "Warp Station Spawn Rate", "fr": "Taux d'apparition des stations Warp"}
+{"id": 4970, "en": "Scrapyard Spawn Rate", "fr": "Taux de reproduction de la casse"}
+{"id": 4971, "en": "Nebula Spawn Rate", "fr": "Taux de reproduction des nébuleuses"}
+{"id": 4972, "en": "Graveyard Spawn Rate", "fr": "Taux de reproduction au cimetière"}
+{"id": 4973, "en": "Faction Battle Spawn Rate", "fr": "Taux d'apparition des combats de faction"}
+{"id": 4974, "en": "Asteroid Field Spawn Rate", "fr": "Taux de reproduction des champs d'astéroïdes"}
+{"id": 4975, "en": "Moon Spawn Rate", "fr": "Taux de reproduction sur la lune"}
+{"id": 4976, "en": "Planet Enemy Respawn Rate", "fr": "Taux de réapparition des ennemis de la planète"}
+{"id": 4977, "en": "Beacon Spawn Rate", "fr": "Taux de reproduction des balises"}
+{"id": 4978, "en": "Bounty Hunter Spawn Rate", "fr": "Taux de reproduction des chasseurs de primes"}
+{"id": 4979, "en": "Enemy Ship Backup Rate", "fr": "Taux de sauvegarde des vaisseaus ennemis"}
+{"id": 4980, "en": "Player Ship", "fr": "Vaisseau des joueurs"}
+{"id": 4981, "en": "Other Ships", "fr": "Autres vaisseaus"}
+{"id": 4982, "en": "Shield Charging Rate", "fr": "Taux de charge du bouclier"}
+{"id": 4983, "en": "Warp Charging Rate", "fr": "Taux de charge de la distorsion"}
+{"id": 4984, "en": "Thrust Strength", "fr": "Force de poussée"}
+{"id": 4985, "en": "Reactor Output", "fr": "Sortie du réacteur"}
+{"id": 4986, "en": "Energy Damage (Outgoing)", "fr": "Dégâts énergétiques (sortant)"}
+{"id": 4987, "en": "Physical Damage (Outgoing)", "fr": "Dommages physiques (sortants)"}
+{"id": 4988, "en": "Reset (Expert)", "fr": "Réinitialisation (Expert)"}
+{"id": 4989, "en": "q", "fr": "q"}
+{"id": 4990, "en": "w", "fr": "w"}
+{"id": 4991, "en": "r", "fr": "r"}
+{"id": 4992, "en": "e", "fr": "e"}
+{"id": 4993, "en": "y", "fr": "y"}
+{"id": 4994, "en": "t", "fr": "t"}
+{"id": 4995, "en": "u", "fr": "u"}
+{"id": 4996, "en": "i", "fr": "i"}
+{"id": 4997, "en": "k", "fr": "k"}
+{"id": 4998, "en": "o", "fr": "o"}
+{"id": 4999, "en": "p", "fr": "p"}
+{"id": 5000, "en": "l", "fr": "l"}
+{"id": 5001, "en": "j", "fr": "j"}
+{"id": 5002, "en": "f", "fr": "f"}
+{"id": 5003, "en": "h", "fr": "h"}
+{"id": 5004, "en": "g", "fr": "g"}
+{"id": 5005, "en": "d", "fr": "d"}
+{"id": 5006, "en": "s", "fr": "s"}
+{"id": 5007, "en": "a", "fr": "a"}
+{"id": 5008, "en": "z", "fr": "z"}
+{"id": 5009, "en": "c", "fr": "c"}
+{"id": 5010, "en": "v", "fr": "v"}
+{"id": 5011, "en": "n", "fr": "n"}
+{"id": 5012, "en": "b", "fr": "b"}
+{"id": 5013, "en": "m", "fr": "m"}
+{"id": 5014, "en": "", "fr": ""}
+{"id": 5015, "en": "shift", "fr": "changement"}
+{"id": 5016, "en": "enter", "fr": "entrer"}
+{"id": 5017, "en": "9", "fr": "9"}
+{"id": 5018, "en": "7", "fr": "7"}
+{"id": 5019, "en": "8", "fr": "8"}
+{"id": 5020, "en": "<<", "fr": "<<"}
+{"id": 5021, "en": "Stat List", "fr": "Liste des statuts"}
+{"id": 5022, "en": "Ship Type Name", "fr": "Nom du type de vaisseau"}
+{"id": 5023, "en": "Title", "fr": "Titre"}
+{"id": 5024, "en": "Language Name", "fr": "Nom de la langue"}
+{"id": 5025, "en": "Enter description here ...", "fr": "Entrez la description ici ..."}
+{"id": 5026, "en": "Description", "fr": "Description"}
+{"id": 5027, "en": "Path to content folder", "fr": "Chemin d'accès au dossier de contenu"}
+{"id": 5028, "en": "Content Path", "fr": "Chemin du contenu"}
+{"id": 5029, "en": "Open Folder", "fr": "Ouvrir un dossier"}
+{"id": 5030, "en": "Content Info", "fr": "Informations sur le contenu"}
+{"id": 5031, "en": "Enter path to thumbnail file (jpg/png)", "fr": "Indiquer le chemin d'accès au fichier de la vignette (jpg/png)"}
+{"id": 5032, "en": "Thumbnail Path", "fr": "Chemin d'accès à la vignette"}
+{"id": 5033, "en": "Select File", "fr": "Sélectionner un fichier"}
+{"id": 5034, "en": "Delete", "fr": "Supprimer"}
+{"id": 5035, "en": "Submit", "fr": "Soumettre"}
+{"id": 5036, "en": "View In Steam Workshop", "fr": "Voir dans Steam Workshop"}
+{"id": 5037, "en": "In-Place Language Update", "fr": "Mise à jour linguistique en place"}
+{"id": 5038, "en": "Right To Left", "fr": "De droite à gauche"}
+{"id": 5039, "en": "Share On Workshop", "fr": "Partager sur l'atelier"}
+{"id": 5040, "en": "In a galaxy on the fringes of known space, a peculiar transmission was received by every ship and station.", "fr": "Dans une galaxie aux confins de l'espace connu, une transmission particulière a été reçue par tous les vaisseaux et toutes les stations."}
+{"id": 5041, "en": "It spoke of a place called the Lost Colony, a remnant of the Old Wars that harbors a secret—one that may change the course of history forever.", "fr": "Il parlait d'un endroit appelé la Colonie Perdue, un vestige des Anciennes Guerres qui abrite un secret, un secret qui pourrait changer le cours de l'histoire à jamais."}
+{"id": 5042, "en": "When the message was sent, its coordinates were corrupted—fragmented. To track the transmission’s origin, several pieces of the scattered data must be collected.", "fr": "Lorsque le message a été envoyé, ses coordonnées ont été corrompues - fragmentées. Pour retrouver l'origine de la transmission, il faut collecter plusieurs éléments des données dispersées."}
+{"id": 5043, "en": "Hundreds have set out in search of the Lost Colony, believing the first to find it will attain unparalleled wealth and power.", "fr": "Des centaines de personnes sont parties à la recherche de la colonie perdue, persuadées que le premier à la trouver atteindra une richesse et une puissance sans pareilles."}
+{"id": 5044, "en": "Some desperate crews seek to acquire these so-called “data fragments” by any means at their disposal.", "fr": "Certains équipages désespérés cherchent à acquérir ces \"fragments de données\" par tous les moyens à leur disposition."}
+{"id": 5045, "en": "However, the frantic hunt for data fragments is not the only stirring of trouble in the galaxy.", "fr": "Cependant, la chasse effrénée aux fragments de données n'est pas la seule source de problèmes dans la galaxie."}
+{"id": 5046, "en": "With the intergalactic warp network severed and a pervasive species known as the Infected spreading through the sectors, chaos is rising.", "fr": "Le réseau de distorsion intergalactique est rompu et une espèce envahissante connue sous le nom d'Infectés se répand dans les secteurs, ce qui entraîne le chaos."}
+{"id": 5047, "en": "No one knows what will become of this galaxy or its inhabitants in due time.", "fr": "Personne ne sait ce qu'il adviendra de cette galaxie et de ses habitants en temps voulu."}
+{"id": 5048, "en": "As officers of the lawful Colonial Union", "fr": "En tant qu'officiers de l'Union coloniale légale"}
+{"id": 5049, "en": "employees of the weapons manufacturing W.D. Corporation", "fr": "les employés de la société de fabrication d'armes W.D. Corporation"}
+{"id": 5050, "en": "members of the piratical Alliance of Gentlemen", "fr": "les membres de l'alliance pirate des Gentlemen"}
+{"id": 5051, "en": "a delivery crew for the Fluffy Biscuit Company", "fr": "une équipe de livraison pour la Fluffy Biscuit Company"}
+{"id": 5052, "en": "or neutral civilians bereft of a faction", "fr": "ou des civils neutres dépourvus de faction"}
+{"id": 5053, "en": "it is up to you to decide what you'll do.", "fr": "c'est à vous de décider ce que vous ferez."}
+{"id": 5054, "en": "Will you help restore order?", "fr": "Allez-vous aider à rétablir l'ordre ?"}
+{"id": 5055, "en": "Will you plunge the galaxy deeper into chaos?", "fr": "Allez-vous plonger la galaxie plus profondément dans le chaos ?"}
+{"id": 5056, "en": "Or will you join the hunt for the fabled Lost Colony?", "fr": "Ou rejoindrez-vous la chasse à la légendaire colonie perdue ?"}
+{"id": 5057, "en": "Damage", "fr": "Dommages"}
+{"id": 5058, "en": "Ammo Refill", "fr": "Recharge de munitions"}
+{"id": 5059, "en": "Health", "fr": "Santé"}
+{"id": 5060, "en": "250/250", "fr": "250/250"}
+{"id": 5061, "en": "Option 1", "fr": "Option 1"}
+{"id": 5062, "en": "Option 2", "fr": "Option 2"}
+{"id": 5063, "en": "+20", "fr": "20"}
+{"id": 5064, "en": "Attempt to make a sale of 20 biscuits. Concludes interaction.", "fr": "Tentative de vente de 20 biscuits. Conclut l'interaction."}
+{"id": 5065, "en": "50%", "fr": "50%"}
+{"id": 5066, "en": "No Sale", "fr": "Pas de vente"}
+{"id": 5067, "en": "Too many rejections. Try again later.", "fr": "Trop de refus. Réessayez plus tard."}
+{"id": 5068, "en": "Rejections", "fr": "Rejets"}
+{"id": 5069, "en": "Randomize", "fr": "Aléatoire"}
+{"id": 5070, "en": "Gender", "fr": "Genre"}
+{"id": 5071, "en": "Male", "fr": "Homme"}
+{"id": 5072, "en": "Hair Color (Red)", "fr": "Couleur des cheveux (rouge)"}
+{"id": 5073, "en": "Hair Color (Green)", "fr": "Couleur des cheveux (vert)"}
+{"id": 5074, "en": "Hair Color (Blue)", "fr": "Couleur des cheveux (bleu)"}
+{"id": 5075, "en": "Tech Color (Blue)", "fr": "Couleur Tech (Bleu)"}
+{"id": 5076, "en": "Tech Color (Green)", "fr": "Couleur technique (vert)"}
+{"id": 5077, "en": "Tech Color (Red)", "fr": "Couleur technique (rouge)"}
+{"id": 5078, "en": "Tech Accessory", "fr": "Accessoire technique"}
+{"id": 5079, "en": "Face", "fr": "Visage"}
+{"id": 5080, "en": "Hair", "fr": "Cheveux"}
+{"id": 5081, "en": "Facial Hair$", "fr": "Poils du visage"}
+{"id": 5082, "en": "Low", "fr": "Faible"}
+{"id": 5083, "en": "Medium", "fr": "Moyen"}
+{"id": 5084, "en": "High", "fr": "Haut"}
+{"id": 5085, "en": "Ultra", "fr": "Ultra"}
+{"id": 5086, "en": "240", "fr": "240"}
+{"id": 5087, "en": "144", "fr": "144"}
+{"id": 5088, "en": "90", "fr": "90"}
+{"id": 5089, "en": "30", "fr": "30"}
+{"id": 5090, "en": "Half Size", "fr": "Demi-taille"}
+{"id": 5091, "en": "Fourth Size", "fr": "Quatrième taille"}
+{"id": 5092, "en": "60%", "fr": "60%"}
+{"id": 5093, "en": "70%", "fr": "70%"}
+{"id": 5094, "en": "80%", "fr": "80%"}
+{"id": 5095, "en": "90%", "fr": "90%"}
+{"id": 5096, "en": "Motion Controllers", "fr": "Contrôleurs de mouvement"}
+{"id": 5097, "en": "Roomscale", "fr": "L'échelle des chambres"}
+{"id": 5098, "en": "Race/Gender", "fr": "Race/Genre"}
+{"id": 5099, "en": "Accessory", "fr": "Accessoire"}
+{"id": 5100, "en": "Facial Hair", "fr": "Poils du visage"}
+{"id": 5101, "en": "Uniform", "fr": "Uniforme"}
+{"id": 5102, "en": "Human Traits", "fr": "Traits humains"}
+{"id": 5103, "en": "NEEDS OXYGEN", "fr": "BESOIN D'OXYGÈNE"}
+{"id": 5104, "en": "INJURED BY ALL HOSTILE ENVIRONMENT TYPES", "fr": "BLESSÉS PAR TOUS LES TYPES D'ENVIRONNEMENT HOSTILE"}
+{"id": 5105, "en": "CAN BE REVIVED ONCE PER JUMP", "fr": "PEUT ÊTRE RANIMÉ UNE FOIS PAR SAUT"}
+{"id": 5106, "en": "ENVIRONMENT IMMUNITIES", "fr": "IMMUNITÉS ENVIRONNEMENTALES"}
+{"id": 5107, "en": "EXTREME HEAT", "fr": "CHALEUR EXTRÊME"}
+{"id": 5108, "en": "TOXIC", "fr": "TOXIQUE"}
+{"id": 5109, "en": "EXTREME COLD", "fr": "FROID EXTRÊME"}
+{"id": 5110, "en": "NO OXYGEN", "fr": "PAS D'OXYGÈNE"}
+{"id": 5111, "en": "Humans have recovered some of their former glory since the dark ages after the Old Wars, and they have become a prominent intergalactic presence. Their innate drive for exploration has propelled them across many galaxies, discovering new worlds and paving the way for those who would follow. Though they are ill-suited for many environments, their tenacity, ingenuity, and will to survive rival even the most resilient of species.", "fr": "Les humains ont retrouvé une partie de leur gloire depuis les âges sombres de l'ancienne guerre et sont devenus une présence intergalactique de premier plan. Leur goût inné pour l'exploration les a propulsés à travers de nombreuses galaxies, découvrant de nouveaux mondes et ouvrant la voie à ceux qui les suivraient. Bien qu'ils soient mal adaptés à de nombreux environnements, leur ténacité, leur ingéniosité et leur volonté de survivre rivalisent avec les espèces les plus résistantes."}
+{"id": 5112, "en": "CAN CLOAK SELF FOR SHORT TIME", "fr": "PEUT S'OCCULTER PENDANT UNE COURTE PÉRIODE"}
+{"id": 5113, "en": "CRITICAL WEAKNESS TO FIRE", "fr": "FAIBLESSE CRITIQUE FACE À L'INCENDIE"}
+{"id": 5114, "en": "IMMUNE TO ZERO OXYGEN AND COLD ENVIRONMENTS", "fr": "INSENSIBLE À L'ABSENCE D'OXYGÈNE ET AUX ENVIRONNEMENTS FROIDS"}
+{"id": 5115, "en": "LOWER BASE ARMOR", "fr": "ARMURE DE BASE INFÉRIEURE"}
+{"id": 5116, "en": "Sylvassi Traits", "fr": "Traits de Sylvassi"}
+{"id": 5117, "en": "Sylvassi home worlds are cold and comprised largely of liquid methane, though many Sylvassi have grown up enclosed in their suits. A good number alive today are part of the first generation born free of the W.D. Corporation labor worlds since the end of the Old Wars. In the past century, more Sylvassi have begun to forge their own paths; some have joined the Colonial Union, others have found sanctuary in the Alliance of Gentlemen, and others still have pursued their own ambitions and joined the W.D. Corporation by choice.", "fr": "Les mondes d'origine des Sylvassiens sont froids et composés en grande partie de méthane liquide, bien que de nombreux Sylvassiens aient grandi enfermés dans leurs combinaisons. Un grand nombre d'entre eux font partie de la première génération née libre des mondes de travail de la W.D. Corporation depuis la fin des Anciennes Guerres. Au cours du siècle dernier, de plus en plus de Sylvassi ont commencé à tracer leur propre voie ; certains ont rejoint l'Union Coloniale, d'autres ont trouvé refuge dans l'Alliance des Gentlemen, et d'autres encore ont poursuivi leurs propres ambitions et ont rejoint la W.D. Corporation par choix."}
+{"id": 5118, "en": "Robot Traits", "fr": "Traits du robot"}
+{"id": 5119, "en": "IMMUNE TO HOSTILE ENVIRONMENTS", "fr": "À L'ABRI DES ENVIRONNEMENTS HOSTILES"}
+{"id": 5120, "en": "CAN BE HEALED WITH REPAIR GUN", "fr": "PEUT ÊTRE SOIGNÉE AVEC UN PISTOLET DE RÉPARATION"}
+{"id": 5121, "en": "HIGH CARRYING CAPACITY", "fr": "CAPACITÉ DE CHARGE ÉLEVÉE"}
+{"id": 5122, "en": "BASE HEALTH OF 60", "fr": "SANTÉ DE BASE DE 60"}
+{"id": 5123, "en": "Humanoid robots are common in Colonial Union galaxies, often employed for automated trading stations or labor in conditions that are otherwise dangerous to living organisms. Recently, however, there has been a rise of seemingly sentient machines who are joining crews and fulfilling roles that have been traditionally performed by biological persons. As robots are particularly resistant to hostile environments, they are well-suited for planetary missions and the unexpected perils of work aboard a starship.", "fr": "Les robots humanoïdes sont courants dans les galaxies de l'Union Coloniale. Ils sont souvent utilisés pour les stations commerciales automatisées ou pour travailler dans des conditions dangereuses pour les organismes vivants. Récemment, cependant, on a assisté à une augmentation du nombre de machines apparemment sensibles qui rejoignent les équipages et remplissent des rôles traditionnellement dévolus à des personnes biologiques. Les robots étant particulièrement résistants aux environnements hostiles, ils sont bien adaptés aux missions planétaires et aux périls inattendus du travail à bord d'un vaisseau spatial."}
+{"id": 5124, "en": "Human", "fr": "Humain"}
+{"id": 5125, "en": "Robot", "fr": "Robot"}
+{"id": 5126, "en": "Female", "fr": "Femme"}
+{"id": 5127, "en": "Skin Color", "fr": "Couleur de la peau"}
+{"id": 5128, "en": "Faction Preview", "fr": "Aperçu des factions"}
+{"id": 5129, "en": "Saturation", "fr": "Saturation"}
+{"id": 5130, "en": "Hue", "fr": "Hue"}
+{"id": 5131, "en": "Eye Color", "fr": "Couleur des yeux"}
+{"id": 5132, "en": "Lip Color", "fr": "Couleur des lèvres"}
+{"id": 5133, "en": "Hair Color", "fr": "Couleur des cheveux"}
+{"id": 5134, "en": "Alt Body Color", "fr": "Couleur de la carrosserie Alt"}
+{"id": 5135, "en": "Body Color", "fr": "Couleur du corps"}
+{"id": 5136, "en": "Visit a Barber Kiosk to edit appearances", "fr": "Rendez-vous dans un kiosque Barber pour modifier les apparences."}
+{"id": 5137, "en": "Playership is {0}in Red Alert", "fr": "Le nombre de joueurs est de {0} dans Red Alert"}
+{"id": 5138, "en": "NOT", "fr": "PAS"}
+{"id": 5139, "en": "Playership is {0}in Yellow Alert", "fr": "Le nombre de joueurs est de {0} en alerte jaune"}
+{"id": 5140, "en": "Playership is {0}in Green Alert", "fr": "Le nombre de joueurs est de {0} dans Green Alert"}
+{"id": 5141, "en": "Current Captain Order is {0}{1}", "fr": "L'ordre actuel du capitaine est {0}{1}"}
+{"id": 5142, "en": "(C", "fr": "(C"}
+{"id": 5143, "en": ")", "fr": ")"}
+{"id": 5144, "en": "Hull integrity is less than designated percent.", "fr": "L'intégrité de la coque est inférieure au pourcentage désigné."}
+{"id": 5145, "en": "Hull integrity is greater than or equal to designated percent.", "fr": "L'intégrité de la coque est supérieure ou égale au pourcentage désigné."}
+{"id": 5146, "en": "Shield integrity is less than designated percent.", "fr": "L'intégrité du bouclier est inférieure au pourcentage désigné."}
+{"id": 5147, "en": "Shield integrity is greater than or equal to designated percent.", "fr": "L'intégrité du bouclier est supérieure ou égale au pourcentage désigné."}
+{"id": 5148, "en": "Reactor temperature is greater than designated percent.", "fr": "La température du réacteur est supérieure au pourcentage désigné."}
+{"id": 5149, "en": "Reactor temperature is less than or equal to designated percent.", "fr": "La température du réacteur est inférieure ou égale au pourcentage désigné."}
+{"id": 5150, "en": "Reactor usage is greater than designated percent.", "fr": "L'utilisation du réacteur est supérieure au pourcentage désigné."}
+{"id": 5151, "en": "Reactor usage is less than or equal to designated percent.", "fr": "L'utilisation du réacteur est inférieure ou égale au pourcentage désigné."}
+{"id": 5152, "en": "Rate of oxygen generation is less than designated value.", "fr": "Le taux de production d'oxygène est inférieur à la valeur indiquée."}
+{"id": 5153, "en": "Rate of oxygen generation is greater than or equal to designated value.", "fr": "Le taux de production d'oxygène est supérieur ou égal à la valeur désignée."}
+{"id": 5154, "en": "Warp drive is currently charging.", "fr": "Le moteur de distorsion est en train de se recharger."}
+{"id": 5155, "en": "Warp drive is not currently charging.", "fr": "Le moteur de distorsion n'est pas en train de se charger."}
+{"id": 5156, "en": "There is no targeted ship.", "fr": "Il n'y a pas de vaisseau ciblé."}
+{"id": 5157, "en": "There is a targeted ship.", "fr": "Il y a un vaisseau ciblé."}
+{"id": 5158, "en": "Ship has taken hull damage within the last designated number of seconds.", "fr": "Le vaisseau a subi des dommages à la coque au cours des dernières secondes."}
+{"id": 5159, "en": "Ship has not taken hull damage within the last designated number of seconds.", "fr": "Le vaisseau n'a pas subi de dommages à la coque au cours des dernières secondes."}
+{"id": 5160, "en": "Ship has taken shield damage within the last designated number of seconds.", "fr": "Le vaisseau a subi des dégâts de bouclier au cours des dernières secondes."}
+{"id": 5161, "en": "Ship has not taken shield damage within the last designated number of seconds.", "fr": "Le vaisseau n'a pas subi de dégâts de bouclier au cours des dernières secondes."}
+{"id": 5162, "en": "Targeted ship’s hull is less than designated percent.", "fr": "La coque du vaisseau ciblé est inférieure au pourcentage désigné."}
+{"id": 5163, "en": "Targeted ship’s hull is greater than or equal to designated percent.", "fr": "La coque du vaisseau ciblé est supérieure ou égale au pourcentage désigné."}
+{"id": 5164, "en": "Warp drive has been fully charged and ship is ready to jump.", "fr": "Le moteur de distorsion a été entièrement rechargé et le vaisseau est prêt à sauter."}
+{"id": 5165, "en": "Warp drive has not been fully charged.", "fr": "Le moteur de distorsion n'a pas été complètement chargé."}
+{"id": 5166, "en": "A new captain’s order was announced within the last designated number of seconds.", "fr": "Un nouvel ordre du capitaine a été annoncé dans les dernières secondes."}
+{"id": 5167, "en": "A new captain’s order has not been announced within the last designated number of seconds.", "fr": "Un nouvel ordre du capitaine n'a pas été annoncé au cours des dernières secondes."}
+{"id": 5168, "en": "AI crewman took personal damage within the last designated number of seconds.", "fr": "Un membre de l'équipage de l'IA a subi des dommages personnels au cours des dernières secondes."}
+{"id": 5169, "en": "AI crewman has not taken personal damage within the last designated number of seconds.", "fr": "Le membre d'équipage de l'IA n'a pas subi de dommages personnels au cours des dernières secondes."}
+{"id": 5170, "en": "AI crewman’s personal health is greater than designated percent.", "fr": "L'état de santé du membre d'équipage de l'IA est supérieur au pourcentage désigné."}
+{"id": 5171, "en": "AI crewman’s personal health is less than or equal to designated percent.", "fr": "L'état de santé du membre d'équipage de l'IA est inférieur ou égal au pourcentage désigné."}
+{"id": 5172, "en": "AI crewman has been alive for more than the designated number of seconds.", "fr": "Le membre de l'équipage de l'IA est resté en vie pendant plus de secondes que le nombre prévu."}
+{"id": 5173, "en": "AI crewman has not been alive for more than the designated number of seconds.", "fr": "Le membre d'équipage de l'IA n'a pas été en vie pendant plus du nombre de secondes indiqué."}
+{"id": 5174, "en": "Targeted ship’s shields are less than designated percent.", "fr": "Les boucliers du vaisseau ciblé sont inférieurs au pourcentage désigné."}
+{"id": 5175, "en": "Targeted ship’s shields are greater than or equal to designated percent.", "fr": "Les boucliers du vaisseau ciblé sont supérieurs ou égaux au pourcentage indiqué."}
+{"id": 5176, "en": "Coolant is less than designated percent.", "fr": "Le liquide de refroidissement est inférieur au pourcentage désigné."}
+{"id": 5177, "en": "Coolant is greater than or equal to designated percent.", "fr": "Le liquide de refroidissement est supérieur ou égal au pourcentage désigné."}
+{"id": 5178, "en": "Switch 1 of the ship’s startup switchboard is on.", "fr": "L'interrupteur 1 du tableau de démarrage du vaisseau est activé."}
+{"id": 5179, "en": "Switch 1 of the ship’s startup switchboard is off.", "fr": "L'interrupteur 1 du tableau de démarrage du vaisseau est éteint."}
+{"id": 5180, "en": "Switch 2 of the ship’s startup switchboard is on.", "fr": "L'interrupteur 2 du tableau de démarrage du vaisseau est activé."}
+{"id": 5181, "en": "Switch 2 of the ship’s startup switchboard is off.", "fr": "L'interrupteur 2 du tableau de démarrage du vaisseau est éteint."}
+{"id": 5182, "en": "Switch 3 of the ship’s startup switchboard is on.", "fr": "L'interrupteur 3 du tableau de démarrage du vaisseau est activé."}
+{"id": 5183, "en": "Switch 3 of the ship’s startup switchboard is off.", "fr": "L'interrupteur 3 du tableau de démarrage du vaisseau est éteint."}
+{"id": 5184, "en": "AI crewman is aboard enemy ship.", "fr": "Un membre de l'équipage de l'IA se trouve à bord d'un vaisseau ennemi."}
+{"id": 5185, "en": "AI crewman is not aboard enemy ship.", "fr": "Le membre d'équipage de l'IA n'est pas à bord du vaisseau ennemi."}
+{"id": 5186, "en": "Captain is not at this location (different ship, planet, station, etc)", "fr": "Le capitaine n'est pas à cet endroit (autre vaisseau, planète, station, etc.)"}
+{"id": 5187, "en": "Captain is at this location (same ship, planet, station, etc)", "fr": "Le capitaine se trouve à cet endroit (même vaisseau, même planète, même station, etc.)"}
+{"id": 5188, "en": "Another crewmember is piloting the ship.", "fr": "Un autre membre de l'équipage pilote le vaisseau."}
+{"id": 5189, "en": "Another crewmember is not piloting the ship.", "fr": "Un autre membre de l'équipage ne pilote pas le vaisseau."}
+{"id": 5190, "en": "Number of fires on ship are greater than designated value.", "fr": "Le nombre d'incendies sur le vaisseau est supérieur à la valeur désignée."}
+{"id": 5191, "en": "Number of fires on ship are less than or equal to designated value.", "fr": "Le nombre d'incendies sur le vaisseau est inférieur ou égal à la valeur désignée."}
+{"id": 5192, "en": "Weighted average of ship system damage amounts is greater than designated percentage.", "fr": "La moyenne pondérée des montants des dommages aux systèmes du vaisseau est supérieure au pourcentage désigné."}
+{"id": 5193, "en": "Weighted average of ship system damage amounts is less than or equal to than designated percentage.", "fr": "La moyenne pondérée des montants des avaries aux systèmes du vaisseau est inférieure ou égale au pourcentage désigné."}
+{"id": 5194, "en": "Number of invaders aboard ship is greater than designated value.", "fr": "Le nombre d'envahisseurs à bord du vaisseau est supérieur à la valeur désignée."}
+{"id": 5195, "en": "Number of invaders aboard ship is less than or equal to designated value.", "fr": "Le nombre d'envahisseurs à bord du vaisseau est inférieur ou égal à la valeur désignée."}
+{"id": 5196, "en": "A ship is available to board. (Quantum shields of targeted ship are offline).", "fr": "Un vaisseau est disponible à l'abordage. (Les boucliers quantiques du vaisseau ciblé sont hors ligne)."}
+{"id": 5197, "en": "A ship is not available to board. (Quantum shields of targeted ship are online).", "fr": "Un vaisseau n'est pas disponible à l'abordage. (Les boucliers quantiques du vaisseau ciblé sont en ligne)."}
+{"id": 5198, "en": "The number of currently hostile ships in sector is greater than designated value.", "fr": "Le nombre de vaisseaus actuellement hostiles dans le secteur est supérieur à la valeur désignée."}
+{"id": 5199, "en": "The number of currently hostile ships in sector is less than or equal to than designated value.", "fr": "Le nombre de vaisseaus actuellement hostiles dans le secteur est inférieur ou égal à la valeur désignée."}
+{"id": 5200, "en": "The number of currently neutral ships in sector is greater than designated value.", "fr": "Le nombre de vaisseaus actuellement neutres dans le secteur est supérieur à la valeur désignée."}
+{"id": 5201, "en": "The number of currently neutral ships in sector is less than or equal to than designated value.", "fr": "Le nombre de vaisseaus actuellement neutres dans le secteur est inférieur ou égal à la valeur désignée."}
+{"id": 5202, "en": "Not yet implemented", "fr": "Pas encore mis en œuvre"}
+{"id": 5203, "en": "There is a black hole in the current sector.", "fr": "Il y a un trou noir dans le secteur actuel."}
+{"id": 5204, "en": "There is not a black hole in the current sector.", "fr": "Il n'y a pas de trou noir dans le secteur actuel."}
+{"id": 5205, "en": "There is a dangerous star in the current sector.", "fr": "Il y a une étoile dangereuse dans le secteur actuel."}
+{"id": 5206, "en": "There is not a dangerous star in the current sector.", "fr": "Il n'y a pas d'étoile dangereuse dans le secteur actuel."}
+{"id": 5207, "en": "Number of viruses affecting the ship is greater than designated value.", "fr": "Le nombre de virus affectant le vaisseau est supérieur à la valeur désignée."}
+{"id": 5208, "en": "Number of viruses affecting the ship is less than or equal to designated value.", "fr": "Le nombre de virus affectant le vaisseau est inférieur ou égal à la valeur désignée."}
+{"id": 5209, "en": "Number of uncollected space scrap in sector is greater than designated value.", "fr": "Le nombre de déchets spatiaux non collectés dans le secteur est supérieur à la valeur désignée."}
+{"id": 5210, "en": "Number of uncollected space scrap in sector is less than or equal to designated value.", "fr": "Le nombre de déchets spatiaux non collectés dans le secteur est inférieur ou égal à la valeur désignée."}
+{"id": 5211, "en": "Number of mines in sector is greater than designated value.", "fr": "Le nombre de mines dans le secteur est supérieur à la valeur désignée."}
+{"id": 5212, "en": "Number of mines in sector is less than or equal to designated value.", "fr": "Le nombre de mines dans le secteur est inférieur ou égal à la valeur désignée."}
+{"id": 5213, "en": "A nuke has been armed on current ship.", "fr": "Une bombe atomique a été armée sur le vaisseau actuel."}
+{"id": 5214, "en": "A nuke has not been armed on current ship.", "fr": "Aucune arme nucléaire n'a été armée sur le vaisseau actuel."}
+{"id": 5215, "en": "Number of missiles installed on current ship is greater than designated value.", "fr": "Le nombre de missiles installés sur le vaisseau actuel est supérieur à la valeur désignée."}
+{"id": 5216, "en": "Number of missiles installed on current ship is less than or equal to designated value.", "fr": "Le nombre de missiles installés sur le vaisseau actuel est inférieur ou égal à la valeur désignée."}
+{"id": 5217, "en": "Number of empty cargo slots on current ship is greater than designated value.", "fr": "Le nombre d'emplacements de cargaison vides sur le vaisseau actuel est supérieur à la valeur désignée."}
+{"id": 5218, "en": "Number of empty cargo slots on current ship is less than or equal to designated value.", "fr": "Le nombre d'emplacements de cargaison vides sur le vaisseau actuel est inférieur ou égal à la valeur désignée."}
+{"id": 5219, "en": "There is a repair depot in the current sector.", "fr": "Il y a un dépôt de réparation dans le secteur actuel."}
+{"id": 5220, "en": "There is not a repair depot in the current sector.", "fr": "Il n'y a pas de dépôt de réparation dans le secteur actuel."}
+{"id": 5221, "en": "Captain has set an active waypoint on the starmap.", "fr": "Le capitaine a placé un point de passage actif sur la carte stellaire."}
+{"id": 5222, "en": "Captain has not set an active waypoint on the starmap.", "fr": "Le capitaine n'a pas défini de point de passage actif sur la starmap."}
+{"id": 5223, "en": "Target ship’s engineering systems are greater than designated percent.", "fr": "Les systèmes techniques du vaisseau cible sont supérieurs au pourcentage désigné."}
+{"id": 5224, "en": "Target ship’s engineering systems are less than or equal to designated percent.", "fr": "Les systèmes techniques du vaisseau cible sont inférieurs ou égaux au pourcentage désigné."}
+{"id": 5225, "en": "Targeted ship’s science systems are greater than designated percent.", "fr": "Les systèmes scientifiques du vaisseau ciblé sont supérieurs au pourcentage désigné."}
+{"id": 5226, "en": "Targeted ship’s science systems are less than or equal to designated percent.", "fr": "Les systèmes scientifiques du vaisseau ciblé sont inférieurs ou égaux au pourcentage désigné."}
+{"id": 5227, "en": "Targeted ship’s life support systems are greater than designated percent.", "fr": "Les systèmes de survie du vaisseau ciblé sont supérieurs au pourcentage désigné."}
+{"id": 5228, "en": "Targeted ship’s life support systems are less than or equal to designated percent.", "fr": "Les systèmes de survie du vaisseau ciblé sont inférieurs ou égaux au pourcentage désigné."}
+{"id": 5229, "en": "Targeted ship’s’ weapons systems are greater than designated percent.", "fr": "Les systèmes d'armes du vaisseau ciblé sont supérieurs au pourcentage désigné."}
+{"id": 5230, "en": "Targeted ship’s’ weapons systems are less than or equal to designated percent.", "fr": "Les systèmes d'armes du vaisseau ciblé sont inférieurs ou égaux au pourcentage désigné."}
+{"id": 5231, "en": "Engineering system health is greater than designated percent.", "fr": "L'état de santé du système d'ingénierie est supérieur au pourcentage désigné."}
+{"id": 5232, "en": "Engineering system health is less than or equal to designated percent.", "fr": "L'état de santé du système d'ingénierie est inférieur ou égal au pourcentage désigné."}
+{"id": 5233, "en": "Science system health is greater than designated percent.", "fr": "La santé du système scientifique est supérieure au pourcentage désigné."}
+{"id": 5234, "en": "Science system health is less than or equal to designated percent.", "fr": "La santé du système scientifique est inférieure ou égale au pourcentage désigné."}
+{"id": 5235, "en": "Life support system health is greater than designated percent.", "fr": "L'état de santé du système de survie est supérieur au pourcentage désigné."}
+{"id": 5236, "en": "Life support system health is less than or equal to designated percent.", "fr": "L'état de santé du système de survie est inférieur ou égal au pourcentage désigné."}
+{"id": 5237, "en": "Weapon system health is greater than designated percent.", "fr": "La santé du système d'arme est supérieure au pourcentage désigné."}
+{"id": 5238, "en": "Weapon system health is less than or equal to designated percent.", "fr": "L'état de santé du système d'arme est inférieur ou égal au pourcentage désigné."}
+{"id": 5239, "en": "Targeted ship is an unmanned vessel.", "fr": "Le vaisseau ciblé est un vaisseau sans équipage."}
+{"id": 5240, "en": "Targeted ship is a manned vessel.", "fr": "Le vaisseau ciblé est un vaisseau habité."}
+{"id": 5241, "en": "Targeted ship is an Infected creature.", "fr": "Le vaisseau ciblé est une créature infectée."}
+{"id": 5242, "en": "Targeted ship is not an Infected creature.", "fr": "Le vaisseau ciblé n'est pas une créature infectée."}
+{"id": 5243, "en": "Targeted ship is within designated number of kilometers.", "fr": "Le vaisseau ciblé se trouve dans le nombre de kilomètres indiqué."}
+{"id": 5244, "en": "Targeted ship is not within designated number of kilometers.", "fr": "Le vaisseau ciblé ne se trouve pas dans le nombre de kilomètres prévu."}
+{"id": 5245, "en": "A hostile target is in sight of AI crewman.", "fr": "Une cible hostile est en vue d'un membre de l'équipage de l'IA."}
+{"id": 5246, "en": "A hostile target is not in sight of AI crewman.", "fr": "Une cible hostile n'est pas en vue d'un membre de l'équipage de l'IA."}
+{"id": 5247, "en": "AI crewman is on the surface of a planet.", "fr": "Un membre de l'équipage de l'IA se trouve à la surface d'une planète."}
+{"id": 5248, "en": "AI crewman is not on the surface of a planet.", "fr": "Le membre d'équipage de l'IA n'est pas à la surface d'une planète."}
+{"id": 5249, "en": "Ship has taken mostly energy damage within the last 10 seconds", "fr": "Le vaisseau a subi des dégâts principalement énergétiques au cours des 10 dernières secondes."}
+{"id": 5250, "en": "Ship has taken mostly physical damage within the last 10 seconds", "fr": "Le vaisseau a subi principalement des dégâts physiques au cours des 10 dernières secondes."}
+{"id": 5251, "en": "Distance from the nearest fire is less than designated number of meters.", "fr": "La distance par rapport au feu le plus proche est inférieure au nombre de mètres indiqué."}
+{"id": 5252, "en": "Distance from the nearest fire is greater than or equal to designated number of meters.", "fr": "La distance par rapport au feu le plus proche est supérieure ou égale au nombre de mètres indiqué."}
+{"id": 5253, "en": "Nearby ship system’s health is less than designated percent.", "fr": "L'état de santé du système de bord proche est inférieur au pourcentage désigné."}
+{"id": 5254, "en": "Nearby ship system’s health is greater than or equal to designated percent.", "fr": "L'état de santé du système de bord est supérieur ou égal au pourcentage désigné."}
+{"id": 5255, "en": "Overall ammo supply is less than designated percent.", "fr": "L'offre globale de munitions est inférieure au pourcentage désigné."}
+{"id": 5256, "en": "Overall ammo supply is greater than or equal to designated percent.", "fr": "L'offre globale de munitions est supérieure ou égale au pourcentage désigné."}
+{"id": 5257, "en": "Ammo is available nearby.", "fr": "Des munitions sont disponibles à proximité."}
+{"id": 5258, "en": "Ammo is NOT available nearby.", "fr": "Les munitions ne sont PAS disponibles à proximité."}
+{"id": 5259, "en": "Current ship is in critical condition", "fr": "Le vaisseau actuel est dans un état critique"}
+{"id": 5260, "en": "Current ship is NOT in critical condition", "fr": "Le vaisseau actuel n'est PAS dans un état critique"}
+{"id": 5261, "en": "Current ship is lined up to target sector", "fr": "Le vaisseau actuel est aligné sur le secteur cible"}
+{"id": 5262, "en": "Current ship is NOT lined up to target sector", "fr": "Le vaisseau actuel n'est PAS aligné sur le secteur cible."}
+{"id": 5263, "en": "Potential biscuit customers are in the sector", "fr": "Les clients potentiels du secteur des biscuits sont dans le secteur"}
+{"id": 5264, "en": "Potential biscuit customers are NOT in the sector", "fr": "Les clients potentiels des biscuits ne sont PAS dans le secteur"}
+{"id": 5265, "en": "Can Sell Biscuits", "fr": "Peut vendre des biscuits"}
+{"id": 5266, "en": "Can NOT Sell Biscuits", "fr": "Ne peut PAS vendre de biscuits"}
+{"id": 5267, "en": "Current ship does have cloaking system", "fr": "Le vaisseau actuel dispose d'un système d'occultation"}
+{"id": 5268, "en": "Current ship does NOT have cloaking system", "fr": "Le vaisseau actuel n'a pas de système d'occultation"}
+{"id": 5269, "en": "Current ship is priming the cloaking system", "fr": "Le vaisseau actuel est en train d'amorcer le système d'occultation"}
+{"id": 5270, "en": "Current ship is NOT priming the cloaking system", "fr": "Le vaisseau actuel n'amorce PAS le système d'occultation."}
+{"id": 5271, "en": "Current ship is cloaked", "fr": "Le vaisseau actuel est occulté"}
+{"id": 5272, "en": "Current ship is NOT cloaked", "fr": "Le vaisseau actuel n'est PAS occulté"}
+{"id": 5273, "en": "Repairable crewmate is nearby", "fr": "Un équipier réparable se trouve à proximité"}
+{"id": 5274, "en": "Repairable crewmate is NOT nearby", "fr": "Le membre d'équipage réparable n'est PAS à proximité"}
+{"id": 5275, "en": "Repair gun is equipped", "fr": "Le pistolet de réparation est équipé"}
+{"id": 5276, "en": "Repair gun is NOT equipped", "fr": "Le pistolet de réparation n'est PAS équipé"}
+{"id": 5277, "en": "Nearby crewmate can be revived", "fr": "Un membre d'équipage proche peut être réanimé"}
+{"id": 5278, "en": "Nearby crewmate can NOT be revived", "fr": "Un membre d'équipage proche ne peut PAS être réanimé."}
+{"id": 5279, "en": "Crew is currently racing", "fr": "L'équipage est actuellement en course"}
+{"id": 5280, "en": "Crew is NOT currently racing", "fr": "L'équipage n'est PAS en course actuellement"}
+{"id": 5281, "en": "Healing item is equipped", "fr": "L'objet de guérison est équipé"}
+{"id": 5282, "en": "Healing item is NOT equipped", "fr": "L'objet de guérison n'est PAS équipé"}
+{"id": 5283, "en": "Healable crewmate is nearby", "fr": "Un membre d'équipage guérissable se trouve à proximité"}
+{"id": 5284, "en": "Healable crewmate is NOT nearby", "fr": "Le membre d'équipage guérissable n'est PAS à proximité"}
+{"id": 5285, "en": "Fuel capsules on current ship is greater than or equal to X", "fr": "Le nombre de capsules de carburant sur le vaisseau actuel est supérieur ou égal à X"}
+{"id": 5286, "en": "Fuel capsules on current ship is less than X", "fr": "Le nombre de capsules de carburant sur le vaisseau actuel est inférieur à X"}
+{"id": 5287, "en": "Unfilled program charges on current ship is greater than or equal to X", "fr": "Les charges de programme non remplies sur le vaisseau actuel sont supérieures ou égales à X"}
+{"id": 5288, "en": "Unfilled program charges on current ship is less than X", "fr": "Les charges de programme non remplies sur le vaisseau actuel sont inférieures à X"}
+{"id": 5289, "en": "Current ship has a nuclear device installed", "fr": "Le vaisseau actuel est équipé d'un dispositif nucléaire"}
+{"id": 5290, "en": "Current ship does NOT have a nuclear device installed", "fr": "Le vaisseau actuel n'est PAS équipé d'un dispositif nucléaire"}
+{"id": 5291, "en": "Active Long Range Warp Station in sector", "fr": "Station de distorsion à longue portée active dans le secteur"}
+{"id": 5292, "en": "No active Long Range Warp Station in sector", "fr": "Aucune station Warp à longue portée active dans le secteur"}
+{"id": 5293, "en": "{0}Red Alert", "fr": "{Alerte rouge"}
+{"id": 5294, "en": "{0}Yellow Alert", "fr": "{Alerte jaune"}
+{"id": 5295, "en": "{0}Green Alert", "fr": "{0}Alerte verte"}
+{"id": 5296, "en": "Hull {1} {0}%", "fr": "Coque {1} {0}%"}
+{"id": 5297, "en": ">=", "fr": ">="}
+{"id": 5298, "en": "Shields {1} {0}%", "fr": "Boucliers {1} {0}%"}
+{"id": 5299, "en": "Reactor Temp {1} {0}%", "fr": "Température du réacteur {1} {0}%"}
+{"id": 5300, "en": "<=", "fr": "<="}
+{"id": 5301, "en": "Reactor Usage {1} {0}%", "fr": "Utilisation du réacteur {1} {0}%"}
+{"id": 5302, "en": "Oxygen Refill Rate {1} {0}", "fr": "Taux de remplissage d'oxygène {1} {0}"}
+{"id": 5303, "en": "Warp Drive Is{0} Charging", "fr": "Chargement du moteur de distorsion"}
+{"id": 5304, "en": "NOT", "fr": "PAS"}
+{"id": 5305, "en": "{0} Target Ship", "fr": "{0} Vaisseau cible"}
+{"id": 5306, "en": "HAS", "fr": "HAS"}
+{"id": 5307, "en": "{1}Hull Damage (Last {0} Seconds)", "fr": "{1}Dommages à la coque (dernière {0} seconde)"}
+{"id": 5308, "en": "NO", "fr": "NON"}
+{"id": 5309, "en": "{1}Shield Damage (Last {0} Seconds)", "fr": "{1}Dégâts du bouclier (Durée {0} secondes)"}
+{"id": 5310, "en": "Targeted Ship Hull {1} {0}%", "fr": "Coque de vaisseau ciblée {1} {0}%"}
+{"id": 5311, "en": "Warp Drive Is{0} Ready", "fr": "Le moteur de distorsion est{0} Prêt"}
+{"id": 5312, "en": "{1}New Captain's Order (Last {0} Seconds)", "fr": "{Nouvel ordre du capitaine (dernières {0} secondes)"}
+{"id": 5313, "en": "{1} Personal Damage (Last {0} Seconds)", "fr": "{1} Dommages personnels (depuis {0} secondes)"}
+{"id": 5314, "en": "Took", "fr": "Pris"}
+{"id": 5315, "en": "Personal Health {1} {0}%", "fr": "Santé personnelle {1} {0}%"}
+{"id": 5316, "en": "Time Alive {1} {0} Seconds", "fr": "Durée de vie {1} {0} Secondes"}
+{"id": 5317, "en": "Targeted Ship Shields {1} {0}%", "fr": "Boucliers de vaisseau ciblés {1} {0}%"}
+{"id": 5318, "en": "Coolant {1} {0}%", "fr": "Liquide de refroidissement {1} {0}%"}
+{"id": 5319, "en": "Startup Switch 1 is {0}", "fr": "Le commutateur de démarrage 1 est {0}"}
+{"id": 5320, "en": "ON", "fr": "ON"}
+{"id": 5321, "en": "OFF", "fr": "OFF"}
+{"id": 5322, "en": "Startup Switch 2 is {0}", "fr": "Le commutateur de démarrage 2 est {0}"}
+{"id": 5323, "en": "Startup Switch 3 is {0}", "fr": "Démarrage Le commutateur 3 est {0}"}
+{"id": 5324, "en": "{0}On Hostile Ship", "fr": "{Sur un vaisseau hostile"}
+{"id": 5325, "en": "Captain {0}In Different Area", "fr": "Capitaine {0} dans une autre région"}
+{"id": 5326, "en": "{0} Else is Piloting", "fr": "{0} Dans le cas contraire, il s'agit de pilotage"}
+{"id": 5327, "en": "Someone", "fr": "Quelqu'un"}
+{"id": 5328, "en": "No One", "fr": "Personne"}
+{"id": 5329, "en": "Fires On Current Ship {1} {0}", "fr": "Incendies sur le vaisseau actuel {1} {0}"}
+{"id": 5330, "en": "Sys. Repair Importance {1} {0}%", "fr": "Sys. Repair Importance {1} {0}%"}
+{"id": 5331, "en": "Num Invaders Onboard {1} {0}", "fr": "Num Invaders à bord {1} {0}"}
+{"id": 5332, "en": "Ship To Board {0}", "fr": "Embarquement {0}"}
+{"id": 5333, "en": "Does Exist", "fr": "Existe"}
+{"id": 5334, "en": "Does NOT Exist", "fr": "N'existe pas"}
+{"id": 5335, "en": "Number Of Hostile Ships {1} {0}", "fr": "Nombre de vaisseaus hostiles {1} {0}"}
+{"id": 5336, "en": "Number Of Neutral Ships {1} {0}", "fr": "Nombre de vaisseaus neutres {1} {0}"}
+{"id": 5337, "en": "EM Sweep Returned{0} Results", "fr": "EM Sweep Returned{0} Résultats"}
+{"id": 5338, "en": "NO", "fr": "NON"}
+{"id": 5339, "en": "Black Hole{0} In Sector", "fr": "Trou noir{0} dans le secteur"}
+{"id": 5340, "en": "Dangerous Star{0} In Sector", "fr": "Étoile dangereuse{0} dans le secteur"}
+{"id": 5341, "en": "Number Of Viruses On Ship {1} {0}", "fr": "Nombre de virus sur le vaisseau {1} {0}"}
+{"id": 5342, "en": "Number Of Scrap in Sector {1} {0}", "fr": "Nombre de déchets dans le secteur {1} {0}"}
+{"id": 5343, "en": "Number Of Mines in Sector {1} {0}", "fr": "Nombre de mines dans le secteur {1} {0}"}
+{"id": 5344, "en": "Nuke Is{0} Armed", "fr": "Nuke est{0} armé"}
+{"id": 5345, "en": "Missiles Installed {1} {0}", "fr": "Missiles installés {1} {0}"}
+{"id": 5346, "en": "Number Of Empty Cargo Slots {1} {0}", "fr": "Nombre d'emplacements vides {1} {0}"}
+{"id": 5347, "en": "Repair Depot Is{0} Nearby", "fr": "Repair Depot est à proximité"}
+{"id": 5348, "en": "{0}Active Waypoint", "fr": "{0}Point de passage actif"}
+{"id": 5349, "en": "Targeted Ship Engineering {1} {0}%", "fr": "Ingénierie navale ciblée {1} {0}%"}
+{"id": 5350, "en": "Targeted Ship Science {1} {0}%", "fr": "Science des vaisseaus ciblée {1} {0}%"}
+{"id": 5351, "en": "Targeted Ship Life Support {1} {0}%", "fr": "Soutien ciblé à la vie du vaisseau {1} {0}%"}
+{"id": 5352, "en": "Targeted Ship Weapons Sys {1} {0}%", "fr": "Système d'armement ciblé du vaisseau {1} {0}%"}
+{"id": 5353, "en": "Engineering {1} {0}%", "fr": "Ingénierie {1} {0}%"}
+{"id": 5354, "en": "Science {1} {0}%", "fr": "Science {1} {0}%"}
+{"id": 5355, "en": "Life Support {1} {0}%", "fr": "Soutien à la vie {1} {0}%"}
+{"id": 5356, "en": "Weapons Sys {1} {0}%", "fr": "Système d'armes {1} {0}%"}
+{"id": 5357, "en": "Targeted Ship Is {0}Drone", "fr": "Le vaisseau ciblé est {0}Drone"}
+{"id": 5358, "en": "Targeted Ship Is {0}Infected", "fr": "Le vaisseau ciblé est {0}Infecté"}
+{"id": 5359, "en": "Targeted Ship Is {1}Within {0} km", "fr": "Le vaisseau ciblé se trouve à {1} dans un rayon de {0} km"}
+{"id": 5360, "en": "{0}Hostile Target In Sight", "fr": "{Cible hostile en vue"}
+{"id": 5361, "en": "{0}On Planet Surface", "fr": "{A la surface de la planète"}
+{"id": 5362, "en": "Energy Dmg Taken {0} Physical (Last 10 Sec)", "fr": "Energie Dmg prise {0} Physique (10 dernières secondes)"}
+{"id": 5363, "en": "Nearest Fire Dist {1} {0}m", "fr": "Poste d'incendie le plus proche {1} {0}m"}
+{"id": 5364, "en": "Nearby Ship System Health {1} {0}%", "fr": "Santé du système du vaisseau proche {1} {0}%"}
+{"id": 5365, "en": "Ammo Left {1} {0}%", "fr": "Munitions restantes {1} {0}%"}
+{"id": 5366, "en": "Ammo Is {0}Nearby", "fr": "Les munitions sont {0}à proximité"}
+{"id": 5367, "en": "Current Ship Is {0}Critical", "fr": "Le vaisseau actuel est {0}Critique"}
+{"id": 5368, "en": "Ship Is {0}Lined Up", "fr": "Le vaisseau est {0}aligné"}
+{"id": 5369, "en": "Potential Customers {0}In Sector", "fr": "Clients potentiels {0}Dans le secteur"}
+{"id": 5370, "en": "Can {0}Sell Biscuits", "fr": "Peut {0}Vendre des biscuits"}
+{"id": 5371, "en": "Current ship does {0}have a cloaking system", "fr": "Le vaisseau actuel possède {0} un système d'occultation"}
+{"id": 5372, "en": "Current ship is {0}priming the cloaking system", "fr": "Le vaisseau actuel est en train d'amorcer le système d'occultation."}
+{"id": 5373, "en": "Current ship is {0}cloaked", "fr": "Le vaisseau actuel est {0}cloqué"}
+{"id": 5374, "en": "Repairable crewmate is {0}nearby", "fr": "L'équipier réparable est {0}à proximité"}
+{"id": 5375, "en": "Repair gun is {0}equipped", "fr": "Le pistolet de réparation est {0} équipé"}
+{"id": 5376, "en": "Nearby crewmate can {0}be revived", "fr": "Un membre d'équipage proche peut {0} être réanimé"}
+{"id": 5377, "en": "Crew is {0}currently racing", "fr": "L'équipage est {0} actuellement en course"}
+{"id": 5378, "en": "Healing item is {0}equipped", "fr": "L'objet de guérison est {0} équipé"}
+{"id": 5379, "en": "Hurt crewmate is {0}nearby", "fr": "L'équipier blessé est {0}à proximité"}
+{"id": 5380, "en": "Current ship fuel capsules {1} {0}", "fr": "Capsules de carburant du vaisseau actuel {1} {0}"}
+{"id": 5381, "en": "Current ship program charges unfilled {1} {0}", "fr": "Frais du programme de vaisseaus en cours non remplis {1} {0}"}
+{"id": 5382, "en": "Current ship has a nuclear device", "fr": "Le vaisseau actuel est équipé d'un dispositif nucléaire"}
+{"id": 5383, "en": "Current ship does NOT have a nuclear device", "fr": "Le vaisseau actuel n'est PAS équipé d'un dispositif nucléaire"}
+{"id": 5384, "en": "Target ship's combat level {1} {0}% of ours", "fr": "Niveau de combat du vaisseau cible {1} {0}% du nôtre"}
+{"id": 5385, "en": "Captain is {0}sitting in the Captain's Chair", "fr": "Le capitaine est {0} assis dans la chaise du capitaine"}
+{"id": 5386, "en": "Reactor stability is {1} {0}%", "fr": "La stabilité du réacteur est de {1} {0}%"}
+{"id": 5387, "en": "Ship has been out of warp {1} {0} seconds", "fr": "Le vaisseau a quitté la vitesse de distorsion {1} {0} secondes"}
+{"id": 5388, "en": "Ship has been in warp {1} {0} seconds", "fr": "Le vaisseau est en distorsion depuis {1} {0} secondes"}
+{"id": 5389, "en": "Target ship's warp drive is {1} {0}% charged", "fr": "Le moteur de distorsion du vaisseau cible est chargé à {1} {0}% chargé"}
+{"id": 5390, "en": "Target ship's distress signal is {0}active", "fr": "Le signal de détresse du vaisseau cible est {0}actif"}
+{"id": 5391, "en": "Nuke path is {0}clear", "fr": "La trajectoire du Nuke est {0} claire"}
+{"id": 5392, "en": "Ship is {0}inside a repair depot", "fr": "Le vaisseau est {0}à l'intérieur d'un dépôt de réparation"}
+{"id": 5393, "en": "Captain is {0}onboard a ship", "fr": "Le capitaine est {0}à bord d'un vaisseau"}
+{"id": 5394, "en": "Target ship's hull {1} {0}% of ours", "fr": "La coque du vaisseau cible {1} {0}% de la nôtre"}
+{"id": 5395, "en": "Last time doing this priority {1} {0} sec ago", "fr": "La dernière fois que nous avons fait cela, la priorité était {1} Il y a {0} secondes"}
+{"id": 5396, "en": "Target ship's armor {1} {0}% of ours", "fr": "Armure du vaisseau cible {1} {0}% des nôtres"}
+{"id": 5397, "en": "Target ship's shields {1} {0}% of ours", "fr": "Boucliers du vaisseau cible {1} {0}% de notre capacité"}
+{"id": 5398, "en": "Time since manual program recharge {1} {0} sec", "fr": "Temps écoulé depuis la recharge manuelle du programme {1} {0} sec"}
+{"id": 5399, "en": "Reactor is currently {0}overclocked", "fr": "Le réacteur est actuellement {0} surcadencé"}
+{"id": 5400, "en": "Reactor core safety is {0}enabled", "fr": "La sécurité du coeur du réacteur est {0} activée"}
+{"id": 5401, "en": "Target ship can {0}currently be detected", "fr": "Le vaisseau cible peut {0}être actuellement détecté"}
+{"id": 5402, "en": "Quantum shields are {0}online", "fr": "Les boucliers quantiques sont {0}en ligne"}
+{"id": 5403, "en": "Overcharge {1} {0}%", "fr": "Surcharge {1} {0}%"}
+{"id": 5404, "en": "Reactor core is {0}in meltdown", "fr": "Le coeur du réacteur est {0}en fusion"}
+{"id": 5405, "en": "Ship does {0}have a Reactor equipped", "fr": "Le vaisseau est {0}équipé d'un réacteur"}
+{"id": 5406, "en": "Reactor core was {0}recently ejected", "fr": "Le coeur du réacteur a été {0}récemment éjecté"}
+{"id": 5407, "en": "Fire extinguishing item is {0}equipped", "fr": "L'article d'extinction d'incendie est {0}équipé"}
+{"id": 5408, "en": "Crew members are {0}all robots", "fr": "Les membres d'équipage sont {0}tous des robots"}
+{"id": 5409, "en": "Hull < X%", "fr": "Coque < X%"}
+{"id": 5410, "en": "Shields < X%", "fr": "Boucliers < X%"}
+{"id": 5411, "en": "Reactor Temp > X%", "fr": "Température du réacteur > X%"}
+{"id": 5412, "en": "Reactor Usage > X%", "fr": "Utilisation du réacteur > X%"}
+{"id": 5413, "en": "Oxygen Refill Rate < X", "fr": "Taux de remplissage d'oxygène < X"}
+{"id": 5414, "en": "Warp Drive Is Charging", "fr": "Le moteur Warp est en charge"}
+{"id": 5415, "en": "No Target Ship", "fr": "Aucun vaisseau cible"}
+{"id": 5416, "en": "Had Hull Damage (Last X Seconds)", "fr": "A subi des dommages à la coque (X dernières secondes)"}
+{"id": 5417, "en": "Had Shield Damage (Last X Seconds)", "fr": "A subi des dégâts de bouclier (X dernières secondes)"}
+{"id": 5418, "en": "Targeted Ship Hull < X%", "fr": "Coque du vaisseau ciblé < X%"}
+{"id": 5419, "en": "Warp Drive Is Ready", "fr": "Le moteur de distorsion est prêt"}
+{"id": 5420, "en": "New Captain's Order (Last X Seconds)", "fr": "Nouvel ordre du capitaine (X dernières secondes)"}
+{"id": 5421, "en": "Took Personal Combat Damage (Last X Seconds)", "fr": "A subi des dommages personnels au combat (X dernières secondes)"}
+{"id": 5422, "en": "Personal Health > X%", "fr": "Santé personnelle > X%"}
+{"id": 5423, "en": "Time Alive > X Seconds", "fr": "Temps de vie > X secondes"}
+{"id": 5424, "en": "Coolant < X%", "fr": "Liquide de refroidissement < X%"}
+{"id": 5425, "en": "On Hostile Ship", "fr": "Sur un vaisseau hostile"}
+{"id": 5426, "en": "Ship Has {0}Active Pilot", "fr": "Le vaisseau a {0}pilote actif"}
+{"id": 5427, "en": "Avg. Sys Health {1} {0}%", "fr": "Moy. Santé du système {1} {0}%"}
+{"id": 5428, "en": "Num Invaders Onboard > X", "fr": "Nombre d'envahisseurs à bord > X"}
+{"id": 5429, "en": "Ship To Board Exists", "fr": "Le vaisseau à aborder existe"}
+{"id": 5430, "en": "Repair Depot In Sector", "fr": "Dépôt de réparation dans le secteur"}
+{"id": 5431, "en": "Active Waypoint", "fr": "Point de passage actif"}
+{"id": 5432, "en": "Distance To Target Ship (km)", "fr": "Distance du vaisseau cible (km)"}
+{"id": 5433, "en": "Has Hostile Target In Sight", "fr": "Cible hostile en vue"}
+{"id": 5434, "en": "On Planet Surface", "fr": "A la surface de la planète"}
+{"id": 5435, "en": "Nearby Fire (Within X m)", "fr": "Feu à proximité (dans un rayon de X m)"}
+{"id": 5436, "en": "Nearby Ship System Health < X%", "fr": "Santé du système du vaisseau à proximité < X%"}
+{"id": 5437, "en": "Nearby crewmate needs revive", "fr": "Un membre d'équipage proche a besoin d'être réanimé"}
+{"id": 5438, "en": "Ship is racing", "fr": "Le vaisseau est en course"}
+{"id": 5439, "en": "Has healing item equipped", "fr": "Le vaisseau est équipé d'un objet de guérison"}
+{"id": 5440, "en": "Current ship has at least X fuel capsules", "fr": "Le vaisseau actuel a au moins X capsules de carburant"}
+{"id": 5441, "en": "Current ship has at least X unfilled program charges", "fr": "Le vaisseau actuel a au moins X charges de programme non remplies"}
+{"id": 5442, "en": "Active long range warp station", "fr": "Station de distorsion à longue portée active"}
+{"id": 5443, "en": "Has fire extinguishing item equipped", "fr": "Le vaisseau est équipé d'un dispositif d'extinction d'incendie"}
+{"id": 5444, "en": "Crew members are {0}all androids", "fr": "Les membres d'équipage sont {0}tous des androïdes"}
+{"id": 5445, "en": "investigator_speed", "fr": "investigator_speed"}
+{"id": 5446, "en": "CRW", "fr": "CRW"}
+{"id": 5447, "en": "Your ship has been flagged due to a failed inspection!", "fr": "Votre vaisseau a été signalé en raison d'une inspection ratée !"}
+{"id": 5448, "en": "Contraband Found!", "fr": "Contrebande trouvée !"}
+{"id": 5449, "en": "[SRCH]", "fr": "[SRCH]"}
+{"id": 5450, "en": "Search Complete!", "fr": "Recherche terminée !"}
+{"id": 5451, "en": "Guard", "fr": "Garde"}
+{"id": 5452, "en": "PLRoamingSecurityGuardRobot::Update", "fr": "PLRoamingSecurityGuardRobot::Update"}
+{"id": 5453, "en": "Bandit", "fr": "Bandit"}
+{"id": 5454, "en": "Elite", "fr": "Elite"}
+{"id": 5481, "en": ": +", "fr": ": +"}
+{"id": 5482, "en": "ammo due to", "fr": "de munitions grâce au"}
+{"id": 5483, "en": "FRG", "fr": "FRG"}
+{"id": 5484, "en": "Hull repaired by", "fr": "Coque réparée par"}
+{"id": 5485, "en": "integrity by", "fr": "intégrité par"}
+{"id": 5486, "en": "+", "fr": "+"}
+{"id": 5487, "en": "Cr due to", "fr": "Cr due à"}
+{"id": 5488, "en": "+1 processed scrap due to", "fr": "+1 ferraille traitée grâce à"}
+{"id": 5489, "en": "+15% coolant refill due to", "fr": "+15% de remplissage du liquide de refroidissement grâce à"}
+{"id": 5507, "en": "WD", "fr": "WD"}
+{"id": 5508, "en": "CU", "fr": "CU"}
+{"id": 5509, "en": "GT", "fr": "GT"}
+{"id": 5510, "en": "FL", "fr": "FL"}
+{"id": 5511, "en": "PT", "fr": "PT"}
+{"id": 5512, "en": "Mines", "fr": "Mines"}
+{"id": 5513, "en": "Scraps", "fr": "Ferrailles"}
+{"id": 5525, "en": "Outrider", "fr": "Outrider"}
+{"id": 5528, "en": "Stargazer", "fr": "Stargazer"}
+{"id": 5540, "en": "Roland", "fr": "Roland"}
+{"id": 5544, "en": "Carrier", "fr": "Porteur"}
+{"id": 5548, "en": "Alchemist", "fr": "Alchimiste"}
+{"id": 5562, "en": "Grim Cutlass", "fr": "Couteau sinistre"}
+{"id": 5563, "en": "U.S.S.", "fr": "U.S.S."}
+{"id": 5564, "en": "The", "fr": "Le"}
+{"id": 5565, "en": "Unit", "fr": "Unit"}
+{"id": 5566, "en": ", Div #", "fr": "Div #"}
+{"id": 5567, "en": "N/A", "fr": "N/A"}
+{"id": 5568, "en": "Relic Hunter Detected", "fr": "Chasseur de reliques détecté"}
+{"id": 5569, "en": "WRN", "fr": "WRN"}
+{"id": 5570, "en": "frontlines sec ship:    fac:", "fr": "frontlines sec ship : fac :"}
+{"id": 5571, "en": "type:", "fr": "type :"}
+{"id": 5572, "en": "PlayerEnter: setup drone mods", "fr": "PlayerEnter : setup drone mods"}
+{"id": 5573, "en": "DelayedSetup", "fr": "DelayedSetup"}
+{"id": 5574, "en": "dso - new data:", "fr": "dso - new data :"}
+{"id": 5575, "en": "dso - found data:", "fr": "dso - found data :"}
+{"id": 5576, "en": "Health:", "fr": "Health :"}
+{"id": 5577, "en": "DestroyedMsgSent:", "fr": "DestroyedMsgSent :"}
+{"id": 5578, "en": "RuinsLavaOffset", "fr": "RuinsLavaOffset"}
+{"id": 5579, "en": "RuinsLavaMoving", "fr": "RuinsLavaMoving"}
+{"id": 5580, "en": "TRUE", "fr": "TRUE"}
+{"id": 5581, "en": "InitGameCustomLoadFunction     LevelID", "fr": "InitGameCustomLoadFunction LevelID"}
+{"id": 5582, "en": "StormPS", "fr": "StormPS"}
+{"id": 5583, "en": "SpaceInteriorAABB", "fr": "SpaceInteriorAABB"}
+{"id": 5584, "en": "Instance", "fr": "Instance"}
+{"id": 5585, "en": "(Instance)", "fr": "(Instance)"}
+{"id": 5586, "en": "Yellow Bolt", "fr": "Boulon jaune"}
+{"id": 5587, "en": "Upshot", "fr": "Coup de pouce"}
+{"id": 5588, "en": "Clean Getaway", "fr": "Fuite nette"}
+{"id": 5589, "en": "Misdirection", "fr": "Détournement d'attention"}
+{"id": 5590, "en": "Driftmaster", "fr": "Maître de la dérive"}
+{"id": 5591, "en": "Slipstream", "fr": "Fil d'Ariane"}
+{"id": 5592, "en": "Critical System Failure!", "fr": "Défaillance critique du système !"}
+{"id": 5593, "en": "The Breakneck Bunch", "fr": "La bande de casse-cou"}
+{"id": 5594, "en": "Dominator", "fr": "Dominateur"}
+{"id": 5595, "en": "Right of Way", "fr": "Droit de passage"}
+{"id": 5596, "en": "Solar Flare", "fr": "Éruption solaire"}
+{"id": 5597, "en": "After-Image", "fr": "Après l'image"}
+{"id": 5598, "en": "Warp Driver", "fr": "Conducteur de distorsion"}
+{"id": 5599, "en": "Flying Dutchman", "fr": "Hollandais volant"}
+{"id": 5600, "en": "Time Slicer", "fr": "Trancheur de temps"}
+{"id": 5601, "en": "The Ghost", "fr": "Le fantôme"}
+{"id": 5602, "en": "Shock Absorber", "fr": "Absorbeur de chocs"}
+{"id": 5603, "en": "Triple Time", "fr": "Triple Time"}
+{"id": 5604, "en": ":", "fr": ":"}
+{"id": 5605, "en": "[ACTIVE]", "fr": "[ACTIF]"}
+{"id": 5606, "en": "0.0 s", "fr": "0.0 s"}
+{"id": 5607, "en": "CPU1 Fan Speed (%)", "fr": "Vitesse du ventilateur CPU1 (%)"}
+{"id": 5608, "en": "CPU2 Fan Speed (%)", "fr": "Vitesse du ventilateur CPU2 (%)"}
+{"id": 5609, "en": "Error Checking Mode", "fr": "Mode de vérification des erreurs"}
+{"id": 5610, "en": "Force Unmgd. Code", "fr": "Force Unmgd. Code"}
+{"id": 5611, "en": "Parity Mode", "fr": "Mode parité"}
+{"id": 5612, "en": "MODE 71", "fr": "MODE 71"}
+{"id": 5613, "en": "MODE 989", "fr": "MODE 989"}
+{"id": 5614, "en": "Vent", "fr": "Évent"}
+{"id": 5615, "en": "Oxygen", "fr": "Oxygène"}
+{"id": 5616, "en": "Coolant Pump", "fr": "Pompe de refroidissement"}
+{"id": 5617, "en": "Auto Food Dist.", "fr": "Auto Food Dist."}
+{"id": 5618, "en": "Genetic Recombination", "fr": "Recombinaison génétique"}
+{"id": 5619, "en": "Kinetic Dampener", "fr": "Amortisseur cinétique"}
+{"id": 5620, "en": "Life Sign Sensors", "fr": "Capteurs de vie"}
+{"id": 5621, "en": "Particle Scanner Sensitivity", "fr": "Sensibilité du scanner de particules"}
+{"id": 5622, "en": "Plasmid Regulation Priority", "fr": "Régulation des plasmides Priorité"}
+{"id": 5623, "en": "Pump 1$Filter", "fr": "Pompe 1$Filtre"}
+{"id": 5624, "en": "Pump 1 Filter", "fr": "Filtre de la pompe 1"}
+{"id": 5625, "en": "Pump 1 Pressure", "fr": "Pression de la pompe 1"}
+{"id": 5626, "en": "Pump 2$Filter", "fr": "Pompe 2$Filtre"}
+{"id": 5627, "en": "Pump 2 Filter", "fr": "Filtre de la pompe 2"}
+{"id": 5628, "en": "Pump 2 Pressure", "fr": "Pompe 2 Pression"}
+{"id": 5629, "en": "Pump 3 Pressure", "fr": "Pompe 3 Pression"}
+{"id": 5630, "en": "Pump 3$Filter", "fr": "Pompe 3$Filtre"}
+{"id": 5631, "en": "Pump 3 Filter", "fr": "Filtre de la pompe 3"}
+{"id": 5632, "en": "Quatum Defenses", "fr": "Défenses Quatum"}
+{"id": 5633, "en": "Radiation Dampener", "fr": "Amortisseur de radiations"}
+{"id": 5634, "en": "Ultramag. Enclosure", "fr": "Ultramag. Enceinte"}
+{"id": 5635, "en": "Ultramagnetized Enclosure", "fr": "Enceinte Ultramagnétisée"}
+{"id": 5636, "en": "Water Dispersal", "fr": "Dispersion de l'eau"}
+{"id": 5637, "en": "Door Lock", "fr": "Verrouillage de porte"}
+{"id": 5638, "en": "Reac 1 Output", "fr": "Sortie Reac 1"}
+{"id": 5639, "en": "Reac 2 Output", "fr": "Sortie Reac 2"}
+{"id": 5640, "en": "Reac 3 Output", "fr": "Sortie Reac 3"}
+{"id": 5641, "en": "Nitrogen", "fr": "Azote"}
+{"id": 5642, "en": "Methane", "fr": "Méthane"}
+{"id": 5643, "en": "Alloc. Equalizer", "fr": "Alloc. Équilibreur"}
+{"id": 5644, "en": "Power Density Regulator", "fr": "Régulateur de densité de puissance"}
+{"id": 5645, "en": "Mixer Speed", "fr": "Vitesse du mélangeur"}
+{"id": 5646, "en": "Mixer Power", "fr": "Puissance du mélangeur"}
+{"id": 5647, "en": "Thermal Regulation", "fr": "Régulation thermique"}
+{"id": 5648, "en": "Anti-Freeze Mix", "fr": "Mélange antigel"}
+{"id": 5649, "en": "Nano-Bot Sensitivity", "fr": "Sensibilité du nanorobot"}
+{"id": 5650, "en": "Nano-Bot Type", "fr": "Type de nanorobot"}
+{"id": 5651, "en": "Composite Scanner Power", "fr": "Puissance du scanner composite"}
+{"id": 5652, "en": "Fullerene Composer", "fr": "Compositeur de fullerène"}
+{"id": 5653, "en": "Bio Material Composer", "fr": "Compositeur de bio-matériaux"}
+{"id": 5654, "en": "Deep Tissue Scanner", "fr": "Scanner des tissus profonds"}
+{"id": 5655, "en": "Unnamed Parameter", "fr": "Paramètre sans nom"}
+{"id": 5656, "en": "Life Support", "fr": "Soutien à la vie"}
+{"id": 5657, "en": "Biology Research", "fr": "Recherche en biologie"}
+{"id": 5658, "en": "Computer Systems", "fr": "Systèmes informatiques"}
+{"id": 5659, "en": "Material Research", "fr": "Recherche sur les matériaux"}
+{"id": 5660, "en": "Water", "fr": "Eau"}
+{"id": 5661, "en": "Power", "fr": "Énergie"}
+{"id": 5662, "en": "UNKNOWN", "fr": "INCONNU"}
+{"id": 5663, "en": "- no update message", "fr": "- pas de message de mise à jour"}
+{"id": 5664, "en": "self-check: PASS", "fr": "autocontrôle : PASS"}
+{"id": 5665, "en": "self-check: FAILED", "fr": "Autocontrôle : FAILED"}
+{"id": 5666, "en": "0.0", "fr": "0.0"}
+{"id": 5667, "en": "is set to", "fr": "est fixé à"}
+{"id": 5668, "en": "- Expected value of", "fr": "- Valeur attendue de"}
+{"id": 5669, "en": "Current value is", "fr": "La valeur actuelle est"}
+{"id": 5670, "en": "- Should be ON", "fr": "- Devrait être ON"}
+{"id": 5671, "en": "- Should be OFF", "fr": "- Doit être OFF"}
+{"id": 5672, "en": "- Should be", "fr": "- Doit être"}
+{"id": 5673, "en": "- insecure link - PIN", "fr": "- lien non sécurisé - PIN"}
+{"id": 5674, "en": "- set to", "fr": "- est réglé sur"}
+{"id": 5675, "en": "LOW", "fr": "FAIBLE"}
+{"id": 5676, "en": "MED", "fr": "MOYEN"}
+{"id": 5677, "en": "HIGH", "fr": "HAUT"}
+{"id": 5678, "en": "PREVENT", "fr": "PRÉVENIR"}
+{"id": 5679, "en": "ACCELERATE", "fr": "ACCÉLÉRER"}
+{"id": 5680, "en": "PASSIVE", "fr": "PASSIF"}
+{"id": 5681, "en": "ACTIVE", "fr": "ACTIF"}
+{"id": 5682, "en": "AGGRESSIVE", "fr": "AGGRESSIF"}
+{"id": 5683, "en": "----------------------------------------------------", "fr": "----------------------------------------------------"}
+{"id": 5684, "en": "--------------- NO ERRORS DETECTED! ----------------", "fr": "--------------- AUCUNE ERREUR DÉTECTÉE ! ----------------"}
+{"id": 5685, "en": "------- CONTAINMENT DOOR CAN NOW BE OPENED! --------", "fr": "------- LA PORTE DE L'ENCEINTE DE CONFINEMENT PEUT MAINTENANT ÊTRE OUVERTE ! --------"}
+{"id": 5686, "en": "- SYSTEM RESET INITIATED - FATAL ERROR(S) DETECTED -", "fr": "- RÉINITIALISATION DU SYSTÈME INITIÉE - ERREUR(S) FATALE(S) DÉTECTÉE(S) -"}
+{"id": 5687, "en": "----   REFER TO CONTAINMENT OPERATIONS MANUAL   ----", "fr": "---- SE RÉFÉRER AU MANUEL D'EXPLOITATION DE L'ENCEINTE DE CONFINEMENT ----"}
+{"id": 5688, "en": "Restarting device 0x", "fr": "Redémarrage de l'appareil 0x"}
+{"id": 5689, "en": ": success", "fr": ": succès"}
+{"id": 5690, "en": "Ignoring sensor data 0x", "fr": "Ignorer les données du capteur 0x"}
+{"id": 5691, "en": ": data not passing validation checks", "fr": "Les données ne passent pas les contrôles de validation"}
+{"id": 5692, "en": "System memory usage is nominal", "fr": "L'utilisation de la mémoire du système est nominale"}
+{"id": 5693, "en": "exo_names", "fr": "exo_names"}
+{"id": 5694, "en": "Outpost 448 (0)", "fr": "Avant-poste 448 (0)"}
+{"id": 5695, "en": "Keeper (", "fr": "Gardien ("}
+{"id": 5696, "en": "Swarm (", "fr": "Essaim ("}
+{"id": 5697, "en": "Tea Timers", "fr": "Tea Timers"}
+{"id": 5698, "en": "Flavor’s Fury", "fr": "Fureur de la saveur"}
+{"id": 5699, "en": "Hungry Hucksters", "fr": "Les affamés"}
+{"id": 5700, "en": "Necessary Nutritions", "fr": "Nutritions nécessaires"}
+{"id": 5701, "en": "Biscuit Boys", "fr": "Garçons Biscuits"}
+{"id": 5702, "en": "Wandering Wafer", "fr": "Gaufrettes errantes"}
+{"id": 5703, "en": "Muffin Mashers", "fr": "Muffin Mashers"}
+{"id": 5704, "en": "Crispy Cruiser", "fr": "Cruiser croustillant"}
+{"id": 5705, "en": "Tasty Toasters", "fr": "Grille-pain savoureux"}
+{"id": 5706, "en": "Delivery Dogs", "fr": "Chiens livreurs"}
+{"id": 5707, "en": "Hunger Hinderers", "fr": "Les affameurs"}
+{"id": 5708, "en": "Bombastic Bites", "fr": "Bouchées explosives"}
+{"id": 5709, "en": "Goodstuff Foodstuff", "fr": "Goodstuff Foodstuff"}
+{"id": 5710, "en": "Merry Meals", "fr": "Repas joyeux"}
+{"id": 5711, "en": "Fasting Foodies", "fr": "Les adeptes du jeûne"}
+{"id": 5712, "en": "Sugar Speeders", "fr": "Sucre rapide"}
+{"id": 5713, "en": "Generic Grillers", "fr": "Grilleurs génériques"}
+{"id": 5714, "en": "Ham Hoarders", "fr": "Accrocs au jambon"}
+{"id": 5715, "en": "Ration Replacers", "fr": "Remplaçants de rations"}
+{"id": 5716, "en": "Rapid Responders", "fr": "Répondants rapides"}
+{"id": 5717, "en": "Mad Merchants", "fr": "Marchands fous"}
+{"id": 5718, "en": "Voracious Vendors", "fr": "Vendeurs voraces"}
+{"id": 5719, "en": "Palatable Peddlers", "fr": "Colporteurs appétissants"}
+{"id": 5720, "en": "Meuva 7 (", "fr": "Meuva 7 ("}
+{"id": 5721, "en": "Sys (", "fr": "Sys ("}
+{"id": 5722, "en": "Sylvassi Cypher Lab", "fr": "Sylvassi Cypher Lab"}
+{"id": 5723, "en": "GH Bounty Agency", "fr": "Agence de primes GH"}
+{"id": 5724, "en": "The Burrow", "fr": "Le terrier"}
+{"id": 5725, "en": "Fluffy Factory 1 (", "fr": "Fluffy Factory 1 ("}
+{"id": 5726, "en": "Fluffy Factory 2 (", "fr": "Fluffy Factory 2 ("}
+{"id": 5727, "en": "Fluffy Factory 3 (", "fr": "Fluffy Factory 3 ("}
+{"id": 5728, "en": "Karattis (", "fr": "Karattis ("}
+{"id": 5729, "en": "Sylvassi Shop (", "fr": "Boutique Sylvassi ("}
+{"id": 5730, "en": "Processor Shop (", "fr": "Boutique Processeur ("}
+{"id": 5731, "en": "Virus Shop (", "fr": "Boutique Virus ("}
+{"id": 5732, "en": "Programs Shop (", "fr": "Boutique de programmes ("}
+{"id": 5733, "en": "Comet", "fr": "Comète"}
+{"id": 5734, "en": "Grand Warp Gate", "fr": "Grand Warp Gate"}
+{"id": 5735, "en": "Dutain's Garage", "fr": "Garage Dutain"}
+{"id": 5736, "en": "W.D. Station 41X", "fr": "Station W.D. 41X"}
+{"id": 5737, "en": "The Ion Port", "fr": "Le port ionique"}
+{"id": 5738, "en": "SpaceNode", "fr": "SpaceNode"}
+{"id": 5739, "en": "BuildStaticNeighbors", "fr": "Construire des voisins statiques"}
+{"id": 5740, "en": "GetPathToNode", "fr": "Obtenir le chemin vers le nœud"}
+{"id": 5741, "en": "clean up references", "fr": "Nettoyer les références"}
+{"id": 5742, "en": "GameOver", "fr": "GameOver"}
+{"id": 5743, "en": "Turret", "fr": "Tourelle"}
+{"id": 5744, "en": "QualityLevel", "fr": "Niveau de qualité"}
+{"id": 5745, "en": "ServerLoadLevel", "fr": "Niveau de charge du serveur"}
+{"id": 5746, "en": "Hull Integrity:", "fr": "Intégrité de la coque :"}
+{"id": 5747, "en": "/", "fr": "/"}
+{"id": 5748, "en": "Shields:", "fr": "Boucliers :"}
+{"id": 5749, "en": "shields", "fr": "boucliers"}
+{"id": 5750, "en": "hull", "fr": "coque"}
+{"id": 5751, "en": "oxygen", "fr": "oxygène"}
+{"id": 5752, "en": "warp", "fr": "distorsion"}
+{"id": 5753, "en": "(", "fr": "("}
+{"id": 5754, "en": ")", "fr": ")"}
+{"id": 5755, "en": "<color=#333333>(</color>", "fr": "<color=#333333>(</color>"}
+{"id": 5756, "en": "<color=#333333>)</color>", "fr": "<color=#333333>)</color>"}
+{"id": 5757, "en": "<color=green>+", "fr": "<color=green>+"}
+{"id": 5758, "en": "</color>", "fr": "</color>"}
+{"id": 5759, "en": "+", "fr": "+"}
+{"id": 5760, "en": "<color=red>-", "fr": "<color=red>-"}
+{"id": 5761, "en": "-", "fr": "-"}
+{"id": 5762, "en": "<color=grey>", "fr": "<color=grey>"}
+{"id": 5763, "en": "%", "fr": "%"}
+{"id": 5764, "en": "/", "fr": "/"}
+{"id": 5765, "en": "Injection Cheat Detected!", "fr": "Injection Cheat Detected !"}
+{"id": 5766, "en": "Injection Cheat Detected!:", "fr": "Injection Cheat Detected !"}
+{"id": 5767, "en": "Speed Hack Cheat Detected!", "fr": "Speed Hack Cheat Détecté !"}
+{"id": 5768, "en": "Time Cheat Detected!", "fr": "Time Cheat Detected !"}
+{"id": 5769, "en": "Obscured Cheat Detected", "fr": "Obscured Cheat Detected"}
+{"id": 5770, "en": "Obscured Cheat Detected!", "fr": "Obscured Cheat Detected !"}
+{"id": 5771, "en": "ShadowQuality", "fr": "Qualité de l'ombre"}
+{"id": 5772, "en": "Exterior_RayCast", "fr": "Exterior_RayCast"}
+{"id": 5773, "en": "PlanetFar", "fr": "PlanetFar"}
+{"id": 5774, "en": "Location", "fr": "Emplacement"}
+{"id": 5775, "en": "planet", "fr": "planète"}
+{"id": 5776, "en": "internal", "fr": "interne"}
+{"id": 5777, "en": "external", "fr": "externe"}
+{"id": 5778, "en": "[-]", "fr": "[-]"}
+{"id": 5779, "en": "<color=red>[-]</color>", "fr": "<color=red>[-]</color>"}
+{"id": 5780, "en": "[", "fr": "["}
+{"id": 5781, "en": "]", "fr": "]"}
+{"id": 5782, "en": "Sit In Chair", "fr": "S'asseoir sur une chaise"}
+{"id": 5783, "en": "Only the Captain can use this", "fr": "Seul le capitaine peut utiliser cette fonction"}
+{"id": 5784, "en": "Leave Chair", "fr": "Quitter le fauteuil"}

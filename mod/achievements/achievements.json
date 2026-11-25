@@ -1,0 +1,472 @@
+[
+ {
+  "Id": "EXPERIENCED_CREWMEMBER",
+  "Title": "Equipaggio veterano",
+  "Desc": "Raggiungi il livello equipaggio 25",
+  "Hidden": false,
+  "Max": 25,
+  "Group": "Classici",
+  "Icon": "EXPERIENCED_CREWMEMBER.jpg",
+  "IconOff": "EXPERIENCED_CREWMEMBER_off.jpg"
+ },
+ {
+  "Id": "GALAXY_IN_TURMOIL",
+  "Title": "Galassia nel caos",
+  "Desc": "Raggiungi il livello di Caos 6",
+  "Hidden": false,
+  "Max": 6,
+  "Group": "Classici",
+  "Icon": "GALAXY_IN_TURMOIL.jpg",
+  "IconOff": "GALAXY_IN_TURMOIL_off.jpg"
+ },
+ {
+  "Id": "EXPLORER",
+  "Title": "Esploratore",
+  "Desc": "Compi 150 salti",
+  "Hidden": false,
+  "Max": 150,
+  "Group": "Classici",
+  "Icon": "EXPLORER.jpg",
+  "IconOff": "EXPLORER_off.jpg"
+ },
+ {
+  "Id": "BLIND_JUMPER",
+  "Title": "Atto di fede",
+  "Desc": "Compi 5 salti alla cieca in una sola partita",
+  "Hidden": false,
+  "Max": 5,
+  "Group": "Classici",
+  "Icon": "BLIND_JUMPER.jpg",
+  "IconOff": "BLIND_JUMPER_off.jpg"
+ },
+ {
+  "Id": "BIG_SPENDER",
+  "Title": "Mani bucate",
+  "Desc": "Spendi 100.000 crediti in una sola partita",
+  "Hidden": false,
+  "Max": 100000,
+  "Group": "Classici",
+  "Icon": "BIG_SPENDER.jpg",
+  "IconOff": "BIG_SPENDER_off.jpg"
+ },
+ {
+  "Id": "PACIFIST",
+  "Title": "Pacifista",
+  "Desc": "Raggiungi il livello equipaggio 10 senza infliggere alcun danno",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "PACIFIST.jpg",
+  "IconOff": "PACIFIST_off.jpg"
+ },
+ {
+  "Id": "DIPLOMAT",
+  "Title": "Diplomatico",
+  "Desc": "Da capitano, pacifica 25 navi ostili",
+  "Hidden": false,
+  "Max": 25,
+  "Group": "Classici",
+  "Icon": "DIPLOMAT.jpg",
+  "IconOff": "DIPLOMAT_off.jpg"
+ },
+ {
+  "Id": "MASTER_CHEF",
+  "Title": "Capocuoco",
+  "Desc": "Cuoci alla perfezione 5 biscotti di fila",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "MASTER_CHEF.jpg",
+  "IconOff": "MASTER_CHEF_off.jpg"
+ },
+ {
+  "Id": "EXTORTIONIST",
+  "Title": "Estorsore",
+  "Desc": "Da capitano, estorci un tributo a 25 navi",
+  "Hidden": false,
+  "Max": 25,
+  "Group": "Classici",
+  "Icon": "EXTORTIONIST.jpg",
+  "IconOff": "EXTORTIONIST_off.jpg"
+ },
+ {
+  "Id": "BISCUIT_MADNESS",
+  "Title": "Follia da biscotti",
+  "Desc": "Un segreto che sa di forno",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "BISCUIT_MADNESS.jpg",
+  "IconOff": "BISCUIT_MADNESS_off.jpg"
+ },
+ {
+  "Id": "ARTIFACT_MISSIONS",
+  "Title": "Nessuna domanda",
+  "Desc": "Completa le missioni di raccolta dei manufatti di Rumibard Warger",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "ARTIFACT_MISSIONS.jpg",
+  "IconOff": "ARTIFACT_MISSIONS_off.jpg"
+ },
+ {
+  "Id": "DEATHSEEKER",
+  "Title": "In cerca della morte",
+  "Desc": "Sconfiggi un Deathseeker",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "DEATHSEEKER.jpg",
+  "IconOff": "DEATHSEEKER_off.jpg"
+ },
+ {
+  "Id": "VUUROG",
+  "Title": "Il richiamo del vuoto",
+  "Desc": "Sconfiggi il V’uurog",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "VUUROG.jpg",
+  "IconOff": "VUUROG_off.jpg"
+ },
+ {
+  "Id": "CAUSTIC_CORSAIR",
+  "Title": "Il Caustic Corsair",
+  "Desc": "Sconfiggi il Caustic Corsair",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "CAUSTIC_CORSAIR.jpg",
+  "IconOff": "CAUSTIC_CORSAIR_off.jpg"
+ },
+ {
+  "Id": "THE_SWARM",
+  "Title": "Lo Sciame",
+  "Desc": "Sconfiggi lo Sciame",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "THE_SWARM.jpg",
+  "IconOff": "THE_SWARM_off.jpg"
+ },
+ {
+  "Id": "GRIM_CUTLASS",
+  "Title": "Il Grim Cutlass",
+  "Desc": "Sconfiggi il Grim Cutlass",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "GRIM_CUTLASS.jpg",
+  "IconOff": "GRIM_CUTLASS_off.jpg"
+ },
+ {
+  "Id": "ANCIENT_SENTRY",
+  "Title": "La Sentinella Antica",
+  "Desc": "Sconfiggi la Sentinella Antica",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "ANCIENT_SENTRY.jpg",
+  "IconOff": "ANCIENT_SENTRY_off.jpg"
+ },
+ {
+  "Id": "LIARS_DICE_WIN",
+  "Title": "Campione di dadi",
+  "Desc": "Vinci una partita ai Dadi del Bugiardo",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LIARS_DICE_WIN.jpg",
+  "IconOff": "LIARS_DICE_WIN_off.jpg"
+ },
+ {
+  "Id": "RESEARCH_TALENTS",
+  "Title": "Ricercatore",
+  "Desc": "Ricerca 10 talenti",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Classici",
+  "Icon": "RESEARCH_TALENTS.jpg",
+  "IconOff": "RESEARCH_TALENTS_off.jpg"
+ },
+ {
+  "Id": "GREAT_BISCUIT_RACE",
+  "Title": "La grande corsa dei biscotti",
+  "Desc": "Vinci la gara di vendite della Fluffy Biscuit Company",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "GREAT_BISCUIT_RACE.jpg",
+  "IconOff": "GREAT_BISCUIT_RACE_off.jpg"
+ },
+ {
+  "Id": "WIN_THE_RACES",
+  "Title": "Primo posto",
+  "Desc": "Vinci le Corse Ioniche",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "WIN_THE_RACES.jpg",
+  "IconOff": "WIN_THE_RACES_off.jpg"
+ },
+ {
+  "Id": "BEAT_THE_ARENA",
+  "Title": "Segnato dalla sabbia",
+  "Desc": "Vinci l’Arena Sandscar",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "BEAT_THE_ARENA.jpg",
+  "IconOff": "BEAT_THE_ARENA_off.jpg"
+ },
+ {
+  "Id": "MADMANS_MANSION",
+  "Title": "La villa del folle",
+  "Desc": "Completa la linea di missioni della Alliance of Gentlemen",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "MADMANS_MANSION.jpg",
+  "IconOff": "MADMANS_MANSION_off.jpg"
+ },
+ {
+  "Id": "WASTED_WING",
+  "Title": "L’Ala Desolata",
+  "Desc": "Completa la linea di missioni della Colonial Union",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "WASTED_WING.jpg",
+  "IconOff": "WASTED_WING_off.jpg"
+ },
+ {
+  "Id": "FORSAKEN_FLAGSHIP",
+  "Title": "L’ammiraglia abbandonata",
+  "Desc": "Completa la linea di missioni della W.D. Corporation",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "FORSAKEN_FLAGSHIP.jpg",
+  "IconOff": "FORSAKEN_FLAGSHIP_off.jpg"
+ },
+ {
+  "Id": "HEAL_ALLIES",
+  "Title": "Stai fermo",
+  "Desc": "Cura 5.000 punti salute ai tuoi alleati",
+  "Hidden": false,
+  "Max": 5000,
+  "Group": "Classici",
+  "Icon": "HEAL_ALLIES.jpg",
+  "IconOff": "HEAL_ALLIES_off.jpg"
+ },
+ {
+  "Id": "CYPHER_MASTER",
+  "Title": "Maestro dei cifrari",
+  "Desc": "Un segreto per chi sa leggere tra le righe",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "CYPHER_MASTER.jpg",
+  "IconOff": "CYPHER_MASTER_off.jpg"
+ },
+ {
+  "Id": "ALL_LC_ENDING_COMPLETED",
+  "Title": "Completista della Colonia Perduta",
+  "Desc": "Completa tutti i finali della Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "ALL_LC_ENDING_COMPLETED.jpg",
+  "IconOff": "ALL_LC_ENDING_COMPLETED_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_CU",
+  "Title": "Insieme sopravviviamo",
+  "Desc": "Completa il finale C.U. alla Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_CU.jpg",
+  "IconOff": "LCENDING_COMPLETED_CU_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_AOG",
+  "Title": "Mai fidarsi di un gentiluomo",
+  "Desc": "Completa il finale A.O.G. alla Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_AOG.jpg",
+  "IconOff": "LCENDING_COMPLETED_AOG_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_WD",
+  "Title": "Il progresso prima di tutto",
+  "Desc": "Completa il finale W.D. alla Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_WD.jpg",
+  "IconOff": "LCENDING_COMPLETED_WD_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_FB",
+  "Title": "Mangia biscotti, sentiti meglio",
+  "Desc": "Completa il finale F.B. alla Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_FB.jpg",
+  "IconOff": "LCENDING_COMPLETED_FB_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_FREE_IT",
+  "Title": "Liberi tutti",
+  "Desc": "Un finale segreto della Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_FREE_IT.jpg",
+  "IconOff": "LCENDING_COMPLETED_FREE_IT_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_DESTROY_IT",
+  "Title": "Nessun rischio",
+  "Desc": "Un finale segreto della Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_DESTROY_IT.jpg",
+  "IconOff": "LCENDING_COMPLETED_DESTROY_IT_off.jpg"
+ },
+ {
+  "Id": "LCENDING_COMPLETED_KEEP_IT",
+  "Title": "Signori intergalattici",
+  "Desc": "Un finale segreto della Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LCENDING_COMPLETED_KEEP_IT.jpg",
+  "IconOff": "LCENDING_COMPLETED_KEEP_IT_off.jpg"
+ },
+ {
+  "Id": "WARP_GUARDIAN_ENCOUNTER",
+  "Title": "Ospite inatteso",
+  "Desc": "Un incontro che non ti aspettavi",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "WARP_GUARDIAN_ENCOUNTER.jpg",
+  "IconOff": "WARP_GUARDIAN_ENCOUNTER_off.jpg"
+ },
+ {
+  "Id": "LOST_COLONY_FOUND",
+  "Title": "Colonia trovata",
+  "Desc": "Trova la Colonia Perduta",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LOST_COLONY_FOUND.jpg",
+  "IconOff": "LOST_COLONY_FOUND_off.jpg"
+ },
+ {
+  "Id": "LC_IRONMAN_WIN",
+  "Title": "Vera tempra",
+  "Desc": "Completa la Colonia Perduta in modalità Ironman",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "LC_IRONMAN_WIN.jpg",
+  "IconOff": "LC_IRONMAN_WIN_off.jpg"
+ },
+ {
+  "Id": "PT_WIN",
+  "Title": "La Minaccia Invisibile",
+  "Desc": "Completa lo scenario «The Unseen Threat»",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "PT_WIN.jpg",
+  "IconOff": "PT_WIN_off.jpg"
+ },
+ {
+  "Id": "UMBRA_WIN",
+  "Title": "Le profondità di Umbra-K54",
+  "Desc": "Completa lo scenario «Depths of Umbra-K54»",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "UMBRA_WIN.jpg",
+  "IconOff": "UMBRA_WIN_off.jpg"
+ },
+ {
+  "Id": "UMBRA_ALL_DATA",
+  "Title": "Tutti i registri di Umbra",
+  "Desc": "Recupera tutti i registri di Umbra-K54",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Classici",
+  "Icon": "UMBRA_ALL_DATA.jpg",
+  "IconOff": "UMBRA_ALL_DATA_off.jpg"
+ },
+ {
+  "Id": "MEL_RELAY",
+  "Title": "Subspazio di casa",
+  "Desc": "Collegati al Subspace Relay della tua rete",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Melchior",
+  "Icon": "MEL_RELAY.jpg",
+  "IconOff": "MEL_RELAY_off.jpg"
+ },
+ {
+  "Id": "MEL_RARITY_FIRST",
+  "Title": "Non è di serie",
+  "Desc": "Porta a bordo un componente di grado superiore a Standard",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Melchior",
+  "Icon": "MEL_RARITY_FIRST.jpg",
+  "IconOff": "MEL_RARITY_FIRST_off.jpg"
+ },
+ {
+  "Id": "MEL_RARITY_PROTO",
+  "Title": "Uscito dal laboratorio",
+  "Desc": "Porta a bordo un componente Prototipo o superiore",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Melchior",
+  "Icon": "MEL_RARITY_PROTO.jpg",
+  "IconOff": "MEL_RARITY_PROTO_off.jpg"
+ },
+ {
+  "Id": "MEL_RARITY_SINGULAR",
+  "Title": "Pezzo unico",
+  "Desc": "Porta a bordo un componente Singolare",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Melchior",
+  "Icon": "MEL_RARITY_SINGULAR.jpg",
+  "IconOff": "MEL_RARITY_SINGULAR_off.jpg"
+ },
+ {
+  "Id": "MEL_RARITY_SET",
+  "Title": "Collezionista di anomalie",
+  "Desc": "Porta a bordo almeno un componente per ognuno dei sette gradi superiori",
+  "Hidden": false,
+  "Max": 7,
+  "Group": "Melchior",
+  "Icon": "MEL_RARITY_SET.jpg",
+  "IconOff": "MEL_RARITY_SET_off.jpg"
+ },
+ {
+  "Id": "MEL_AFFIX_FOUR",
+  "Title": "Quattro firme",
+  "Desc": "Monta un componente con quattro affissi",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Melchior",
+  "Icon": "MEL_AFFIX_FOUR.jpg",
+  "IconOff": "MEL_AFFIX_FOUR_off.jpg"
+ }
+]

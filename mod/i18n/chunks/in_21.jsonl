@@ -1,0 +1,986 @@
+{"id": 8230, "en": "Undercooked", "fr": "Pas assez cuit"}
+{"id": 8231, "en": "Cooked", "fr": "Cuisiné"}
+{"id": 8232, "en": "OvenUIBG", "fr": "FourUIBG"}
+{"id": 8233, "en": "ProgressUIBG", "fr": "ProgrèsUIBG"}
+{"id": 8234, "en": "ProgressFillUIRoot", "fr": "ProgressFillUIRoot"}
+{"id": 8235, "en": "ProgressFillBGText", "fr": "ProgressFillBGText"}
+{"id": 8236, "en": "CountdownText", "fr": "Texte du compte à rebours"}
+{"id": 8237, "en": "ProgressFill_TimeTargetText", "fr": "ProgressFill_TimeTargetText"}
+{"id": 8238, "en": "ProgressFillUIImage_Cook", "fr": "ProgressFillUIImage_Cook"}
+{"id": 8239, "en": "ProgressFillUIImage_PerfectCook", "fr": "ProgressFillUIImage_PerfectCook"}
+{"id": 8240, "en": "ProgressUIFill", "fr": "ProgressUIFill"}
+{"id": 8241, "en": "ProgressUILine", "fr": "ProgressUILine"}
+{"id": 8242, "en": "SupplyUIBG", "fr": "ApprovisionnementUIBG"}
+{"id": 8243, "en": "SupplyUIFill", "fr": "FournitureUIFill"}
+{"id": 8244, "en": "NextSupplyUIFill", "fr": "NextSupplyUIFill"}
+{"id": 8245, "en": "BiscuitBtn", "fr": "BiscuitBtn"}
+{"id": 8246, "en": "Cost", "fr": "Coût"}
+{"id": 8247, "en": "FluffyOvenUIRoot", "fr": "FluffyOvenUIRoot"}
+{"id": 8248, "en": "Preparing [", "fr": "Préparation ["}
+{"id": 8249, "en": "] for", "fr": "] pour"}
+{"id": 8250, "en": "sec", "fr": "sec"}
+{"id": 8251, "en": "Preparing$[", "fr": "Préparation$["}
+{"id": 8252, "en": "$Last Cook Time:", "fr": "Dernier temps de cuisson :"}
+{"id": 8253, "en": "TAKEN OFFLINE FOR SPECIAL TRAINING", "fr": "MIS HORS LIGNE POUR UNE FORMATION SPÉCIALE"}
+{"id": 8254, "en": "#", "fr": "#"}
+{"id": 8255, "en": "RankingUIElement_Crew", "fr": "ClassementUIElement_Crew"}
+{"id": 8256, "en": "Rank", "fr": "Rang"}
+{"id": 8257, "en": "Score", "fr": "Score"}
+{"id": 8258, "en": "FluffyRankingUIRoot", "fr": "FluffyRankingUIRoot"}
+{"id": 8259, "en": "RootTitle", "fr": "Titre racine"}
+{"id": 8260, "en": "Rankings", "fr": "Classement"}
+{"id": 8261, "en": "Crown", "fr": "Couronne"}
+{"id": 8262, "en": "CurrentProgressFillBG", "fr": "Progrès en cours RemplissageBG"}
+{"id": 8263, "en": "CurrentProgressFill", "fr": "Remplissage en cours"}
+{"id": 8264, "en": "CurrentProgressValue", "fr": "Valeur de l'état d'avancement actuel"}
+{"id": 8265, "en": "RankingUI", "fr": "ClassementUI"}
+{"id": 8266, "en": "Quip", "fr": "Quiproquo"}
+{"id": 8267, "en": "RankDelta_Image", "fr": "RankDelta_Image"}
+{"id": 8268, "en": "RankDelta_Label", "fr": "RankDelta_Label"}
+{"id": 8269, "en": "Focused Laser Turret", "fr": "Tourelle laser focalisée"}
+{"id": 8270, "en": "High powered laser weapon that is particularly powerful against hulls and ship systems. It is also capable of shooting down some missiles.", "fr": "Arme laser très puissante, particulièrement efficace contre les coques et les systèmes des vaisseaus. Elle est également capable d'abattre certains missiles."}
+{"id": 8271, "en": "gx.xml", "fr": "gx.xml"}
+{"id": 8272, "en": "Freeplay", "fr": "Jeu libre"}
+{"id": 8273, "en": "Highscore Run", "fr": "Course au score élevé"}
+{"id": 8274, "en": "gx", "fr": "gx"}
+{"id": 8275, "en": "info", "fr": "info"}
+{"id": 8276, "en": "no name", "fr": "pas de nom"}
+{"id": 8277, "en": "no desc", "fr": "pas de description"}
+{"id": 8278, "en": "\\$", "fr": "\\$"}
+{"id": 8279, "en": "stat", "fr": "statut"}
+{"id": 8280, "en": "Controlled_ConnectToPhotonUsingSavedRegion:", "fr": "Controlled_ConnectToPhotonUsingSavedRegion (Connexion contrôlée à la région sauvegardée) :"}
+{"id": 8281, "en": "WaitToConnect:", "fr": "WaitToConnect :"}
+{"id": 8282, "en": "tr", "fr": "tr"}
+{"id": 8283, "en": "Lost connection to host. This can be due to:$-an incorrect password$-host quit the game$-you were kicked from the game", "fr": "Perte de connexion avec l'hôte. Cela peut être dû à:$-un mot de passe incorrect$-l'hôte a quitté le jeu$-vous avez été expulsé du jeu"}
+{"id": 8284, "en": "stored.aidata", "fr": "Données.stockées"}
+{"id": 8285, "en": "Player Override Time", "fr": "Temps de neutralisation du joueur"}
+{"id": 8286, "en": "Invalid Quaternion! -", "fr": "Quaternion non valide ! -"}
+{"id": 8287, "en": "x2", "fr": "x2"}
+{"id": 8288, "en": "Discovered", "fr": "Découvert"}
+{"id": 8289, "en": "Visited", "fr": "Visité"}
+{"id": 8290, "en": "A.O.G.", "fr": "A.O.G."}
+{"id": 8291, "en": "W.D.", "fr": "W.D."}
+{"id": 8292, "en": "Inf", "fr": "Inf"}
+{"id": 8293, "en": "P.T.", "fr": "P.T."}
+{"id": 8294, "en": "No Faction", "fr": "Pas de faction"}
+{"id": 8295, "en": "Health Boost", "fr": "Coup de pouce à la santé"}
+{"id": 8296, "en": "+20 to max health per rank", "fr": "+20 à la santé maximale par rang"}
+{"id": 8297, "en": "Armor Boost", "fr": "Renforcement de l'armure"}
+{"id": 8298, "en": "+1 Armor per rank", "fr": "+1 armure par rang"}
+{"id": 8299, "en": "Quick Reload I", "fr": "Recharge rapide I"}
+{"id": 8300, "en": "+8% to reload speed per rank", "fr": "+8% à la vitesse de rechargement par rang"}
+{"id": 8301, "en": "Quick Reload II", "fr": "Recharge rapide II"}
+{"id": 8302, "en": "Turret Cooling Optimizations", "fr": "Optimisation du refroidissement de la tourelle"}
+{"id": 8303, "en": "+5% to crew Turret Cooling rate per rank", "fr": "+5% au taux de refroidissement de la tourelle de l'équipage par rang"}
+{"id": 8304, "en": "Health Boost II", "fr": "Health Boost II"}
+{"id": 8305, "en": "Armor Boost II", "fr": "Renforcement de l'armure II"}
+{"id": 8306, "en": "Oxygen Survival", "fr": "Survie à l'oxygène"}
+{"id": 8307, "en": "Last 20% longer without oxygen per rank", "fr": "Durée de vie de 20% plus longue sans oxygène par rang"}
+{"id": 8308, "en": "Pistoleer", "fr": "Pistoleer"}
+{"id": 8309, "en": "Boosts pistol damage by 10% per rank", "fr": "Augmente les dégâts du pistolet de 10% par rang"}
+{"id": 8310, "en": "Custom DNA", "fr": "ADN personnalisé"}
+{"id": 8311, "en": "Decreases respawn time by 12% per rank", "fr": "Diminue le temps de réapparition de 12% par rang"}
+{"id": 8312, "en": "Advanced Operator", "fr": "Opérateur avancé"}
+{"id": 8313, "en": "Allows use of the main turret systems", "fr": "Permet d'utiliser les systèmes de tourelle principaux"}
+{"id": 8314, "en": "Sensor Dish Certification", "fr": "Certification de l'assiette à capteurs"}
+{"id": 8315, "en": "Allows use of the sensor dish", "fr": "Permet l'utilisation de la coupelle du capteur"}
+{"id": 8316, "en": "Crew Marathon Training", "fr": "Entraînement au marathon de l'équipage"}
+{"id": 8317, "en": "Increases crew run speed by 6% per rank", "fr": "Augmente la vitesse de déplacement de l'équipage de 6 % par rang"}
+{"id": 8318, "en": "Scavenger", "fr": "Charognard"}
+{"id": 8319, "en": "Increases captured credits by 10% per rank", "fr": "Augmente les crédits capturés de 10 % par rang"}
+{"id": 8320, "en": "Shopping Spree", "fr": "Faire du shopping"}
+{"id": 8321, "en": "Reduces prices at shops by 5% per rank", "fr": "Réduit les prix des magasins de 5 % par rang"}
+{"id": 8322, "en": "Racing School", "fr": "L'école de course"}
+{"id": 8323, "en": "Boosts ship thrust 5% per rank", "fr": "Augmente la poussée du vaisseau de 5 % par rang"}
+{"id": 8324, "en": "Special Inertia Training", "fr": "Formation spéciale à l'inertie"}
+{"id": 8325, "en": "Boosts ship rotation speed 5% per rank", "fr": "Augmente la vitesse de rotation des vaisseaus de 5 % par rang"}
+{"id": 8326, "en": "Scanner Alignment", "fr": "Alignement du scanner"}
+{"id": 8327, "en": "Boosts ship detection level 10% per rank", "fr": "Augmente le niveau de détection des vaisseaus de 10 % par rang"}
+{"id": 8328, "en": "Custom Shield Algorithms", "fr": "Algorithmes de bouclier personnalisés"}
+{"id": 8329, "en": "Reduces ship signature level 10% per rank", "fr": "Réduit le niveau de signature du vaisseau de 10 % par rang"}
+{"id": 8330, "en": "Bridge Medic", "fr": "Médecin de pont"}
+{"id": 8331, "en": "Heals nearby allies for a small amount over time", "fr": "Soigne les alliés proches pour un petit montant sur la durée."}
+{"id": 8332, "en": "Frequency Amplification", "fr": "Amplification de la fréquence"}
+{"id": 8333, "en": "Increases positive effects of the shield frequency setting.", "fr": "Augmente les effets positifs du réglage de la fréquence du bouclier."}
+{"id": 8334, "en": "Probe Specialty: XP Gain", "fr": "Spécialité Sonde : Gain d'XP"}
+{"id": 8335, "en": "Increased chance to gain extra XP when performing probe research (10% per rank)", "fr": "Augmentation des chances de gagner de l'XP supplémentaire en effectuant des recherches sur les sondes (10% par rang)"}
+{"id": 8336, "en": "Probe Specialty: Cooldown", "fr": "Spécialité Sonde : Refroidissement"}
+{"id": 8337, "en": "Decreased cooldown and capacitor usage when firing probes (-10% per rank)", "fr": "Diminution du temps de recharge et de l'utilisation des condensateurs lors du tir de sondes (-10% par rang)"}
+{"id": 8338, "en": "Nano Anti-Fire System", "fr": "Nano système anti-incendie"}
+{"id": 8339, "en": "Slows the spread and growth of fires", "fr": "Ralentit la propagation et la croissance des incendies"}
+{"id": 8340, "en": "Auto-Repair Module", "fr": "Module de réparation automatique"}
+{"id": 8341, "en": "Repairs major systems over time", "fr": "Réparation des principaux systèmes au fil du temps"}
+{"id": 8342, "en": "Custom Coolant Mix", "fr": "Mélange de liquides de refroidissement sur mesure"}
+{"id": 8343, "en": "Reduces the amount of coolant used by 8% per rank", "fr": "Réduit la quantité de liquide de refroidissement utilisée de 8 % par rang."}
+{"id": 8344, "en": "Turret Charge Booster", "fr": "Booster de charge de tourelle"}
+{"id": 8345, "en": "Increases charge speed of turret you are operating", "fr": "Augmente la vitesse de chargement de la tourelle que vous utilisez"}
+{"id": 8346, "en": "Missile Expert", "fr": "Expert en missiles"}
+{"id": 8347, "en": "Increases missile lock on rate by 25% per rank", "fr": "Augmente le taux de verrouillage des missiles de 25 % par rang"}
+{"id": 8348, "en": "Turret Range", "fr": "Gamme de tourelles"}
+{"id": 8349, "en": "Increases your turret's range by 10% per rank", "fr": "Augmente la portée de votre tourelle de 10% par rang"}
+{"id": 8350, "en": "Custom Jetpack Fuel", "fr": "Carburant Jetpack personnalisé"}
+{"id": 8351, "en": "Increases your jetpack's recharge rate by 25% per rank", "fr": "Augmente le taux de recharge de votre jetpack de 25 % par rang."}
+{"id": 8352, "en": "Strength Boost", "fr": "Renforcement de la force"}
+{"id": 8353, "en": "Increases carrying capacity by 10 per rank", "fr": "Augmente la capacité de charge de 10 par rang"}
+{"id": 8354, "en": "Stamina Boost", "fr": "Amélioration de l'endurance"}
+{"id": 8355, "en": "Increases your stamina by 20% per rank", "fr": "Augmente votre endurance de 20% par rang"}
+{"id": 8356, "en": "Armored Skin Cells", "fr": "Cellules de la peau blindée"}
+{"id": 8357, "en": "Decreases incoming damage by 10% per rank", "fr": "Diminue les dégâts reçus de 10% par rang"}
+{"id": 8358, "en": "Crew Heavy Armor Training", "fr": "Formation de l'équipage au blindage lourd"}
+{"id": 8359, "en": "All crew members gain additional Armor (+1 per rank)", "fr": "Tous les membres de l'équipage bénéficient d'une armure supplémentaire (+1 par rang)."}
+{"id": 8360, "en": "Research Specialty", "fr": "Spécialité de recherche"}
+{"id": 8361, "en": "Reduces the warps required to research talents by 1", "fr": "Réduit de 1 le nombre de warps nécessaires à la recherche de talents"}
+{"id": 8362, "en": "All crew guns will cool down 5% faster per rank", "fr": "Tous les pistolets de l'équipage se refroidissent 5 % plus vite par rang."}
+{"id": 8363, "en": "Warp Charge Booster", "fr": "Booster de charge Warp"}
+{"id": 8364, "en": "Increases the warp drive charge rate by 20% per rank", "fr": "Augmente le taux de charge du moteur de distorsion de 20 % par rang."}
+{"id": 8365, "en": "Turret Zoom", "fr": "Zoom sur la tourelle"}
+{"id": 8366, "en": "Increases the zoom in turrets by 15% per rank", "fr": "Augmente le zoom des tourelles de 15 % par rang"}
+{"id": 8367, "en": "Atrium Healing Enhancement", "fr": "Amélioration de la guérison à l'Atrium"}
+{"id": 8368, "en": "Increases the rate you heal in Atriums by 40% per rank", "fr": "Augmente votre taux de guérison en Atriums de 40% par rang."}
+{"id": 8369, "en": "Cloaked DNA", "fr": "ADN occulté"}
+{"id": 8370, "en": "Causes enemy atriums to heal you", "fr": "Les atriums ennemis vous soignent."}
+{"id": 8371, "en": "Scanner Mode: Research Materials", "fr": "Mode scanner : Matériel de recherche"}
+{"id": 8372, "en": "Allows the scanner to detect research materials", "fr": "Permet au scanner de détecter les matériaux de recherche"}
+{"id": 8373, "en": "Scanner Mode: Item Pickups", "fr": "Mode Scanner : Ramassage d'objets"}
+{"id": 8374, "en": "Allows the scanner to detect item pickups", "fr": "Permet au scanner de détecter les prises d'articles"}
+{"id": 8375, "en": "Reaction Time", "fr": "Temps de réaction"}
+{"id": 8376, "en": "Reduces incoming hull damage by 5% per rank", "fr": "Réduit les dégâts de la coque de 5% par rang"}
+{"id": 8377, "en": "Damage Mitigation", "fr": "Atténuation des dommages"}
+{"id": 8378, "en": "Reduces incoming system damage by 5% per rank", "fr": "Réduit les dégâts du système entrant de 5 % par rang"}
+{"id": 8379, "en": "Encumbered Sprint", "fr": "Sprint grevé"}
+{"id": 8380, "en": "Allows sprinting while encumbered", "fr": "Permet de sprinter tout en étant encombré"}
+{"id": 8381, "en": "Turret Damage Booster", "fr": "Augmentation des dégâts de la tourelle"}
+{"id": 8382, "en": "All friendly ship turrets will deal 4% more damage per rank", "fr": "Toutes les tourelles des vaisseaus amis infligent 4 % de dégâts supplémentaires par rang."}
+{"id": 8383, "en": "Upgraded Turret Power Conduits", "fr": "Conduits d'alimentation de la tourelle améliorés"}
+{"id": 8384, "en": "All friendly ship turrets will charge 4% faster per rank", "fr": "Toutes les tourelles des vaisseaux amis se chargent 4 % plus vite par rang."}
+{"id": 8385, "en": "Custom Eye Implants", "fr": "Implants oculaires sur mesure"}
+{"id": 8386, "en": "Piloting UI provides additional information", "fr": "L'interface utilisateur de pilotage fournit des informations supplémentaires"}
+{"id": 8387, "en": "Anti-Radiation Injection", "fr": "Injection antiradiation"}
+{"id": 8388, "en": "Radiation damage is 8% less per rank", "fr": "Les dégâts de radiation sont réduits de 8% par rang"}
+{"id": 8389, "en": "Auxiliary Power", "fr": "Alimentation auxiliaire"}
+{"id": 8390, "en": "Aux systems generate 10% more power per rank", "fr": "Les systèmes Aux génèrent 10 % d'énergie en plus par rang"}
+{"id": 8391, "en": "Diplomatic actions are 5% more likely to succeed per rank", "fr": "Les actions diplomatiques ont 5 % de chances supplémentaires de réussir par rang."}
+{"id": 8392, "en": "Intimidation", "fr": "Intimidation"}
+{"id": 8393, "en": "Intimidation actions are 5% more likely to succeed per rank", "fr": "Les actions d'intimidation ont 5% de chances supplémentaires de réussir par rang."}
+{"id": 8394, "en": "Extraction Training", "fr": "Formation à l'extraction"}
+{"id": 8395, "en": "Increases chance of succesful extraction by 2% per rank", "fr": "Augmente les chances de réussite de l'extraction de 2% par rang"}
+{"id": 8396, "en": "Reactor Calibration", "fr": "Étalonnage du réacteur"}
+{"id": 8397, "en": "Increases core reactor output by 2% per rank", "fr": "Augmente la puissance du réacteur central de 2 % par rang."}
+{"id": 8398, "en": "Reactor Cooling Specialist", "fr": "Spécialiste du refroidissement des réacteurs"}
+{"id": 8399, "en": "Decreases core reactor heat output by 2% per rank", "fr": "Diminue la production de chaleur du réacteur central de 2 % par rang."}
+{"id": 8400, "en": "Screen Defensive Measures", "fr": "Mesures défensives de dépistage"}
+{"id": 8401, "en": "Increases friendly screen capture time by 5% per rank", "fr": "Augmente le temps de capture d'écran convivial de 5 % par rang"}
+{"id": 8402, "en": "Screen Hacker", "fr": "Pirate d'écran"}
+{"id": 8403, "en": "Decreases enemy screen capture time by 5% per rank", "fr": "Diminue le temps de capture d'écran de l'ennemi de 5 % par rang."}
+{"id": 8404, "en": "Reloader", "fr": "Rechargeur"}
+{"id": 8405, "en": "Small chance of gaining some ammo every shot", "fr": "Petite chance de gagner des munitions à chaque tir"}
+{"id": 8406, "en": "Screen Safety Systems", "fr": "Systèmes de sécurité pour écrans"}
+{"id": 8407, "en": "Decreases chance of ship screens exploding in battle", "fr": "Diminue les risques d'explosion des écrans de vaisseaux lors des combats"}
+{"id": 8408, "en": "Item Upgrader Operator", "fr": "Opérateur d'amélioration d'articles"}
+{"id": 8409, "en": "Allows use of the Item Upgrader", "fr": "Permet d'utiliser l'améliorateur d'objets"}
+{"id": 8410, "en": "Component Upgrader Operator", "fr": "Opérateur de mise à niveau des composants"}
+{"id": 8411, "en": "Allows use of the Component Upgrader", "fr": "Permet d'utiliser l'outil de mise à niveau des composants"}
+{"id": 8412, "en": "TempUnits", "fr": "Unités de température"}
+{"id": 8413, "en": "PLHailTarget_StartPickupMission Start()", "fr": "PLHailTarget_StartPickupMission Start()"}
+{"id": 8414, "en": "OnNewLine:", "fr": "OnNewLine :"}
+{"id": 8415, "en": "ClientGetCurrentLine:", "fr": "ClientGetCurrentLine :"}
+{"id": 8416, "en": "SafeClientGetCurrentLine:", "fr": "SafeClientGetCurrentLine :"}
+{"id": 8417, "en": "SPM: ResetDialogue", "fr": "SPM : Réinitialiser le dialogue"}
+{"id": 8418, "en": "SPM.LateResetDialogue: BeginDialogue", "fr": "SPM.LateResetDialogue : BeginDialogue"}
+{"id": 8419, "en": "(LONG RANGE)", "fr": "(LONGUE PORTÉE)"}
+{"id": 8420, "en": "I think this is a fair price considering the circumstances!", "fr": "Je pense que c'est un prix équitable compte tenu des circonstances !"}
+{"id": 8421, "en": "Trade 600 Cr for 2 Fuel", "fr": "Echanger 600 Cr contre 2 Fuel"}
+{"id": 8422, "en": "Thanks for the business!", "fr": "Merci pour votre collaboration !"}
+{"id": 8423, "en": "Browse Goods", "fr": "Parcourir les marchandises"}
+{"id": 8424, "en": "AutoDeal", "fr": "AutoDeal"}
+{"id": 8425, "en": "Repair 50 HULL for 100 Cr", "fr": "Réparation de 50 coques pour 100 Cr"}
+{"id": 8426, "en": "We can’t repair your ship while your shields are up.", "fr": "Nous ne pouvons pas réparer votre vaisseau tant que vos boucliers sont levés."}
+{"id": 8427, "en": "Welcome to our humble automated repair service! We offer many services!", "fr": "Bienvenue dans notre modeste service de réparation automatisé ! Nous offrons de nombreux services !"}
+{"id": 8428, "en": "Your hull doesn’t need repair. However, we can install ship components for you.", "fr": "Votre coque n'a pas besoin d'être réparée. Cependant, nous pouvons installer des composants de bateau pour vous."}
+{"id": 8429, "en": "Fully Repair Hull for", "fr": "Réparation complète de la coque pour"}
+{"id": 8430, "en": "Repair", "fr": "Réparation"}
+{"id": 8431, "en": "HULL for", "fr": "COQUE pour"}
+{"id": 8432, "en": "Cr", "fr": "Cr"}
+{"id": 8433, "en": "We offer ship repair for reasonable prices, although you are not currently in range of our repair lasers.", "fr": "Nous proposons des réparations de vaisseaus à des prix raisonnables, bien que vous ne soyez pas actuellement à portée de nos lasers de réparation."}
+{"id": 8434, "en": "Browse Exotic Goods", "fr": "Parcourir les produits exotiques"}
+{"id": 8435, "en": "Repair 100 HULL for 100 Cr", "fr": "Réparer 100 HULL pour 100 Cr"}
+{"id": 8436, "en": "Request Biscuit Bomb refill", "fr": "Demande de recharge Biscuit Bomb"}
+{"id": 8437, "en": "Request Biscuit Crate refill", "fr": "Demande de recharge de la caisse à biscuits"}
+{"id": 8438, "en": "Buy New Recipe Modules", "fr": "Acheter de nouveaux modules de recettes"}
+{"id": 8439, "en": "We can only repair ships registered to the FB Company", "fr": "Nous ne pouvons réparer que les vaisseaus enregistrés auprès de la compagnie FB."}
+{"id": 8440, "en": "Welcome to FB ship services! We can refill your biscuit bomb and biscuit crates!", "fr": "Bienvenue chez FB ship services ! Nous pouvons remplir vos bombes à biscuits et vos caisses à biscuits !"}
+{"id": 8441, "en": "Fully Repair Hull for", "fr": "Réparation complète de la coque pour"}
+{"id": 8442, "en": "We offer ship repair to FB ships for reasonable prices, although you are not currently in range of our repair lasers.", "fr": "Nous proposons des réparations aux vaisseaux FB à des prix raisonnables, bien que vous ne soyez pas actuellement à portée de nos lasers de réparation."}
+{"id": 8443, "en": "Ship.LateResetDialogue: BeginDialogue", "fr": "Ship.LateResetDialogue : BeginDialogue"}
+{"id": 8444, "en": "PLHailTarget_Ship_LateResetDialogue():   \\^", "fr": "PLHailTarget_Ship_LateResetDialogue() :   \\^"}
+{"id": 8445, "en": "\\^   hailOnStart:", "fr": "\\^ hailOnStart :"}
+{"id": 8446, "en": "Your ship has been flagged!", "fr": "Votre vaisseau a été signalé !"}
+{"id": 8447, "en": "Become_Hostile", "fr": "Devenir hostile"}
+{"id": 8448, "en": "ClientGetCurrentLine_Ship:", "fr": "ClientGetCurrentLine_Ship :"}
+{"id": 8449, "en": "SafeClientGetCurrentLine_Ship:", "fr": "SafeClientGetCurrentLine_Ship :"}
+{"id": 8450, "en": "SEND ClientGetCurrentLine_Ship:", "fr": "SEND ClientGetCurrentLine_Ship :"}
+{"id": 8451, "en": "Cancel Alignment (Refund)", "fr": "Annuler l'alignement (remboursement)"}
+{"id": 8452, "en": "Align to", "fr": "S'aligner sur"}
+{"id": 8453, "en": "Mini Inertia Thruster", "fr": "Mini propulseur à inertie"}
+{"id": 8454, "en": "Small inertia thruster that lacks a great deal of thrust but uses little power. Provides the ability for the ship to rotate in place or while in motion.", "fr": "Petit propulseur à inertie qui n'offre pas une grande poussée mais consomme peu d'énergie. Il permet au vaisseau de tourner sur place ou en mouvement."}
+{"id": 8455, "en": "Standard inertia thruster. Provides the ability for the ship to rotate in place or while in motion.", "fr": "Propulseur à inertie standard. Permet au vaisseau de tourner sur place ou en mouvement."}
+{"id": 8456, "en": "Super Inertia Thruster", "fr": "Super propulseur à inertie"}
+{"id": 8457, "en": "Superior inertia thruster. Provides the ability for the ship to rotate in place or while in motion.", "fr": "Propulseur à inertie supérieure. Permet au vaisseau de tourner sur place ou en mouvement."}
+{"id": 8458, "en": "Infected Inertia Thruster", "fr": "Propulseur à inertie infecté"}
+{"id": 8459, "en": "Gimbal Inertia Thruster", "fr": "Propulseur à inertie à cardan"}
+{"id": 8460, "en": "Powerful inertia thruster designed by Gimbal Co. Provides the ability for the ship to rotate in place or while in motion.", "fr": "Puissant propulseur à inertie conçu par Gimbal Co. Permet au vaisseau de tourner sur place ou en mouvement."}
+{"id": 8461, "en": "Inertia", "fr": "Inertie"}
+{"id": 8462, "en": "Mindslaver", "fr": "Largueur d'esprit"}
+{"id": 8463, "en": "Jump", "fr": "Sauter"}
+{"id": 8464, "en": "Attack", "fr": "Attaque"}
+{"id": 8465, "en": "Attack2", "fr": "Attaque2"}
+{"id": 8466, "en": "Spit", "fr": "Cracher"}
+{"id": 8467, "en": "Invalid Vector: PLInfectedScientist.Update() - spread algo", "fr": "Vecteur invalide : PLInfectedScientist.Update() - spread algo"}
+{"id": 8468, "en": "IsGrounded", "fr": "IsGrounded"}
+{"id": 8469, "en": "Forward", "fr": "En avant"}
+{"id": 8470, "en": "Random", "fr": "Au hasard"}
+{"id": 8471, "en": "Infected Crew", "fr": "Équipage infecté"}
+{"id": 8472, "en": "Heart of the Ship", "fr": "Le cœur du vaisseau"}
+{"id": 8473, "en": "SpeedMultiplier", "fr": "Multiplicateur de vitesse"}
+{"id": 8474, "en": "ENERGY (BEAM)", "fr": "ÉNERGIE (BEAM)"}
+{"id": 8475, "en": "Laser Turret", "fr": "Tourelle laser"}
+{"id": 8476, "en": "Long range laser weapon that is particularly powerful against hulls and ship systems. It is also capable of shooting down some missiles.", "fr": "Arme laser à longue portée particulièrement puissante contre les coques et les systèmes des vaisseaus. Elle est également capable d'abattre certains missiles."}
+{"id": 8477, "en": "MatrixPoint", "fr": "MatrixPoint"}
+{"id": 8478, "en": "Projectile", "fr": "Projectile"}
+{"id": 8479, "en": "WorldUI_OutlineOutside", "fr": "WorldUI_OutlineOutside"}
+{"id": 8480, "en": "WorldUI_Outline", "fr": "WorldUI_Outline"}
+{"id": 8481, "en": "WorldUI_Fill", "fr": "WorldUI_Fill"}
+{"id": 8482, "en": "WorldUI_Hold", "fr": "WorldUI_Hold"}
+{"id": 8483, "en": "WorldUI_Percent", "fr": "WorldUI_Percent"}
+{"id": 8484, "en": "WorldUI_NameLabel", "fr": "WorldUI_NameLabel"}
+{"id": 8485, "en": "CagedMindslaver_CameraTransform_Static", "fr": "CagedMindslaver_CameraTransform_Static"}
+{"id": 8486, "en": "EndingWorldUICanvas", "fr": "EndingWorldUICanvas"}
+{"id": 8487, "en": "CU_Ending", "fr": "CU_Ending"}
+{"id": 8488, "en": "AOG_Ending", "fr": "AOG_Fin"}
+{"id": 8489, "en": "WD_Ending", "fr": "WD_Ending"}
+{"id": 8490, "en": "FB_Ending", "fr": "FB_Ending"}
+{"id": 8491, "en": "KeepIt_Ending", "fr": "KeepIt_Ending"}
+{"id": 8492, "en": "FreeIt_Ending", "fr": "FreeIt_Ending"}
+{"id": 8493, "en": "DestroyIt_Ending", "fr": "DestroyIt_Ending"}
+{"id": 8494, "en": "ERRORS FOUND", "fr": "ERREURS TROUVÉES"}
+{"id": 8495, "en": "OPEN", "fr": "OUVERTURE"}
+{"id": 8496, "en": "error(s)", "fr": "erreur(s)"}
+{"id": 8497, "en": "------------$", "fr": "------------$"}
+{"id": 8498, "en": "$------------", "fr": "$------------"}
+{"id": 8499, "en": "Extend", "fr": "Prolonger"}
+{"id": 8500, "en": "Fall", "fr": "Automne"}
+{"id": 8501, "en": "Line", "fr": "Ligne"}
+{"id": 8502, "en": "PlanetIgnoreCameraSorting", "fr": "PlanetIgnoreCameraSorting"}
+{"id": 8503, "en": "mm:ss:ff", "fr": "mm:ss:ff"}
+{"id": 8504, "en": "Colonial Union HQ", "fr": "Siège de l'Union coloniale"}
+{"id": 8505, "en": "Transfer control of the Infected to the Colonial Union", "fr": "Transférer le contrôle des infectés à l'Union coloniale"}
+{"id": 8506, "en": "Transfer control of the Infected to the Alliance of Gentlemen", "fr": "Transférer le contrôle des infectés à l'Alliance des Gentlemen"}
+{"id": 8507, "en": "Transfer control of the Infected to the W.D. Corporation", "fr": "Transférer le contrôle des infectés à la W.D. Corporation"}
+{"id": 8508, "en": "Fluffy Biscuit HQ", "fr": "Le siège de Fluffy Biscuit"}
+{"id": 8509, "en": "Transfer control of the Infected to the Fluffy Biscuit Company", "fr": "Transférer le contrôle des infectés à la Fluffy Biscuit Company"}
+{"id": 8510, "en": "Yourself", "fr": "Vous-même"}
+{"id": 8511, "en": "Transfer control of the Infected to yourself", "fr": "Transférer le contrôle de l'infecté à soi-même"}
+{"id": 8512, "en": "[Inject Payload]", "fr": "[Injecter la charge utile]"}
+{"id": 8513, "en": "has raised the bid to", "fr": "a porté l'offre à"}
+{"id": 8514, "en": "x", "fr": "x"}
+{"id": 8515, "en": "has challenged the bid of", "fr": "a contesté l'offre de"}
+{"id": 8516, "en": "s challenge was not successful!", "fr": "n'a pas été couronné de succès !"}
+{"id": 8517, "en": "has earned a point!", "fr": "a gagné un point !"}
+{"id": 8518, "en": "s challenge was successful!", "fr": "Le défi de la Commission européenne a été relevé avec succès !"}
+{"id": 8519, "en": "Can't raise since it's not higher than current bid!", "fr": "Impossible de surenchérir puisque l'offre n'est pas plus élevée que l'offre actuelle !"}
+{"id": 8520, "en": "⚀", "fr": "?"}
+{"id": 8521, "en": "⚁", "fr": "?"}
+{"id": 8522, "en": "⚂", "fr": "?"}
+{"id": 8523, "en": "⚃", "fr": "?"}
+{"id": 8524, "en": "⚄", "fr": "?"}
+{"id": 8525, "en": "⚅", "fr": "?"}
+{"id": 8526, "en": "[1]", "fr": "[1]"}
+{"id": 8527, "en": "[2]", "fr": "[2]"}
+{"id": 8528, "en": "[3]", "fr": "[3]"}
+{"id": 8529, "en": "[4]", "fr": "[4]"}
+{"id": 8530, "en": "[5]", "fr": "[5]"}
+{"id": 8531, "en": "[6]", "fr": "[6]"}
+{"id": 8532, "en": "Roll", "fr": "Rouleau"}
+{"id": 8533, "en": "seconds until auto turn", "fr": "secondes jusqu'au retournement automatique"}
+{"id": 8534, "en": "No selection - Taking auto turn", "fr": "Pas de sélection - Prise en charge de la rotation automatique"}
+{"id": 8535, "en": "Game starting soon ...", "fr": "Le jeu commence bientôt ..."}
+{"id": 8536, "en": "Waiting for players", "fr": "En attente de joueurs"}
+{"id": 8537, "en": "Lightning Turret", "fr": "Tourelle éclair"}
+{"id": 8538, "en": "Fires a concentrated beam of electricity that deals great damage to shields. It does not have as much of an effect against a ship’s hull, but there is a small chance that hitting the hull will force the target ship to shut down.", "fr": "Lance un rayon d'électricité concentré qui inflige d'importants dégâts aux boucliers. Il n'a pas autant d'effet sur la coque d'un vaisseau, mais il y a une petite chance que toucher la coque oblige le vaisseau cible à s'arrêter."}
+{"id": 8539, "en": "ENERGY (LTNG)", "fr": "ÉNERGIE (LTNG)"}
+{"id": 8540, "en": "Locked - External device is preventing this door from opening", "fr": "Verrouillé - Un dispositif externe empêche l'ouverture de cette porte."}
+{"id": 8541, "en": "Repair broken screens and click on errors to clear them", "fr": "Réparez les écrans cassés et cliquez sur les erreurs pour les effacer."}
+{"id": 8542, "en": "Locked - Errors are preventing this door from opening", "fr": "Verrouillé - Des erreurs empêchent l'ouverture de cette porte."}
+{"id": 8543, "en": "A common but powerful beam weapon for ships outfitted with advanced weaponry. It has a max range of 8 km.", "fr": "Une arme à rayon commune mais puissante pour les vaisseaux équipés d'un armement avancé. Sa portée maximale est de 8 km."}
+{"id": 8544, "en": "CU Long Range", "fr": "CU Long Range"}
+{"id": 8545, "en": "An impressive beam weapon that was designed for use in the Colonial Union Fleet. It has a max range of 14 km.", "fr": "Une arme à rayon impressionnante conçue pour être utilisée par la flotte de l'Union coloniale. Sa portée maximale est de 14 km."}
+{"id": 8546, "en": "Modified CU Long Range", "fr": "Modifié CU Long Range"}
+{"id": 8547, "en": "An impressive beam weapon that was designed for use in the Colonial Union Fleet. This one has had custom modifications for extra damage. It has a max range of 14 km.", "fr": "Une arme à rayons impressionnante conçue pour être utilisée dans la flotte de l'Union coloniale. Celle-ci a été modifiée pour augmenter les dégâts. Sa portée maximale est de 14 km."}
+{"id": 8548, "en": "Keeper Beam", "fr": "Poutre de garde"}
+{"id": 8549, "en": "Powerful beam weapon that once belonged to an alien piece of technology. Though it seems to have been used for an alternate purpose, it is capable of imparting heavy damage on any ship that crosses into it. Outfitted on a common ship, it has a max range of 14 km.", "fr": "Puissante arme à rayons ayant appartenu à une technologie extraterrestre. Bien qu'elle semble avoir été utilisée à d'autres fins, elle est capable d'infliger de lourds dégâts à tout vaisseau qui la croise. Installée sur un vaisseau ordinaire, elle a une portée maximale de 14 km."}
+{"id": 8550, "en": "Retrofitted Coil Gun", "fr": "Pistolet à bobine réaménagé"}
+{"id": 8551, "en": "Projectile-based main turret. Originally manufactured during the Old Wars, it has since been refurbished and improved.", "fr": "Tourelle principale à base de projectiles. Fabriquée à l'origine pendant les Vieilles Guerres, elle a été remise à neuf et améliorée depuis."}
+{"id": 8552, "en": "RapidFire", "fr": "RapidFire"}
+{"id": 8553, "en": "Overclocked main turret designed to fire quick and devastating blasts. It has an integrated stabilizing platform that reduces kickback. It has a max range of 10 km.", "fr": "Tourelle principale surcadencée conçue pour tirer des coups rapides et dévastateurs. Elle est dotée d'une plate-forme de stabilisation intégrée qui réduit le rebond. Sa portée maximale est de 10 km."}
+{"id": 8554, "en": "W.D. Prototype \\^FlashFire\\^", "fr": "Prototype W.D. \\^FlashFire\\^"}
+{"id": 8555, "en": "W.D. Corporation's Space Weapons Prototype 55. It is a main turret designed to cause fires and overheat the reactor of a target ship. Testing has shown that the prototype can overheat its own reactor.", "fr": "Prototype 55 des armes spatiales de W.D. Corporation. Il s'agit d'une tourelle principale conçue pour provoquer des incendies et surchauffer le réacteur d'un vaisseau cible. Les tests ont montré que le prototype peut surchauffer son propre réacteur."}
+{"id": 8556, "en": "FIRE (BEAM)", "fr": "FEU (FEUILLE)"}
+{"id": 8557, "en": "Missile Turret", "fr": "Tourelle de missiles"}
+{"id": 8558, "en": "Long range missile weapon with low-damage laser. Uses the active tracker missiles. It is also capable of shooting down some missles.", "fr": "Arme à missiles à longue portée avec laser à faibles dégâts. Utilise des missiles à suivi actif. Il est également capable d'abattre certains missiles."}
+{"id": 8559, "en": "Fuel", "fr": "Carburant"}
+{"id": 8560, "en": "PIN Code", "fr": "Code PIN"}
+{"id": 8565, "en": "First Place!", "fr": "Première place !"}
+{"id": 8566, "en": "[RACE]", "fr": "[RACE]"}
+{"id": 8567, "en": "You Lost!", "fr": "Vous avez perdu !"}
+{"id": 8568, "en": "Lap", "fr": "Lap"}
+{"id": 8570, "en": "Race Over", "fr": "La course est terminée"}
+{"id": 8571, "en": "Race Starting In", "fr": "Début de la course"}
+{"id": 8574, "en": "Radiation leak detected in reactor!", "fr": "Fuite de radiations détectée dans un réacteur !"}
+{"id": 8575, "en": "flipped the reactor safety to ON", "fr": "a mis la sécurité du réacteur sur ON"}
+{"id": 8576, "en": "flipped the reactor safety to OFF", "fr": "a mis la sécurité du réacteur sur OFF"}
+{"id": 8577, "en": "Repair Depot", "fr": "Dépôt de réparation"}
+{"id": 8578, "en": "/Saves", "fr": "/Sauvegarde"}
+{"id": 8579, "en": "/Autosaves", "fr": "/Sauvegarde automatique"}
+{"id": 8580, "en": "/Local", "fr": "/Local"}
+{"id": 8588, "en": "AutosaveDelay", "fr": "Délai de sauvegarde automatique"}
+{"id": 8589, "en": "autosave", "fr": "sauvegarde automatique"}
+{"id": 8590, "en": "plsave", "fr": "épargner"}
+{"id": 8591, "en": "ZOOM LEVEL:", "fr": "NIVEAU DE ZOOM :"}
+{"id": 8592, "en": "[ff0000](*) HOSTILE[-]$[00ff00](*) CREW[-]$[ffffff](*) NPC[-]$[6666ff](*) DOOR[-]$[ff00ff](*) TELEPORTER[-]", "fr": "[ff0000](*) HOSTILE[-]$[00ff00](*) CREW[-]$[ffffff](*) NPC[-]$[6666ff](*) DOOR[-]$[ff00ff](*) TELEPORTER[-]"}
+{"id": 8593, "en": "$[FFFF00](*) PICKUPS[-]", "fr": "$[FFFF00](*) PICKUPS[-]"}
+{"id": 8594, "en": "$[44FFFF](*) RESEARCH MATS[-]", "fr": "$[44FFFF](*) TAPIS DE RECHERCHE[-]"}
+{"id": 8595, "en": "Scrapper Turret", "fr": "Tourelle racleuse"}
+{"id": 8596, "en": "Laser turret that has been modified by the W.D. Corporation. It can rip off chunks of hull and create scrap that can be sold or processed.", "fr": "Tourelle laser modifiée par la W.D. Corporation. Elle peut arracher des morceaux de coque et créer de la ferraille qui peut être vendue ou transformée."}
+{"id": 8597, "en": "is a match to", "fr": "correspond à"}
+{"id": 8598, "en": "IS A MATCH TO GX", "fr": "CORRESPOND À GX"}
+{"id": 8599, "en": "WARNING: ACIDIC", "fr": "AVERTISSEMENT : ACIDE"}
+{"id": 8600, "en": "WARNING: NO OXYGEN", "fr": "AVERTISSEMENT : PAS D'OXYGÈNE"}
+{"id": 8601, "en": "WARNING: HIGH TEMP", "fr": "AVERTISSEMENT : TEMPÉRATURE ÉLEVÉE"}
+{"id": 8602, "en": "WARNING: LOW TEMP", "fr": "AVERTISSEMENT : TEMPÉRATURE BASSE"}
+{"id": 8603, "en": "Reach objective marker", "fr": "Atteindre le marqueur d'objectif"}
+{"id": 8604, "en": "fighters eliminated", "fr": "combattants éliminés"}
+{"id": 8607, "en": "HeavyBanditSpawn", "fr": "HeavyBanditSpawn"}
+{"id": 8609, "en": "Heavy Metal Bandit", "fr": "Bandit de métal lourd"}
+{"id": 8612, "en": "Metal Bandit", "fr": "Bandit de métal"}
+{"id": 8615, "en": "Elite Metal Bandit", "fr": "Bandit d'élite en métal"}
+{"id": 8616, "en": "Stalker", "fr": "Harceleur"}
+{"id": 8667, "en": "FactionID", "fr": "FactionID"}
+{"id": 8668, "en": "MinRepValueForPeace", "fr": "Valeur minimale pour la paix"}
+{"id": 8669, "en": "AllPlayers", "fr": "Tous les joueurs"}
+{"id": 8670, "en": "FireRate", "fr": "Taux d'incendie"}
+{"id": 8671, "en": "Slow", "fr": "Lenteur"}
+{"id": 8672, "en": "GroundTurretFloor", "fr": "SolTurretFloor"}
+{"id": 8673, "en": "MeleeDamage", "fr": "Dommages de mêlée"}
+{"id": 8674, "en": "Spore Turret", "fr": "Tourelle Spore"}
+{"id": 8675, "en": "Spreadshot Turret", "fr": "Tourelle d'épandage"}
+{"id": 8676, "en": "A turret designed for close range damage. It spews out several projectiles at a time and can cause serious damage to a nearby ship.", "fr": "Tourelle conçue pour infliger des dégâts à courte portée. Elle projette plusieurs projectiles à la fois et peut causer de sérieux dommages à un vaisseau proche."}
+{"id": 8677, "en": "Firebarrel", "fr": "Baril de feu"}
+{"id": 8678, "en": "Reload", "fr": "Recharge"}
+{"id": 8680, "en": "CONTRABAND", "fr": "BANDE DE CONTREBANDE"}
+{"id": 8681, "en": "EXPERIMENTAL", "fr": "EXPÉRIMENTALE"}
+{"id": 8682, "en": "HUDScale", "fr": "HUDScale"}
+{"id": 8683, "en": "Fast and agile homing missile suitable for damaging quicker ships.", "fr": "Missile à tête chercheuse rapide et agile, adapté pour endommager les vaisseaus plus rapides."}
+{"id": 8684, "en": "Tracker missile with greatly increased physical damage due to an upgraded W.D. warhead.", "fr": "Missile à trajectoire dont les dégâts physiques sont considérablement accrus grâce à une ogive W.D. améliorée."}
+{"id": 8685, "en": "Tracker missile that is focused on disabling enemy shields.", "fr": "Missile à trajectoire qui vise à désactiver les boucliers ennemis."}
+{"id": 8686, "en": "Missile with unique tracking technology that will seek out and damage a targeted ship's reactor.", "fr": "Missile doté d'une technologie de localisation unique qui recherche et endommage le réacteur d'un vaisseau ciblé."}
+{"id": 8687, "en": "Missile with very limited tracking capability but has high damage and speed.", "fr": "Missile dont la capacité de poursuite est très limitée, mais dont les dégâts et la vitesse sont élevés."}
+{"id": 8688, "en": "Dangerous missile that inflicts acidic damage.", "fr": "Missile dangereux qui inflige des dégâts acides."}
+{"id": 8689, "en": "Hardened tracker missile designed to deal damage to armored targets", "fr": "Missile à trajectoire renforcée conçu pour endommager les cibles blindées"}
+{"id": 8690, "en": "Special missile that inflicts 4x extra damage to the targeted system. In addition it can start fires on enemy crewed ships and deals 2x damage to warp drive charge", "fr": "Missile spécial qui inflige 4 fois plus de dégâts au système ciblé. En outre, il peut déclencher des incendies sur les vaisseaux ennemis avec équipage et infliger 2 fois plus de dégâts à la charge du moteur de distorsion."}
+{"id": 8691, "en": "Tracker Missile", "fr": "Missile de poursuite"}
+{"id": 8692, "en": "W.D. Special", "fr": "W.D. Special"}
+{"id": 8693, "en": "Shield Piercer", "fr": "Perceur de bouclier"}
+{"id": 8694, "en": "Reactor Buster", "fr": "Buster de réacteur"}
+{"id": 8695, "en": "Straight Shot", "fr": "Coup droit"}
+{"id": 8696, "en": "Acid Missile", "fr": "Missile acide"}
+{"id": 8697, "en": "Armor Piercing Missile", "fr": "Missile à perforation d'armure"}
+{"id": 8698, "en": "System Damage Missile", "fr": "Système endommagé Missile"}
+{"id": 8699, "en": "F.B. Missile", "fr": "Missile F.B."}
+{"id": 8700, "en": "Ammo Capacity", "fr": "Capacité en munitions"}
+{"id": 8703, "en": "[PL] has purchased: [STR0]", "fr": "[PL] a acheté : [STR0]"}
+{"id": 8704, "en": "[PL] has sold: [STR0]", "fr": "[PL] a vendu : [STR0]"}
+{"id": 8709, "en": "PHYSICAL", "fr": "PHYSIQUE"}
+{"id": 8712, "en": "[PL] has fired a turret in green alert", "fr": "[PL] a tiré une tourelle en alerte verte"}
+{"id": 8715, "en": "M$", "fr": "M$"}
+{"id": 8716, "en": "Range", "fr": "Gamme"}
+{"id": 8717, "en": "Charge Time", "fr": "Temps de charge"}
+{"id": 8718, "en": "Dmg Type", "fr": "Dmg Type"}
+{"id": 8719, "en": "DPS)", "fr": "DPS)"}
+{"id": 8720, "en": "Move Forward", "fr": "Aller de l'avant"}
+{"id": 8721, "en": "Move Forward:", "fr": "Aller de l'avant :"}
+{"id": 8722, "en": "Repair the panel by using the Repair Gun", "fr": "Réparer le panneau à l'aide du pistolet de réparation"}
+{"id": 8724, "en": "Switch to the Repair Gun by using", "fr": "Passez au pistolet de réparation en utilisant"}
+{"id": 8725, "en": "or the scroll wheel", "fr": "ou la molette de défilement"}
+{"id": 8726, "en": "Equip the Repair Gun", "fr": "Équiper le pistolet de réparation"}
+{"id": 8727, "en": "Switch to the Inventory Tab", "fr": "Passer à l'onglet Inventaire"}
+{"id": 8728, "en": "Open the Tab menu to equip the Repair Gun", "fr": "Ouvrez le menu Tab pour équiper le pistolet de réparation"}
+{"id": 8729, "en": "Pickup the Repair Gun", "fr": "Ramasser le pistolet de réparation"}
+{"id": 8730, "en": "Put out the fires blocking the way", "fr": "Éteindre les incendies qui bloquent le passage"}
+{"id": 8731, "en": "Switch to the Fire Extinguisher by using", "fr": "Passez à l'extincteur en utilisant la touche"}
+{"id": 8732, "en": "Equip the Fire Extinguisher", "fr": "Équiper l'extincteur"}
+{"id": 8733, "en": "Open the Tab menu to equip the Fire Extinguisher", "fr": "Ouvrez le menu Tab pour équiper l'extincteur."}
+{"id": 8734, "en": "Pickup the Fire Extinguisher", "fr": "Ramasser l'extincteur"}
+{"id": 8735, "en": "Put on the exosuit, extreme temperatures ahead!", "fr": "Enfilez l'exosuit, des températures extrêmes vous attendent !"}
+{"id": 8736, "en": "Take off the exosuit", "fr": "Enlever l'exosuit"}
+{"id": 8737, "en": "Heavy Pistol", "fr": "Pistolet lourd"}
+{"id": 8738, "en": "Destroy the ground targets ([STR0] left)", "fr": "Détruire les cibles au sol ([STR0] restantes)"}
+{"id": 8739, "en": "Switch to the [STR0] by using [[STR1]] or the scroll wheel", "fr": "Passez à [STR0] en utilisant [[STR1]] ou la molette de défilement."}
+{"id": 8740, "en": "Equip the", "fr": "Equiper le"}
+{"id": 8741, "en": "Open the Tab menu to equip the", "fr": "Ouvrez le menu Tab pour équiper le"}
+{"id": 8742, "en": "Pickup the", "fr": "Ramasser le"}
+{"id": 8743, "en": "Double-press", "fr": "Double pression"}
+{"id": 8744, "en": "] or", "fr": "] ou"}
+{"id": 8745, "en": "Use jetpack", "fr": "Utiliser le jetpack"}
+{"id": 8746, "en": "<color=#ffff00ff>", "fr": "<color=#ffff00ff>"}
+{"id": 8747, "en": "Unlocked", "fr": "Débloqué"}
+{"id": 8748, "en": "unique sectors visited", "fr": "secteurs uniques visités"}
+{"id": 8749, "en": "biscuits sold", "fr": "biscuits vendus"}
+{"id": 8750, "en": "blind jumps completed", "fr": "sauts à l'aveugle effectués"}
+{"id": 8751, "en": "crew deaths", "fr": "décès de l'équipage"}
+{"id": 8752, "en": "jumps completed", "fr": "sauts effectués"}
+{"id": 8753, "en": "jumps completed as Captain", "fr": "sauts effectués en tant que capitaine"}
+{"id": 8754, "en": "jumps completed as Pilot", "fr": "sauts effectués en tant que pilote"}
+{"id": 8755, "en": "jumps completed as Scientist", "fr": "sauts effectués en tant que scientifique"}
+{"id": 8756, "en": "jumps completed as Weapons Spec.", "fr": "sauts effectués en tant que spécialiste des armes."}
+{"id": 8757, "en": "jumps completed as Engineer", "fr": "sauts effectués en tant qu'ingénieur"}
+{"id": 8758, "en": "levels earned", "fr": "niveaux atteints"}
+{"id": 8759, "en": "levels earned as Captain", "fr": "niveaux obtenus en tant que capitaine"}
+{"id": 8760, "en": "levels earned as Pilot", "fr": "niveaux acquis en tant que pilote"}
+{"id": 8761, "en": "levels earned as Scientist", "fr": "niveaux obtenus en tant que scientifique"}
+{"id": 8762, "en": "levels earned as Weapons Spec.", "fr": "niveaux obtenus en tant que spécialiste en armement."}
+{"id": 8763, "en": "levels earned as Engineer", "fr": "niveaux obtenus en tant qu'ingénieur"}
+{"id": 8764, "en": "missions completed", "fr": "missions accomplies"}
+{"id": 8765, "en": "<color=#ff0000ff>", "fr": "<color=#ff0000ff>"}
+{"id": 8766, "en": "Locked", "fr": "Verrouillé"}
+{"id": 8767, "en": "levels earned with Colonial Union", "fr": "niveaux obtenus avec l'Union coloniale"}
+{"id": 8768, "en": "levels earned with WD Corp", "fr": "niveaux obtenus avec WD Corp"}
+{"id": 8769, "en": "levels earned with A.O.G.", "fr": "niveaux obtenus avec A.O.G."}
+{"id": 8770, "en": "levels earned with Fluffy Biscuit", "fr": "niveaux obtenus avec Fluffy Biscuit"}
+{"id": 8771, "en": "levels earned with Polytechnic", "fr": "niveaux obtenus avec l'école polytechnique"}
+{"id": 8772, "en": "enemy ships destroyed", "fr": "vaisseaus ennemis détruits"}
+{"id": 8773, "en": "talents unlocked", "fr": "talents débloqués"}
+{"id": 8774, "en": "credits earned", "fr": "crédits obtenus"}
+{"id": 8775, "en": "credits spent", "fr": "crédits dépensés"}
+{"id": 8776, "en": "pawn damage dealt", "fr": "dégâts infligés aux pions"}
+{"id": 8777, "en": "pawn damage taken", "fr": "dommages subis par le pion"}
+{"id": 8778, "en": "ship damage dealt", "fr": "dommages subis par le vaisseau"}
+{"id": 8779, "en": "ship damage taken", "fr": "dommages subis par le vaisseau"}
+{"id": 8780, "en": "shots fired", "fr": "coups de feu"}
+{"id": 8781, "en": "system health healed", "fr": "système de santé guéri"}
+{"id": 8782, "en": "footsteps taken", "fr": "pas de l'autre côté de la frontière"}
+{"id": 8783, "en": "max Chaos level reached", "fr": "Niveau maximal de Chaos atteint"}
+{"id": 8784, "en": "Unlocked!", "fr": "Débloqué !"}
+{"id": 8788, "en": "cosmeticData.bin", "fr": "cosmeticData.bin"}
+{"id": 8789, "en": "You are leaving the mission zone!", "fr": "Vous quittez la zone de mission !"}
+{"id": 8790, "en": "GAME OVER: THE SOURCE HAS WON", "fr": "FIN DE LA PARTIE : LA SOURCE A GAGNÉ"}
+{"id": 8794, "en": "move your character", "fr": "déplacer votre personnage"}
+{"id": 8796, "en": "Welcome to The Academy!", "fr": "Bienvenue à l'Académie !"}
+{"id": 8797, "en": "unlock mouse cursor", "fr": "curseur libre"}
+{"id": 8798, "en": "open escape menu", "fr": "menu Echap"}
+{"id": 8799, "en": "use tab menu", "fr": "menu Tab"}
+{"id": 8800, "en": "Piloting test unavailable in VR mode, although VR piloting is possible outside of The Academy", "fr": "Le test de pilotage n'est pas disponible en mode RV, bien que le pilotage RV soit possible en dehors de l'Académie."}
+{"id": 8801, "en": "Reach the destination without touching the walls", "fr": "Atteindre la destination sans toucher les murs"}
+{"id": 8802, "en": "Collect the scrap by flying near it", "fr": "Ramassez la ferraille en volant près d'elle"}
+{"id": 8803, "en": "Press", "fr": "Appuyer"}
+{"id": 8804, "en": "to show sectors", "fr": "montrer les secteurs"}
+{"id": 8805, "en": "Align the ship to sector", "fr": "Aligner le vaisseau sur le secteur"}
+{"id": 8806, "en": "Use the nearby piloting station to pilot the ship", "fr": "Utilisez la station de pilotage voisine pour piloter le vaisseau."}
+{"id": 8807, "en": "Piloting test passed!", "fr": "Examen de pilotage réussi !"}
+{"id": 8808, "en": "Engineer power test in progress", "fr": "Test de puissance de l'ingénieur en cours"}
+{"id": 8809, "en": "Crew requesting extra power for Engineering!", "fr": "L'équipage demande de l'énergie supplémentaire pour l'ingénierie !"}
+{"id": 8810, "en": "Crew requesting extra power for Science Lab!", "fr": "L'équipe demande de l'électricité supplémentaire pour le laboratoire de sciences !"}
+{"id": 8811, "en": "Crew requesting extra power for Shields!", "fr": "L'équipage demande une puissance supplémentaire pour les boucliers !"}
+{"id": 8812, "en": "Crew requesting extra power for Weapons!", "fr": "L'équipage demande une puissance supplémentaire pour les armes !"}
+{"id": 8813, "en": "Engineer power test passed!", "fr": "Test de puissance de l'ingénieur réussi !"}
+{"id": 8814, "en": "Click lever to start power test.", "fr": "Cliquez sur le levier pour démarrer le test de puissance."}
+{"id": 8815, "en": "Weapons test passed!", "fr": "Test d'armement réussi !"}
+{"id": 8816, "en": "Use the main turret to destroy drones", "fr": "Utilisez la tourelle principale pour détruire les drones"}
+{"id": 8817, "en": "Science test passed!", "fr": "Test de sciences réussi !"}
+{"id": 8818, "en": "Gather materials and research new talents", "fr": "Rassembler du matériel et rechercher de nouveaux talents"}
+{"id": 8819, "en": "TEST PASSED", "fr": "TEST PASSÉ"}
+{"id": 8820, "en": "Armored Ant Elite", "fr": "Fourmi blindée Elite"}
+{"id": 8821, "en": "Armored Ant Drone", "fr": "Drone fourmi blindé"}
+{"id": 8822, "en": "Ravager", "fr": "Ravageur"}
+{"id": 8823, "en": "Bandit Land Drone", "fr": "Drone terrestre Bandit"}
+{"id": 8824, "en": "Turning", "fr": "Tournage"}
+{"id": 8825, "en": "run to target", "fr": "courir jusqu'à la cible"}
+{"id": 8826, "en": "run away", "fr": "s'enfuir"}
+{"id": 8827, "en": "run away if recently taken damage AND can't reach target", "fr": "s'enfuir si l'on vient de subir des dégâts ET que l'on ne peut pas atteindre la cible"}
+{"id": 8828, "en": "Xenoraptor", "fr": "Xenoraptor"}
+{"id": 8829, "en": "Large Rat", "fr": "Grand rat"}
+{"id": 8830, "en": "Elite Paladin", "fr": "Paladin d'élite"}
+{"id": 8831, "en": "Slime", "fr": "Bave"}
+{"id": 8832, "en": "Experiment 72", "fr": "Expérience 72"}
+{"id": 8834, "en": "Crawler", "fr": "Chenille"}
+{"id": 8838, "en": "GoBackToEmerge", "fr": "Retourner à l'émergence"}
+{"id": 8839, "en": "Unknown Creature", "fr": "Créature inconnue"}
+{"id": 8840, "en": "Waste Wasp", "fr": "Guêpe à déchets"}
+{"id": 8841, "en": "A.O.G. Hideout", "fr": "Cachette A.O.G."}
+{"id": 8842, "en": "W.D. HUB", "fr": "W.D. HUB"}
+{"id": 8843, "en": "Bio-Hazard Turret", "fr": "Tourelle à risques biologiques"}
+{"id": 8844, "en": "Fires an acidic stream that poisons onboard crew and reduces a ship’s armor effectiveness for a short time.", "fr": "Lance un jet d'acide qui empoisonne l'équipage à bord et réduit l'efficacité du blindage d'un vaisseau pendant une courte période."}
+{"id": 8845, "en": "PHYSICAL (ACID)", "fr": "PHYSIQUE (ACIDE)"}
+{"id": 8846, "en": "Standard-issue biscuit bomb for Fluffy Biscuit Co. delivery vessels. It is a powerful EMP device that can shut down all enemy ships in a sector.", "fr": "Bombe à biscuits standard pour les vaisseaux de livraison de Fluffy Biscuit Co. Il s'agit d'un puissant dispositif EMP capable d'immobiliser tous les vaisseaus ennemis d'un secteur."}
+{"id": 8847, "en": "Colonial Classic Captain's Chair", "fr": "Chaise de capitaine Colonial Classic"}
+{"id": 8848, "en": "A design of chair that has been installed in Colonial Union ships for many decades. It is quite comfortable. $$+10% EM Detection", "fr": "Il s'agit d'un modèle de chaise qui a été installé sur les vaisseaus de la Colonial Union pendant plusieurs décennies. Il est très confortable. $$+10% Détection EM"}
+{"id": 8849, "en": "Colonial Modern Captain's Chair", "fr": "Chaise de capitaine coloniale moderne"}
+{"id": 8850, "en": "A new chair designed for Colonial Union ships. Though stiffer than the classic chairs used by the Colonial Union Fleet, this chair offers wonderful lumbar support. $$+10% Shield Charge Rate", "fr": "Un nouveau fauteuil conçu pour les vaisseaus de l'Union coloniale. Bien que plus rigide que les chaises classiques utilisées par la flotte de l'Union coloniale, cette chaise offre un excellent soutien lombaire. Taux de charge du bouclier $$+10"}
+{"id": 8851, "en": "W.D. Classic Captain's Chair", "fr": "Chaise de capitaine W.D. Classic"}
+{"id": 8852, "en": "Like everything produced by the W.D. Corporation, this chair is hard and uncomfortable. It instills an aggressiveness in any captain who sits in it. $$+10% Turret Charge Rate", "fr": "Comme tout ce qui est produit par la W.D. Corporation, ce fauteuil est dur et inconfortable. Il insuffle de l'agressivité à tout capitaine qui s'y assoit. Taux de charge de la tourelle : $$+10"}
+{"id": 8853, "en": "ColonialClassicChair", "fr": "ColonialClassicChair"}
+{"id": 8854, "en": "ColonialModernChair", "fr": "ColonialModernChair"}
+{"id": 8855, "en": "WDClassicChair", "fr": "WDClassicChair"}
+{"id": 8856, "en": "Technology that surrounds the shields and makes the ship invisible to sensors. Adapted from traditional Sylvassi cloaking devices for use in modern ships.", "fr": "Technologie qui entoure les boucliers et rend le vaisseau invisible aux capteurs. Adaptation des dispositifs d'occultation traditionnels des Sylvassiens pour une utilisation dans les vaisseaux modernes."}
+{"id": 8857, "en": "Sylvassi Cloaking System", "fr": "Système d'occultation Sylvassi"}
+{"id": 8858, "en": "A superior cloaking system with a rapid charge rate. Designed and installed by Sylvassi engineers.", "fr": "Un système d'occultation supérieur avec un taux de charge rapide. Conçu et installé par les ingénieurs de Sylvassi."}
+{"id": 8859, "en": "Test 2 POWER", "fr": "Test 2 POWER"}
+{"id": 8860, "en": "Jump Processor", "fr": "Processeur de saut"}
+{"id": 8861, "en": "Shield Boost", "fr": "Renforcement du bouclier"}
+{"id": 8862, "en": "Cyber Defense", "fr": "Cyberdéfense"}
+{"id": 8863, "en": "Shield Recharger", "fr": "Rechargeur de bouclier"}
+{"id": 8864, "en": "% of max", "fr": "% de la valeur maximale"}
+{"id": 8865, "en": "Turret Damage Bonus", "fr": "Bonus de dégâts de la tourelle"}
+{"id": 8866, "en": "Turret Cooling", "fr": "Refroidissement de la tourelle"}
+{"id": 8867, "en": "Heat Reduction", "fr": "Réduction de la chaleur"}
+{"id": 8868, "en": "Thrust Boost", "fr": "Augmentation de la poussée"}
+{"id": 8869, "en": "Charge Rate & Cooling", "fr": "Taux de charge et refroidissement"}
+{"id": 8870, "en": "Warp Charge Boost", "fr": "Boost de charge de distorsion"}
+{"id": 8871, "en": "Eng Sys. Heal", "fr": "Eng Sys. Guérir"}
+{"id": 8872, "en": "Life Sup. Sys. Heal", "fr": "Life Sup. Sys. Guérir"}
+{"id": 8873, "en": "Sci Sys. Heal", "fr": "Sci Sys. Heal"}
+{"id": 8874, "en": "Weap Sys. Heal", "fr": "Weap Sys. Guérir"}
+{"id": 8875, "en": "Hull Armor", "fr": "Armure de la coque"}
+{"id": 8876, "en": "Warp Range", "fr": "Gamme Warp"}
+{"id": 8877, "en": "Overcharge", "fr": "Surcharge"}
+{"id": 8878, "en": "Ship Startup Speed", "fr": "Vitesse de démarrage du vaisseau"}
+{"id": 8879, "en": "Max Shield Integrity", "fr": "Intégrité maximale du blindage"}
+{"id": 8880, "en": "CyberAttack", "fr": "CyberAttaque"}
+{"id": 8881, "en": "JP", "fr": "JP"}
+{"id": 8882, "en": "SCP", "fr": "SCP"}
+{"id": 8883, "en": "CD", "fr": "CD"}
+{"id": 8884, "en": "TGT", "fr": "TGT"}
+{"id": 8885, "en": "ARX-JP", "fr": "ARX-JP"}
+{"id": 8886, "en": "A jump computer that greatly improves jump computation speed.", "fr": "Un ordinateur de saut qui améliore considérablement la vitesse de calcul des sauts."}
+{"id": 8887, "en": "ARX-SCP", "fr": "ARX-SCP"}
+{"id": 8888, "en": "A very efficient shield co-processor. Increases maximum shield integrity when installed and slightly boosts recharge rate when powered. Never leave home without it!", "fr": "Un coprocesseur de bouclier très efficace. Il augmente l'intégrité maximale du bouclier lorsqu'il est installé et augmente légèrement le taux de recharge lorsqu'il est alimenté. Ne quittez jamais la maison sans lui !"}
+{"id": 8889, "en": "ARX-CD", "fr": "ARX-CD"}
+{"id": 8890, "en": "Cyber defense processor. Provides a state-of-the-art firewall that can help prevent virus intrusions.", "fr": "Processeur de cyberdéfense. Fournit un pare-feu de pointe qui peut aider à prévenir les intrusions de virus."}
+{"id": 8891, "en": "QDI-RCG", "fr": "QDI-RCG"}
+{"id": 8892, "en": "Processor that recharges shields whenever a program is run. Maximum of 10 times per sector.", "fr": "Processeur qui recharge les boucliers à chaque fois qu'un programme est exécuté. Maximum de 10 fois par secteur."}
+{"id": 8893, "en": "QDI-FIX-ENG", "fr": "QDI-FIX-ENG"}
+{"id": 8894, "en": "Processor that slightly repairs engineering system whenever a program is run. Maximum of 10 times per sector.", "fr": "Processeur qui répare légèrement le système d'ingénierie à chaque fois qu'un programme est exécuté. Maximum de 10 fois par secteur."}
+{"id": 8895, "en": "QDI-FIX-SCI", "fr": "QDI-FIX-SCI"}
+{"id": 8896, "en": "Processor that slightly repairs science system whenever a program is run. Maximum of 10 times per sector.", "fr": "Processeur qui répare légèrement le système scientifique à chaque fois qu'un programme est exécuté. Maximum de 10 fois par secteur."}
+{"id": 8897, "en": "QDI-FIX-WPN", "fr": "QDI-FIX-WPN"}
+{"id": 8898, "en": "Processor that slightly repairs weapons system whenever a program is run. Maximum of 10 times per sector.", "fr": "Processeur qui répare légèrement le système d'armement à chaque fois qu'un programme est exécuté. Maximum de 10 fois par secteur."}
+{"id": 8899, "en": "QDI-FIX-LIFE", "fr": "QDI-FIX-LIFE"}
+{"id": 8900, "en": "Processor that slightly repairs life support system whenever a program is run. Maximum of 10 times per sector.", "fr": "Processeur qui répare légèrement le système de survie chaque fois qu'un programme est exécuté. Maximum de 10 fois par secteur."}
+{"id": 8901, "en": "BKP-HEAT", "fr": "BKP-HEAT"}
+{"id": 8902, "en": "Processor that reduces reactor heat generation when hull is less than 30%.", "fr": "Processeur qui réduit la production de chaleur du réacteur lorsque la coque est inférieure à 30 %."}
+{"id": 8903, "en": "ARX-TGT", "fr": "ARX-TGT"}
+{"id": 8904, "en": "Processor that boosts turret damage and turret cooling.", "fr": "Processeur qui augmente les dégâts et le refroidissement des tourelles."}
+{"id": 8905, "en": "BKP-WARP", "fr": "BKP-WARP"}
+{"id": 8906, "en": "Processor that boosts warp charge rate when hull is less than 30%.", "fr": "Processeur qui augmente le taux de charge de distorsion lorsque la coque est inférieure à 30 %."}
+{"id": 8907, "en": "BKP-THRUST", "fr": "BKP-THRUST"}
+{"id": 8908, "en": "Processor that boosts thrust when hull is less than 30%.", "fr": "Processeur qui augmente la poussée lorsque la coque est inférieure à 30 %."}
+{"id": 8909, "en": "BKP-WPN-POWER", "fr": "BKP-WPN-POWER"}
+{"id": 8910, "en": "Processor that boosts turret charge rate and turret cooling when hull is less than 30%.", "fr": "Processeur qui augmente le taux de charge et le refroidissement de la tourelle lorsque la coque est inférieure à 30 %."}
+{"id": 8911, "en": "Research Pipeline Module", "fr": "Module \"Pipeline de recherche"}
+{"id": 8912, "en": "Processor that adds one fuel capsule whenever a new talent is researched.", "fr": "Processeur qui ajoute une capsule de carburant à chaque fois qu'un nouveau talent est recherché."}
+{"id": 8913, "en": "Improved Defenses", "fr": "Amélioration des défenses"}
+{"id": 8914, "en": "Processor that increases effective hull armor.", "fr": "Processeur qui augmente le blindage effectif de la coque."}
+{"id": 8915, "en": "Warp Range Processor", "fr": "Processeur de gamme Warp"}
+{"id": 8916, "en": "Processor that increases warp drive range.", "fr": "Processeur qui augmente la portée du moteur de distorsion."}
+{"id": 8917, "en": "Sylvassi Cyber Defense Processor", "fr": "Sylvassi Cyber Defense Processor"}
+{"id": 8918, "en": "A more power efficient cyber defense processor. Restored Sylvassi technology.", "fr": "Un processeur de cyberdéfense plus économe en énergie. Restauration de la technologie Sylvassi."}
+{"id": 8919, "en": "Overcharge Processor", "fr": "Processeur de surcharge"}
+{"id": 8920, "en": "Adds some overcharge when the ship takes energy damage", "fr": "Ajoute une surcharge lorsque le vaisseau subit des dégâts d'énergie"}
+{"id": 8921, "en": "Second Wind'", "fr": "Second souffle"}
+{"id": 8922, "en": "Prevents lethal hull damage and restores hull to 15%. Processor is destroyed on activation", "fr": "Empêche les dommages mortels à la coque et rétablit la coque à 15 %. Le processeur est détruit lors de l'activation"}
+{"id": 8923, "en": "Scrapper Processor", "fr": "Scrapper Processor"}
+{"id": 8924, "en": "Generates 1 processed scrap each warp jump to an unvisited sector", "fr": "Génère 1 rebut traité à chaque saut de distorsion vers un secteur non visité."}
+{"id": 8925, "en": "Teleport To: Captain", "fr": "Téléportation vers : Capitaine"}
+{"id": 8926, "en": "Enables teleportation to the Captain", "fr": "Permet de se téléporter auprès du capitaine"}
+{"id": 8927, "en": "Teleport To: Pilot", "fr": "Téléportation vers : Pilote"}
+{"id": 8928, "en": "Enables teleportation to the Pilot", "fr": "Permet de se téléporter vers le pilote"}
+{"id": 8929, "en": "Teleport To: Scientist", "fr": "Téléportation vers : Scientifique"}
+{"id": 8930, "en": "Enables teleportation to the Scientist", "fr": "Permet de se téléporter vers le scientifique"}
+{"id": 8931, "en": "Teleport To: Weapons Specialist", "fr": "Téléportation vers : Spécialiste des armes"}
+{"id": 8932, "en": "Enables teleportation to the Weapons Specialist", "fr": "Permet de se téléporter vers le spécialiste en armement"}
+{"id": 8933, "en": "Teleport To: Engineer", "fr": "Téléportation vers : Ingénieur"}
+{"id": 8934, "en": "Enables teleportation to the Engineer", "fr": "Permet de se téléporter vers l'ingénieur"}
+{"id": 8935, "en": "PWR-48", "fr": "PWR-48"}
+{"id": 8936, "en": "Increased reactor output$+1 to max level for component upgrades", "fr": "Augmentation de la puissance des réacteurs$+1 au niveau maximum pour les améliorations des composants"}
+{"id": 8937, "en": "QCK-90", "fr": "QCK-90"}
+{"id": 8938, "en": "Increased ship startup speed$+1 to max level for component upgrades", "fr": "Augmentation de la vitesse de démarrage des vaisseaux$+1 au niveau max pour les améliorations de composants"}
+{"id": 8939, "en": "SHD-28", "fr": "SHD-28"}
+{"id": 8940, "en": "Increased max shield integrity$+1 to max level for item upgrades", "fr": "Augmentation de l'intégrité maximale du bouclier$+1 au niveau maximal pour les améliorations d'objets"}
+{"id": 8941, "en": "Combo Processor", "fr": "Processeur combiné"}
+{"id": 8942, "en": "Adds cyberdefense and jump computation speed", "fr": "Ajout d'une cyberdéfense et d'une vitesse de calcul accrue"}
+{"id": 8943, "en": "ARX-CWR", "fr": "ARX-CWR"}
+{"id": 8944, "en": "Increases CyberAttack (virus broadcast rate)", "fr": "Augmente la CyberAttaque (taux de diffusion des virus)"}
+{"id": 8945, "en": "$+", "fr": "$+"}
+{"id": 8946, "en": "Defender Turret", "fr": "Tourelle de défenseur"}
+{"id": 8947, "en": "A turret that fires a barrage of missiles designed for close to medium range damage. It uses its own ammo supply instead of tracker missiles.", "fr": "Une tourelle qui tire un barrage de missiles conçus pour infliger des dégâts à courte et moyenne portée. Elle utilise sa propre réserve de munitions au lieu des missiles de poursuite."}
+{"id": 8948, "en": "400 MHz", "fr": "400 MHz"}
+{"id": 8949, "en": "Distress Signal: Colonial Union Signature", "fr": "Signal de détresse : Signature de l'Union coloniale"}
+{"id": 8950, "en": "580.8 MHz", "fr": "580,8 MHz"}
+{"id": 8951, "en": "Distress Signal: W.D. Corp Signature", "fr": "Signal de détresse : W.D. Corp Signature"}
+{"id": 8952, "en": "200 MHz", "fr": "200 MHz"}
+{"id": 8953, "en": "Distress Signal: General Distress", "fr": "Signal de détresse : Détresse générale"}
+{"id": 8954, "en": "DISTRESS SIGNAL", "fr": "SIGNAL DE DÉTRESSE"}
+{"id": 8955, "en": "StarSalvage E40", "fr": "StarSalvage E40"}
+{"id": 8956, "en": "Basic extractor for removing components from abandoned ships in deep space.", "fr": "Extracteur de base pour retirer les composants des vaisseaux abandonnés dans l'espace lointain."}
+{"id": 8957, "en": "StarSalvage E70", "fr": "StarSalvage E70"}
+{"id": 8958, "en": "Premium laser-stabilized extractor for removing components from abandoned ships in deep space.", "fr": "Extracteur de première qualité stabilisé par laser pour retirer les composants des vaisseaux abandonnés dans l'espace lointain."}
+{"id": 8959, "en": "StarSalvage E900", "fr": "StarSalvage E900"}
+{"id": 8960, "en": "Industrial component extractor. It is very stable and designed for stripping disused ships clean of their components.", "fr": "Extracteur de composants industriels. Il est très stable et conçu pour dépouiller les vaisseaus désaffectés de leurs composants."}
+{"id": 8961, "en": "The Remover", "fr": "Le déménageur"}
+{"id": 8962, "en": "Component extractor built by the Gentlemen Trade Commission. Due to high interest in scrapping among members of the Alliance of Gentlemen, The Remover is more stable than many other extractors on the market.", "fr": "Extracteur de composants construit par la Gentlemen Trade Commission. En raison du grand intérêt des membres de l'Alliance des Gentlemen pour la mise au rebut, l'extracteur est plus stable que beaucoup d'autres extracteurs sur le marché."}
+{"id": 8963, "en": "P.T. Extractor", "fr": "Extracteur P.T."}
+{"id": 8964, "en": "Stability", "fr": "Stabilité"}
+{"id": 8965, "en": "Success Bonus$", "fr": "Bonus de réussite"}
+{"id": 8966, "en": "Classic Biscuit Recipe", "fr": "Recette de biscuits classiques"}
+{"id": 8967, "en": "Module for producing classic biscuits.", "fr": "Module de production de biscuits classiques."}
+{"id": 8968, "en": "BiscuitIcons/Icon_Classic", "fr": "BiscuitIcons/Icon_Classic"}
+{"id": 8969, "en": "Emergency Biscuit Recipe", "fr": "Recette de biscuits d'urgence"}
+{"id": 8970, "en": "Module for producing emergency biscuits.", "fr": "Module de production de biscuits d'urgence."}
+{"id": 8971, "en": "BiscuitIcons/Icon_Emergency", "fr": "BiscuitIcons/Icon_Emergency"}
+{"id": 8972, "en": "Healthy Biscuit Recipe", "fr": "Recette de biscuits sains"}
+{"id": 8973, "en": "Module for producing healthy biscuits.", "fr": "Module de production de biscuits sains."}
+{"id": 8974, "en": "BiscuitIcons/Icon_Healthy", "fr": "BiscuitIcons/Icône_santé"}
+{"id": 8975, "en": "Carrot Cake Biscuit Recipe", "fr": "Recette de biscuits au gâteau aux carottes"}
+{"id": 8976, "en": "Module for producing carrot cake biscuits.", "fr": "Module de production de biscuits au carrot cake."}
+{"id": 8977, "en": "BiscuitIcons/Icon_CarrotCake", "fr": "BiscuitIcons/Icône_Gâteau aux carottes"}
+{"id": 8978, "en": "Hearty Biscuit Recipe", "fr": "Recette de biscuits copieux"}
+{"id": 8979, "en": "Module for producing hearty biscuits.", "fr": "Module pour la production de biscuits consistants."}
+{"id": 8980, "en": "BiscuitIcons/Icon_Hearty", "fr": "BiscuitIcons/Icon_Hearty"}
+{"id": 8981, "en": "Whole Wheat Biscuit Recipe", "fr": "Recette de biscuits au blé entier"}
+{"id": 8982, "en": "Module for producing whole wheat biscuits.", "fr": "Module de production de biscuits au blé complet."}
+{"id": 8983, "en": "Healberry Crumbly Biscuit Recipe", "fr": "Recette de biscuits friables à la myrtille"}
+{"id": 8984, "en": "Module for producing healberry crumbly biscuits.", "fr": "Module de production de biscuits friables à la fraise."}
+{"id": 8985, "en": "BiscuitIcons/Icon_HealBerryCrumbly", "fr": "BiscuitIcônes/Icône_HealBerryCrumbly"}
+{"id": 8986, "en": "Sugar Biscuit Recipe", "fr": "Recette de biscuits au sucre"}
+{"id": 8987, "en": "Module for producing sugar biscuits.", "fr": "Module de production de biscuits au sucre."}
+{"id": 8988, "en": "BiscuitIcons/Icon_Sugar", "fr": "BiscuitIcons/Icône_Sucre"}
+{"id": 8989, "en": "Garlic Biscuit Recipe", "fr": "Recette de biscuits à l'ail"}
+{"id": 8990, "en": "Module for producing garlic biscuits.", "fr": "Module de production de biscuits à l'ail."}
+{"id": 8991, "en": "BiscuitIcons/Icon_Garlic", "fr": "BiscuitIcons/Icône_Ail"}
+{"id": 8992, "en": "Frozen Biscuit Recipe", "fr": "Recette de biscuits surgelés"}
+{"id": 8993, "en": "Module for producing frozen biscuits.", "fr": "Module de production de biscuits surgelés."}
+{"id": 8994, "en": "BiscuitIcons/Icon_Frozen", "fr": "BiscuitIcons/Icon_Frozen"}
+{"id": 8995, "en": "Spicy Biscuit Recipe", "fr": "Recette de biscuits épicés"}
+{"id": 8996, "en": "Module for producing spicy biscuits.", "fr": "Module de production de biscuits épicés."}
+{"id": 8997, "en": "BiscuitIcons/Icon_Spicy", "fr": "BiscuitIcons/Icône_Spicy"}
+{"id": 8998, "en": "Spicy Crumbly Biscuit Recipe", "fr": "Recette de biscuits croustillants épicés"}
+{"id": 8999, "en": "Module for producing spicy crumbly biscuits.", "fr": "Module de production de biscuits friables et épicés."}
+{"id": 9000, "en": "BiscuitIcons/Icon_SpicyCrumbly", "fr": "BiscuitIcons/Icône_SpicyCrumbly"}
+{"id": 9001, "en": "Grenade Damage Biscuit Recipe", "fr": "Recette de biscuits endommagés par une grenade"}
+{"id": 9002, "en": "Module for producing grenade damage biscuits.", "fr": "Module de production de biscuits contre les dégâts causés par les grenades."}
+{"id": 9003, "en": "Molten Biscuit Recipe", "fr": "Recette de biscuits fondants"}
+{"id": 9004, "en": "Module for producing molten biscuits.", "fr": "Module de production de biscuits fondus."}
+{"id": 9005, "en": "BiscuitIcons/Icon_Molten", "fr": "BiscuitIcons/Icon_Molten"}
+{"id": 9006, "en": "Long Life Biscuit Recipe", "fr": "Recette de biscuits longue vie"}
+{"id": 9007, "en": "Module for producing long life biscuits.", "fr": "Module pour la production de biscuits de longue durée."}
+{"id": 9008, "en": "BiscuitIcons/Icon_LongLife", "fr": "BiscuitIcons/Icon_LongLife"}
+{"id": 9009, "en": "Funky Biscuit Recipe", "fr": "Recette de biscuits funky"}
+{"id": 9010, "en": "Module for producing funky biscuits.", "fr": "Module pour la production de biscuits funky."}
+{"id": 9011, "en": "BiscuitIcons/Icon_Funky", "fr": "BiscuitIcons/Icon_Funky"}
+{"id": 9012, "en": "Lucky Biscuit Recipe", "fr": "Recette de biscuit chanceux"}
+{"id": 9013, "en": "Module for producing lucky biscuits.", "fr": "Module de production de biscuits porte-bonheur."}
+{"id": 9014, "en": "BiscuitIcons/Icon_Lucky", "fr": "BiscuitIcons/Icon_Lucky"}
+{"id": 9015, "en": "Flamelance Turret", "fr": "Tourelle de Flamelance"}
+{"id": 9016, "en": "An unusual weapon that uses a custom fuel mix to project a stream of fire into space. The heat applied to a target ship can start onboard fires and overheat its reactor.", "fr": "Une arme inhabituelle qui utilise un mélange de carburant personnalisé pour projeter un jet de feu dans l'espace. La chaleur appliquée à un vaisseau cible peut déclencher des incendies à bord et surchauffer son réacteur."}
+{"id": 9017, "en": "Heat", "fr": "Chaleur"}
+{"id": 9018, "en": "PHYSICAL (FIRE)", "fr": "PHYSIQUE (INCENDIE)"}
+{"id": 9019, "en": "Integrity", "fr": "Intégrité"}
+{"id": 9020, "en": "Armor", "fr": "Armure"}
+{"id": 9021, "en": "Armor (Max)", "fr": "Armure (Max)"}
+{"id": 9022, "en": "C.C.G. Hull", "fr": "C.C.G. Hull"}
+{"id": 9023, "en": "Designed by the W.D. Corporation after the Old Wars. It uses a carbon-carbon-graphite bond for increased strength and reduced mass. Famous for its reliability.", "fr": "Conçu par la W.D. Corporation après les anciennes guerres. Il utilise une liaison carbone-carbone-graphite pour une résistance accrue et une masse réduite. Célèbre pour sa fiabilité."}
+{"id": 9024, "en": "C.C.G. Light Hull", "fr": "Coque légère C.C.G."}
+{"id": 9025, "en": "A lighter mass version of the C.C.G. Hull. It was designed by the W.D. Corporation and uses a carbon-carbon-graphite bond for increased strength and reduced mass.", "fr": "Une version plus légère de la coque C.C.G.. Elle a été conçue par la W.D. Corporation et utilise un lien carbone-carbone-graphite pour une résistance accrue et une masse réduite."}
+{"id": 9026, "en": "Phase Drone Hull", "fr": "Phase Drone Hull"}
+{"id": 9027, "en": "A special hull designed for a phase drone. It can withstand a multitude of warps in a short span of time.", "fr": "Une coque spéciale conçue pour un drone de phase. Elle peut résister à une multitude de déformations en peu de temps."}
+{"id": 9028, "en": "Nano-Active Hull", "fr": "Coque nano-active"}
+{"id": 9029, "en": "Utilizing Polytechnic Federation technology, this component employs trillions of nano-bots that repair segments of the hull during warp travel.", "fr": "Utilisant la technologie de la Fédération polytechnique, ce composant emploie des billions de nano-bots qui réparent des segments de la coque pendant le voyage en distorsion."}
+{"id": 9030, "en": "C.C.G. Hull - Military Grade", "fr": "Coque C.C.G. - Qualité militaire"}
+{"id": 9031, "en": "W.D. Corporation's high-end C.C.G. hull. Very dense and durable, it is specially designed for warships and combat vessels.", "fr": "La coque C.C.G. haut de gamme de W.D. Corporation. Très dense et durable, elle est spécialement conçue pour les vaisseaus de guerre et de combat."}
+{"id": 9032, "en": "Sentry Drone Hull", "fr": "Coque du drone Sentry"}
+{"id": 9033, "en": "A massive and sturdy hull designed by Tricorp for its sentry drones.", "fr": "Une coque massive et robuste conçue par Tricorp pour ses drones sentinelles."}
+{"id": 9034, "en": "Infected Carrier Hull", "fr": "Coque du transporteur infectée"}
+{"id": 9035, "en": "Infected Fighter Hull", "fr": "Coque de chasseur infectée"}
+{"id": 9036, "en": "W.D. Destroyer Hull", "fr": "W.D. Destroyer Hull"}
+{"id": 9037, "en": "Custom hull for a W.D. Destroyer-class starship. It has a high integrity and is well-armored.", "fr": "Coque personnalisée pour un vaisseau de classe W.D. Destroyer. Elle a une grande intégrité et est bien blindée."}
+{"id": 9038, "en": "Layered Hull", "fr": "Coque stratifiée"}
+{"id": 9039, "en": "A hull with armor that scales with its current integrity. Due to layers of reinforced plates, its armoring is stronger when the hull integrity is lower.", "fr": "Une coque dont le blindage s'adapte à son intégrité actuelle. Grâce à des couches de plaques renforcées, le blindage est plus solide lorsque l'intégrité de la coque est faible."}
+{"id": 9040, "en": "Nano Machines", "fr": "Les nanomachines"}
+{"id": 9041, "en": "A swarm of nano machines.", "fr": "Un essaim de nanomachines."}
+{"id": 9042, "en": "Deathwarden Hull", "fr": "Hull, la gardienne de la mort"}
+{"id": 9043, "en": "A sturdy hull designed for the Deathwarden drone.", "fr": "Une coque robuste conçue pour le drone Deathwarden."}
+{"id": 9044, "en": "Discount C.C.G. Hull", "fr": "Remise C.C.G. Hull"}
+{"id": 9045, "en": "A cheaper version of the C.C.G. Hull.", "fr": "Une version moins chère du C.C.G. Hull."}
+{"id": 9046, "en": "Interceptor Hull", "fr": "Coque d'intercepteur"}
+{"id": 9047, "en": "This hull is exceptionally strong and has unique properties that allow field repairs, yet it isn’t compatible with shields.", "fr": "Cette coque est exceptionnellement solide et possède des propriétés uniques qui permettent des réparations sur le terrain, mais elle n'est pas compatible avec les boucliers."}
+{"id": 9048, "en": "Warp Guardian Hull", "fr": "Coque gardienne de la distorsion"}
+{"id": 9049, "en": "This hull is exceptionally strong", "fr": "Cette coque est exceptionnellement solide"}
+{"id": 9050, "en": "Polytech Hull", "fr": "Coque Polytech"}
+{"id": 9051, "en": "Hull Plating (CCGE)", "fr": "Placage de coque (CCEG)"}
+{"id": 9052, "en": "An extra layer of reinforced hull plating that prevents system damage from attacks under the ship and reduces hull damage.", "fr": "Une couche supplémentaire de blindage renforcé de la coque qui empêche les dommages causés au système par les attaques sous le vaisseau et réduit les dommages à la coque."}
+{"id": 9053, "en": "Standard maneuvering thruster. Provides the ability for the ship to translate in any direction.", "fr": "Propulseur de manœuvre standard. Permet au vaisseau de se déplacer dans n'importe quelle direction."}
+{"id": 9054, "en": "Heavy Maneuvering Thruster", "fr": "Propulseur de manœuvre lourd"}
+{"id": 9055, "en": "Typically used for ships with greater mass, this maneuvering thruster has more thrust than a standard model but also requires more power. Provides the ability for the ship to translate in any direction.", "fr": "Généralement utilisé pour les vaisseaux de plus grande masse, ce propulseur de manœuvre a une plus grande poussée qu'un modèle standard mais nécessite également plus d'énergie. Il permet au vaisseau de se déplacer dans n'importe quelle direction."}
+{"id": 9056, "en": "Racing Maneuvering Thruster", "fr": "Propulseur de manœuvre de course"}
+{"id": 9057, "en": "Used almost exclusively for racing, this maneuvering thruster has superior thrust but requires a great deal of power. Provides the ability for the ship to translate in any direction.", "fr": "Utilisé presque exclusivement pour les courses, ce propulseur de manœuvre a une poussée supérieure mais nécessite beaucoup d'énergie. Il permet au vaisseau de se déplacer dans n'importe quelle direction."}
+{"id": 9058, "en": "Maneuver Thrust", "fr": "Poussée de manœuvre"}
+{"id": 9059, "en": "Colonial Union medical supplies that were likely stolen from a transport ship.", "fr": "Des fournitures médicales de l'Union coloniale qui ont probablement été volées dans un vaisseau de transport."}
+{"id": 9060, "en": "W.D. Weapon Parts", "fr": "Pièces d'armes W.D."}
+{"id": 9061, "en": "Boxes of unassembled W.D. weapons.", "fr": "Boîtes d'armes W.D. non assemblées."}
+{"id": 9062, "en": "Smuggled Medical Supplies", "fr": "Fournitures médicales de contrebande"}
+{"id": 9063, "en": "Colonial Union medical supplies. The registration numbers have been removed so they can’t be traced back to their site of origin.", "fr": "Fournitures médicales de l'Union coloniale. Les numéros d'enregistrement ont été supprimés afin qu'il soit impossible de remonter jusqu'à leur site d'origine."}
+{"id": 9064, "en": "Borthix Crate", "fr": "Caisse Borthix"}
+{"id": 9065, "en": "Borthix crystals packed into a shipping crate. Since it is an ingredient in the drug sundust, borthix is both highly valuable and illegal to transport.", "fr": "Cristaux de borthix emballés dans une caisse d'expédition. Comme il s'agit d'un ingrédient de la drogue sundust, le borthix est à la fois très précieux et illégal à transporter."}
+{"id": 9066, "en": "Live Creature", "fr": "Créature vivante"}
+{"id": 9067, "en": "A wooden crate that contains a living creature. It often slams against its enclosure.", "fr": "Une caisse en bois qui contient un être vivant. Elle se heurte souvent à son enclos."}
+{"id": 9068, "en": "Cryo Chamber", "fr": "Chambre cryogénique"}
+{"id": 9069, "en": "A cryogenic pod that contains a human male of unknown identity. Though it is old, it is impeccably sealed.", "fr": "Une capsule cryogénique contenant un homme d'identité inconnue. Bien qu'elle soit ancienne, elle est impeccablement scellée."}
+{"id": 9070, "en": "Failed Cryo Chamber", "fr": "Chambre de cryogénie défectueuse"}
+{"id": 9071, "en": "A cryogenic pod that suffered a system failure. The individual preserved inside did not survive.", "fr": "Nacelle cryogénique ayant subi une défaillance du système. L'individu conservé à l'intérieur n'a pas survécu."}
+{"id": 9072, "en": "Refined Sundust", "fr": "Sundust raffiné"}
+{"id": 9073, "en": "Large quantities of the illegal drug sundust are contained in this crate. Sundust is extremely valuable but illegal to have in your possession.", "fr": "Cette caisse contient de grandes quantités de sundust, une drogue illégale. La sundust est une drogue extrêmement précieuse, mais il est illégal de l'avoir en sa possession."}
+{"id": 9074, "en": "Junk Cube", "fr": "Cube de bric-à-brac"}
+{"id": 9075, "en": "A compacted cube of scrap metal and garbage. It seems a metal bandit got caught in it somehow.", "fr": "Un cube compacté de ferraille et de déchets. Il semble qu'un bandit des métaux s'y soit fait prendre d'une manière ou d'une autre."}
+{"id": 9076, "en": "Irradiated Cargo", "fr": "Cargaison irradiée"}
+{"id": 9077, "en": "A crate that is emitting dangerous levels of radiation.", "fr": "Une caisse qui émet des radiations dangereuses."}
+{"id": 9078, "en": "W.D. Rations Cache", "fr": "Cache à rations W.D."}
+{"id": 9079, "en": "A large package of W.D. rations.", "fr": "Un grand paquet de rations W.D."}
+{"id": 9080, "en": "W.D. Secret Technology Prototype", "fr": "Prototype de technologie secrète W.D."}
+{"id": 9081, "en": "The Corporation's first step into cloaking technology. Still a long way to go before it is usable.", "fr": "Le premier pas de la Corporation dans la technologie de l'occultation. Il reste encore beaucoup de chemin à parcourir avant qu'elle ne soit utilisable."}
+{"id": 9082, "en": "Protector Head", "fr": "Tête de protection"}
+{"id": 9083, "en": "Head of a large robot. Its eye can emit a powerful laser.", "fr": "Tête d'un grand robot. Son œil peut émettre un puissant laser."}
+{"id": 9084, "en": "Contraband", "fr": "Contrebande"}
+{"id": 9085, "en": "Mission Item", "fr": "Mission"}
+{"id": 9086, "en": "W.D. Small", "fr": "W.D. Small"}
+{"id": 9087, "en": "A scaled back, cheaper version of the W.D. Large.", "fr": "Une version réduite et moins chère du W.D. Large."}
+{"id": 9088, "en": "W.D. Large", "fr": "W.D. Large"}
+{"id": 9089, "en": "W.D. Corp's prime nuclear device. It is one of the most damaging nuclear devices on the market.", "fr": "Il s'agit du principal dispositif nucléaire de W.D. Corp. Il s'agit de l'un des dispositifs nucléaires les plus dangereux sur le marché."}
+{"id": 9090, "en": "C.U. Enforcer", "fr": "L'agent d'exécution de l'U.C."}
+{"id": 9091, "en": "A nuclear device occasionally used by the Colonial Union Fleet. Though these nukes are not often fired, they are more common than other Colonial Union nuclear devices.", "fr": "Dispositif nucléaire utilisé occasionnellement par la flotte de l'Union Coloniale. Bien que ces engins ne soient pas souvent utilisés, ils sont plus courants que les autres engins nucléaires de l'Union Coloniale."}
+{"id": 9092, "en": "C.U. Peacekeeper", "fr": "C.U. Peacekeeper"}
+{"id": 9093, "en": "A powerful nuclear device designed by the Colonial Union. Though its name would seem contrary to its use, the Colonial Union Fleet normally uses the Peacekeeper as a deterrent for combat, rather than an end to it.", "fr": "Un puissant dispositif nucléaire conçu par l'Union Coloniale. Bien que son nom semble aller à l'encontre de son utilisation, la flotte de l'Union Coloniale utilise normalement le Pacificateur comme moyen de dissuasion pour les combats, plutôt que comme moyen d'y mettre fin."}
+{"id": 9094, "en": "Project Megaton", "fr": "Projet Megaton"}
+{"id": 9095, "en": "Of unknown origin, this nuclear device is utterly devastating. Its sheer power implies that it was intended for some use beyond the scope of mere ship-to-ship combat.", "fr": "D'origine inconnue, cet engin nucléaire est totalement dévastateur. Sa puissance même implique qu'il était destiné à une utilisation dépassant le cadre du simple combat entre vaisseaus."}
+{"id": 9096, "en": "Tactical Nuke", "fr": "Nucléaire tactique"}
+{"id": 9097, "en": "Small nuke designed for close-range combat.", "fr": "Petite bombe atomique conçue pour les combats à courte portée."}
+{"id": 9098, "en": "Max Damage", "fr": "Dommages maximaux"}
+{"id": 9099, "en": "Damage Range", "fr": "Portée des dommages"}
+{"id": 9100, "en": "Fuel Burn Rate", "fr": "Taux de combustion du carburant"}
+{"id": 9101, "en": "Turn Speed", "fr": "Vitesse de rotation"}
+{"id": 9102, "en": "Standard O2 Generator", "fr": "Générateur d'O2 standard"}
+{"id": 9103, "en": "Standard oxygen generator. Designed to support six passengers for several months.", "fr": "Générateur d'oxygène standard. Conçu pour accueillir six passagers pendant plusieurs mois."}
+{"id": 9104, "en": "\\^Calypso\\^ O2 Generator", "fr": "\\Générateur d'O2"}
+{"id": 9105, "en": "Large oxygen generator. Uses very efficient filters and produces a higher yield of breathable air. It has stable performance under pressure and multiple backup systems in case of emergencies.", "fr": "Générateur d'oxygène de grande taille. Il utilise des filtres très efficaces et produit une plus grande quantité d'air respirable. Ses performances sont stables sous pression et il dispose de plusieurs systèmes de secours en cas d'urgence."}
+{"id": 9106, "en": "Refill Rate", "fr": "Taux de remplissage"}
+{"id": 9107, "en": "Phase Turret", "fr": "Tourelle de phase"}
+{"id": 9108, "en": "Fires a beam that pierces through hull and armor to damage internal ship systems. It is not particularly effective at dealing damage to hull or shields.", "fr": "Tire un rayon qui traverse la coque et le blindage pour endommager les systèmes internes du vaisseau. Il n'est pas particulièrement efficace pour infliger des dégâts à la coque ou aux boucliers."}
+{"id": 9109, "en": "ENERGY (PHASE)", "fr": "ENERGIE (PHASE)"}
+{"id": 9110, "en": "PhaseTurretDamage", "fr": "PhaseTurretDamage"}
+{"id": 9111, "en": "P.T. Module: Shields", "fr": "Module P.T : Boucliers"}
+{"id": 9112, "en": "3x shields charge rate while equipped$<color=red>Warning: This component constantly consumes credits. Not recommended for extended use</color>", "fr": "Taux de charge des boucliers 3x lorsqu'ils sont équipés$<color=red>Avertissement : Ce composant consomme constamment des crédits. Il n'est pas recommandé pour une utilisation prolongée</color>"}
+{"id": 9113, "en": "P.T. Module: Damage", "fr": "Module P.T : Dommages"}
+{"id": 9114, "en": "3x turret damage while equipped$<color=red>Warning: This component puts extreme stress on the power system and constantly consumes coolant. Not recommended for extended use</color>", "fr": "3x les dégâts de la tourelle lorsqu'elle est équipée$<color=red>Avertissement : Ce composant soumet le système d'alimentation à des contraintes extrêmes et consomme constamment du liquide de refroidissement. Il n'est pas recommandé pour une utilisation prolongée</color>"}
+{"id": 9115, "en": "P.T. Module: Quantum Charger", "fr": "Module P.T : Chargeur quantique"}
+{"id": 9116, "en": "Charges programs while equipped$<color=red>Warning: This component causes screens to explode and system damage over time. Not recommended for extended use</color>", "fr": "Charge les programmes lorsqu'il est équipé$<color=red>Avertissement : Ce composant provoque l'explosion des écrans et l'endommagement du système au fil du temps. Non recommandé pour une utilisation prolongée</color>"}
+{"id": 9117, "en": "P.T. Module: Rapid Assembly", "fr": "Module P.T : Assemblage rapide"}
+{"id": 9118, "en": "Greatly decreases respawn time while equipped$<color=red>Warning: This component lowers hull armor by 50% and causes hull damage each time a crewmember respawns. Not recommended for extended use</color>", "fr": "Réduit considérablement le temps de réapparition lorsqu'il est équipé$<color=red>Avertissement : Ce composant réduit l'armure de la coque de 50 % et cause des dommages à la coque chaque fois qu'un membre de l'équipage se réincarne. Il n'est pas recommandé pour une utilisation prolongée</color>"}
+{"id": 9119, "en": "P.T. Module: Crew Repair Nano-bots", "fr": "Module P.T : Nano-bots de réparation de l'équipage"}
+{"id": 9120, "en": "Onboard crewmembers are repaired over time while equipped$<color=red>Warning: This component puts extreme stress on the power system and constantly consumes coolant. Not recommended for extended use</color>", "fr": "Les membres de l'équipage embarqué sont réparés au fil du temps lorsqu'ils sont équipés$<color=red>Avertissement : Ce composant soumet le système d'alimentation à des contraintes extrêmes et consomme constamment du liquide de refroidissement. Il n'est pas recommandé pour une utilisation prolongée</color>"}
+{"id": 9121, "en": "P.T. Module: Thrust", "fr": "Module P.T : Poussée"}
+{"id": 9122, "en": "2x main thrusters while equipped$<color=red>Warning: This component reduces reactor stability over time and disables shield charging. Not recommended for extended use</color>", "fr": "2x les propulseurs principaux lorsqu'il est équipé$<color=red>Avertissement : Ce composant réduit la stabilité du réacteur au fil du temps et désactive le chargement du bouclier. Non recommandé pour une utilisation prolongée</color>"}
+{"id": 9123, "en": "MW$", "fr": "MW$"}
+{"id": 9125, "en": "MW</color>$", "fr": "MW</color>$"}
+{"id": 9126, "en": "Power Usage$", "fr": "Consommation d'énergie"}
+{"id": 9127, "en": "Railgun Turret", "fr": "Tourelle de railgun"}
+{"id": 9128, "en": "A standard armament that can be found on many ships. It is known for its fast firing capability.", "fr": "Il s'agit d'un armement standard que l'on trouve sur de nombreux vaisseaus. Il est connu pour sa capacité de tir rapide."}
+{"id": 9129, "en": "Ancient Railgun Turret", "fr": "Ancienne tourelle de railgun"}
+{"id": 9130, "en": "Perf (Output + Sig + Other)$Performance Total$Cost Ratio$Balance Ratio", "fr": "Perf (Output + Sig + Autres)$Performance Total$Ratio des coûts$Ratio d'équilibre"}
+{"id": 9133, "en": "Heat Output", "fr": "Puissance calorifique"}
+{"id": 9134, "en": "EM Signature", "fr": "Signature de l'EM"}
+{"id": 9135, "en": "Max Temp", "fr": "Temp. max."}
+{"id": 9136, "en": "Emer. Cooldown", "fr": "Emer. Refroidissement"}
+{"id": 9137, "en": "Output", "fr": "Sortie"}
+{"id": 9138, "en": "kP", "fr": "kP"}
+{"id": 9139, "en": "sec$", "fr": "sec$"}
+{"id": 9140, "en": "MW", "fr": "MW"}
+{"id": 9141, "en": "Null Point Reactor", "fr": "Réacteur du point zéro"}
+{"id": 9142, "en": "Produces reliable energy output. The design of this reactor was inspired by Old Wars technology, and it is used on many active ships today.", "fr": "Il produit une énergie fiable. La conception de ce réacteur s'inspire de la technologie de la Vieille Guerre, et il est utilisé sur de nombreux vaisseaus en activité aujourd'hui."}
+{"id": 9143, "en": "Reinforced Null Point Reactor", "fr": "Réacteur à point zéro renforcé"}
+{"id": 9144, "en": "State-of-the-art energy generation with impressive output. Uses advanced cooling systems coupled with reinforced alloys that can withstand high temperatures. This reactor is not only powerful, but safe.", "fr": "Production d'énergie de pointe avec un rendement impressionnant. Il utilise des systèmes de refroidissement avancés associés à des alliages renforcés capables de résister à des températures élevées. Ce réacteur est non seulement puissant, mais aussi sûr."}
+{"id": 9145, "en": "Colonial Fusion Reactor", "fr": "Réacteur à fusion colonial"}
+{"id": 9146, "en": "Reliable, safe, and efficient, this reactor was designed for the Colonial Union Fleet but has become one of the most commonly used reactors even on civilian and transport ships. It is tried and true technology.", "fr": "Fiable, sûr et efficace, ce réacteur a été conçu pour la flotte de l'Union coloniale, mais il est devenu l'un des réacteurs les plus couramment utilisés, même sur les vaisseaus civils et de transport. Il s'agit d'une technologie éprouvée."}
+{"id": 9147, "en": "Military-Grade Fusion Reactor", "fr": "Réacteur de fusion de qualité militaire"}
+{"id": 9148, "en": "Newer version of the Colonial Fusion Reactor. Has increased energy output and can handle higher core temperatures. It is frequently used on Colonial Union military and police vessels.", "fr": "Nouvelle version du réacteur de fusion colonial. Il produit plus d'énergie et peut supporter des températures de cœur plus élevées. Il est fréquemment utilisé sur les vaisseaux militaires et de police de l'Union coloniale."}
+{"id": 9149, "en": "Advanced Fusion Reactor", "fr": "Réacteur de fusion avancé"}
+{"id": 9150, "en": "Superior version of the Military-Grade Fusion Reactor. Has increased energy output and can handle higher core temperatures. It is used on select ships in the Colonial Union Fleet.", "fr": "Version supérieure du réacteur de fusion de qualité militaire. Il a un rendement énergétique accru et peut supporter des températures de cœur plus élevées. Il est utilisé sur certains vaisseaux de la flotte de l'Union coloniale."}
+{"id": 9151, "en": "P.F. Anti-Matter Reactor", "fr": "Réacteur anti-matière P.F."}
+{"id": 9152, "en": "Polytechnic Federation technology. These reactors were salvaged from destroyed P.F. vessels, studied, and recreated to work within the constraints of more common ships.", "fr": "Technologie de la Fédération polytechnique. Ces réacteurs ont été récupérés sur des vaisseaux détruits de la F.P., étudiés et recréés pour fonctionner dans les limites des vaisseaux les plus courants."}
+{"id": 9153, "en": "P.F. Anti-Matter Reactor (Unmodified)", "fr": "Réacteur anti-matière P.F. (non modifié)"}
+{"id": 9154, "en": "Polytechnic Federation technology", "fr": "Fédération polytechnique technologie"}
+{"id": 9155, "en": "Fluffy Biscuit Jumbo Reactor", "fr": "Réacteur Jumbo Fluffy Biscuit"}
+{"id": 9156, "en": "A standard reactor for Fluffy Biscuit Co. delivery ships. It produces a small output but is fairly difficult to detect.", "fr": "Un réacteur standard pour les vaisseaux de livraison de Fluffy Biscuit Co. Il produit une petite quantité d'énergie, mais il est assez difficile à détecter."}
+{"id": 9157, "en": "G.T.C. Quiet Cupcake", "fr": "G.T.C. Quiet Cupcake"}
+{"id": 9158, "en": "A modified Fluffy Biscuit Co. reactor also known as a murmur engine. It is an Alliance of Gentlemen favorite due to its small EM signature. If a crew does not want its presence known, this reactor will surely help in that endeavor.", "fr": "Un réacteur modifié de Fluffy Biscuit Co. également connu sous le nom de moteur à murmure. C'est un des réacteurs préférés de l'Alliance of Gentlemen en raison de sa faible signature électromagnétique. Si un équipage ne veut pas que sa présence soit connue, ce réacteur l'aidera sûrement dans cette entreprise."}
+{"id": 9159, "en": "Ancient Reactor", "fr": "Ancien réacteur"}
+{"id": 9160, "en": "Roland Reactor", "fr": "Réacteur Roland"}
+{"id": 9161, "en": "Custom reactor built for a CU Roland-class starship. It is capable of large output and can function smoothly despite very high temperatures.", "fr": "Réacteur personnalisé construit pour un vaisseau CU de classe Roland. Il est capable d'une grande puissance et peut fonctionner sans problème malgré des températures très élevées."}
+{"id": 9162, "en": "ThermoCore Reactor", "fr": "Réacteur ThermoCore"}
+{"id": 9163, "en": "An experimental reactor that provides more power the hotter the core temperature. Due to high risk associated with this reactor, it has not been approved for standard commercial use.", "fr": "Il s'agit d'un réacteur expérimental qui fournit d'autant plus d'énergie que la température du cœur est élevée. En raison du risque élevé associé à ce réacteur, il n'a pas été approuvé pour une utilisation commerciale standard."}
+{"id": 9164, "en": "Strongpoint Reactor", "fr": "Réacteur Strongpoint"}
+{"id": 9165, "en": "High-performing reactor that links all the ship systems to boost output. Damaged ship systems will lower the output of the reactor.", "fr": "Réacteur très performant qui relie tous les systèmes du vaisseau pour en augmenter la puissance. Les systèmes endommagés diminuent la puissance du réacteur."}
+{"id": 9166, "en": "Leaky Reactor", "fr": "Réacteur non étanche"}
+{"id": 9167, "en": "Powerful reactor that occasionally spews radiation. Label reads “DO NOT USE”.", "fr": "Réacteur puissant qui émet occasionnellement des radiations. L'étiquette indique \"NE PAS UTILISER\"."}
+{"id": 9168, "en": "Sylvassi Reactor", "fr": "Réacteur Sylvassi"}
+{"id": 9169, "en": "A competent reactor with a lower maximum temperature. It is usually used on refurbished Sylvassi ships.", "fr": "Un réacteur compétent avec une température maximale plus basse. Il est généralement utilisé sur les vaisseaus Sylvassi rénovés."}
+{"id": 9170, "en": "Pieces of broken hull and debris. If properly processed, it could be repurposed.", "fr": "Des morceaux de coque brisée et des débris. S'ils sont correctement traités, ils peuvent être réutilisés."}
+{"id": 9171, "en": "Processed Scrap", "fr": "Ferraille traitée"}
+{"id": 9172, "en": "Used to amplify the ship’s signal detection capabilities.", "fr": "Utilisé pour amplifier les capacités de détection des signaux du vaisseau."}
+{"id": 9173, "en": "Tactical Holoscreen", "fr": "Écran holistique tactique"}
+{"id": 9174, "en": "Shield generator with a fast recharge rate but minimal capacity. Originally designed for Fluffy Biscuit Co. delivery ships.", "fr": "Générateur de bouclier avec un taux de recharge rapide mais une capacité minimale. Conçu à l'origine pour les vaisseaus de livraison de Fluffy Biscuit Co."}
+{"id": 9175, "en": "Heavy Tactical Holoscreen", "fr": "Écran géant tactique"}
+{"id": 9176, "en": "Shield generator with a fast recharge rate and moderate capacity. Originally designed for larger Fluffy Biscuit Co. delivery ships.", "fr": "Générateur de bouclier avec un taux de recharge rapide et une capacité modérée. Conçu à l'origine pour les grands vaisseaus de livraison de la société Fluffy Biscuit Co."}
+{"id": 9177, "en": "C.G.F. Mini Shield Generator", "fr": "C.G.F. Mini Shield Generator"}
+{"id": 9178, "en": "An older type of shield generator. It seems to work, but it may not last long under pressure. You get what you pay for, you cheap bastard!", "fr": "Un ancien type de générateur de bouclier. Il semble fonctionner, mais il risque de ne pas tenir longtemps sous pression. On en a pour son argent, espèce de salaud bon marché !"}
+{"id": 9179, "en": "C.G.F. Light Shield Generator", "fr": "Générateur de bouclier léger C.G.F."}
+{"id": 9180, "en": "A reliable and versatile shield generator that has been used for decades in the Colonial Union Galactic Fleet. It has saved many crews over the years.", "fr": "Un générateur de bouclier fiable et polyvalent utilisé depuis des décennies par la flotte galactique de la Colonial Union. Il a permis de sauver de nombreux équipages au fil des ans."}
+{"id": 9181, "en": "C.G.F. Heavy Shield Generator", "fr": "Générateur de bouclier lourd C.G.F."}
+{"id": 9182, "en": "A powerful and modern shield generator. Commonly used on newer ships in the Colonial Union Galactic Fleet.", "fr": "Un générateur de bouclier puissant et moderne. Il est couramment utilisé sur les nouveaux vaisseaux de la flotte galactique de la Colonial Union."}
+{"id": 9183, "en": "Military-Grade Shield Generator", "fr": "Générateur de bouclier de qualité militaire"}
+{"id": 9184, "en": "Colonial Union's latest shield generator technology. It was designed specifically for expeditionary ships on the fringes of known space.", "fr": "La dernière technologie de générateur de bouclier de la Colonial Union. Il a été conçu spécifiquement pour les vaisseaux d'expédition aux confins de l'espace connu."}
+{"id": 9185, "en": "G.T.C. Blue Goose", "fr": "G.T.C. Blue Goose"}
+{"id": 9186, "en": "Recovers quicker than most shields. It is one of the few products of the Gentlemen Trade Commission that was not created from previously stolen merchandise.", "fr": "Récupère plus rapidement que la plupart des boucliers. C'est l'un des rares produits de la Gentlemen Trade Commission qui n'a pas été créé à partir de marchandises précédemment volées."}
+{"id": 9187, "en": "W.D. Corp Particle Shield", "fr": "Bouclier anti-particules W.D. Corp"}
+{"id": 9188, "en": "Designed to allow 'layers' of shielding. These particle shields are very effective and provide 5% extra resistance to physical attacks.", "fr": "Conçu pour permettre des \"couches\" de protection. Ces boucliers à particules sont très efficaces et offrent une résistance supplémentaire de 5 % aux attaques physiques."}
+{"id": 9189, "en": "Reinforced Particle Shield", "fr": "Bouclier anti-particules renforcé"}
+{"id": 9190, "en": "Designed to allow ‘layers’ of shielding. Some W.D. crews tinker with their particle shield generators. This one has been significantly upgraded and provides 10% extra resistance to physical attacks.", "fr": "Conçus pour permettre des \"couches\" de blindage. Certains équipages de W.D. bricolent leurs générateurs de boucliers à particules. Celui-ci a été considérablement amélioré et offre une résistance supplémentaire de 10 % aux attaques physiques."}
+{"id": 9191, "en": "Second Hull", "fr": "Deuxième coque"}
+{"id": 9192, "en": "A shield generator with such a high integrity, it nearly acts as a second hull. It has an extremely slow recharge rate.", "fr": "Un générateur de bouclier d'une telle intégrité qu'il agit presque comme une seconde coque. Sa vitesse de recharge est extrêmement lente."}
+{"id": 9193, "en": "Beam Shields", "fr": "Boucliers à faisceaux"}
+{"id": 9194, "en": "Powerful shield generator with 15% extra resistance to beam attacks.", "fr": "Puissant générateur de bouclier offrant une résistance supplémentaire de 15 % aux attaques par faisceau."}
+{"id": 9195, "en": "Superior Beam Shields", "fr": "Boucliers à rayons supérieurs"}
+{"id": 9196, "en": "Powerful shield generator with 30% extra resistance to beam attacks.", "fr": "Puissant générateur de bouclier offrant une résistance supplémentaire de 30 % aux attaques par faisceau."}
+{"id": 9197, "en": "Corbin's Wall", "fr": "Mur de Corbin"}
+{"id": 9198, "en": "Are you tired of the same old shields with minimal integrities? Do you wish your shield was less like a screen and more like a wall? Worry no more, ‘Corbin’s Wall’ has you covered! This is a limited-time offer, so BUY NOW!$No refunds.", "fr": "Êtes-vous fatigué des mêmes vieux boucliers avec des intégrations minimales ? Vous aimeriez que votre bouclier ressemble moins à un écran qu'à un mur ? Ne vous inquiétez plus, 'Corbin's Wall' vous couvre ! Il s'agit d'une offre à durée limitée, alors achetez dès maintenant !"}
+{"id": 9199, "en": "Fortified Holoscreen", "fr": "Holoscreen fortifié"}
+{"id": 9200, "en": "Shield generator with a fast recharge rate and decent capacity. Originally designed for Fluffy Biscuit Co. delivery ships with particularly valuable cargo.", "fr": "Générateur de bouclier avec un taux de recharge rapide et une capacité décente. Conçu à l'origine pour les vaisseaux de livraison de la société Fluffy Biscuit Co. dont la cargaison est particulièrement précieuse."}
+{"id": 9201, "en": "Dense Particle Shield", "fr": "Bouclier de particules denses"}
+{"id": 9202, "en": "Designed to allow 'layers' of shielding. This shield generator is the latest model of the W.D. Corporation's particle shield technology and provides 20% extra resistance to physical attacks.", "fr": "Conçu pour permettre des \"couches\" de protection. Ce générateur de bouclier est le dernier modèle de la technologie de bouclier à particules de la W.D. Corporation et offre une résistance supplémentaire de 20 % aux attaques physiques."}
+{"id": 9203, "en": "Tetragonal Surface Projector", "fr": "Projecteur de surface tétragonale"}
+{"id": 9204, "en": "A strange projector that creates a meta-mesh link surrounding the ship that acts as a shield. It reduces incoming damage of all damage types by 15%.", "fr": "Un étrange projecteur qui crée un lien de méta-maille autour du vaisseau qui agit comme un bouclier. Il réduit de 15 % les dégâts reçus, quel que soit leur type."}
+{"id": 9205, "en": "WD XC-7 Prototype Config 4", "fr": "WD XC-7 Prototype Config 4"}
+{"id": 9206, "en": "A W.D. Corporation shield generator installed with a prototype shield charger array that boosts charge speed.", "fr": "Un générateur de bouclier de W.D. Corporation installé avec un prototype de chargeur de bouclier qui augmente la vitesse de charge."}
+{"id": 9207, "en": "Modified Military-Grade Shield Generator", "fr": "Générateur de bouclier militaire modifié"}
+{"id": 9208, "en": "Colonial Union's latest shield generator technology. It was designed specifically for expeditionary ships on the fringes of known space. This one has been modified with improved quantum shielding and charge rate but reduced integrity.", "fr": "La dernière technologie de générateur de bouclier de la Colonial Union. Il a été conçu spécifiquement pour les vaisseaux d'expédition aux confins de l'espace connu. Celui-ci a été modifié pour améliorer le blindage quantique et le taux de charge, mais son intégrité a été réduite."}
+{"id": 9209, "en": "Sylvassi Shields", "fr": "Sylvassi Shields"}
+{"id": 9210, "en": "A unique shield generator that increases shield charge rate when shield integrity is above 50%. It is a modern version of old Sylvassi shield technology.", "fr": "Un générateur de bouclier unique qui augmente le taux de charge du bouclier lorsque l'intégrité du bouclier est supérieure à 50 %. Il s'agit d'une version moderne de l'ancienne technologie de bouclier Sylvassi."}
+{"id": 9211, "en": "Polytech Shields", "fr": "Boucliers Polytech"}
+{"id": 9212, "en": "Min Integrity", "fr": "Intégrité minimale"}
+{"id": 9213, "en": "Charge Rate", "fr": "Taux d'imposition"}
+{"id": 9214, "en": "Min For QT Shields", "fr": "Min pour les boucliers QT"}
+{"id": 9215, "en": "Perf (Chg. Rate + Int + Other)$Performance Total$Cost Ratio$Power Ratio$Balance Ratio", "fr": "Perf (taux de change + int. + autres)$Performance totale$Ratio de coût$Ratio de puissance$Ratio d'équilibre"}
+{"id": 9216, "en": "({0} + {1} + {2})${3}${4}${5}${6}", "fr": "({0} + {1} + {2})${3}${4}${5}${6}"}
+{"id": 9217, "en": "Sylvassi Turret", "fr": "Tourelle Sylvassienne"}
+{"id": 9218, "en": "Long range laser weapon that is particularly powerful against hulls and ship systems. Has enhanced auto-aim that can shoot down some missiles.", "fr": "Arme laser à longue portée particulièrement puissante contre les coques et les systèmes des vaisseaux. Possède une visée automatique améliorée qui peut abattre certains missiles."}
+{"id": 9219, "en": "The \\^Adelaide\\^ Thruster", "fr": "Le propulseur \\^Adélaïde\\^"}
+{"id": 9220, "en": "Named after Captain Adelaide, an engineer and hero from the Old Wars. This thruster has a high max output and can propel many types of ships quickly and efficiently.", "fr": "Nommé d'après le capitaine Adélaïde, ingénieur et héros de la Vieille Guerre. Ce propulseur a une puissance maximale élevée et peut propulser de nombreux types de vaisseaus rapidement et efficacement."}
+{"id": 9221, "en": "Performance Vector Thruster", "fr": "Propulseur vectoriel de performance"}
+{"id": 9222, "en": "Military-grade thruster system capable of impressive forward thrust.", "fr": "Système de propulsion de qualité militaire capable d'une poussée impressionnante vers l'avant."}
+{"id": 9223, "en": "Small Vector Thruster", "fr": "Petit propulseur vectoriel"}
+{"id": 9224, "en": "Used to propel a ship forward. It does not have as much thrust as other products on the market, but it uses little power.", "fr": "Utilisé pour propulser un vaisseau vers l'avant. Il n'a pas la même poussée que d'autres produits sur le marché, mais il consomme peu d'énergie."}
+{"id": 9225, "en": "Racing Thruster", "fr": "Propulseur de course"}
+{"id": 9226, "en": "A thruster with extreme forward thrust. It is a favorite among racing ships, though it is often tinkered with to push it to greater limits. As it requires a massive amount of power, it is not meant to be used over long durations.", "fr": "Propulseur doté d'une poussée extrême vers l'avant. C'est le favori des vaisseaux de course, bien qu'il soit souvent bricolé pour en repousser les limites. Comme il nécessite une grande quantité d'énergie, il n'est pas conçu pour être utilisé sur de longues périodes."}
+{"id": 9227, "en": "Dark Thruster", "fr": "Propulseur sombre"}
+{"id": 9228, "en": "A forward thruster with very good power efficiency. It was originally designed to accompany a warp drive that has since been declared contraband by the Colonial Union. The thrusters, however, are still legal to use.", "fr": "Un propulseur avant avec un très bon rendement énergétique. Il a été conçu à l'origine pour accompagner un moteur de distorsion qui a depuis été déclaré de contrebande par l'Union Coloniale. L'utilisation des propulseurs est cependant toujours légale."}
+{"id": 9229, "en": "Sitting Duck", "fr": "Le canard assis"}
+{"id": 9230, "en": "Disables ship thrusters", "fr": "Désactive les propulseurs du vaisseau"}
+{"id": 9231, "en": "Warp Disable", "fr": "Désactivation de la distorsion"}
+{"id": 9232, "en": "Disables warp drive", "fr": "Désactive le moteur de distorsion"}
+{"id": 9233, "en": "Phalanx", "fr": "Phalange"}
+{"id": 9234, "en": "Disables shield recharge", "fr": "Désactive la recharge du bouclier"}
+{"id": 9235, "en": "Breathless", "fr": "À bout de souffle"}
+{"id": 9236, "en": "Disables life support system", "fr": "Désactive le système de survie"}
+{"id": 9237, "en": "A Polite Surprise", "fr": "Une surprise polie"}
+{"id": 9238, "en": "Disables teleporter security for 15 seconds", "fr": "Désactive la sécurité du téléporteur pendant 15 secondes"}
+{"id": 9239, "en": "Gentlemen's Welcome", "fr": "L'accueil des messieurs"}
+{"id": 9240, "en": "Disables quantum shields", "fr": "Désactive les boucliers quantiques"}
+{"id": 9241, "en": "Lazy Guns", "fr": "Armes à feu paresseuses"}
+{"id": 9242, "en": "Slows weapon recharge", "fr": "Ralentit la recharge des armes"}
+{"id": 9243, "en": "Backdoor", "fr": "Porte dérobée"}
+{"id": 9244, "en": "Disable firewalls", "fr": "Désactiver les pare-feu"}
+{"id": 9245, "en": "Friendly Glance", "fr": "Coup d'œil amical"}
+{"id": 9246, "en": "Appear like an ally (works on drones)", "fr": "Apparaître comme un allié (fonctionne sur les drones)"}
+{"id": 9247, "en": "Steal Data", "fr": "Vol de données"}
+{"id": 9248, "en": "Siphens starmap data", "fr": "Données starmap de Siphens"}
+{"id": 9249, "en": "Siphon Credits", "fr": "Siphon Crédits"}
+{"id": 9250, "en": "Steals credits", "fr": "Crédits volés"}
+{"id": 9251, "en": "Big Bluff", "fr": "Big Bluff"}
+{"id": 9252, "en": "False radiology alarm", "fr": "Fausse alerte radiologique"}
+{"id": 9253, "en": "Whisper", "fr": "Chuchotement"}
+{"id": 9254, "en": "Botnet virus that explores the galaxy for information", "fr": "Un virus botnet qui explore la galaxie à la recherche d'informations"}
+{"id": 9255, "en": "0x84B7A2", "fr": "0x84B7A2"}
+{"id": 9256, "en": "Unknown/random function", "fr": "Fonction inconnue/aléatoire"}
+{"id": 9257, "en": "0xF592B1", "fr": "0xF592B1"}
+{"id": 9258, "en": "Corruption", "fr": "Corruption"}
+{"id": 9259, "en": "Causes the ship screens to malfunction", "fr": "Entraîne un dysfonctionnement des écrans du vaisseau"}
+{"id": 9260, "en": "Syber's Shield", "fr": "Bouclier de Syber"}
+{"id": 9261, "en": "Reduces turret damage by 30%", "fr": "Réduit les dégâts de la tourelle de 30%"}
+{"id": 9262, "en": "Armor Flaw", "fr": "Défaut d'armure"}
+{"id": 9263, "en": "Reduces armor effectiveness by 50%", "fr": "Réduit l'efficacité de l'armure de 50%"}
+{"id": 9264, "en": "Shutdown Defenses", "fr": "Défenses contre l'arrêt des activités"}
+{"id": 9265, "en": "Disables defensive systems", "fr": "Désactive les systèmes défensifs"}
+{"id": 9266, "en": "Visit The Virus Shop!", "fr": "Visitez The Virus Shop !"}
+{"id": 9267, "en": "The best selection of viruses in the galaxy!", "fr": "La meilleure sélection de virus de la galaxie !"}
+{"id": 9268, "en": "PLVirus::Equip", "fr": "PLVirus::Equip"}
+{"id": 9269, "en": "Standard Jump Module", "fr": "Module de saut standard"}
+{"id": 9270, "en": "Standard-issue warp drive installed in most Colonial Union Fleet vessels. A combination of reliable charge speed and decent range makes it a commonly used technology, even outside the Colonial Union.", "fr": "Moteur de distorsion standard installé dans la plupart des vaisseaux de la flotte de l'Union Coloniale. La combinaison d'une vitesse de charge fiable et d'une portée décente en fait une technologie couramment utilisée, même en dehors de l'Union Coloniale."}
+{"id": 9271, "en": "Long Range Jump Module", "fr": "Module de saut à longue portée"}
+{"id": 9272, "en": "Long range warp drive used by many expeditionary and frontier vessels. It allows ships to traverse large distances but suffers from a below-average charge speed.", "fr": "Moteur de distorsion à longue portée utilisé par de nombreux vaisseaux d'expédition et de frontière. Il permet aux vaisseaux de parcourir de grandes distances mais souffre d'une vitesse de charge inférieure à la moyenne."}
+{"id": 9273, "en": "Ludicrous Range Jump Module", "fr": "Module de saut à portée ludicrous"}
+{"id": 9274, "en": "Warp drive with an extremely long range. Though it can cross great distances, it has a loud signature and few program charges.", "fr": "Moteur de distorsion à très longue portée. Bien qu'il puisse franchir de grandes distances, il a une signature bruyante et peu de charges de programme."}
+{"id": 9275, "en": "G.T.C. Snappy Cricket", "fr": "G.T.C. Snappy Cricket"}
+{"id": 9276, "en": "Fast charging warp drive with good range. This device is good for fast getaways.", "fr": "Moteur à distorsion à charge rapide avec une bonne autonomie. Cet appareil est idéal pour les escapades rapides."}
+{"id": 9277, "en": "G.T.C. Silent Cricket", "fr": "G.T.C. Silent Cricket"}
+{"id": 9278, "en": "Low signature warp drive with good range. It is favored by many crews in the Alliance of Gentlemen.", "fr": "Moteur de distorsion à faible signature et à bonne portée. Il est apprécié par de nombreux équipages de l'Alliance des Gentlemen."}
+{"id": 9279, "en": "\\^Workhorse\\^ Jump Drive", "fr": "\\Lecteur de saut"}
+{"id": 9280, "en": "Warp drive that provides reasonable jump capability and above average computational power. It is commonly used by supply ships.", "fr": "Moteur de distorsion offrant une capacité de saut raisonnable et une puissance de calcul supérieure à la moyenne. Il est couramment utilisé par les vaisseaux de ravitaillement."}
+{"id": 9281, "en": "G.T.C. Custom", "fr": "G.T.C. Custom"}
+{"id": 9282, "en": "A Gentlemen Trade Commission original warp drive. It provides increased computational power and a low signature.", "fr": "Un moteur de distorsion original de la Gentlemen Trade Commission. Il offre une puissance de calcul accrue et une faible signature."}
+{"id": 9283, "en": "Explorers United Jump Drive", "fr": "Explorers United Jump Drive"}
+{"id": 9284, "en": "Pricey but robust warp drive with a very long range. It was designed specifically for members of the ‘Explorers United’ intergalactic spacefaring organization, but it is available for general use.", "fr": "Moteur de distorsion coûteux mais robuste, avec une très longue portée. Il a été conçu spécifiquement pour les membres de l'organisation spatiale intergalactique \"Explorers United\", mais il est disponible pour un usage général."}
+{"id": 9285, "en": "W.D. Jump Drive", "fr": "Lecteur de saut W.D."}
+{"id": 9286, "en": "Standard warp drive for W.D. Corporation vessels. It has decent range but a very loud signature.", "fr": "Moteur de distorsion standard pour les vaisseaux de la W.D. Corporation. Il a une portée décente mais une signature très bruyante."}
+{"id": 9287, "en": "W.D. Military Jump Drive", "fr": "Lecteur de saut militaire W.D."}
+{"id": 9288, "en": "A more advanced warp drive for W.D. Corporation combat vessels. It has a long range and is quieter than the W.D. Corp’s standard jump drive.", "fr": "Un moteur de distorsion plus avancé pour les vaisseaux de combat de la W.D. Corporation. Il a une longue portée et est plus silencieux que le moteur de saut standard de la W.D. Corp."}
+{"id": 9289, "en": "Dark Drive", "fr": "La conduite en état d'ébriété"}
+{"id": 9290, "en": "Warp drive with no signature. Because of its potential for malicious use, it has been labelled contraband by the Colonial Union.", "fr": "Moteur de distorsion sans signature. En raison de son potentiel d'utilisation malveillante, il a été étiqueté comme objet de contrebande par l'Union Coloniale."}
+{"id": 9291, "en": "Snap Drive", "fr": "Entraînement par pression"}
+{"id": 9292, "en": "Designed to ‘warp in a snap’, this drive has an incredibly fast charge speed. However, it also has an extremely loud EM signature and small jump range.", "fr": "Conçu pour \"se déformer en un clin d'œil\", ce moteur a une vitesse de charge incroyablement rapide. Cependant, il présente également une signature électromagnétique extrêmement bruyante et une faible portée de saut."}
+{"id": 9293, "en": "WD XW-5 Prototype Config 1", "fr": "WD XW-5 Prototype Config 1"}
+{"id": 9294, "en": "A W.D. Corporation warp drive installed with a prototype quantum charger that allows for the drive to charge programs in tandem instead of in sequence. Every installed program will be charged by one point per drive activation.", "fr": "Un moteur de distorsion de W.D. Corporation équipé d'un prototype de chargeur quantique qui permet de charger les programmes en tandem plutôt qu'en séquence. Chaque programme installé sera chargé d'un point par activation du lecteur."}
+{"id": 9295, "en": "Old Wars Super Jumper", "fr": "Pull Super Old Wars"}
+{"id": 9296, "en": "A peculiar warp drive that increases warp range each time the manual program charge is activated. The warp range resets each jump.", "fr": "Un moteur de distorsion particulier qui augmente la portée de la distorsion chaque fois que la charge du programme manuel est activée. La portée de distorsion est réinitialisée à chaque saut."}
+{"id": 9297, "en": "Charges Per Fuel", "fr": "Frais par carburant"}
+{"id": 9298, "en": "Signature", "fr": "Signature"}
+{"id": 9299, "en": "Broadcasts [Sitting Duck] virus to nearby ships on activation.$$Sitting Duck: Disables ship thrusters for 60 seconds", "fr": "Diffuse le virus [Sitting Duck] aux vaisseaux proches lors de l'activation. $$Sitting Duck : Désactive les propulseurs du vaisseau pendant 60 secondes."}
+{"id": 9300, "en": "SD", "fr": "SD"}
+{"id": 9301, "en": "Broadcasts [Gentlemen's Welcome] virus to nearby ships on activation.$$Gentleman's Welcome: Disables quantum shields for 3 minutes", "fr": "Diffuse le virus [Gentlemen's Welcome] aux vaisseaux proches lors de l'activation.$$Gentleman's Welcome : Désactive les boucliers quantiques pendant 3 minutes"}
+{"id": 9302, "en": "GW", "fr": "GW"}
+{"id": 9303, "en": "Broadcasts [Siphon Credits] virus to nearby ships on activation.$$Siphon Credits: Steals credits for 60 seconds", "fr": "Diffuse le virus [Siphon de crédits] sur les vaisseaux proches lors de l'activation.$$Siphon de crédits : Vole les crédits pendant 60 secondes"}
+{"id": 9304, "en": "Si", "fr": "Si"}
+{"id": 9305, "en": "Broadcasts [Warp Disable] virus to nearby ships on activation.$$Warp Disable: Disables warp drive recharge for 3 minutes", "fr": "Diffuse le virus [Désactivation de la distorsion] aux vaisseaux proches lors de l'activation.$$Warp Disable : Désactive la recharge du moteur de distorsion pendant 3 minutes"}
+{"id": 9306, "en": "Broadcasts [Phalanx] virus to nearby ships on activation.$$Phalanx: Disables shield recharge for 3 minutes", "fr": "Diffuse le virus [Phalanx] aux vaisseaux proches lors de l'activation.$$Phalanx : Désactive la recharge des boucliers pendant 3 minutes"}
+{"id": 9307, "en": "Ph", "fr": "Ph"}
+{"id": 9308, "en": "Broadcasts [Backdoor] virus to nearby ships on activation.$$Backdoor: Disables firewalls for 3 minutes", "fr": "Diffuse le virus [Backdoor] aux vaisseaus proches lors de l'activation.$$Backdoor : Désactive les pare-feu pendant 3 minutes"}
+{"id": 9309, "en": "Ba", "fr": "Ba"}
+{"id": 9310, "en": "Prevents reputation loss from attacking or destroying ships, and prevents 'Flagged' status when claiming ships. Lasts until next warp.", "fr": "Empêche la perte de réputation lors de l'attaque ou de la destruction de vaisseaus, et empêche l'obtention du statut \"Flagged\" lors de la revendication de vaisseaus. Durée jusqu'à la prochaine distorsion."}
+{"id": 9311, "en": "Bl", "fr": "Bl"}
+{"id": 9312, "en": "Increases the charge rate of shields by +15 for 15 seconds.", "fr": "Augmente le taux de charge des boucliers de +15 pendant 15 secondes."}

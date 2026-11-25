@@ -1,0 +1,986 @@
+{"id": 8230, "it": "Poco cotto"}
+{"id": 8231, "it": "Cotto"}
+{"id": 8232, "it": "OvenUIBG"}
+{"id": 8233, "it": "ProgressUIBG"}
+{"id": 8234, "it": "ProgressFillUIRoot"}
+{"id": 8235, "it": "ProgressFillBGText"}
+{"id": 8236, "it": "CountdownText"}
+{"id": 8237, "it": "ProgressFill_TimeTargetText"}
+{"id": 8238, "it": "ProgressFillUIImage_Cook"}
+{"id": 8239, "it": "ProgressFillUIImage_PerfectCook"}
+{"id": 8240, "it": "ProgressUIFill"}
+{"id": 8241, "it": "ProgressUILine"}
+{"id": 8242, "it": "SupplyUIBG"}
+{"id": 8243, "it": "SupplyUIFill"}
+{"id": 8244, "it": "NextSupplyUIFill"}
+{"id": 8245, "it": "BiscuitBtn"}
+{"id": 8246, "it": "Costo"}
+{"id": 8247, "it": "FluffyOvenUIRoot"}
+{"id": 8248, "it": "Preparazione di ["}
+{"id": 8249, "it": "] per"}
+{"id": 8250, "it": "sec"}
+{"id": 8251, "it": "Preparazione$["}
+{"id": 8252, "it": "$Ultimo tempo di cottura:"}
+{"id": 8253, "it": "MESSO OFFLINE PER ADDESTRAMENTO SPECIALE"}
+{"id": 8254, "it": "#"}
+{"id": 8255, "it": "RankingUIElement_Crew"}
+{"id": 8256, "it": "Posizione"}
+{"id": 8257, "it": "Punteggio"}
+{"id": 8258, "it": "FluffyRankingUIRoot"}
+{"id": 8259, "it": "RootTitle"}
+{"id": 8260, "it": "Classifiche"}
+{"id": 8261, "it": "Corona"}
+{"id": 8262, "it": "CurrentProgressFillBG"}
+{"id": 8263, "it": "CurrentProgressFill"}
+{"id": 8264, "it": "CurrentProgressValue"}
+{"id": 8265, "it": "RankingUI"}
+{"id": 8266, "it": "Battuta"}
+{"id": 8267, "it": "RankDelta_Image"}
+{"id": 8268, "it": "RankDelta_Label"}
+{"id": 8269, "it": "Torretta laser focalizzata"}
+{"id": 8270, "it": "Arma laser ad alta potenza, particolarmente efficace contro scafi e sistemi della nave. È in grado di abbattere anche alcuni missili."}
+{"id": 8271, "it": "gx.xml"}
+{"id": 8272, "it": "Partita libera"}
+{"id": 8273, "it": "Corsa al record"}
+{"id": 8274, "it": "gx"}
+{"id": 8275, "it": "info"}
+{"id": 8276, "it": "senza nome"}
+{"id": 8277, "it": "senza descrizione"}
+{"id": 8278, "it": "\\$"}
+{"id": 8279, "it": "stat"}
+{"id": 8280, "it": "Controlled_ConnectToPhotonUsingSavedRegion:"}
+{"id": 8281, "it": "WaitToConnect:"}
+{"id": 8282, "it": "tr"}
+{"id": 8283, "it": "Connessione all'host persa. Può essere dovuto a:$-una password errata$-l'host ha chiuso la partita$-sei stato espulso dalla partita"}
+{"id": 8284, "it": "stored.aidata"}
+{"id": 8285, "it": "Tempo di override del giocatore"}
+{"id": 8286, "it": "Quaternione non valido! -"}
+{"id": 8287, "it": "x2"}
+{"id": 8288, "it": "Scoperto"}
+{"id": 8289, "it": "Visitato"}
+{"id": 8290, "it": "A.O.G."}
+{"id": 8291, "it": "W.D."}
+{"id": 8292, "it": "Inf"}
+{"id": 8293, "it": "P.T."}
+{"id": 8294, "it": "Nessuna fazione"}
+{"id": 8295, "it": "Salute potenziata"}
+{"id": 8296, "it": "+20 alla salute massima per grado"}
+{"id": 8297, "it": "Corazza potenziata"}
+{"id": 8298, "it": "+1 Corazza per grado"}
+{"id": 8299, "it": "Ricarica rapida I"}
+{"id": 8300, "it": "+8% alla velocità di ricarica per grado"}
+{"id": 8301, "it": "Ricarica rapida II"}
+{"id": 8302, "it": "Ottimizzazione del raffreddamento delle torrette"}
+{"id": 8303, "it": "+5% alla velocità di raffreddamento delle torrette dell'equipaggio per grado"}
+{"id": 8304, "it": "Salute potenziata II"}
+{"id": 8305, "it": "Corazza potenziata II"}
+{"id": 8306, "it": "Sopravvivenza senza ossigeno"}
+{"id": 8307, "it": "Resisti il 20% in più senza ossigeno per grado"}
+{"id": 8308, "it": "Pistolero"}
+{"id": 8309, "it": "Aumenta il danno delle pistole del 10% per grado"}
+{"id": 8310, "it": "DNA personalizzato"}
+{"id": 8311, "it": "Riduce il tempo di rigenerazione del 12% per grado"}
+{"id": 8312, "it": "Operatore avanzato"}
+{"id": 8313, "it": "Consente di usare i sistemi delle torrette principali"}
+{"id": 8314, "it": "Certificazione antenna dei sensori"}
+{"id": 8315, "it": "Consente di usare l'antenna dei sensori"}
+{"id": 8316, "it": "Addestramento maratona per l'equipaggio"}
+{"id": 8317, "it": "Aumenta la velocità di corsa dell'equipaggio del 6% per grado"}
+{"id": 8318, "it": "Recuperatore"}
+{"id": 8319, "it": "Aumenta i crediti ottenuti del 10% per grado"}
+{"id": 8320, "it": "Follie di shopping"}
+{"id": 8321, "it": "Riduce i prezzi nei negozi del 5% per grado"}
+{"id": 8322, "it": "Scuola di corsa"}
+{"id": 8323, "it": "Aumenta la spinta della nave del 5% per grado"}
+{"id": 8324, "it": "Addestramento inerziale speciale"}
+{"id": 8325, "it": "Aumenta la velocità di rotazione della nave del 5% per grado"}
+{"id": 8326, "it": "Allineamento dello scanner"}
+{"id": 8327, "it": "Aumenta il livello di rilevamento della nave del 10% per grado"}
+{"id": 8328, "it": "Algoritmi scudo personalizzati"}
+{"id": 8329, "it": "Riduce il livello di firma della nave del 10% per grado"}
+{"id": 8330, "it": "Medico di plancia"}
+{"id": 8331, "it": "Cura leggermente gli alleati vicini nel tempo"}
+{"id": 8332, "it": "Amplificazione di frequenza"}
+{"id": 8333, "it": "Aumenta gli effetti positivi dell'impostazione della frequenza degli scudi."}
+{"id": 8334, "it": "Specialità sonde: guadagno XP"}
+{"id": 8335, "it": "Maggiore probabilità di ottenere XP extra durante la ricerca con le sonde (10% per grado)"}
+{"id": 8336, "it": "Specialità sonde: ricarica"}
+{"id": 8337, "it": "Riduce la ricarica e il consumo del condensatore quando lanci sonde (-10% per grado)"}
+{"id": 8338, "it": "Sistema nano antincendio"}
+{"id": 8339, "it": "Rallenta la propagazione e la crescita degli incendi"}
+{"id": 8340, "it": "Modulo di autoriparazione"}
+{"id": 8341, "it": "Ripara i sistemi principali nel tempo"}
+{"id": 8342, "it": "Miscela di refrigerante personalizzata"}
+{"id": 8343, "it": "Riduce la quantità di refrigerante usato dell'8% per grado"}
+{"id": 8344, "it": "Potenziatore di carica della torretta"}
+{"id": 8345, "it": "Aumenta la velocità di carica della torretta che stai usando"}
+{"id": 8346, "it": "Esperto di missili"}
+{"id": 8347, "it": "Aumenta la velocità di aggancio dei missili del 25% per grado"}
+{"id": 8348, "it": "Raggio della torretta"}
+{"id": 8349, "it": "Aumenta il raggio d'azione della tua torretta del 10% per grado"}
+{"id": 8350, "it": "Carburante jetpack personalizzato"}
+{"id": 8351, "it": "Aumenta la velocità di ricarica del tuo jetpack del 25% per grado"}
+{"id": 8352, "it": "Forza potenziata"}
+{"id": 8353, "it": "Aumenta la capacità di trasporto di 10 per grado"}
+{"id": 8354, "it": "Resistenza potenziata"}
+{"id": 8355, "it": "Aumenta la tua resistenza del 20% per grado"}
+{"id": 8356, "it": "Cellule cutanee corazzate"}
+{"id": 8357, "it": "Riduce il danno subìto del 10% per grado"}
+{"id": 8358, "it": "Addestramento all'armatura pesante per l'equipaggio"}
+{"id": 8359, "it": "Tutti i membri dell'equipaggio ottengono Corazza aggiuntiva (+1 per grado)"}
+{"id": 8360, "it": "Specialità ricerca"}
+{"id": 8361, "it": "Riduce di 1 le curvature necessarie per ricercare i talenti"}
+{"id": 8362, "it": "Tutte le armi dell'equipaggio si raffreddano il 5% più in fretta per grado"}
+{"id": 8363, "it": "Potenziatore di carica della curvatura"}
+{"id": 8364, "it": "Aumenta la velocità di carica del motore a curvatura del 20% per grado"}
+{"id": 8365, "it": "Zoom della torretta"}
+{"id": 8366, "it": "Aumenta lo zoom nelle torrette del 15% per grado"}
+{"id": 8367, "it": "Potenziamento della guarigione negli atri"}
+{"id": 8368, "it": "Aumenta la velocità di guarigione negli atri del 40% per grado"}
+{"id": 8369, "it": "DNA occultato"}
+{"id": 8370, "it": "Gli atri nemici ti curano"}
+{"id": 8371, "it": "Modalità scanner: materiali di ricerca"}
+{"id": 8372, "it": "Consente allo scanner di rilevare i materiali di ricerca"}
+{"id": 8373, "it": "Modalità scanner: oggetti da raccogliere"}
+{"id": 8374, "it": "Consente allo scanner di rilevare gli oggetti da raccogliere"}
+{"id": 8375, "it": "Tempo di reazione"}
+{"id": 8376, "it": "Riduce il danno subìto dallo scafo del 5% per grado"}
+{"id": 8377, "it": "Mitigazione del danno"}
+{"id": 8378, "it": "Riduce il danno subìto dai sistemi del 5% per grado"}
+{"id": 8379, "it": "Scatto sotto carico"}
+{"id": 8380, "it": "Consente di scattare anche quando si è sovraccarichi"}
+{"id": 8381, "it": "Potenziatore di danno delle torrette"}
+{"id": 8382, "it": "Tutte le torrette delle navi alleate infliggono il 4% di danno in più per grado"}
+{"id": 8383, "it": "Condotti di energia delle torrette migliorati"}
+{"id": 8384, "it": "Tutte le torrette delle navi alleate si caricano il 4% più in fretta per grado"}
+{"id": 8385, "it": "Impianti oculari personalizzati"}
+{"id": 8386, "it": "L'interfaccia di pilotaggio fornisce informazioni aggiuntive"}
+{"id": 8387, "it": "Iniezione antiradiazioni"}
+{"id": 8388, "it": "Il danno da radiazioni è inferiore dell'8% per grado"}
+{"id": 8389, "it": "Energia ausiliaria"}
+{"id": 8390, "it": "I sistemi ausiliari generano il 10% di energia in più per grado"}
+{"id": 8391, "it": "Le azioni diplomatiche hanno il 5% di probabilità in più di riuscire per grado"}
+{"id": 8392, "it": "Intimidazione"}
+{"id": 8393, "it": "Le azioni di intimidazione hanno il 5% di probabilità in più di riuscire per grado"}
+{"id": 8394, "it": "Addestramento all'estrazione"}
+{"id": 8395, "it": "Aumenta la probabilità di estrazione riuscita del 2% per grado"}
+{"id": 8396, "it": "Calibrazione del reattore"}
+{"id": 8397, "it": "Aumenta la potenza del reattore principale del 2% per grado"}
+{"id": 8398, "it": "Specialista del raffreddamento del reattore"}
+{"id": 8399, "it": "Riduce il calore prodotto dal reattore principale del 2% per grado"}
+{"id": 8400, "it": "Misure difensive per i monitor"}
+{"id": 8401, "it": "Aumenta del 5% per grado il tempo di cattura dei monitor alleati"}
+{"id": 8402, "it": "Hacker di monitor"}
+{"id": 8403, "it": "Riduce del 5% per grado il tempo di cattura dei monitor nemici"}
+{"id": 8404, "it": "Ricaricatore"}
+{"id": 8405, "it": "Piccola probabilità di recuperare un po' di munizioni a ogni colpo"}
+{"id": 8406, "it": "Sistemi di sicurezza dei monitor"}
+{"id": 8407, "it": "Riduce la probabilità che i monitor della nave esplodano in battaglia"}
+{"id": 8408, "it": "Operatore potenziatore di oggetti"}
+{"id": 8409, "it": "Consente di usare il potenziatore di oggetti"}
+{"id": 8410, "it": "Operatore potenziatore di componenti"}
+{"id": 8411, "it": "Consente di usare il potenziatore di componenti"}
+{"id": 8412, "it": "TempUnits"}
+{"id": 8413, "it": "PLHailTarget_StartPickupMission Start()"}
+{"id": 8414, "it": "OnNewLine:"}
+{"id": 8415, "it": "ClientGetCurrentLine:"}
+{"id": 8416, "it": "SafeClientGetCurrentLine:"}
+{"id": 8417, "it": "SPM: ResetDialogue"}
+{"id": 8418, "it": "SPM.LateResetDialogue: BeginDialogue"}
+{"id": 8419, "it": "(LUNGO RAGGIO)"}
+{"id": 8420, "it": "Direi che è un prezzo onesto, date le circostanze!"}
+{"id": 8421, "it": "Scambia 600 Cr per 2 carburante"}
+{"id": 8422, "it": "Grazie per l'acquisto!"}
+{"id": 8423, "it": "Sfoglia la merce"}
+{"id": 8424, "it": "AutoDeal"}
+{"id": 8425, "it": "Ripara 50 SCAFO per 100 Cr"}
+{"id": 8426, "it": "Non possiamo riparare la tua nave finché gli scudi sono attivi."}
+{"id": 8427, "it": "Benvenuto nel nostro umile servizio di riparazione automatico! Offriamo molti servizi!"}
+{"id": 8428, "it": "Il tuo scafo non ha bisogno di riparazioni. Possiamo però installare componenti sulla tua nave."}
+{"id": 8429, "it": "Ripara completamente lo scafo per"}
+{"id": 8430, "it": "Ripara"}
+{"id": 8431, "it": "SCAFO per"}
+{"id": 8432, "it": "Cr"}
+{"id": 8433, "it": "Offriamo riparazioni delle navi a prezzi ragionevoli, ma al momento non sei nel raggio dei nostri laser di riparazione."}
+{"id": 8434, "it": "Sfoglia la merce esotica"}
+{"id": 8435, "it": "Ripara 100 SCAFO per 100 Cr"}
+{"id": 8436, "it": "Richiedi ricarica della bomba di biscotti"}
+{"id": 8437, "it": "Richiedi ricarica della cassa di biscotti"}
+{"id": 8438, "it": "Acquista nuovi moduli ricetta"}
+{"id": 8439, "it": "Possiamo riparare solo navi registrate presso la FB Company"}
+{"id": 8440, "it": "Benvenuto ai servizi navali FB! Possiamo ricaricare la tua bomba di biscotti e le tue casse di biscotti!"}
+{"id": 8441, "it": "Ripara completamente lo scafo per"}
+{"id": 8442, "it": "Offriamo riparazioni alle navi FB a prezzi ragionevoli, ma al momento non sei nel raggio dei nostri laser di riparazione."}
+{"id": 8443, "it": "Ship.LateResetDialogue: BeginDialogue"}
+{"id": 8444, "it": "PLHailTarget_Ship_LateResetDialogue():   \\^"}
+{"id": 8445, "it": "\\^   hailOnStart:"}
+{"id": 8446, "it": "La tua nave è stata segnalata!"}
+{"id": 8447, "it": "Become_Hostile"}
+{"id": 8448, "it": "ClientGetCurrentLine_Ship:"}
+{"id": 8449, "it": "SafeClientGetCurrentLine_Ship:"}
+{"id": 8450, "it": "SEND ClientGetCurrentLine_Ship:"}
+{"id": 8451, "it": "Annulla allineamento (rimborso)"}
+{"id": 8452, "it": "Allinea a"}
+{"id": 8453, "it": "Mini propulsore inerziale"}
+{"id": 8454, "it": "Piccolo propulsore inerziale con poca spinta ma basso consumo di energia. Permette alla nave di ruotare sul posto o in movimento."}
+{"id": 8455, "it": "Propulsore inerziale standard. Permette alla nave di ruotare sul posto o in movimento."}
+{"id": 8456, "it": "Super propulsore inerziale"}
+{"id": 8457, "it": "Propulsore inerziale superiore. Permette alla nave di ruotare sul posto o in movimento."}
+{"id": 8458, "it": "Propulsore inerziale infetto"}
+{"id": 8459, "it": "Propulsore inerziale Gimbal"}
+{"id": 8460, "it": "Potente propulsore inerziale progettato dalla Gimbal Co. Permette alla nave di ruotare sul posto o in movimento."}
+{"id": 8461, "it": "Inerzia"}
+{"id": 8462, "it": "Mindslaver"}
+{"id": 8463, "it": "Salto"}
+{"id": 8464, "it": "Attacco"}
+{"id": 8465, "it": "Attack2"}
+{"id": 8466, "it": "Sputo"}
+{"id": 8467, "it": "Invalid Vector: PLInfectedScientist.Update() - spread algo"}
+{"id": 8468, "it": "IsGrounded"}
+{"id": 8469, "it": "Avanti"}
+{"id": 8470, "it": "Casuale"}
+{"id": 8471, "it": "Equipaggio infetto"}
+{"id": 8472, "it": "Cuore della nave"}
+{"id": 8473, "it": "SpeedMultiplier"}
+{"id": 8474, "it": "ENERGIA (RAGGIO)"}
+{"id": 8475, "it": "Torretta laser"}
+{"id": 8476, "it": "Arma laser a lungo raggio, particolarmente efficace contro scafi e sistemi della nave. È in grado di abbattere anche alcuni missili."}
+{"id": 8477, "it": "MatrixPoint"}
+{"id": 8478, "it": "Proiettile"}
+{"id": 8479, "it": "WorldUI_OutlineOutside"}
+{"id": 8480, "it": "WorldUI_Outline"}
+{"id": 8481, "it": "WorldUI_Fill"}
+{"id": 8482, "it": "WorldUI_Hold"}
+{"id": 8483, "it": "WorldUI_Percent"}
+{"id": 8484, "it": "WorldUI_NameLabel"}
+{"id": 8485, "it": "CagedMindslaver_CameraTransform_Static"}
+{"id": 8486, "it": "EndingWorldUICanvas"}
+{"id": 8487, "it": "CU_Ending"}
+{"id": 8488, "it": "AOG_Ending"}
+{"id": 8489, "it": "WD_Ending"}
+{"id": 8490, "it": "FB_Ending"}
+{"id": 8491, "it": "KeepIt_Ending"}
+{"id": 8492, "it": "FreeIt_Ending"}
+{"id": 8493, "it": "DestroyIt_Ending"}
+{"id": 8494, "it": "ERRORI RILEVATI"}
+{"id": 8495, "it": "APERTO"}
+{"id": 8496, "it": "errore/i"}
+{"id": 8497, "it": "------------$"}
+{"id": 8498, "it": "$------------"}
+{"id": 8499, "it": "Estendi"}
+{"id": 8500, "it": "Caduta"}
+{"id": 8501, "it": "Linea"}
+{"id": 8502, "it": "PlanetIgnoreCameraSorting"}
+{"id": 8503, "it": "mm:ss:ff"}
+{"id": 8504, "it": "Quartier generale della Colonial Union"}
+{"id": 8505, "it": "Trasferisci il controllo degli Infetti alla Colonial Union"}
+{"id": 8506, "it": "Trasferisci il controllo degli Infetti all'Alliance of Gentlemen"}
+{"id": 8507, "it": "Trasferisci il controllo degli Infetti alla W.D. Corporation"}
+{"id": 8508, "it": "Quartier generale della Fluffy Biscuit"}
+{"id": 8509, "it": "Trasferisci il controllo degli Infetti alla Fluffy Biscuit Company"}
+{"id": 8510, "it": "Te stesso"}
+{"id": 8511, "it": "Prendi tu il controllo degli Infetti"}
+{"id": 8512, "it": "[Inietta payload]"}
+{"id": 8513, "it": "ha rilanciato l'offerta a"}
+{"id": 8514, "it": "x"}
+{"id": 8515, "it": "ha contestato l'offerta di"}
+{"id": 8516, "it": ": la sfida non è riuscita!"}
+{"id": 8517, "it": "ha guadagnato un punto!"}
+{"id": 8518, "it": ": la sfida è riuscita!"}
+{"id": 8519, "it": "Non puoi rilanciare: l'offerta non è superiore a quella attuale!"}
+{"id": 8520, "it": "⚀"}
+{"id": 8521, "it": "⚁"}
+{"id": 8522, "it": "⚂"}
+{"id": 8523, "it": "⚃"}
+{"id": 8524, "it": "⚄"}
+{"id": 8525, "it": "⚅"}
+{"id": 8526, "it": "[1]"}
+{"id": 8527, "it": "[2]"}
+{"id": 8528, "it": "[3]"}
+{"id": 8529, "it": "[4]"}
+{"id": 8530, "it": "[5]"}
+{"id": 8531, "it": "[6]"}
+{"id": 8532, "it": "Lancia"}
+{"id": 8533, "it": "secondi al turno automatico"}
+{"id": 8534, "it": "Nessuna selezione - Turno automatico"}
+{"id": 8535, "it": "La partita inizia a breve ..."}
+{"id": 8536, "it": "In attesa dei giocatori"}
+{"id": 8537, "it": "Torretta a fulmini"}
+{"id": 8538, "it": "Spara un raggio concentrato di elettricità che infligge grandi danni agli scudi. Ha meno effetto sullo scafo di una nave, ma colpirlo ha una piccola probabilità di costringere la nave bersaglio a spegnersi."}
+{"id": 8539, "it": "ENERGIA (FULMINE)"}
+{"id": 8540, "it": "Bloccata - Un dispositivo esterno impedisce l'apertura di questa porta"}
+{"id": 8541, "it": "Ripara i monitor rotti e clicca sugli errori per eliminarli"}
+{"id": 8542, "it": "Bloccata - Gli errori impediscono l'apertura di questa porta"}
+{"id": 8543, "it": "Un'arma a raggio comune ma potente per navi dotate di armamenti avanzati. Ha una portata massima di 8 km."}
+{"id": 8544, "it": "CU lungo raggio"}
+{"id": 8545, "it": "Un'impressionante arma a raggio progettata per la flotta della Colonial Union. Ha una portata massima di 14 km."}
+{"id": 8546, "it": "CU lungo raggio modificato"}
+{"id": 8547, "it": "Un'impressionante arma a raggio progettata per la flotta della Colonial Union. Questo esemplare ha subìto modifiche personalizzate per infliggere danni extra. Ha una portata massima di 14 km."}
+{"id": 8548, "it": "Raggio del Custode"}
+{"id": 8549, "it": "Potente arma a raggio appartenuta in origine a una tecnologia aliena. Sebbene sembri essere stata usata per uno scopo diverso, è in grado di infliggere danni ingenti a qualsiasi nave attraversi il suo raggio. Montata su una nave comune, ha una portata massima di 14 km."}
+{"id": 8550, "it": "Cannone a bobina riadattato"}
+{"id": 8551, "it": "Torretta principale a proiettili. Prodotta originariamente durante le Vecchie Guerre, è stata poi rimessa a nuovo e migliorata."}
+{"id": 8552, "it": "RapidFire"}
+{"id": 8553, "it": "Torretta principale overcloccata, progettata per sparare colpi rapidi e devastanti. Ha una piattaforma stabilizzatrice integrata che riduce il rinculo. Ha una portata massima di 10 km."}
+{"id": 8554, "it": "Prototipo W.D. \\^FlashFire\\^"}
+{"id": 8555, "it": "Prototipo 55 di armi spaziali della W.D. Corporation. È una torretta principale progettata per causare incendi e surriscaldare il reattore della nave bersaglio. I test hanno dimostrato che il prototipo può surriscaldare il proprio reattore."}
+{"id": 8556, "it": "INCENDIO (RAGGIO)"}
+{"id": 8557, "it": "Torretta missilistica"}
+{"id": 8558, "it": "Arma missilistica a lungo raggio con laser a basso danno. Usa i missili a ricerca attiva. È in grado di abbattere anche alcuni missili."}
+{"id": 8559, "it": "Carburante"}
+{"id": 8560, "it": "Codice PIN"}
+{"id": 8565, "it": "Primo posto!"}
+{"id": 8566, "it": "[RACE]"}
+{"id": 8567, "it": "Hai perso!"}
+{"id": 8568, "it": "Giro"}
+{"id": 8570, "it": "Gara terminata"}
+{"id": 8571, "it": "La gara inizia tra"}
+{"id": 8574, "it": "Rilevata una perdita di radiazioni nel reattore!"}
+{"id": 8575, "it": "ha attivato la sicurezza del reattore"}
+{"id": 8576, "it": "ha disattivato la sicurezza del reattore"}
+{"id": 8577, "it": "Deposito di riparazione"}
+{"id": 8578, "it": "/Saves"}
+{"id": 8579, "it": "/Autosaves"}
+{"id": 8580, "it": "/Local"}
+{"id": 8588, "it": "AutosaveDelay"}
+{"id": 8589, "it": "autosave"}
+{"id": 8590, "it": "plsave"}
+{"id": 8591, "it": "LIVELLO DI ZOOM:"}
+{"id": 8592, "it": "[ff0000](*) OSTILI[-]$[00ff00](*) EQUIPAGGIO[-]$[ffffff](*) PNG[-]$[6666ff](*) PORTE[-]$[ff00ff](*) TELETRASPORTI[-]"}
+{"id": 8593, "it": "$[FFFF00](*) OGGETTI[-]"}
+{"id": 8594, "it": "$[44FFFF](*) MATERIALI DI RICERCA[-]"}
+{"id": 8595, "it": "Torretta recuperatrice"}
+{"id": 8596, "it": "Torretta laser modificata dalla W.D. Corporation. Può strappare pezzi di scafo e produrre rottami che possono essere venduti o lavorati."}
+{"id": 8597, "it": "corrisponde a"}
+{"id": 8598, "it": "CORRISPONDE A GX"}
+{"id": 8599, "it": "ATTENZIONE: ACIDO"}
+{"id": 8600, "it": "ATTENZIONE: OSSIGENO ASSENTE"}
+{"id": 8601, "it": "ATTENZIONE: TEMPERATURA ALTA"}
+{"id": 8602, "it": "ATTENZIONE: TEMPERATURA BASSA"}
+{"id": 8603, "it": "Raggiungi il marcatore dell'obiettivo"}
+{"id": 8604, "it": "caccia eliminati"}
+{"id": 8607, "it": "HeavyBanditSpawn"}
+{"id": 8609, "it": "Bandito metallico pesante"}
+{"id": 8612, "it": "Bandito metallico"}
+{"id": 8615, "it": "Bandito metallico d'élite"}
+{"id": 8616, "it": "Inseguitore"}
+{"id": 8667, "it": "FactionID"}
+{"id": 8668, "it": "MinRepValueForPeace"}
+{"id": 8669, "it": "AllPlayers"}
+{"id": 8670, "it": "FireRate"}
+{"id": 8671, "it": "Lento"}
+{"id": 8672, "it": "GroundTurretFloor"}
+{"id": 8673, "it": "MeleeDamage"}
+{"id": 8674, "it": "Torretta a spore"}
+{"id": 8675, "it": "Torretta a dispersione"}
+{"id": 8676, "it": "Una torretta progettata per infliggere danni a corto raggio. Sputa diversi proiettili alla volta e può danneggiare gravemente una nave vicina."}
+{"id": 8677, "it": "Barile incendiario"}
+{"id": 8678, "it": "Ricarica"}
+{"id": 8680, "it": "CONTRABBANDO"}
+{"id": 8681, "it": "SPERIMENTALE"}
+{"id": 8682, "it": "HUDScale"}
+{"id": 8683, "it": "Missile a ricerca veloce e agile, adatto a colpire le navi più rapide."}
+{"id": 8684, "it": "Missile a ricerca con danno fisico notevolmente aumentato grazie a una testata W.D. potenziata."}
+{"id": 8685, "it": "Missile a ricerca focalizzato sulla disattivazione degli scudi nemici."}
+{"id": 8686, "it": "Missile con una tecnologia di ricerca unica che individua e danneggia il reattore della nave bersaglio."}
+{"id": 8687, "it": "Missile con capacità di ricerca molto limitata, ma con danno e velocità elevati."}
+{"id": 8688, "it": "Missile pericoloso che infligge danno acido."}
+{"id": 8689, "it": "Missile a ricerca rinforzato, progettato per danneggiare bersagli corazzati"}
+{"id": 8690, "it": "Missile speciale che infligge un danno extra 4x al sistema bersaglio. Inoltre può appiccare incendi sulle navi con equipaggio nemiche e infligge un danno 2x alla carica della curvatura"}
+{"id": 8691, "it": "Missile a ricerca"}
+{"id": 8692, "it": "Speciale W.D."}
+{"id": 8693, "it": "Perforascudi"}
+{"id": 8694, "it": "Distruttore di reattori"}
+{"id": 8695, "it": "Colpo diretto"}
+{"id": 8696, "it": "Missile acido"}
+{"id": 8697, "it": "Missile perforante"}
+{"id": 8698, "it": "Missile antisistema"}
+{"id": 8699, "it": "Missile F.B."}
+{"id": 8700, "it": "Capacità munizioni"}
+{"id": 8703, "it": "[PL] ha acquistato: [STR0]"}
+{"id": 8704, "it": "[PL] ha venduto: [STR0]"}
+{"id": 8709, "it": "FISICO"}
+{"id": 8712, "it": "[PL] ha sparato con una torretta in allerta verde"}
+{"id": 8715, "it": "M$"}
+{"id": 8716, "it": "Portata"}
+{"id": 8717, "it": "Tempo di carica"}
+{"id": 8718, "it": "Tipo danno"}
+{"id": 8719, "it": "DPS)"}
+{"id": 8720, "it": "Avanza"}
+{"id": 8721, "it": "Avanza:"}
+{"id": 8722, "it": "Ripara il pannello usando il Riparatore"}
+{"id": 8724, "it": "Passa al Riparatore usando"}
+{"id": 8725, "it": "o la rotellina del mouse"}
+{"id": 8726, "it": "Equipaggia il Riparatore"}
+{"id": 8727, "it": "Passa alla scheda Inventario"}
+{"id": 8728, "it": "Apri il menu Tab per equipaggiare il Riparatore"}
+{"id": 8729, "it": "Raccogli il Riparatore"}
+{"id": 8730, "it": "Spegni gli incendi che bloccano il passaggio"}
+{"id": 8731, "it": "Passa all'Estintore usando"}
+{"id": 8732, "it": "Equipaggia l'Estintore"}
+{"id": 8733, "it": "Apri il menu Tab per equipaggiare l'Estintore"}
+{"id": 8734, "it": "Raccogli l'Estintore"}
+{"id": 8735, "it": "Indossa l'esotuta: temperature estreme in arrivo!"}
+{"id": 8736, "it": "Togli l'esotuta"}
+{"id": 8737, "it": "Pistola pesante"}
+{"id": 8738, "it": "Distruggi i bersagli a terra ([STR0] rimasti)"}
+{"id": 8739, "it": "Passa a [STR0] usando [[STR1]] o la rotellina del mouse"}
+{"id": 8740, "it": "Equipaggia"}
+{"id": 8741, "it": "Apri il menu Tab per equipaggiare"}
+{"id": 8742, "it": "Raccogli"}
+{"id": 8743, "it": "Premi due volte"}
+{"id": 8744, "it": "] o"}
+{"id": 8745, "it": "Usa il jetpack"}
+{"id": 8746, "it": "<color=#ffff00ff>"}
+{"id": 8747, "it": "Sbloccato"}
+{"id": 8748, "it": "settori unici visitati"}
+{"id": 8749, "it": "biscotti venduti"}
+{"id": 8750, "it": "salti alla cieca completati"}
+{"id": 8751, "it": "morti dell'equipaggio"}
+{"id": 8752, "it": "salti completati"}
+{"id": 8753, "it": "salti completati come Capitano"}
+{"id": 8754, "it": "salti completati come Pilota"}
+{"id": 8755, "it": "salti completati come Scienziato"}
+{"id": 8756, "it": "salti completati come Spec. d'armi"}
+{"id": 8757, "it": "salti completati come Ingegnere"}
+{"id": 8758, "it": "livelli ottenuti"}
+{"id": 8759, "it": "livelli ottenuti come Capitano"}
+{"id": 8760, "it": "livelli ottenuti come Pilota"}
+{"id": 8761, "it": "livelli ottenuti come Scienziato"}
+{"id": 8762, "it": "livelli ottenuti come Spec. d'armi"}
+{"id": 8763, "it": "livelli ottenuti come Ingegnere"}
+{"id": 8764, "it": "missioni completate"}
+{"id": 8765, "it": "<color=#ff0000ff>"}
+{"id": 8766, "it": "Bloccato"}
+{"id": 8767, "it": "livelli ottenuti con la Colonial Union"}
+{"id": 8768, "it": "livelli ottenuti con la WD Corp"}
+{"id": 8769, "it": "livelli ottenuti con l'A.O.G."}
+{"id": 8770, "it": "livelli ottenuti con la Fluffy Biscuit"}
+{"id": 8771, "it": "livelli ottenuti con la Polytechnic"}
+{"id": 8772, "it": "navi nemiche distrutte"}
+{"id": 8773, "it": "talenti sbloccati"}
+{"id": 8774, "it": "crediti guadagnati"}
+{"id": 8775, "it": "crediti spesi"}
+{"id": 8776, "it": "danni inflitti ai pawn"}
+{"id": 8777, "it": "danni subìti dai pawn"}
+{"id": 8778, "it": "danni inflitti alle navi"}
+{"id": 8779, "it": "danni subìti dalle navi"}
+{"id": 8780, "it": "colpi sparati"}
+{"id": 8781, "it": "salute dei sistemi ripristinata"}
+{"id": 8782, "it": "passi compiuti"}
+{"id": 8783, "it": "livello massimo di Caos raggiunto"}
+{"id": 8784, "it": "Sbloccato!"}
+{"id": 8788, "it": "cosmeticData.bin"}
+{"id": 8789, "it": "Stai lasciando la zona della missione!"}
+{"id": 8790, "it": "GAME OVER: LA FONTE HA VINTO"}
+{"id": 8794, "it": "muovi il personaggio"}
+{"id": 8796, "it": "Benvenuto all'Accademia!"}
+{"id": 8797, "it": "sblocca il cursore del mouse"}
+{"id": 8798, "it": "apri il menu di pausa"}
+{"id": 8799, "it": "usa il menu Tab"}
+{"id": 8800, "it": "Il test di pilotaggio non è disponibile in modalità VR, anche se il pilotaggio in VR è possibile fuori dall'Accademia"}
+{"id": 8801, "it": "Raggiungi la destinazione senza toccare le pareti"}
+{"id": 8802, "it": "Raccogli i rottami volando vicino a essi"}
+{"id": 8803, "it": "Premi"}
+{"id": 8804, "it": "per mostrare i settori"}
+{"id": 8805, "it": "Allinea la nave al settore"}
+{"id": 8806, "it": "Usa la postazione di pilotaggio vicina per pilotare la nave"}
+{"id": 8807, "it": "Test di pilotaggio superato!"}
+{"id": 8808, "it": "Test di energia dell'Ingegnere in corso"}
+{"id": 8809, "it": "L'equipaggio richiede energia extra per l'Ingegneria!"}
+{"id": 8810, "it": "L'equipaggio richiede energia extra per il Laboratorio scientifico!"}
+{"id": 8811, "it": "L'equipaggio richiede energia extra per gli Scudi!"}
+{"id": 8812, "it": "L'equipaggio richiede energia extra per le Armi!"}
+{"id": 8813, "it": "Test di energia dell'Ingegnere superato!"}
+{"id": 8814, "it": "Clicca sulla leva per avviare il test di energia."}
+{"id": 8815, "it": "Test delle armi superato!"}
+{"id": 8816, "it": "Usa la torretta principale per distruggere i droni"}
+{"id": 8817, "it": "Test scientifico superato!"}
+{"id": 8818, "it": "Raccogli materiali e ricerca nuovi talenti"}
+{"id": 8819, "it": "TEST SUPERATO"}
+{"id": 8820, "it": "Formica corazzata d'élite"}
+{"id": 8821, "it": "Drone formica corazzato"}
+{"id": 8822, "it": "Devastatore"}
+{"id": 8823, "it": "Drone terrestre bandito"}
+{"id": 8824, "it": "Virata"}
+{"id": 8825, "it": "corri verso il bersaglio"}
+{"id": 8826, "it": "scappa"}
+{"id": 8827, "it": "scappa se ha subìto danni di recente E non può raggiungere il bersaglio"}
+{"id": 8828, "it": "Xenoraptor"}
+{"id": 8829, "it": "Ratto gigante"}
+{"id": 8830, "it": "Paladino d'élite"}
+{"id": 8831, "it": "Melma"}
+{"id": 8832, "it": "Esperimento 72"}
+{"id": 8834, "it": "Strisciante"}
+{"id": 8838, "it": "GoBackToEmerge"}
+{"id": 8839, "it": "Creatura sconosciuta"}
+{"id": 8840, "it": "Vespa dei rifiuti"}
+{"id": 8841, "it": "Rifugio dell'A.O.G."}
+{"id": 8842, "it": "Hub W.D."}
+{"id": 8843, "it": "Torretta biopericolosa"}
+{"id": 8844, "it": "Spara un getto acido che avvelena l'equipaggio a bordo e riduce per breve tempo l'efficacia della corazza di una nave."}
+{"id": 8845, "it": "FISICO (ACIDO)"}
+{"id": 8846, "it": "Bomba di biscotti in dotazione standard sui vascelli di consegna della Fluffy Biscuit Co. È un potente dispositivo EMP in grado di spegnere tutte le navi nemiche di un settore."}
+{"id": 8847, "it": "Sedia del capitano Coloniale Classica"}
+{"id": 8848, "it": "Un modello di sedia installato da decenni sulle navi della Colonial Union. È piuttosto comoda. $$+10% rilevamento EM"}
+{"id": 8849, "it": "Sedia del capitano Coloniale Moderna"}
+{"id": 8850, "it": "Una nuova sedia progettata per le navi della Colonial Union. Più rigida delle sedie classiche usate dalla flotta della Colonial Union, offre un meraviglioso supporto lombare. $$+10% velocità di carica degli scudi"}
+{"id": 8851, "it": "Sedia del capitano W.D. Classica"}
+{"id": 8852, "it": "Come tutto ciò che produce la W.D. Corporation, questa sedia è dura e scomoda. Infonde aggressività in qualsiasi capitano vi si sieda. $$+10% velocità di carica delle torrette"}
+{"id": 8853, "it": "ColonialClassicChair"}
+{"id": 8854, "it": "ColonialModernChair"}
+{"id": 8855, "it": "WDClassicChair"}
+{"id": 8856, "it": "Tecnologia che avvolge gli scudi e rende la nave invisibile ai sensori. Adattata dai tradizionali dispositivi di occultamento Sylvassi per l'uso sulle navi moderne."}
+{"id": 8857, "it": "Sistema di occultamento Sylvassi"}
+{"id": 8858, "it": "Un sistema di occultamento superiore con una rapida velocità di carica. Progettato e installato dagli ingegneri Sylvassi."}
+{"id": 8859, "it": "Test 2 ENERGIA"}
+{"id": 8860, "it": "Processore di salto"}
+{"id": 8861, "it": "Potenziamento scudi"}
+{"id": 8862, "it": "Difesa cibernetica"}
+{"id": 8863, "it": "Ricarica scudi"}
+{"id": 8864, "it": "% del massimo"}
+{"id": 8865, "it": "Bonus danno torrette"}
+{"id": 8866, "it": "Raffreddamento torrette"}
+{"id": 8867, "it": "Riduzione del calore"}
+{"id": 8868, "it": "Potenziamento spinta"}
+{"id": 8869, "it": "Velocità di carica e raffreddamento"}
+{"id": 8870, "it": "Potenziamento carica curvatura"}
+{"id": 8871, "it": "Rip. sist. ingegneria"}
+{"id": 8872, "it": "Rip. sist. supporto vitale"}
+{"id": 8873, "it": "Rip. sist. scienze"}
+{"id": 8874, "it": "Rip. sist. armi"}
+{"id": 8875, "it": "Corazza scafo"}
+{"id": 8876, "it": "Raggio di curvatura"}
+{"id": 8877, "it": "Sovraccarico"}
+{"id": 8878, "it": "Velocità di avvio nave"}
+{"id": 8879, "it": "Integrità massima scudi"}
+{"id": 8880, "it": "CyberAttack"}
+{"id": 8881, "it": "JP"}
+{"id": 8882, "it": "SCP"}
+{"id": 8883, "it": "CD"}
+{"id": 8884, "it": "TGT"}
+{"id": 8885, "it": "ARX-JP"}
+{"id": 8886, "it": "Un computer di salto che migliora enormemente la velocità di calcolo del salto."}
+{"id": 8887, "it": "ARX-SCP"}
+{"id": 8888, "it": "Un coprocessore per gli scudi molto efficiente. Aumenta l'integrità massima degli scudi quando installato e potenzia leggermente la velocità di ricarica quando alimentato. Non partire mai senza!"}
+{"id": 8889, "it": "ARX-CD"}
+{"id": 8890, "it": "Processore di difesa cibernetica. Fornisce un firewall all'avanguardia che può aiutare a prevenire le intrusioni di virus."}
+{"id": 8891, "it": "QDI-RCG"}
+{"id": 8892, "it": "Processore che ricarica gli scudi ogni volta che viene eseguito un programma. Massimo 10 volte per settore."}
+{"id": 8893, "it": "QDI-FIX-ENG"}
+{"id": 8894, "it": "Processore che ripara leggermente il sistema di ingegneria ogni volta che viene eseguito un programma. Massimo 10 volte per settore."}
+{"id": 8895, "it": "QDI-FIX-SCI"}
+{"id": 8896, "it": "Processore che ripara leggermente il sistema scientifico ogni volta che viene eseguito un programma. Massimo 10 volte per settore."}
+{"id": 8897, "it": "QDI-FIX-WPN"}
+{"id": 8898, "it": "Processore che ripara leggermente il sistema d'armi ogni volta che viene eseguito un programma. Massimo 10 volte per settore."}
+{"id": 8899, "it": "QDI-FIX-LIFE"}
+{"id": 8900, "it": "Processore che ripara leggermente il sistema di supporto vitale ogni volta che viene eseguito un programma. Massimo 10 volte per settore."}
+{"id": 8901, "it": "BKP-HEAT"}
+{"id": 8902, "it": "Processore che riduce la produzione di calore del reattore quando lo scafo è sotto il 30%."}
+{"id": 8903, "it": "ARX-TGT"}
+{"id": 8904, "it": "Processore che potenzia il danno e il raffreddamento delle torrette."}
+{"id": 8905, "it": "BKP-WARP"}
+{"id": 8906, "it": "Processore che potenzia la velocità di carica della curvatura quando lo scafo è sotto il 30%."}
+{"id": 8907, "it": "BKP-THRUST"}
+{"id": 8908, "it": "Processore che potenzia la spinta quando lo scafo è sotto il 30%."}
+{"id": 8909, "it": "BKP-WPN-POWER"}
+{"id": 8910, "it": "Processore che potenzia la velocità di carica e il raffreddamento delle torrette quando lo scafo è sotto il 30%."}
+{"id": 8911, "it": "Modulo pipeline di ricerca"}
+{"id": 8912, "it": "Processore che aggiunge una capsula di carburante ogni volta che viene ricercato un nuovo talento."}
+{"id": 8913, "it": "Difese migliorate"}
+{"id": 8914, "it": "Processore che aumenta l'efficacia della corazza dello scafo."}
+{"id": 8915, "it": "Processore del raggio di curvatura"}
+{"id": 8916, "it": "Processore che aumenta il raggio del motore a curvatura."}
+{"id": 8917, "it": "Processore di difesa cibernetica Sylvassi"}
+{"id": 8918, "it": "Un processore di difesa cibernetica più efficiente nei consumi. Tecnologia Sylvassi restaurata."}
+{"id": 8919, "it": "Processore di sovraccarico"}
+{"id": 8920, "it": "Aggiunge un po' di sovraccarico quando la nave subisce danni energetici"}
+{"id": 8921, "it": "Secondo respiro'"}
+{"id": 8922, "it": "Previene i danni letali allo scafo e lo ripristina al 15%. Il processore viene distrutto all'attivazione"}
+{"id": 8923, "it": "Processore recuperatore"}
+{"id": 8924, "it": "Genera 1 rottame lavorato a ogni salto a curvatura verso un settore non visitato"}
+{"id": 8925, "it": "Teletrasporto da: Capitano"}
+{"id": 8926, "it": "Consente il teletrasporto dal Capitano"}
+{"id": 8927, "it": "Teletrasporto da: Pilota"}
+{"id": 8928, "it": "Consente il teletrasporto dal Pilota"}
+{"id": 8929, "it": "Teletrasporto da: Scienziato"}
+{"id": 8930, "it": "Consente il teletrasporto dallo Scienziato"}
+{"id": 8931, "it": "Teletrasporto da: Specialista d'armi"}
+{"id": 8932, "it": "Consente il teletrasporto dallo Specialista d'armi"}
+{"id": 8933, "it": "Teletrasporto da: Ingegnere"}
+{"id": 8934, "it": "Consente il teletrasporto dall'Ingegnere"}
+{"id": 8935, "it": "PWR-48"}
+{"id": 8936, "it": "Potenza del reattore aumentata$+1 al livello massimo per i potenziamenti dei componenti"}
+{"id": 8937, "it": "QCK-90"}
+{"id": 8938, "it": "Velocità di avvio della nave aumentata$+1 al livello massimo per i potenziamenti dei componenti"}
+{"id": 8939, "it": "SHD-28"}
+{"id": 8940, "it": "Integrità massima degli scudi aumentata$+1 al livello massimo per i potenziamenti degli oggetti"}
+{"id": 8941, "it": "Processore combinato"}
+{"id": 8942, "it": "Aggiunge difesa cibernetica e velocità di calcolo del salto"}
+{"id": 8943, "it": "ARX-CWR"}
+{"id": 8944, "it": "Aumenta il CyberAttack (velocità di diffusione dei virus)"}
+{"id": 8945, "it": "$+"}
+{"id": 8946, "it": "Torretta difensiva"}
+{"id": 8947, "it": "Una torretta che spara una raffica di missili progettata per danni a corto e medio raggio. Usa le proprie scorte di munizioni invece dei missili a ricerca."}
+{"id": 8948, "it": "400 MHz"}
+{"id": 8949, "it": "Segnale di soccorso: firma della Colonial Union"}
+{"id": 8950, "it": "580.8 MHz"}
+{"id": 8951, "it": "Segnale di soccorso: firma della W.D. Corp"}
+{"id": 8952, "it": "200 MHz"}
+{"id": 8953, "it": "Segnale di soccorso: soccorso generico"}
+{"id": 8954, "it": "SEGNALE DI SOCCORSO"}
+{"id": 8955, "it": "StarSalvage E40"}
+{"id": 8956, "it": "Estrattore di base per rimuovere componenti dalle navi abbandonate nello spazio profondo."}
+{"id": 8957, "it": "StarSalvage E70"}
+{"id": 8958, "it": "Estrattore premium stabilizzato al laser per rimuovere componenti dalle navi abbandonate nello spazio profondo."}
+{"id": 8959, "it": "StarSalvage E900"}
+{"id": 8960, "it": "Estrattore di componenti industriale. È molto stabile ed è progettato per spogliare completamente dei componenti le navi in disuso."}
+{"id": 8961, "it": "Il Rimuovitore"}
+{"id": 8962, "it": "Estrattore di componenti costruito dalla Gentlemen Trade Commission. Dato il grande interesse per la demolizione tra i membri dell'Alliance of Gentlemen, il Rimuovitore è più stabile di molti altri estrattori in commercio."}
+{"id": 8963, "it": "Estrattore P.T."}
+{"id": 8964, "it": "Stabilità"}
+{"id": 8965, "it": "Bonus di successo$"}
+{"id": 8966, "it": "Ricetta biscotto classico"}
+{"id": 8967, "it": "Modulo per produrre biscotti classici."}
+{"id": 8968, "it": "BiscuitIcons/Icon_Classic"}
+{"id": 8969, "it": "Ricetta biscotto d'emergenza"}
+{"id": 8970, "it": "Modulo per produrre biscotti d'emergenza."}
+{"id": 8971, "it": "BiscuitIcons/Icon_Emergency"}
+{"id": 8972, "it": "Ricetta biscotto salutare"}
+{"id": 8973, "it": "Modulo per produrre biscotti salutari."}
+{"id": 8974, "it": "BiscuitIcons/Icon_Healthy"}
+{"id": 8975, "it": "Ricetta biscotto alla torta di carote"}
+{"id": 8976, "it": "Modulo per produrre biscotti alla torta di carote."}
+{"id": 8977, "it": "BiscuitIcons/Icon_CarrotCake"}
+{"id": 8978, "it": "Ricetta biscotto sostanzioso"}
+{"id": 8979, "it": "Modulo per produrre biscotti sostanziosi."}
+{"id": 8980, "it": "BiscuitIcons/Icon_Hearty"}
+{"id": 8981, "it": "Ricetta biscotto integrale"}
+{"id": 8982, "it": "Modulo per produrre biscotti integrali."}
+{"id": 8983, "it": "Ricetta biscotto friabile alle bacche curative"}
+{"id": 8984, "it": "Modulo per produrre biscotti friabili alle bacche curative."}
+{"id": 8985, "it": "BiscuitIcons/Icon_HealBerryCrumbly"}
+{"id": 8986, "it": "Ricetta biscotto zuccherato"}
+{"id": 8987, "it": "Modulo per produrre biscotti zuccherati."}
+{"id": 8988, "it": "BiscuitIcons/Icon_Sugar"}
+{"id": 8989, "it": "Ricetta biscotto all'aglio"}
+{"id": 8990, "it": "Modulo per produrre biscotti all'aglio."}
+{"id": 8991, "it": "BiscuitIcons/Icon_Garlic"}
+{"id": 8992, "it": "Ricetta biscotto surgelato"}
+{"id": 8993, "it": "Modulo per produrre biscotti surgelati."}
+{"id": 8994, "it": "BiscuitIcons/Icon_Frozen"}
+{"id": 8995, "it": "Ricetta biscotto piccante"}
+{"id": 8996, "it": "Modulo per produrre biscotti piccanti."}
+{"id": 8997, "it": "BiscuitIcons/Icon_Spicy"}
+{"id": 8998, "it": "Ricetta biscotto friabile piccante"}
+{"id": 8999, "it": "Modulo per produrre biscotti friabili piccanti."}
+{"id": 9000, "it": "BiscuitIcons/Icon_SpicyCrumbly"}
+{"id": 9001, "it": "Ricetta biscotto da danno granata"}
+{"id": 9002, "it": "Modulo per produrre biscotti da danno granata."}
+{"id": 9003, "it": "Ricetta biscotto fuso"}
+{"id": 9004, "it": "Modulo per produrre biscotti fusi."}
+{"id": 9005, "it": "BiscuitIcons/Icon_Molten"}
+{"id": 9006, "it": "Ricetta biscotto a lunga vita"}
+{"id": 9007, "it": "Modulo per produrre biscotti a lunga vita."}
+{"id": 9008, "it": "BiscuitIcons/Icon_LongLife"}
+{"id": 9009, "it": "Ricetta biscotto funky"}
+{"id": 9010, "it": "Modulo per produrre biscotti funky."}
+{"id": 9011, "it": "BiscuitIcons/Icon_Funky"}
+{"id": 9012, "it": "Ricetta biscotto fortunato"}
+{"id": 9013, "it": "Modulo per produrre biscotti fortunati."}
+{"id": 9014, "it": "BiscuitIcons/Icon_Lucky"}
+{"id": 9015, "it": "Torretta lanciafiamme"}
+{"id": 9016, "it": "Un'arma insolita che usa una miscela di carburante personalizzata per proiettare un getto di fuoco nello spazio. Il calore applicato a una nave bersaglio può provocare incendi a bordo e surriscaldarne il reattore."}
+{"id": 9017, "it": "Calore"}
+{"id": 9018, "it": "FISICO (FUOCO)"}
+{"id": 9019, "it": "Integrità"}
+{"id": 9020, "it": "Corazza"}
+{"id": 9021, "it": "Corazza (max)"}
+{"id": 9022, "it": "Scafo C.C.G."}
+{"id": 9023, "it": "Progettato dalla W.D. Corporation dopo le Vecchie Guerre. Usa un legame carbonio-carbonio-grafite per maggiore resistenza e massa ridotta. Famoso per la sua affidabilità."}
+{"id": 9024, "it": "Scafo leggero C.C.G."}
+{"id": 9025, "it": "Una versione a massa ridotta dello scafo C.C.G. Progettato dalla W.D. Corporation, usa un legame carbonio-carbonio-grafite per maggiore resistenza e massa ridotta."}
+{"id": 9026, "it": "Scafo del drone di fase"}
+{"id": 9027, "it": "Uno scafo speciale progettato per un drone di fase. Può resistere a moltissime curvature in un breve lasso di tempo."}
+{"id": 9028, "it": "Scafo nano-attivo"}
+{"id": 9029, "it": "Grazie alla tecnologia della Polytechnic Federation, questo componente impiega trilioni di nanorobot che riparano segmenti dello scafo durante il viaggio a curvatura."}
+{"id": 9030, "it": "Scafo C.C.G. - Grado militare"}
+{"id": 9031, "it": "Lo scafo C.C.G. di fascia alta della W.D. Corporation. Molto denso e resistente, è progettato appositamente per navi da guerra e da combattimento."}
+{"id": 9032, "it": "Scafo del drone sentinella"}
+{"id": 9033, "it": "Uno scafo massiccio e robusto progettato dalla Tricorp per i suoi droni sentinella."}
+{"id": 9034, "it": "Scafo del trasporto infetto"}
+{"id": 9035, "it": "Scafo del caccia infetto"}
+{"id": 9036, "it": "Scafo del cacciatorpediniere W.D."}
+{"id": 9037, "it": "Scafo personalizzato per un'astronave W.D. di classe Cacciatorpediniere. Ha un'elevata integrità ed è ben corazzato."}
+{"id": 9038, "it": "Scafo stratificato"}
+{"id": 9039, "it": "Uno scafo con una corazza che varia in base alla sua integrità attuale. Grazie agli strati di piastre rinforzate, la sua corazza è più forte quando l'integrità dello scafo è più bassa."}
+{"id": 9040, "it": "Nanomacchine"}
+{"id": 9041, "it": "Uno sciame di nanomacchine."}
+{"id": 9042, "it": "Scafo del Deathwarden"}
+{"id": 9043, "it": "Uno scafo robusto progettato per il drone Deathwarden."}
+{"id": 9044, "it": "Scafo C.C.G. economico"}
+{"id": 9045, "it": "Una versione più economica dello scafo C.C.G."}
+{"id": 9046, "it": "Scafo dell'intercettore"}
+{"id": 9047, "it": "Questo scafo è eccezionalmente robusto e ha proprietà uniche che consentono riparazioni sul campo, ma non è compatibile con gli scudi."}
+{"id": 9048, "it": "Scafo del guardiano della curvatura"}
+{"id": 9049, "it": "Questo scafo è eccezionalmente robusto"}
+{"id": 9050, "it": "Scafo Polytech"}
+{"id": 9051, "it": "Rivestimento dello scafo (CCGE)"}
+{"id": 9052, "it": "Uno strato aggiuntivo di rivestimento rinforzato dello scafo che previene i danni ai sistemi causati da attacchi dal basso e riduce i danni allo scafo."}
+{"id": 9053, "it": "Propulsore di manovra standard. Permette alla nave di traslare in qualsiasi direzione."}
+{"id": 9054, "it": "Propulsore di manovra pesante"}
+{"id": 9055, "it": "Usato tipicamente per navi di massa maggiore, questo propulsore di manovra ha più spinta di un modello standard ma richiede anche più energia. Permette alla nave di traslare in qualsiasi direzione."}
+{"id": 9056, "it": "Propulsore di manovra da corsa"}
+{"id": 9057, "it": "Usato quasi esclusivamente per le corse, questo propulsore di manovra ha una spinta superiore ma richiede moltissima energia. Permette alla nave di traslare in qualsiasi direzione."}
+{"id": 9058, "it": "Spinta di manovra"}
+{"id": 9059, "it": "Forniture mediche della Colonial Union, probabilmente rubate da una nave da trasporto."}
+{"id": 9060, "it": "Componenti d'arma W.D."}
+{"id": 9061, "it": "Casse di armi W.D. non assemblate."}
+{"id": 9062, "it": "Forniture mediche di contrabbando"}
+{"id": 9063, "it": "Forniture mediche della Colonial Union. I numeri di registrazione sono stati rimossi così non è possibile risalire al luogo di origine."}
+{"id": 9064, "it": "Cassa di borthix"}
+{"id": 9065, "it": "Cristalli di borthix imballati in una cassa da spedizione. Essendo un ingrediente della droga sundust, il borthix è sia molto prezioso sia illegale da trasportare."}
+{"id": 9066, "it": "Creatura viva"}
+{"id": 9067, "it": "Una cassa di legno che contiene una creatura vivente. Sbatte spesso contro il suo contenitore."}
+{"id": 9068, "it": "Camera criogenica"}
+{"id": 9069, "it": "Una capsula criogenica che contiene un uomo di identità sconosciuta. Sebbene sia vecchia, è sigillata in modo impeccabile."}
+{"id": 9070, "it": "Camera criogenica guasta"}
+{"id": 9071, "it": "Una capsula criogenica che ha subìto un guasto al sistema. L'individuo conservato all'interno non è sopravvissuto."}
+{"id": 9072, "it": "Sundust raffinato"}
+{"id": 9073, "it": "Questa cassa contiene grandi quantità della droga illegale sundust. Il sundust è estremamente prezioso ma illegale da detenere."}
+{"id": 9074, "it": "Cubo di rifiuti"}
+{"id": 9075, "it": "Un cubo compattato di rottami metallici e spazzatura. A quanto pare un bandito metallico vi è rimasto intrappolato."}
+{"id": 9076, "it": "Carico irradiato"}
+{"id": 9077, "it": "Una cassa che emette livelli pericolosi di radiazioni."}
+{"id": 9078, "it": "Deposito di razioni W.D."}
+{"id": 9079, "it": "Un grosso pacco di razioni W.D."}
+{"id": 9080, "it": "Prototipo di tecnologia segreta W.D."}
+{"id": 9081, "it": "Il primo passo della Corporation nella tecnologia di occultamento. C'è ancora molta strada prima che sia utilizzabile."}
+{"id": 9082, "it": "Testa del Protettore"}
+{"id": 9083, "it": "Testa di un grosso robot. Il suo occhio può emettere un potente laser."}
+{"id": 9084, "it": "Contrabbando"}
+{"id": 9085, "it": "Oggetto missione"}
+{"id": 9086, "it": "W.D. Small"}
+{"id": 9087, "it": "Una versione ridimensionata e più economica della W.D. Large."}
+{"id": 9088, "it": "W.D. Large"}
+{"id": 9089, "it": "Il principale ordigno nucleare della W.D. Corp. È uno dei più devastanti sul mercato."}
+{"id": 9090, "it": "C.U. Enforcer"}
+{"id": 9091, "it": "Un ordigno nucleare usato occasionalmente dalla flotta della Colonial Union. Sebbene queste testate non vengano lanciate spesso, sono più comuni degli altri ordigni nucleari della Colonial Union."}
+{"id": 9092, "it": "C.U. Peacekeeper"}
+{"id": 9093, "it": "Un potente ordigno nucleare progettato dalla Colonial Union. Sebbene il nome sembri in contrasto con il suo impiego, la flotta della Colonial Union usa normalmente il Peacekeeper come deterrente al combattimento, anziché per porvi fine."}
+{"id": 9094, "it": "Project Megaton"}
+{"id": 9095, "it": "Di origine ignota, questo ordigno nucleare è assolutamente devastante. La sua pura potenza lascia intendere che fosse destinato a un uso che va oltre il semplice combattimento tra navi."}
+{"id": 9096, "it": "Testata nucleare tattica"}
+{"id": 9097, "it": "Piccola testata nucleare progettata per il combattimento a corto raggio."}
+{"id": 9098, "it": "Danno massimo"}
+{"id": 9099, "it": "Raggio del danno"}
+{"id": 9100, "it": "Consumo di carburante"}
+{"id": 9101, "it": "Velocità di virata"}
+{"id": 9102, "it": "Generatore di O2 standard"}
+{"id": 9103, "it": "Generatore di ossigeno standard. Progettato per sostenere sei passeggeri per diversi mesi."}
+{"id": 9104, "it": "Generatore di O2 \\^Calypso\\^"}
+{"id": 9105, "it": "Grande generatore di ossigeno. Usa filtri molto efficienti e produce una resa maggiore di aria respirabile. Ha prestazioni stabili sotto pressione e più sistemi di riserva in caso di emergenza."}
+{"id": 9106, "it": "Velocità di rifornimento"}
+{"id": 9107, "it": "Torretta a fase"}
+{"id": 9108, "it": "Spara un raggio che trapassa scafo e corazza per danneggiare i sistemi interni della nave. Non è particolarmente efficace nell'infliggere danni a scafo o scudi."}
+{"id": 9109, "it": "ENERGIA (FASE)"}
+{"id": 9110, "it": "PhaseTurretDamage"}
+{"id": 9111, "it": "Modulo P.T.: Scudi"}
+{"id": 9112, "it": "Velocità di carica degli scudi 3x finché è equipaggiato$<color=red>Attenzione: questo componente consuma costantemente crediti. Non consigliato per un uso prolungato</color>"}
+{"id": 9113, "it": "Modulo P.T.: Danno"}
+{"id": 9114, "it": "Danno delle torrette 3x finché è equipaggiato$<color=red>Attenzione: questo componente sottopone il sistema energetico a uno stress estremo e consuma costantemente refrigerante. Non consigliato per un uso prolungato</color>"}
+{"id": 9115, "it": "Modulo P.T.: Caricatore quantico"}
+{"id": 9116, "it": "Carica i programmi finché è equipaggiato$<color=red>Attenzione: questo componente provoca l'esplosione dei monitor e danni ai sistemi nel tempo. Non consigliato per un uso prolungato</color>"}
+{"id": 9117, "it": "Modulo P.T.: Assemblaggio rapido"}
+{"id": 9118, "it": "Riduce enormemente il tempo di rigenerazione finché è equipaggiato$<color=red>Attenzione: questo componente riduce la corazza dello scafo del 50% e causa danni allo scafo ogni volta che un membro dell'equipaggio si rigenera. Non consigliato per un uso prolungato</color>"}
+{"id": 9119, "it": "Modulo P.T.: Nanorobot di riparazione dell'equipaggio"}
+{"id": 9120, "it": "I membri dell'equipaggio a bordo vengono riparati nel tempo finché è equipaggiato$<color=red>Attenzione: questo componente sottopone il sistema energetico a uno stress estremo e consuma costantemente refrigerante. Non consigliato per un uso prolungato</color>"}
+{"id": 9121, "it": "Modulo P.T.: Spinta"}
+{"id": 9122, "it": "Propulsori principali 2x finché è equipaggiato$<color=red>Attenzione: questo componente riduce la stabilità del reattore nel tempo e disattiva la carica degli scudi. Non consigliato per un uso prolungato</color>"}
+{"id": 9123, "it": "MW$"}
+{"id": 9125, "it": "MW</color>$"}
+{"id": 9126, "it": "Consumo energetico$"}
+{"id": 9127, "it": "Torretta a rotaia"}
+{"id": 9128, "it": "Un armamento standard presente su molte navi. È noto per la sua elevata cadenza di fuoco."}
+{"id": 9129, "it": "Torretta a rotaia antica"}
+{"id": 9130, "it": "Prest. (Output + Firma + Altro)$Prestazioni totali$Rapporto costo$Rapporto equilibrio"}
+{"id": 9133, "it": "Calore prodotto"}
+{"id": 9134, "it": "Firma EM"}
+{"id": 9135, "it": "Temp. max"}
+{"id": 9136, "it": "Ricarica emerg."}
+{"id": 9137, "it": "Potenza"}
+{"id": 9138, "it": "kP"}
+{"id": 9139, "it": "sec$"}
+{"id": 9140, "it": "MW"}
+{"id": 9141, "it": "Reattore a punto nullo"}
+{"id": 9142, "it": "Produce una potenza affidabile. Il progetto di questo reattore si ispira alla tecnologia delle Vecchie Guerre ed è usato oggi su molte navi in servizio."}
+{"id": 9143, "it": "Reattore a punto nullo rinforzato"}
+{"id": 9144, "it": "Generazione di energia all'avanguardia con una potenza impressionante. Usa sistemi di raffreddamento avanzati abbinati a leghe rinforzate in grado di sopportare alte temperature. Questo reattore non è solo potente, ma anche sicuro."}
+{"id": 9145, "it": "Reattore a fusione coloniale"}
+{"id": 9146, "it": "Affidabile, sicuro ed efficiente, questo reattore è stato progettato per la flotta della Colonial Union ma è diventato uno dei reattori più usati anche su navi civili e da trasporto. È una tecnologia collaudata."}
+{"id": 9147, "it": "Reattore a fusione di grado militare"}
+{"id": 9148, "it": "Versione più recente del Reattore a fusione coloniale. Ha una potenza maggiore e può sopportare temperature del nucleo più alte. È usato frequentemente su vascelli militari e di polizia della Colonial Union."}
+{"id": 9149, "it": "Reattore a fusione avanzato"}
+{"id": 9150, "it": "Versione superiore del Reattore a fusione di grado militare. Ha una potenza maggiore e può sopportare temperature del nucleo più alte. È usato su alcune navi selezionate della flotta della Colonial Union."}
+{"id": 9151, "it": "Reattore ad antimateria P.F."}
+{"id": 9152, "it": "Tecnologia della Polytechnic Federation. Questi reattori sono stati recuperati da vascelli P.F. distrutti, studiati e ricreati per funzionare entro i limiti delle navi più comuni."}
+{"id": 9153, "it": "Reattore ad antimateria P.F. (non modificato)"}
+{"id": 9154, "it": "Tecnologia della Polytechnic Federation"}
+{"id": 9155, "it": "Reattore Jumbo Fluffy Biscuit"}
+{"id": 9156, "it": "Un reattore standard per le navi di consegna della Fluffy Biscuit Co. Produce poca potenza ma è piuttosto difficile da rilevare."}
+{"id": 9157, "it": "G.T.C. Quiet Cupcake"}
+{"id": 9158, "it": "Un reattore modificato della Fluffy Biscuit Co., noto anche come motore sussurrante. È un favorito dell'Alliance of Gentlemen per la sua piccola firma EM. Se un equipaggio non vuole far sapere della propria presenza, questo reattore sarà sicuramente d'aiuto."}
+{"id": 9159, "it": "Reattore antico"}
+{"id": 9160, "it": "Roland Reactor"}
+{"id": 9161, "it": "Reattore personalizzato costruito per un'astronave CU di classe Roland. È capace di grande potenza e funziona senza problemi anche a temperature molto elevate."}
+{"id": 9162, "it": "ThermoCore Reactor"}
+{"id": 9163, "it": "Un reattore sperimentale che fornisce più energia quanto più è alta la temperatura del nucleo. A causa dell'alto rischio associato a questo reattore, non è stato approvato per l'uso commerciale standard."}
+{"id": 9164, "it": "Strongpoint Reactor"}
+{"id": 9165, "it": "Reattore ad alte prestazioni che collega tutti i sistemi della nave per aumentare la potenza. I sistemi danneggiati della nave riducono la potenza del reattore."}
+{"id": 9166, "it": "Reattore con perdite"}
+{"id": 9167, "it": "Potente reattore che a volte emette radiazioni. L'etichetta dice “NON USARE”."}
+{"id": 9168, "it": "Reattore Sylvassi"}
+{"id": 9169, "it": "Un reattore competente con una temperatura massima inferiore. Di solito è usato sulle navi Sylvassi ristrutturate."}
+{"id": 9170, "it": "Pezzi di scafo rotto e detriti. Se lavorati a dovere, potrebbero essere riutilizzati."}
+{"id": 9171, "it": "Rottami lavorati"}
+{"id": 9172, "it": "Usato per amplificare le capacità di rilevamento dei segnali della nave."}
+{"id": 9173, "it": "Olo-schermo tattico"}
+{"id": 9174, "it": "Generatore di scudi con una rapida velocità di ricarica ma capacità minima. Progettato in origine per le navi di consegna della Fluffy Biscuit Co."}
+{"id": 9175, "it": "Olo-schermo tattico pesante"}
+{"id": 9176, "it": "Generatore di scudi con una rapida velocità di ricarica e capacità moderata. Progettato in origine per le navi di consegna più grandi della Fluffy Biscuit Co."}
+{"id": 9177, "it": "Mini generatore di scudi C.G.F."}
+{"id": 9178, "it": "Un vecchio tipo di generatore di scudi. Sembra funzionare, ma potrebbe non durare a lungo sotto pressione. Si ottiene quello che si paga, brutto taccagno!"}
+{"id": 9179, "it": "Generatore di scudi leggero C.G.F."}
+{"id": 9180, "it": "Un generatore di scudi affidabile e versatile, usato da decenni nella Flotta Galattica della Colonial Union. Ha salvato molti equipaggi nel corso degli anni."}
+{"id": 9181, "it": "Generatore di scudi pesante C.G.F."}
+{"id": 9182, "it": "Un generatore di scudi potente e moderno. Comunemente usato sulle navi più recenti della Flotta Galattica della Colonial Union."}
+{"id": 9183, "it": "Generatore di scudi di grado militare"}
+{"id": 9184, "it": "L'ultima tecnologia della Colonial Union in fatto di generatori di scudi. È stato progettato appositamente per le navi di spedizione ai confini dello spazio conosciuto."}
+{"id": 9185, "it": "G.T.C. Blue Goose"}
+{"id": 9186, "it": "Si ricarica più in fretta della maggior parte degli scudi. È uno dei pochi prodotti della Gentlemen Trade Commission che non nasce da merce precedentemente rubata."}
+{"id": 9187, "it": "Scudo a particelle W.D. Corp"}
+{"id": 9188, "it": "Progettato per consentire \"strati\" di schermatura. Questi scudi a particelle sono molto efficaci e offrono il 5% di resistenza extra agli attacchi fisici."}
+{"id": 9189, "it": "Scudo a particelle rinforzato"}
+{"id": 9190, "it": "Progettato per consentire ‘strati’ di schermatura. Alcuni equipaggi W.D. smanettano con i loro generatori di scudi a particelle. Questo è stato notevolmente potenziato e offre il 10% di resistenza extra agli attacchi fisici."}
+{"id": 9191, "it": "Secondo scafo"}
+{"id": 9192, "it": "Un generatore di scudi con un'integrità così alta da fungere quasi da secondo scafo. Ha una velocità di ricarica estremamente lenta."}
+{"id": 9193, "it": "Scudi anti-raggio"}
+{"id": 9194, "it": "Potente generatore di scudi con il 15% di resistenza extra agli attacchi a raggio."}
+{"id": 9195, "it": "Scudi anti-raggio superiori"}
+{"id": 9196, "it": "Potente generatore di scudi con il 30% di resistenza extra agli attacchi a raggio."}
+{"id": 9197, "it": "Corbin's Wall"}
+{"id": 9198, "it": "Sei stanco dei soliti scudi con integrità minima? Vorresti che il tuo scudo fosse meno uno schermo e più un muro? Non preoccuparti più, ‘Corbin’s Wall’ fa per te! Offerta a tempo limitato, quindi COMPRA ORA!$Non si accettano rimborsi."}
+{"id": 9199, "it": "Olo-schermo fortificato"}
+{"id": 9200, "it": "Generatore di scudi con una rapida velocità di ricarica e una buona capacità. Progettato in origine per le navi di consegna della Fluffy Biscuit Co. con carichi particolarmente preziosi."}
+{"id": 9201, "it": "Scudo a particelle denso"}
+{"id": 9202, "it": "Progettato per consentire \"strati\" di schermatura. Questo generatore di scudi è l'ultimo modello della tecnologia a particelle della W.D. Corporation e offre il 20% di resistenza extra agli attacchi fisici."}
+{"id": 9203, "it": "Proiettore di superficie tetragonale"}
+{"id": 9204, "it": "Uno strano proiettore che crea un collegamento a meta-maglia attorno alla nave, che funge da scudo. Riduce del 15% i danni in arrivo di tutti i tipi."}
+{"id": 9205, "it": "WD XC-7 Prototype Config 4"}
+{"id": 9206, "it": "Un generatore di scudi della W.D. Corporation dotato di un prototipo di array di ricarica degli scudi che aumenta la velocità di carica."}
+{"id": 9207, "it": "Generatore di scudi di grado militare modificato"}
+{"id": 9208, "it": "L'ultima tecnologia della Colonial Union in fatto di generatori di scudi. È stato progettato appositamente per le navi di spedizione ai confini dello spazio conosciuto. Questo esemplare è stato modificato con una schermatura quantica migliorata e una velocità di carica maggiore, ma con integrità ridotta."}
+{"id": 9209, "it": "Scudi Sylvassi"}
+{"id": 9210, "it": "Un generatore di scudi unico che aumenta la velocità di carica degli scudi quando la loro integrità è superiore al 50%. È una versione moderna dell'antica tecnologia degli scudi Sylvassi."}
+{"id": 9211, "it": "Scudi Polytech"}
+{"id": 9212, "it": "Integrità min."}
+{"id": 9213, "it": "Velocità di carica"}
+{"id": 9214, "it": "Min. per scudi QT"}
+{"id": 9215, "it": "Prest. (Vel. carica + Int. + Altro)$Prestazioni totali$Rapporto costo$Rapporto energia$Rapporto equilibrio"}
+{"id": 9216, "it": "({0} + {1} + {2})${3}${4}${5}${6}"}
+{"id": 9217, "it": "Torretta Sylvassi"}
+{"id": 9218, "it": "Arma laser a lungo raggio, particolarmente efficace contro scafi e sistemi della nave. Ha una mira automatica potenziata in grado di abbattere alcuni missili."}
+{"id": 9219, "it": "Il propulsore \\^Adelaide\\^"}
+{"id": 9220, "it": "Prende il nome dal Capitano Adelaide, ingegnere ed eroina delle Vecchie Guerre. Questo propulsore ha una potenza massima elevata e può spingere molti tipi di navi in modo rapido ed efficiente."}
+{"id": 9221, "it": "Propulsore vettoriale ad alte prestazioni"}
+{"id": 9222, "it": "Sistema di propulsione di grado militare capace di un'impressionante spinta in avanti."}
+{"id": 9223, "it": "Piccolo propulsore vettoriale"}
+{"id": 9224, "it": "Usato per spingere in avanti una nave. Non ha tanta spinta quanto altri prodotti sul mercato, ma consuma poca energia."}
+{"id": 9225, "it": "Propulsore da corsa"}
+{"id": 9226, "it": "Un propulsore con una spinta in avanti estrema. È uno dei preferiti dalle navi da corsa, anche se spesso viene smanettato per spingerlo oltre i limiti. Richiedendo una quantità enorme di energia, non è fatto per essere usato a lungo."}
+{"id": 9227, "it": "Propulsore oscuro"}
+{"id": 9228, "it": "Un propulsore in avanti con un'ottima efficienza energetica. Era stato progettato in origine per accompagnare un motore a curvatura che da allora è stato dichiarato contrabbando dalla Colonial Union. I propulsori, tuttavia, sono ancora legali."}
+{"id": 9229, "it": "Bersaglio facile"}
+{"id": 9230, "it": "Disattiva i propulsori della nave"}
+{"id": 9231, "it": "Blocco curvatura"}
+{"id": 9232, "it": "Disattiva il motore a curvatura"}
+{"id": 9233, "it": "Falange"}
+{"id": 9234, "it": "Disattiva la ricarica degli scudi"}
+{"id": 9235, "it": "Senza fiato"}
+{"id": 9236, "it": "Disattiva il sistema di supporto vitale"}
+{"id": 9237, "it": "Una cortese sorpresa"}
+{"id": 9238, "it": "Disattiva la sicurezza del teletrasporto per 15 secondi"}
+{"id": 9239, "it": "Benvenuto, gentiluomo"}
+{"id": 9240, "it": "Disattiva gli scudi quantici"}
+{"id": 9241, "it": "Cannoni pigri"}
+{"id": 9242, "it": "Rallenta la ricarica delle armi"}
+{"id": 9243, "it": "Backdoor"}
+{"id": 9244, "it": "Disattiva i firewall"}
+{"id": 9245, "it": "Sguardo amichevole"}
+{"id": 9246, "it": "Appari come un alleato (funziona sui droni)"}
+{"id": 9247, "it": "Furto di dati"}
+{"id": 9248, "it": "Sottrae i dati della mappa stellare"}
+{"id": 9249, "it": "Risucchio di crediti"}
+{"id": 9250, "it": "Ruba crediti"}
+{"id": 9251, "it": "Grande bluff"}
+{"id": 9252, "it": "Falso allarme radiologico"}
+{"id": 9253, "it": "Sussurro"}
+{"id": 9254, "it": "Virus botnet che esplora la galassia in cerca di informazioni"}
+{"id": 9255, "it": "0x84B7A2"}
+{"id": 9256, "it": "Funzione sconosciuta/casuale"}
+{"id": 9257, "it": "0xF592B1"}
+{"id": 9258, "it": "Corruzione"}
+{"id": 9259, "it": "Causa il malfunzionamento dei monitor della nave"}
+{"id": 9260, "it": "Scudo di Syber"}
+{"id": 9261, "it": "Riduce il danno delle torrette del 30%"}
+{"id": 9262, "it": "Falla nella corazza"}
+{"id": 9263, "it": "Riduce l'efficacia della corazza del 50%"}
+{"id": 9264, "it": "Spegnimento delle difese"}
+{"id": 9265, "it": "Disattiva i sistemi difensivi"}
+{"id": 9266, "it": "Visita il negozio di virus!"}
+{"id": 9267, "it": "La migliore selezione di virus della galassia!"}
+{"id": 9268, "it": "PLVirus::Equip"}
+{"id": 9269, "it": "Modulo di salto standard"}
+{"id": 9270, "it": "Motore a curvatura in dotazione standard sulla maggior parte dei vascelli della flotta della Colonial Union. Una combinazione di velocità di carica affidabile e raggio discreto ne fa una tecnologia molto usata, anche al di fuori della Colonial Union."}
+{"id": 9271, "it": "Modulo di salto a lungo raggio"}
+{"id": 9272, "it": "Motore a curvatura a lungo raggio usato da molti vascelli di spedizione e di frontiera. Permette alle navi di percorrere grandi distanze ma ha una velocità di carica inferiore alla media."}
+{"id": 9273, "it": "Modulo di salto a raggio assurdo"}
+{"id": 9274, "it": "Motore a curvatura con un raggio estremamente lungo. Sebbene possa coprire grandi distanze, ha una firma rumorosa e poche cariche di programma."}
+{"id": 9275, "it": "G.T.C. Snappy Cricket"}
+{"id": 9276, "it": "Motore a curvatura a carica rapida con buon raggio. Questo dispositivo è ottimo per le fughe veloci."}
+{"id": 9277, "it": "G.T.C. Silent Cricket"}
+{"id": 9278, "it": "Motore a curvatura a bassa firma con buon raggio. È apprezzato da molti equipaggi dell'Alliance of Gentlemen."}
+{"id": 9279, "it": "Motore di salto \\^Workhorse\\^"}
+{"id": 9280, "it": "Motore a curvatura che offre una capacità di salto ragionevole e una potenza di calcolo superiore alla media. È comunemente usato dalle navi di rifornimento."}
+{"id": 9281, "it": "G.T.C. Custom"}
+{"id": 9282, "it": "Un motore a curvatura originale della Gentlemen Trade Commission. Offre una maggiore potenza di calcolo e una firma ridotta."}
+{"id": 9283, "it": "Motore di salto Explorers United"}
+{"id": 9284, "it": "Motore a curvatura costoso ma robusto, con un raggio molto lungo. È stato progettato appositamente per i membri dell'organizzazione intergalattica di viaggiatori spaziali ‘Explorers United’, ma è disponibile per l'uso generale."}
+{"id": 9285, "it": "Motore di salto W.D."}
+{"id": 9286, "it": "Motore a curvatura standard per i vascelli della W.D. Corporation. Ha un raggio discreto ma una firma molto rumorosa."}
+{"id": 9287, "it": "Motore di salto militare W.D."}
+{"id": 9288, "it": "Un motore a curvatura più avanzato per i vascelli da combattimento della W.D. Corporation. Ha un lungo raggio ed è più silenzioso del motore di salto standard della W.D. Corp."}
+{"id": 9289, "it": "Motore oscuro"}
+{"id": 9290, "it": "Motore a curvatura senza firma. A causa del suo potenziale uso malevolo, è stato classificato come contrabbando dalla Colonial Union."}
+{"id": 9291, "it": "Snap Drive"}
+{"id": 9292, "it": "Progettato per ‘curvare in un lampo’, questo motore ha una velocità di carica incredibilmente rapida. Tuttavia ha anche una firma EM estremamente rumorosa e un raggio di salto ridotto."}
+{"id": 9293, "it": "WD XW-5 Prototype Config 1"}
+{"id": 9294, "it": "Un motore a curvatura della W.D. Corporation dotato di un prototipo di caricatore quantico che permette al motore di caricare i programmi in parallelo anziché in sequenza. Ogni programma installato verrà caricato di un punto a ogni attivazione del motore."}
+{"id": 9295, "it": "Super saltatore delle Vecchie Guerre"}
+{"id": 9296, "it": "Uno strano motore a curvatura che aumenta il raggio di curvatura ogni volta che viene attivata la carica manuale del programma. Il raggio di curvatura si azzera a ogni salto."}
+{"id": 9297, "it": "Cariche per carburante"}
+{"id": 9298, "it": "Firma"}
+{"id": 9299, "it": "Trasmette il virus [Sitting Duck] alle navi vicine all'attivazione.$$Sitting Duck: disattiva i propulsori della nave per 60 secondi"}
+{"id": 9300, "it": "SD"}
+{"id": 9301, "it": "Trasmette il virus [Gentlemen's Welcome] alle navi vicine all'attivazione.$$Gentleman's Welcome: disattiva gli scudi quantici per 3 minuti"}
+{"id": 9302, "it": "GW"}
+{"id": 9303, "it": "Trasmette il virus [Siphon Credits] alle navi vicine all'attivazione.$$Siphon Credits: ruba crediti per 60 secondi"}
+{"id": 9304, "it": "Si"}
+{"id": 9305, "it": "Trasmette il virus [Warp Disable] alle navi vicine all'attivazione.$$Warp Disable: disattiva la ricarica del motore a curvatura per 3 minuti"}
+{"id": 9306, "it": "Trasmette il virus [Phalanx] alle navi vicine all'attivazione.$$Phalanx: disattiva la ricarica degli scudi per 3 minuti"}
+{"id": 9307, "it": "Ph"}
+{"id": 9308, "it": "Trasmette il virus [Backdoor] alle navi vicine all'attivazione.$$Backdoor: disattiva i firewall per 3 minuti"}
+{"id": 9309, "it": "Ba"}
+{"id": 9310, "it": "Impedisce la perdita di reputazione per attacchi o distruzione di navi e impedisce lo stato ‘Segnalato’ quando si rivendicano navi. Dura fino alla prossima curvatura."}
+{"id": 9311, "it": "Bl"}
+{"id": 9312, "it": "Aumenta di +15 la velocità di carica degli scudi per 15 secondi."}

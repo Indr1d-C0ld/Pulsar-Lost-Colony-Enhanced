@@ -1,0 +1,14 @@
+# Servizio utente systemd per il Subspace Relay su Balthasar.
+# Installazione: vedi installa.sh (non richiede sudo).
+[Unit]
+Description=Melchior Subspace Relay (server coop PULSAR in LAN)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/subspace-relay
+ExecStart=/usr/bin/env node server.js config.json
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,1572 @@
+{"id": 5785, "en": "Hull does not need repair", "fr": "La coque n'a pas besoin d'être réparée"}
+{"id": 5786, "en": "ACTIVATING HULL REINFORCMENT", "fr": "ACTIVER LE RENFORCEMENT DE LA COQUE"}
+{"id": 5787, "en": "$", "fr": "$"}
+{"id": 5788, "en": "]", "fr": "]"}
+{"id": 5789, "en": "Uses 1 processed scrap to repair the hull (+200 hull / scrap)", "fr": "Utilise 1 ferraille traitée pour réparer la coque (+200 coque / ferraille)"}
+{"id": 5790, "en": "[hold", "fr": "[attente"}
+{"id": 5791, "en": "] Reinforce Hull", "fr": "] Renforcer la coque"}
+{"id": 5792, "en": "No processed scrap to consume", "fr": "Pas de déchets transformés à consommer"}
+{"id": 5793, "en": "Must be the Captain to use this system", "fr": "Il faut être le capitaine pour utiliser ce système"}
+{"id": 5794, "en": "] Insert Battery", "fr": "] Insérer une batterie"}
+{"id": 5795, "en": "Processing", "fr": "Traitement"}
+{"id": 5796, "en": "<color=#00FF00>|</color>", "fr": "<color=#00FF00>|</color>"}
+{"id": 5797, "en": "<color=#AAAAAA>|</color>", "fr": "<color=#AAAAAA>|</color>"}
+{"id": 5798, "en": "<color=#000000>|</color>", "fr": "<color=#000000>|</color>"}
+{"id": 5799, "en": "Scrap Processing Failed!", "fr": "Le traitement de la ferraille a échoué !"}
+{"id": 5800, "en": "REVIVING", "fr": "REVIVANT"}
+{"id": 5801, "en": "] Revive", "fr": "] Rétablir"}
+{"id": 5802, "en": "Activate Controls", "fr": "Activer les commandes"}
+{"id": 5803, "en": "in use by <", "fr": "utilisé par <"}
+{"id": 5804, "en": "Operate Sensor Dish", "fr": "Utiliser la parabole à capteurs"}
+{"id": 5805, "en": "You need the <Sensor Dish Certification> talent to use this station", "fr": "Vous devez posséder le talent <Certification de la parabole à capteurs> pour utiliser cette station."}
+{"id": 5806, "en": "Sensor Dish in use by <", "fr": "Parabole à capteurs utilisée par <"}
+{"id": 5807, "en": "] Pickup", "fr": "] Ramassage"}
+{"id": 5808, "en": "(", "fr": "("}
+{"id": 5809, "en": "Pickup Ammo Clip", "fr": "Ramasser le chargeur de munitions"}
+{"id": 5810, "en": "Win Race To Claim Prize:", "fr": "Gagner la course pour réclamer le prix :"}
+{"id": 5811, "en": "Pickup", "fr": "Ramassage"}
+{"id": 5812, "en": "Open Ship Log", "fr": "Ouvrir le journal de bord"}
+{"id": 5813, "en": "Open Hatch", "fr": "Ouvrir la trappe"}
+{"id": 5814, "en": "Access Atomizer", "fr": "Accéder à l'atomiseur"}
+{"id": 5815, "en": "Access", "fr": "Accès"}
+{"id": 5816, "en": "s Locker", "fr": "s Locker"}
+{"id": 5817, "en": "Locker", "fr": "Casier"}
+{"id": 5818, "en": "Take off exosuit", "fr": "Enlever l'exosuit"}
+{"id": 5819, "en": "Put on exosuit", "fr": "Mettre l'exosuit"}
+{"id": 5820, "en": "Take", "fr": "Prendre"}
+{"id": 5821, "en": "(", "fr": "("}
+{"id": 5822, "en": "Leave Captain's Chair", "fr": "Quitter la chaise du capitaine"}
+{"id": 5823, "en": "Sit in Captain's Chair", "fr": "S'asseoir sur la chaise du capitaine"}
+{"id": 5824, "en": "Process", "fr": "Processus"}
+{"id": 5825, "en": "(+", "fr": "(+"}
+{"id": 5826, "en": ")$", "fr": ")$"}
+{"id": 5827, "en": "Transferring", "fr": "Transmission"}
+{"id": 5828, "en": "Transfer", "fr": "Transfert"}
+{"id": 5829, "en": "Enter", "fr": "Entrer"}
+{"id": 5830, "en": "Locked - Requires <", "fr": "Verrouillé - Requiert <"}
+{"id": 5831, "en": "REWRITING NEURAL CONNECTIONS", "fr": "RÉÉCRITURE DES CONNEXIONS NEURONALES"}
+{"id": 5832, "en": "Reset Talent Points", "fr": "Réinitialiser les points de talent"}
+{"id": 5833, "en": "Place", "fr": "Lieu"}
+{"id": 5834, "en": "Scanner can't be upgraded!", "fr": "Le scanner ne peut pas être amélioré !"}
+{"id": 5835, "en": "Ammo Clips can't be upgraded!", "fr": "Les chargeurs de munitions ne peuvent pas être améliorés !"}
+{"id": 5836, "en": "Play Liar's Dice", "fr": "Jouer au dé menteur"}
+{"id": 5837, "en": "RELOADING", "fr": "RELOADING"}
+{"id": 5838, "en": "LocalPawn", "fr": "LocalPawn"}
+{"id": 5839, "en": "<color=red>", "fr": "<color=red>"}
+{"id": 5840, "en": "You are encumbered", "fr": "Vous êtes encombré"}
+{"id": 5841, "en": "PULSAR: Lost Colony", "fr": "PULSAR : Colonie perdue"}
+{"id": 5965, "en": "Display Name", "fr": "Nom affiché"}
+{"id": 6232, "en": "Invalid Warp ID!", "fr": "ID Warp invalide !"}
+{"id": 6236, "en": "Mobility Radeon HD 5500", "fr": "Mobility Radeon HD 5500"}
+{"id": 6237, "en": "Mobility Radeon HD 5570", "fr": "Mobility Radeon HD 5570"}
+{"id": 6238, "en": "Mobility Radeon HD 5600", "fr": "Mobility Radeon HD 5600"}
+{"id": 6239, "en": "Mobility Radeon HD 5630", "fr": "Mobility Radeon HD 5630"}
+{"id": 6240, "en": "Mobility Radeon HD 5650", "fr": "Mobility Radeon HD 5650"}
+{"id": 6241, "en": "Mobility Radeon HD 5670", "fr": "Mobility Radeon HD 5670"}
+{"id": 6242, "en": "Mobility Radeon HD 5690", "fr": "Mobility Radeon HD 5690"}
+{"id": 6243, "en": "Mobility Radeon HD 5700", "fr": "Mobility Radeon HD 5700"}
+{"id": 6244, "en": "Mobility Radeon HD 5730", "fr": "Mobility Radeon HD 5730"}
+{"id": 6245, "en": "Mobility Radeon HD 5850", "fr": "Mobilité Radeon HD 5850"}
+{"id": 6246, "en": "Radeon HD 5500", "fr": "Radeon HD 5500"}
+{"id": 6247, "en": "Radeon HD 5570", "fr": "Radeon HD 5570"}
+{"id": 6248, "en": "Radeon HD 5600", "fr": "Radeon HD 5600"}
+{"id": 6249, "en": "Radeon HD 5630", "fr": "Radeon HD 5630"}
+{"id": 6250, "en": "Radeon HD 5650", "fr": "Radeon HD 5650"}
+{"id": 6251, "en": "Radeon HD 5670", "fr": "Radeon HD 5670"}
+{"id": 6252, "en": "Radeon HD 5690", "fr": "Radeon HD 5690"}
+{"id": 6253, "en": "Radeon HD 5700", "fr": "Radeon HD 5700"}
+{"id": 6254, "en": "Radeon HD 5730", "fr": "Radeon HD 5730"}
+{"id": 6255, "en": "Radeon HD 5850", "fr": "Radeon HD 5850"}
+{"id": 6256, "en": "AMD Radeon HD 5500", "fr": "AMD Radeon HD 5500"}
+{"id": 6257, "en": "AMD Radeon HD 5570", "fr": "AMD Radeon HD 5570"}
+{"id": 6258, "en": "AMD Radeon HD 5600", "fr": "AMD Radeon HD 5600"}
+{"id": 6259, "en": "AMD Radeon HD 5630", "fr": "AMD Radeon HD 5630"}
+{"id": 6260, "en": "AMD Radeon HD 5650", "fr": "AMD Radeon HD 5650"}
+{"id": 6261, "en": "AMD Radeon HD 5670", "fr": "AMD Radeon HD 5670"}
+{"id": 6262, "en": "AMD Radeon HD 5690", "fr": "AMD Radeon HD 5690"}
+{"id": 6263, "en": "AMD Radeon HD 5700", "fr": "AMD Radeon HD 5700"}
+{"id": 6264, "en": "AMD Radeon HD 5730", "fr": "AMD Radeon HD 5730"}
+{"id": 6265, "en": "AMD Radeon HD 5850", "fr": "AMD Radeon HD 5850"}
+{"id": 6266, "en": "Mobility Radeon HD 6390", "fr": "Mobility Radeon HD 6390"}
+{"id": 6267, "en": "Mobility Radeon HD 6490", "fr": "Mobility Radeon HD 6490"}
+{"id": 6268, "en": "Mobility Radeon HD 6500", "fr": "Mobility Radeon HD 6500"}
+{"id": 6269, "en": "Mobility Radeon HD 6510", "fr": "Mobility Radeon HD 6510"}
+{"id": 6270, "en": "Mobility Radeon HD 6540", "fr": "Mobility Radeon HD 6540"}
+{"id": 6271, "en": "Mobility Radeon HD 6550", "fr": "Mobility Radeon HD 6550"}
+{"id": 6272, "en": "Mobility Radeon HD 6600", "fr": "Mobility Radeon HD 6600"}
+{"id": 6273, "en": "Mobility Radeon HD 6700", "fr": "Mobility Radeon HD 6700"}
+{"id": 6274, "en": "Mobility Radeon HD 6750", "fr": "Mobility Radeon HD 6750"}
+{"id": 6275, "en": "Mobility Radeon HD 6850", "fr": "Mobility Radeon HD 6850"}
+{"id": 6276, "en": "Radeon HD 6390", "fr": "Radeon HD 6390"}
+{"id": 6277, "en": "Radeon HD 6490", "fr": "Radeon HD 6490"}
+{"id": 6278, "en": "Radeon HD 6500", "fr": "Radeon HD 6500"}
+{"id": 6279, "en": "Radeon HD 6510", "fr": "Radeon HD 6510"}
+{"id": 6280, "en": "Radeon HD 6540", "fr": "Radeon HD 6540"}
+{"id": 6281, "en": "Radeon HD 6550", "fr": "Radeon HD 6550"}
+{"id": 6282, "en": "Radeon HD 6600", "fr": "Radeon HD 6600"}
+{"id": 6283, "en": "Radeon HD 6700", "fr": "Radeon HD 6700"}
+{"id": 6284, "en": "Radeon HD 6750", "fr": "Radeon HD 6750"}
+{"id": 6285, "en": "Radeon HD 6850", "fr": "Radeon HD 6850"}
+{"id": 6286, "en": "AMD Radeon HD 6390", "fr": "AMD Radeon HD 6390"}
+{"id": 6287, "en": "AMD Radeon HD 6490", "fr": "AMD Radeon HD 6490"}
+{"id": 6288, "en": "AMD Radeon HD 6500", "fr": "AMD Radeon HD 6500"}
+{"id": 6289, "en": "AMD Radeon HD 6510", "fr": "AMD Radeon HD 6510"}
+{"id": 6290, "en": "AMD Radeon HD 6540", "fr": "AMD Radeon HD 6540"}
+{"id": 6291, "en": "AMD Radeon HD 6550", "fr": "AMD Radeon HD 6550"}
+{"id": 6292, "en": "AMD Radeon HD 6600", "fr": "AMD Radeon HD 6600"}
+{"id": 6293, "en": "AMD Radeon HD 6700", "fr": "AMD Radeon HD 6700"}
+{"id": 6294, "en": "AMD Radeon HD 6750", "fr": "AMD Radeon HD 6750"}
+{"id": 6295, "en": "AMD Radeon HD 6850", "fr": "AMD Radeon HD 6850"}
+{"id": 6296, "en": "Potential Hardware Compatibility Issue$$Your graphics device [", "fr": "Problème potentiel de compatibilité matérielle$$Votre périphérique graphique ["}
+{"id": 6297, "en": "] might be incompatible due to lack of modern/supported drivers. If you encounter crashes or other problems consider using OpenGL mode to play PULSAR using the startup argument:  -force-glcore", "fr": "] peut être incompatible en raison de l'absence de pilotes modernes/pris en charge. Si vous rencontrez des plantages ou d'autres problèmes, envisagez d'utiliser le mode OpenGL pour jouer à PULSAR en utilisant l'argument de démarrage : -force-glcore"}
+{"id": 6299, "en": "Game is full!", "fr": "Le jeu est complet !"}
+{"id": 6304, "en": "ALL", "fr": "TOUT"}
+{"id": 6346, "en": "Say:", "fr": "Dites :"}
+{"id": 6348, "en": "Unseen Mothership", "fr": "Vaisseau-mère invisible"}
+{"id": 6349, "en": "Polytechnic Homeworld", "fr": "Terre d'accueil polytechnique"}
+{"id": 6350, "en": "Horizon Bridge", "fr": "Pont de l'Horizon"}
+{"id": 6353, "en": "Unknown", "fr": "Inconnu"}
+{"id": 6374, "en": "--- GALAXY RESET ---", "fr": "--- RÉINITIALISATION DE LA GALAXIE ---"}
+{"id": 6421, "en": "Visit the Academy to learn more about many topics from the basics of operating a starship to class-specific roles.", "fr": "Visitez l'Académie pour en savoir plus sur de nombreux sujets, des bases du pilotage d'un vaisseau aux rôles spécifiques à chaque classe."}
+{"id": 6422, "en": "Nebulas block long range transmissions, which means you won't lose reputation or become flagged while inside a nebula sector.", "fr": "Les nébuleuses bloquent les transmissions à longue portée, ce qui signifie que vous ne perdrez pas votre réputation et ne serez pas signalé lorsque vous vous trouvez dans un secteur de nébuleuse."}
+{"id": 6423, "en": "Atriums will continue to respawn enemy crewmembers until their claim on their ship is removed. Likewise, your atrium will continue to respawn you unless enemy boarders take over your ship.", "fr": "Les atriums continueront à réapparaître les membres d'équipage ennemis jusqu'à ce que leur droit sur le vaisseau soit supprimé. De même, votre atrium continuera à vous réapparaître à moins que des membres de l'équipage ennemi ne s'emparent de votre vaisseau."}
+{"id": 6424, "en": "In Colonial Union space, cargo inspection stations send orders over long range comms to check ships for contraband. You will have a limited number of jumps to comply, or your ship will be flagged for avoiding the inspection.", "fr": "Dans l'espace de l'Union coloniale, les stations d'inspection des cargaisons envoient des ordres par le biais de communications à longue portée pour vérifier que les vaisseaux ne contiennent pas de produits de contrebande. Vous disposerez d'un nombre limité de sauts pour obtempérer, ou votre vaisseau sera signalé pour avoir évité l'inspection."}
+{"id": 6425, "en": "Sector Commanders are incredibly difficult fights in space shown as ! on the starmap. Be prepared before warping into such sectors.", "fr": "Les commandants de secteur sont des combats incroyablement difficiles dans l'espace représenté par ! sur la carte stellaire. Préparez-vous à entrer dans ces secteurs."}
+{"id": 6426, "en": "You can change your appearance in-game at Barber stations which are located at any of the major hubs.", "fr": "Vous pouvez changer votre apparence dans le jeu dans les stations Barber situées dans les principaux hubs."}
+{"id": 6427, "en": "You can reset your talents in-game at Neural Rewriters which are located at any of the major hubs.", "fr": "Vous pouvez réinitialiser vos talents dans le jeu dans les stations de réécriture neuronale situées dans les principaux hubs."}
+{"id": 6428, "en": "Chaotic actions such as destroying ships, getting free repairs, or extorting crews can increase chaos faster.", "fr": "Les actions chaotiques telles que la destruction de vaisseaus, les réparations gratuites ou l'extorsion d'équipages peuvent augmenter le chaos plus rapidement."}
+{"id": 6429, "en": "Ammo reserves refresh every warp jump.", "fr": "Les réserves de munitions sont réactualisées à chaque saut de distorsion."}
+{"id": 6430, "en": "Ship components labeled red are contraband. If you are found guilty of transporting contraband during a cargo inspection, your ship will be flagged and attacked. Take care to hide or dispose of any illicit goods.", "fr": "Les composants de vaisseau marqués en rouge sont des produits de contrebande. Si vous êtes reconnu coupable de transporter de la contrebande lors d'une inspection de la cargaison, votre vaisseau sera signalé et attaqué. Prenez soin de cacher ou de vous débarrasser de toute marchandise illicite."}
+{"id": 6431, "en": "Some Alliance of Gentlemen ships have hidden rooms for storing contraband cargo.", "fr": "Certains vaisseaus de l'Alliance des Gentlemen disposent de salles cachées pour stocker les marchandises de contrebande."}
+{"id": 6432, "en": "Flagged ships have no allies. Any and all ships will treat them as hostile. To remove a flagged status from your ship, you can visit certain NPCs at the Burrow, the Estate, and Cornelia Station.", "fr": "Les vaisseaus marqués n'ont pas d'alliés. Tous les vaisseaus les considèrent comme hostiles. Pour retirer ce statut à votre vaisseau, vous pouvez rendre visite à certains PNJ au terrier, au domaine et à la station Cornelia."}
+{"id": 6433, "en": "Drinking alcohol while piloting a starship is very irresponsible!", "fr": "Boire de l'alcool en pilotant un vaisseau est très irresponsable !"}
+{"id": 6434, "en": "During ship hailing, the Captain can try to determine the chance of success for certain dialog options by pressing the buttons with the magnifying glass. But be wary. Doing this too many times may provoke a hostile response.", "fr": "Pendant l'appel du vaisseau, le capitaine peut essayer de déterminer les chances de succès de certaines options de dialogue en appuyant sur les boutons avec la loupe. Mais attention. Si vous le faites trop souvent, vous risquez de provoquer une réaction hostile."}
+{"id": 6435, "en": "Consuming biscuits can help in a variety of situations. There are many flavors that have different effects such as boosting weapon damage, increasing fire resistance, and even cheating death.", "fr": "La consommation de biscuits peut s'avérer utile dans diverses situations. Il existe de nombreux parfums qui ont des effets différents, tels que l'augmentation des dégâts des armes, l'augmentation de la résistance au feu et même la possibilité de tromper la mort."}
+{"id": 6436, "en": "Crumbly biscuits have area of effect abilities that benefit your nearby crewmembers.", "fr": "Les biscuits friables ont des capacités de zone d'effet qui bénéficient aux membres de l'équipage qui se trouvent à proximité."}
+{"id": 6437, "en": "Only one biscuit effect can be active at a time. When you eat a biscuit, be mindful before you consume another flavor.", "fr": "Un seul effet de biscuit peut être actif à la fois. Lorsque vous mangez un biscuit, faites attention avant d'en consommer un autre."}
+{"id": 6438, "en": "A blind jump is unlocked by the Captain and forces the ship into an immediate warp jump. The outcome can be very unexpected, potentially dropping your ship into a dangerous sector or somewhere on the other side of the galaxy. Blind jumps can be activated even if the ship has no fuel capsules.", "fr": "Un saut aveugle est débloqué par le capitaine et force le vaisseau à effectuer un saut de distorsion immédiat. Le résultat peut être très inattendu, votre vaisseau pouvant tomber dans un secteur dangereux ou quelque part à l'autre bout de la galaxie. Les sauts aveugles peuvent être activés même si le vaisseau n'a pas de capsules de carburant."}
+{"id": 6439, "en": "Remember to stock up on fuel capsules. Not only are they necessary for jumping the ship, but they can also be used to recharge programs and spawn ammo clips.", "fr": "N'oubliez pas de faire des réserves de capsules de carburant. Non seulement elles sont nécessaires pour faire sauter le vaisseau, mais elles peuvent également être utilisées pour recharger les programmes et faire apparaître des chargeurs de munitions."}
+{"id": 6440, "en": "Not sure how a particular ship system works? You can check out in the in-game manual in the ESC menu at any time!", "fr": "Vous ne savez pas comment fonctionne un système de vaisseau particulier ? Vous pouvez consulter le manuel du jeu dans le menu ESC à tout moment !"}
+{"id": 6441, "en": "Each ship has a different layout. Take some time to familiarize yourself with your ship so you can efficiently maneuver through it.", "fr": "Chaque vaisseau a une disposition différente. Prenez le temps de vous familiariser avec votre vaisseau afin de pouvoir vous y déplacer efficacement."}
+{"id": 6442, "en": "Turning off the core safety toggle on your reactor will prevent your ship from shutting down if it overheats. This can give you more time to use your reactor at a high temperature, which can be very useful in a fight. Be vigilant, however, as the stability of your reactor core will degrade. If it reaches critical instability, it will need to be ejected to prevent the ship from exploding.", "fr": "Désactiver la sécurité du cœur de votre réacteur empêchera votre vaisseau de s'éteindre en cas de surchauffe. Vous aurez ainsi plus de temps pour utiliser votre réacteur à haute température, ce qui peut s'avérer très utile lors d'un combat. Soyez toutefois vigilant, car la stabilité du cœur de votre réacteur se dégrade. S'il atteint une instabilité critique, il faudra l'éjecter pour éviter que le vaisseau n'explose."}
+{"id": 6443, "en": "If you need to eject your reactor core, remember to reroute power from auxiliary systems so you can maneuver your ship away from the unstable core.", "fr": "Si vous devez éjecter votre cœur de réacteur, n'oubliez pas de détourner l'énergie des systèmes auxiliaires afin de pouvoir manœuvrer votre vaisseau loin du cœur instable."}
+{"id": 6444, "en": "If you don't have an antivirus program installed and your ship is infected with a virus, you can restart the ship with the startup switchboard to clear any viruses.", "fr": "Si vous n'avez pas installé de programme antivirus et que votre vaisseau est infecté par un virus, vous pouvez redémarrer le vaisseau à l'aide du tableau de démarrage pour éliminer les virus."}
+{"id": 6445, "en": "When restarting your ship from the startup switchboard, remember to reboot your ship's computer screens by pressing Manual Override at the Scientist's station.", "fr": "Lorsque vous redémarrez votre vaisseau à partir du tableau de démarrage, n'oubliez pas de redémarrer les écrans d'ordinateur de votre vaisseau en appuyant sur Manual Override au poste du scientifique."}
+{"id": 6446, "en": "Sylvassi characters can activate a personal cloak that makes them invisible. This ability will last for a short time or until they fire a weapon.", "fr": "Les Sylvassiens peuvent activer une cape personnelle qui les rend invisibles. Cette capacité dure peu de temps ou jusqu'à ce qu'ils tirent avec une arme."}
+{"id": 6447, "en": "Overcharge gives your ship a boost of power, but too much will cause your ship to shut down.", "fr": "La surcharge donne à votre vaisseau un surcroît de puissance, mais si elle est trop importante, votre vaisseau s'éteindra."}
+{"id": 6448, "en": "Certain asteroids, heat vents, and nearby stars can emit a lot of heat. If your ship stays near the heat source for too long, it will overheat and spawn fires.", "fr": "Certains astéroïdes, bouches de chaleur et étoiles proches peuvent émettre beaucoup de chaleur. Si votre vaisseau reste trop longtemps à proximité d'une source de chaleur, il surchauffera et provoquera des incendies."}
+{"id": 6449, "en": "If a fire on your ship grows too big, it will diminish your oxygen supply. With no oxygen, fires will die out on their own, but crewmembers that need oxygen will be harmed unless they put on exosuits.", "fr": "Si un feu sur votre vaisseau prend trop d'ampleur, il diminuera votre réserve d'oxygène. Sans oxygène, les incendies s'éteindront d'eux-mêmes, mais les membres d'équipage qui ont besoin d'oxygène seront blessés, à moins qu'ils n'enfilent une exosuite."}
+{"id": 6450, "en": "Damaged ship systems can spawn fires. Check the status screen to determine if any of your ship systems are damaged or on fire.", "fr": "Les systèmes endommagés du vaisseau peuvent provoquer des incendies. Vérifiez l'écran d'état pour déterminer si l'un des systèmes de votre vaisseau est endommagé ou en feu."}
+{"id": 6451, "en": "Some turrets and handheld weaponry are better suited for short range combat. Be sure to check the range of your turrets and accuracy of your weapons before getting into a fight.", "fr": "Certaines tourelles et armes de poing sont mieux adaptées au combat à courte distance. Vérifiez la portée de vos tourelles et la précision de vos armes avant d'engager le combat."}
+{"id": 6452, "en": "Coolant is cheap and available at any trading station. Don't hesitate to use it.", "fr": "Le liquide de refroidissement est bon marché et disponible dans toutes les stations commerciales. N'hésitez pas à l'utiliser."}
+{"id": 6453, "en": "When firing the main turret, holding the button until the two red rings are aligned will boost the turret's damage.", "fr": "Lorsque vous tirez sur la tourelle principale, maintenez le bouton enfoncé jusqu'à ce que les deux anneaux rouges soient alignés pour augmenter les dégâts de la tourelle."}
+{"id": 6454, "en": "Missions received through long range comms are usually timed and must be completed within a certain jump count. Keep an eye on your remaining jumps under the mission's objectives in your TAB menu.", "fr": "Les missions reçues par le biais des communications à longue distance sont généralement chronométrées et doivent être accomplies dans un certain nombre de sauts. Gardez un œil sur vos sauts restants sous les objectifs de la mission dans votre menu TAB."}
+{"id": 6455, "en": "Mission items are usually labeled blue and cannot be sold at shops. If your mission requires an item that isn't labeled blue, remember not to sell it!", "fr": "Les objets de mission sont généralement marqués en bleu et ne peuvent pas être vendus dans les magasins. Si votre mission requiert un objet qui n'est pas étiqueté en bleu, n'oubliez pas de ne pas le vendre !"}
+{"id": 6456, "en": "The atomizer is for extracting chemical compounds from research materials. Research materials will indicate which compounds they contain under their description in the inventory menu. If an item doesn't contain a compound for research, it won't increase the reserves of your research station.", "fr": "L'atomiseur permet d'extraire des composés chimiques des matériaux de recherche. Les matériaux de recherche indiquent les composés qu'ils contiennent sous leur description dans le menu d'inventaire. Si un objet ne contient pas de composé pour la recherche, il n'augmentera pas les réserves de votre station de recherche."}
+{"id": 6457, "en": "In addition to checking cargo, inspection bots will search lockers and your personal inventory for contraband. You can use the atomizer to get rid of illicit items before a cargo inspection.", "fr": "En plus de vérifier la cargaison, les robots d'inspection fouillent les casiers et votre inventaire personnel à la recherche de produits de contrebande. Vous pouvez utiliser l'atomiseur pour vous débarrasser des objets illicites avant l'inspection de la cargaison."}
+{"id": 6458, "en": "It's often a good idea to have more than one shield boost program installed on your ship.", "fr": "C'est souvent une bonne idée d'avoir plus d'un programme de renforcement du bouclier installé sur votre vaisseau."}
+{"id": 6459, "en": "Check the status screen to determine if an enemy ship has a functioning life support system before boarding without an exosuit.", "fr": "Vérifiez l'écran d'état pour déterminer si un vaisseau ennemi dispose d'un système de survie en état de marche avant de monter à bord sans exosuit."}
+{"id": 6460, "en": "An enemy ship can be boarded when its shield drops below its quantum shield percentage.", "fr": "Un vaisseau ennemi peut être abordé lorsque son bouclier tombe en dessous de son pourcentage de bouclier quantique."}
+{"id": 6461, "en": "An instant antivirus program is always useful, even if your ship has a high cyberdefense rating.", "fr": "Un programme antivirus instantané est toujours utile, même si votre vaisseau a un indice de cyberdéfense élevé."}
+{"id": 6462, "en": "When your ship has high enough detection of an enemy vessel, the Scientist can use sensor exploits to target damage and weaken the enemy ship.", "fr": "Lorsque votre vaisseau détecte suffisamment bien un vaisseau ennemi, le scientifique peut utiliser les exploits des capteurs pour endommager et affaiblir le vaisseau ennemi."}
+{"id": 6463, "en": "Every warp or expending of a fuel capsule spawns a clip in the ammo crate. Remember to pick it up.", "fr": "Chaque distorsion ou dépense d'une capsule de carburant fait apparaître un chargeur dans la caisse de munitions. N'oubliez pas de le ramasser."}
+{"id": 6464, "en": "The Scientist can drag and drop programs to change their recharge order.", "fr": "Le scientifique peut faire glisser et déposer des programmes pour modifier leur ordre de recharge."}
+{"id": 6465, "en": "The Sylvassi Cypher Lab can teach you how to solve the cyphers found on planets across the galaxy.", "fr": "Le laboratoire de cryptage Sylvassien peut vous apprendre à résoudre les cryptogrammes trouvés sur les planètes de la galaxie."}
+{"id": 6466, "en": "The healing beam rifle can heal multiple crewmembers at the same time and can also damage enemies.", "fr": "Le fusil à rayon de guérison peut soigner plusieurs membres d'équipage en même temps et peut également endommager les ennemis."}
+{"id": 6467, "en": "Weapon damage is increased if you get a headshot on an enemy.", "fr": "Les dégâts de l'arme sont augmentés si vous tirez sur la tête d'un ennemi."}
+{"id": 6468, "en": "A glowing blue spot on an asteroid or space debris indicates that there is a research material or experience. The Scientist can pick it up by firing a sensor probe at it.", "fr": "Un point bleu lumineux sur un astéroïde ou un débris spatial indique la présence d'un matériau de recherche ou d'une expérience. Le scientifique peut le récupérer en tirant une sonde sur l'astéroïde."}
+{"id": 6469, "en": "As a Colonial Union or W.D. Corporation crew, you will lose reputation with your faction if you refuse mission orders from your headquarters.", "fr": "En tant qu'équipage de la Colonial Union ou de la W.D. Corporation, vous perdrez votre réputation auprès de votre faction si vous refusez les ordres de mission de votre quartier général."}
+{"id": 6470, "en": "Chaos increases the overall difficulty of the game. Chaos is gained by warping, fighting other ships, and performing acts of piracy.", "fr": "Le chaos augmente la difficulté générale du jeu. Le chaos s'obtient en se déformant, en combattant d'autres vaisseaux et en effectuant des actes de piraterie."}
+{"id": 6471, "en": "The list of ships on the upper right of the screen are arranged by distance from your position. The first ship on that list is the one you are currently closest to.", "fr": "La liste des vaisseaus en haut à droite de l'écran est classée en fonction de la distance qui vous sépare de votre position. Le premier vaisseau de cette liste est celui dont vous êtes actuellement le plus proche."}
+{"id": 6472, "en": "The captain button in the crew section of the TAB menu can be used by the Captain to adjust the crew's allowance and create custom orders.", "fr": "Le bouton du capitaine dans la section équipage du menu TAB peut être utilisé par le capitaine pour ajuster l'allocation de l'équipage et créer des commandes personnalisées."}
+{"id": 6473, "en": "Inventory items have weight. Exceeding your weight limit will lower your speed and prevent you from sprinting.", "fr": "Les articles d'inventaire ont un poids. Si vous dépassez votre limite de poids, votre vitesse diminuera et vous ne pourrez plus sprinter."}
+{"id": 6474, "en": "HealBerryAOE", "fr": "HealBerryAOE"}
+{"id": 6475, "en": "SpicyAOE", "fr": "SpicyAOE"}
+{"id": 6476, "en": "Molten", "fr": "Fondu"}
+{"id": 6477, "en": "Accuracy Bonus", "fr": "Bonus de précision"}
+{"id": 6478, "en": "Damage Resistance", "fr": "Résistance aux dégâts"}
+{"id": 6479, "en": "Fire Resistance", "fr": "Résistance au feu"}
+{"id": 6480, "en": "Health Regen", "fr": "Régénération de la santé"}
+{"id": 6481, "en": "Oxygen Bonus", "fr": "Bonus d'oxygène"}
+{"id": 6482, "en": "Long Life Biscuit", "fr": "Biscuit de longue vie"}
+{"id": 6483, "en": "Stamina Bonus", "fr": "Bonus d'endurance"}
+{"id": 6484, "en": "Super Full", "fr": "Super plein"}
+{"id": 6485, "en": "Increased weapon damage", "fr": "Augmentation des dégâts des armes"}
+{"id": 6486, "en": "Increased biscuit sell success chance", "fr": "Augmentation des chances de succès de la vente de biscuits"}
+{"id": 6487, "en": "Damaging nearby enemies", "fr": "Dégâts aux ennemis proches"}
+{"id": 6488, "en": "Increased grenade damage", "fr": "Augmentation des dégâts de la grenade"}
+{"id": 6489, "en": "Gun Cooling", "fr": "Refroidissement des armes"}
+{"id": 6490, "en": "Lifesteal", "fr": "Soin de vie"}
+{"id": 6500, "en": "[STR0] revived you!", "fr": "[STR0] vous a ressuscité !"}
+{"id": 6501, "en": "Environment", "fr": "Environnement"}
+{"id": 6502, "en": "No Oxygen", "fr": "Pas d'oxygène"}
+{"id": 6503, "en": "Radiation", "fr": "Radiation"}
+{"id": 6535, "en": "Health", "fr": "Santé"}
+{"id": 6536, "en": "[PL] has died [STR0]", "fr": "[PL] est mort [STR0]"}
+{"id": 6537, "en": "Pawn:", "fr": "Pion :"}
+{"id": 6538, "en": "Pos:", "fr": "Pos :"}
+{"id": 6539, "en": "LocalPos:", "fr": "LocalPos :"}
+{"id": 6540, "en": "Parent:", "fr": "Parent :"}
+{"id": 6541, "en": "PullLever", "fr": "Tireur"}
+{"id": 6542, "en": "DropItem", "fr": "DropItem"}
+{"id": 6543, "en": "PushButton", "fr": "Bouton-poussoir"}
+{"id": 6544, "en": "PushButton2", "fr": "Bouton-poussoir2"}
+{"id": 6545, "en": "Armored", "fr": "Blindé"}
+{"id": 6546, "en": "Swift", "fr": "Rapide"}
+{"id": 6547, "en": "Brutal", "fr": "Brutal"}
+{"id": 6548, "en": "Elite", "fr": "Élite"}
+{"id": 6549, "en": "Silent", "fr": "Silencieux"}
+{"id": 6550, "en": "Irradiated", "fr": "Irradié"}
+{"id": 6551, "en": "Neglected", "fr": "Négligé"}
+{"id": 6552, "en": "Secure", "fr": "Sécurisé"}
+{"id": 6553, "en": "Vulnerable", "fr": "Vulnérable"}
+{"id": 6554, "en": "Corrupted", "fr": "Corrompu"}
+{"id": 6555, "en": "Legendary", "fr": "Légendaire"}
+{"id": 6556, "en": "Reputable", "fr": "Réputé"}
+{"id": 6557, "en": "Evasive", "fr": "Evasif"}
+{"id": 6558, "en": "Frozen", "fr": "Gelé"}
+{"id": 6559, "en": "( TALKING )", "fr": "( PARLER )"}
+{"id": 6560, "en": "X2", "fr": "X2"}
+{"id": 6582, "en": "[PL] has processed some scrap (+[STR0])", "fr": "[PL] a traité de la ferraille (+[STR0])"}
+{"id": 6593, "en": "Range (m)", "fr": "Portée (m)"}
+{"id": 6594, "en": "Aim Factor", "fr": "Facteur de visée"}
+{"id": 6595, "en": "Destroy Systems", "fr": "Détruire les systèmes"}
+{"id": 6596, "en": "Claim Ship", "fr": "Réclamer le vaisseau"}
+{"id": 6597, "en": "Fight Enemy Crew", "fr": "Combattre l'équipage ennemi"}
+{"id": 6598, "en": "Program Priority", "fr": "Priorité du programme"}
+{"id": 6599, "en": "Engineering", "fr": "Ingénierie"}
+{"id": 6600, "en": "Science Lab", "fr": "Laboratoire scientifique"}
+{"id": 6614, "en": "s Stuff", "fr": "Matériel de l'équipage"}
+{"id": 6616, "en": "You have been kicked from the game!", "fr": "Vous avez été expulsé du jeu !"}
+{"id": 6620, "en": "[STR0]", "fr": "[STR0]"}
+{"id": 6621, "en": "[STR1]", "fr": "[STR1]"}
+{"id": 6626, "en": "[PL] has dropped an item: [STR0]", "fr": "[PL] a déposé un objet : [STR0]"}
+{"id": 6627, "en": "<color='#{0}'>[{1}]</color>", "fr": "<color='#{0}'>[{1}]</color>"}
+{"id": 6628, "en": "[PL]", "fr": "[PL]"}
+{"id": 6648, "en": "DATA FRAGMENT COLLECTED", "fr": "FRAGMENT DE DONNÉES COLLECTÉ"}
+{"id": 6649, "en": "Gained", "fr": "Obtenu"}
+{"id": 6650, "en": "Prefabs/WarpInEffect", "fr": "Préfabriqués/Effet d'escamotage"}
+{"id": 6651, "en": "Prefabs/WarpOutEffect", "fr": "Prefabs/WarpOutEffect"}
+{"id": 6652, "en": "[STR2]", "fr": "[STR2] [STR3] [STR4] [STR5] [STR6] [STR7]"}
+{"id": 6653, "en": "[STR3]", "fr": "[STR3]"}
+{"id": 6654, "en": "<color='#", "fr": "<color='#"}
+{"id": 6655, "en": ">[", "fr": ">["}
+{"id": 6656, "en": "]</color>$", "fr": "]</color>$"}
+{"id": 6657, "en": ">", "fr": ">"}
+{"id": 6658, "en": "</color>$", "fr": "</color>$"}
+{"id": 6659, "en": "REP", "fr": "REP"}
+{"id": 6660, "en": "approved_npc_names", "fr": "approved_npc_names"}
+{"id": 6661, "en": "StarmapNetworkUpdatePlayer", "fr": "Joueur de mise à jour du réseau StarmapNetwork"}
+{"id": 6662, "en": "CHAOS EVENT:", "fr": "CHAOS EVENT :"}
+{"id": 6663, "en": "Inf gained", "fr": "Inf gagnée"}
+{"id": 6664, "en": "sectors", "fr": "secteurs"}
+{"id": 6665, "en": "MISSION COMPLETED", "fr": "MISSION TERMINÉE"}
+{"id": 6666, "en": "MSN", "fr": "MSN"}
+{"id": 6667, "en": "NEW MISSION ACCEPTED", "fr": "NOUVELLE MISSION ACCEPTÉE"}
+{"id": 6668, "en": "[PL] has started mission: [STR0]", "fr": "[PL] a commencé la mission : [STR0]"}
+{"id": 6669, "en": "NONE", "fr": "AUCUN"}
+{"id": 6701, "en": "male", "fr": "homme"}
+{"id": 6702, "en": "female", "fr": "féminin"}
+{"id": 6703, "en": "The Hunter", "fr": "Le chasseur"}
+{"id": 6704, "en": "Bounty Hunter Detected", "fr": "Chasseur de primes détecté"}
+{"id": 6705, "en": "[SHIP]", "fr": "[SHIP]"}
+{"id": 6706, "en": "[PL] is using a lot of ammo", "fr": "[PL] utilise beaucoup de munitions"}
+{"id": 6707, "en": "FB_WIN", "fr": "FB_WIN"}
+{"id": 6708, "en": "FB Command", "fr": "Commande FB"}
+{"id": 6709, "en": "FB_SURVIVE", "fr": "FB_SURVIVE"}
+{"id": 6710, "en": "Attempting to get verified", "fr": "Tentative de vérification"}
+{"id": 6711, "en": "DMG", "fr": "DMG"}
+{"id": 6712, "en": "Kicking unverified player:", "fr": "Donner un coup de pied à un joueur non vérifié :"}
+{"id": 6713, "en": "Crew Alignment Lost", "fr": "Alignement de l'équipage perdu"}
+{"id": 6714, "en": "Your ship has been flagged due to rep loss!", "fr": "Votre vaisseau a été signalé en raison d'une perte de réputation !"}
+{"id": 6715, "en": "CHAOS LEVEL HAS INCREASED", "fr": "LE NIVEAU DE CHAOS A AUGMENTÉ"}
+{"id": 6716, "en": "CHS", "fr": "CHS"}
+{"id": 6717, "en": "Simple Combat Bot Player", "fr": "Simple Combat Bot Player"}
+{"id": 6718, "en": "Captain Spriggs", "fr": "Capitaine Spriggs"}
+{"id": 6719, "en": "The Alchemist", "fr": "L'alchimiste"}
+{"id": 6720, "en": "Resolution", "fr": "Résolution"}
+{"id": 6721, "en": "Yolsef", "fr": "Yolsef"}
+{"id": 6723, "en": "CapBot", "fr": "CapBot"}
+{"id": 6724, "en": "PiBot", "fr": "PiBot"}
+{"id": 6725, "en": "SciBot", "fr": "SciBot"}
+{"id": 6726, "en": "WeapBot", "fr": "WeapBot"}
+{"id": 6727, "en": "EngBot", "fr": "EngBot"}
+{"id": 6745, "en": "[STR0] has left the crew!", "fr": "[STR0] a quitté l'équipage !"}
+{"id": 6747, "en": "has joined the crew!", "fr": "a rejoint l'équipage !"}
+{"id": 6748, "en": "[&%~[C", "fr": "[&%~[C"}
+{"id": 6749, "en": "]&%~]", "fr": "]&%~]"}
+{"id": 6750, "en": "is now", "fr": "est maintenant"}
+{"id": 6751, "en": "[&%~[C", "fr": "[&%~[C"}
+{"id": 6752, "en": "The", "fr": "Le"}
+{"id": 6753, "en": "is now The", "fr": "est maintenant Le"}
+{"id": 6754, "en": "...", "fr": "..."}
+{"id": 6755, "en": "<", "fr": "<"}
+{"id": 6756, "en": "> ]&%~]:", "fr": "> ]&%~] :"}
+{"id": 6757, "en": "ENEMY SHIP CLAIM REMOVED!", "fr": "LA REVENDICATION DU NAVIRE ENNEMI A ETE SUPPRIMEE !"}
+{"id": 6758, "en": "SHIP CLAIMED!", "fr": "VAISSEAU REVENDIQUÉ !"}
+{"id": 6759, "en": "YOUR SHIP HAS BEEN STOLEN!", "fr": "VOTRE VAISSEAU A ÉTÉ VOLÉ !"}
+{"id": 6762, "en": "[PL] turned off the Oxygen Gen. aux system", "fr": "[PL] a désactivé le système auxiliaire de production d'oxygène."}
+{"id": 6763, "en": "[PL] turned off the Cyberdefense aux system", "fr": "[PL] a désactivé le système auxiliaire de cyberdéfense"}
+{"id": 6764, "en": "[PL] has set the reactor coolant pump to highest setting", "fr": "[PL] a réglé la pompe de refroidissement du réacteur sur le réglage le plus élevé."}
+{"id": 6765, "en": "CREW IS NOW LEVEL", "fr": "L'ÉQUIPAGE EST MAINTENANT AU NIVEAU"}
+{"id": 6766, "en": "!", "fr": "!"}
+{"id": 6767, "en": "Crew level has increased to [STR0]", "fr": "Le niveau de l'équipage est passé à [STR0]."}
+{"id": 6768, "en": "LVL", "fr": "LVL"}
+{"id": 6769, "en": "[PL] has paused the jump prep", "fr": "[PL] a mis en pause la préparation du saut"}
+{"id": 6770, "en": "[PL] has started jump prep", "fr": "[PL] a commencé la préparation du saut"}
+{"id": 6771, "en": "[PL] has executed a program: [STR0]", "fr": "[PL] a exécuté un programme : [STR0]"}
+{"id": 6777, "en": "[PL] has jumped the ship", "fr": "[PL] a sauté du vaisseau"}
+{"id": 6778, "en": "Low fuel warning! Only [STR0] fuel left!", "fr": "Alerte de manque de carburant ! Il ne reste que [STR0] de carburant !"}
+{"id": 6779, "en": "[PL] has changed the distress signal", "fr": "[PL] a modifié le signal de détresse"}
+{"id": 6780, "en": "[PL] has activated the distress signal", "fr": "[PL] a activé le signal de détresse"}
+{"id": 6781, "en": "[PL] has deactivated the distress signal", "fr": "[PL] a désactivé le signal de détresse"}
+{"id": 6782, "en": "[PL] has manually charged programs", "fr": "[PL] a chargé manuellement les programmes"}
+{"id": 6783, "en": "Bot", "fr": "Bot"}
+{"id": 6811, "en": "Ship has automatically shutdown due to active virus overload", "fr": "Le vaisseau s'est arrêté automatiquement en raison d'une surcharge de virus actifs."}
+{"id": 6813, "en": "[PL] has enabled reactor safety", "fr": "[PL] a activé la sécurité du réacteur"}
+{"id": 6814, "en": "[PL] has disabled reactor safety", "fr": "[PL] a désactivé la sécurité du réacteur"}
+{"id": 6815, "en": "shut down", "fr": "éteint"}
+{"id": 6816, "en": "started up", "fr": "a démarré"}
+{"id": 6817, "en": "[PL] [STR0] the ship", "fr": "[PL] [STR0] le vaisseau"}
+{"id": 6818, "en": "[PL] [STR0] the warp core", "fr": "[PL] [STR0] le cœur de distorsion"}
+{"id": 6819, "en": "[PL] [STR0] the shields", "fr": "[PL] [STR0] les boucliers"}
+{"id": 6820, "en": "SetStartupSwitchStatus blocked!", "fr": "SetStartupSwitchStatus bloqué !"}
+{"id": 6821, "en": "SetLastStartWarpPrimeTime blocked!", "fr": "SetLastStartWarpPrimeTime bloqué !"}
+{"id": 6822, "en": "SetLastStartBootTime blocked!", "fr": "SetLastStartBootTime bloqué !"}
+{"id": 6823, "en": "SetCrewControlStatus blocked!", "fr": "SetCrewControlStatus bloqué !"}
+{"id": 6824, "en": "[PL] has attacked a friendly ship system: Engineering", "fr": "[PL] a attaqué un système de vaisseau ami : Ingénierie"}
+{"id": 6825, "en": "[PL] has attacked a friendly ship system: Weapons", "fr": "[PL] a attaqué un système de bord ami : Armes"}
+{"id": 6826, "en": "[PL] has attacked a friendly ship system: Life Support", "fr": "[PL] a attaqué un système de bord ami : Systèmes de survie"}
+{"id": 6827, "en": "[PL] has attacked a friendly ship system: Computer Sys", "fr": "[PL] a attaqué un système de bord ami : Système informatique"}
+{"id": 6828, "en": "[PL] has launched the nuclear device: [STR0]", "fr": "[PL] a lancé l'engin nucléaire : [STR0]"}
+{"id": 6830, "en": "[PL] has detonated the nuclear device: [STR0]", "fr": "[PL] a fait exploser l'engin nucléaire : [STR0]"}
+{"id": 6833, "en": "-$", "fr": "-$"}
+{"id": 6834, "en": "Level", "fr": "Niveau"}
+{"id": 6835, "en": "Airlock", "fr": "Sas"}
+{"id": 6836, "en": "Hidden Cargo", "fr": "Cargaison cachée"}
+{"id": 6837, "en": "Processor", "fr": "Processeur"}
+{"id": 6838, "en": "Hull Plating", "fr": "Plaque de coque"}
+{"id": 6839, "en": "Main Turret", "fr": "Tourelle principale"}
+{"id": 6840, "en": "Nuclear Device", "fr": "Dispositif nucléaire"}
+{"id": 6841, "en": "O2 Generator", "fr": "Générateur d'O2"}
+{"id": 6842, "en": "Warp Drive Program", "fr": "Programme Warp Drive"}
+{"id": 6843, "en": "Sensor Array", "fr": "Réseau de capteurs"}
+{"id": 6844, "en": "Shield Generator", "fr": "Générateur de bouclier"}
+{"id": 6845, "en": "Teleporter", "fr": "Téléporteur"}
+{"id": 6846, "en": "Main Thruster", "fr": "Propulseur principal"}
+{"id": 6847, "en": "Missile Silo", "fr": "Silo à missiles"}
+{"id": 6848, "en": "Auto Turret", "fr": "Tourelle automatique"}
+{"id": 6849, "en": "Virus", "fr": "Virus"}
+{"id": 6850, "en": "Warp Drive", "fr": "Moteur de distorsion"}
+{"id": 6851, "en": "Special Component", "fr": "Composant spécial"}
+{"id": 6852, "en": "Inertia Thruster", "fr": "Propulseur d'inertie"}
+{"id": 6853, "en": "Maneuvering Thruster", "fr": "Propulseur de manœuvre"}
+{"id": 6854, "en": "Captain's Chair", "fr": "Chaise du capitaine"}
+{"id": 6855, "en": "Extractor", "fr": "Extracteur"}
+{"id": 6856, "en": "Recipe Module", "fr": "Module de recette"}
+{"id": 6857, "en": "Biscuit Bomb", "fr": "Bombe à biscuits"}
+{"id": 6858, "en": "Sensor Dish", "fr": "Plat à capteurs"}
+{"id": 6859, "en": "Cloaking System", "fr": "Système d'occultation"}
+{"id": 6860, "en": "Polytech Module", "fr": "Module Polytech"}
+{"id": 6871, "en": "Must complete Find the Lost Colony campaign", "fr": "Doit terminer la campagne Find the Lost Colony (Trouver la colonie perdue)"}
+{"id": 6874, "en": "ATOMIZER", "fr": "ATOMISEUR"}
+{"id": 6877, "en": "READY", "fr": "PRÊT"}
+{"id": 6892, "en": "Load Research Samples into the Atomizer to discover and research new talents", "fr": "Charge des échantillons de recherche dans l'atomiseur pour découvrir et rechercher de nouveaux talents."}
+{"id": 6893, "en": "ResearchDesc", "fr": "RechercheDesc"}
+{"id": 6894, "en": "ResearchButton", "fr": "Bouton de recherche"}
+{"id": 6895, "en": "RESEARCH", "fr": "RECHERCHE"}
+{"id": 6896, "en": "[PL] has revealed the crew's reputation", "fr": "[PL] a révélé la réputation de l'équipage."}
+{"id": 6905, "en": "EXTRACTION TARGET", "fr": "CIBLE D'EXTRACTION"}
+{"id": 6906, "en": "Salvage_ShipName", "fr": "Nom_du_vaisseau_de_sauvetage"}
+{"id": 6907, "en": "SHIPNAME", "fr": "NOM DU NAVIRE"}
+{"id": 6908, "en": "Can't upgrade components without Component Upgrader talent", "fr": "Impossible d'améliorer les composants sans le talent d'améliorateur de composants"}
+{"id": 6909, "en": "Can't upgrade components without repair depot", "fr": "Impossible d'améliorer les composants sans le dépôt de réparation"}
+{"id": 6910, "en": "Component can't be upgraded any more!", "fr": "Les composants ne peuvent plus être améliorés !"}
+{"id": 6911, "en": "Can't afford component upgrade. Process more scrap!", "fr": "On ne peut pas se permettre d'améliorer les composants. Traitez plus de ferraille !"}
+{"id": 6912, "en": "Can't upgrade items without Item Upgrader talent", "fr": "Impossible d'améliorer les objets sans le talent Amélioration d'objet"}
+{"id": 6913, "en": "Item can't be upgraded any more!", "fr": "L'objet ne peut plus être amélioré !"}
+{"id": 6914, "en": "Can't afford item upgrade. Process more scrap!", "fr": "Vous ne pouvez pas vous permettre d'améliorer l'objet. Traitez plus de ferraille !"}
+{"id": 6918, "en": "ITEM UPGRADER", "fr": "AMÉLIORATION D'OBJET"}
+{"id": 6924, "en": "UPGRADE", "fr": "AMÉLIORATION"}
+{"id": 6928, "en": "INSTALLED COMPONENT UPGRADER", "fr": "COMPOSANT INSTALLÉ UPGRADER"}
+{"id": 6931, "en": "next", "fr": "suivant"}
+{"id": 6934, "en": "prev", "fr": "précédent"}
+{"id": 6935, "en": "StarSalvage Systems", "fr": "Systèmes StarSalvage"}
+{"id": 6937, "en": "EXTRACT", "fr": "EXTRAIT"}
+{"id": 6938, "en": "[PL] has begun to prime the cloaking system", "fr": "[PL] a commencé à amorcer le système d'occultation"}
+{"id": 6939, "en": "[PL] has cancelled priming the cloaking system", "fr": "[PL] a annulé l'amorçage du système d'occultation"}
+{"id": 6940, "en": "[PL] has activated the cloaking system", "fr": "[PL] a activé le système d'occultation"}
+{"id": 6941, "en": "->", "fr": "->"}
+{"id": 6942, "en": "No Item", "fr": "Pas d'objet"}
+{"id": 6943, "en": "Process scrap to upgrade items!", "fr": "Traiter la ferraille pour améliorer les objets !"}
+{"id": 6944, "en": "Place an Item here to Upgrade it!", "fr": "Placez un objet ici pour l'améliorer !"}
+{"id": 6945, "en": "No extractor installed", "fr": "Aucun extracteur installé"}
+{"id": 6946, "en": "UPG", "fr": "UPG"}
+{"id": 6947, "en": "[[STR0]] upgraded by [STR1] to Level [STR2]", "fr": "[[STR0]] amélioré par [STR1] au niveau [STR2]"}
+{"id": 6948, "en": "[PL] has upgraded an item: [STR0]", "fr": "[PL] a amélioré un objet : [STR0]"}
+{"id": 6949, "en": "[PL] has upgraded a component: [STR0]", "fr": "[PL] a amélioré un composant : [STR0]"}
+{"id": 6950, "en": "[STR0] UPGRADED!", "fr": "[STR0] AMÉLIORÉ !"}
+{"id": 6951, "en": "EXT", "fr": "EXT"}
+{"id": 6952, "en": "Extraction of [[STR0]] attempted by [STR1]", "fr": "Extraction de [[STR0]] tentée par [STR1]"}
+{"id": 6953, "en": "[PL] has attempted to extract: [STR0]", "fr": "[PL] a tenté d'extraire : [STR0]"}
+{"id": 6954, "en": "killed", "fr": "tué"}
+{"id": 6955, "en": "SCIENCE LAB", "fr": "LABORATOIRE SCIENTIFIQUE"}
+{"id": 6956, "en": "Shield Processors", "fr": "Processeurs de bouclier"}
+{"id": 6957, "en": "Other Processors", "fr": "Autres processeurs"}
+{"id": 6958, "en": "WEAPONS", "fr": "ARMES"}
+{"id": 6959, "en": "Auto Turrets", "fr": "Tourelles automatiques"}
+{"id": 6960, "en": "ENGINEERING", "fr": "INGÉNIERIE"}
+{"id": 6961, "en": "Main Thrusters", "fr": "Propulseurs principaux"}
+{"id": 6962, "en": "Rotational Thrusters", "fr": "Propulseurs de rotation"}
+{"id": 6963, "en": "Maneuver Thrusters", "fr": "Propulseurs de manœuvre"}
+{"id": 6964, "en": "LIFE SUPPORT", "fr": "SOUTIEN DE LA VIE"}
+{"id": 6965, "en": "[PL] has changed component power settings", "fr": "[PL] a changé les paramètres de puissance des composants"}
+{"id": 6968, "en": "Fill Area", "fr": "Zone de remplissage"}
+{"id": 6969, "en": "Usage", "fr": "Utilisation"}
+{"id": 6970, "en": "Fill", "fr": "Remplissage"}
+{"id": 6971, "en": "Handle Area", "fr": "Zone de la poignée"}
+{"id": 6972, "en": "PowerBarTriangle", "fr": "PowerBarTriangle"}
+{"id": 6973, "en": "PowerBarLabel", "fr": "PowerBarLabel"}
+{"id": 6974, "en": "ShipWorldUICanvas", "fr": "ShipWorldUICanvas"}
+{"id": 6975, "en": "DialogueBG", "fr": "DialogueBG"}
+{"id": 6976, "en": "CloseCommsBtnGO", "fr": "CloseCommsBtnGO"}
+{"id": 6977, "en": "DialogueChoiceBGTimer", "fr": "DialogueChoiceBGTimer"}
+{"id": 6978, "en": "RevealCrewRep", "fr": "RevealCrewRep"}
+{"id": 6979, "en": "RevealCrewRepText", "fr": "RevealCrewRepText"}
+{"id": 6980, "en": "Reveal Crew Rep", "fr": "Révéler le représentant de l'équipage"}
+{"id": 6981, "en": "dialogueGlitch", "fr": "dialogueGlitch"}
+{"id": 6982, "en": "DialogueTitle", "fr": "DialogueTitle"}
+{"id": 6983, "en": "DialogueTextRight", "fr": "DialogueTextRight"}
+{"id": 6984, "en": "DialogueText", "fr": "DialogueText"}
+{"id": 6990, "en": "Warp", "fr": "Déformation"}
+{"id": 6991, "en": "Targeting", "fr": "Ciblage"}
+{"id": 6994, "en": "[PL] has started new research: [STR0]", "fr": "[PL] a commencé une nouvelle recherche : [STR0]"}
+{"id": 6995, "en": "Open", "fr": "Ouvert"}
+{"id": 6996, "en": "drtc", "fr": "drtc"}
+{"id": 6998, "en": "Researching", "fr": "Recherche"}
+{"id": 6999, "en": "more warp drive activations needed to complete research.", "fr": "plus d'activations du moteur de distorsion nécessaires pour compléter la recherche."}
+{"id": 7000, "en": "[STR0] added one more fuel capsule!", "fr": "[STR0] ajout d'une capsule de carburant supplémentaire !"}
+{"id": 7001, "en": "$$<size=9>", "fr": "$$<size=9>"}
+{"id": 7002, "en": "RANKS", "fr": "RANKS"}
+{"id": 7003, "en": "RANK", "fr": "RANG"}
+{"id": 7004, "en": "ALL CLASS TALENT", "fr": "TALENT TOUTES CLASSES"}
+{"id": 7005, "en": "CAPTAIN TALENT", "fr": "CAPITAINE TALENT"}
+{"id": 7006, "en": "PILOT TALENT", "fr": "TALENT DE PILOTE"}
+{"id": 7007, "en": "SCIENTIST TALENT", "fr": "TALENT DE SCIENTIFIQUE"}
+{"id": 7008, "en": "WEAPONS SPECIALIST TALENT", "fr": "TALENT DE SPÉCIALISTE EN ARMEMENT"}
+{"id": 7009, "en": "ENGINEER TALENT", "fr": "TALENT D'INGÉNIEUR"}
+{"id": 7010, "en": "Warp Charges To Research:", "fr": "Frais de distorsion pour la recherche :"}
+{"id": 7011, "en": "</size>", "fr": "</size>"}
+{"id": 7012, "en": "Crew Rep Is Revealed", "fr": "Le représentant de l'équipage est révélé"}
+{"id": 7029, "en": "Cloak$NEEDS POWER", "fr": "Cloak$NEEDS POWER"}
+{"id": 7030, "en": "Cloak$SHIELDS < 50%", "fr": "Cloak$SHIELDS < 50%"}
+{"id": 7031, "en": "Cloak$ACTIVE", "fr": "Cloak$ACTIVE"}
+{"id": 7032, "en": "Cloak$INACTIVE", "fr": "Cloak$INACTIVE"}
+{"id": 7033, "en": "Cloak$PRIMING", "fr": "Cloak$PRIMING"}
+{"id": 7034, "en": "Cloak$READY", "fr": "Cloak$READY"}
+{"id": 7035, "en": "INTRUDER ALARM!", "fr": "ALARME INTRUSION !"}
+{"id": 7052, "en": "+1 XP (unvisited sector)", "fr": "+1 XP (secteur non visité)"}
+{"id": 7053, "en": "[STR0] generated 1 processed scrap", "fr": "[STR0] a généré 1 rebut traité"}
+{"id": 7062, "en": "Shield", "fr": "Bouclier"}
+{"id": 7064, "en": "[PL] has damaged the ship in a collision", "fr": "[PL] a endommagé le vaisseau lors d'une collision"}
+{"id": 7069, "en": "[ff0000]Combat Level: ???[-]", "fr": "[ff0000]Niveau de combat : ? ??[-]"}
+{"id": 7070, "en": "[ffff00]", "fr": "[ffff00]"}
+{"id": 7071, "en": "[ff0000]", "fr": "[ff0000]"}
+{"id": 7072, "en": "[00ff00]", "fr": "[00ff00]"}
+{"id": 7073, "en": "Combat Level:", "fr": "Niveau de combat :"}
+{"id": 7074, "en": "[-]", "fr": "[-]"}
+{"id": 7075, "en": "[ff0000]ELEVATED RADIATION LEVELS![-]", "fr": "[ff0000]NIVEAUX DE RADIATION ELEVES ![-]"}
+{"id": 7076, "en": "is a match to ship type:", "fr": "correspond au type de vaisseau :"}
+{"id": 7077, "en": "appears to be abandoned.", "fr": "semble etre abandonne."}
+{"id": 7078, "en": "is potentially hostile and armed.", "fr": "est potentiellement hostile et armé."}
+{"id": 7079, "en": "is currently hostile and armed.", "fr": "est actuellement hostile et armé."}
+{"id": 7080, "en": "can detect you.", "fr": "peut vous détecter."}
+{"id": 7081, "en": "can't detect you.", "fr": "ne peut pas vous détecter."}
+{"id": 7082, "en": "is this vessel.", "fr": "est ce vaisseau."}
+{"id": 7083, "en": "is registered as", "fr": "est enregistré comme"}
+{"id": 7084, "en": "has been flagged", "fr": "a reçu un pavillon"}
+{"id": 7085, "en": "is a match to GX entry", "fr": "correspond à l'entrée GX"}
+{"id": 7086, "en": "has armored mod", "fr": "dispose d'un module blindé"}
+{"id": 7087, "en": "has comms mod", "fr": "dispose d'un module de communication"}
+{"id": 7088, "en": "has swift mod", "fr": "a le module swift"}
+{"id": 7089, "en": "has turret mod", "fr": "a le mode tourelle"}
+{"id": 7090, "en": "has elite mod", "fr": "a le mode élite"}
+{"id": 7091, "en": "has missile defense mod", "fr": "a le module de défense antimissile"}
+{"id": 7092, "en": "has reckless mod", "fr": "a le module reckless"}
+{"id": 7093, "en": "has reputable mod", "fr": "a le mode réputé"}
+{"id": 7094, "en": "has silent mod", "fr": "a un module silencieux"}
+{"id": 7095, "en": "has unknown modification", "fr": "a une modification inconnue"}
+{"id": 7096, "en": "Ship", "fr": "Vaisseau"}
+{"id": 7097, "en": "Error setting up shipDeterministicRand: PersistantShipInfo == null", "fr": "Erreur lors de la mise en place de shipDeterministicRand : PersistantShipInfo == null"}
+{"id": 7098, "en": "Error setting up shipDeterministicRand: PersistantShipInfo.MyCurrentSector == null", "fr": "Erreur lors de la mise en place de shipDeterministicRand : PersistantShipInfo.MyCurrentSector == null"}
+{"id": 7099, "en": "exterior", "fr": "extérieur"}
+{"id": 7100, "en": "Hull_Collider_Virtual", "fr": "Hull_Collider_Virtuel"}
+{"id": 7101, "en": "SHIELDS", "fr": "ÉCLAIRAGES"}
+{"id": 7102, "en": "CYBER ATTACK", "fr": "CYBER ATTACK"}
+{"id": 7103, "en": "FIREWALL", "fr": "PARE-FEU"}
+{"id": 7104, "en": "+1 XP (from probe research)", "fr": "+1 XP (de la recherche sur les sondes)"}
+{"id": 7105, "en": "+1 XP (from <Probe Specialty: XP Gain> talent)", "fr": "+1 XP (du talent <Spécialité de la sonde : Gain d'XP>)"}
+{"id": 7106, "en": "+1 [STR0] to supply (from probe research)", "fr": "+1 [STR0] à fournir (grâce à la recherche sur les sondes)"}
+{"id": 7107, "en": "ps_timed_stats_layout", "fr": "ps_timed_stats_layout"}
+{"id": 7108, "en": "ps_timed_stats_crew", "fr": "ps_timed_stats_crew"}
+{"id": 7109, "en": "ps_timed_stats_ship_comp_reactor", "fr": "ps_timed_stats_ship_comp_reactor"}
+{"id": 7110, "en": "ps_timed_stats_ship_comp_shield_gen", "fr": "ps_timed_stats_ship_comp_shield_gen"}
+{"id": 7111, "en": "ps_timed_stats_ship_comp_hull", "fr": "ps_timed_stats_ship_comp_hull"}
+{"id": 7112, "en": "ps_timed_stats_ship_comp_warp_dr", "fr": "ps_timed_stats_ship_comp_warp_dr"}
+{"id": 7113, "en": "ps_timed_stats_ship_comp_turret", "fr": "ps_timed_stats_ship_comp_turret"}
+{"id": 7114, "en": "ps_timed_stats_ship_comp_main_turret", "fr": "ps_timed_stats_ship_comp_main_turret"}
+{"id": 7115, "en": "ps_timed_stats_ship_comp_", "fr": "ps_timed_stats_ship_comp_"}
+{"id": 7116, "en": "ps_timed_stats_ship_comp:", "fr": "ps_timed_stats_ship_comp :"}
+{"id": 7117, "en": "ps_timed_stats_ship_comp_chaos_lvl_", "fr": "ps_timed_stats_ship_comp_chaos_lvl_"}
+{"id": 7118, "en": "ps_timed_stats_fragment", "fr": "ps_timed_stats_fragment"}
+{"id": 7119, "en": "lvl", "fr": "lvl"}
+{"id": 7120, "en": "ps_timed_stats_chaos_lvl", "fr": "ps_timed_stats_chaos_lvl"}
+{"id": 7121, "en": "ps_timed_stats_crew_lvl", "fr": "ps_timed_stats_crew_lvl"}
+{"id": 7122, "en": "count", "fr": "compte"}
+{"id": 7123, "en": "ps_timed_stats_num_human_players", "fr": "ps_timed_stats_num_human_players"}
+{"id": 7124, "en": "ps_timed_stats_num_bot_players", "fr": "ps_timed_stats_num_bot_players"}
+{"id": 7125, "en": "ps_timed_stats_ship_type", "fr": "ps_timed_stats_ship_type"}
+{"id": 7126, "en": "-----------------", "fr": "-----------------"}
+{"id": 7127, "en": "DPS Report (3 min avg)", "fr": "Rapport DPS (moyenne sur 3 minutes)"}
+{"id": 7128, "en": "damage:", "fr": "dégâts :"}
+{"id": 7129, "en": "_BumpAmt", "fr": "_BumpAmt"}
+{"id": 7130, "en": "_BumpMap", "fr": "BumpMap"}
+{"id": 7131, "en": "_BaseIllum", "fr": "BaseIllum"}
+{"id": 7132, "en": "AI_AutoShipTargetingEnabled", "fr": "AI_AutoShipTargetingEnabled"}
+{"id": 7133, "en": "power", "fr": "puissance"}
+{"id": 7134, "en": "Fw", "fr": "Fw"}
+{"id": 7135, "en": "rv", "fr": "rv"}
+{"id": 7136, "en": "stop", "fr": "stop"}
+{"id": 7137, "en": "Thurst test", "fr": "Test Thurst"}
+{"id": 7138, "en": "reverse thrust?", "fr": "inverser la poussée ?"}
+{"id": 7139, "en": "stop thrust sound", "fr": "arrêter le son de la poussée"}
+{"id": 7140, "en": "ExteriorRigidbody", "fr": "ExteriorRigidbody"}
+{"id": 7141, "en": "MyStats.Update", "fr": "MyStats.Update"}
+{"id": 7142, "en": "PLShipInfoBase.AboutToBeDestroyed", "fr": "PLShipInfoBase.AboutToBeDestroyed"}
+{"id": 7143, "en": "target_ship_type", "fr": "target_ship_type"}
+{"id": 7144, "en": "-1", "fr": "-1"}
+{"id": 7145, "en": "player_ship_type", "fr": "type_de_vaisseau_joueur"}
+{"id": 7146, "en": "enemy_ship_destroyed", "fr": "vaisseau_ennemi_destroyé"}
+{"id": 7147, "en": "INFO", "fr": "INFO"}
+{"id": 7148, "en": "[STR0] was somehow able to still report with blocked long range comms!", "fr": "[STR0] a réussi à envoyer un rapport avec des communications à longue portée bloquées !"}
+{"id": 7149, "en": "-2 Rep for [STR0] (due to destroying ship)", "fr": "-2 Rep pour [STR0] (à cause de la destruction du vaisseau)"}
+{"id": 7150, "en": "[STR0] appears to have been important!", "fr": "[STR0] semble avoir été important !"}
+{"id": 7151, "en": "Additional -2 Rep for [STR0] (due to destroying ship)", "fr": "-2 Rep supplémentaires pour [STR0] (à cause de la destruction du vaisseau)"}
+{"id": 7152, "en": "Long range transmission blocked (prevented Reputation loss)", "fr": "Transmission longue portée bloquée (évite la perte de réputation)"}
+{"id": 7153, "en": "CR", "fr": "CR"}
+{"id": 7154, "en": "+[STR0] Credits (from enemy ship kill)", "fr": "+[STR0] Crédits (pour avoir tué un vaisseau ennemi)"}
+{"id": 7155, "en": "+[STR0] Credits (from Scavenger bonus)", "fr": "+[STR0] Crédits (grâce au bonus du charognard)"}
+{"id": 7156, "en": "You earned 1 XP (from enemy ship kill)", "fr": "ous avez gagné 1 XP (en tuant un vaisseau ennemi)"}
+{"id": 7157, "en": "+[STR0] Chaos (from enemy ship kill)", "fr": "+[STR0] Chaos (pour avoir tué un vaisseau ennemi)"}
+{"id": 7158, "en": "player_ship_destroyed", "fr": "player_ship_destroyed"}
+{"id": 7159, "en": "SMP", "fr": "SMP"}
+{"id": 7160, "en": "-1 Rep for [STR0] (due to attacking ship)", "fr": "-1 Rep pour [STR0] (en raison de l'attaque du vaisseau)"}
+{"id": 7161, "en": "Additional -1 Rep for [STR0] (due to attacking ship)", "fr": "-1 Rep supplémentaire pour [STR0] (en raison de l'attaque du vaisseau)"}
+{"id": 7162, "en": "[", "fr": "["}
+{"id": 7163, "en": "<color=white>[STR0]</color> damaged <color=white>[STR1]</color> for [STR2] shield damage[STR3]", "fr": "<color=white>[STR0]</color> endommagé <color=white>[STR1]</color> pour [STR2] dégâts de bouclier[STR3]"}
+{"id": 7164, "en": "<color=white>[STR0]</color> damaged <color=white>[STR1]</color> for [STR2] hull damage[STR3]", "fr": "<color=white>[STR0]</color> endommagé <color=white>[STR1]</color> pour [STR2] dégâts à la coque[STR3]"}
+{"id": 7165, "en": "HullCreak", "fr": "HullCreak"}
+{"id": 7166, "en": "ShieldAbsorbDamage", "fr": "ShieldAbsorbDamage"}
+{"id": 7167, "en": "SmallShieldAbsorbDamage", "fr": "SmallShieldAbsorbDamage"}
+{"id": 7168, "en": "PlayerDefeatByEnemyShip", "fr": "JoueurDéfaiteParVaisseauEnnemi"}
+{"id": 7169, "en": "SK", "fr": "SK"}
+{"id": 7170, "en": "<color=white>[STR0]</color> destroyed <color=white>[STR1]</color>", "fr": "<color=white>[STR0]</color> détruit <color=white>[STR1]</color>"}
+{"id": 7171, "en": "DefeatEnemyShip", "fr": "DefeatEnemyShip"}
+{"id": 7172, "en": "ShipInfoBase.EndWarp()    GetCPEI():", "fr": "ShipInfoBase.EndWarp() GetCPEI() :"}
+{"id": 7173, "en": "ShipInfoBase.EndWarp()    TOPSEC", "fr": "ShipInfoBase.EndWarp() TOPSEC"}
+{"id": 7174, "en": "Hull$", "fr": "Coque$"}
+{"id": 7175, "en": "Shields$", "fr": "Boucliers"}
+{"id": 7176, "en": "removing virus from send queue: id-", "fr": "suppression du virus de la file d'attente d'envoi : id-"}
+{"id": 7177, "en": "EM SWEEP COMPLETED", "fr": "BALAYAGE EM TERMINÉ"}
+{"id": 7178, "en": "The EM sweep has been completed!", "fr": "Le balayage EM est terminé !"}
+{"id": 7179, "en": "QT SWEEP COMPLETED", "fr": "QT SWEEP COMPLETED"}
+{"id": 7180, "en": "No new objects were detected during the sweep!", "fr": "Aucun nouvel objet n'a été détecté pendant le balayage !"}
+{"id": 7181, "en": "TLI", "fr": "TLI"}
+{"id": 7182, "en": "Probe", "fr": "Probe"}
+{"id": 7183, "en": "SetupNewSortID: FlagForSelfDestruction$VisualSlotType:", "fr": "SetupNewSortID : FlagForSelfDestruction$VisualSlotType :"}
+{"id": 7184, "en": "$maxSortID:", "fr": "$maxSortID :"}
+{"id": 7185, "en": "isMC:", "fr": "isMC :"}
+{"id": 7186, "en": "AddShipComponent on client without netid!", "fr": "AddShipComponent sur un client sans netid !"}
+{"id": 7187, "en": "AddShipComponent (virus)", "fr": "AddShipComponent (virus)"}
+{"id": 7188, "en": "ship:", "fr": "ship :"}
+{"id": 7189, "en": "RemoveShipComponent (virus)", "fr": "RemoveShipComponent (virus)"}
+{"id": 7190, "en": "[STR0] prevented lethal damage to ship and repaired the hull to 15%. It has been destroyed!", "fr": "[STR0] a évité les dommages mortels au vaisseau et a réparé la coque à 15%. Il a été détruit !"}
+{"id": 7191, "en": "Self-Destructing Comp:", "fr": "Comp. autodestructeur :"}
+{"id": 7192, "en": "AllOfType is NULL", "fr": "AllOfType est NULL"}
+{"id": 7193, "en": "Trade Menu", "fr": "Menu Commerce"}
+{"id": 7194, "en": "is broadcasting on a trading/commerce channel.", "fr": "émet sur un canal de commerce."}
+{"id": 7195, "en": "does not appear to be hostile.", "fr": "ne semble pas être hostile."}
+{"id": 7196, "en": "Text", "fr": "Texte"}
+{"id": 7197, "en": "Open Trading Window", "fr": "Ouvrir une fenêtre de négociation"}
+{"id": 7198, "en": "Install Ship Components", "fr": "Installer les composants du vaisseau"}
+{"id": 7199, "en": "Gruff’s Stuff", "fr": "Les affaires de Gruff"}
+{"id": 7200, "en": "Fine goods and services", "fr": "Biens et services de qualité"}
+{"id": 7201, "en": "You look like a fine bunch of people! My shop is open to you any time!", "fr": "Vous avez l'air d'une belle bande de gens ! Mon magasin vous est ouvert à tout moment !"}
+{"id": 7202, "en": "???", "fr": "? ??"}
+{"id": 7203, "en": "This is a store. Buy something", "fr": "Ceci est un magasin. Acheter quelque chose"}
+{"id": 7204, "en": "... Buy or leave.", "fr": "... Acheter ou partir."}
+{"id": 7205, "en": "Corbin's Emporium", "fr": "Corbin's Emporium"}
+{"id": 7206, "en": "The BEST COMPONENTS on this side of the GALAXY! No refunds.", "fr": "Les MEILLEURS COMPOSANTS de ce côté de la GALAXIE ! Pas de remboursement."}
+{"id": 7207, "en": "Greetings. Are you having pleasant travels? Yes? No? It doesn’t matter. I’ve got what you’ve need, GUARANTEED!", "fr": "Salutations. Faites-vous de bons voyages ? Oui ? Non ? Cela n'a pas d'importance. J'ai ce qu'il vous faut, GARANTI !"}
+{"id": 7208, "en": "Fluffy Biscuit Company Goods", "fr": "Fluffy Biscuit Company Goods"}
+{"id": 7209, "en": "Recipe vender", "fr": "Vendeur de recettes"}
+{"id": 7210, "en": "Swap out your recipes here! Sell more biscuits!", "fr": "Échangez vos recettes ici ! Vendez plus de biscuits !"}
+{"id": 7211, "en": "Fluffy Biscuit General Shop", "fr": "Magasin général Fluffy Biscuit"}
+{"id": 7212, "en": "Biscuit vender", "fr": "Vendeur de biscuits"}
+{"id": 7213, "en": "Thanks for choosing the Fluffy Biscuit Company!", "fr": "Merci d'avoir choisi la Fluffy Biscuit Company !"}
+{"id": 7214, "en": "Automated Trading Station", "fr": "Station de trading automatisée"}
+{"id": 7215, "en": "General goods vendor", "fr": "Fournisseur de marchandises générales"}
+{"id": 7216, "en": "GOODS FOR SALE. PURCHASE YES", "fr": "BIENS À VENDRE. ACHAT OUI"}
+{"id": 7217, "en": "CPU Shop", "fr": "Boutique CPU"}
+{"id": 7218, "en": "Programs Shop", "fr": "Boutique des programmes"}
+{"id": 7219, "en": "Quality scrap for affordable prices.", "fr": "De la ferraille de qualité à des prix abordables."}
+{"id": 7220, "en": "This scrap will get you where you're going! You gotta process it yourself though.", "fr": "Cette ferraille vous permettra d'atteindre votre but ! Mais il faut le traiter soi-même."}
+{"id": 7221, "en": "Comet Shop", "fr": "Boutique Comète"}
+{"id": 7222, "en": "Unique Processors", "fr": "Processeurs uniques"}
+{"id": 7223, "en": "Sylvassi Shop", "fr": "Boutique Sylvassi"}
+{"id": 7224, "en": "Virus Shop", "fr": "Boutique de virus"}
+{"id": 7225, "en": "Piloting Info", "fr": "Informations sur le pilotage"}
+{"id": 7226, "en": "Camera Mode", "fr": "Mode caméra"}
+{"id": 7227, "en": "Flight Mode", "fr": "Mode vol"}
+{"id": 7228, "en": "PilotCameraMode", "fr": "PilotCameraMode"}
+{"id": 7229, "en": "PilotControlMode", "fr": "Mode de contrôle du pilote"}
+{"id": 7230, "en": "First person piloting not available in The Academy!", "fr": "Le pilotage à la première personne n'est pas disponible dans The Academy !"}
+{"id": 7231, "en": "VRFlightCameraLocked", "fr": "VRFlightCameraLocked"}
+{"id": 7232, "en": "MouseSensitivity_Piloting", "fr": "Sensibilité de la souris_pilotage"}
+{"id": 7233, "en": "InvertMouseY_Piloting", "fr": "InverserSourisY_Pilotage"}
+{"id": 7234, "en": "AI Priority Data: Outdated Version!", "fr": "Données prioritaires de l'IA : Version périmée !"}
+{"id": 7235, "en": "We have updated the default AI priorities. We have detected that your AI data is from an old version and recommend resetting your AI priorities to get the changes. $$INFO: Resetting your AI data will erase any modifications you may have made to your bot priorities!", "fr": "Nous avons mis à jour les priorités par défaut de l'IA. Nous avons détecté que vos données d'IA proviennent d'une ancienne version et nous vous recommandons de réinitialiser vos priorités d'IA pour prendre en compte les changements. $$INFO : La réinitialisation de vos données d'IA effacera toutes les modifications que vous avez pu apporter aux priorités de votre bot !"}
+{"id": 7236, "en": "Reset AI Priorities (Latest Version)", "fr": "Réinitialiser les priorités de l'IA (dernière version)"}
+{"id": 7237, "en": "Skip (Not Recommended)", "fr": "Sauter (non recommandé)"}
+{"id": 7238, "en": "Create New Translation", "fr": "Créer une nouvelle traduction"}
+{"id": 7239, "en": "Enter a title for your translation:", "fr": "Saisissez un titre pour votre traduction :"}
+{"id": 7240, "en": "alphabacker_names", "fr": "alphabacker_names"}
+{"id": 7241, "en": "PULSAR: LOST COLONY", "fr": "PULSAR : COLONIE PERDUE"}
+{"id": 7242, "en": "DEVELOPED BY", "fr": "DÉVELOPPÉ PAR"}
+{"id": 7243, "en": "LEAFY GAMES", "fr": "JEUX DE FEU"}
+{"id": 7244, "en": "PROGRAMMING", "fr": "PROGRAMMATION"}
+{"id": 7245, "en": "Preston Stoll", "fr": "Preston Stoll"}
+{"id": 7246, "en": "ART", "fr": "ART"}
+{"id": 7247, "en": "George Stoll", "fr": "George Stoll"}
+{"id": 7248, "en": "WRITING", "fr": "ÉCRITURE"}
+{"id": 7249, "en": "Jenn Feran", "fr": "Jenn Feran"}
+{"id": 7250, "en": "Sound Design", "fr": "Conception sonore"}
+{"id": 7251, "en": "Hexany Audio", "fr": "Hexany Audio"}
+{"id": 7252, "en": "Sound Designer: Matthew Earl", "fr": "Concepteur du son : Matthew Earl"}
+{"id": 7253, "en": "Sound Designer: Jacob Rhein", "fr": "Concepteur du son : Jacob Rhein"}
+{"id": 7254, "en": "Sound Designer: Jack Bassett", "fr": "Concepteur du son : Jack Bassett"}
+{"id": 7255, "en": "Audio Production Coordinator:  Andy Forsberg", "fr": "Coordinateur de la production audio :  Andy Forsberg"}
+{"id": 7256, "en": "ORIGINAL MUSIC BY", "fr": "MUSIQUE ORIGINALE DE"}
+{"id": 7257, "en": "Isaac Vail", "fr": "Isaac Vail"}
+{"id": 7258, "en": "Alex Yoder", "fr": "Alex Yoder"}
+{"id": 7259, "en": "NARRATOR", "fr": "NARRATEUR"}
+{"id": 7260, "en": "Elizabeth Saydah", "fr": "Elizabeth Saydah"}
+{"id": 7261, "en": "SPECIAL THANKS", "fr": "REMERCIEMENTS PARTICULIERS"}
+{"id": 7262, "en": "casauchi", "fr": "casauchi"}
+{"id": 7263, "en": "Our friends and family for supporting us", "fr": "Nos amis et notre famille pour leur soutien"}
+{"id": 7264, "en": "Everyone who has submitted a bug report or feedback", "fr": "Tous ceux qui ont soumis un rapport de bogue ou un retour d'information"}
+{"id": 7265, "en": "THANKS TO OUR KICKSTARTER BACKERS FOR MAKING THIS GAME POSSIBLE!", "fr": "MERCI À NOS DONATEURS SUR KICKSTARTER POUR AVOIR RENDU CE JEU POSSIBLE !"}
+{"id": 7266, "en": "SCENARIO DESIGNERS", "fr": "LES CONCEPTEURS DE SCÉNARIOS"}
+{"id": 7267, "en": "Mitchell Lindenmeyer", "fr": "Mitchell Lindenmeyer"}
+{"id": 7268, "en": "Drew and Trevor Glisson", "fr": "Drew et Trevor Glisson"}
+{"id": 7269, "en": "UNIFORMED OFFICERS", "fr": "AGENTS EN UNIFORME"}
+{"id": 7270, "en": "Chris Briden", "fr": "Chris Briden"}
+{"id": 7271, "en": "Max Torres", "fr": "Max Torres"}
+{"id": 7272, "en": "Christopher Mullins", "fr": "Christopher Mullins"}
+{"id": 7273, "en": "Gustav Wedholm", "fr": "Gustav Wedholm"}
+{"id": 7274, "en": "Bryan Glen Richards", "fr": "Bryan Glen Richards"}
+{"id": 7275, "en": "KICKSTARTER ALPHA TESTERS", "fr": "TESTEURS ALPHA SUR KICKSTARTER"}
+{"id": 7276, "en": "backer_names", "fr": "noms_du_bailleur"}
+{"id": 7277, "en": "KICKSTARTER BACKERS", "fr": "BAILLEURS DE FONDS KICKSTARTER"}
+{"id": 7278, "en": "supporter_names", "fr": "noms_des_soutiens"}
+{"id": 7279, "en": "KICKSTARTER SUPPORTERS", "fr": "SUPPORTERS DE KICKSTARTER"}
+{"id": 7280, "en": "Contact us if you backed us and your name does not appear!", "fr": "Contactez-nous si vous nous avez soutenus et que votre nom n'apparaît pas !"}
+{"id": 7281, "en": "Powered_By_Teamspeak", "fr": "Powered_By_Teamspeak"}
+{"id": 7282, "en": "Powered by Teamspeak", "fr": "Propulsé par Teamspeak"}
+{"id": 7283, "en": "POWEREDBY_WWISE_LOGO_REV_Med_PNG", "fr": "POWEREDBY_WWISE_LOGO_REV_Med_PNG"}
+{"id": 7284, "en": "Powered by Wwise © 2006 – 2015* Audiokinetic Inc. All rights reserved.", "fr": "Propulsé par Wwise © 2006 - 2015* Audiokinetic Inc. Tous droits réservés."}
+{"id": 7285, "en": "Copyright 2016-2021 Leafy Games, LLC", "fr": "Copyright 2016-2021 Leafy Games, LLC"}
+{"id": 7286, "en": "Leafy_Logo", "fr": "Leafy_Logo"}
+{"id": 7287, "en": "ProceduralFaceMaterialEnabled", "fr": "ProceduralFaceMaterialEnabled"}
+{"id": 7288, "en": "Face ID", "fr": "Face ID"}
+{"id": 7289, "en": "Enable Procedural Face Materials in VIDEO SETTINGS", "fr": "Activer les matériaux procéduraux pour les visages dans les PARAMÈTRES VIDÉO"}
+{"id": 7290, "en": "to allow the following options:", "fr": "pour autoriser les options suivantes :"}
+{"id": 7291, "en": "Skin Color (Red)", "fr": "Couleur de la peau (rouge)"}
+{"id": 7292, "en": "Skin Color (Green)", "fr": "Couleur de la peau (verte)"}
+{"id": 7293, "en": "Skin Color (Blue)", "fr": "Couleur de la peau (bleu)"}
+{"id": 7294, "en": "Tattoo", "fr": "Tatouage"}
+{"id": 7295, "en": "Tattoo Color (Red)", "fr": "Couleur du tatouage (rouge)"}
+{"id": 7296, "en": "Tattoo Color (Green)", "fr": "Couleur du tatouage (vert)"}
+{"id": 7297, "en": "Tattoo Color (Blue)", "fr": "Couleur du tatouage (bleu)"}
+{"id": 7298, "en": "Scar", "fr": "Cicatrice"}
+{"id": 7299, "en": "Lip Color (Red)", "fr": "Rouge à lèvres (rouge)"}
+{"id": 7300, "en": "Lip Color (Green)", "fr": "Rouge à lèvres (vert)"}
+{"id": 7301, "en": "Lip Color (Blue)", "fr": "Rouge à lèvres (bleu)"}
+{"id": 7302, "en": "Type", "fr": "Type"}
+{"id": 7303, "en": "Game Name:", "fr": "Nom du jeu :"}
+{"id": 7304, "en": "Ship Name:", "fr": "Nom du vaisseau :"}
+{"id": 7305, "en": "Private Game:", "fr": "Jeu privé :"}
+{"id": 7306, "en": "On", "fr": "Sur"}
+{"id": 7307, "en": "Password:", "fr": "Mot de passe :"}
+{"id": 7308, "en": "Galaxy Settings", "fr": "Paramètres de la galaxie"}
+{"id": 7309, "en": "Game is set to Public", "fr": "Le jeu est réglé sur Public"}
+{"id": 7310, "en": "Game is set to Private", "fr": "Le jeu est réglé sur Private"}
+{"id": 7311, "en": "Set as Public Game", "fr": "Définir comme jeu public"}
+{"id": 7312, "en": "Set as Private Game", "fr": "Définir comme jeu privé"}
+{"id": 7313, "en": "Apply Changes", "fr": "Appliquer les changements"}
+{"id": 7314, "en": "Your Crew Has Perished!", "fr": "Votre équipage a péri !"}
+{"id": 7315, "en": "Retry", "fr": "Réessayer"}
+{"id": 7316, "en": "Retry (Host Only)", "fr": "Réessai (hôte uniquement)"}
+{"id": 7317, "en": "Load (Host Only)", "fr": "Charge (hôte uniquement)"}
+{"id": 7318, "en": "Leave", "fr": "Laisser"}
+{"id": 7319, "en": "ServerWaitForRetryMessageSentToClients", "fr": "ServerWaitForRetryMessageSentToClients (Attente de messages de rappel envoyés aux clients)"}
+{"id": 7320, "en": "Number Of Jumps: $", "fr": "Nombre de sauts : $"}
+{"id": 7321, "en": "$", "fr": "$"}
+{"id": 7322, "en": "Enemies Destroyed: $", "fr": "Ennemis détruits : $"}
+{"id": 7323, "en": "Game Time: $$", "fr": "Heure du match : $$$"}
+{"id": 7324, "en": "min$$", "fr": "min$$"}
+{"id": 7325, "en": "Retry From Load", "fr": "Réessayer à partir de la charge"}
+{"id": 7326, "en": "Victory!", "fr": "Victoire !"}
+{"id": 7327, "en": "Save Game", "fr": "Sauvegarder le jeu"}
+{"id": 7328, "en": "LOAD", "fr": "CHARGER"}
+{"id": 7329, "en": "Error loading file!", "fr": "Erreur de chargement du fichier !"}
+{"id": 7330, "en": "Input Bindings File: Old Version", "fr": "Fichier de liaisons d'entrée : ancienne version"}
+{"id": 7331, "en": "Your input bindings file seems to be a older version! We highly recommend you Recreate Default File to replace your binding file with the new default. $$INFO: Recreating the default file will erase any modifications you may have made to your bindings file!", "fr": "Votre fichier de liaisons d'entrée semble être une ancienne version ! Nous vous recommandons vivement de recréer le fichier par défaut pour remplacer votre fichier de liaison par le nouveau fichier par défaut. $$INFO : Recréer le fichier par défaut effacera toutes les modifications que vous avez pu apporter à votre fichier de liaisons !"}
+{"id": 7332, "en": "Recreate Default File (Latest Version)", "fr": "Recréer le fichier par défaut (dernière version)"}
+{"id": 7333, "en": "Enter your online player name:", "fr": "Entrez votre nom de joueur en ligne :"}
+{"id": 7334, "en": "Continue", "fr": "Continuer"}
+{"id": 7335, "en": "Enter password to join private game:", "fr": "Entrez votre mot de passe pour rejoindre la partie privée :"}
+{"id": 7336, "en": "Join Private Crew", "fr": "Rejoindre un équipage privé"}
+{"id": 7337, "en": "Are you sure you want to kick:", "fr": "Êtes-vous sûr de vouloir donner un coup de pied ?"}
+{"id": 7338, "en": "?", "fr": "?"}
+{"id": 7339, "en": "You can view/undo bans in the Game Settings menu under Manage Bans", "fr": "Vous pouvez consulter/annuler les interdictions dans le menu Paramètres du jeu, sous Gérer les interdictions."}
+{"id": 7340, "en": "Ban", "fr": "Ban"}
+{"id": 7341, "en": "Ban (Secured games only)", "fr": "Interdiction (jeux sécurisés uniquement)"}
+{"id": 7342, "en": "Kick", "fr": "Coup de pied"}
+{"id": 7343, "en": "OnDownloadPreview", "fr": "OnDownloadPreview"}
+{"id": 7344, "en": "read whole preview", "fr": "Lire l'intégralité de l'aperçu"}
+{"id": 7345, "en": "failed to read whole preview", "fr": "n'a pas lu l'intégralité de l'aperçu"}
+{"id": 7346, "en": "Workshop", "fr": "Atelier"}
+{"id": 7347, "en": "Created", "fr": "Créée"}
+{"id": 7348, "en": "Installed", "fr": "Installé"}
+{"id": 7349, "en": "Previous Page", "fr": "Page précédente"}
+{"id": 7350, "en": "OnClickAdd", "fr": "OnClickAdd"}
+{"id": 7351, "en": "Size (MB)", "fr": "Taille (MB)"}
+{"id": 7352, "en": "Upvotes", "fr": "Appréciations"}
+{"id": 7353, "en": "Tags", "fr": "Tags"}
+{"id": 7354, "en": "INSTALLED", "fr": "INSTALLE"}
+{"id": 7355, "en": "SUBSCRIBED", "fr": "ABONNÉ"}
+{"id": 7356, "en": "PUBLISHED", "fr": "PUBLIÉ"}
+{"id": 7357, "en": "Language", "fr": "Langue"}
+{"id": 7358, "en": "<color=#FFF>[", "fr": "<color=#FFF>["}
+{"id": 7359, "en": "]</color>", "fr": "]</color>"}
+{"id": 7360, "en": "<color=#999>", "fr": "<color=#999>"}
+{"id": 7361, "en": "</color>", "fr": "</color>"}
+{"id": 7362, "en": "Activate", "fr": "Activer"}
+{"id": 7363, "en": "Deactivate", "fr": "Désactiver"}
+{"id": 7364, "en": "en", "fr": "fr"}
+{"id": 7365, "en": "Info", "fr": "Info"}
+{"id": 7366, "en": "steam://url/CommunityFilePage/", "fr": "steam://url/CommunityFilePage/"}
+{"id": 7367, "en": "Edit", "fr": "Editer"}
+{"id": 7368, "en": "Install", "fr": "Installer"}
+{"id": 7369, "en": "Uninstall", "fr": "Désinstaller"}
+{"id": 7370, "en": "Liar’s dice is a bluffing game about stating the number of dice with a specific face. Each player secretly rolls 5 dice, and then betting begins. Players place bets on how many dice of a certain face are up amongst the total pool of dice, even though they can only see 5 of them.$$On a player’s turn, he or she can choose to raise the current bid or challenge it (if they think it’s false). When raising a bid, players must raise the number of dice in the bid. As long as the die count is raised, the face value can be lowered.$$Players win points through challenges. If the bid was true, the player who placed the bid receives a point. If it was false, then the challenger receives a point. The first player to reach 3 points wins the game, and a new game will start shortly after!", "fr": "Le dé du menteur est un jeu de bluff qui consiste à indiquer le nombre de dés ayant une face spécifique. Chaque joueur lance secrètement 5 dés, puis les paris commencent. Les joueurs parient sur le nombre de dés d'une certaine face parmi l'ensemble des dés, même s'ils ne peuvent en voir que cinq. Lorsqu'ils surenchérissent, les joueurs doivent augmenter le nombre de dés de l'enchère. Tant que le nombre de dés est augmenté, la valeur faciale peut être diminuée.$$Les joueurs gagnent des points en contestant. Si l'enchère est vraie, le joueur qui l'a faite reçoit un point. Si l'offre est fausse, le challenger reçoit un point. Le premier joueur à atteindre 3 points gagne la partie, et une nouvelle partie commencera peu après !"}
+{"id": 7371, "en": "Liar's Dice Rules", "fr": "Règles du dé menteur"}
+{"id": 7372, "en": "Confirm", "fr": "Confirmer"}
+{"id": 7373, "en": "[color=red]", "fr": "[color=red]"}
+{"id": 7374, "en": "[color=blue]", "fr": "[color=blue]"}
+{"id": 7375, "en": "<color=#3a95d4>", "fr": "<color=#3a95d4>"}
+{"id": 7376, "en": "[color=green]", "fr": "[color=green]"}
+{"id": 7377, "en": "<color=#00c521>", "fr": "<color=#00c521>"}
+{"id": 7378, "en": "[color=yellow]", "fr": "[color=yellow]"}
+{"id": 7379, "en": "<color=yellow>", "fr": "<color=yellow>"}
+{"id": 7380, "en": "Game Manual", "fr": "Manuel du jeu"}
+{"id": 7381, "en": "manual", "fr": "manuel"}
+{"id": 7382, "en": "Intro", "fr": "Intro"}
+{"id": 7383, "en": "Galaxy Info", "fr": "Info Galaxie"}
+{"id": 7384, "en": "Scroll Up", "fr": "Défilement vers le haut"}
+{"id": 7385, "en": "Scroll Down", "fr": "Défilement vers le bas"}
+{"id": 7386, "en": "Offline Mode", "fr": "Mode hors ligne"}
+{"id": 7387, "en": "PULSAR is in offline mode!", "fr": "PULSAR est en mode déconnecté !"}
+{"id": 7388, "en": "PULSAR is currently running in offline mode. You will not be able to play with other players unless it is disabled!", "fr": "PULSAR fonctionne actuellement en mode hors ligne. Vous ne pourrez pas jouer avec d'autres joueurs si ce mode n'est pas désactivé !"}
+{"id": 7389, "en": "Continue in offline mode", "fr": "Continuer en mode hors ligne"}
+{"id": 7390, "en": "Request / Delete Data", "fr": "Demander / supprimer des données"}
+{"id": 7391, "en": "Attempt to connect and play online", "fr": "Tentative de connexion et de jeu en ligne"}
+{"id": 7392, "en": "Opens a webpage that allows you to see the data collected or delete your data and disable analytics", "fr": "Ouvre une page web qui vous permet de voir les données collectées ou de supprimer vos données et de désactiver l'analyse."}
+{"id": 7393, "en": "Continue to the game with your current settings", "fr": "Poursuivre le jeu en conservant les paramètres actuels"}
+{"id": 7394, "en": "Continue to the game and turn off analytics", "fr": "Poursuivre le jeu et arrêter les analyses"}
+{"id": 7395, "en": "Continue to the game and turn on analytics", "fr": "Poursuivre le jeu et activer la fonction d'analyse"}
+{"id": 7396, "en": "Data Privacy Information", "fr": "Informations sur la confidentialité des données"}
+{"id": 7397, "en": "Sending analytics helps us improve the game and enables us to make more informed decisions for balancing and gameplay.$$Disabling analytics will also disable automatic performance/error/crash reporting which helps us fix bugs faster$$We offer a way to request the collected data to view or delete it. You can access these settings at any time in the Game Settings menu.", "fr": "L'envoi d'analyses nous aide à améliorer le jeu et nous permet de prendre des décisions plus éclairées en matière d'équilibrage et de gameplay$$Désactiver les analyses désactivera également les rapports automatiques sur les performances/erreurs/crashs, ce qui nous aide à corriger les bugs plus rapidement$$Nous offrons un moyen de demander à consulter ou à supprimer les données collectées. Vous pouvez accéder à ces paramètres à tout moment dans le menu Paramètres du jeu."}
+{"id": 7398, "en": "Continue With Analytics ON", "fr": "Continuer avec Analytics ON"}
+{"id": 7399, "en": "Continue With Analytics OFF", "fr": "Poursuivre avec l'analyse OFF"}
+{"id": 7400, "en": "AnalyticsOptInShown", "fr": "AnalyticsOptInShown"}
+{"id": 7401, "en": "UnityAnalytics", "fr": "UnityAnalytics"}
+{"id": 7402, "en": "FALSE", "fr": "FAUX"}
+{"id": 7403, "en": "Failed to get data privacy url: {0}", "fr": "Échec de l'obtention de l'url de confidentialité des données : {0}"}
+{"id": 7404, "en": "Received data privacy URL: {0}", "fr": "URL de confidentialité des données reçues : {0}"}
+{"id": 7405, "en": "window.open(\\^", "fr": "window.open(\\^"}
+{"id": 7406, "en": "\\^,\\^_blank\\^)", "fr": "\\^,\\^_blank\\^)"}
+{"id": 7407, "en": "Video Settings", "fr": "Paramètres vidéo"}
+{"id": 7408, "en": "Audio Settings", "fr": "Réglages audio"}
+{"id": 7409, "en": "Game Settings", "fr": "Paramètres du jeu"}
+{"id": 7410, "en": "View Manual", "fr": "Voir le manuel"}
+{"id": 7411, "en": "View Controls", "fr": "Voir les contrôles"}
+{"id": 7412, "en": "Can't Save (In Warp)", "fr": "Can't Save (In Warp)"}
+{"id": 7413, "en": "Can't Save (In Danger)", "fr": "Can't Save (In Danger)"}
+{"id": 7414, "en": "Only Host Can Save", "fr": "Seul l'hôte peut sauver"}
+{"id": 7415, "en": "GameEnd", "fr": "Fin du jeu"}
+{"id": 7416, "en": "Try To Reconnect", "fr": "Essayer de se reconnecter"}
+{"id": 7417, "en": "Go Offline", "fr": "Sortir de la ligne"}
+{"id": 7418, "en": "Switching Photon Cloud Regions", "fr": "Commutation des régions de nuages de photons"}
+{"id": 7419, "en": "Connection failure to Photon Cloud!", "fr": "Échec de la connexion à Photon Cloud !"}
+{"id": 7420, "en": "Current Connection State:", "fr": "État actuel de la connexion :"}
+{"id": 7421, "en": "Go offline", "fr": "Se déconnecter"}
+{"id": 7422, "en": "Select a Region", "fr": "Sélectionner une région"}
+{"id": 7423, "en": "Select the closest region to connect to below.$NOTE: You can only play with players in your region", "fr": "Sélectionnez la région la plus proche à laquelle vous connecter ci-dessous.$NOTE : Vous ne pouvez jouer qu'avec des joueurs de votre région."}
+{"id": 7424, "en": "United States", "fr": "États-Unis"}
+{"id": 7425, "en": "Europe", "fr": "L'Europe"}
+{"id": 7426, "en": "Japan", "fr": "Japon"}
+{"id": 7427, "en": "Asia", "fr": "Asie"}
+{"id": 7428, "en": "Australia", "fr": "Australie"}
+{"id": 7429, "en": "us", "fr": "nous"}
+{"id": 7430, "en": "eu", "fr": "eu"}
+{"id": 7431, "en": "jp", "fr": "jp"}
+{"id": 7432, "en": "asia", "fr": "Asie"}
+{"id": 7433, "en": "au", "fr": "au"}
+{"id": 7434, "en": "-", "fr": "-"}
+{"id": 7435, "en": "ms ping", "fr": "ms ping"}
+{"id": 7436, "en": "Asia (Singapore)", "fr": "Asie (Singapour)"}
+{"id": 7437, "en": "6246645a-91a6-4580-b5bd-64d6b8fc6875", "fr": "6246645a-91a6-4580-b5bd-64d6b8fc6875"}
+{"id": 7438, "en": "Select a region to connect to:", "fr": "Sélectionnez une région à laquelle se connecter :"}
+{"id": 7439, "en": "Overwrite", "fr": "Écraser"}
+{"id": 7440, "en": "OVERWRITE", "fr": "SURIMPRIMER"}
+{"id": 7441, "en": "CANCEL", "fr": "ANNULER"}
+{"id": 7442, "en": "Save AI Data", "fr": "Sauvegarder les données de l'IA"}
+{"id": 7443, "en": "SAVE", "fr": "SAUVEGARDE"}
+{"id": 7444, "en": "Saves/AI/", "fr": "Sauvegardes/AI/"}
+{"id": 7445, "en": ".aidata", "fr": ".aidata"}
+{"id": 7446, "en": "AI", "fr": "AI"}
+{"id": 7447, "en": "Stat Tracking Confirmation", "fr": "Confirmation du suivi des statistiques"}
+{"id": 7448, "en": "Enable Anonymous Stat Tracking", "fr": "Activer le suivi anonyme des statistiques"}
+{"id": 7449, "en": "Disable Anonymous Stat Tracking", "fr": "Désactiver le suivi anonyme des statistiques"}
+{"id": 7450, "en": "We have implemented a simple event tracking system that will allow us to learn more about how players are interacting with the game systems.$$If do not want anonymous session / behavior data securely sent to Leafy Games you can opt-out below.$$This data will be used to improve PULSAR and keep us working on issues that matter most to our player base!$$ You can change your mind later in the Game Settings menu.", "fr": "Nous avons mis en place un système simple de suivi des événements qui nous permettra d'en savoir plus sur la façon dont les joueurs interagissent avec les systèmes de jeu.$$Si vous ne souhaitez pas que des données anonymes de session / de comportement soient envoyées en toute sécurité à Leafy Games, vous pouvez vous désinscrire ci-dessous.$$Ces données seront utilisées pour améliorer PULSAR et nous permettre de continuer à travailler sur les questions qui importent le plus à notre base de joueurs!$$Vous pouvez changer d'avis plus tard dans le menu Paramètres du jeu."}
+{"id": 7451, "en": "Steam Cloud Saves / Files", "fr": "Sauvegardes / Fichiers Steam Cloud"}
+{"id": 7452, "en": "files found in the Steam Cloud", "fr": "fichiers trouvés dans le Steam Cloud"}
+{"id": 7453, "en": "CaptainBuyItem", "fr": "CaptainBuyItem"}
+{"id": 7454, "en": "CaptainSellItem", "fr": "CaptainSellItem"}
+{"id": 7455, "en": "Current Coolant:", "fr": "Liquide de refroidissement actuel :"}
+{"id": 7456, "en": "L", "fr": "L"}
+{"id": 7457, "en": "Buy 500 L Coolant (2000 Cr)", "fr": "Acheter 500 L de liquide de refroidissement (2000 Cr)"}
+{"id": 7458, "en": "Buy 50 L Coolant (200 Cr)", "fr": "Acheter 50 L de liquide de refroidissement (200 Cr)"}
+{"id": 7459, "en": "Buy 5 L Coolant (20 Cr)", "fr": "Acheter 5 L de liquide de refroidissement (20 Cr)"}
+{"id": 7460, "en": "Current Fuel:", "fr": "Carburant actuel :"}
+{"id": 7461, "en": "Buy 10 Fuel Capsules (500 Cr)", "fr": "Acheter 10 gélules de carburant (500 Cr)"}
+{"id": 7462, "en": "Buy 1 Fuel Capsule (50 Cr)", "fr": "Acheter 1 capsule de carburant (50 Cr)"}
+{"id": 7463, "en": "Buy 1", "fr": "Acheter 1"}
+{"id": 7464, "en": "Refill (", "fr": "Recharge ("}
+{"id": 7465, "en": "Cr)", "fr": "Cr)"}
+{"id": 7466, "en": "Buy", "fr": "Acheter"}
+{"id": 7467, "en": "Refills (", "fr": "Recharges ("}
+{"id": 7468, "en": "Buy", "fr": "Acheter"}
+{"id": 7469, "en": "Sell Cargo", "fr": "Vendre du fret"}
+{"id": 7470, "en": "Hull(s)", "fr": "Coque(s)"}
+{"id": 7471, "en": "Hull Plating(s)", "fr": "Placage(s) de la coque"}
+{"id": 7472, "en": "Reactor(s)", "fr": "Réacteur(s)"}
+{"id": 7473, "en": "Thrusters(s)", "fr": "Propulseurs"}
+{"id": 7474, "en": "Warp Drive(s)", "fr": "Moteur(s) de distorsion"}
+{"id": 7475, "en": "Shield Generator(s)", "fr": "Générateur(s) de bouclier"}
+{"id": 7476, "en": "CPU(s)", "fr": "CPU(s)"}
+{"id": 7477, "en": "Turret(s)", "fr": "Tourelle(s)"}
+{"id": 7478, "en": "Silo(s)", "fr": "Silo(s)"}
+{"id": 7479, "en": "Main Turret(s)", "fr": "Tourelle(s) principale(s)"}
+{"id": 7480, "en": "Nuclear Devices(s)", "fr": "Dispositif(s) nucléaire(s)"}
+{"id": 7481, "en": "O2 Generator(s)", "fr": "Générateur(s) d'O2"}
+{"id": 7482, "en": "Program(s)", "fr": "Programme(s)"}
+{"id": 7483, "en": "Scrap(s)", "fr": "Rebut(s)"}
+{"id": 7484, "en": "Cr", "fr": "Cr"}
+{"id": 7485, "en": "Charge Amount$", "fr": "Montant de la taxe"}
+{"id": 7486, "en": "Standard Galaxy", "fr": "Galaxie standard"}
+{"id": 7487, "en": "Expert Galaxy", "fr": "Expert Galaxy"}
+{"id": 7488, "en": "Custom Galaxy", "fr": "Galaxie personnalisée"}
+{"id": 7489, "en": "<color=#666666>", "fr": "<color=#666666>"}
+{"id": 7490, "en": "Number of Sectors", "fr": "Nombre de secteurs"}
+{"id": 7491, "en": "$<size=35>", "fr": "$<size=35>"}
+{"id": 7492, "en": "</size>$", "fr": "</size>$"}
+{"id": 7493, "en": "Drone Modifier Scalar", "fr": "Modificateur de drone Scalar"}
+{"id": 7494, "en": "Chaos Scalar", "fr": "Scalaire du chaos"}
+{"id": 7495, "en": "Beacon Scalar", "fr": "Balise Scalaire"}
+{"id": 7496, "en": "Enemy Ship Power Scalar", "fr": "Scalaire de puissance des vaisseaus ennemis"}
+{"id": 7497, "en": "Max Chaos Level", "fr": "Niveau de chaos maximal"}
+{"id": 7498, "en": "Custom Galaxy Seed", "fr": "Graine de galaxie personnalisée"}
+{"id": 7499, "en": "Colonial Union (Initial | Spread)", "fr": "Union coloniale (Initial | Spread)"}
+{"id": 7500, "en": "% |", "fr": "% |"}
+{"id": 7501, "en": "W.D. Corp (Initial | Spread)", "fr": "W.D. Corp. (Initial | Spread)"}
+{"id": 7502, "en": "Infected (Initial | Spread)", "fr": "Infecté (initial | propagation)"}
+{"id": 7503, "en": "Moon Count Scalar", "fr": "Scalaire du compte de la lune"}
+{"id": 7504, "en": "General Store Scalar", "fr": "Magasin général Scalar"}
+{"id": 7505, "en": "Long Range Warp Scalar", "fr": "Scalaire à longue portée"}
+{"id": 7506, "en": "Nebula Scalar", "fr": "Nébuleuse Scalaire"}
+{"id": 7507, "en": "Scrapyard Scalar", "fr": "Scrapyard Scalar"}
+{"id": 7508, "en": "Minefield Scalar", "fr": "Champ de mines Scalaire"}
+{"id": 7509, "en": "Graveyard Scalar", "fr": "Scalaire du cimetière"}
+{"id": 7510, "en": "Asteroid Field Scalar", "fr": "Champ d'astéroïdes Scalaire"}
+{"id": 7511, "en": "Frontlines Scalar", "fr": "Lignes de front Scalar"}
+{"id": 7512, "en": "Energy Dmg (Playership | Other)", "fr": "Dmg d'énergie (Joueur | Autre)"}
+{"id": 7513, "en": "Physical Dmg (Playership | Other)", "fr": "Dmg physique (Joueur | Autre)"}
+{"id": 7514, "en": "Reactor Boost (Playership | Other)", "fr": "Reactor Boost (Joueur | Autre)"}
+{"id": 7515, "en": "Shield Charge Rate (Playership | Other)", "fr": "Taux d'imposition du bouclier (Playership | Autres)"}
+{"id": 7516, "en": "Thruster Boost (Playership | Other)", "fr": "Booster de propulseur (Playership | Autre)"}
+{"id": 7517, "en": "Warp Charge Boost (Playership | Other)", "fr": "Charge de guerre (Joueur | Autre)"}
+{"id": 7518, "en": "Activate Voice Chat?", "fr": "Activer le chat vocal ?"}
+{"id": 7519, "en": "PULSAR includes built-in voice chat functionality. Do you want to enable this functionality? $$INFO: Disabling voice chat will prevent you from hearing or communicating with other players.", "fr": "PULSAR comprend une fonctionnalité de chat vocal intégrée. Souhaitez-vous activer cette fonctionnalité ? $$INFO : La désactivation du chat vocal vous empêchera d'entendre les autres joueurs ou de communiquer avec eux."}
+{"id": 7520, "en": "ENABLE$In-Game Voice Chat", "fr": "ENABLE$In-Game Voice Chat"}
+{"id": 7521, "en": "DISABLE$In-Game Voice Chat", "fr": "DISABLE$In-Game Voice Chat"}
+{"id": 7522, "en": "VoiceChatEnabled", "fr": "VoiceChatEnabled"}
+{"id": 7523, "en": "30 sec", "fr": "30 secondes"}
+{"id": 7524, "en": "Killed by", "fr": "Tué par"}
+{"id": 7525, "en": "Killed by:", "fr": "Tué par :"}
+{"id": 7526, "en": "Killed by environment", "fr": "Tué par l'environnement"}
+{"id": 7527, "en": "Respawning in", "fr": "Renaître en"}
+{"id": 7528, "en": "0 s", "fr": "0 s"}
+{"id": 7529, "en": "Waiting for available atrium", "fr": "En attente d'un atrium disponible"}
+{"id": 7530, "en": "PLProgressDataCloudConflictMenu::OnEnter", "fr": "PLProgressDataCloudConflictMenu::OnEnter"}
+{"id": 7531, "en": "Conflict syncing game progress with Steam Cloud!", "fr": "Synchronisation des conflits avec Steam Cloud !"}
+{"id": 7532, "en": "Keep Local File", "fr": "Conserver le fichier local"}
+{"id": 7533, "en": "jumps completed$$Last Changed:", "fr": "sauts terminés$$Dernière modification :"}
+{"id": 7534, "en": "Keep Remote File", "fr": "Conserver le fichier distant"}
+{"id": 7535, "en": "joystick", "fr": "joystick"}
+{"id": 7536, "en": "standard", "fr": "standard"}
+{"id": 7537, "en": "oculusvr", "fr": "oculusvr"}
+{"id": 7538, "en": "DeviceDropdown", "fr": "DeviceDropdown (liste déroulante des appareils)"}
+{"id": 7539, "en": "KeyDropdown", "fr": "KeyDropdown (liste déroulante des clés)"}
+{"id": 7540, "en": "steamvr", "fr": "steamvr"}
+{"id": 7541, "en": "Joystick", "fr": "Manette"}
+{"id": 7542, "en": "Axis", "fr": "Axe"}
+{"id": 7543, "en": "InputBindingsFilename", "fr": "Nom du fichier des liaisons d'entrée"}
+{"id": 7544, "en": "SteamVR", "fr": "SteamVR"}
+{"id": 7545, "en": "edit axis", "fr": "modifier l'axe"}
+{"id": 7546, "en": "MouseSensitivity_Foot", "fr": "Sensibilité de la souris_Pied"}
+{"id": 7547, "en": "MouseSensitivity_Turret", "fr": "Sensibilité de la souris_Tourelle"}
+{"id": 7548, "en": "JoystickSensitivity", "fr": "Sensibilité du joystick"}
+{"id": 7549, "en": "JoystickSensitivityVirtualCursor", "fr": "Sensibilité du joystickCurseur virtuel"}
+{"id": 7550, "en": "InvertMouseY_Foot", "fr": "InverserSourisY_Pied"}
+{"id": 7551, "en": "InvertMouseY_Turret", "fr": "InverserSourisY_Tourelle"}
+{"id": 7552, "en": "UseVirtualCursor", "fr": "Utiliser un curseur virtuel"}
+{"id": 7553, "en": "TurretCameraSmoothing", "fr": "Lissage de la caméra de la tourelle"}
+{"id": 7554, "en": "RawMouseInput", "fr": "RawMouseInput"}
+{"id": 7555, "en": "Sprint_UseToggle", "fr": "Sprint_UseToggle"}
+{"id": 7556, "en": "joy(all)axis(", "fr": "joy(all)axis("}
+{"id": 7557, "en": "joy(", "fr": "joie("}
+{"id": 7558, "en": ")axis(", "fr": ")axe("}
+{"id": 7559, "en": "axis", "fr": "axe"}
+{"id": 7560, "en": "CONNECTED:$", "fr": "CONNECTED:$"}
+{"id": 7561, "en": "Left Oculus Touch$", "fr": "Oculus Touch$ gauche"}
+{"id": 7562, "en": "Right Oculus Touch$", "fr": "Oculus Touch$ à droite"}
+{"id": 7563, "en": "Oculus Remote$", "fr": "Télécommande Oculus"}
+{"id": 7564, "en": "OpenVR Controller$", "fr": "Contrôleur OpenVR"}
+{"id": 7565, "en": "LastCreatedGameName", "fr": "Dernier jeu créé"}
+{"id": 7566, "en": "s Game", "fr": "s Jeu"}
+{"id": 7567, "en": "LockIcon", "fr": "Icône de verrouillage"}
+{"id": 7568, "en": "Ship is locked!", "fr": "Le vaisseau est verrouillé !"}
+{"id": 7569, "en": "OFFLINE MODE", "fr": "MODE HORS LIGNE"}
+{"id": 7570, "en": "ONLINE MODE", "fr": "MODE EN LIGNE"}
+{"id": 7571, "en": "GalaxySettings", "fr": "Paramètres de la galaxie"}
+{"id": 7572, "en": "AVAILABLE: Click to unlock", "fr": "DISPONIBLE : Cliquez pour déverrouiller"}
+{"id": 7573, "en": "LOCKED:", "fr": "VERROUILLÉ :"}
+{"id": 7574, "en": "</color>$", "fr": "</color>$"}
+{"id": 7575, "en": "<i>Main Campaign</i>$$Explore the galaxy in search of data fragments in order to reach the mysterious Lost Colony", "fr": "<i>Campagne principale</i>$$Explorer la galaxie à la recherche de fragments de données afin d'atteindre la mystérieuse colonie perdue."}
+{"id": 7576, "en": "<i>Challenge Campaign</i>$$Join the Polytechic Federation and defend the galaxy from the Unseen", "fr": "<i>Campagne de défi</i>$$Joins-toi à la Fédération polytechnique et défends la galaxie contre les invisibles."}
+{"id": 7577, "en": "Hull$", "fr": "Coque$"}
+{"id": 7578, "en": "Armor$", "fr": "Armor$"}
+{"id": 7579, "en": "Shields$", "fr": "Boucliers"}
+{"id": 7580, "en": "Mass$", "fr": "Masse$"}
+{"id": 7581, "en": "Thrust$", "fr": "Poussée"}
+{"id": 7582, "en": "Warp Range$", "fr": "Gamme Warp$"}
+{"id": 7583, "en": "REVERSIBLE MAIN THRUSTERS", "fr": "PROPULSEURS PRINCIPAUX RÉVERSIBLES"}
+{"id": 7584, "en": "FORWARD MAIN THRUSTERS", "fr": "PROPULSEURS PRINCIPAUX AVANT"}
+{"id": 7585, "en": "$NO EXTRACTOR SUPPORT", "fr": "PAS DE SUPPORT D'EXTRACTEUR"}
+{"id": 7586, "en": "$HAS EXTRACTOR SUPPORT", "fr": "SOUTIEN À L'EXTRACTEUR"}
+{"id": 7587, "en": "Cargo Slots", "fr": "Fentes à cargaison"}
+{"id": 7588, "en": "Reactor Output$", "fr": "Sortie du réacteur"}
+{"id": 7589, "en": "Max Temp", "fr": "Temp. max."}
+{"id": 7590, "en": "Engineering:", "fr": "Ingénierie :"}
+{"id": 7591, "en": "Weapons:", "fr": "Les armes :"}
+{"id": 7592, "en": "Science Lab:", "fr": "Laboratoire de sciences :"}
+{"id": 7593, "en": "Life Support:", "fr": "Soutien à la vie :"}
+{"id": 7594, "en": "Private_Password", "fr": "Mot de passe privé"}
+{"id": 7595, "en": "The game name", "fr": "Le nom du jeu"}
+{"id": 7596, "en": "<color=blue>", "fr": "<color=blue>"}
+{"id": 7597, "en": "</color>", "fr": "</color>"}
+{"id": 7598, "en": "is currently in use!", "fr": "est actuellement utilisé !"}
+{"id": 7599, "en": "DelayedResetGame exception:", "fr": "Exception DelayedResetGame :"}
+{"id": 7600, "en": "translation.tsv", "fr": "traduction.tsv"}
+{"id": 7601, "en": "dialogue.tsv", "fr": "dialogue.tsv"}
+{"id": 7602, "en": "/version.xml", "fr": "/version.xml"}
+{"id": 7603, "en": "/Assets/StreamingAssets/LanguageDataFiles/version.xml", "fr": "/Assets/StreamingAssets/LanguageDataFiles/version.xml"}
+{"id": 7604, "en": "/Resources/Data/StreamingAssets/LanguageDataFiles/version.xml", "fr": "/Resources/Data/StreamingAssets/LanguageDataFiles/version.xml"}
+{"id": 7605, "en": "/StreamingAssets/LanguageDataFiles/version.xml", "fr": "/StreamingAssets/LanguageDataFiles/version.xml"}
+{"id": 7606, "en": "Are you sure you want to delete your language? This can't be undone.", "fr": "Êtes-vous sûr de vouloir supprimer votre langue ? Cela ne peut pas être annulé."}
+{"id": 7607, "en": "StartItemUpdate", "fr": "StartItemUpdate"}
+{"id": 7608, "en": "SubmitItemUpdate", "fr": "SubmitItemUpdate"}
+{"id": 7609, "en": "Change notes", "fr": "Modifier les notes"}
+{"id": 7610, "en": "explorer.exe", "fr": "explorer.exe"}
+{"id": 7611, "en": "/open,", "fr": "/open,"}
+{"id": 7612, "en": "jpg files (*.jpg)|*.jpg|png files (*.png)|*.png", "fr": "fichiers jpg (*.jpg)|*.jpg|fichiers png (*.png)|*.png"}
+{"id": 7613, "en": "MB\\t", "fr": "MB\\t"}
+{"id": 7614, "en": ": issue reading language file!", "fr": "Le fichier de langue n'a pas été lu : problème de lecture du fichier de langue !"}
+{"id": 7615, "en": "Error: No content in content folder!", "fr": "Erreur : Pas de contenu dans le dossier content !"}
+{"id": 7616, "en": "View Galaxy Settings", "fr": "Voir les paramètres de Galaxy"}
+{"id": 7617, "en": "Can't Save (In Academy)", "fr": "Can't Save (In Academy)"}
+{"id": 7618, "en": "Can't Save (No Playership)", "fr": "Can't Save (No Playership)"}
+{"id": 7619, "en": "Can't Save (Not Host)", "fr": "Can't Save (Pas d'hôte)"}
+{"id": 7620, "en": "Can't Load (In Warp)", "fr": "Can't Load (In Warp)"}
+{"id": 7621, "en": "Can't Load (Not Host)", "fr": "Impossible de charger (pas d'hôte)"}
+{"id": 7622, "en": "<color=#ffffffff>", "fr": "<color=#ffffffff>"}
+{"id": 7623, "en": "JUMPS COMPLETED", "fr": "SAUTS EFFECTUÉS"}
+{"id": 7624, "en": ": $", "fr": ": $"}
+{"id": 7625, "en": ": $$", "fr": ": $$"}
+{"id": 7626, "en": "Total:", "fr": "Total :"}
+{"id": 7627, "en": "LEVELS EARNED", "fr": "NIVEAUX ACQUIS"}
+{"id": 7628, "en": "AOG", "fr": "AOG"}
+{"id": 7629, "en": "FB", "fr": "FB"}
+{"id": 7630, "en": "DEATH COUNT", "fr": "COMPTE DES MORTS"}
+{"id": 7631, "en": "Pawn Deaths:", "fr": "Décès de pions :"}
+{"id": 7632, "en": "Crew Deaths:", "fr": "Décès de l'équipage :"}
+{"id": 7633, "en": "DAMAGE", "fr": "DOMMAGES"}
+{"id": 7634, "en": "Pawn Damage Dealt:", "fr": "Dommages causés par les pions :"}
+{"id": 7635, "en": "Pawn Damage Taken:", "fr": "Dommages subis par le pion :"}
+{"id": 7636, "en": "Ship Damage Dealt:", "fr": "Dommages causés au vaisseau :"}
+{"id": 7637, "en": "Ship Damage Taken:", "fr": "Dommages subis par le vaisseau :"}
+{"id": 7638, "en": "MISC", "fr": "DIVERS"}
+{"id": 7639, "en": "System Dmg Fixed:", "fr": "Dmg système corrigé :"}
+{"id": 7640, "en": "Footsteps Taken:", "fr": "Les traces de pas :"}
+{"id": 7641, "en": "Enemy Ships Destroyed:", "fr": "Vaisseaus ennemis détruits :"}
+{"id": 7642, "en": "Missions Completed:", "fr": "Missions terminées :"}
+{"id": 7643, "en": "Shots Fired:", "fr": "Coups de feu :"}
+{"id": 7644, "en": "Biscuits Sold:", "fr": "Biscuits vendus :"}
+{"id": 7645, "en": "Talents Unlocked:", "fr": "Talents débloqués :"}
+{"id": 7646, "en": "Blind Jumps Completed:", "fr": "Sauts à l'aveugle Terminé :"}
+{"id": 7647, "en": "Sectors Types Visited:", "fr": "Types de secteurs visités :"}
+{"id": 7648, "en": "Max Crew Level Reached:", "fr": "Niveau d'équipage maximum atteint :"}
+{"id": 7649, "en": "Max Chaos Level Reached:", "fr": "Niveau de chaos maximum atteint :"}
+{"id": 7650, "en": "Sector Types Discovered:", "fr": "Types de secteurs découverts :"}
+{"id": 7651, "en": "Earned:", "fr": "Gagné :"}
+{"id": 7652, "en": "Spent:", "fr": "Dépensés :"}
+{"id": 7653, "en": "AMMO SUPPLY", "fr": "APPROVISIONNEMENT EN MUNITIONS"}
+{"id": 7654, "en": "AMMO/FOOD SUPPLY", "fr": "MUNITIONS/ALIMENTATION"}
+{"id": 7661, "en": "Warp to a new sector to sell more biscuits.", "fr": "Se rendre dans un nouveau secteur pour vendre plus de biscuits."}
+{"id": 7662, "en": "This sector is not very interested in biscuits right now. Perhaps try again later.", "fr": "Ce secteur n'est pas très intéressé par les biscuits en ce moment. Vous pourrez peut-être réessayer plus tard."}
+{"id": 7663, "en": "Hard Sell", "fr": "Vente difficile"}
+{"id": 7664, "en": "Soft Sell", "fr": "Vente en douceur"}
+{"id": 7665, "en": "Attempt to make a sale of 25 biscuits. Concludes interaction. Less likely to succeed.", "fr": "Tentative de vente de 25 biscuits. Conclut à l'interaction. Moins de chances de réussite."}
+{"id": 7666, "en": "Attempt to make a sale based on their level of interest. More likely to succeed.", "fr": "Tentez de conclure une vente en fonction de leur niveau d'intérêt. Plus de chances de réussite."}
+{"id": 7667, "en": "Sell Crate", "fr": "Vendre la caisse"}
+{"id": 7668, "en": "Attempt to sell a crate (100) of biscuits. Concludes interaction.", "fr": "Tentative de vente d'une caisse (100) de biscuits. Conclut l'interaction."}
+{"id": 7669, "en": "Attempt to make a sale based on their level of interest. Concludes interaction.", "fr": "Tenter de conclure une vente en fonction de leur niveau d'intérêt. Conclure l'interaction."}
+{"id": 7670, "en": "Bought", "fr": "Acheté"}
+{"id": 7671, "en": "biscuits", "fr": "biscuits"}
+{"id": 7672, "en": "Number Of Sectors", "fr": "Nombre de secteurs"}
+{"id": 7673, "en": "Custom Seed", "fr": "Semences personnalisées"}
+{"id": 7674, "en": "C.U. Initial Strength", "fr": "Force initiale de l'U.C."}
+{"id": 7675, "en": "W.D. Initial Strength", "fr": "W.D. Force initiale"}
+{"id": 7676, "en": "Infected Initial Strength", "fr": "Puissance initiale des infectés"}
+{"id": 7677, "en": "General Store Sectors - Multiplier", "fr": "Secteurs des magasins généraux - Multiplicateur"}
+{"id": 7678, "en": "Long Range Warp Sectors - Multiplier", "fr": "Secteurs de distorsion à longue portée - Multiplicateur"}
+{"id": 7679, "en": "Scrapyard Sectors - Multiplier", "fr": "Secteurs de la ferraille - Multiplicateur"}
+{"id": 7680, "en": "Nebula Sectors - Multiplier", "fr": "Secteurs de la nébuleuse - Multiplicateur"}
+{"id": 7681, "en": "Graveyard Sectors - Multiplier", "fr": "Secteurs du cimetière - Multiplicateur"}
+{"id": 7682, "en": "Minefield Sectors - Multiplier", "fr": "Secteurs de champs de mines - Multiplicateur"}
+{"id": 7683, "en": "Could not fully reset to Standard Settings, some settings cannot be changed. $$Following settings are locked:$", "fr": "La réinitialisation complète des paramètres standard n'a pas été possible, certains paramètres ne peuvent pas être modifiés. Les paramètres suivants sont verrouillés : $$Following settings are locked:$"}
+{"id": 7684, "en": "Could not fully reset to Expert Settings, some settings cannot be changed. $$Following settings are locked:$", "fr": "La réinitialisation complète des paramètres experts n'a pas été possible, certains paramètres ne peuvent pas être modifiés. Les paramètres suivants sont verrouillés : $$Following settings are locked:$"}
+{"id": 7685, "en": "Error loading save file! Save file format is not compatible with this version!", "fr": "Erreur de chargement du fichier de sauvegarde ! Le format du fichier d'enregistrement n'est pas compatible avec cette version !"}
+{"id": 7686, "en": "Time", "fr": "L'heure"}
+{"id": 7687, "en": "SteamCloudIcon", "fr": "SteamCloudIcon"}
+{"id": 7688, "en": "DeleteSave", "fr": "SupprimerEnregistrer"}
+{"id": 7689, "en": "W.D. Cruiser", "fr": "W.D. Cruiser"}
+{"id": 7690, "en": "Intrepid SC", "fr": "Intrepid SC"}
+{"id": 7691, "en": "W.D. Destroyer", "fr": "W.D. Destroyer"}
+{"id": 7692, "en": "W.D. Annihilator", "fr": "W.D. Annihilator"}
+{"id": 7693, "en": "Page", "fr": "Page"}
+{"id": 7694, "en": "SteamCloud Saves Storage:", "fr": "SteamCloud permet d'économiser de l'espace :"}
+{"id": 7695, "en": "Saves/", "fr": "Sauvegarde/"}
+{"id": 7696, "en": "(OUTDATED VERSION)", "fr": "(VERSION PÉRIMÉE)"}
+{"id": 7697, "en": "Ship:", "fr": "Vaisseau :"}
+{"id": 7698, "en": "$Saved:", "fr": "Sauvegardé :"}
+{"id": 7699, "en": "$Crew Level:", "fr": "Niveau de l'équipage :"}
+{"id": 7700, "en": "XP)", "fr": "XP)"}
+{"id": 7701, "en": "$Crew Credits:", "fr": "Crédits de l'équipage :"}
+{"id": 7702, "en": "$Fuel Capsules:", "fr": "Capsules de carburant :"}
+{"id": 7703, "en": "$Galaxy Seed:", "fr": "Graine de galaxie :"}
+{"id": 7704, "en": "$Ironman Mode:", "fr": "Mode Ironman :"}
+{"id": 7705, "en": "$NOTE: Galaxy data will need to be recreated to add new content.", "fr": "REMARQUE : les données de la galaxie devront être recréées pour ajouter du nouveau contenu."}
+{"id": 7706, "en": "$NOTE: AI Data is outdated. We recommened you reset them to the current defaults.", "fr": "REMARQUE : Les données de l'IA sont obsolètes. Nous vous recommandons de les réinitialiser aux valeurs par défaut actuelles."}
+{"id": 7707, "en": "VRUIDepth", "fr": "VRUIDepth"}
+{"id": 7708, "en": "(Steam)", "fr": "(Vapeur)"}
+{"id": 7709, "en": "Connected", "fr": "Connecté"}
+{"id": 7710, "en": "Not Connected", "fr": "Non connecté"}
+{"id": 7711, "en": "ShipName", "fr": "Nom du vaisseau"}
+{"id": 7712, "en": "Corners", "fr": "Coins"}
+{"id": 7713, "en": "HullValue", "fr": "Valeur de la coque"}
+{"id": 7714, "en": "ShldValue", "fr": "Valeur de l'escadre"}
+{"id": 7715, "en": "Shld", "fr": "Shld"}
+{"id": 7731, "en": "Objective", "fr": "Objectif"}
+{"id": 7732, "en": "Mine", "fr": "Mine"}
+{"id": 7733, "en": "Scrap (", "fr": "Ferraille ("}
+{"id": 7734, "en": "km", "fr": "km"}
+{"id": 7740, "en": "crews -", "fr": "équipages -"}
+{"id": 7748, "en": "ViewGalaxySettings", "fr": "ViewGalaxySettings"}
+{"id": 7749, "en": "Fluffy Two", "fr": "Fluffy Two"}
+{"id": 7750, "en": "Interceptor", "fr": "Intercepteur"}
+{"id": 7751, "en": "Paladin", "fr": "Paladin"}
+{"id": 7752, "en": "Failed to join crew! Can't join Secured game when not logged in to Steam!", "fr": "Impossible de rejoindre l'équipage ! Impossible de rejoindre une partie sécurisée si l'on n'est pas connecté à Steam !"}
+{"id": 7753, "en": "ActuallyJoinRoom: Couldn't join crew! It is full! (", "fr": "En fait, j'ai rejoint la salle : Impossible de rejoindre l'équipe ! Il est complet ! ("}
+{"id": 7754, "en": "players in-game)", "fr": "joueurs dans le jeu)"}
+{"id": 7755, "en": "Couldn't join crew! It is full!", "fr": "Impossible de rejoindre l'équipe ! Il est complet !"}
+{"id": 7756, "en": "ActuallyJoinRoom: !(room.customProperties.ContainsKey(\\^CurrentPlayersPlusBots\\^)", "fr": "ActuallyJoinRoom : !(room.customProperties.ContainsKey(\\^CurrentPlayersPlusBots\\^)"}
+{"id": 7757, "en": "(Level", "fr": "(Niveau"}
+{"id": 7760, "en": "HULL", "fr": "COQUE"}
+{"id": 7761, "en": "ARMOR", "fr": "ARMOR"}
+{"id": 7762, "en": "CHARGE RATE", "fr": "TAUX DE CHARGE"}
+{"id": 7763, "en": "OUTPUT", "fr": "SORTIE"}
+{"id": 7764, "en": "MAX TEMP", "fr": "TEMP MAX"}
+{"id": 7765, "en": "WARP", "fr": "WARP"}
+{"id": 7766, "en": "RANGE", "fr": "GAMME"}
+{"id": 7767, "en": "OTHER", "fr": "AUTRES"}
+{"id": 7768, "en": "DETECTION", "fr": "DÉTECTION"}
+{"id": 7769, "en": "MASS", "fr": "MASS"}
+{"id": 7770, "en": "REVERSIBLE THRUSTERS", "fr": "PROPULSEURS RÉVERSIBLES"}
+{"id": 7771, "en": "EXTRACTOR SUPPORT", "fr": "SUPPORT D'EXTRACTEUR"}
+{"id": 7772, "en": "CARGO SLOTS", "fr": "EMPLACEMENTS DE CHARGEMENT"}
+{"id": 7773, "en": "CYBER DEFENSE", "fr": "CYBER DEFENSE"}
+{"id": 7774, "en": "THRUST", "fr": "FOULE"}
+{"id": 7775, "en": "MAIN", "fr": "MAIN"}
+{"id": 7776, "en": "INERTIA", "fr": "INERTIA"}
+{"id": 7777, "en": "MANEUVER", "fr": "MANEUVRE"}
+{"id": 7786, "en": "Issue writing input bindings to disk. Check file / folder permissions to ensure the game can write to disk! Exception:", "fr": "Problème d'écriture des liaisons d'entrée sur le disque. Vérifiez les permissions des fichiers et des dossiers pour vous assurer que le jeu peut écrire sur le disque ! Exception :"}
+{"id": 7787, "en": "bindings", "fr": "liaisons"}
+{"id": 7788, "en": "controller", "fr": "contrôleur"}
+{"id": 7789, "en": "enabled", "fr": "activée"}
+{"id": 7790, "en": "category", "fr": "catégorie"}
+{"id": 7791, "en": "action", "fr": "action"}
+{"id": 7792, "en": "hidden", "fr": "caché"}
+{"id": 7793, "en": "key", "fr": "clé"}
+{"id": 7794, "en": "keyboardLayout", "fr": "keyboardLayout"}
+{"id": 7795, "en": "alljoysticks", "fr": "Tous les bâtons"}
+{"id": 7796, "en": "sensitivity", "fr": "sensibilité"}
+{"id": 7797, "en": "offset", "fr": "compensation"}
+{"id": 7798, "en": "deadzone", "fr": "zone morte"}
+{"id": 7799, "en": "clamp", "fr": "pince"}
+{"id": 7800, "en": "invert", "fr": "inverser"}
+{"id": 7801, "en": "device", "fr": "dispositif"}
+{"id": 7802, "en": "axis", "fr": "axe"}
+{"id": 7803, "en": "multiplier", "fr": "multiplicateur"}
+{"id": 7805, "en": "Q", "fr": "Q"}
+{"id": 7806, "en": "Issue Move Order", "fr": "Délivrer un ordre de mouvement"}
+{"id": 7807, "en": "mouse2", "fr": "souris2"}
+{"id": 7808, "en": "MOUSE2", "fr": "MOUSE2"}
+{"id": 7809, "en": "backquote", "fr": "citation"}
+{"id": 7810, "en": "BACKQUOTE", "fr": "BACKQUOTE"}
+{"id": 7811, "en": "Open Chat / Send Message", "fr": "Ouvrir le chat / Envoyer un message"}
+{"id": 7812, "en": "return", "fr": "retour"}
+{"id": 7813, "en": "RETURN", "fr": "RETOUR"}
+{"id": 7814, "en": "Piloting", "fr": "Le pilotage"}
+{"id": 7815, "en": "Activate Boost", "fr": "Activer Boost"}
+{"id": 7816, "en": "leftshift", "fr": "décalage horaire"}
+{"id": 7817, "en": "LEFTSHIFT", "fr": "DÉPLACEMENT VERS LA GAUCHE"}
+{"id": 7818, "en": "Fire Pulse Laser", "fr": "Laser à impulsion de feu"}
+{"id": 7819, "en": "Toggle Captain's Chair Outside Camera Mode", "fr": "Basculer le fauteuil du capitaine en dehors du mode caméra"}
+{"id": 7820, "en": "mouse1", "fr": "souris1"}
+{"id": 7821, "en": "MOUSE1", "fr": "MOUSE1"}
+{"id": 7822, "en": "Switch To Red Alert", "fr": "Passage à l'alerte rouge"}
+{"id": 7823, "en": "f1", "fr": "f1"}
+{"id": 7824, "en": "F1", "fr": "F1"}
+{"id": 7825, "en": "Switch To Yellow Alert", "fr": "Passage à l'alerte jaune"}
+{"id": 7826, "en": "f2", "fr": "f2"}
+{"id": 7827, "en": "F2", "fr": "F2"}
+{"id": 7828, "en": "Switch To Green Alert", "fr": "Passer à l'alerte verte"}
+{"id": 7829, "en": "f3", "fr": "f3"}
+{"id": 7830, "en": "F3", "fr": "F3"}
+{"id": 7831, "en": "Process Scrap", "fr": "Traitement de la ferraille"}
+{"id": 7832, "en": "R", "fr": "R"}
+{"id": 7833, "en": "Pilot Ability", "fr": "Capacité de pilotage"}
+{"id": 7834, "en": "V", "fr": "V"}
+{"id": 7835, "en": "current", "fr": "actuel"}
+{"id": 7836, "en": "button", "fr": "bouton"}
+{"id": 7837, "en": "mouse", "fr": "souris"}
+{"id": 7838, "en": "positive", "fr": "positif"}
+{"id": 7839, "en": "negative", "fr": "négatif"}
+{"id": 7856, "en": "xbox", "fr": "xbox"}
+{"id": 7857, "en": "Xbox One Controller", "fr": "Manette Xbox One"}
+{"id": 7858, "en": "PS4 Controller", "fr": "Manette PS4"}
+{"id": 7859, "en": "OnRemoteFileReadAsyncComplete:", "fr": "OnRemoteFileReadAsyncComplete :"}
+{"id": 7860, "en": "m_cubRead:", "fr": "m_cubRead :"}
+{"id": 7861, "en": "OnRemoteFileReadAsyncComplete:        bIOFailure:", "fr": "OnRemoteFileReadAsyncComplete : bIOFailure :"}
+{"id": 7862, "en": "FileReadAsyncComplete called:    result:", "fr": "FileReadAsyncComplete appelé : result :"}
+{"id": 7863, "en": "OnRemoteFileWriteAsyncComplete:", "fr": "OnRemoteFileWriteAsyncComplete :"}
+{"id": 7864, "en": "none", "fr": "aucun"}
+{"id": 7865, "en": "ALPHA0", "fr": "ALPHA0"}
+{"id": 7866, "en": "ALPHA1", "fr": "ALPHA1"}
+{"id": 7867, "en": "ALPHA2", "fr": "ALPHA2"}
+{"id": 7868, "en": "ALPHA3", "fr": "ALPHA3"}
+{"id": 7869, "en": "ALPHA4", "fr": "ALPHA4"}
+{"id": 7870, "en": "ALPHA5", "fr": "ALPHA5"}
+{"id": 7871, "en": "ALPHA6", "fr": "ALPHA6"}
+{"id": 7872, "en": "ALPHA7", "fr": "ALPHA7"}
+{"id": 7873, "en": "ALPHA8", "fr": "ALPHA8"}
+{"id": 7874, "en": "ALPHA9", "fr": "ALPHA9"}
+{"id": 7875, "en": "MOUSE0", "fr": "MOUSE0"}
+{"id": 7876, "en": "LEFTCLICK", "fr": "LEFTCLICK"}
+{"id": 7877, "en": "RIGHTCLICK", "fr": "RIGHTCLICK"}
+{"id": 7878, "en": "gravity", "fr": "gravité"}
+{"id": 7879, "en": "axiskey", "fr": "clé d'axe"}
+{"id": 7880, "en": "joy_0_axis_", "fr": "joy_0_axis_"}
+{"id": 7881, "en": "joy_1_axis_", "fr": "joy_1_axis_"}
+{"id": 7882, "en": "joy_2_axis_", "fr": "joy_2_axis_"}
+{"id": 7883, "en": "joy_3_axis_", "fr": "joy_3_axis_"}
+{"id": 7884, "en": "Saitek X-55 (Throttle)", "fr": "Saitek X-55 (accélérateur)"}
+{"id": 7885, "en": "saitek", "fr": "saitek"}
+{"id": 7886, "en": "x-55", "fr": "x-55"}
+{"id": 7887, "en": "throttle", "fr": "accélérateur"}
+{"id": 7888, "en": "Saitek X-55 (Joystick)", "fr": "Saitek X-55 (Joystick)"}
+{"id": 7889, "en": "stick", "fr": "bâton"}
+{"id": 7890, "en": "Saitek X-52", "fr": "Saitek X-52"}
+{"id": 7891, "en": "x-52", "fr": "x-52"}
+{"id": 7892, "en": "for sub axis", "fr": "pour le sous-axe"}
+{"id": 7893, "en": "pilot_maneuver_horizontal", "fr": "manœuvre_horizontale_du_pilote"}
+{"id": 7894, "en": "joystick_move_2d", "fr": "joystick_move_2d"}
+{"id": 7895, "en": "joystick_roll_2d", "fr": "joystick_roll_2d"}
+{"id": 7896, "en": "joystick_2d", "fr": "joystick_2d"}
+{"id": 7897, "en": "joystick_view_2d", "fr": "joystick_view_2d"}
+{"id": 7898, "en": "mouse0", "fr": "souris0"}
+{"id": 7899, "en": "mouse3", "fr": "souris3"}
+{"id": 7900, "en": "mouse4", "fr": "souris4"}
+{"id": 7901, "en": "Numpad 0", "fr": "Numpad 0"}
+{"id": 7902, "en": "Numpad 1", "fr": "Numpad 1"}
+{"id": 7903, "en": "Numpad 2", "fr": "Numpad 2"}
+{"id": 7904, "en": "Numpad 3", "fr": "Numpad 3"}
+{"id": 7905, "en": "Numpad 4", "fr": "Numpad 4"}
+{"id": 7906, "en": "Numpad 5", "fr": "Numpad 5"}
+{"id": 7907, "en": "Numpad 6", "fr": "Numpad 6"}
+{"id": 7908, "en": "Numpad 7", "fr": "Numpad 7"}
+{"id": 7909, "en": "Numpad 8", "fr": "Numpad 8"}
+{"id": 7910, "en": "Numpad 9", "fr": "Numpad 9"}
+{"id": 7911, "en": "Numpad Enter", "fr": "Numpad Enter"}
+{"id": 7912, "en": "Numpad /", "fr": "Numpad /"}
+{"id": 7913, "en": "Numpad -", "fr": "Numpad -"}
+{"id": 7914, "en": "Numpad +", "fr": "Numpad +"}
+{"id": 7915, "en": "Numpad .", "fr": "Numpad ."}
+{"id": 7916, "en": "Numpad =", "fr": "Numpad ="}
+{"id": 7917, "en": "Numpad *", "fr": "Numpad *"}
+{"id": 7918, "en": "Right Control", "fr": "Contrôle du droit"}
+{"id": 7919, "en": "Left Control", "fr": "Contrôle à gauche"}
+{"id": 7920, "en": "Right Arrow", "fr": "Flèche droite"}
+{"id": 7921, "en": "Left Arrow", "fr": "Flèche gauche"}
+{"id": 7922, "en": "Up Arrow", "fr": "Flèche vers le haut"}
+{"id": 7923, "en": "Down Arrow", "fr": "Flèche vers le bas"}
+{"id": 7924, "en": "Right Alt", "fr": "Droite Alt"}
+{"id": 7925, "en": "Left Alt", "fr": "Alt gauche"}
+{"id": 7926, "en": ";", "fr": ";"}
+{"id": 7927, "en": ".", "fr": "."}
+{"id": 7928, "en": "=", "fr": "="}
+{"id": 7929, "en": "`", "fr": "`"}
+{"id": 7930, "en": "\\\\", "fr": "\\\\"}
+{"id": 7931, "en": "409", "fr": "409"}
+{"id": 7932, "en": "com.apple.keylayout.US", "fr": "com.apple.keylayout.US"}
+{"id": 7933, "en": "Exception for key control:", "fr": "Exception pour le contrôle des clés :"}
+{"id": 7934, "en": "Input.GetButton start", "fr": "Input.GetButton start"}
+{"id": 7935, "en": "Input.GetButton FindActionsByID", "fr": "Input.GetButton FindActionsByID"}
+{"id": 7936, "en": "ColorMat", "fr": "ColorMat"}
+{"id": 7937, "en": "Syncing Game State", "fr": "Synchronisation de l'état du jeu"}
+{"id": 7938, "en": "Loading", "fr": "Chargement"}
+{"id": 7939, "en": ".", "fr": "."}
+{"id": 7940, "en": "Board the targeted enemy ship and behave according to active subpriority", "fr": "Aborder le vaisseau ennemi ciblé et agir en fonction de la sous-priorité active"}
+{"id": 7941, "en": "Attempt to sell biscuits to potential customers on the planet's surface", "fr": "Tenter de vendre des biscuits à des clients potentiels à la surface de la planète"}
+{"id": 7942, "en": "Enables the cloaking system", "fr": "Active le système d'occultation"}
+{"id": 7943, "en": "Seek and capture enemy ship screens (not yet implemented)", "fr": "Recherche et capture d'écrans de vaisseaux ennemis (pas encore implémenté)"}
+{"id": 7944, "en": "Stay close to the Captain (within specified range)", "fr": "Rester à proximité du capitaine (dans le rayon d'action spécifié)"}
+{"id": 7945, "en": "Shoot nearby enemies and attempt to avoid damage", "fr": "Tirez sur les ennemis proches et essayez d'éviter les dégâts"}
+{"id": 7946, "en": "Seek and destroy enemy ship systems (not yet implemented)", "fr": "Recherche et destruction des systèmes des vaisseaux ennemis (pas encore mis en œuvre)"}
+{"id": 7947, "en": "Begin jump preparations for warp", "fr": "Commencer les préparatifs de saut pour la distorsion"}
+{"id": 7948, "en": "Jump the ship", "fr": "Sauter le vaisseau"}
+{"id": 7949, "en": "The relative power level of Engineering", "fr": "Le niveau de puissance relative de l'ingénierie"}
+{"id": 7950, "en": "Higher importance will cause the AI to use LESS coolant", "fr": "Plus l'importance est grande, moins l'IA utilise de liquide de refroidissement."}
+{"id": 7951, "en": "Normal reactor management behavior", "fr": "Comportement normal de la gestion du réacteur"}
+{"id": 7952, "en": "Higher importance will cause the AI to use LESS power overall", "fr": "Une importance plus grande permettra à l'IA de consommer moins d'énergie."}
+{"id": 7953, "en": "Higher importance will cause the AI to take less risk with power management", "fr": "Une importance plus grande amènera l'IA à prendre moins de risques dans la gestion de l'énergie."}
+{"id": 7954, "en": "The relative power level of Science", "fr": "Le niveau de pouvoir relatif de la science"}
+{"id": 7955, "en": "The relative power level of Shields", "fr": "Le niveau de puissance relatif des boucliers"}
+{"id": 7956, "en": "The relative power level of Weapons", "fr": "Le niveau de puissance relative des armes"}
+{"id": 7957, "en": "Put out fires on the ship.", "fr": "Éteindre les incendies sur le vaisseau."}
+{"id": 7958, "en": "Repair damaged systems on the ship.", "fr": "Réparer les systèmes endommagés du vaisseau."}
+{"id": 7959, "en": "Switch shield frequency to lower signature", "fr": "Commutation de la fréquence du bouclier sur une signature plus basse"}
+{"id": 7960, "en": "Run programs and switch shield frequency based on situation", "fr": "Exécuter des programmes et modifier la fréquence des boucliers en fonction de la situation"}
+{"id": 7961, "en": "Fire probes and search sector for undetected ships", "fr": "Tirer des sondes et rechercher des vaisseaus non détectés dans le secteur"}
+{"id": 7962, "en": "Higher importance will increase chance of virus use", "fr": "Une importance accrue augmentera les chances d'utilisation du virus"}
+{"id": 7963, "en": "Importance of shield frequency set to Modulate", "fr": "Importance de la fréquence du bouclier réglée sur Modulate"}
+{"id": 7964, "en": "Importance of shield frequency set to Static", "fr": "Importance de la fréquence du bouclier réglée sur Statique"}
+{"id": 7965, "en": "Higher importance will increase chance of program use", "fr": "Une plus grande importance augmentera les chances d'utilisation du programme"}
+{"id": 7966, "en": "Use startup switchboard to get ship systems back online.", "fr": "Utiliser le standard de démarrage pour remettre en service les systèmes du vaisseau."}
+{"id": 7967, "en": "Try to stay with group (not yet implemented)", "fr": "Essayer de rester avec le groupe (pas encore mis en œuvre)"}
+{"id": 7968, "en": "Higher importance will increase chance of announcing actions", "fr": "Une importance accrue augmente les chances d'annoncer des actions"}
+{"id": 7969, "en": "Higher importance will increase chance of weapons use", "fr": "Une importance accrue augmente le risque d'utilisation d'armes"}
+{"id": 7970, "en": "Relative importance of missile targeting set to Engineering", "fr": "L'importance relative du ciblage des missiles est fixée à l'ingénierie"}
+{"id": 7971, "en": "Relative importance of missile targeting set to Life Support", "fr": "Importance relative du ciblage des missiles par rapport au système de survie"}
+{"id": 7972, "en": "Relative importance of missile targeting set to a random system", "fr": "Importance relative d'un ensemble de cibles de missiles par rapport à un système aléatoire"}
+{"id": 7973, "en": "Relative importance of missile targeting set to Science", "fr": "L'importance relative du ciblage des missiles est fixée à Science"}
+{"id": 7974, "en": "Relative importance of missile targeting set to Weapons", "fr": "Importance relative du ciblage des missiles sur les armes"}
+{"id": 7975, "en": "Fly close to targeted ship and keep turrets within line of sight.", "fr": "Volez à proximité du vaisseau ciblé et gardez les tourelles en ligne de mire."}
+{"id": 7976, "en": "Fly ship away from black hole.", "fr": "Éloigner le vaisseau du trou noir."}
+{"id": 7977, "en": "Use minimal thrust to avoid EM detection and fly away from targeted ship.", "fr": "Utilisez une poussée minimale pour éviter la détection électromagnétique et éloignez-vous du vaisseau ciblé."}
+{"id": 7978, "en": "Collect scrap in sector.", "fr": "Collecte de la ferraille dans le secteur."}
+{"id": 7979, "en": "Maintain distance from targeted ship.", "fr": "Maintenir la distance avec le vaisseau ciblé."}
+{"id": 7980, "en": "Patrol the area", "fr": "Patrouiller dans la zone"}
+{"id": 7981, "en": "Reactor Overclock", "fr": "Reactor Overclock"}
+{"id": 7982, "en": "Fly the ship. Behavior is heavily based on active subpriority.", "fr": "Piloter le vaisseau. Le comportement est fortement basé sur la sous-priorité active."}
+{"id": 7983, "en": "Line up to next sector on captain's waypoint route", "fr": "S'aligner sur le secteur suivant sur l'itinéraire du capitaine"}
+{"id": 7984, "en": "Use Long Range Warp Stations", "fr": "Utiliser les stations de distorsion à longue portée"}
+{"id": 7985, "en": "Fly ship into repair depot.", "fr": "Volez jusqu'à l'atelier de réparation."}
+{"id": 7986, "en": "Frequency of nuke deployment. (not yet implemented)", "fr": "Fréquence de déploiement des armes nucléaires. (pas encore mis en œuvre)"}
+{"id": 7987, "en": "Frequency of missile deployment.", "fr": "Fréquence de déploiement des missiles."}
+{"id": 7988, "en": "Use a ship turret", "fr": "Utiliser une tourelle de vaisseau"}
+{"id": 7989, "en": "Seek an atrium", "fr": "Chercher un atrium"}
+{"id": 7990, "en": "Explore ship and kill enemy crew", "fr": "Explorer le vaisseau et tuer l'équipage ennemi"}
+{"id": 7991, "en": "At ease", "fr": "A l'aise"}
+{"id": 7992, "en": "/Saves/AI/", "fr": "/Saves/AI/"}
+{"id": 7993, "en": "*", "fr": "*"}
+{"id": 7994, "en": "ReadFromAIFile EXCEPTION", "fr": "ReadFromAIFile EXCEPTION"}
+{"id": 7995, "en": "Automated Railgun Turret", "fr": "Tourelle de railgun automatisée"}
+{"id": 7996, "en": "A fully automated turret system designed to fire without direct crew control.", "fr": "Système de tourelle entièrement automatisé conçu pour tirer sans contrôle direct de l'équipage."}
+{"id": 7997, "en": "AUTO TURRET", "fr": "AUTO TURRET"}
+{"id": 7998, "en": "Plasma Turret", "fr": "Tourelle à plasma"}
+{"id": 7999, "en": "A standard armament that can be found on many ships. It is known for its fast firing capability and high damage.", "fr": "Il s'agit d'un armement standard que l'on trouve sur de nombreux vaisseaus. Il est connu pour sa rapidité de tir et ses dégâts importants."}
+{"id": 8000, "en": "Ant_Drone", "fr": "Ant_Drone"}
+{"id": 8001, "en": "WELCOME TO THE ARENA!", "fr": "BIENVENUE DANS L'ARÈNE !"}
+{"id": 8002, "en": "ARENA", "fr": "ARENA"}
+{"id": 8003, "en": "MovePlayerPawnToArenaStart failed!", "fr": "MovePlayerPawnToArenaStart a échoué !"}
+{"id": 8004, "en": "BurrowArena_ArenaIDCleared", "fr": "BurrowArena_ArenaIDCleared"}
+{"id": 8005, "en": "YOU SURVIVED THE ARENA!", "fr": "VOUS AVEZ SURVÉCU À L'ARÈNE !"}
+{"id": 8006, "en": "Ant_Drone_Emerged", "fr": "Ant_Drone_Emergée"}
+{"id": 8007, "en": "Ant_Drone_Glowing", "fr": "Ant_Drone_Glowing"}
+{"id": 8008, "en": "Ant_Drone_Glowing_Emerged", "fr": "Ant_Drone_Glowing_Emerged"}
+{"id": 8009, "en": "Ant_Ravager", "fr": "Ant_Ravager"}
+{"id": 8010, "en": "Ant_Ravager_Emerged", "fr": "Fourmi_Ravageuse_Emergée"}
+{"id": 8011, "en": "Enemy", "fr": "Ennemi"}
+{"id": 8012, "en": "Burst Turret", "fr": "Tourelle d'éclatement"}
+{"id": 8013, "en": "As its name suggests, this turret fires a burst of shots at its target. Designed for medium range damage.", "fr": "Comme son nom l'indique, cette tourelle tire en rafale sur sa cible. Elle est conçue pour infliger des dégâts à moyenne distance."}
+{"id": 8014, "en": "Crew Level (Min)", "fr": "Niveau de l'équipage (Min)"}
+{"id": 8015, "en": "Crew Level (Max)", "fr": "Niveau d'équipage (Max)"}
+{"id": 8016, "en": "CU Rep (Min)", "fr": "Représentant de l'UC (Min)"}
+{"id": 8017, "en": "CU Rep (Max)", "fr": "Rep CU (Max)"}
+{"id": 8018, "en": "AOG Rep (Min)", "fr": "Représentant de l'AOG (Min)"}
+{"id": 8019, "en": "AOG Rep (Max)", "fr": "AOG Rep (Max)"}
+{"id": 8020, "en": "FB Rep (Min)", "fr": "Représentant du BF (Min)"}
+{"id": 8021, "en": "FB Rep (Max)", "fr": "FB Rep (Max)"}
+{"id": 8022, "en": "WD Rep (Min)", "fr": "Représentant du DEO (Min)"}
+{"id": 8023, "en": "WD Rep (Max)", "fr": "Rep de la DT (Max)"}
+{"id": 8024, "en": "PT Rep (Min)", "fr": "PT Rep (Min)"}
+{"id": 8025, "en": "PT Rep (Max)", "fr": "PT Rep (Max)"}
+{"id": 8026, "en": "Mission of ID (Not Yet Started)", "fr": "Mission d'identification (pas encore entamée)"}
+{"id": 8027, "en": "13", "fr": "13"}
+{"id": 8028, "en": "Mission of ID (Completed)", "fr": "Mission d'identification (Terminé)"}
+{"id": 8029, "en": "14", "fr": "14"}
+{"id": 8030, "en": "Mission of ID (In Progress)", "fr": "Mission d'identification (en cours)"}
+{"id": 8031, "en": "Mission of ID (Ready To Turn In)", "fr": "Mission d'identification (à rendre)"}
+{"id": 8032, "en": "16", "fr": "16"}
+{"id": 8033, "en": "Chaos Level (Min)", "fr": "Niveau de chaos (Min)"}
+{"id": 8034, "en": "17", "fr": "17"}
+{"id": 8035, "en": "Chaos Level (Max)", "fr": "Niveau de chaos (Max)"}
+{"id": 8036, "en": "18", "fr": "18"}
+{"id": 8037, "en": "Mission of ID (Failed)", "fr": "Mission d'identification (Échec)"}
+{"id": 8038, "en": "19", "fr": "19"}
+{"id": 8039, "en": "Crew Faction (Equals)", "fr": "Faction de l'équipage (égaux)"}
+{"id": 8040, "en": "20", "fr": "20"}
+{"id": 8041, "en": "Crew Faction (NOT Equals)", "fr": "Faction de l'équipage (PAS d'égalité)"}
+{"id": 8042, "en": "21", "fr": "21"}
+{"id": 8043, "en": "Objective of ID is completed", "fr": "L'objectif de l'identification est atteint"}
+{"id": 8044, "en": "22", "fr": "22"}
+{"id": 8045, "en": "Objective of ID is NOT completed", "fr": "L'objectif de l'identification n'est pas atteint"}
+{"id": 8046, "en": "23", "fr": "23"}
+{"id": 8047, "en": "Is Hostile", "fr": "Est hostile"}
+{"id": 8048, "en": "24", "fr": "24"}
+{"id": 8049, "en": "Is NOT Hostile", "fr": "N'est PAS hostile"}
+{"id": 8050, "en": "25", "fr": "25"}
+{"id": 8051, "en": "Playership Faction (Equals)", "fr": "Faction des joueurs (égaux)"}
+{"id": 8052, "en": "26", "fr": "26"}
+{"id": 8053, "en": "Playership Faction (NOT Equal)", "fr": "Faction des joueurs (NON égaux)"}
+{"id": 8054, "en": "27", "fr": "27"}
+{"id": 8055, "en": "Credits > Parameter", "fr": "Crédits > Paramètres"}
+{"id": 8056, "en": "28", "fr": "28"}
+{"id": 8057, "en": "Credits <= Parameter", "fr": "Crédits <= Paramètres"}
+{"id": 8058, "en": "29", "fr": "29"}
+{"id": 8059, "en": "Crew Is Flagged", "fr": "L'équipage est signalé"}
+{"id": 8060, "en": "Crew Is NOT Flagged", "fr": "L'équipage ne porte pas de drapeau"}
+{"id": 8061, "en": "31", "fr": "31"}
+{"id": 8062, "en": "Has a Biscuit Crate", "fr": "Possède une caisse à biscuits"}
+{"id": 8063, "en": "32", "fr": "32"}
+{"id": 8064, "en": "Has NO Biscuit Crate", "fr": "N'a PAS de caisse à biscuits"}
+{"id": 8065, "en": "33", "fr": "33"}
+{"id": 8066, "en": "FB Ranking (0-100%) (Min)", "fr": "Classement FB (0-100%) (Min)"}
+{"id": 8067, "en": "34", "fr": "34"}
+{"id": 8068, "en": "FB Ranking (0-100%) (Max)", "fr": "Classement FB (0-100%) (Max)"}
+{"id": 8069, "en": "35", "fr": "35"}
+{"id": 8070, "en": "36", "fr": "36"}
+{"id": 8071, "en": "37", "fr": "37"}
+{"id": 8072, "en": "LINE_UNAVAILABLE", "fr": "LIGNE_INDISPONIBLE"}
+{"id": 8073, "en": "[[PIN_CODE]]", "fr": "[[PIN_CODE]]"}
+{"id": 8074, "en": "0", "fr": "0"}
+{"id": 8075, "en": "[___[", "fr": "[___["}
+{"id": 8076, "en": "]___]", "fr": "]___]"}
+{"id": 8077, "en": "default_campaign.xml", "fr": "default_campaign.xml"}
+{"id": 8078, "en": "default_campaign", "fr": "campagne_par_défaut"}
+{"id": 8079, "en": "actorType", "fr": "type d'acteur"}
+{"id": 8080, "en": "hostilebydefault", "fr": "hostile par défaut"}
+{"id": 8081, "en": "hailonstart", "fr": "début de la grêle"}
+{"id": 8082, "en": "shipisflagged", "fr": "vaisseau est pavoisé"}
+{"id": 8083, "en": "closecommsifwarpdrivecharging", "fr": "fermerlescommissionsfairefonctionnerlaprisedecharge"}
+{"id": 8084, "en": "rel", "fr": "rel"}
+{"id": 8085, "en": "ActorID", "fr": "ActorID"}
+{"id": 8086, "en": "RelType", "fr": "RelType"}
+{"id": 8087, "en": "Param", "fr": "Param"}
+{"id": 8088, "en": "pickupmission", "fr": "mission de ramassage"}
+{"id": 8089, "en": "OriginalName", "fr": "Nom d'origine"}
+{"id": 8090, "en": "rarity", "fr": "rareté"}
+{"id": 8091, "en": "Exception parsing float:", "fr": "Exception dans l'analyse du flotteur :"}
+{"id": 8092, "en": "blocksotherpickupmissionstarts", "fr": "bloque les autres départs de missions de ramassage"}
+{"id": 8093, "en": "CanBeBlockedByOtherPickupMissions", "fr": "Peut être bloqué par d'autres missions de ramassage"}
+{"id": 8094, "en": "longrangedialogueactorid", "fr": "longrangedialogueactorid"}
+{"id": 8095, "en": "longrangedialoguedisplayname", "fr": "longrangedialoguedisplayname"}
+{"id": 8096, "en": "original_longrangedialoguedisplayname", "fr": "original_longrangedialoguedisplayname"}
+{"id": 8097, "en": "StartingRequirements_ALLMUSTMATCH", "fr": "Exigences de départ_ TOUTES DOIVENT CORRESPONDRE"}
+{"id": 8098, "en": "SuccessRequirements_ALLMUSTMATCH", "fr": "Exigences de réussite_ALLMUSTMATCH"}
+{"id": 8099, "en": "FailureRequirements_ALLMUSTMATCH", "fr": "Exigences de défaillance_ TOUTES DOIVENT CORRESPONDRE"}
+{"id": 8100, "en": "IsRepeatable", "fr": "EstRépétible"}
+{"id": 8101, "en": "CallOnStart", "fr": "CallOnStart"}
+{"id": 8102, "en": "CallOnFailure", "fr": "CallOnFailure"}
+{"id": 8103, "en": "CallOnSuccess", "fr": "CallOnSuccess"}
+{"id": 8104, "en": "OriginalDesc", "fr": "OriginalDesc"}
+{"id": 8105, "en": "RecCrewLevel", "fr": "Niveau de l'équipage"}
+{"id": 8106, "en": "CanBeAbandonedByPlayers", "fr": "Peut être abandonné par les joueurs"}
+{"id": 8107, "en": "sectors", "fr": "secteurs"}
+{"id": 8108, "en": "sector", "fr": "secteur"}
+{"id": 8109, "en": "startingrewards", "fr": "récompenses de départ"}
+{"id": 8110, "en": "reward", "fr": "récompense"}
+{"id": 8111, "en": "successrewards", "fr": "récompenses de la réussite"}
+{"id": 8112, "en": "failurerewards", "fr": "récompenses en cas d'échec"}
+{"id": 8113, "en": "successrequirements", "fr": "conditions de réussite"}
+{"id": 8114, "en": "requirement", "fr": "exigence"}
+{"id": 8115, "en": "failurerequirements", "fr": "conditions d'échec"}
+{"id": 8116, "en": "startingrequirements", "fr": "exigences de départ"}
+{"id": 8117, "en": "objective", "fr": "objectif"}
+{"id": 8118, "en": "mission", "fr": "mission"}
+{"id": 8119, "en": "ChaosModifier", "fr": "ChaosModifier"}
+{"id": 8120, "en": "Reward_Credits", "fr": "Crédits_de_récompense"}
+{"id": 8121, "en": "Reward_XP", "fr": "Récompense_XP"}
+{"id": 8122, "en": "FactionRepModifier0", "fr": "FactionRepModifier0"}
+{"id": 8123, "en": "FactionRepModifier1", "fr": "FactionRepModifier1"}
+{"id": 8124, "en": "FactionRepModifier2", "fr": "FactionRepModifier2"}
+{"id": 8125, "en": "FactionRepModifier3", "fr": "FactionRepModifier3"}
+{"id": 8126, "en": "FactionRepModifier4", "fr": "FactionRepModifier4"}
+{"id": 8127, "en": "FactionStrModifier0", "fr": "FactionStrModifier0"}
+{"id": 8128, "en": "FactionStrModifier1", "fr": "FactionStrModifier1"}
+{"id": 8129, "en": "FactionStrModifier2", "fr": "FactionStrModifier2"}
+{"id": 8130, "en": "FactionStrModifier3", "fr": "FactionStrModifier3"}
+{"id": 8131, "en": "FactionStrModifier4", "fr": "FactionStrModifier4"}
+{"id": 8132, "en": "lineCounter:", "fr": "compteur de lignes :"}
+{"id": 8133, "en": "distance", "fr": "distance"}
+{"id": 8134, "en": "factionID", "fr": "factionID"}
+{"id": 8135, "en": "spawnregularshipstoo", "fr": "frayer des vaisseaus irréguliers"}
+{"id": 8136, "en": "uniquetype", "fr": "type unique"}
+{"id": 8137, "en": "ship", "fr": "vaisseau"}
+{"id": 8138, "en": "amount", "fr": "montant"}
+{"id": 8139, "en": "dataA", "fr": "donnéesA"}
+{"id": 8140, "en": "dataB", "fr": "dataB"}
+{"id": 8141, "en": "dataC", "fr": "donnéesC"}
+{"id": 8142, "en": "dataD", "fr": "dataD"}
+{"id": 8143, "en": "forcehostile", "fr": "forcehostile"}
+{"id": 8144, "en": "forcehostileall", "fr": "forcehostileall"}
+{"id": 8145, "en": "forcehostilename", "fr": "forcehostilename"}
+{"id": 8146, "en": "flagged", "fr": "signalé"}
+{"id": 8147, "en": "creditstodrop", "fr": "creditstodrop"}
+{"id": 8148, "en": "dropdefaultcredits", "fr": "supprimer les crédits par défaut"}
+{"id": 8149, "en": "immediatelystartdialogue", "fr": "entamer immédiatement le dialogue"}
+{"id": 8150, "en": "randomizename", "fr": "nom aléatoire"}
+{"id": 8151, "en": "startinghullpercent", "fr": "pourcentage de départ"}
+{"id": 8152, "en": "startingshieldspercent", "fr": "pourcentage des boucliers de départ"}
+{"id": 8153, "en": "dialogueactorid", "fr": "dialogueactorid"}
+{"id": 8154, "en": "component", "fr": "composante"}
+{"id": 8155, "en": "ReplaceExistingComp", "fr": "ReplaceExistingComp"}
+{"id": 8156, "en": "CompTypeToReplace", "fr": "CompTypeToReplace"}
+{"id": 8157, "en": "CompSubTypeToReplace", "fr": "CompSubTypeToReplace"}
+{"id": 8158, "en": "SlotNumberToReplace", "fr": "SlotNumberToReplace"}
+{"id": 8159, "en": "CompSubType", "fr": "CompSubType"}
+{"id": 8160, "en": "CompLevel", "fr": "CompLevel"}
+{"id": 8161, "en": "IsCargo", "fr": "IsCargo"}
+{"id": 8162, "en": "value", "fr": "valeur"}
+{"id": 8163, "en": "CustomText", "fr": "Texte personnalisé"}
+{"id": 8164, "en": "CustomTextOriginal", "fr": "Texte personnaliséOriginal"}
+{"id": 8165, "en": "param", "fr": "paramètre"}
+{"id": 8166, "en": "option", "fr": "option"}
+{"id": 8167, "en": "TRADE", "fr": "COMMERCE"}
+{"id": 8168, "en": "ScriptID", "fr": "ScriptID"}
+{"id": 8169, "en": "LineTag", "fr": "LineTag"}
+{"id": 8170, "en": "OneTimeLine", "fr": "OneTimeLine"}
+{"id": 8171, "en": "LineTimer", "fr": "LineTimer"}
+{"id": 8172, "en": "ID", "fr": "ID"}
+{"id": 8173, "en": "__", "fr": "__"}
+{"id": 8174, "en": "-------", "fr": "-------"}
+{"id": 8175, "en": "-------", "fr": "-------"}
+{"id": 8176, "en": "<color=#AAAAAA>", "fr": "<color=#AAAAAA>"}
+{"id": 8177, "en": "</color>\\t[", "fr": "</color>\\t["}
+{"id": 8178, "en": "]\\t[ <color=red>ERROR</color> ]", "fr": "]\\t[ <color=red>ERROR</color> ]"}
+{"id": 8179, "en": "Ancient Laser Turret", "fr": "Ancienne tourelle laser"}
+{"id": 8180, "en": "- NO INFO -", "fr": "- PAS D'INFO -"}
+{"id": 8181, "en": "_LaserColor", "fr": "Couleur laser"}
+{"id": 8182, "en": "_TimeSinceShot", "fr": "Temps écoulé depuis la prise de vue"}
+{"id": 8183, "en": "Talk to", "fr": "Parler à"}
+{"id": 8184, "en": "MissionStartPrefab", "fr": "MissionStartPrefab"}
+{"id": 8185, "en": "MissionEndPrefab", "fr": "MissionEndPrefab"}
+{"id": 8186, "en": "LateExecuteAction:", "fr": "LateExecuteAction :"}
+{"id": 8187, "en": "authority:", "fr": "l'autorité :"}
+{"id": 8188, "en": "local:", "fr": "local :"}
+{"id": 8189, "en": "ShipDialogue:", "fr": "ShipDialogue :"}
+{"id": 8190, "en": "Open_Trading_Window", "fr": "Fenêtre_de_négociation_ouverte"}
+{"id": 8191, "en": "End_Dialogue", "fr": "Fin du dialogue"}
+{"id": 8192, "en": "Intimidate", "fr": "Intimidation"}
+{"id": 8193, "en": "Diplomacy", "fr": "Diplomatie"}
+{"id": 8194, "en": "Extort_Credits", "fr": "Extort_Credits"}
+{"id": 8195, "en": "Extort_Fuel", "fr": "Extort_Fuel"}
+{"id": 8196, "en": "Lower_Shields", "fr": "Boucliers_inférieurs"}
+{"id": 8197, "en": "+[STR0] Chaos (due to dialogue)", "fr": "+[STR0] Chaos (à cause du dialogue)"}
+{"id": 8198, "en": "+1 Rep for [STR0] (due to dialogue)", "fr": "+1 Rep pour [STR0] (grâce au dialogue)"}
+{"id": 8199, "en": "Long range transmission blocked (prevented Reputation gain)", "fr": "Transmission à longue distance bloquée (gain de réputation empêché)"}
+{"id": 8200, "en": "-1 Rep for [STR0] (due to dialogue)", "fr": "-1 Rep pour [STR0] (à cause du dialogue)"}
+{"id": 8201, "en": "SetShipAsFlagged", "fr": "SetShipAsFlagged"}
+{"id": 8202, "en": "SetShipAsNOTFlagged", "fr": "SetShipAsNOTFlagged (Définir un vaisseau sans pavillon)"}
+{"id": 8203, "en": "SellCrate", "fr": "SellCrate"}
+{"id": 8204, "en": "GiveCrate", "fr": "GiveCrate"}
+{"id": 8205, "en": "Your ship has been flagged by [STR0]", "fr": "Votre vaisseau a été signalé par [STR0]"}
+{"id": 8206, "en": "CaptainChangeItemCargoStatus", "fr": "CapitaineChangerItemCargoStatus"}
+{"id": 8207, "en": "Can't install/uninstall components without depot or shop", "fr": "Impossible d'installer/désinstaller des composants sans dépôt ou magasin"}
+{"id": 8208, "en": "LEVEL", "fr": "NIVEAU"}
+{"id": 8209, "en": "TEMP", "fr": "TEMP"}
+{"id": 8210, "en": "ACIDIC", "fr": "ACIDE"}
+{"id": 8211, "en": "HIGH TEMP", "fr": "HAUTE TEMPÉRATURE"}
+{"id": 8212, "en": "LOW TEMP", "fr": "BASSE TEMPERATURE"}
+{"id": 8213, "en": "is equipped with powerful laser-based components.", "fr": "est équipé de puissants composants à base de laser."}
+{"id": 8214, "en": "Fluffy Factory", "fr": "Fluffy Factory"}
+{"id": 8215, "en": "dwl", "fr": "nid d'abeille"}
+{"id": 8216, "en": "FluffyNavUIRoot", "fr": "FluffyNavUIRoot"}
+{"id": 8217, "en": "PlayerShipIcon", "fr": "PlayerShipIcon"}
+{"id": 8218, "en": "RadarLine", "fr": "RadarLine"}
+{"id": 8219, "en": "DWLRootTransform", "fr": "DWLRootTransform"}
+{"id": 8220, "en": "CurrentSector_Stats", "fr": "Statistiques du secteur actuel"}
+{"id": 8221, "en": "Interest Level: High", "fr": "Niveau d'intérêt : élevé"}
+{"id": 8222, "en": "Interest Level: Medium", "fr": "Niveau d'intérêt : Moyen"}
+{"id": 8223, "en": "Interest Level: Low (perhaps return to this sector later)", "fr": "Niveau d'intérêt : Faible (peut-être revenir à ce secteur plus tard)"}
+{"id": 8224, "en": "Interest Level: None", "fr": "Niveau d'intérêt : Aucun"}
+{"id": 8225, "en": "NavUI", "fr": "NavUI"}
+{"id": 8226, "en": "Signal", "fr": "Signal"}
+{"id": 8227, "en": "Icon", "fr": "Icône"}
+{"id": 8228, "en": "Overcooked", "fr": "Trop cuit"}
+{"id": 8229, "en": "Perfectly Cooked", "fr": "Une cuisson parfaite"}
