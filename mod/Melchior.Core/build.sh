@@ -20,11 +20,12 @@ PY
 }
 for f in "$GAME"/dotnet/*.dll; do managed "$f" && refs+=("-r:$f"); done
 for f in BepInEx.Core BepInEx.Unity.IL2CPP MonoMod.RuntimeDetour MonoMod.Utils 0Harmony Il2CppInterop.Runtime Il2CppInterop.Common; do refs+=("-r:$GAME/BepInEx/core/$f.dll"); done
-for f in ACTk.Runtime com.rlabrecque.steamworks.net UnityEngine.IMGUIModule UnityEngine.VideoModule UnityEngine.ScreenCaptureModule UnityEngine.UI UnityEngine.UIModule UnityEngine.ImageConversionModule UnityEngine.InputLegacyModule UnityEngine.TextRenderingModule Assembly-CSharp Assembly-CSharp-firstpass Photon3Unity3D Il2Cppmscorlib Il2CppSystem Il2CppSystem.Core UnityEngine.CoreModule UnityEngine; do refs+=("-r:$GAME/BepInEx/interop/$f.dll"); done
+for f in Behave.Unity.Runtime CrewAILibraryBuild PilotAIBuild UnityEngine.PhysicsModule UnityEngine.ParticleSystemModule ACTk.Runtime com.rlabrecque.steamworks.net UnityEngine.IMGUIModule UnityEngine.VideoModule UnityEngine.ScreenCaptureModule UnityEngine.UI UnityEngine.UIModule UnityEngine.ImageConversionModule UnityEngine.InputLegacyModule UnityEngine.TextRenderingModule Assembly-CSharp Assembly-CSharp-firstpass Photon3Unity3D Il2Cppmscorlib Il2CppSystem Il2CppSystem.Core UnityEngine.CoreModule UnityEngine; do refs+=("-r:$GAME/BepInEx/interop/$f.dll"); done
 mkdir -p "$HERE/bin"
 "$DOTNET" "$CSC" -noconfig -nostdlib -nologo -target:library -langversion:latest -optimize+ -nowarn:CS1701,CS1702,CS8632 \
   "${refs[@]}" -out:"$HERE/bin/Melchior.Core.dll" "$HERE"/*.cs
 mkdir -p "$GAME/BepInEx/plugins" && cp "$HERE/bin/Melchior.Core.dll" "$GAME/BepInEx/plugins/"
 A="$GAME/BepInEx/plugins/Melchior/achievements"; mkdir -p "$A/icons"
 cp "$HERE/../achievements/achievements.json" "$A/" && cp "$HERE"/../achievements/icons/*.jpg "$A/icons/"
+F="$GAME/BepInEx/plugins/Melchior/fonts"; mkdir -p "$F" && cp "$HERE"/../fonts/terminale.png "$HERE"/../fonts/terminale.json "$HERE"/../fonts/JetBrainsMono-LICENSE.txt "$F/"
 echo "OK -> $GAME/BepInEx/plugins/Melchior.Core.dll"

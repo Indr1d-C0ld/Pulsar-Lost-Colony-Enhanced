@@ -87,7 +87,7 @@ namespace Melchior
                 case "spawn": // spawn <tipo nave numerico>: nemico di prova ostile alla nostra nave (solo host)
                 {
                     var me = Stations.MyShip; var cpei = PLEncounterManager.Instance?.GetCPEI(); if (me == null || cpei == null) return "nessuna nave o nessun settore";
-                    var type = (EShipType)int.Parse(a[1]);
+                    var type = int.TryParse(a[1], out var tn) ? (EShipType)tn : Enum.Parse<EShipType>(a[1]);
                     var psi = new PLPersistantShipInfo(type, -1, PLServer.GetCurrentSector(), 0, false, false, false, -1, me.ShipID);
                     var pos = cpei.GetEmptyLocationForEnemy(type, psi, 7);
                     var ship = cpei.SpawnEnemyShip(type, psi, pos, Quaternion.identity);
@@ -104,7 +104,7 @@ namespace Melchior
                     foreach (var kv in PLEncounterManager.Instance.AllShips)
                     {
                         var sh = kv.Value; if (sh == null) continue; var st = sh.MyStats;
-                        sb.Append($"\n      {kv.Key} {(string)sh.ShipName} tipo {sh.ShipTypeID} squadra {sh.TeamID}{(me != null && me.ShipID == kv.Key ? " (noi)" : "")} scafo {st?.HullCurrent:0}/{st?.HullMax:0} scudi {st?.ShieldsCurrent:0}/{st?.ShieldsMax:0} bersaglio {(sh.TargetShip == null ? "-" : sh.TargetShip.ShipID.ToString())}{(sh.HasBeenDestroyed ? " DISTRUTTA" : "")}");
+                        sb.Append($"\n      {kv.Key} {(string)sh.ShipName} tipo {sh.ShipTypeID} squadra {sh.TeamID}{(me != null && me.ShipID == kv.Key ? " (noi)" : "")} scafo {st?.HullCurrent:0}/{st?.HullMax:0} scudi {st?.ShieldsCurrent:0}/{st?.ShieldsMax:0} bersaglio {(sh.TargetShip == null ? "-" : sh.TargetShip.ShipID.ToString())} {EnemyAI.RoleOf(kv.Key)} {Traffic.RoleOf(kv.Key)} {Talents.Line(sh)}{(sh.HasBeenDestroyed ? " DISTRUTTA" : "")}");
                     }
                     return sb.Length == 0 ? "nessuna nave" : sb.ToString();
                 }
@@ -147,9 +147,188 @@ namespace Melchior
                     if (a.Length > 1 && (a[1] == "win" || a[1] == "lose")) return Crises.ForceEnd(a[1] == "win");
                     if (a.Length > 1 && a[1] == "here" && Crises.Cur != null) { Crises.Cur.sector = PLServer.GetCurrentSector().ID; Crises.Cur.spawned = false; return "settore della crisi: qui"; }
                     return Crises.Describe();
+                case "enc": // enc: incontro in corso; enc start [id]; enc choose <n>
+                    if (a.Length > 1 && (a[1] == "start" || a[1] == "force")) return Encounters.Start(a.Length > 2 ? a[2] : null, a[1] == "force") ? Encounters.Describe() : "nessun incontro possibile adesso";
+                    if (a.Length > 2 && a[1] == "choose") return Encounters.Choose(int.Parse(a[2]), "Prova");
+                    if (a.Length > 1 && a[1] == "why") return Encounters.Why();
+                    if (a.Length > 1 && a[1] == "bordo") return Encounters.StartOnboard(a.Length > 2 ? a[2] : null) ? Encounters.Describe() : "nessun evento di bordo possibile";
+                    if (a.Length > 1 && a[1] == "port") return Encounters.StartPort(a.Length > 2 ? a[2] : null) ? Encounters.Describe() : "nessun incontro di porto";
+                    return Encounters.Describe();
+                case "explore": // explore: atlante e luogo del settore; explore force [tipo]; explore legend (luogo leggendario qui)
+                    if (a.Length > 1 && a[1] == "force") return Exploration.Force(a.Length > 2 ? a[2] : null);
+                    if (a.Length > 1 && a[1] == "legend") return Exploration.ForceLegend();
+                    return Exploration.Describe();
+                case "crew": if (a.Length > 2 && a[1] == "wound") return Officers.Wound(int.Parse(a[2])); if (a.Length > 2 && a[1] == "xp") { for (int i = 0; i < int.Parse(a[3]); i++) Officers.Credit(int.Parse(a[2])); } return Officers.Describe();
+                case "env": // env: ambiente del settore; env find: settori vicini con un ambiente (per saltarci)
+                    if (a.Length > 1 && a[1] == "find") { var cur = PLServer.GetCurrentSector(); int seed = (int)PLServer.Instance.GalaxySeed; return string.Join(", ", Enumerable.Range(0, cur.Neighbors.Count).Select(i => cur.Neighbors[i]).Where(n => n.VisualIndication == ESectorVisualIndication.NONE && Environments.EnvOf(seed, n.ID) != null).Select(n => n.ID + ":" + Environments.EnvOf(seed, n.ID).Value.kind)); }
+                    return Environments.Describe();
+                case "rivals2": return a.Length > 1 && a[1] == "act" ? Competitors.Force() : Competitors.Describe(); // equipaggi concorrenti
+                case "diario": if (a.Length > 1 && a[1] == "scrivi") return Logbook.Write(true) ?? "niente da scrivere"; return Logbook.Describe(); // diario del capitano e ambizioni
+                case "threat": if (a.Length > 2 && a[1] == "set") return Threat.Set(float.Parse(a[2], CultureInfo.InvariantCulture)); if (a.Length > 1 && a[1] == "heart") return Threat.HeartHere(); return Threat.Describe(); // la grande minaccia
+                case "calling": if (a.Length > 2 && a[1] == "add") { for (int i = 0; i < int.Parse(a[3]); i++) Calling.Add(a[2]); } if (a.Length > 1 && a[1] == "season") return Calling.Start(a.Length > 2 ? a[2] : null); return Calling.Describe(); // vocazione e stagioni
+                case "trophies": return Trophies.Describe();
+                case "camp": if (a.Length > 2 && a[1] == "start") { Campaigns.Begin(int.Parse(a[2])); return Campaigns.Describe(); } if (a.Length > 1 && a[1] == "here") return Campaigns.ForceHere(); return Campaigns.Describe(); // campagne delle fazioni
+                case "yard": if (a.Length > 2) return Shipyard.Force(a[1], int.Parse(a[2])); return Shipyard.Describe(); // cantiere navale
+                case "mem": // conteggio degli oggetti Unity per tipo e memoria, per cercare accumuli
+                {
+                    if (a.Length > 1 && a[1] == "liste") return Janitor.Describe();
+                    if (a.Length > 1 && a[1] == "ui")
+                    {
+                        // etichette e testi vivi raggruppati per ramo (radice/figlio): chi continua a crearne?
+                        string Key(Transform t) { var r = t; var chain = new System.Collections.Generic.List<string>(); while (r != null && chain.Count < 12) { chain.Add(r.name); r = r.parent; } chain.Reverse(); return string.Join("/", chain.Take(3)); }
+                        var g = new System.Collections.Generic.Dictionary<string, int>();
+                        foreach (var l in Resources.FindObjectsOfTypeAll<UILabel>()) { if (l == null) continue; var k = "N " + Key(l.transform); g[k] = g.TryGetValue(k, out var c) ? c + 1 : 1; }
+                        foreach (var l in Resources.FindObjectsOfTypeAll<UnityEngine.UI.Text>()) { if (l == null) continue; var k = "U " + Key(l.transform); g[k] = g.TryGetValue(k, out var c) ? c + 1 : 1; }
+                        return string.Join("; ", g.OrderByDescending(x => x.Value).Take(25).Select(x => $"{x.Key} ×{x.Value}"));
+                    }
+                    if (a.Length > 1 && a[1] == "navi")
+                    {
+                        var all = Resources.FindObjectsOfTypeAll<PLShipInfoBase>(); var act = UnityEngine.Object.FindObjectsOfType<PLShipInfoBase>();
+                        int created = 0; try { foreach (var kv in PLEncounterManager.Instance.AllPersistantEncounterInstances) created += kv.Value?.MyCreatedShipInfos?.Count ?? 0; } catch { }
+                        int tli = 0, tliDead = 0; try { foreach (var t in PLTeleportationLocationInstance.AllTLIs) { tli++; if (t == null || t.MyShipInfo == null || t.MyShipInfo.HasBeenDestroyed) tliDead++; } } catch { }
+                        return $"navi in memoria {all.Length} (attive {act.Length}): " + string.Join(", ", all.GroupBy(x => x.GetIl2CppType().Name).Select(g => $"{g.Key}×{g.Count()}")) + $"; create negli incontri {created}; teletrasporti {tli} (morti {tliDead})";
+                    }
+                    if (a.Length > 1 && a[1] == "heap") return HeapScan.Run(a.Length > 2 ? a[2] : "x", a.Length > 3 ? string.Join(" ", a.Skip(3)) : null);
+                    if (a.Length > 1 && a[1] == "pulisci") { Janitor.Run(); return Janitor.Describe(); }
+                    if (a.Length > 1 && a[1] == "gc") { long b0 = Il2CppSystem.GC.GetTotalMemory(false); System.GC.Collect(); System.GC.WaitForPendingFinalizers(); System.GC.Collect(); long b1 = Il2CppSystem.GC.GetTotalMemory(true); return $"heap del gioco {b0 / 1048576} MB -> {b1 / 1048576} MB dopo la raccolta (.NET {System.GC.GetTotalMemory(false) / 1048576} MB)"; }
+                    if (a.Length > 1 && a[1] == "il2") { long b0 = Il2CppSystem.GC.GetTotalMemory(false); long b1 = Il2CppSystem.GC.GetTotalMemory(true); return $"heap del gioco {b0 / 1048576} MB -> {b1 / 1048576} MB con la sola raccolta del gioco"; }
+                    long mono = 0, unity = 0; try { mono = UnityEngine.Profiling.Profiler.GetMonoUsedSizeLong(); unity = UnityEngine.Profiling.Profiler.GetTotalAllocatedMemoryLong(); } catch { }
+                    int Cnt<T>() where T : UnityEngine.Object { try { return Resources.FindObjectsOfTypeAll<T>().Length; } catch { return -1; } }
+                    long gcm = 0; try { gcm = Il2CppSystem.GC.GetTotalMemory(false); } catch { }
+                    return $"mono {mono / 1048576} MB, unity {unity / 1048576} MB, gc {gcm / 1048576} MB; gameobject {Cnt<GameObject>()}, texture {Cnt<Texture>()}, rendertexture {Cnt<RenderTexture>()}, mesh {Cnt<Mesh>()}, material {Cnt<Material>()}, ship {Cnt<PLShipInfoBase>()}, font {Cnt<Font>()}";
+                }
+                case "hail": return Hail.Execute(a.Length > 1 ? a[1] : "notizie"); // chiamata al bersaglio: notizie | resa
+                case "species": if (a.Length > 4 && a[1] == "set") { Species.Change(a[2], int.Parse(a[3]), int.Parse(a[4])); } return Species.Describe(); // specie aliene
+                case "home": if (a.Length > 1 && a[1] == "adopt") { Home.Adopt(); } if (a.Length > 1 && a[1] == "threat") return Home.ForceThreat(); return Home.Describe(); // porto di casa
+                case "lair": if (a.Length > 1 && a[1] == "here") return Lairs.Force(); if (a.Length > 1 && a[1] == "offer") return Contracts.ForceLair(); return Lairs.Describe(); // covi dei pirati
+                case "weekly": return Challenge.Describe(); // sfida della settimana
+                case "wanted": if (a.Length > 2 && a[1] == "set") return Wanted.Set(int.Parse(a[2])); return Wanted.Describe(); // taglia sulla nostra testa
+                case "probe": if (a.Length > 1 && a[1] == "lancia") { Probes.Request("lancia"); return "lancio come dal pannello · " + Probes.Describe(); } return Probes.Force(); // sonda di ricognizione (gratis, per le prove)
+                case "legacy": if (a.Length > 1 && a[1] == "record") { Legacy.Record("prova", string.Join(" ", a.Skip(2))); return "registrato"; } return Legacy.Describe(); // annali della flotta
+                case "wonder": if (a.Length > 1 && a[1] == "start") return Wonders.Start(a.Length > 2 ? a[2] : null); if (a.Length > 1 && a[1] == "here") return Wonders.HereForTest(); return Wonders.Describe(); // meraviglie e cataclismi
+                case "mole": if (a.Length > 1 && a[1] == "start") return Mole.Force(); return Mole.Describe(); // il traditore a bordo
+                case "rules": if (a.Length > 2 && a[1] == "set") Rules.Set(a[2]); return Rules.Name(Rules.Mode); // regole della galassia
+                case "credits": { if (a.Length > 1) PLServer.Instance.CurrentCrewCredits += int.Parse(a[1]); return $"crediti {(int)PLServer.Instance.CurrentCrewCredits}"; } // credits [n]: aggiunge crediti
+                case "service": ServicePanel.Show = !ServicePanel.Show; ServicePanel.Tab = a.Length > 1 && a[1] == "talents" ? 1 : 0; return "pannello di servizio " + (ServicePanel.Show ? "aperto" : "chiuso");
+                case "leaders": if (a.Length > 1 && a[1] == "audience") return Leaders.ForceAudience(); if (a.Length > 2 && a[1] == "coup") return Leaders.ForceCoup(int.Parse(a[2])); return Leaders.Describe();
+                case "crewlife": return a.Length > 1 && a[1] == "wish" ? CrewLives.Force() : CrewLives.Describe();
+                case "gear": return PawnLoot.Report(); // equipaggiamento personale e sua rarità
+                case "lives": if (a.Length > 1 && a[1] == "hunt") return Lives.ForceHunt(false); if (a.Length > 1 && a[1] == "vendetta") return Lives.ForceHunt(true); if (a.Length > 1 && a[1] == "loan") return Lives.ForceLoan(); return a.Length > 1 ? Lives.Force(int.Parse(a[1])) : Lives.Describe();
+                case "talents": // talents | talents learn <id> | talents reset | talents xp <nave> <n>
+                    if (a.Length > 2 && a[1] == "learn") return Talents.Learn(a[2]) + " · " + Talents.Describe();
+                    if (a.Length > 1 && a[1] == "reset") return Talents.Unlearn();
+                    if (a.Length > 3 && a[1] == "xp") { Talents.NpcXp(PLEncounterManager.Instance.GetShipFromID(int.Parse(a[2])), int.Parse(a[3]), "prova"); return Talents.Describe(); }
+                    return Talents.Describe();
+                case "board": // board | board in <nave> <n> | board out <nave> | board home
+                    if (a.Length > 3 && a[1] == "in") return Boarding.TestIn(int.Parse(a[2]), int.Parse(a[3]));
+                    if (a.Length > 2 && a[1] == "out") return Boarding.TestOut(int.Parse(a[2]));
+                    if (a.Length > 1 && a[1] == "home") return Boarding.TestHome();
+                    if (a.Length > 1 && a[1] == "go") return Boarding.Board();
+                    if (a.Length > 1 && a[1] == "recall") return Boarding.Recall();
+                    if (a.Length > 2 && a[1] == "raid") return Boarding.ForceIncoming(int.Parse(a[2]));
+                    if (a.Length > 1 && a[1] == "stat") return Boarding.Describe();
+                    if (a.Length > 2 && a[1] == "order") { PLServer.Instance.CaptainSetOrderID(int.Parse(a[2])); return "ordine " + a[2] + " impartito; attuale " + (int)PLServer.Instance.CaptainsOrdersID; }
+                    return Boarding.Info();
+                case "research": // research | research add <n> | research start <id> | research finish
+                    if (a.Length > 2 && a[1] == "add") { Research.Add(int.Parse(a[2])); return Research.Describe(); }
+                    if (a.Length > 2 && a[1] == "start") return Research.Start(a[2]) + " · " + Research.Describe();
+                    if (a.Length > 1 && a[1] == "finish") return Research.Finish();
+                    return Research.Describe();
+                case "supplies": // supplies | supplies <viveri> <medicinali> | supplies restock
+                    if (a.Length > 1 && a[1] == "restock") return Logistics.Restock();
+                    if (a.Length > 2) return Logistics.Set(int.Parse(a[1]), int.Parse(a[2]));
+                    return Logistics.Describe();
+                case "actors": // personaggi di dialogo e vagabondi nella scena (per gli interni affollati)
+                {
+                    var sb = new System.Text.StringBuilder(); var acts = UnityEngine.Object.FindObjectsOfType<PLDialogueActorInstance>(); var wn = UnityEngine.Object.FindObjectsOfType<PLWanderer>();
+                    sb.Append($"attori {acts.Length}, vagabondi {wn.Length}");
+                    foreach (var x in acts.Take(12)) sb.Append($"\n      {x.gameObject.name} @ {x.transform.position} livello {x.gameObject.layer} figli {x.transform.childCount} attivo {x.gameObject.activeInHierarchy}");
+                    return sb.ToString();
+                }
+                case "visit": // visit | visit <n>: elenca gli interni raggiungibili o porta lì il nostro personaggio
+                {
+                    var all = PLTeleportationLocationInstance.AllTLIs; var me = PLNetworkManager.Instance.LocalPlayer;
+                    if (a.Length > 1) { var t = all[int.Parse(a[1])]; me.NetworkTeleportToSubHub(t.SubHubID & 0x7FFFFFFF, 0); return "teletrasporto verso " + t.TeleporterLocationName; }
+                    var sb = new System.Text.StringBuilder(); for (int i = 0; i < all.Count; i++) { var t = all[i]; sb.Append($"\n      {i}: {t.TeleporterLocationName} interno {t.SubHubID & 0x7FFFFFFF} nave {(t.MyShipInfo != null ? (string)t.MyShipInfo.ShipName : "-")}"); }
+                    return sb.ToString();
+                }
+                case "crowd": // crowd <n>: clona i vagabondi della stazione per affollarla
+                    if (a.Length > 1 && a[1] == "look") return Crowds.Look();
+                    if (a.Length > 1 && a[1] == "where") return Crowds.Where();
+                    if (a.Length > 1 && a[1] == "debug") return Crowds.Debug();
+                    if (a.Length > 1 && (a[1] == "on" || a[1] == "off")) { Crowds.Enabled = a[1] == "on"; if (!Crowds.Enabled) Crowds.Clear(); return Crowds.Describe(); }
+                    if (a.Length == 1) return Crowds.Describe();
+                    return Crowds.Grow(int.Parse(a[1]));
+                case "model": // model | model show <file.glb> [distanza] | model clear
+                    if (a.Length > 2 && a[1] == "show") { try { return Models.Show(a[2], a.Length > 3 ? float.Parse(a[3], System.Globalization.CultureInfo.InvariantCulture) : 3f); } catch (Exception e) { return "errore: " + e.Message; } }
+                    if (a.Length > 1 && a[1] == "clear") return Models.Clear();
+                    return Models.List();
+                case "ports": // ports | ports event <tipo>
+                    if (a.Length > 1 && a[1] == "order") return Ports.ForceOrder();
+                    if (a.Length > 2 && a[1] == "event") return Ports.Start(PLServer.GetCurrentSector().ID, null, a[2]) + " · " + Ports.Line(PLServer.GetCurrentSector().ID);
+                    return Ports.Describe();
+                case "bank": if (a.Length > 2 && a[1] == "borrow") return Market.Borrow(int.Parse(a[2])); if (a.Length > 1 && a[1] == "repay") return Market.Repay(); if (a.Length > 1 && a[1] == "late") { Saga.State.bank.due = Obscured.Jumps() - 1; return Market.BankLine(); } return Market.BankLine();
+                case "hud": if (a.Length > 1 && (a[1] == "on" || a[1] == "off")) HudSkin.Enabled = a[1] == "on"; return HudSkin.Describe();
+                case "pax": return a.Length > 1 ? (a[1] == "visti" ? PassengersWalk.Debug() : Passengers.Force(a[1])) : Passengers.Status();
+                case "mistero": return a.Length > 1 ? Mysteries.Force(a[1], a.Length > 2 ? a[2] : "") : Mysteries.Describe();
+                case "fabbrica": return a.Length > 1 ? (a[1] == "presto" ? Fabrication.Rush() : a[1] == "annulla" ? Fabrication.Cancel() : Fabrication.Enqueue(a[1])) : Fabrication.Describe();
+                case "voci": if (a.Length > 1 && (a[1] == "on" || a[1] == "off")) { Voices.Enabled = a[1] == "on"; return Voices.Describe(); } return a.Length > 2 && a[1] == "su" ? Voices.ForceOn(int.Parse(a[2])) : a.Length > 1 ? Voices.Force() : Voices.Describe();
+                case "usura": return a.Length > 2 ? Wear.Force(a[1], float.Parse(a[2], System.Globalization.CultureInfo.InvariantCulture)) : a.Length > 1 ? (a[1] == "revisione" ? Wear.Overhaul() : Wear.Maintain(a[1])) : Wear.Describe();
+                case "ordine": return a.Length > 1 ? CrewMind.Order(a[1], a.Length > 2 ? a[2] : "") + " | " + CrewMind.Orders.doctrine : CrewMind.Orders.doctrine;
+                case "mente": // mente | mente on|off | mente fuoco <n> | mente ferisci <classe> <frazione>
+                    if (a.Length > 1 && (a[1] == "on" || a[1] == "off")) CrewMind.Enabled = a[1] == "on";
+                    if (a.Length > 1 && a[1] == "fuoco") { var me = Stations.MyShip; int n = a.Length > 2 ? int.Parse(a[2]) : 1; for (int i = 0; i < n; i++) { var sys = me.GetSystemFromID(i % 4); if (sys != null) PLServer.Instance.CreateFireAtSystem(sys, false); } }
+                    if (a.Length > 1 && a[1] == "fuoco2")
+                    {
+                        var me = Stations.MyShip; int n = a.Length > 2 ? int.Parse(a[2]) : 1; var r = new System.Random();
+                        for (int i = 0; i < n; i++)
+                        {
+                            var sys = me.GetSystemFromID(i % 4); if (sys == null) continue;
+                            var args = new Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray<Il2CppSystem.Object>(4);
+                            args[0] = new Il2CppSystem.Int32 { m_value = me.ShipID }.BoxIl2CppObject(); args[1] = new Il2CppSystem.Int32 { m_value = i % 4 }.BoxIl2CppObject();
+                            args[2] = new Il2CppSystem.Int32 { m_value = r.Next(100000, 900000) }.BoxIl2CppObject(); args[3] = sys.transform.position.BoxIl2CppObject();
+                            PLServer.Instance.photonView.RPC("ClientCreateFireAtSystem", PhotonTargets.All, args);
+                        }
+                    }
+                    if (a.Length > 4 && a[1] == "xp") return CrewMind.Train(int.Parse(a[2]), a[3], int.Parse(a[4]));
+                    if (a.Length > 3 && a[1] == "ferisci") { var p = PLServer.Instance.GetCachedFriendlyPlayerOfClass(int.Parse(a[2]), Stations.MyShip); var pw = p?.MyPawn; if (pw != null) pw.Health = pw.MaxHealth * float.Parse(a[3], System.Globalization.CultureInfo.InvariantCulture); }
+                    return CrewMind.Describe();
+                case "wreck": return a.Length > 1 ? Derelicts.Force() : Derelicts.Describe();
+                case "skytrade": return Market.OfferSky("Gazza Ladra") ? Encounters.Describe() : "nessun affare";
+                case "market": // market | market buy <merce> <n> | market sell <merce> <n>
+                    if (a.Length > 3 && a[1] == "buy") return Market.Buy(a[2], int.Parse(a[3])) + " · " + Market.Describe();
+                    if (a.Length > 3 && a[1] == "sell") return Market.Sell(a[2], int.Parse(a[3])) + " · " + Market.Describe();
+                    return Market.Describe();
+                case "traffic": // traffic | traffic on|off | traffic <mestiere|assalto|scaramuccia|sciacalli>
+                    if (a.Length > 1 && (a[1] == "on" || a[1] == "off")) { Traffic.Enabled = a[1] == "on"; return Traffic.Describe(); }
+                    if (a.Length > 1 && a[1] == "psi") return Traffic.Registry();
+                    if (a.Length > 2 && a[1] == "density") { Traffic.Density = float.Parse(a[2], System.Globalization.CultureInfo.InvariantCulture); return Traffic.Describe(); }
+                    if (a.Length > 2 && a[1] == "minfps") { Traffic.MinFps = float.Parse(a[2], System.Globalization.CultureInfo.InvariantCulture); return Traffic.Describe(); }
+                    return a.Length > 1 ? Traffic.Force(a[1]) : Traffic.Describe();
+                case "ai": // ai | ai on | ai off: IA tattica dei nemici
+                    if (a.Length > 1 && a[1] == "bots") return EnemyAI.Bots();
+                    if (a.Length > 2 && a[1] == "resa") return Encounters.Start("resa_offerta", true, null, "", a[2]) ? Encounters.Describe() : "nessuna resa possibile";
+                    if (a.Length > 3 && a[1] == "hurt") return EnemyAI.Hurt(int.Parse(a[2]), float.Parse(a[3], System.Globalization.CultureInfo.InvariantCulture));
+                    if (a.Length > 1) EnemyAI.Enabled = a[1] == "on"; return EnemyAI.Describe();
+                case "bases" when a.Length > 1 && (a[1] == "up" || a[1] == "def"): Bases.Upgrade(a[1] == "def"); return Bases.Describe();
+                case "bases": // basi: bases | bases deed <tipo> | bases found <tipo> | bases raid | bases build
+                    if (a.Length > 2 && a[1] == "deed") { Bases.GiveDeed(a[2], "prova"); return Bases.Describe(); }
+                    if (a.Length > 2 && a[1] == "found") return Bases.Found(a[2]) + " · " + Bases.Describe();
+                    if (a.Length > 1 && a[1] == "raid") return Bases.ForceRaid();
+                    if (a.Length > 1 && a[1] == "build") return Bases.ForceBuild();
+                    return Bases.Describe();
+                case "morale": if (a.Length > 2 && a[1] == "set") { Saga.State.morale = int.Parse(a[2]); Saga.MarkDirty(); } return Morale.Describe();
                 case "rep": // rep: reputazione; rep set <fazione> <valore>
                     if (a.Length > 3 && a[1] == "set") return Factions.Set(int.Parse(a[2]), int.Parse(a[3]));
                     return Factions.Describe();
+                case "cargo2": // cargo2 [illegale]: mette un trasporto sulla bacheca; cargo2 here: sposta la destinazione nel settore corrente
+                    if (a.Length > 1 && a[1] == "here") { var c = Saga.State.contract; if (c == null) return "nessun carico"; c.sector = PLServer.GetCurrentSector().ID; return "destinazione: qui"; }
+                    return Contracts.ForceTransport(a.Length > 1 && a[1] == "illegale");
+                case "diplo": // diplo: rapporti; diplo set <a> <b> <valore>; diplo step; diplo amb (ambasciata sulla bacheca)
+                    if (a.Length > 4 && a[1] == "set") return Diplomacy.Set(int.Parse(a[2]), int.Parse(a[3]), int.Parse(a[4]));
+                    if (a.Length > 1 && a[1] == "step") { Diplomacy.Step(); return Diplomacy.Describe(); }
+                    if (a.Length > 1 && a[1] == "amb") return Contracts.ForceEmbassy();
+                    return Diplomacy.Describe();
                 case "bounty": // bounty: mette subito una taglia sulla bacheca; bounty here: sposta il bersaglio della taglia in corso nel settore corrente
                     if (a.Length > 1 && a[1] == "here") { var c = Saga.State.contract; var f = c == null ? null : Nemesis.Find(c.target); if (f == null) return "nessuna taglia in corso"; f.sector = c.sector = PLServer.GetCurrentSector().ID; return $"{f.Full} ora qui"; }
                     return Contracts.ForceBounty();
@@ -300,7 +479,8 @@ namespace Melchior
                             return sb.ToString();
                         }
                         if (a.Length > 2 && a[1] == "view" && int.Parse(a[2]) == k) { MelchiorHud.DebugTexture = sc.GetLoadedRenderTexture(); return "anteprima di " + tn; }
-                        sb.Append($"\n      {k} {tn} pagina {(pg == null ? "NO" : pg.Open ? "aperta" : "pronta")} schermo {sc.ScreenSize.x:0}x{sc.ScreenSize.y:0} radice {sc.MyRootPanel?.width}x{sc.MyRootPanel?.height} scala {sc.transform.localScale.x:0.##}x{sc.transform.localScale.y:0.##}");
+                        string owner = "?"; try { owner = (string)sc.MyScreenHubBase?.OptionalShipInfo?.ShipName ?? "-"; } catch { }
+                        sb.Append($"\n      {k} {tn} di {owner} pagina {(pg == null ? "NO" : pg.Open ? "aperta" : "pronta")} schermo {sc.ScreenSize.x:0}x{sc.ScreenSize.y:0} radice {sc.MyRootPanel?.width}x{sc.MyRootPanel?.height} scala {sc.transform.localScale.x:0.##}x{sc.transform.localScale.y:0.##}");
                         k++;
                     }
                     if (a.Length > 1 && a[1] == "view" && a.Length == 2) { MelchiorHud.DebugTexture = null; return "anteprima chiusa"; }
@@ -336,6 +516,7 @@ namespace Melchior
                 case "focus": return $"runInBackground={Application.runInBackground} isFocused={Application.isFocused}";
                 case "uitree": return Ui.Tree(string.Join(" ", a.Skip(1)));
                 case "uitext": return Ui.FindText(string.Join(" ", a.Skip(1)));
+                case "uiinfo": return a.Length > 2 && int.TryParse(a[1], out var dep) ? Ui.Info(string.Join(" ", a.Skip(2)), dep) : Ui.Info(string.Join(" ", a.Skip(1)));
                 case "ach":
                     if (a.Length == 1) { MelchiorHud.ShowPanel = !MelchiorHud.ShowPanel; return "pannello obiettivi " + (MelchiorHud.ShowPanel ? "aperto" : "chiuso"); }
                     if (a[1] == "page") { MelchiorHud.Page = int.Parse(a[2]); MelchiorHud.ShowPanel = true; return "pagina " + a[2]; }

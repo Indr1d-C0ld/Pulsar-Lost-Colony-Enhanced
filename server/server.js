@@ -12,6 +12,7 @@ const { Hub } = require('./lib/loadbalancing');
 const { Rivals } = require('./lib/rivals');
 const { Auth, hashPassword, verifyPassword } = require('./lib/auth');
 const { Telemetry } = require('./lib/telemetry');
+const { Challenge } = require('./lib/challenge');
 
 const defaults = {
   bind: '0.0.0.0',          // interfaccia di ascolto
@@ -76,11 +77,15 @@ let users = load('users.json', {}); // registro dei giocatori visti dal server: 
 let audit = load('audit.json', []);  // azioni dell'amministratore
 const dirty = new Set();
 const rivals = new Rivals(load('rivals.json', {}), () => dirty.add('rivals'), (...a) => log(...a));
+const challenge = new Challenge(load('challenges.json', {}), () => dirty.add('challenges'));
+let legacy = load('legacy.json', []); // annali della flotta: le imprese maggiori di ogni equipaggio, per sempre
 function flush() {
   if (dirty.has('stats')) save(statsFile, players);
   if (dirty.has('sessions')) save('sessions.json', sessions);
   if (dirty.has('sagas')) save('sagas.json', sagas);
   if (dirty.has('rivals')) save('rivals.json', rivals.data);
+  if (dirty.has('challenges')) save('challenges.json', challenge.data);
+  if (dirty.has('legacy')) save('legacy.json', legacy);
   if (dirty.has('users')) save('users.json', users);
   if (dirty.has('audit')) save('audit.json', audit);
   if (dirty.has('bans')) save('bans.json', { users: [...hub.bans.users], addresses: [...hub.bans.addresses] });
@@ -191,7 +196,7 @@ backup(); setInterval(backup, 3600000).unref();
 // ---------------------------------------------------------------- pannello e API
 function body(req, cb) {
   let data = ''; let over = false;
-  req.on('data', (d) => { data += d; if (data.length > 65536) { over = true; req.destroy(); } });
+  req.on('data', (d) => { data += d; if (data.length > 2097152) { over = true; req.destroy(); } }); // le cronache delle galassie possono essere grandi
   req.on('end', () => { if (over) return; let o = null; try { o = data ? JSON.parse(data) : {}; } catch { o = null; } cb(o); });
 }
 const userRow = (id) => { const u = users[id] || {}; const ban = hub.banEntry(id, ''); return { id, ...u, banned: ban, online: [...hub.gamePeers, ...hub.masterPeers].some((p) => p.session && p.session.userId === id) }; };
@@ -219,7 +224,7 @@ http.createServer((req, res) => {
   if (route === '/api/saga' && post) {
     const seed = Number(q.get('seed'));
     return body(req, (o) => {
-      if (!Number.isInteger(seed) || !o || typeof o !== 'object' || Array.isArray(o) || JSON.stringify(o).length > 200000) return json({ ok: false }, 400);
+      if (!Number.isInteger(seed) || !o || typeof o !== 'object' || Array.isArray(o) || JSON.stringify(o).length > 1500000) return json({ ok: false }, 400);
       const prev = sagas[seed] || { first: Date.now() };
       if (Array.isArray(o.log) && (!prev.state || JSON.stringify(prev.state.log) !== JSON.stringify(o.log))) {
         const last = o.log[o.log.length - 1]; if (last && last.text) log(`[cronaca] galassia ${seed}: ${String(last.text).slice(0, 120)}`);
@@ -227,6 +232,15 @@ http.createServer((req, res) => {
       sagas[seed] = { first: prev.first, updated: Date.now(), state: o }; dirty.add('sagas'); json({ ok: true });
     });
   }
+  if (route === '/api/legacy' && !post) return json(legacy.slice(-200));
+  if (route === '/api/legacy' && post) return body(req, (o) => {
+    const seed = Number(q.get('seed')); const ship = String((o && o.ship) || '').slice(0, 40), deed = String((o && o.deed) || '').slice(0, 200), kind = String((o && o.kind) || '').slice(0, 20);
+    if (!Number.isInteger(seed) || !ship || !deed) return json({ ok: false }, 400);
+    if (!legacy.some((x) => x.seed === seed && x.deed === deed)) { legacy.push({ t: Date.now(), seed, ship, deed, kind }); if (legacy.length > 500) legacy.shift(); dirty.add('legacy'); log(`[annali] ${ship}: ${deed}`); }
+    json({ ok: true });
+  });
+  if (route === '/api/challenge' && !post) return json(challenge.info());
+  if (route === '/api/challenge' && post) return body(req, (o) => { const seed = Number(q.get('seed')); if (!o || !Number.isInteger(seed)) return json({ ok: false }, 400); json({ ok: challenge.report(seed, o) }); });
   if (route === '/api/stats' && post) return body(req, (o) => { const ok = putStats(o); json({ ok }, ok ? 200 : 400); });
 
   // ---- accesso

@@ -91,7 +91,7 @@ namespace Melchior
     // Etichetta associata a un componente vivo.
     public sealed class RarityTag
     {
-        public int Tier, Bonus, Slot, Legend = -1;
+        public int Tier, Bonus, Slot, Legend = -1, Maker = -1, Serial; public string Nick = ""; public float Quality = 50f;
         public AffixDef[] Defs = Array.Empty<AffixDef>();   // affissi (o effetti del leggendario), difetti compresi
         public float[] Value = Array.Empty<float>();
     }
@@ -125,6 +125,15 @@ namespace Melchior
             }
             catch (Exception e) { Plugin.L.LogError($"melchior.rarity.json non valido, uso i valori predefiniti: {e.Message}"); Cfg = new RarityConfig(); }
             if (Cfg.Tiers.Length == 0 || Cfg.Tiers.Length > 8) { Plugin.L.LogError("Servono da 1 a 8 gradi di rarità: uso i predefiniti."); Cfg = new RarityConfig(); }
+            // nuovi affissi e leggendari delle versioni successive: si aggiungono a una configurazione già esistente
+            try
+            {
+                var have = Cfg.Affixes.Select(a => a.Name + "|" + a.Key + "|" + a.Stat).ToHashSet();
+                var add = Loot.DefaultAffixes().Where(a => !have.Contains(a.Name + "|" + a.Key + "|" + a.Stat)).ToArray();
+                var haveL = Cfg.Legendaries.Select(l => l.Name).ToHashSet(); var addL = Loot.DefaultLegendaries().Where(l => !haveL.Contains(l.Name)).ToArray();
+                if (add.Length + addL.Length > 0) { Cfg.Affixes = Cfg.Affixes.Concat(add).ToArray(); Cfg.Legendaries = Cfg.Legendaries.Concat(addL).ToArray(); File.WriteAllText(path, JsonSerializer.Serialize(Cfg, json)); Plugin.L.LogInfo($"Rarità: aggiunti {add.Length} affissi e {addL.Length} leggendari alla configurazione."); }
+            }
+            catch (Exception e) { Plugin.L.LogWarning("Rarità, aggiornamento della configurazione: " + e.Message); }
             stats.Clear();
             var all = Cfg.Affixes.Concat(Cfg.Legendaries.SelectMany(l => l.Effects)).Concat(Cfg.Sets.SelectMany(x => x.Bonus2.Concat(x.Bonus3).Concat(x.Bonus4)));
             foreach (var a in all)
@@ -183,8 +192,15 @@ namespace Melchior
                 }
             }
             int want = Tier(tier).Affixes;
+            // casa produttrice, modello, numero di serie: ogni esemplare ha la sua identità
+            uint ms = Mix(s ^ 0x4D4B52);
+            tag.Maker = (int)(ms % (uint)Loot.Makers.Length); ms = Mix(ms); tag.Nick = Loot.Nicks[ms % (uint)Loot.Nicks.Length]; ms = Mix(ms); tag.Serial = (int)(ms % 9000) + 1000;
+            var bias = Loot.Makers[tag.Maker].Bias;
             var ids = new List<AffixDef>(); var vals = new List<float>(); var used = new HashSet<string>();
             var own = Cfg.Affixes.Where(a => !a.Drawback && Usable(a) && Array.IndexOf(a.Slots, slot) >= 0).ToList();
+            // lo stile della casa: il primo affisso viene, se possibile, fra i suoi preferiti
+            var fav = own.Where(a => Array.IndexOf(bias, a.Key.Length > 0 ? a.Key : a.Stat) >= 0).ToList();
+            if (want > 0 && fav.Count > 0 && (Mix(s ^ 0xFA7) & 0xFF) < 180) { s = Mix(s ^ 0xFA8); var a = fav[(int)(s % (uint)fav.Count)]; own.Remove(a); used.Add(Target(a)); s = Mix(s); ids.Add(a); vals.Add(a.Min + (a.Max - a.Min) * ((s & 0xFFFF) / 65535f)); }
             var any = Cfg.Affixes.Where(a => !a.Drawback && Usable(a) && a.Slots.Length == 0).ToList();
             while (ids.Count < want && own.Count + any.Count > 0)
             {
@@ -202,6 +218,9 @@ namespace Melchior
                 if (bad.Count > 0) { s = Mix(s ^ 0xBAD); var a = bad[(int)(s % (uint)bad.Count)]; s = Mix(s); ids.Add(a); vals.Add(a.Min + (a.Max - a.Min) * ((s & 0xFFFF) / 65535f)); }
             }
             tag.Defs = ids.ToArray(); tag.Value = vals.ToArray();
+            // qualità dell'esemplare: quanto i suoi valori si avvicinano al massimo possibile
+            var good = Enumerable.Range(0, ids.Count).Where(i => !ids[i].Drawback && ids[i].Max != ids[i].Min).Select(i => (vals[i] - ids[i].Min) / (ids[i].Max - ids[i].Min)).ToList();
+            tag.Quality = good.Count == 0 ? 40f + (Mix(s ^ 0x9A1) % 40) : Math.Clamp(good.Average() * 100f, 1f, 125f);
             return tag;
         }
 
@@ -211,7 +230,7 @@ namespace Melchior
 
         public static double CurrentLuck(int baseLevel)
         {
-            double luck = Cfg.Luck + Cfg.LuckPerLevel * baseLevel;
+            double luck = Cfg.Luck + Cfg.LuckPerLevel * baseLevel + PawnLoot.Crew("fortuna");
             try { var srv = PLServer.Instance; if (srv != null) luck += Cfg.LuckPerChaos * (float)srv.ChaosLevel; } catch { }
             return Math.Max(0.05, luck);
         }
@@ -346,7 +365,7 @@ namespace Melchior
             // I titoli del gioco non interpretano i tag colore: nel nome va solo testo.
             __result = tag.Legend >= 0
                 ? Rarity.Cfg.LegendFormat.Replace("{legend}", Rarity.Cfg.Legendaries[tag.Legend].Name).Replace("{name}", __result).Replace("{tier}", Rarity.Tier(tag.Tier).Name)
-                : Rarity.Cfg.NameFormat.Replace("{name}", __result).Replace("{tier}", Rarity.Tier(tag.Tier).Name);
+                : Rarity.Cfg.NameFormat.Replace("{name}", __result + (tag.Tier > 0 && tag.Nick.Length > 0 ? $" «{tag.Nick}»" : "")).Replace("{tier}", Rarity.Tier(tag.Tier).Name);
         }
     }
 
@@ -369,7 +388,7 @@ namespace Melchior
         {
             if (Rarity.TagCount == 0) return;
             var tag = Rarity.Get(__instance.Pointer);
-            if (tag != null) __result = (int)Math.Round(__result * Rarity.Tier(tag.Tier).PriceMult);
+            if (tag != null) __result = (int)Math.Round(__result * Rarity.Tier(tag.Tier).PriceMult * (tag.Maker >= 0 ? Loot.Makers[tag.Maker].Prestige : 1f) * (0.8f + Math.Min(1.25f, tag.Quality / 100f) * 0.4f));
         }
     }
 
@@ -382,6 +401,8 @@ namespace Melchior
             Rarity.CalcCalls++;
             Stations.Apply(__instance);
             try { Loot.ApplyShip(__instance); } catch (Exception e) { Plugin.L.LogWarning("Bottino: " + e.Message); }
+            Shipyard.Apply(__instance);
+            Wear.Apply(__instance);
         }
     }
 

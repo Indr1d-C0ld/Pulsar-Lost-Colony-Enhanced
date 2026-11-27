@@ -62,7 +62,7 @@ namespace Melchior
             f.dest = (RandomOpenSector(start) ?? start).ID;
             State.Add(f); live[f.name] = psi; Saga.MarkDirty();
             Plugin.L.LogInfo($"[flotte] nuova: {Label(f)} nel settore {start.ID}, diretta al {f.dest}");
-            if (f.kind == "convoglio") News.Post("commercio", $"Partito {Label(f)}: rotta lunga verso il settore {f.dest}.");
+            if (f.kind == "convoglio") News.Post("commercio", $"Partito {Label(f)}: rotta lunga verso il settore {Places.Of(f.dest)}.");
         }
 
         public static void Tick()
@@ -84,7 +84,7 @@ namespace Melchior
             bool warp = false; try { warp = Stations.MyShip.InWarp; } catch { }
             var cur = PLServer.GetCurrentSector(); var notes = new List<string>();
             // popolazione: 3 convogli, 2 pattuglie, 2 gruppi di predoni
-            foreach (var (kind, want) in new[] { ("convoglio", Crises.Cur?.kind == "blocco" ? 1 : 3), ("pattuglia", 2), ("predoni", 2 + Crises.RaiderBonus) })
+            foreach (var (kind, want) in new[] { ("convoglio", Crises.Cur?.kind == "blocco" ? 1 : 3), ("pattuglia", 2), ("predoni", 2 + Crises.RaiderBonus + (Lairs.RaidFactor >= 1.3f ? 1 : 0)) })
                 if (State.Count(x => x.kind == kind) < want) Create(kind);
             foreach (var f in State.ToList())
             {
@@ -106,7 +106,7 @@ namespace Melchior
                     if (prey != null) f.dest = live[prey.name].MyCurrentSector.ID;
                 }
                 var dest = Sector(f.dest);
-                if (dest == null || dest.ID == at.ID) { dest = RandomOpenSector(at, f.kind == "pattuglia" ? f.faction : -99) ?? RandomOpenSector(at); if (dest == null) continue; f.dest = dest.ID; f.legs++; if (f.kind == "convoglio" && f.legs % 2 == 0) News.Post("commercio", $"{Label(f)} è arrivato a destinazione e riparte verso il settore {f.dest}."); }
+                if (dest == null || dest.ID == at.ID) { dest = RandomOpenSector(at, f.kind == "pattuglia" ? f.faction : -99) ?? RandomOpenSector(at); if (dest == null) continue; f.dest = dest.ID; f.legs++; if (f.kind == "convoglio" && f.legs % 2 == 0) News.Post("commercio", $"{Label(f)} è arrivato a destinazione e riparte verso il settore {Places.Of(f.dest)}."); }
                 List<PLSectorInfo> path = null; try { path = PLGlobal.Instance.Galaxy.GetPathToSector(at, dest)?.ToArray().ToList(); } catch { }
                 if (path == null || path.Count < 2) { f.dest = -1; continue; }
                 var next = path[1];
@@ -135,13 +135,13 @@ namespace Melchior
                 if (raiders.Count > 0 && patrols.Count > 0)
                 {
                     var r = raiders[0]; Remove(r);
-                    News.Post("flotta", $"La pattuglia {patrols[0].name} ha intercettato e distrutto i predoni dell'«{r.name}» nel settore {g.Key}.");
+                    News.Post("flotta", $"La pattuglia {patrols[0].name} ha intercettato e distrutto i predoni dell'«{r.name}» nel settore {Places.Of(g.Key)}.");
                 }
                 else if (raiders.Count > 0 && convoys.Count > 0)
                 {
                     var c = convoys[0]; Remove(c);
                     string boss = Nemesis.Blame();
-                    News.Post("commercio", $"Il convoglio «{c.name}» è stato assaltato dai predoni dell'«{raiders[0].name}» nel settore {g.Key}{(boss != null ? $", al comando di {boss}" : "")}. Nessun superstite.");
+                    News.Post("commercio", $"Il convoglio «{c.name}» è stato assaltato dai predoni dell'«{raiders[0].name}» nel settore {Places.Of(g.Key)}{(boss != null ? $", al comando di {boss}" : "")}. Nessun superstite.");
                     if (Stations.MyShip != null) Contracts.PostLead(Director.Power(Stations.MyShip, out _, out _), 0); // taglia sui predoni
                 }
             }
@@ -173,6 +173,9 @@ namespace Melchior
             var f = State.FirstOrDefault(x => kind == null || x.kind == kind); if (f == null || !live.TryGetValue(f.name, out var p)) return "nessuna flotta";
             p.MyCurrentSector = cur.Neighbors[0]; f.dest = cur.ID; return $"{Label(f)} ora nel settore {cur.Neighbors[0].ID}, diretta qui ({cur.ID})";
         }
+
+        // Flotte presenti in un settore (per le sonde di ricognizione).
+        public static List<string> At(int sector) => State.Where(f => live.TryGetValue(f.name, out var p) && p?.MyCurrentSector != null && p.MyCurrentSector.ID == sector).Select(Label).ToList();
 
         public static string Describe() => State.Count == 0 ? "nessuna flotta" : string.Join("\n      ", State.Select(f => $"{f.kind,-10} {f.name,-24} settore {(live.TryGetValue(f.name, out var p) ? p.MyCurrentSector?.ID : -1)} → {f.dest}{(live.TryGetValue(f.name, out var q) && Alive(q.ShipInstance) ? " (in vista)" : "")}").Prepend("flotte:"));
     }

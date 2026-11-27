@@ -38,12 +38,15 @@ namespace Melchior
             new() { Id = "microfratture", Weight = 1f },
             new() { Id = "nemesi", Weight = 1.6f, NeedsOpenSpace = true },
             new() { Id = "intercettazione", Weight = 2f, NeedsOpenSpace = true },
+            new() { Id = "incontro", Weight = 2.5f, NeedsOpenSpace = true },
+            new() { Id = "vita", Weight = 1.8f },
+            new() { Id = "cacciatori", Weight = 2f, NeedsOpenSpace = true },
         };
         // navi per fascia di potenza: la fascia è potenza / 4
         public string[][] ShipTiers =
         {
             new[] { "E_WDDRONE1", "E_WDDRONE2" },
-            new[] { "E_WDDRONE3", "E_CORRUPTED_DRONE", "E_INFECTED_FIGHTER" },
+            new[] { "E_WDDRONE3", "E_WDDRONE2", "E_INFECTED_FIGHTER" },
             new[] { "E_WDCRUISER", "E_INFECTED_FIGHTER_HEAVY", "E_OUTRIDER" },
             new[] { "E_DESTROYER", "E_WDCRUISER", "E_INFECTED_CARRIER" },
             new[] { "E_CARRIER", "E_DESTROYER", "E_ANNIHILATOR" },
@@ -70,6 +73,10 @@ namespace Melchior
                 else File.WriteAllText(path, JsonSerializer.Serialize(Cfg, opt));
             }
             catch (Exception e) { Plugin.L.LogError("melchior.director.json non valido, uso i valori predefiniti: " + e.Message); Cfg = new DirectorConfig(); }
+            // il drone corrotto del gioco ha oltre 18000 punti di scafo: non va fra le navi delle fasce basse (vecchie configurazioni)
+            bool fixedTiers = false;
+            for (int i = 0; i < Cfg.ShipTiers.Length - 1; i++) if (Cfg.ShipTiers[i].Contains("E_CORRUPTED_DRONE")) { Cfg.ShipTiers[i] = Cfg.ShipTiers[i].Select(x => x == "E_CORRUPTED_DRONE" ? "E_WDDRONE2" : x).ToArray(); fixedTiers = true; }
+            if (fixedTiers) try { File.WriteAllText(path, JsonSerializer.Serialize(Cfg, opt)); } catch { }
             // eventi aggiunti nelle versioni successive: entrano anche nei file di configurazione già esistenti
             var missing = new DirectorConfig().Events.Where(d => !Cfg.Events.Any(e => e.Id == d.Id)).ToArray();
             if (missing.Length > 0) { Cfg.Events = Cfg.Events.Concat(missing).ToArray(); try { File.WriteAllText(path, JsonSerializer.Serialize(Cfg, opt)); } catch { } }
@@ -157,7 +164,7 @@ namespace Melchior
                         lowTime = t < Cfg.CalmAt && hostiles == 0 ? lowTime + 2f : 0f;
                         if (lowTime >= 16f)
                         {
-                            lowTime = 0; SetPhase(id, 3, "Situazione sotto controllo. Squadre danni al lavoro."); Service.Add("direttore.crisi.superate", 1); Stations.Initiative(id, Stations.Cfg.Captain.GainPerSuccess);
+                            lowTime = 0; SetPhase(id, 3, "Situazione sotto controllo. Squadre danni al lavoro."); Service.Add("direttore.crisi.superate", 1); Morale.Change(2, null); Stations.Initiative(id, Stations.Cfg.Captain.GainPerSuccess);
                             if (rng.NextDouble() < 0.4) { var got = Loot.Grant(ship, 1, 4, "crisi"); if (got != null) Notify("RITROVAMENTO", "Dai rottami del combattimento recuperiamo: " + got.Name + "."); }
                         }
                         break;
@@ -173,7 +180,7 @@ namespace Melchior
 
         static float NewCalm(float power)
         {
-            float f = (1f - Math.Clamp((power - 5f) * Cfg.FasterWhenStrong, 0f, 0.5f)) * Factions.CalmFactor();
+            float f = (1f - Math.Clamp((power - 5f) * Cfg.FasterWhenStrong, 0f, 0.5f)) * Factions.CalmFactor() * Environments.CalmFactor() * (Wonders.Kind == "allineamento" ? 1.3f : 1f) * Rules.Calm;
             return (float)(Cfg.CalmMin + rng.NextDouble() * (Cfg.CalmMax - Cfg.CalmMin)) * f;
         }
 
@@ -234,7 +241,7 @@ namespace Melchior
                 case "sciame":
                 {
                     int count = 2 + (int)Math.Min(3, power / 6); int made = 0;
-                    var type = rng.Next(2) == 0 ? EShipType.E_WDDRONE1 : EShipType.E_CORRUPTED_DRONE;
+                    var type = rng.Next(2) == 0 ? EShipType.E_WDDRONE1 : EShipType.E_WDDRONE2; // il drone corrotto ha oltre 18000 di scafo: niente sciami di quelli
                     for (int i = 0; i < count; i++) if (Spawn(ship, type, Modifiers(power) | 1 << (int)EShipModifierType.SWIFT) != null) made++;
                     if (made == 0) return false;
                     Notify("ALLARME DI PROSSIMITÀ", $"Sciame di {made} droni in rapido avvicinamento.");
@@ -243,6 +250,9 @@ namespace Melchior
                 case "rivali": return RivalForce.Spawn(ship, power);
                 case "nemesi": return Nemesis.Appear(ship, power);
                 case "intercettazione": return Factions.Intercept(ship, power);
+                case "incontro": return Encounters.Start();
+                case "vita": return Encounters.StartOnboard();
+                case "cacciatori": return Wanted.Hunters(ship, power);
                 case "missione": return (Saga.State.arc == null && rng.NextDouble() < 0.35 && Saga.StartArc(power)) || Contracts.PostUrgent(power);
                 case "tempesta":
                     Hurt(id, "sensors", 35 + power); Hurt(id, "shields", 15 + power / 2);

@@ -22,11 +22,15 @@ namespace Melchior
         public static string LevelName(int l) => l switch { -3 => "Guerra aperta", -2 => "Ostilità", -1 => "Diffidenza", 1 => "Cordialità", 2 => "Alleanza", 3 => "Leggenda", _ => "Neutralità" };
         static int ByName(string issuer) { foreach (var f in GalaxyWar.Factions) if (GalaxyWar.Name(f) == issuer) return f; return -1; }
 
-        public static void Change(int f, int d, string why)
+        public static void Change(int f, int d, string why, bool share = true)
         {
             if (!Host || f < 0 || Array.IndexOf(GalaxyWar.Factions, f) < 0 || d == 0) return;
-            int before = Level(f); S[f.ToString()] = Math.Clamp(Value(f) + d, -100, 100); int after = Level(f);
+            if (d > 0 && share) d = (int)Math.Round(d * Calling.Bonus("diplomazia"));
+            Leaders.OnRep(f, d);
+            if (share && f != 4 && Math.Abs(d) >= 3) foreach (var a in Diplomacy.Allies(f)) Change(a, d / 3, null, false); // gli alleati condividono un terzo
+            int before = Level(f); S[f.ToString()] = Math.Clamp(Value(f) + d, Campaigns.Honored(f) ? 35 : -100, 100); int after = Level(f); // con l'onorificenza l'alleanza non si perde
             Saga.MarkDirty(); GalaxyView.Dirty();
+            if (after <= -2 && before > -2 && f != 4) Wanted.Heat(15, $"La {GalaxyWar.Name(f)} ha messo una taglia su di noi");
             if (after != before && f != 4)
             {
                 string text = $"{GalaxyWar.Name(f)}: {LevelName(after).ToLowerInvariant()}." + (why != null ? " " + why + "." : "") + after switch
@@ -99,7 +103,7 @@ namespace Melchior
                 if (f == 4) infected++;
                 else if (Array.IndexOf(GalaxyWar.Factions, f) >= 0 && !noLoss) { int e = Enemy(f); if (e >= 0 && e != 4) Change(e, 1, null); } // la perdita verso la fazione colpita arriva dalla reputazione nativa
             }
-            if (infected > 0) foreach (var f in GalaxyWar.Factions) if (f != 4) Change(f, 1, null);
+            if (infected > 0) { foreach (var f in GalaxyWar.Factions) if (f != 4) Change(f, 1, null); Threat.Add(-0.4f * infected); }
         }
 
         // ---- conseguenze nello spazio delle fazioni
@@ -110,7 +114,7 @@ namespace Melchior
             return Level(f) switch { >= 2 => 1.35f, 1 => 1.15f, -2 => 0.8f, -3 => 0.65f, _ => 1f };
         }
         public static float InterceptWeight() { int f = OwnerHere(); return f >= 0 && f != 4 && Array.IndexOf(GalaxyWar.Factions, f) >= 0 && Level(f) <= -2 ? (Level(f) == -3 ? 2.5f : 1.2f) : 0f; }
-        public static float RewardBonus(string issuer) { int f = ByName(issuer); return f < 0 ? 0f : Math.Clamp(Value(f) / 200f, -0.2f, 0.35f); }
+        public static float RewardBonus(string issuer) { int f = ByName(issuer); return f < 0 ? 0f : Math.Clamp(Value(f) / 200f, -0.2f, 0.35f) + Leaders.RewardBonus(f); }
 
         static readonly Dictionary<int, string[]> PatrolTypes = new()
         {
@@ -147,6 +151,7 @@ namespace Melchior
             var st = Stations.MyShip?.MyStats; if (st == null) return;
             float heal = st.HullMax * (Level(f) == 3 ? 0.35f : 0.2f); st.HullCurrent = Math.Min(st.HullMax, st.HullCurrent + heal);
             int credits = Level(f) == 3 ? 1000 : 400; try { PLServer.Instance.CurrentCrewCredits += credits; } catch { }
+            Morale.Change(4, null);
             Director.Notify("RIFUGIO", $"Una stazione della {GalaxyWar.Name(f)} ci riconosce: squadre di riparazione a bordo (+{heal:0} scafo) e {credits} crediti di rifornimenti.");
         }
 
@@ -203,7 +208,7 @@ namespace Melchior
         public class FactionRow { public int id, standing, sectors, momentum; public string name = "", color = "#FFFFFF", level = ""; public bool offensive; }
         public class CrisisRow { public string kind = "", title = "", color = "#FFFFFF", progress = "", hint = ""; public int stage; public float frac; }
         public class WantedRow { public string name = "", role = "", memory = ""; public int rank, sector, jumps; public bool hunted; }
-        public List<FactionRow> factions = new(); public CrisisRow crisis; public List<WantedRow> wanted = new();
+        public List<FactionRow> factions = new(); public CrisisRow crisis; public List<WantedRow> wanted = new(); public string atlas = "", fame = "", diplo = ""; public List<string> crew = new(); public string env = "", rank = ""; public List<string> goals = new(); public string stardate = "", threat = "", calling = "", season = ""; public int trophies; public string campaign = ""; public Dictionary<string, int> upgrades = new(); public List<CodexEntry> codex = new(); public List<string> accords = new(); public string challenge = ""; public int wantedLevel, probeFrom = -1; public List<ProbeRow> probe = new(); public string wonder = "", rules = "frontiera"; public Bases.Panel bases = new(); public int morale = 60; public string traffic = ""; public Market.Panel market = new(); public Research.Panel research = new(); public Mysteries.Panel mystery = new(); public Passengers.Panel pax = new(); public CrewMind.Panel crewCmd = new(); public Wear.Panel wear = new(); public Fabrication.Panel fab = new(); public string boarding = "", boardStatus = "";
 
         static readonly JsonSerializerOptions json = new() { IncludeFields = true };
         static GalaxyView remote = new(), cached; static float builtAt = -10f, nextSend; static string lastSent = "";
@@ -228,6 +233,7 @@ namespace Melchior
                 string color = "#FFFFFF"; try { color = "#" + UnityEngine.ColorUtility.ToHtmlStringRGB(PLGlobal.Instance.Galaxy.GetFactionColorForID(f)); } catch { }
                 v.factions.Add(new FactionRow { id = f, name = f == 5 ? "Polytechnic" : f == 1 ? "Alliance of Gentl." : GalaxyWar.Name(f), color = color, standing = Factions.Value(f), level = Factions.LevelName(Factions.Level(f)), sectors = w?.counts != null && w.counts.TryGetValue(GalaxyWar.Name(f), out var n) ? n : 0, momentum = (int)GalaxyWar.Mom(f), offensive = w != null && w.offensive == f });
             }
+            v.atlas = (Home.Has ? Home.Summary() + " · " : "") + Exploration.Summary(); v.diplo = Diplomacy.Summary(); v.crew = Officers.Rows(); v.env = Environments.Here; v.rank = Competitors.Standings(); v.goals = Logbook.GoalRows(); v.stardate = Logbook.Stardate(); v.threat = Threat.Summary(); v.calling = Calling.Label(); v.season = Calling.Season; v.trophies = Saga.State.trophies.Count; v.campaign = Campaigns.Summary(); v.upgrades = new Dictionary<string, int>(Saga.State.upgrades ?? new()); v.codex = Codex.Entries; v.challenge = Challenge.Line(); v.wantedLevel = Wanted.Level; v.probe = Probes.Rows; v.probeFrom = Probes.From; v.wonder = Wonders.Kind; v.rules = Rules.Mode; v.bases = Bases.Snapshot(); v.traffic = Traffic.Short(); v.market = Market.Snapshot(); v.research = Research.Snapshot(); v.mystery = Mysteries.Snapshot(); v.pax = Passengers.Snapshot(); v.crewCmd = CrewMind.Snapshot(); v.wear = Wear.Snapshot(); v.fab = Fabrication.Snapshot(); v.boarding = Boarding.Short(); v.boardStatus = Boarding.Status(); v.accords = Species.Defs.Where(d => Species.Accord(d.id)).Select(d => d.id).ToList(); v.morale = Saga.State.morale; v.fame = Morale.Title();
             var c = Crises.Cur;
             if (c != null) v.crisis = new CrisisRow { kind = c.kind, title = c.title, color = Crises.Kinds[c.kind].color, stage = c.stage, progress = Crises.Progress(c), hint = Crises.Hint(c), frac = (c.kind == "guerra" ? Math.Max(c.pa, c.pb) : c.progress) / 100f };
             var hunted = Saga.State.contract?.kind == "taglia" ? Saga.State.contract.target : null;
@@ -235,9 +241,10 @@ namespace Melchior
             {
                 string mem = f.memory switch
                 {
-                    "vinto" => $"Ci ha messi in fuga nel settore {f.memSector}.",
-                    "sfregiato" => $"Abbattuto nel settore {f.memSector}, salvo in una capsula: cerca vendetta.",
+                    "vinto" => $"Ci ha messi in fuga nel settore {Places.Of(f.memSector)}.",
+                    "sfregiato" => $"Abbattuto nel settore {Places.Of(f.memSector)}, salvo in una capsula: cerca vendetta.",
                     "erede" => $"Erede di {f.heir}: ha giurato vendetta.",
+                    "debito" => "Ci deve la vita: l'abbiamo soccorso tra i rottami.",
                     _ => f.met > 0 ? $"Incontri con noi: {f.met}." : f.deeds == 1 ? "Una impresa nota nei porti." : f.deeds > 1 ? $"{f.deeds} imprese note nei porti." : "Un nome nuovo nei porti.",
                 };
                 v.wanted.Add(new WantedRow { name = f.Full, role = f.role == "ribelle" ? "ribelle " + Factions.Abbr(f.faction) : Nemesis.RoleLabel(f), rank = f.rank, sector = f.sector, jumps = Nemesis.JumpsTo(f.sector), hunted = f.Full == hunted, memory = mem + " Tratti: " + Nemesis.TraitText(f) + "." });

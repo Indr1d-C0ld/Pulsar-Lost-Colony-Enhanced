@@ -468,5 +468,745 @@
   "Group": "Melchior",
   "Icon": "MEL_AFFIX_FOUR.jpg",
   "IconOff": "MEL_AFFIX_FOUR_off.jpg"
+ },
+ {
+  "Id": "MEL_TRADER",
+  "Title": "Fiuto per gli affari",
+  "Desc": "Guadagna 5.000 crediti commerciando merci",
+  "Hidden": false,
+  "Max": 5000,
+  "Group": "Galassia viva",
+  "Icon": "MEL_TRADER.jpg",
+  "IconOff": "MEL_TRADER_off.jpg"
+ },
+ {
+  "Id": "MEL_TYCOON",
+  "Title": "Magnate della Frontiera",
+  "Desc": "Guadagna 50.000 crediti commerciando merci",
+  "Hidden": false,
+  "Max": 50000,
+  "Group": "Galassia viva",
+  "Icon": "MEL_TYCOON.jpg",
+  "IconOff": "MEL_TYCOON_off.jpg"
+ },
+ {
+  "Id": "MEL_SHORTAGE",
+  "Title": "Arriva la merce",
+  "Desc": "Risolvi una carenza in un porto",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_SHORTAGE.jpg",
+  "IconOff": "MEL_SHORTAGE_off.jpg"
+ },
+ {
+  "Id": "MEL_BLOCKADE",
+  "Title": "Spezzare l'assedio",
+  "Desc": "Spezza il blocco dei pirati a un porto",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BLOCKADE.jpg",
+  "IconOff": "MEL_BLOCKADE_off.jpg"
+ },
+ {
+  "Id": "MEL_RESCUE_10",
+  "Title": "Angelo custode",
+  "Desc": "Salva dieci mercanti dai predoni",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Galassia viva",
+  "Icon": "MEL_RESCUE_10.jpg",
+  "IconOff": "MEL_RESCUE_10_off.jpg"
+ },
+ {
+  "Id": "MEL_ESCORT_5",
+  "Title": "Scorta d'onore",
+  "Desc": "Porta a termine cinque scorte",
+  "Hidden": false,
+  "Max": 5,
+  "Group": "Galassia viva",
+  "Icon": "MEL_ESCORT_5.jpg",
+  "IconOff": "MEL_ESCORT_5_off.jpg"
+ },
+ {
+  "Id": "MEL_FRIENDS",
+  "Title": "Amici in ogni porto",
+  "Desc": "Fatti tre amici fra i capitani del traffico",
+  "Hidden": false,
+  "Max": 3,
+  "Group": "Galassia viva",
+  "Icon": "MEL_FRIENDS.jpg",
+  "IconOff": "MEL_FRIENDS_off.jpg"
+ },
+ {
+  "Id": "MEL_BOARD",
+  "Title": "All'arrembaggio!",
+  "Desc": "Cattura una nave all'arrembaggio",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BOARD.jpg",
+  "IconOff": "MEL_BOARD_off.jpg"
+ },
+ {
+  "Id": "MEL_BOARD_10",
+  "Title": "Flagello delle stive",
+  "Desc": "Cattura dieci navi all'arrembaggio",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BOARD_10.jpg",
+  "IconOff": "MEL_BOARD_10_off.jpg"
+ },
+ {
+  "Id": "MEL_REPEL",
+  "Title": "Non su questa nave",
+  "Desc": "Respingi cinque incursioni a bordo",
+  "Hidden": false,
+  "Max": 5,
+  "Group": "Galassia viva",
+  "Icon": "MEL_REPEL.jpg",
+  "IconOff": "MEL_REPEL_off.jpg"
+ },
+ {
+  "Id": "MEL_RESEARCH",
+  "Title": "Eureka",
+  "Desc": "Completa una ricerca scientifica",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_RESEARCH.jpg",
+  "IconOff": "MEL_RESEARCH_off.jpg"
+ },
+ {
+  "Id": "MEL_RESEARCH_ALL",
+  "Title": "Tutte le tecnologie",
+  "Desc": "Completa tutte le ricerche scientifiche",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_RESEARCH_ALL.jpg",
+  "IconOff": "MEL_RESEARCH_ALL_off.jpg"
+ },
+ {
+  "Id": "MEL_BASE",
+  "Title": "Prima pietra",
+  "Desc": "Fonda una base",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BASE.jpg",
+  "IconOff": "MEL_BASE_off.jpg"
+ },
+ {
+  "Id": "MEL_BASE_3",
+  "Title": "Cittadella",
+  "Desc": "Porta una base al livello 3",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BASE_3.jpg",
+  "IconOff": "MEL_BASE_3_off.jpg"
+ },
+ {
+  "Id": "MEL_BASES_6",
+  "Title": "Impero di frontiera",
+  "Desc": "Possiedi sei basi",
+  "Hidden": false,
+  "Max": 6,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BASES_6.jpg",
+  "IconOff": "MEL_BASES_6_off.jpg"
+ },
+ {
+  "Id": "MEL_VETERAN",
+  "Title": "Caccia grossa",
+  "Desc": "Abbatti un capitano NPC di livello 7 o più",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_VETERAN.jpg",
+  "IconOff": "MEL_VETERAN_off.jpg"
+ },
+ {
+  "Id": "MEL_TALENT",
+  "Title": "Maestria",
+  "Desc": "Porta un talento al terzo grado",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_TALENT.jpg",
+  "IconOff": "MEL_TALENT_off.jpg"
+ },
+ {
+  "Id": "MEL_RECRUIT",
+  "Title": "Nuovo arrivo",
+  "Desc": "Assumi un ufficiale in porto",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_RECRUIT.jpg",
+  "IconOff": "MEL_RECRUIT_off.jpg"
+ },
+ {
+  "Id": "MEL_VOLUNTEER",
+  "Title": "Si imbarca un amico",
+  "Desc": "Un capitano amico lascia la sua nave per unirsi a noi",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_VOLUNTEER.jpg",
+  "IconOff": "MEL_VOLUNTEER_off.jpg"
+ },
+ {
+  "Id": "MEL_RIVAL_FRIEND",
+  "Title": "Rivali, ma amici",
+  "Desc": "Porta l'amicizia con un equipaggio concorrente a 60",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_RIVAL_FRIEND.jpg",
+  "IconOff": "MEL_RIVAL_FRIEND_off.jpg"
+ },
+ {
+  "Id": "MEL_RIVAL_DOWN",
+  "Title": "Fuori classifica",
+  "Desc": "Metti fuori combattimento un equipaggio concorrente",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_RIVAL_DOWN.jpg",
+  "IconOff": "MEL_RIVAL_DOWN_off.jpg"
+ },
+ {
+  "Id": "MEL_SURRENDER_3",
+  "Title": "Pietà del vincitore",
+  "Desc": "Accetta tre rese",
+  "Hidden": false,
+  "Max": 3,
+  "Group": "Galassia viva",
+  "Icon": "MEL_SURRENDER_3.jpg",
+  "IconOff": "MEL_SURRENDER_3_off.jpg"
+ },
+ {
+  "Id": "MEL_CROWD",
+  "Title": "Ora di punta",
+  "Desc": "Trova dodici navi del traffico nello stesso settore",
+  "Hidden": false,
+  "Max": 12,
+  "Group": "Galassia viva",
+  "Icon": "MEL_CROWD.jpg",
+  "IconOff": "MEL_CROWD_off.jpg"
+ },
+ {
+  "Id": "MEL_MAKERS",
+  "Title": "Catalogo completo",
+  "Desc": "Monta componenti di sei case produttrici diverse",
+  "Hidden": false,
+  "Max": 6,
+  "Group": "Galassia viva",
+  "Icon": "MEL_MAKERS.jpg",
+  "IconOff": "MEL_MAKERS_off.jpg"
+ },
+ {
+  "Id": "MEL_QUALITY",
+  "Title": "Esemplare perfetto",
+  "Desc": "Monta un componente di qualità 100% o più",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_QUALITY.jpg",
+  "IconOff": "MEL_QUALITY_off.jpg"
+ },
+ {
+  "Id": "MEL_OLD_FOE",
+  "Title": "Vecchie conoscenze",
+  "Desc": "Ritrova fra i predoni un pirata già incontrato",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_OLD_FOE.jpg",
+  "IconOff": "MEL_OLD_FOE_off.jpg"
+ },
+ {
+  "Id": "MEL_FRONTIER_LEGEND",
+  "Title": "Leggenda della Frontiera",
+  "Desc": "Un capitano che conosci arriva al livello 10",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_FRONTIER_LEGEND.jpg",
+  "IconOff": "MEL_FRONTIER_LEGEND_off.jpg"
+ },
+ {
+  "Id": "MEL_BOUNTY_CAPTAIN",
+  "Title": "Cacciatore di capitani",
+  "Desc": "Riscuoti la taglia su un capitano pirata",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_BOUNTY_CAPTAIN.jpg",
+  "IconOff": "MEL_BOUNTY_CAPTAIN_off.jpg"
+ },
+ {
+  "Id": "MEL_VENDETTA",
+  "Title": "Per un amico",
+  "Desc": "Vendica un capitano amico ucciso dai pirati",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_VENDETTA.jpg",
+  "IconOff": "MEL_VENDETTA_off.jpg"
+ },
+ {
+  "Id": "MEL_LOAN",
+  "Title": "Parola di mercante",
+  "Desc": "Ricevi indietro con gli interessi un prestito fatto a un amico",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_LOAN.jpg",
+  "IconOff": "MEL_LOAN_off.jpg"
+ },
+ {
+  "Id": "MEL_GEAR_RARE",
+  "Title": "Arma d'autore",
+  "Desc": "Porta con te equipaggiamento personale di grado Prototipo o superiore",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_GEAR_RARE.jpg",
+  "IconOff": "MEL_GEAR_RARE_off.jpg"
+ },
+ {
+  "Id": "MEL_GEAR_LEGEND",
+  "Title": "Leggenda in tasca",
+  "Desc": "Porta con te equipaggiamento personale leggendario",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_GEAR_LEGEND.jpg",
+  "IconOff": "MEL_GEAR_LEGEND_off.jpg"
+ },
+ {
+  "Id": "MEL_ORDERS_10",
+  "Title": "Uomini di parola",
+  "Desc": "Consegna dieci ordini dei porti in tempo",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Galassia viva",
+  "Icon": "MEL_ORDERS_10.jpg",
+  "IconOff": "MEL_ORDERS_10_off.jpg"
+ },
+ {
+  "Id": "MEL_WISHES_10",
+  "Title": "Capitano che ascolta",
+  "Desc": "Esaudisci dieci desideri dei tuoi ufficiali",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Galassia viva",
+  "Icon": "MEL_WISHES_10.jpg",
+  "IconOff": "MEL_WISHES_10_off.jpg"
+ },
+ {
+  "Id": "MEL_LOYAL_CREW",
+  "Title": "Equipaggio fedele",
+  "Desc": "Abbi almeno tre ufficiali, tutti fedeli",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_LOYAL_CREW.jpg",
+  "IconOff": "MEL_LOYAL_CREW_off.jpg"
+ },
+ {
+  "Id": "MEL_MEDAL",
+  "Title": "Al servizio della bandiera",
+  "Desc": "Porta a termine l'incarico di un capo di fazione",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_MEDAL.jpg",
+  "IconOff": "MEL_MEDAL_off.jpg"
+ },
+ {
+  "Id": "MEL_LEADER_FRIEND",
+  "Title": "Amico dei potenti",
+  "Desc": "Ottieni la massima stima di un capo di fazione",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_LEADER_FRIEND.jpg",
+  "IconOff": "MEL_LEADER_FRIEND_off.jpg"
+ },
+ {
+  "Id": "MEL_SKY_TRADE",
+  "Title": "Mercato fra le stelle",
+  "Desc": "Concludi cinque affari in volo con i mercanti del traffico",
+  "Hidden": false,
+  "Max": 5,
+  "Group": "Galassia viva",
+  "Icon": "MEL_SKY_TRADE.jpg",
+  "IconOff": "MEL_SKY_TRADE_off.jpg"
+ },
+ {
+  "Id": "MEL_DEBT_FREE",
+  "Title": "Conti in ordine",
+  "Desc": "Salda un prestito con la Gilda dei Mercanti",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_DEBT_FREE.jpg",
+  "IconOff": "MEL_DEBT_FREE_off.jpg"
+ },
+ {
+  "Id": "MEL_DERELICT",
+  "Title": "Silenzio a bordo",
+  "Desc": "Esplora un relitto alla deriva",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_DERELICT.jpg",
+  "IconOff": "MEL_DERELICT_off.jpg"
+ },
+ {
+  "Id": "MEL_DERELICTS_10",
+  "Title": "Archeologo dei relitti",
+  "Desc": "Esplora 10 relitti alla deriva",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Galassia viva",
+  "Icon": "MEL_DERELICTS_10.jpg",
+  "IconOff": "MEL_DERELICTS_10_off.jpg"
+ },
+ {
+  "Id": "MEL_SURVIVOR",
+  "Title": "Ancora vivo",
+  "Desc": "Trova un sopravvissuto a bordo di un relitto",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Galassia viva",
+  "Icon": "MEL_SURVIVOR.jpg",
+  "IconOff": "MEL_SURVIVOR_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_TEAM",
+  "Title": "Una squadra vera",
+  "Desc": "L'equipaggio porta a termine 50 interventi coordinati",
+  "Hidden": false,
+  "Max": 50,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_TEAM.jpg",
+  "IconOff": "MEL_CREW_TEAM_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_FIRE",
+  "Title": "Pompieri dello spazio",
+  "Desc": "L'equipaggio doma 10 incendi a bordo",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_FIRE.jpg",
+  "IconOff": "MEL_CREW_FIRE_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_REPEL",
+  "Title": "Nessuno sale a bordo",
+  "Desc": "L'equipaggio respinge 10 intrusi",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_REPEL.jpg",
+  "IconOff": "MEL_CREW_REPEL_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_REVIVE",
+  "Title": "Non si lascia indietro nessuno",
+  "Desc": "Un membro dell'equipaggio rianima un compagno",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_REVIVE.jpg",
+  "IconOff": "MEL_CREW_REVIVE_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_MASTER",
+  "Title": "Maestro del mestiere",
+  "Desc": "Un ufficiale porta una competenza al livello 10",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_MASTER.jpg",
+  "IconOff": "MEL_CREW_MASTER_off.jpg"
+ },
+ {
+  "Id": "MEL_SIGNAL",
+  "Title": "Rumore di fondo",
+  "Desc": "Decifra per intero un segnale misterioso",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_SIGNAL.jpg",
+  "IconOff": "MEL_SIGNAL_off.jpg"
+ },
+ {
+  "Id": "MEL_SIGNALS_10",
+  "Title": "Orecchio fino",
+  "Desc": "Decifra 10 segnali misteriosi",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Indagini",
+  "Icon": "MEL_SIGNALS_10.jpg",
+  "IconOff": "MEL_SIGNALS_10_off.jpg"
+ },
+ {
+  "Id": "MEL_TRIANGULATE",
+  "Title": "Triangolazione",
+  "Desc": "Localizza l'origine di un segnale",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_TRIANGULATE.jpg",
+  "IconOff": "MEL_TRIANGULATE_off.jpg"
+ },
+ {
+  "Id": "MEL_DIG",
+  "Title": "Prima palata",
+  "Desc": "Completa lo scavo di uno strato di rovine",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_DIG.jpg",
+  "IconOff": "MEL_DIG_off.jpg"
+ },
+ {
+  "Id": "MEL_RELICS_10",
+  "Title": "Collezionista",
+  "Desc": "Trova 10 reperti",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Indagini",
+  "Icon": "MEL_RELICS_10.jpg",
+  "IconOff": "MEL_RELICS_10_off.jpg"
+ },
+ {
+  "Id": "MEL_CIV",
+  "Title": "Storia ritrovata",
+  "Desc": "Ricostruisci la storia di una civiltà perduta",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_CIV.jpg",
+  "IconOff": "MEL_CIV_off.jpg"
+ },
+ {
+  "Id": "MEL_CIV_HOME",
+  "Title": "Ritorno a casa",
+  "Desc": "Scava il mondo d'origine di una civiltà perduta",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_CIV_HOME.jpg",
+  "IconOff": "MEL_CIV_HOME_off.jpg"
+ },
+ {
+  "Id": "MEL_MUSEUM",
+  "Title": "Mecenate",
+  "Desc": "Dona 5 reperti all'Accademia delle Scienze",
+  "Hidden": false,
+  "Max": 5,
+  "Group": "Indagini",
+  "Icon": "MEL_MUSEUM.jpg",
+  "IconOff": "MEL_MUSEUM_off.jpg"
+ },
+ {
+  "Id": "MEL_FUTURE",
+  "Title": "Messaggio da noi stessi",
+  "Desc": "Ricevi una trasmissione impossibile",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_FUTURE.jpg",
+  "IconOff": "MEL_FUTURE_off.jpg"
+ },
+ {
+  "Id": "MEL_FENCE",
+  "Title": "Tombarolo",
+  "Desc": "Vendi un reperto a un ricettatore",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Indagini",
+  "Icon": "MEL_FENCE.jpg",
+  "IconOff": "MEL_FENCE_off.jpg"
+ },
+ {
+  "Id": "MEL_PAX",
+  "Title": "Biglietti, prego",
+  "Desc": "Imbarca i primi passeggeri",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Passeggeri",
+  "Icon": "MEL_PAX.jpg",
+  "IconOff": "MEL_PAX_off.jpg"
+ },
+ {
+  "Id": "MEL_PAX_100",
+  "Title": "Linea regolare",
+  "Desc": "Porta a destinazione 100 passeggeri",
+  "Hidden": false,
+  "Max": 100,
+  "Group": "Passeggeri",
+  "Icon": "MEL_PAX_100.jpg",
+  "IconOff": "MEL_PAX_100_off.jpg"
+ },
+ {
+  "Id": "MEL_PAX_HAPPY",
+  "Title": "Viaggio da ricordare",
+  "Desc": "Consegna un gruppo di passeggeri entusiasti",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Passeggeri",
+  "Icon": "MEL_PAX_HAPPY.jpg",
+  "IconOff": "MEL_PAX_HAPPY_off.jpg"
+ },
+ {
+  "Id": "MEL_PAX_REFUGEES",
+  "Title": "Porto sicuro",
+  "Desc": "Porta in salvo 50 profughi",
+  "Hidden": false,
+  "Max": 50,
+  "Group": "Passeggeri",
+  "Icon": "MEL_PAX_REFUGEES.jpg",
+  "IconOff": "MEL_PAX_REFUGEES_off.jpg"
+ },
+ {
+  "Id": "MEL_PAX_BIRTH",
+  "Title": "Nata fra le stelle",
+  "Desc": "Una nascita a bordo",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Passeggeri",
+  "Icon": "MEL_PAX_BIRTH.jpg",
+  "IconOff": "MEL_PAX_BIRTH_off.jpg"
+ },
+ {
+  "Id": "MEL_PAX_FUGITIVE",
+  "Title": "Nessuna domanda",
+  "Desc": "Porta a destinazione un fuggiasco",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Passeggeri",
+  "Icon": "MEL_PAX_FUGITIVE.jpg",
+  "IconOff": "MEL_PAX_FUGITIVE_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_ORDERS",
+  "Title": "Al comando",
+  "Desc": "Impartisci 50 ordini al tuo equipaggio",
+  "Hidden": false,
+  "Max": 50,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_ORDERS.jpg",
+  "IconOff": "MEL_CREW_ORDERS_off.jpg"
+ },
+ {
+  "Id": "MEL_CREW_DOCTRINES",
+  "Title": "Ogni situazione ha la sua dottrina",
+  "Desc": "Usa tutte e sei le dottrine dell'equipaggio",
+  "Hidden": false,
+  "Max": 6,
+  "Group": "Equipaggio",
+  "Icon": "MEL_CREW_DOCTRINES.jpg",
+  "IconOff": "MEL_CREW_DOCTRINES_off.jpg"
+ },
+ {
+  "Id": "MEL_WEAR",
+  "Title": "Chiave inglese",
+  "Desc": "Esegui la prima manutenzione con i ricambi",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Manutenzione",
+  "Icon": "MEL_WEAR.jpg",
+  "IconOff": "MEL_WEAR_off.jpg"
+ },
+ {
+  "Id": "MEL_WEAR_50",
+  "Title": "Officina di bordo",
+  "Desc": "Esegui 50 manutenzioni",
+  "Hidden": false,
+  "Max": 50,
+  "Group": "Manutenzione",
+  "Icon": "MEL_WEAR_50.jpg",
+  "IconOff": "MEL_WEAR_50_off.jpg"
+ },
+ {
+  "Id": "MEL_WEAR_OVERHAUL",
+  "Title": "Come nuova",
+  "Desc": "Fai revisionare la nave in un cantiere",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Manutenzione",
+  "Icon": "MEL_WEAR_OVERHAUL.jpg",
+  "IconOff": "MEL_WEAR_OVERHAUL_off.jpg"
+ },
+ {
+  "Id": "MEL_WEAR_LIMP",
+  "Title": "Col nastro adesivo",
+  "Desc": "Arriva in cantiere con un sistema in avaria",
+  "Hidden": true,
+  "Max": 0,
+  "Group": "Manutenzione",
+  "Icon": "MEL_WEAR_LIMP.jpg",
+  "IconOff": "MEL_WEAR_LIMP_off.jpg"
+ },
+ {
+  "Id": "MEL_VOICES_FAME",
+  "Title": "Sulla bocca di tutti",
+  "Desc": "Senti la gente parlare di noi 10 volte",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Galassia viva",
+  "Icon": "MEL_VOICES_FAME.jpg",
+  "IconOff": "MEL_VOICES_FAME_off.jpg"
+ },
+ {
+  "Id": "MEL_CRAFT",
+  "Title": "Banco di lavoro",
+  "Desc": "Completa la prima lavorazione nell'officina di bordo",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Manutenzione",
+  "Icon": "MEL_CRAFT.jpg",
+  "IconOff": "MEL_CRAFT_off.jpg"
+ },
+ {
+  "Id": "MEL_CRAFT_FUEL",
+  "Title": "Autosufficienza",
+  "Desc": "Fabbrica 10 capsule di carburante a bordo",
+  "Hidden": false,
+  "Max": 10,
+  "Group": "Manutenzione",
+  "Icon": "MEL_CRAFT_FUEL.jpg",
+  "IconOff": "MEL_CRAFT_FUEL_off.jpg"
+ },
+ {
+  "Id": "MEL_CRAFT_COMPONENT",
+  "Title": "Fatto in casa",
+  "Desc": "Fabbrica un componente della nave nell'officina",
+  "Hidden": false,
+  "Max": 0,
+  "Group": "Manutenzione",
+  "Icon": "MEL_CRAFT_COMPONENT.jpg",
+  "IconOff": "MEL_CRAFT_COMPONENT_off.jpg"
+ },
+ {
+  "Id": "MEL_CRAFT_50",
+  "Title": "Catena di montaggio",
+  "Desc": "Completa 50 lavorazioni nell'officina di bordo",
+  "Hidden": false,
+  "Max": 50,
+  "Group": "Manutenzione",
+  "Icon": "MEL_CRAFT_50.jpg",
+  "IconOff": "MEL_CRAFT_50_off.jpg"
  }
 ]

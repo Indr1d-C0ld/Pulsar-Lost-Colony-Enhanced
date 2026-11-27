@@ -22,7 +22,7 @@ namespace Melchior
 
     public static class RivalForce
     {
-        static readonly HttpClient http = new() { Timeout = TimeSpan.FromSeconds(5) };
+        static readonly HttpClient http = new() { Timeout = TimeSpan.FromSeconds(15) }; // all'avvio il gioco è lento: 5 secondi non sempre bastano
         static readonly JsonSerializerOptions json = new() { IncludeFields = true, PropertyNameCaseInsensitive = true };
         static readonly System.Diagnostics.Stopwatch clock = System.Diagnostics.Stopwatch.StartNew();
         static readonly System.Random rng = new();

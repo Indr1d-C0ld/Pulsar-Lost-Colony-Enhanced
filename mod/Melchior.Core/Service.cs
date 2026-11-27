@@ -53,6 +53,58 @@ namespace Melchior
             new() { Id = "obiettivi", Label = "Obiettivi raggiunti", Group = "Carriera", Points = 60 },
             new() { Id = "rarita.trovati", Label = "Componenti di grado a bordo", Group = "Collezione", Points = 10 },
             new() { Id = "rarita.max", Label = "Grado più alto trovato", Group = "Collezione", Points = 40 },
+            new() { Id = "commercio.guadagno", Label = "Crediti guadagnati commerciando", Group = "Galassia viva", Points = 0.01 },
+            new() { Id = "commercio.scambi", Label = "Scambi alla borsa delle merci", Group = "Galassia viva", Points = 1 },
+            new() { Id = "abbordaggi.catture", Label = "Navi catturate all'arrembaggio", Group = "Galassia viva", Points = 40 },
+            new() { Id = "abbordaggi.respinti", Label = "Incursioni respinte", Group = "Galassia viva", Points = 15 },
+            new() { Id = "ricerca.tecnologie", Label = "Tecnologie scoperte", Group = "Galassia viva", Points = 30 },
+            new() { Id = "basi.fondate", Label = "Basi fondate", Group = "Galassia viva", Points = 40 },
+            new() { Id = "traffico.salvataggi", Label = "Mercanti salvati dai predoni", Group = "Galassia viva", Points = 15 },
+            new() { Id = "traffico.scorte", Label = "Scorte portate a termine", Group = "Galassia viva", Points = 20 },
+            new() { Id = "porti.carenze", Label = "Carenze risolte nei porti", Group = "Galassia viva", Points = 25 },
+            new() { Id = "porti.blocchi", Label = "Blocchi pirati spezzati", Group = "Galassia viva", Points = 30 },
+            new() { Id = "capitani.veterani", Label = "Capitani veterani abbattuti", Group = "Galassia viva", Points = 20 },
+            new() { Id = "reclute.assunte", Label = "Ufficiali assunti", Group = "Galassia viva", Points = 5 },
+            new() { Id = "rese.accettate", Label = "Rese accettate", Group = "Galassia viva", Points = 10 },
+            new() { Id = "passeggeri.imbarcati", Label = "Passeggeri imbarcati", Group = "Passeggeri", Points = 2 },
+            new() { Id = "passeggeri.consegnati", Label = "Passeggeri portati a destinazione", Group = "Passeggeri", Points = 4 },
+            new() { Id = "passeggeri.profughi", Label = "Profughi portati in salvo", Group = "Passeggeri", Points = 6 },
+            new() { Id = "passeggeri.felici", Label = "Viaggi da ricordare", Group = "Passeggeri", Points = 15 },
+            new() { Id = "passeggeri.persi", Label = "Passeggeri persi per strada", Group = "Passeggeri", Points = -5 },
+            new() { Id = "passeggeri.nascite", Label = "Nascite a bordo", Group = "Passeggeri", Points = 30 },
+            new() { Id = "passeggeri.aiuti", Label = "Aiuti dai passeggeri", Group = "Passeggeri", Points = 2 },
+            new() { Id = "indagini.segnali", Label = "Segnali captati", Group = "Indagini", Points = 3 },
+            new() { Id = "indagini.decifrati", Label = "Segnali decifrati", Group = "Indagini", Points = 8 },
+            new() { Id = "indagini.localizzati", Label = "Segnali localizzati", Group = "Indagini", Points = 8 },
+            new() { Id = "indagini.siti", Label = "Siti indagati", Group = "Indagini", Points = 10 },
+            new() { Id = "indagini.fortuiti", Label = "Rovine trovate per caso", Group = "Indagini", Points = 6 },
+            new() { Id = "indagini.scavi", Label = "Scavi avviati", Group = "Indagini", Points = 4 },
+            new() { Id = "indagini.reperti", Label = "Reperti trovati", Group = "Indagini", Points = 6 },
+            new() { Id = "indagini.donati", Label = "Reperti donati all'Accademia", Group = "Indagini", Points = 12 },
+            new() { Id = "indagini.venduti", Label = "Reperti venduti", Group = "Indagini", Points = 3 },
+            new() { Id = "indagini.civilta", Label = "Civiltà ricostruite", Group = "Indagini", Points = 60 },
+            new() { Id = "fabbricazione.lavorazioni", Label = "Lavorazioni dell'officina", Group = "Manutenzione", Points = 2 },
+            new() { Id = "fabbricazione.carburante", Label = "Capsule di carburante fabbricate", Group = "Manutenzione", Points = 3 },
+            new() { Id = "voci.ascoltate", Label = "Voci ascoltate a bordo e nei porti", Group = "Galassia viva", Points = 0.2 },
+            new() { Id = "voci.noi", Label = "Volte in cui la gente parlava di noi", Group = "Galassia viva", Points = 2 },
+            new() { Id = "manutenzione.interventi", Label = "Manutenzioni eseguite", Group = "Manutenzione", Points = 3 },
+            new() { Id = "manutenzione.revisioni", Label = "Revisioni in cantiere", Group = "Manutenzione", Points = 5 },
+            new() { Id = "manutenzione.ricambi", Label = "Ricambi consumati", Group = "Manutenzione", Points = 1 },
+            new() { Id = "manutenzione.guasti", Label = "Guasti da usura", Group = "Manutenzione", Points = -2 },
+            new() { Id = "equipaggio.ordini", Label = "Ordini impartiti all'equipaggio", Group = "Equipaggio", Points = 1 },
+            new() { Id = "equipaggio.interventi", Label = "Interventi coordinati dell'equipaggio", Group = "Equipaggio", Points = 3 },
+            new() { Id = "equipaggio.incendi", Label = "Incendi domati dall'equipaggio", Group = "Equipaggio", Points = 4 },
+            new() { Id = "equipaggio.intrusi", Label = "Intrusi respinti dall'equipaggio", Group = "Equipaggio", Points = 6 },
+            new() { Id = "equipaggio.rianimazioni", Label = "Compagni rianimati", Group = "Equipaggio", Points = 10 },
+            new() { Id = "equipaggio.competenze", Label = "Competenze cresciute", Group = "Equipaggio", Points = 12 },
+            new() { Id = "equipaggio.talenti", Label = "Talenti appresi dai bot", Group = "Equipaggio", Points = 5 },
+            new() { Id = "relitti.esplorati", Label = "Relitti esplorati", Group = "Galassia viva", Points = 8 },
+            new() { Id = "relitti.sopravvissuti", Label = "Sopravvissuti salvati dai relitti", Group = "Galassia viva", Points = 25 },
+            new() { Id = "commercio.volo", Label = "Trasbordi in volo", Group = "Galassia viva", Points = 3 },
+            new() { Id = "capi.incarichi", Label = "Incarichi dei capi delle fazioni", Group = "Galassia viva", Points = 30 },
+            new() { Id = "equipaggio.desideri", Label = "Desideri degli ufficiali esauditi", Group = "Galassia viva", Points = 10 },
+            new() { Id = "porti.ordini", Label = "Ordini dei porti consegnati", Group = "Galassia viva", Points = 15 },
+            new() { Id = "capitani.taglie", Label = "Taglie e vendette sui capitani", Group = "Galassia viva", Points = 35 },
             new() { Id = "stazioni.regolazioni", Label = "Regolazioni di stazione", Group = "Stazioni", Points = 0.5 },
             new() { Id = "stazioni.assetti", Label = "Assetti di bordo ordinati", Group = "Stazioni", Points = 2 },
             new() { Id = "allarme.rosso", Label = "Tempo in allarme rosso", Group = "Stazioni", Unit = "ore", Points = 0.02 },
@@ -81,7 +133,7 @@ namespace Melchior
         };
     }
 
-    public class ServiceProfile { public string Id = Guid.NewGuid().ToString("N"); public string Name = ""; public Dictionary<string, double> Stats = new(); }
+    public class ServiceProfile { public string Id = Guid.NewGuid().ToString("N"); public string Name = ""; public Dictionary<string, double> Stats = new(); public Dictionary<string, int> Talents = new(); }
 
     public class BoardRow { public string name { get; set; } = ""; public string rank { get; set; } = ""; public double points { get; set; } public double value { get; set; } }
 
@@ -104,7 +156,13 @@ namespace Melchior
             string cfg = Path.Combine(dir, "melchior.ranking.json"); savePath = Path.Combine(dir, Plugin.PerInstance("melchior.service.json"));
             try
             {
-                if (File.Exists(cfg)) Cfg = JsonSerializer.Deserialize<RankingConfig>(File.ReadAllText(cfg), json) ?? new RankingConfig();
+                if (File.Exists(cfg))
+                {
+                    Cfg = JsonSerializer.Deserialize<RankingConfig>(File.ReadAllText(cfg), json) ?? new RankingConfig();
+                    // statistiche nuove delle versioni successive: si aggiungono alla configurazione esistente
+                    var have = Cfg.Stats.Select(x => x.Id).ToHashSet(); var add = new RankingConfig().Stats.Where(x => !have.Contains(x.Id)).ToArray();
+                    if (add.Length > 0) { Cfg.Stats = Cfg.Stats.Concat(add).ToArray(); File.WriteAllText(cfg, JsonSerializer.Serialize(Cfg, json)); }
+                }
                 else File.WriteAllText(cfg, JsonSerializer.Serialize(Cfg, json));
                 if (File.Exists(savePath)) Me = JsonSerializer.Deserialize<ServiceProfile>(File.ReadAllText(savePath), json) ?? new ServiceProfile();
                 else dirty = true;
@@ -114,7 +172,8 @@ namespace Melchior
         }
 
         public static double Get(string id) => Me.Stats.TryGetValue(id, out var v) ? v : 0;
-        public static void Add(string id, double v) { if (v == 0) return; Me.Stats[id] = Get(id) + v; dirty = true; }
+        public static void Touch() => dirty = true;
+        public static void Add(string id, double v) { if (v == 0) return; Me.Stats[id] = Get(id) + v; dirty = true; Challenge.OnStat(id, v); }
         public static void Max(string id, double v) { if (v > Get(id)) { Me.Stats[id] = v; dirty = true; } }
 
         public static double Points() => Math.Max(0, Cfg.Stats.Sum(s => s.Points * Get(s.Id)));
@@ -205,6 +264,39 @@ namespace Melchior
     // Scheda personale e classifica: F10 (o comando di console "svc").
     public static class ServicePanel
     {
+        // Talenti: cinque colonne, una per postazione; ogni talento fino al terzo grado.
+        static GUIStyle wrap, center;
+        // pulsante disegnato in proprio: la pelle IMGUI del gioco non ha un font per i pulsanti
+        static bool Btn(Rect r, string text)
+        {
+            center ??= new GUIStyle(MelchiorHud.Small) { alignment = TextAnchor.MiddleCenter };
+            GUI.Box(r, "", MelchiorHud.Box); GUI.Label(r, text, center);
+            return GUI.Button(r, "", GUIStyle.none);
+        }
+        static void DrawTalents(float x, float y, float w, float h)
+        {
+            var S = MelchiorHud.Small; var B = MelchiorHud.Body; wrap ??= new GUIStyle(S) { wordWrap = true };
+            int free = Talents.Earned() - Talents.Spent();
+            GUI.Label(new Rect(x + 24, y + 74, 900, 22), $"Punti talento: <color=#7CD992>{free}</color> liberi su {Talents.Earned()}  <color=#8b90a0>(uno per grado di servizio, uno ogni tre livelli di specializzazione). Agiscono quando siedi a quella postazione.</color>", S);
+            string[] cls = { "COMANDO", "TIMONE", "SCIENZA", "ARMI", "INGEGNERIA" };
+            float colW = (w - 48) / 5f;
+            for (int c = 0; c < 5; c++)
+            {
+                float cx = x + 24 + c * colW, cy = y + 108;
+                GUI.Label(new Rect(cx, cy, colW - 8, 22), "<color=#C58AF9>" + cls[c] + "</color>", B); cy += 30;
+                foreach (var d in Talents.Defs.Where(t => t.cls == c))
+                {
+                    int r = Talents.Mine.GetValueOrDefault(d.id);
+                    GUI.Label(new Rect(cx, cy, colW - 50, 22), $"{d.name}  <color={(r > 0 ? "#F2A65A" : "#5a6070")}>{r}/{Talents.MaxRank}</color>", S);
+                    if (r < Talents.MaxRank && free > 0 && Btn(new Rect(cx + colW - 44, cy, 34, 22), "+")) Talents.Learn(d.id);
+                    GUI.Label(new Rect(cx, cy + 20, colW - 10, 66), "<color=#8b90a0>" + d.effect + "</color>", wrap);
+                    cy += 96;
+                }
+            }
+            if (Btn(new Rect(x + 24, y + h - 44, 180, 28), "AZZERA I TALENTI")) Talents.Unlearn();
+            GUI.Label(new Rect(x + 220, y + h - 40, 780, 24), "<color=#8b90a0>Gli ufficiali bot hanno talenti in proporzione al grado; anche ogni capitano nemico ha livello e talenti, con le stesse regole.</color>", S);
+        }
+
         public static bool Show; public static int Tab;
         public static void Tick() { try { if (Input.GetKeyDown(KeyCode.F10)) Show = !Show; } catch { } }
 
@@ -217,6 +309,9 @@ namespace Melchior
             double pts = Service.Points(); var rank = Service.Rank(pts); var next = Service.NextRank();
             GUI.Label(new Rect(x + 24, y + 12, 700, 30), $"<color=#F2A65A>STATO DI SERVIZIO</color>   {(string.IsNullOrEmpty(Service.Me.Name) ? "" : Service.Me.Name)}", T);
             GUI.Label(new Rect(x + 24, y + 44, 700, 26), $"<color=#9db4ff>{rank.Name}</color>   {pts:0} punti di servizio" + (next == null ? "   grado massimo" : $"   <color=#8b90a0>prossimo grado: {next.Name} a {next.Points:0}</color>"), B);
+            if (Btn(new Rect(x + w - 260, y + 14, 112, 26), Tab == 0 ? "<color=#F2A65A>STATO</color>" : "STATO")) Tab = 0;
+            if (Btn(new Rect(x + w - 140, y + 14, 112, 26), Tab == 1 ? "<color=#F2A65A>TALENTI</color>" : "TALENTI")) Tab = 1;
+            if (Tab == 1) { DrawTalents(x, y, w, h); return; }
             // statistiche per gruppo, su due colonne
             float cx = x + 24, cy = y + 84; string group = "";
             foreach (var s in Service.Cfg.Stats)

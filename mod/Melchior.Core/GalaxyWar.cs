@@ -29,7 +29,7 @@ namespace Melchior
             try { var l = PLGlobal.Instance.Galaxy.AllFactions; for (int i = 0; i < l.Count; i++) if (l[i] != null && l[i].FactionID == f && !string.IsNullOrWhiteSpace(l[i].m_FactionName)) return l[i].m_FactionName; } catch { }
             return f switch { 0 => "Colonial Union", 1 => "Alliance of Gentlemen", 2 => "W.D. Corporation", 4 => "Infetti", 5 => "Polytechnic Federation", _ => "nessuno" };
         }
-        static string SectorName(PLSectorInfo s) { string n = s.Name; return string.IsNullOrEmpty(n) || int.TryParse(n, out _) ? $"il settore {s.ID}" : $"il settore {s.ID} «{n}»"; }
+        static string SectorName(PLSectorInfo s) => $"il settore {Places.Of(s.ID)}";
         public static float Mom(int f) => W.momentum.TryGetValue(f.ToString(), out var m) ? m : 50f;
         static void AddMom(int f, float d) => W.momentum[f.ToString()] = Math.Clamp(Mom(f) + d, 5f, 95f);
 
@@ -57,6 +57,7 @@ namespace Melchior
         static List<string> Step(bool quiet)
         {
             var events = new List<string>(); var w = W;
+            try { Diplomacy.Step(); } catch (Exception e) { Plugin.L.LogWarning("Diplomazia: " + e.Message); }
             var cur = PLServer.GetCurrentSector(); PLSectorInfo target = null; try { target = PLServer.GetTargetWarpSector(); } catch { }
             var all = Sectors(); if (all.Count == 0) return events;
             // fronte: (attaccante, settore conteso, difensore)
@@ -69,7 +70,8 @@ namespace Melchior
                 for (int i = 0; i < nb.Count; i++)
                 {
                     var n = nb[i]; if (n?.MySPI == null) continue; int atk = n.MySPI.Faction;
-                    if (atk != def && Array.IndexOf(Factions, atk) >= 0) front.Add((atk, s, def));
+                    if (atk != def && Array.IndexOf(Factions, atk) >= 0 && Diplomacy.CanAttack(atk, def))
+                        for (int rep = 0; rep < Diplomacy.AttackWeight(atk, def); rep++) front.Add((atk, s, def)); // in guerra si attacca il doppio
                 }
             }
             if (front.Count == 0) return events;
@@ -80,7 +82,7 @@ namespace Melchior
                 var atks = front.Select(x => x.atk).Distinct().ToList(); w.offensive = atks[rng.Next(atks.Count)]; w.offensiveTicks = 5; AddMom(w.offensive, 15);
                 events.Add($"Offensiva lungo il fronte: {Name(w.offensive)} attacca su più settori.");
             }
-            int attempts = 1 + (w.offensive >= 0 ? 2 : 0) + (Crises.Cur != null && Crises.Cur.kind is "epidemia" or "guerra" ? 1 : 0);
+            int attempts = (Calling.Is("tregua") && rng.NextDouble() < 0.6 ? 0 : 1) + (w.offensive >= 0 ? 2 : 0) + (Crises.Cur != null && Crises.Cur.kind is "epidemia" or "guerra" ? 1 : 0);
             for (int k = 0; k < attempts; k++)
             {
                 // l'attaccante si sceglie in proporzione allo slancio
@@ -90,7 +92,7 @@ namespace Melchior
                 var pick = grp.ElementAt(rng.Next(grp.Count()));
                 double chance = Math.Clamp(0.5 + (Mom(pick.atk) - (pick.def >= 0 ? Mom(pick.def) : 30)) / 160.0, 0.15, 0.85);
                 if (rng.NextDouble() > chance) { AddMom(pick.atk, -0.5f); continue; }
-                Conquer(pick.s, pick.atk);
+                Conquer(pick.s, pick.atk); if (pick.atk == 4) Threat.Add(1f);
                 AddMom(pick.atk, 1.5f); if (pick.def >= 0) AddMom(pick.def, -1.5f);
                 w.conquests++;
                 events.Add(pick.def >= 0 && pick.def != 6 ? $"Avanzata ({Name(pick.atk)}): conquistato {SectorName(pick.s)}, finora sotto {Name(pick.def)}." : $"Avanzata ({Name(pick.atk)}): occupato {SectorName(pick.s)}, finora senza padrone.");

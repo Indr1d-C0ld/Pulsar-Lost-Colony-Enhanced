@@ -70,9 +70,19 @@ namespace Melchior
 
         static List<PLSectorInfo> Open() { var l = new List<PLSectorInfo>(); try { foreach (var kv in PLGlobal.Instance.Galaxy.AllSectorInfos) { var s = kv.Value; if (s?.MySPI != null && s.VisualIndication == ESectorVisualIndication.NONE && s.MissionSpecificID == -1 && !s.LockedToFaction) l.Add(s); } } catch { } return l; }
 
+        static int forceA = -1, forceB = -1;
+        // Una dichiarazione di guerra (Diplomacy.cs) apre la crisi con le due fazioni indicate.
+        public static bool Starting => forceA >= 0 || starting;
+        static bool starting;
+        public static void StartWar(int a, int b) { if (Cur != null || Starting) return; forceA = a; forceB = b; try { Start("guerra"); } finally { forceA = forceB = -1; } }
+
         public static string Start(string kind)
         {
             if (Cur != null) return "c'è già una crisi in corso";
+            starting = true; try { return StartInner(kind); } finally { starting = false; }
+        }
+        static string StartInner(string kind)
+        {
             var kinds = Kinds.Keys.Where(k => kind == null ? !Saga.State.crises.Contains("last:" + k) : k == kind).ToList(); if (kinds.Count == 0) kinds = Kinds.Keys.ToList();
             kind = kinds[rng.Next(kinds.Count)];
             var c = new CrisisState { kind = kind, started = Jumps(), next = Jumps() + rng.Next(4, 7) };
@@ -85,7 +95,7 @@ namespace Melchior
                     var cand = open.Where(s => s.MySPI.Faction != 4 && s.ID != cur && s.Neighbors != null && s.Neighbors.ToArray().Any(n => n?.MySPI != null && n.MySPI.Faction == 4)).ToList();
                     if (cand.Count == 0) cand = open.Where(s => s.ID != cur).ToList(); if (cand.Count == 0) return "nessun settore adatto";
                     var near = cand.Where(s => here == null || Nemesis.Distance(here, s) is >= 2 and <= 6).ToList(); if (near.Count > 0) cand = near;
-                    c.sector = cand[rng.Next(cand.Count)].ID; c.a = 4; c.title = $"Epidemia nel settore {c.sector}";
+                    c.sector = cand[rng.Next(cand.Count)].ID; c.a = 4; c.title = $"Epidemia nel settore {Places.Of(c.sector)}";
                     break;
                 }
                 case "guerra":
@@ -94,14 +104,17 @@ namespace Melchior
                     var pairs = new Dictionary<(int, int), int>();
                     foreach (var s in open) { int f = s.MySPI.Faction; if (Array.IndexOf(GalaxyWar.Factions, f) < 0 || f == 4) continue; var nb = s.Neighbors; if (nb == null) continue; for (int i = 0; i < nb.Count; i++) { int g = nb[i]?.MySPI?.Faction ?? -1; if (g != f && g >= 0 && g != 4 && Array.IndexOf(GalaxyWar.Factions, g) >= 0) { var k = f < g ? (f, g) : (g, f); pairs[k] = pairs.GetValueOrDefault(k) + 1; } } }
                     if (pairs.Count == 0) return "nessun fronte fra due fazioni";
-                    var top = pairs.OrderByDescending(x => x.Value).Take(2).ToList(); var p = top[rng.Next(top.Count)].Key;
+                    // fra le coppie con il fronte più lungo, quella con i rapporti peggiori
+                    var top = pairs.OrderByDescending(x => x.Value).Take(4).OrderBy(x => Diplomacy.Rel(x.Key.Item1, x.Key.Item2)).Take(2).ToList(); var p = top[rng.Next(top.Count)].Key;
+                    if (forceA >= 0) p = (forceA, forceB);
+                    if (Diplomacy.StatusOf(p.Item1, p.Item2) > -1) Diplomacy.Change(p.Item1, p.Item2, -30 - Diplomacy.Rel(p.Item1, p.Item2) - 5, null);
                     c.a = p.Item1; c.b = p.Item2; c.title = $"Guerra aperta: {GalaxyWar.Name(c.a)} contro {GalaxyWar.Name(c.b)}";
                     break;
                 }
                 case "anomalia":
                 {
                     var cand = open.Where(s => s.ID != cur && (here == null || Nemesis.Distance(here, s) is >= 3 and <= 6)).ToList(); if (cand.Count == 0) cand = open.Where(s => s.ID != cur).ToList(); if (cand.Count == 0) return "nessun settore adatto";
-                    c.sector = cand[rng.Next(cand.Count)].ID; c.title = $"Segnale sconosciuto dal settore {c.sector}";
+                    c.sector = cand[rng.Next(cand.Count)].ID; c.title = $"Segnale sconosciuto dal settore {Places.Of(c.sector)}";
                     break;
                 }
                 default: c.title = "Blocco delle rotte commerciali"; break;
@@ -122,9 +135,9 @@ namespace Melchior
             {
                 "epidemia" => new[]
                 {
-                    $"Primi casi di infezione nel settore {c.sector}: le colonie chiedono medici e scorte. Il Comando raccomanda di bonificare il focolaio.",
-                    $"L'infezione si allarga dal settore {c.sector}. Gli Infetti avanzano sul fronte e le colonie vicine chiedono di essere evacuate.",
-                    $"Ultimo appello: se il focolaio del settore {c.sector} non viene contenuto, l'infezione diventerà endemica.",
+                    $"Primi casi di infezione nel settore {Places.Of(c.sector)}: le colonie chiedono medici e scorte. Il Comando raccomanda di bonificare il focolaio.",
+                    $"L'infezione si allarga dal settore {Places.Of(c.sector)}. Gli Infetti avanzano sul fronte e le colonie vicine chiedono di essere evacuate.",
+                    $"Ultimo appello: se il focolaio del settore {Places.Of(c.sector)} non viene contenuto, l'infezione diventerà endemica.",
                 },
                 "guerra" => new[]
                 {
@@ -134,9 +147,9 @@ namespace Melchior
                 },
                 "anomalia" => new[]
                 {
-                    $"Dal settore {c.sector} arriva un segnale che nessuno sa decifrare. Le fazioni preparano spedizioni: chi arriva prima se lo prende.",
-                    $"Le prime spedizioni sono in viaggio verso il settore {c.sector}. Il segnale si fa più forte.",
-                    $"Una flotta di fazione è a un salto dal settore {c.sector}. È l'ultima occasione per arrivare prima.",
+                    $"Dal settore {Places.Of(c.sector)} arriva un segnale che nessuno sa decifrare. Le fazioni preparano spedizioni: chi arriva prima se lo prende.",
+                    $"Le prime spedizioni sono in viaggio verso il settore {Places.Of(c.sector)}. Il segnale si fa più forte.",
+                    $"Una flotta di fazione è a un salto dal settore {Places.Of(c.sector)}. È l'ultima occasione per arrivare prima.",
                 },
                 _ => new[]
                 {
@@ -248,21 +261,22 @@ namespace Melchior
             switch (c.kind)
             {
                 case "epidemia":
-                    if (won) { GalaxyWar.Shift(4, -40); foreach (var f in GalaxyWar.Factions) if (f != 4) Factions.Change(f, 6, null); text = $"L'epidemia del settore {c.sector} è contenuta. Le colonie ringraziano l'equipaggio della «{Ship()}»."; }
-                    else { int n = GalaxyWar.Spread(4, c.sector, 3); text = $"L'epidemia non è stata fermata: gli Infetti si prendono {n} settori intorno al focolaio."; }
+                    if (won) { GalaxyWar.Shift(4, -40); Threat.Add(-15f, "l'epidemia è contenuta"); foreach (var f in GalaxyWar.Factions) if (f != 4) Factions.Change(f, 6, null); text = $"L'epidemia del settore {Places.Of(c.sector)} è contenuta. Le colonie ringraziano l'equipaggio della «{Ship()}»."; }
+                    else { Threat.Add(6f); int n = GalaxyWar.Spread(4, c.sector, 3); text = $"L'epidemia non è stata fermata: gli Infetti si prendono {n} settori intorno al focolaio."; }
                     break;
                 case "guerra":
                 {
                     int winner = c.pa == c.pb ? (GalaxyWar.Mom(c.a) >= GalaxyWar.Mom(c.b) ? c.a : c.b) : c.pa > c.pb ? c.a : c.b, loser = winner == c.a ? c.b : c.a;
                     int n = GalaxyWar.Spread(winner, -1, 3, loser);
+                    Diplomacy.Change(c.a, c.b, -15 - Diplomacy.Rel(c.a, c.b), "La guerra è finita, la pace è ancora lontana");
                     bool helped = Math.Max(c.pa, c.pb) > 0; won = helped;
                     if (helped) { int side = c.pa >= c.pb ? c.a : c.b, other = side == c.a ? c.b : c.a; Factions.Change(side, 15, $"Avete combattuto per la {GalaxyWar.Name(side)}"); Factions.Change(other, -15, $"Avete combattuto contro la {GalaxyWar.Name(other)}"); }
                     text = $"La guerra finisce: vince la {GalaxyWar.Name(winner)}, che strappa {n} settori alla {GalaxyWar.Name(loser)}." + (helped ? $" Il contributo della «{Ship()}» non è passato inosservato." : "");
                     break;
                 }
                 case "anomalia":
-                    if (won) text = $"Il segreto del settore {c.sector} è nelle mani della «{Ship()}». Nei porti non si parla d'altro.";
-                    else { int f = GalaxyWar.Factions.Where(x => x != 4).ElementAt(rng.Next(4)); GalaxyWar.Shift(f, 15); text = $"La {GalaxyWar.Name(f)} arriva per prima al settore {c.sector} e si prende la sorgente del segnale. Le sue flotte ne escono rafforzate."; }
+                    if (won) text = $"Il segreto del settore {Places.Of(c.sector)} è nelle mani della «{Ship()}». Nei porti non si parla d'altro.";
+                    else { int f = GalaxyWar.Factions.Where(x => x != 4).ElementAt(rng.Next(4)); GalaxyWar.Shift(f, 15); text = $"La {GalaxyWar.Name(f)} arriva per prima al settore {Places.Of(c.sector)} e si prende la sorgente del segnale. Le sue flotte ne escono rafforzate."; }
                     break;
                 default:
                     if (won) { Saga.State.trust["Gilda dei Mercanti"] = Contracts.Trust("Gilda dei Mercanti") + 3; text = "Il blocco è spezzato: i convogli tornano a viaggiare. La Gilda dei Mercanti non dimentica chi l'ha aiutata."; }
@@ -270,7 +284,7 @@ namespace Melchior
                     break;
             }
             if (won && c.kind != "anomalia") { var got = Loot.Grant(ship, 4, 6, "crisi"); if (got != null) Director.Notify("RICOMPENSA", "Per il vostro ruolo nella crisi: " + got.Name + "."); }
-            if (won) Saga.State.onore += 2;
+            if (won) { Trophies.Add($"Encomio: {c.title}", "crisi risolta"); Saga.State.crisesWon++; Calling.Add("guardiani", 2); Saga.State.onore += 2; Morale.Change(8, "Abbiamo fatto la differenza"); Competitors.Renown(30); }
             News.Post(c.kind == "guerra" ? "fronte" : "flotta", text);
             Director.Notify(won ? "CRISI RISOLTA" : "CRISI CONCLUSA", text);
             Saga.Chronicle($"{c.title}: {(won ? "risolta" : "conclusa senza di noi")}.");
@@ -280,7 +294,7 @@ namespace Melchior
             while (Saga.State.crises.Count(x => x.Contains('|')) > 12) Saga.State.crises.Remove(Saga.State.crises.First(x => x.Contains('|')));
             Saga.State.board.RemoveAll(o => o.crisis == c.kind);
             Saga.State.crisis = null; guards.Clear();
-            NextAt = Jumps() + rng.Next(8, 14);
+            NextAt = Jumps() + (int)(rng.Next(8, 14) * Rules.CrisisGap);
             Saga.MarkDirty();
         }
         static string Ship() { try { return (string)Stations.MyShip.ShipName; } catch { return "nostra nave"; } }
@@ -296,9 +310,9 @@ namespace Melchior
         public static string Progress(CrisisState c) => c.kind == "guerra" ? $"{GalaxyWar.Name(c.a)} {Math.Min(100, c.pa)}% · {GalaxyWar.Name(c.b)} {Math.Min(100, c.pb)}%" : $"{Math.Min(100, c.progress)}%";
         public static string Hint(CrisisState c) => c.kind switch
         {
-            "epidemia" => $"Bonificare il focolaio nel settore {c.sector}, distruggere navi infette, contratti di soccorso.",
+            "epidemia" => $"Bonificare il focolaio nel settore {Places.Of(c.sector)}, distruggere navi infette, contratti di soccorso.",
             "guerra" => "Schierarsi: contratti per una delle due fazioni, navi dell'altra abbattute.",
-            "anomalia" => $"Raggiungere il settore {c.sector} prima delle fazioni e tenere il campo.",
+            "anomalia" => $"Raggiungere il settore {Places.Of(c.sector)} prima delle fazioni e tenere il campo.",
             _ => "Contratti della Gilda, flotte di predoni disperse.",
         };
 
@@ -306,7 +320,7 @@ namespace Melchior
         {
             var c = Cur; int na = NextAt;
             if (c == null) return $"nessuna crisi; la prossima al salto {na} (ora {Jumps()})";
-            return $"{c.kind}: {c.title}; fase {c.stage + 1}/3, prossima al salto {c.next} (ora {Jumps()}); avanzamento {Progress(c)}; settore {c.sector}; guardiani {guards.Count}";
+            return $"{c.kind}: {c.title}; fase {c.stage + 1}/3, prossima al salto {c.next} (ora {Jumps()}); avanzamento {Progress(c)}; settore {Places.Of(c.sector)}; guardiani {guards.Count}";
         }
         public static string ForceStage() { var c = Cur; if (c == null) return "nessuna crisi"; c.next = Jumps(); nextTick = 0; return "la fase avanzerà subito"; }
         public static string ForceEnd(bool won) { if (Cur == null) return "nessuna crisi"; if (won) Contribute(200, "console", Cur.kind == "guerra" ? Cur.a : -1); else Resolve(false); return "crisi chiusa"; }

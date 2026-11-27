@@ -21,6 +21,11 @@ namespace Melchior
             ["initiative"] = "Recupero dell'iniziativa di comando", ["incoming"] = "Danni allo scafo ridotti",
             ["subsystem"] = "Danno ai sistemi nemici", ["weakpoint"] = "Danno sul punto debole",
             ["sys_resist"] = "Resistenza dei sistemi di bordo", ["engage_gain"] = "Assestamento nella fascia d'ingaggio",
+            ["commercio"] = "Prezzi di vendita delle merci", ["stiva"] = "Posti in stiva", ["ricerca"] = "Dati di ricerca raccolti",
+            ["arrembaggio"] = "Bottino e sabotaggi negli abbordaggi", ["sentinella"] = "Danni degli incursori a bordo ridotti",
+            ["viveri"] = "Viveri consumati ridotti", ["dogane"] = "Probabilità di ispezioni doganali ridotta", ["furtivita"] = "Imboscate ridotte",
+            ["fama"] = "Fama guadagnata", ["morale"] = "Morale guadagnato", ["recupero"] = "Componenti recuperati dai relitti", ["sonde"] = "Costo delle sonde ridotto",
+            ["pirati"] = "Imboscate attirate", ["rumore"] = "Ispezioni doganali attirate",
         };
         public static readonly Dictionary<string, string> CondLabels = new()
         {
@@ -30,12 +35,12 @@ namespace Melchior
         };
 
         static AffixDef S(string name, string label, string stat, float min, float max, params int[] slots) => new() { Name = name, Label = label, Stat = stat, Min = min, Max = max, Slots = slots };
-        static AffixDef K(string name, string key, float min, float max, params int[] slots) => new() { Name = name, Label = KeyLabels[key], Key = key, Min = min, Max = max, Slots = slots, Mode = key == "overload_margin" ? "add" : "mul" };
+        static AffixDef K(string name, string key, float min, float max, params int[] slots) => new() { Name = name, Label = KeyLabels[key], Key = key, Min = min, Max = max, Slots = slots, Mode = key is "overload_margin" or "stiva" ? "add" : "mul" };
         static AffixDef C(string name, string label, string stat, string cond, float min, float max, params int[] slots) => new() { Name = name, Label = label, Stat = stat, Cond = cond, Min = min, Max = max, Slots = slots };
         static AffixDef D(string name, string label, string stat, float min, float max) => new() { Name = name, Label = label, Stat = stat, Min = min, Max = max, Drawback = true };
         static AffixDef DK(string name, string key, float min, float max) => new() { Name = name, Label = KeyLabels[key], Key = key, Min = min, Max = max, Drawback = true };
         static AffixDef E(string stat, float v, string cond = "") => new() { Name = "", Label = Loot.StatLabel(stat), Stat = stat, Min = v, Max = v, Cond = cond };
-        static AffixDef EK(string key, float v) => new() { Name = "", Label = KeyLabels[key], Key = key, Min = v, Max = v, Mode = key == "overload_margin" ? "add" : "mul" };
+        static AffixDef EK(string key, float v) => new() { Name = "", Label = KeyLabels[key], Key = key, Min = v, Max = v, Mode = key is "overload_margin" or "stiva" ? "add" : "mul" };
 
         public static string StatLabel(string stat) => stat switch
         {
@@ -133,10 +138,48 @@ namespace Melchior
             D("codice instabile", "Difesa informatica", "CyberDefenseRating", -0.20f, -0.10f),
             DK("nucleo sotto sforzo", "core_load", -0.20f, -0.10f),
             DK("circuiti fragili", "sys_resist", -0.20f, -0.10f),
+            // legati ai sistemi della galassia viva (bonus di stazione, validi per tutta la nave)
+            K("da mercante", "commercio", 0.03f, 0.08f, 7, 5), K("a stiva modulare", "stiva", 2f, 6f, 6, 16), K("a calcolo scientifico", "ricerca", 0.10f, 0.30f, 7, 5, 32),
+            K("da arrembaggio", "arrembaggio", 0.15f, 0.40f, 6, 10), K("a paratie stagne", "sentinella", 0.15f, 0.35f, 6, 8), K("a riciclo biologico", "viveri", 0.08f, 0.20f, 8),
+            K("a doppiofondo", "dogane", 0.15f, 0.35f, 6, 33), K("a profilo basso", "furtivita", 0.06f, 0.15f, 33, 5, 9), K("da parata", "fama", 0.10f, 0.25f, 6, 11),
+            K("confortevole", "morale", 0.10f, 0.25f, 8, 7), K("da recupero", "recupero", 0.10f, 0.25f, 5, 32), K("a lancio economico", "sonde", 0.15f, 0.35f, 5, 32),
+            DK("faro per i pirati", "pirati", 0.08f, 0.18f), DK("rumoroso alle dogane", "rumore", 0.10f, 0.25f),
+        };
+        // ---- case produttrici: ognuna ha uno stile (affissi preferiti) e un prestigio (prezzo)
+        public sealed class Maker { public string Name = "", Code = "", Motto = ""; public float Prestige = 1f; public string[] Bias = Array.Empty<string>(); }
+        public static readonly Maker[] Makers =
+        {
+            new() { Name = "Kessler Dynamics", Code = "KD", Motto = "potenza grezza, senza fronzoli", Prestige = 1.05f, Bias = new[] { "ReactorOutputMax", "ThrustOutputMax", "TurretDamageFactor" } },
+            new() { Name = "Cantieri Okafor", Code = "OK", Motto = "scafi che non si arrendono", Prestige = 1.0f, Bias = new[] { "HullMax", "HullArmor", "sentinella", "sys_resist" } },
+            new() { Name = "Vega Precision", Code = "VP", Motto = "la precisione è un'arte", Prestige = 1.2f, Bias = new[] { "weakpoint", "subsystem", "scan_speed", "TurretChargeFactor" } },
+            new() { Name = "Officine Lindqvist", Code = "LQ", Motto = "costruito per durare", Prestige = 0.95f, Bias = new[] { "repair_speed", "core_cooling", "ReactorCoolantCapacity" } },
+            new() { Name = "Moreau & Figli", Code = "MF", Motto = "eleganza fra le stelle", Prestige = 1.3f, Bias = new[] { "morale", "fama", "DiplomacyBonus", "commercio" } },
+            new() { Name = "Sato Kinetics", Code = "SK", Motto = "più veloce di chi ti insegue", Prestige = 1.1f, Bias = new[] { "ManeuverThrustOutputMax", "WarpChargeRate", "evade_cooldown", "furtivita" } },
+            new() { Name = "Ilves Scientific", Code = "IS", Motto = "conoscere è sopravvivere", Prestige = 1.15f, Bias = new[] { "ricerca", "sonde", "EMDetection", "scan_speed" } },
+            new() { Name = "Barros Salvage", Code = "BS", Motto = "niente si butta", Prestige = 0.85f, Bias = new[] { "recupero", "stiva", "SalvageStabilityPercent" } },
+            new() { Name = "Mercanti di Navarro", Code = "MN", Motto = "ogni cassa è un affare", Prestige = 1.0f, Bias = new[] { "commercio", "stiva", "dogane" } },
+            new() { Name = "Arsenale della Frontiera", Code = "AF", Motto = "per chi non torna indietro", Prestige = 1.1f, Bias = new[] { "arrembaggio", "TurretDamageFactor", "burst_damage" } },
+            new() { Name = "Fluffy Biscuit Co.", Code = "FB", Motto = "gusto e sicurezza", Prestige = 0.8f, Bias = new[] { "viveri", "morale", "OxygenRefillRate" } },
+            new() { Name = "Polytechnic Labs", Code = "PL", Motto = "il futuro è già qui", Prestige = 1.25f, Bias = new[] { "ShieldsMax", "ShieldsRecoveryRate", "CyberDefenseRating" } },
+        };
+        public static readonly string[] Nicks =
+        {
+            "Fenice", "Aquila", "Vespa", "Orione", "Tempesta", "Cometa", "Falco", "Sirio", "Zefiro", "Nembo", "Lince", "Vega", "Altair", "Pegaso", "Drago",
+            "Maestrale", "Scirocco", "Aurora", "Nova", "Quasar", "Pulsar", "Ermes", "Atlante", "Titano", "Medusa", "Chimera", "Grifone", "Corsaro", "Sentinella", "Ombra",
+            "Saetta", "Folgore", "Ardito", "Vigile", "Tenace", "Audace", "Lampo", "Bora", "Libeccio", "Astore", "Nibbio", "Gheppio", "Sparviero", "Rondine", "Gabbiano",
         };
 
         public static LegendaryDef[] DefaultLegendaries() => new LegendaryDef[]
         {
+            // leggendari della galassia viva
+            new() { Name = "Bilancia di Navarro", Slots = new[] { 7 }, Lore = "Il computer di bordo del più grande mercante della Frontiera. Conta ancora in tre valute morte.", Effects = new[] { EK("commercio", 0.15f), EK("stiva", 6f), EK("dogane", 0.3f) } },
+            new() { Name = "Cuore di Barros", Slots = new[] { 5 }, Lore = "Sensori di un recuperatore leggendario: vedono il metallo buono anche dentro un relitto in fiamme.", Effects = new[] { EK("recupero", 0.4f), EK("sonde", 0.4f) } },
+            new() { Name = "Mantello del Fantasma", Slots = new[] { 33 }, Lore = "Nessuna dogana l'ha mai trovato. Nessun pirata l'ha mai visto arrivare.", Effects = new[] { EK("furtivita", 0.25f), EK("dogane", 0.45f), E("EMSignature", -0.25f) } },
+            new() { Name = "Uncino di Morgan", Slots = new[] { 10, 11 }, Lore = "Il cannone dell'arrembaggio più famoso della storia. Le sue tacche non si contano più.", Effects = new[] { EK("arrembaggio", 0.6f), E("TurretDamageFactor", 0.12f, "corta") } },
+            new() { Name = "Serra di Ceres", Slots = new[] { 8 }, Lore = "Un giardino idroponico che ha sfamato una colonia intera durante l'assedio di Ceres.", Effects = new[] { EK("viveri", 0.35f), EK("morale", 0.2f), E("OxygenRefillRate", 0.3f) } },
+            new() { Name = "Occhio di Ilves", Slots = new[] { 32, 5 }, Lore = "Ha visto nascere tre stelle e morire una. L'Accademia lo rivorrebbe indietro.", Effects = new[] { EK("ricerca", 0.5f), EK("scan_speed", 0.2f) } },
+            new() { Name = "Corona dei Moreau", Slots = new[] { 6 }, Lore = "Lo scafo di un'ammiraglia da parata. Nei porti, al suo arrivo, suonano ancora le campane.", Effects = new[] { EK("fama", 0.4f), EK("morale", 0.15f), E("HullMax", 0.1f) } },
+            new() { Name = "Paratia di Okafor", Slots = new[] { 16 }, Lore = "Nessun incursore è mai passato oltre questa paratia. Qualcuno ci ha provato con un cannone.", Effects = new[] { EK("sentinella", 0.5f), E("HullArmor", 0.12f) } },
             new() { Name = "Cuore di Vega", Set = "Fucina di Vulcano", Slots = new[] { 3 }, Lore = "Il reattore della prima nave a superare il Margine. Non si è mai spento.", Effects = new[] { E("ReactorOutputMax", 0.25f), EK("core_cooling", 0.35f) } },
             new() { Name = "Fornace di Prometeo", Slots = new[] { 3 }, Lore = "Ruba fuoco a una stella e lo restituisce in battaglia. Scotta.", Effects = new[] { E("ReactorOutputMax", 0.35f), E("TurretDamageFactor", 0.12f, "crisi"), new AffixDef { Label = "Temperatura massima del reattore", Stat = "ReactorTempMax", Min = -0.10f, Max = -0.10f, Drawback = true } } },
             new() { Name = "Stella Nana", Set = "Corredo dell'Ammiraglia", Slots = new[] { 3 }, Lore = "Compatta, densa, instancabile: il cuore delle ammiraglie della Flotta.", Effects = new[] { E("ReactorOutputMax", 0.18f), EK("core_load", 0.30f), E("StartupSpeed", 0.5f) } },
@@ -190,6 +233,7 @@ namespace Melchior
             var sb = new StringBuilder();
             sb.Append(Rarity.Colored(tag.Tier, Rarity.Tier(tag.Tier).Name));
             if (tag.Bonus > 0) sb.Append($" (+{tag.Bonus} liv.)");
+            if (tag.Maker >= 0 && tag.Maker < Makers.Length) { var m = Makers[tag.Maker]; sb.Append($"\n{m.Name}, «{tag.Nick}» serie {m.Code}-{tag.Serial:0000} · qualità {tag.Quality:0}% · <i>{m.Motto}</i>"); }
             if (tag.Legend >= 0)
             {
                 var l = Rarity.Cfg.Legendaries[tag.Legend];
@@ -214,6 +258,7 @@ namespace Melchior
         static readonly Dictionary<int, float> warpEnd = new();
         public static float Bonus(int ship, string key) => bonus.TryGetValue(ship, out var d) && d.TryGetValue(key, out var v) ? v : 0f;
         public static float Bonus(PLShipInfoBase ship, string key) => ship == null ? 0f : Bonus(ship.ShipID, key);
+        public static float Mine(string key) { try { return Bonus(Stations.MyShip, key); } catch { return 0f; } }
 
         static bool CondOk(string cond, PLShipStats s, PLShipInfoBase ship)
         {

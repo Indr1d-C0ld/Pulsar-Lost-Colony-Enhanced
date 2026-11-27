@@ -26,6 +26,10 @@ namespace Melchior
         public List<NewsItem> news = new();
         public WarState war = new(); public List<FleetInfo> fleets = new();
         public List<Figure> figures = new(); public Dictionary<string, int> standing = new(); public CrisisState crisis; public List<string> crises = new();
+        public List<int> explored = new(); public List<Discovery> discoveries = new(); public int discovered, fragments, legendsFound; public LegendSite legend;
+        public Dictionary<string, int> relations = new(); public List<Officer> officers = new(); public List<Competitor> competitors = new(); public int renown, legendSince;
+        public int stardateBase, nemesisKills, crisesWon, contractsDone, embassies; public double playedSeconds; public List<LogEntry> captainLog = new(); public List<Goal> goals = new(); public ThreatState threat; public Dictionary<string, int> calling = new(); public SeasonState season; public List<string> stories = new(); public List<Trophy> trophies = new(); public CampaignState campaign; public Dictionary<string, int> upgrades = new(); public string captive = ""; public List<int> relics = new(); public List<string> phenomena = new(); public Dictionary<string, SpeciesState> species = new(); public HomeState home; public List<Lair> lairs = new(); public ChallengeState challenge; public WantedState wanted; public WonderState wonder; public MoleState mole; public string rules = ""; public List<Deed> deeds = new(); public List<Base> bases = new(); public List<Acquaintance> friends = new(); public EscortState escort; public MarketState market; public LogisticsState logistics; public ResearchState research; public List<NpcCaptain> captains = new(); public Dictionary<string, PortState> ports = new(); public CaptainHunt hunt; public List<Loan> loans = new(); public List<PortOrder> orders = new(); public Dictionary<string, Leader> leaders = new(); public LeaderTask leaderTask; public BankLoan bank; public int basesFounded; public MysteryState mystery; public PaxState pax; public CrewOrders crewOrders; public WearState wear; public FabState fab; public List<int> remnants = new(); public List<int> honors = new(), campaignsFailed = new();
+        public int morale = 60, sinceRest, atlasSold; // spirito dell'equipaggio (Morale.cs)
         public int jumps;     // salti compiuti in questa galassia (contati dal mod)
         public long lastPlayed; // ultima volta che la galassia è stata giocata (ms UTC)
     }
@@ -47,7 +51,7 @@ namespace Melchior
 
         static SagaState st = new(); static int seed = int.MinValue; static bool loaded, dirty, busy; static long nextSave, nextKeepAlive;
         static readonly System.Random rng = new();
-        static readonly HttpClient http = new() { Timeout = TimeSpan.FromSeconds(5) };
+        static readonly HttpClient http = new() { Timeout = TimeSpan.FromSeconds(15) }; // all'avvio della partita il gioco è lento: 5 secondi non sempre bastano
         static readonly JsonSerializerOptions json = new() { IncludeFields = true, PropertyNameCaseInsensitive = true };
         static readonly System.Diagnostics.Stopwatch clock = System.Diagnostics.Stopwatch.StartNew();
         public static SagaState State => st;
@@ -161,7 +165,7 @@ namespace Melchior
                     var txt = await http.GetStringAsync($"{Service.Base}/api/saga?seed={s}");
                     var got = JsonSerializer.Deserialize<SagaState>(txt, json);
                     if (got != null && s == seed && got.lastPlayed > 0) OfflineHours = (DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - got.lastPlayed) / 3600000.0;
-                    if (got != null && s == seed) { got.pending ??= new(); got.log ??= new(); got.recentArcs ??= new(); got.board ??= new(); got.trust ??= new(); got.news ??= new(); got.war ??= new(); got.war.momentum ??= new(); got.war.counts ??= new(); got.fleets ??= new(); got.figures ??= new(); foreach (var f in got.figures) f.traits ??= new(); got.standing ??= new(); got.crises ??= new(); st = got; }
+                    if (got != null && s == seed) { got.pending ??= new(); got.log ??= new(); got.recentArcs ??= new(); got.board ??= new(); got.trust ??= new(); got.news ??= new(); got.war ??= new(); got.war.momentum ??= new(); got.war.counts ??= new(); got.fleets ??= new(); got.figures ??= new(); foreach (var f in got.figures) f.traits ??= new(); got.standing ??= new(); got.crises ??= new(); got.explored ??= new(); got.relations ??= new(); got.officers ??= new(); got.competitors ??= new(); got.captainLog ??= new(); got.goals ??= new(); got.calling ??= new(); got.stories ??= new(); got.trophies ??= new(); got.honors ??= new(); got.upgrades ??= new(); got.relics ??= new(); got.phenomena ??= new(); got.species ??= new(); got.lairs ??= new(); got.remnants ??= new(); got.deeds ??= new(); got.bases ??= new(); got.friends ??= new(); got.captains ??= new(); got.ports ??= new(); got.loans ??= new(); got.orders ??= new(); got.leaders ??= new(); got.campaignsFailed ??= new(); got.discoveries ??= new(); st = got; }
                     Plugin.L.LogInfo($"[cronaca] galassia {s}: onore {st.onore}, infamia {st.infamia}, arco {(st.arc == null ? "nessuno" : st.arc.arc + " parte " + (st.arc.node + 1))}, conseguenze in attesa {st.pending.Count}");
                 }
                 catch (Exception e) { Plugin.L.LogWarning("Cronaca non letta dal server (resta in memoria): " + e.Message); }
@@ -187,7 +191,7 @@ namespace Melchior
             dirty = true;
         }
 
-        static void Later(string kind, int minJumps, int maxJumps, string name = "", string text = "", int a = 0, int b = 0)
+        public static void Later(string kind, int minJumps, int maxJumps, string name = "", string text = "", int a = 0, int b = 0)
         {
             st.pending.Add(new SagaPending { kind = kind, due = Jumps() + rng.Next(minJumps, maxJumps + 1), name = name, text = text, a = a, b = b });
             dirty = true;
@@ -210,6 +214,7 @@ namespace Melchior
             }
             st.onore = Math.Max(0, st.onore + dOn); st.infamia = Math.Max(0, st.infamia + dInf);
             // conseguenze ritardate
+            if (success && (fam == "soccorso" || fam == "scorta" || fam == "evacuazione")) Calling.Add("guardiani");
             if (success && (fam == "soccorso" || fam == "scorta" || fam == "evacuazione") && rng.NextDouble() < 0.6)
                 Later("gratitudine", 2, 4, mainName, "", 1500 + tier * 1500);
             if (success && fam == "caccia" && rng.NextDouble() < 0.4) Later("vendetta", 2, 5, mainName, "", tier);
@@ -238,7 +243,7 @@ namespace Melchior
                 return;
             }
             bool won = success && (def.Id != "silenzio" || c.node == 2);
-            if (won) { st.archiCompiuti++; st.onore += 2; var got = Loot.Grant(Stations.MyShip, 4, 6, "arco"); if (got != null) Director.Notify("RICOMPENSA", $"Per la conclusione della storia: {got.Name}."); } else st.archiPerduti++;
+            if (won) { Trophies.Add(title, "arco narrativo"); st.archiCompiuti++; st.onore += 2; var got = Loot.Grant(Stations.MyShip, 4, 6, "arco"); if (got != null) Director.Notify("RICOMPENSA", $"Per la conclusione della storia: {got.Name}."); } else st.archiPerduti++;
             Chronicle($"{title}: {(won ? "conclusa con successo" : "conclusa male")}.");
             Director.Notify("CRONACA", won ? $"{title} si chiude. Se ne parlerà nei porti per molto tempo." : $"{title} si chiude, non come speravamo.");
             Service.Add(won ? "cronaca.archi.compiuti" : "cronaca.archi.perduti", 1);
@@ -273,7 +278,7 @@ namespace Melchior
             if (!loaded || Missions.BusyHere()) return false;
             int j = Jumps(); var p = st.pending.Where(x => force || x.due <= j).OrderBy(x => x.due).FirstOrDefault(); if (p == null) return false;
             bool ok = Run(ship, power, p);
-            if (ok || p.kind != "arco") { st.pending.Remove(p); dirty = true; }
+            if (ok || (p.kind != "arco" && p.kind != "incontro")) { st.pending.Remove(p); dirty = true; }
             return ok;
         }
 
@@ -306,6 +311,19 @@ namespace Melchior
                 case "scoperta":
                     Director.Notify("RAPPORTO DI PLANCIA", "La Scienza ha decifrato la scatola nera recuperata: contiene la rotta verso qualcosa di più grande.");
                     return StartArc(power);
+                case "incontro": return Encounters.Start(p.name, false, null, "", p.text, p.a); // seguito di una scelta fatta qualche salto prima
+                case "sabotaggio":
+                {
+                    var me = Stations.MyShip; if (me == null) return false;
+                    string sys = Stations.SysIds[rng.Next(Stations.SysIds.Length)], k = "dmx_" + sys;
+                    Stations.Set(me.ShipID, k, Math.Min(90f, Stations.Get(me.ShipID, k) + 45));
+                    Director.Notify("ALLARME DI BORDO", $"Sabotaggio! Qualcuno tra {p.name} ha manomesso i sistemi ({sys}). Squadre di riparazione al lavoro.");
+                    Chronicle($"Sabotaggio a bordo: {p.name}."); return true;
+                }
+                case "informatore":
+                    if (!Contracts.PostBounty(power)) return false;
+                    Director.Notify("COMUNICAZIONE IN ARRIVO", $"{p.name}: «Vi devo un favore. Ho una pista per voi: guardate la bacheca.»");
+                    Chronicle($"Una pista da {p.name}."); return true;
                 case "paradosso":
                     try { PLServer.Instance.CurrentCrewCredits += 1000; } catch { }
                     Director.Notify("ANOMALIA", "Nella stiva compare una cassa che nessuno ha caricato, firmata dal capitano. Con la data di domani. Dentro: 1000 crediti.");
@@ -317,8 +335,13 @@ namespace Melchior
         // Influenza della fama sugli eventi del direttore.
         public static float Weight(string ev) => ev switch
         {
-            "taglia" or "rivali" or "nemesi" => 1f + st.infamia / 5f,
-            "intercettazione" => Factions.InterceptWeight(),
+            "taglia" or "rivali" => 1f + st.infamia / 5f,
+            "nemesi" => (1f + st.infamia / 5f) * (Calling.Is("caccia") ? 2f : 1f),
+            "imboscata" => Math.Max(0.2f, 1f - Loot.Mine("furtivita") + Loot.Mine("pirati")) * (Research.Has("firma") ? 0.8f : 1f) * (1f - 0.08f * Talents.Ours("stratega")) * (1f + Math.Min(1f, Market.Value / 15000f) * Shipyard.Less("stiva", 0.3f)) * Bases.Protection() * (Mole.Active ? 1.3f : 1f) * (Wonders.Kind == "spaziomorto" ? 1.5f : 1f) * (Contracts.Carrying() ? 1f + 0.6f * Shipyard.Less("stiva", 0.3f) : 1f) * (Species.Accord("coro") ? 0.7f : 1f),
+            "sciame" => Species.Accord("coro") ? 0.7f : 1f, // il carico attira i predoni (meno con la stiva schermata)
+            "tempesta" or "interferenza" or "sovraccarico" or "microfratture" => Calling.Is("tempeste") ? 3f : 1f,
+            "intercettazione" => Factions.InterceptWeight() * Bases.Protection(),
+            "cacciatori" => Wanted.Weight() * Bases.Protection() * (Research.Has("firma") ? 0.75f : 1f),
             "missione" => 1f + st.onore / 12f,
             _ => 1f,
         };

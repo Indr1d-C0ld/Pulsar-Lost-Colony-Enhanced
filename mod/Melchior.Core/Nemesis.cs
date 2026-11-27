@@ -49,6 +49,19 @@ namespace Melchior
         static Figure engaged; static int flagship = -1, engagedSector = -1; static readonly List<int> escorts = new(); static bool hunting;
         static float nextLife = 120f; static int lastJumps = -1;
         public static Figure Engaged => engaged;
+        public static int FlagshipId => flagship;
+
+        // Resa intimata dal capitano (Hail.cs): il personaggio finisce prigioniero, l'incontro si chiude senza esito di battaglia.
+        public static void Capture(Figure f)
+        {
+            bool hunt = hunting; End();
+            f.alive = false; f.memory = "catturato"; f.memSector = CurSector(); Saga.State.nemesisKills++; Calling.Add("caccia");
+            Competitors.Renown(20 + f.rank * 8); Service.Add("nemesi.catturate", 1);
+            if (hunt) Contracts.OnHunt(true, f);
+            Saga.Chronicle($"{f.Full} si arrende ed è nostro prigioniero.");
+        }
+        // Liberato dal capitano: torna in circolazione con una memoria nuova.
+        public static void Release(Figure f, string memory, int grudge) { f.alive = true; f.memory = memory; f.grudge = grudge; f.sector = RandomSector(CurSector(), 2, 6); Saga.MarkDirty(); }
 
         public static Figure Find(string full) => All.FirstOrDefault(f => f.Full == full);
 
@@ -105,14 +118,15 @@ namespace Melchior
         // ---- frasi di saluto, dalla memoria dell'ultimo incontro
         static string Hail(Figure f, bool hunt)
         {
-            string at = f.memSector >= 0 ? $" nel settore {f.memSector}" : "";
+            string at = f.memSector >= 0 ? $" nel settore {Places.Of(f.memSector)}" : "";
             var opts = f.memory switch
             {
                 "erede" => new[] { $"Avete ucciso {f.heir}. Io c'ero, quel giorno. Adesso tocca a voi.", $"{f.heir} mi ha insegnato tutto. Anche a non dimenticare." },
                 "sfregiato" => new[] { $"Mi avete lasciato un ricordo{at}. Sono venuto a restituirvelo.", "Mi chiamano così per colpa vostra. Guardatemi bene, è l'ultima faccia che vedrete." },
                 "vinto" => new[] { $"Scappate anche stavolta? Come{at}?", "La «" + OurShip() + "». Che piacere: l'ultima volta siete spariti in curvatura così in fretta." },
+                "debito" => new[] { "Vi devo la vita, e la cosa non mi piace. Oggi saldiamo il conto, in un modo o nell'altro.", "Mi avete tirato fuori dai rottami. Non aspettatevi che vi ringrazi con i fiori." },
                 "fuggito" => new[] { "L'ultima volta mi è andata male. Ho avuto tempo di prepararmi.", "Ho cambiato nave, capitano. E anche umore." },
-                _ => new[] { $"Il mio nome è {f.first} {f.last}, ma nei porti mi chiamano «{f.nick}». Ricordatevelo.", "Bella nave. Sarà ancora più bella nel mio hangar.", "Niente di personale, capitano. Non ancora." },
+                _ => new[] { $"Il mio nome è {f.first} {f.last}, ma nei porti mi chiamano «{f.nick}». Ricordatevelo.", Morale.Title() != "Sconosciuti" ? $"La «{OurShip()}». Nei porti vi chiamano «{Morale.Title()}». Vediamo se è vero." : "Un equipaggio senza nome. Nessuno vi rimpiangerà.", "Bella nave. Sarà ancora più bella nel mio hangar.", "Niente di personale, capitano. Non ancora." },
             };
             string line = opts[rng.Next(opts.Length)];
             if (hunt && rng.NextDouble() < 0.6) line = "Ho saputo della taglia sulla mia testa. Venite a riscuoterla. " + line;
@@ -173,15 +187,17 @@ namespace Melchior
         // L'equipaggio è saltato via con il personaggio ancora in piedi.
         static void Won(Figure f)
         {
+            Morale.Change(-4, "Siamo fuggiti davanti a " + f.Full);
             f.fled++; f.memory = "vinto"; f.memSector = engagedSector; f.grudge = Math.Max(0, f.grudge - 1);
             if (f.fled % 2 == 0 && f.rank < 5) f.rank++;
-            News.Post("taglie", $"{f.Full} si vanta nei porti di aver messo in fuga la «{OurShip()}» nel settore {engagedSector}.");
+            News.Post("taglie", $"{f.Full} si vanta nei porti di aver messo in fuga la «{OurShip()}» nel settore {Places.Of(engagedSector)}.");
             Stations.LogEvent(Stations.MyShip?.ShipID ?? 0, $"Ci siamo sganciati da {f.Full}.");
             if (hunting) Contracts.OnHunt(false, f);
         }
 
         static void Defeated(Figure f)
         {
+            Saga.State.nemesisKills++; Calling.Add("caccia");
             double survive = Math.Min(0.75, 0.12 + 0.1 * f.rank + (f.traits.Contains("prudenza") ? 0.3 : 0));
             if (f.scars >= 2) survive = 0; // alla terza volta non c'è capsula che tenga
             var ship = Stations.MyShip; string tail;
@@ -198,14 +214,15 @@ namespace Melchior
             {
                 f.alive = false; f.memory = "abbattuto"; f.memSector = engagedSector;
                 Director.Notify("RAPPORTO DI PLANCIA", $"L'ammiraglia di {f.Full} è distrutta. Nessuna capsula. È finita.");
-                News.Post("taglie", $"La carriera di {f.Full} finisce nel settore {engagedSector}: ad abbatterne l'ammiraglia è stata la «{OurShip()}».", alsoBanner: false);
+                News.Post("taglie", $"La carriera di {f.Full} finisce nel settore {Places.Of(engagedSector)}: ad abbatterne l'ammiraglia è stata la «{OurShip()}».", alsoBanner: false);
                 var got = Loot.Grant(ship, f.rank >= 4 ? 5 : 4, f.rank >= 4 ? 7 : 6, "nemesi"); if (got != null) Director.Notify("RITROVAMENTO", "Nella stiva dell'ammiraglia: " + got.Name + ".");
-                Saga.State.onore += 1; Service.Add("nemesi.abbattute", 1);
+                if (f.rank >= 4) Legacy.Record("nemesi", $"ha abbattuto {f.Full}, un nome che faceva tremare i porti");
+                Saga.State.onore += 1; Service.Add("nemesi.abbattute", 1); Trophies.Add($"Insegne di {f.Full}", "personaggio abbattuto"); Competitors.Renown(20 + f.rank * 8);
                 // chi era al suo fianco non dimentica
                 if (rng.NextDouble() < 0.7) { var h = Create(f.Full, 4 + f.rank); News.Post("taglie", $"{h.Full} raccoglie l'eredità di {f.first} {f.last} e giura vendetta contro la «{OurShip()}»."); }
                 tail = "ammiraglia distrutta, nessuna capsula";
             }
-            Factions.OnFigureDown(f);
+            Factions.OnFigureDown(f); Morale.Change(6, null);
             if (hunting) Contracts.OnHunt(true, f);
             Saga.Chronicle($"Scontro con {f.first} {f.last}: {tail}.");
         }
@@ -259,7 +276,7 @@ namespace Melchior
                                 if (n?.MySPI != null && n.VisualIndication == ESectorVisualIndication.NONE && n.MissionSpecificID == -1 && n.ID != CurSector())
                                 {
                                     f.sector = n.ID;
-                                    if (hunted) { c.sector = n.ID; Contracts.Touch(); Director.Notify("BACHECA", $"Nuovo avvistamento di {f.Full}: ora è nel settore {n.ID}, a {JumpsTo(n.ID)} salti."); Contracts.Plot(n.ID); }
+                                    if (hunted) { c.sector = n.ID; Contracts.Touch(); Director.Notify("BACHECA", $"Nuovo avvistamento di {f.Full}: ora è nel settore {Places.Of(n.ID)}, a {JumpsTo(n.ID)} salti."); Contracts.Plot(n.ID); }
                                 }
                             }
                         }
@@ -279,7 +296,7 @@ namespace Melchior
 
         static string Deed(Figure f)
         {
-            string near = $"nel settore {f.sector}";
+            string near = $"nel settore {Places.Of(f.sector)}";
             var opts = f.role switch
             {
                 "trafficante" => new[] { $"{f.Full} ha venduto armi a entrambe le parti del fronte {near}.", $"Un carico rubato all'Accademia è passato per le mani di {f.Full}, {near}.", $"{f.Full} ha comprato il silenzio di una pattuglia {near}." },
@@ -295,6 +312,15 @@ namespace Melchior
             try { Life((int)Math.Clamp(hours * 2, 1, 12), quiet: true); } catch (Exception e) { Plugin.L.LogWarning("Nemesi (assenza): " + e.Message); }
         }
 
+        // Un nuovo comandante ribelle nato da un ammutinamento (incontri con scelta).
+        public static Figure Recruit(int faction)
+        {
+            if (!Host) return null;
+            var f = Create(); f.role = "ribelle"; f.faction = faction; f.rank = 2; f.memory = "nuovo"; f.sector = RandomSector(CurSector(), 2, 5);
+            News.Post("taglie", $"Ammutinamento nella flotta della {GalaxyWar.Name(faction)}: {f.Full} prende il comando della nave e si dà alla macchia.");
+            Saga.MarkDirty(); return f;
+        }
+
         // I predoni che distruggono un convoglio a volte hanno un capo con un nome.
         public static string Blame()
         {
@@ -307,7 +333,7 @@ namespace Melchior
 
         // ---- console
         public static string Describe() => !All.Any() ? "nessun personaggio" : string.Join("\n      ", All.OrderByDescending(f => f.alive).ThenByDescending(f => f.rank).Select(f =>
-            $"{(f.alive ? "" : "† ")}{f.Full,-30} {RoleLabel(f)}, grado {f.rank}, rancore {f.grudge}, incontri {f.met}, fughe nostre {f.fled}, cicatrici {f.scars}, settore {f.sector} ({JumpsTo(f.sector)} salti), tratti {TraitText(f)}, memoria {f.memory}").Prepend("personaggi:"));
+            $"{(f.alive ? "" : "† ")}{f.Full,-30} {RoleLabel(f)}, grado {f.rank}, rancore {f.grudge}, incontri {f.met}, fughe nostre {f.fled}, cicatrici {f.scars}, settore {Places.Of(f.sector)} ({JumpsTo(f.sector)} salti), tratti {TraitText(f)}, memoria {f.memory}").Prepend("personaggi:"));
         public static string Force(string name)
         {
             var f = name == null ? null : Alive.FirstOrDefault(x => x.Full.Contains(name, StringComparison.OrdinalIgnoreCase));

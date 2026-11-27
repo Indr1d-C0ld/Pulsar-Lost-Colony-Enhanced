@@ -319,6 +319,7 @@ namespace Melchior
         public static void Initiative(int ship, float gain)
         {
             if (!Cfg.Captain.Enabled) return;
+            if (gain > 0) gain *= Morale.InitiativeFactor; // il morale dell'equipaggio accelera (o rallenta) l'iniziativa
             float ini = Get(ship, "cpx_ini"); if (ini <= 0) ini = Cfg.Captain.Start;
             Set(ship, "cpx_ini", Math.Clamp(ini + gain, 0.01f, 100f));
         }
@@ -354,6 +355,8 @@ namespace Melchior
         {
             var dg = Cfg.Damage; if (dmg <= 0) return;
             var victim = vs.Ship; if (victim == null) return;
+            Traffic.NoteHit(victim, atk);
+            dmg *= (1f + 0.04f * Talents.R(atk, "artigliere") + 0.02f * Talents.R(atk, "analista")) * (1f - 0.03f * Talents.R(victim, "evasione") - 0.03f * Talents.R(victim, "corazza")); // talenti, uguali per tutti
             int vid = victim.ShipID, sub = 0; float factor = 1f; bool ours = false;
             if (atk != null && state.Count > 0)
             {
@@ -372,7 +375,8 @@ namespace Melchior
             if (!dg.Enabled) return;
             bool host = false; try { host = PhotonNetwork.inRoom && PhotonNetwork.isMasterClient; } catch { }
             float max = vs.HullMax; if (!host || max <= 1f) return;
-            float pts = dmg / max * 100f * dg.PointsPerHullPercent * factor * (1f - Math.Clamp(Loot.Bonus(vid, "sys_resist"), -1f, 0.7f)); if (pts < 0.05f) return;
+            float pts = dmg / max * 100f * dg.PointsPerHullPercent * factor * (1f - 0.1f * Talents.R(victim, "meccanico")) * (1f - Math.Clamp(Loot.Bonus(vid, "sys_resist"), -1f, 0.7f)); if (pts < 0.05f) return;
+            if (sub == 0) sub = EnemyAI.PickSub(atk, victim); // i nemici mirano ai sistemi secondo il loro ruolo
             if (sub == 0) sub = 1 + simRng.Next(SysIds.Length);
             string key = "dmx_" + SysIds[sub - 1]; float before = Get(vid, key), after = Math.Min(100f, before + pts);
             SetLocal(vid, key, after);
@@ -540,6 +544,21 @@ namespace Melchior
             if (msg.StartsWith("board|")) { Contracts.Receive(msg); return; }
             if (msg.StartsWith("news|")) { News.Receive(msg); return; }
             if (msg.StartsWith("gal|")) { GalaxyView.Receive(msg); return; }
+            if (msg.StartsWith("enc|")) { Encounters.Receive(msg); return; }
+            if (msg.StartsWith("req|incontro|")) { Encounters.OnRequest(msg); return; }
+            if (msg.StartsWith("req|cantiere|")) { Shipyard.OnRequest(msg); return; }
+            if (msg.StartsWith("req|chiamata|")) { Hail.OnRequest(msg); return; }
+            if (msg.StartsWith("req|sonda|")) { Probes.OnRequest(msg); return; }
+            if (msg.StartsWith("req|basi|")) { Bases.OnRequest(msg); return; }
+            if (msg.StartsWith("req|mercato|")) { Market.OnRequest(msg); return; }
+            if (msg.StartsWith("req|ricerca|")) { Research.OnRequest(msg); return; }
+            if (msg.StartsWith("req|indagini|")) { Mysteries.OnRequest(msg); return; }
+            if (msg.StartsWith("req|passeggeri|")) { Passengers.OnRequest(msg); return; }
+            if (msg.StartsWith("req|equipaggio|")) { CrewMind.OnRequest(msg); return; }
+            if (msg.StartsWith("req|manutenzione|")) { Wear.OnRequest(msg); return; }
+            if (msg.StartsWith("req|fabbrica|")) { Fabrication.OnRequest(msg); return; }
+            if (msg.StartsWith("req|abbordaggio|")) { Boarding.OnRequest(msg); return; }
+            if (msg.StartsWith("req|talenti|")) { Talents.OnRequest(msg); return; }
             if (msg.StartsWith("note|"))
             {
                 var np = msg.Split('|', 3); if (np.Length == 3) ShowNotice(np[1], np[2]); return;
@@ -644,7 +663,7 @@ namespace Melchior
             {
                 float dm = Get(ship, "dmx_" + SysIds[i]); if (dm <= 0) continue;
                 int teams = (t1 == i + 1 ? 1 : 0) + (t2 == i + 1 ? 1 : 0);
-                float nd = Math.Max(0f, dm - dg.PassiveRepair - teams * dg.RepairPerTeam * boost * (1f + Loot.Bonus(ship, "repair_speed")));
+                float nd = Math.Max(0f, dm - dg.PassiveRepair - teams * dg.RepairPerTeam * boost * (1f + Loot.Bonus(ship, "repair_speed") + (Stations.MyShip != null && ship == Stations.MyShip.ShipID ? PawnLoot.Crew("repair_speed") : 0f)));
                 SetLocal(ship, "dmx_" + SysIds[i], nd);
                 if (nd <= 0 && teams > 0)
                 {
@@ -851,13 +870,15 @@ namespace Melchior
         public long ChargeStart = -1, BurstReady;
         public long EvadeReady, BurnReady, RouteReady, RouteAxisStart; public int RouteAxis = -1; public bool RouteShown; public readonly float[] RouteErr = new float[3];
         public long BypassReady;
+        public int CodexIdx, BaseKind, MystPage; public string CodexCat = "Fazioni";
         public int WorkSel = -1, WorkPage; public string WorkArmed = ""; public long WorkArmedUntil; public readonly List<int> WorkRows = new();
     }
 
     static class Panels
     {
         public const string Prefix = "Mel|";
-        static readonly Dictionary<IntPtr, PanelPage> pages = new();
+        static readonly Dictionary<IntPtr, PanelPage> pages = new(); public static int Skipped, Released;
+        public static int Count => pages.Count;
         static readonly System.Diagnostics.Stopwatch clock = System.Diagnostics.Stopwatch.StartNew();
         static readonly System.Random rng = new();
         static long nextRefresh;
@@ -868,6 +889,9 @@ namespace Melchior
             cGood = new Color(0.49f, 0.85f, 0.57f, 1f), cWarn = new Color(0.95f, 0.65f, 0.35f, 1f), cBad = new Color(1f, 0.45f, 0.40f, 1f), cBlue = new Color(0.62f, 0.71f, 1f, 1f);
         // colore d'accento per stazione: Capitano, Pilota, Scienza, Armi, Ingegneria
         static readonly Color[] Accent = { new Color(0.95f, 0.65f, 0.35f, 1f), new Color(0.62f, 0.71f, 1f, 1f), new Color(0.37f, 0.88f, 0.84f, 1f), new Color(1f, 0.50f, 0.45f, 1f), new Color(1f, 0.84f, 0.37f, 1f) };
+        // secondo colore LCARS per stazione: lilla, verde acqua, viola, arancio, rosso arancio
+        static readonly Color[] Second = { new Color(0.78f, 0.62f, 0.95f, 1f), new Color(0.45f, 0.86f, 0.92f, 1f), new Color(0.68f, 0.60f, 1f, 1f), new Color(1f, 0.70f, 0.40f, 1f), new Color(1f, 0.58f, 0.32f, 1f) };
+        static Color Dim(Color c, float k, float a = 1f) => new Color(c.r * k, c.g * k, c.b * k, a);
         static readonly string[] Greek = { "ALFA", "BETA", "GAMMA", "DELTA" };
         static readonly string[] Doctrines = { "PRECISA", "RAPIDA", "CONTINUA" };
         static readonly string[] Aims = { "MISTO", "SCUDI", "SCAFO" };
@@ -880,7 +904,7 @@ namespace Melchior
         // ---- costruttore di elementi: ogni scheda si disegna con questi mattoni, su una griglia comune
         sealed class Kit
         {
-            public PLUIScreen sc; public PanelPage pg; public Transform t; public Color accent;
+            public PLUIScreen sc; public PanelPage pg; public Transform t; public Color accent, second;
             public const float L = 16f, W = 472f; // margine sinistro e larghezza utile
             public float ox, oy;                  // origine (serve per gli elementi figli diretti dello schermo)
 
@@ -892,6 +916,7 @@ namespace Melchior
                 var l = sc.CreateLabel(s, V(x + ox, y + oy), size, c, t, TL);
                 // le etichette del gioco hanno una scala propria: la colonna va espressa nelle loro unità
                 float sx = Math.Max(0.01f, l.transform.localScale.x), sy = Math.Max(0.01f, l.transform.localScale.y);
+                Look.Apply(l);
                 l.overflowMethod = UILabel.Overflow.ShrinkContent; l.multiLine = false; l.alignment = al;
                 l.width = (int)(w / sx); l.height = (int)((size + 8) / sy);
                 return l;
@@ -901,31 +926,36 @@ namespace Melchior
             public (UITexture box, UILabel label) Button(string name, float x, float y, float w, float h, string text, Color fill, Color ink, int size = 12)
             {
                 var b = Box(x, y, w, h, fill); b.gameObject.name = Prefix + name; sc.AllButtons.Add(b);
+                if (h >= 20f && w >= 44f) Look.Sliced(b, Look.Pill, Math.Min(11f, h / 2f)); else Look.Sliced(b, Look.Round, Math.Min(7f, Math.Min(w, h) / 2f));
+                // cornice luminosa, figlia del pulsante (si nasconde con lui)
+                var fr = sc.CreateBox(V(0f, 0f), new Vector2(w, h), new Color(accent.r, accent.g, accent.b, 0.45f), b.transform, TL); Look.Sliced(fr, Look.Frame, Math.Min(7f, Math.Min(w, h) / 2f));
                 var l = Text(x + 4f, y - (h - size - 6f) / 2f, w - 8f, text, size, ink, NGUIText.Alignment.Center);
                 return (b, l);
             }
 
-            public void Rule(float y) => Box(L, y, W, 1f, cTrack);
+            public void Rule(float y) { var r = Box(L, y, W, 1f, Dim(accent, 0.55f, 0.7f)); Look.Simple(r, Look.Fade); }
 
             // Titolo di sezione con tacca colorata e riga d'aiuto.
             public void Section(float y, string title, string help)
             {
-                Box(L, y - 2f, 4f, 16f, accent);
-                Text(L + 10f, y, W - 10f, title.ToUpperInvariant(), 13, cWhite);
-                if (help.Length > 0) Text(L + 10f, y - 19f, W - 10f, help, 10, cGrey);
+                var n = Box(L, y - 2f, 5f, 16f, accent); Look.Sliced(n, Look.Small, 2f);
+                var n2 = Box(L + 7f, y - 2f, 2f, 16f, second); Look.Sliced(n2, Look.Small, 1f);
+                Text(L + 14f, y, W - 14f, title.ToUpperInvariant(), 13, cWhite);
+                if (help.Length > 0) Text(L + 14f, y - 19f, W - 14f, help, 10, cGrey);
             }
 
             // Barra di livello 0..1.
             public Action<float, Color> Meter(float x, float y, float w, float h)
             {
-                Box(x, y, w, h, cTrack); var fill = Box(x, y, 2f, h, accent);
-                return (frac, col) => { frac = Math.Clamp(frac, 0f, 1f); bool on = frac > 0.004f; if (fill.gameObject.activeSelf != on) fill.gameObject.SetActive(on); if (on) { fill.width = Math.Max(2, (int)(w * frac)); fill.color = col; } };
+                var tr = Box(x, y, w, h, cTrack); Look.Sliced(tr, Look.Small, Math.Min(3f, h / 2f)); var fill = Box(x, y, 2f, h, accent); Look.Tiled(fill, Look.Seg);
+                // una frazione negativa nasconde anche la traccia (righe vuote delle liste)
+                return (frac, col) => { bool show = frac >= 0f; if (tr.gameObject.activeSelf != show) tr.gameObject.SetActive(show); frac = Math.Clamp(frac, 0f, 1f); bool on = frac > 0.004f; if (fill.gameObject.activeSelf != on) fill.gameObject.SetActive(on); if (on) { fill.width = Math.Max(2, (int)(w * frac)); fill.color = col; } };
             }
 
             // Barra a due versi attorno allo zero (per comandi da min a max).
             public Action<float, float, float, Color> Bipolar(float x, float y, float w, float h)
             {
-                Box(x, y, w, h, cTrack); var fill = Box(x, y, 2f, h, accent); var zero = Box(x, y - 2f, 2f, h + 4f, cGrey);
+                var tr = Box(x, y, w, h, cTrack); Look.Sliced(tr, Look.Small, Math.Min(3f, h / 2f)); var fill = Box(x, y, 2f, h, accent); Look.Tiled(fill, Look.Seg); var zero = Box(x, y - 2f, 2f, h + 4f, cGrey);
                 return (v, min, max, col) =>
                 {
                     float z = (0f - min) / (max - min), p = Math.Clamp((v - min) / (max - min), 0f, 1f);
@@ -938,8 +968,8 @@ namespace Melchior
             // Barra con zona utile e indice mobile (posizione 0..1; negativa = indice nascosto).
             public Action<float, Color> Marker(float x, float y, float w, float h, float lo, float hi)
             {
-                Box(x, y, w, h, cTrack); Box(x + w * lo, y, w * (hi - lo), h, Color.Lerp(cTrack, accent, 0.45f));
-                var mark = Box(x, y + 4f, 4f, h + 8f, cWhite);
+                var tr = Box(x, y, w, h, cTrack); Look.Sliced(tr, Look.Small, Math.Min(3f, h / 2f)); var zone = Box(x + w * lo, y, w * (hi - lo), h, Color.Lerp(cTrack, accent, 0.45f)); Look.Tiled(zone, Look.Seg);
+                var mark = Box(x, y + 4f, 4f, h + 8f, cWhite); Look.Sliced(mark, Look.Small, 2f);
                 return (pos, col) => { bool on = pos >= 0f; if (mark.gameObject.activeSelf != on) mark.gameObject.SetActive(on); if (on) { mark.transform.localPosition = V(x + w * Math.Clamp(pos, 0f, 1f) - 2f, y + 4f); mark.color = col; } };
             }
         }
@@ -951,42 +981,73 @@ namespace Melchior
         public static void Build(PLUIScreen sc, int station)
         {
             var root = sc.MyRootPanel; if (root == null) return;
+            // solo gli schermi della nostra nave: ogni nave del traffico ha i suoi schermi, e costruire un pannello completo
+            // per ciascuno (poi mai rilasciato) faceva crescere la memoria di decine di MB a ogni salto
+            try { var owner = sc.MyScreenHubBase?.OptionalShipInfo; var mine = Stations.MyShip; if (owner != null && mine != null && owner.ShipID != mine.ShipID) { Skipped++; return; } } catch { }
             var pg = new PanelPage { Screen = sc, Station = station };
             var accent = Accent[Math.Clamp(station, 0, Accent.Length - 1)];
             // pulsante di accesso nella barra del titolo dello schermo, piatto come il resto
-            var rk = new Kit { sc = sc, pg = pg, t = root.transform, accent = accent, ox = -256f, oy = 256f };
+            var second = Second[Math.Clamp(station, 0, Second.Length - 1)];
+            var rk = new Kit { sc = sc, pg = pg, t = root.transform, accent = accent, second = second, ox = -256f, oy = 256f };
             pg.OpenButton = sc.CreateBlankPanel("MelchiorAccesso", TopLeft(440f, -1f), new Vector2(68f, 17f), root.transform, TL).gameObject;
-            var ok = new Kit { sc = sc, pg = pg, t = pg.OpenButton.transform, accent = accent };
+            var ok = new Kit { sc = sc, pg = pg, t = pg.OpenButton.transform, accent = accent, second = second };
             ok.Button("open", 0f, 0f, 68f, 17f, "REG", accent, cInk, 11);
             pg.Page = sc.CreatePanel(" ", TopLeft(4f, -20f), new Vector2(504f, 488f), cBg, root.transform, TL);
-            var k = new Kit { sc = sc, pg = pg, t = pg.Page.transform, accent = accent };
+            var k = new Kit { sc = sc, pg = pg, t = pg.Page.transform, accent = accent, second = second };
             string name = Stations.Cfg.StationNames[Math.Clamp(station, 0, Stations.Cfg.StationNames.Length - 1)];
 
             // intestazione: blocco colorato col nome della stazione, filetto, pulsante di chiusura
-            k.Box(0f, 0f, 6f, 488f, accent);
-            k.Box(6f, 0f, 150f, 24f, accent); k.Text(14f, -4f, 136f, name.ToUpperInvariant(), 14, cInk);
-            k.Box(160f, -10f, 228f, 4f, accent);
+            // fondo: griglia tecnica, righe di scansione, vignettatura
+            // colori pieni (alfa 0 o 1): lo schermo resta opaco anche nella texture di rendering
+            var gd = k.Box(0f, 0f, 504f, 488f, Color.Lerp(cBg, accent, 0.07f)); Look.Tiled(gd, Look.Grid);
+            var sl = k.Box(0f, 0f, 504f, 488f, Dim(cBg, 0.55f)); Look.Tiled(sl, Look.Scan);
+            var sw = k.Box(0f, 0f, 504f, 3f, Color.Lerp(cBg, accent, 0.22f));
+            // intestazione LCARS: gomito, barra laterale a segmenti, blocco col nome, barra sottile, spia, chiusura
+            var el = k.Box(0f, 0f, Look.ElbowW, Look.ElbowH, accent); Look.Simple(el, Look.Elbow);
+            var s1 = k.Box(0f, -Look.ElbowH + 6f, Look.Side, 150f, accent); Look.Sliced(s1, Look.Small, 3f);
+            var s2 = k.Box(0f, -Look.ElbowH - 148f, Look.Side, 96f, second); Look.Sliced(s2, Look.Small, 3f);
+            var s3 = k.Box(0f, -Look.ElbowH - 248f, Look.Side, 488f - Look.ElbowH - 248f, Dim(accent, 0.7f)); Look.Sliced(s3, Look.Small, 3f);
+            k.Box(Look.ElbowW, 0f, 116f, Look.Bar, accent); k.Text(Look.ElbowW + 4f, -4f, 110f, name.ToUpperInvariant(), 14, cInk);
+            var hb = k.Box(160f, -9f, 196f, 6f, second); Look.Sliced(hb, Look.Small, 3f);
+            var led = k.Box(362f, -4f, 16f, 16f, second); Look.Simple(led, Look.Glow);
+            var ledCore = k.Box(367f, -9f, 6f, 6f, cWhite); Look.Sliced(ledCore, Look.Small, 3f);
             k.Button("close", 394f, 0f, 104f, 24f, "CHIUDI", cPanel, cWhite, 12);
+            pg.Updaters.Add((id, now) =>
+            {
+                float tsec = clock.ElapsedMilliseconds / 1000f;
+                float p = (tsec % 6f) / 6f; sw.transform.localPosition = V(0f, -p * 470f + 10f);
+                float pulse = 0.55f + 0.45f * (float)Math.Sin(tsec * 2.4f);
+                led.color = new Color(second.r, second.g, second.b, 0.35f + 0.5f * pulse); ledCore.color = Color.Lerp(second, cWhite, pulse);
+                hb.color = new Color(second.r, second.g, second.b, 0.75f + 0.25f * (float)Math.Sin(tsec * 0.9f));
+            });
 
             // schede
             var names = new List<string>();
-            if (station == 0) { names.Add("Assetti"); if (Stations.Cfg.Captain.Enabled) { names.Add("Ordini"); names.Add("Quadro"); if (Stations.Cfg.Protocols.Enabled) names.Add("Protocolli"); names.Add("Bacheca"); names.Add("Giornale"); names.Add("Galassia"); } }
+            if (station == 0) { names.Add("Assetti"); if (Stations.Cfg.Captain.Enabled) { names.Add("Ordini"); names.Add("Quadro"); if (Stations.Cfg.Protocols.Enabled) names.Add("Protocolli"); names.Add("Bacheca"); names.Add("Giornale"); names.Add("Galassia"); names.Add("Passeggeri"); names.Add("Equipaggio"); } }
             names.AddRange(Stations.Cfg.Controls.Where(c => c.Station == station).Select(c => c.Page).Distinct());
             if (station == 4 && Stations.Cfg.Core.Enabled) names.Add("Nucleo");
             if (station == 4 && Stations.Cfg.Damage.Enabled) names.Add("Danni");
             if (station == 4 && Rarity.Cfg.Enabled) names.Add("Officina");
+            if (station == 4) { names.Add("Cantiere"); names.Add("Basi"); names.Add("Manutenzione"); names.Add("Fabbrica"); }
             if (station == 2 && Stations.Cfg.Science.Enabled) { names.Add("Scudi"); names.Add("Analisi"); }
             if (station == 2 && Stations.Cfg.Sensors.Enabled) names.Add("Sensori");
+            if (station == 2) { names.Add("Sonde"); names.Add("Banca dati"); names.Add("Ricerca"); names.Add("Indagini"); }
             if (station == 3 && Stations.Cfg.Weapons.Enabled) { names.Add("Tiro"); names.Add("Raffica"); }
             if (station == 3 && Stations.Cfg.Damage.Enabled && Stations.Cfg.Sensors.Enabled) names.Add("Bersaglio");
             if (station == 1 && Stations.Cfg.Pilot.Enabled) { names.Add("Manovre"); names.Add("Rotta"); }
             if (station == 1 && Stations.Cfg.Engage.Enabled) names.Add("Ingaggio");
-            int nt = Math.Min(names.Count, 7); float tw = (Kit.W - (nt - 1) * 6f) / Math.Max(1, nt);
+            if (station == 1) names.Add("Mercato");
+            // fino a otto schede su una riga; oltre, due righe (e il contenuto scende di una riga)
+            int nt = Math.Min(names.Count, 12); bool two = nt > 8; int perRow = two ? (nt + 1) / 2 : nt;
+            float gapT = perRow > 7 ? 4f : 6f; float tw = (Kit.W - (perRow - 1) * gapT) / Math.Max(1, perRow);
+            string Short(string n) => perRow > 7 ? n switch { "Regolazioni" => "Regolaz.", "Banca dati" => "B. dati", "Protocolli" => "Protoc.", "Manutenzione" => "Manutenz.", _ => n } : n;
+            float subY = two ? -90f : -64f;
             for (int i = 0; i < nt; i++)
             {
-                pg.TabButtons.Add(k.Button("tab|" + i, Kit.L + i * (tw + 6f), -32f, tw, 22f, names[i].ToUpperInvariant(), cPanel, cWhite, nt > 6 ? 9 : nt > 3 ? 11 : 12));
-                var sub = sc.CreateBlankPanel("MelchiorScheda" + i, V(0f, -64f), new Vector2(504f, 388f), pg.Page.transform, TL);
-                var sk = new Kit { sc = sc, pg = pg, t = sub.transform, accent = accent };
+                int row = i / perRow, col = i % perRow;
+                pg.TabButtons.Add(k.Button("tab|" + i, Kit.L + col * (tw + gapT), -32f - row * 26f, tw, 22f, Short(names[i]).ToUpperInvariant(), cPanel, cWhite, perRow > 7 ? 8 : perRow > 6 ? 9 : perRow > 3 ? 11 : 12));
+                var sub = sc.CreateBlankPanel("MelchiorScheda" + i, V(0f, subY), new Vector2(504f, 388f), pg.Page.transform, TL);
+                var sk = new Kit { sc = sc, pg = pg, t = sub.transform, accent = accent, second = second };
                 switch (names[i])
                 {
                     case "Assetti": BuildPresets(sk); break;
@@ -1001,10 +1062,21 @@ namespace Melchior
                     case "Rotta": BuildRoute(sk); break;
                     case "Danni": BuildDamage(sk); break;
                     case "Officina": BuildWorkshop(sk); break;
+                    case "Cantiere": BuildShipyard(sk); break;
+                    case "Basi": BuildBases(sk); break;
+                    case "Banca dati": BuildCodex(sk); break;
+                    case "Ricerca": BuildResearch(sk); break;
+                    case "Indagini": BuildMysteries(sk); break;
+                    case "Passeggeri": BuildPassengers(sk); break;
+                    case "Equipaggio": BuildCrewCommand(sk); break;
+                    case "Manutenzione": BuildWear(sk); break;
+                    case "Fabbrica": BuildFabrication(sk); break;
+                    case "Sonde": BuildProbes(sk); break;
                     case "Bacheca": BuildContracts(sk); break;
                     case "Sensori": BuildSensors(sk); break;
                     case "Bersaglio": BuildTarget(sk); break;
                     case "Ingaggio": BuildEngage(sk); break;
+                    case "Mercato": BuildMarket(sk); break;
                     case "Protocolli": BuildProtocols(sk); break;
                     case "Giornale": BuildJournal(sk); break;
                     case "Galassia": BuildGalaxy(sk); break;
@@ -1014,7 +1086,7 @@ namespace Melchior
                 pg.Tabs.Add((names[i], sub.gameObject));
             }
             // piè di pagina: filetto e riga di stato
-            k.Box(Kit.L, -458f, Kit.W, 1f, cTrack);
+            var ft = k.Box(Kit.L, -458f, Kit.W, 1f, Dim(accent, 0.55f, 0.8f)); Look.Simple(ft, Look.Fade);
             pg.Note = k.Text(Kit.L, -464f, Kit.W, "", 11, cWhite);
             pg.Page.gameObject.SetActive(false);
             pages[sc.Pointer] = pg;
@@ -1328,9 +1400,21 @@ namespace Melchior
                 k.Button("cap|int|" + ids[i], Kit.L + i * 160f, -218f, 152f, 24f, names[i], k.accent, cInk, 12);
                 k.Text(Kit.L + i * 160f, -248f, 152f, what[i], 10, cGrey, NGUIText.Alignment.Center);
             }
+            k.Rule(-270f);
+            k.Section(-280f, "Chiamare il bersaglio", "");
+            var tgtName = k.Text(Kit.L + 200f, -280f, Kit.W - 200f, "", 11, cWhite, NGUIText.Alignment.Right);
+            k.Button("cap|hail|notizie", Kit.L, -306f, 230f, 24f, "CHIEDERE NOTIZIE", k.accent, cInk, 11);
+            k.Button("cap|hail|resa", Kit.L + 242f, -306f, 230f, 24f, "INTIMARE LA RESA", cBad, cInk, 11);
+            var hailOut = k.Text(Kit.L, -338f, Kit.W, "", 10, cGrey); var hailOut2 = k.Text(Kit.L, -352f, Kit.W, "", 10, cGrey);
+            k.Button("cap|board|abborda", Kit.L, -368f, 150f, 20f, "ABBORDAGGIO", cBad, cInk, 10); k.Button("cap|board|rientro", Kit.L + 156f, -368f, 104f, 20f, "RIENTRO", cPanel, cWhite, 10);
+            var bstat = k.Text(Kit.L + 268f, -370f, Kit.W - 268f, "", 9, cGrey);
 
             k.pg.Updaters.Add((id, now) =>
             {
+                PLShipInfoBase tg = null; try { tg = Stations.MyShip?.TargetShip; if (tg != null && tg.HasBeenDestroyed) tg = null; } catch { }
+                tgtName.text = tg == null ? Grey + "nessun bersaglio" + End : (string)tg.ShipName + (Talents.Line(tg) is { Length: > 0 } cl ? Grey + " · " + cl + End : "");
+                bstat.text = GalaxyView.Current?.boardStatus ?? "";
+                var (h1, h2) = TwoLines(Hail.Last.Length > 0 ? Hail.Last : "Agganciate una nave e chiamatela: notizie dalle navi amiche, la resa da quelle nemiche malridotte.", 78); hailOut.text = h1; hailOut2.text = h2;
                 float v = Stations.Get(id, "cpx_ini"); if (v <= 0) v = c.Start; int dir = (int)Stations.Get(id, "cpx_dir"); float tired = Stations.Get(id, "cpx_tired");
                 ini(v / 100f, v >= c.InterventionCost ? cGood : cWarn); val.text = v.ToString("0");
                 for (int i = 0; i < 4; i++) { bool on = dir == i + 1; ords[i].box.color = on ? k.accent : cPanel; ords[i].label.color = on ? cInk : cWhite; }
@@ -1346,12 +1430,13 @@ namespace Melchior
         {
             k.Section(-4f, "Quadro di situazione", "");
             string[] rows = { "ALLARME", "COMANDO", "INGEGNERIA", "SCIENZA", "ARMI", "PILOTA" }; int[] acc = { 0, 0, 4, 2, 3, 1 };
-            var main = new UILabel[rows.Length]; var detail = new UILabel[rows.Length];
+            var main = new UILabel[rows.Length]; var detail = new UILabel[rows.Length]; var who = new UILabel[rows.Length]; int[] clsOf = { -1, 0, 4, 2, 3, 1 };
             for (int i = 0; i < rows.Length; i++)
             {
                 float y = -32f - i * 58f;
                 k.Box(Kit.L, y, 4f, 44f, Accent[acc[i]]);
                 k.Text(Kit.L + 12f, y, 110f, rows[i], 12, Accent[acc[i]]);
+                if (i > 0) who[i] = k.Text(Kit.L + 12f, y - 22f, 116f, "", 9, cGrey);
                 main[i] = k.Text(Kit.L + 130f, y, 342f, "", 12, cWhite);
                 detail[i] = k.Text(Kit.L + 130f, y - 22f, 342f, "", 10, cGrey);
                 k.Rule(y - 50f);
@@ -1363,10 +1448,12 @@ namespace Melchior
                 var mine = Stations.MyShip; int alert = mine != null ? mine.m_AlertLevel : 0;
                 float ini = G("cpx_ini"); if (ini <= 0) ini = c.Start; int dir = (int)G("cpx_dir"); float stress = G("core_stress");
                 int band = (int)G("scx_band"), doc = (int)G("wpx_doc"), aim = (int)G("wpx_aim");
+                var crew = GalaxyView.Current?.crew; for (int r = 1; r < rows.Length; r++) { string s = crew != null && clsOf[r] < crew.Count ? crew[clsOf[r]] : ""; who[r].text = s.Contains("infermeria") ? Bad + s + End : s; }
                 main[0].text = alert >= 2 ? Bad + "ROSSO" + End : alert == 1 ? Amber + "GIALLO" + End : Good + "VERDE" + End;
                 int ph = Math.Clamp((int)G("drx_phase"), 0, 3); float tens = G("drx_t");
-                detail[0].text = Director.Cfg.Enabled ? $"Situazione {Director.PhaseNames[ph].ToLowerInvariant()}   tensione {(tens >= 55 ? Bad : tens >= 22 ? Amber : Good)}{tens:0}{End}   potenza dell'equipaggio {G("drx_pow"):0.0}" : "";
-                main[1].text = "Iniziativa " + ini.ToString("0"); detail[1].text = "Ordine: " + (dir > 0 ? Orders[dir - 1] : "nessuno") + (G("cpx_tired") > 0 ? "   equipaggio affaticato" : "");
+                string env = Environments.Here;
+                detail[0].text = (Director.Cfg.Enabled ? $"Situazione {Director.PhaseNames[ph].ToLowerInvariant()}   tensione {(tens >= 55 ? Bad : tens >= 22 ? Amber : Good)}{tens:0}{End}   potenza {G("drx_pow"):0.0}" : "") + (env.Length > 0 ? "   " + Blue + env + End : "") + (Boarding.Short() is { Length: > 0 } bo ? "   " + bo : "") + (Traffic.Short() is { Length: > 0 } tr ? "   " + (tr.Contains("SOS") ? Amber : Grey) + tr + End : "") + "   " + Grey + Rules.Name(GalaxyView.Current?.rules ?? "frontiera") + End;
+                main[1].text = "Iniziativa " + ini.ToString("0"); string voc = Calling.Label(); detail[1].text = "Ordine: " + (dir > 0 ? Orders[dir - 1] : "nessuno") + (G("cpx_tired") > 0 ? "   equipaggio affaticato" : "") + (voc.Length > 0 ? "   " + Amber + voc + End : "");
                 main[2].text = "Nucleo " + (stress >= co.CriticalAt ? Bad : stress >= co.WarnAt ? Amber : Good) + stress.ToString("0") + "%" + End + (G("core_lock") > 0 ? Bad + "   ARRESTO " + Left("core_lock") + End : "");
                 detail[2].text = $"Sovralimentazione {G("eng_overdrive"):0}   rete EPS {Stations.Cfg.Controls.Where(x => x.Group == "eps").Sum(x => Math.Max(0f, G(x.Id))):0} tacche   allineamento {Left("core_align")}   sistemi guasti {Stations.SysIds.Count(x => G("dmx_" + x) >= 25f)}";
                 main[3].text = "Armonica " + (band > 0 ? Greek[Math.Clamp(band - 1, 0, 2)] + " " + G("scx_eff").ToString("0") + "%" : Grey + "spenta" + End);
@@ -1566,14 +1653,22 @@ namespace Melchior
             }
             k.Rule(-170f);
             k.Section(-180f, "Giornale di bordo", "");
-            var times = new UILabel[8]; var lines = new UILabel[8];
+            var sd = k.Text(Kit.L + 165f, -181f, Kit.W - 165f, "", 10, cBlue, NGUIText.Alignment.Right);
+            var times = new UILabel[5]; var lines = new UILabel[5];
             for (int i = 0; i < lines.Length; i++)
             {
                 times[i] = k.Text(Kit.L, -206f - i * 22f, 64f, "", 11, k.accent);
                 lines[i] = k.Text(Kit.L + 72f, -206f - i * 22f, Kit.W - 72f, "", 11, i == 0 ? cWhite : cGrey);
             }
+            k.Rule(-318f);
+            var gl = new UILabel[3]; for (int i = 0; i < gl.Length; i++) gl[i] = k.Text(Kit.L, -324f - i * 14f, Kit.W, "", 10, i == 0 ? cWhite : cGrey);
+            var weekly = k.Text(Kit.L, -366f, Kit.W, "", 10, cBlue);
             k.pg.Updaters.Add((id, now) =>
             {
+                string sn = Wonders.Line().Length > 0 ? Wonders.Line() : Calling.SeasonName(); sd.text = (sn.Length > 0 ? Amber + sn + End + "   " : "") + "data stellare " + (GalaxyView.Current?.stardate ?? "");
+                string wk = Challenge.Line(); weekly.text = wk.Length > 0 ? Amber + "SFIDA DELLA SETTIMANA " + End + wk : "";
+                var goals = Logbook.GoalRows();
+                for (int i = 0; i < gl.Length; i++) gl[i].text = i < goals.Count ? Amber + "AMBIZIONE " + End + goals[i] : i == 0 ? Grey + "Nessuna ambizione in corso." + End : "";
                 var nw = News.Items;
                 for (int i = 0; i < ncat.Length; i++)
                 {
@@ -1593,10 +1688,425 @@ namespace Melchior
 
         static string Hex(string color) => "[" + color.TrimStart('#') + "]";
 
+        // Sonde di ricognizione: lancio e rapporto sui settori vicini, con la rotta a portata di clic.
+        static void BuildProbes(Kit k)
+        {
+            k.Section(-4f, "Sonde di ricognizione", $"Una sonda costa {Probes.Cost} crediti ed esamina i settori vicini.");
+            k.Button("pr|lancia", Kit.L, -44f, 220f, 26f, "LANCIA UNA SONDA", k.accent, cInk, 12);
+            var from = k.Text(Kit.L + 230f, -48f, Kit.W - 230f, "", 10, cGrey, NGUIText.Alignment.Right);
+            const int N = 8; var sec = new UILabel[N]; var txt = new UILabel[N]; var txt2 = new UILabel[N]; var btn = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++)
+            {
+                float y = -84f - i * 36f;
+                sec[i] = k.Text(Kit.L, y, 96f, "", 11, cWhite);
+                txt[i] = k.Text(Kit.L + 100f, y, 286f, "", 9, cGrey); txt2[i] = k.Text(Kit.L + 100f, y - 13f, 286f, "", 9, cGrey);
+                btn[i] = k.Button("pr|rotta|" + i, Kit.L + 392f, y + 2f, 80f, 22f, "ROTTA", cPanel, cWhite, 10);
+            }
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var rows = Probes.Rows; int f = Probes.From;
+                from.text = rows.Count == 0 ? "nessun rapporto" : $"rapporto dal settore {f}";
+                for (int i = 0; i < N; i++)
+                {
+                    var r = i < rows.Count ? rows[i] : null; bool on = r != null;
+                    if (btn[i].box.gameObject.activeSelf != on) { btn[i].box.gameObject.SetActive(on); btn[i].label.gameObject.SetActive(on); }
+                    if (!on) { sec[i].text = txt[i].text = txt2[i].text = ""; continue; }
+                    sec[i].text = (r.interesting ? Amber : "") + $"settore {r.sector}" + (r.interesting ? End : "");
+                    var (a1, a2) = TwoLines(r.text, 58); txt[i].text = a1; txt2[i].text = a2;
+                    btn[i].box.color = r.interesting ? k.accent : cPanel; btn[i].label.color = r.interesting ? cInk : cWhite;
+                }
+            });
+        }
+
+        // Banca dati: le voci dell'enciclopedia di bordo, per categoria.
+        static void BuildCodex(Kit k)
+        {
+            var cats = Codex.Cats; var cb = new (UITexture box, UILabel label)[cats.Length];
+            for (int i = 0; i < cats.Length; i++) { int row = i / 4, col = i % 4; cb[i] = k.Button("cdx|cat|" + i, Kit.L + col * 119f, -4f - row * 26f, 113f, 22f, cats[i].ToUpperInvariant(), cPanel, cWhite, 10); }
+            var title = k.Text(Kit.L, -62f, 330f, "", 13, k.accent); var idx = k.Text(Kit.L + 330f, -64f, 142f, "", 10, cGrey, NGUIText.Alignment.Right);
+            const int NL = 12; var line = new UILabel[NL]; for (int i = 0; i < NL; i++) line[i] = k.Text(Kit.L, -86f - i * 15f, Kit.W, "", 10, cWhite);
+            k.Button("cdx|prev", Kit.L, -278f, 100f, 22f, "< PRECEDENTE", cPanel, cWhite, 10); k.Button("cdx|next", Kit.L + 372f, -278f, 100f, 22f, "SEGUENTE >", cPanel, cWhite, 10);
+            k.Rule(-308f); var foot = k.Text(Kit.L, -316f, Kit.W, "", 9, cGrey); var foot2 = k.Text(Kit.L, -330f, Kit.W, "", 9, cGrey);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var pg = k.pg; var all = Codex.Entries; var list = all.Where(e => e.cat == pg.CodexCat).ToList();
+                for (int i = 0; i < cats.Length; i++) { bool on = cats[i] == pg.CodexCat; cb[i].box.color = on ? k.accent : cPanel; cb[i].label.color = on ? cInk : cWhite; }
+                if (list.Count == 0) { title.text = Grey + "Nessuna voce, per ora." + End; idx.text = ""; for (int i = 0; i < NL; i++) line[i].text = ""; }
+                else
+                {
+                    pg.CodexIdx = ((pg.CodexIdx % list.Count) + list.Count) % list.Count; var e = list[pg.CodexIdx];
+                    title.text = e.title; idx.text = $"voce {pg.CodexIdx + 1} di {list.Count}";
+                    var w = Wrap(e.text, 66, NL); for (int i = 0; i < NL; i++) line[i].text = w[i];
+                }
+                var counts = cats.Select(c => $"{c.ToLowerInvariant()} {all.Count(x => x.cat == c)}").ToList();
+                foot.text = "Voci: " + string.Join(" · ", counts.Take(4)); foot2.text = string.Join(" · ", counts.Skip(4));
+            });
+        }
+
+        // Ricerca: dati raccolti, progetto in corso, tecnologie disponibili e completate.
+        static void BuildResearch(Kit k)
+        {
+            k.Section(-4f, "Ricerca scientifica", "Dati da esplorazioni, sonde, specie aliene, eventi rari, laboratori e analisi di routine.");
+            var head = k.Text(Kit.L, -42f, Kit.W, "", 11, cWhite);
+            var cur = k.Text(Kit.L, -60f, 300f, "", 10, cGrey); var bar = k.Meter(Kit.L + 310f, -64f, Kit.W - 310f, 6f);
+            k.Rule(-78f);
+            int N = Research.Projects.Length; var nm = new UILabel[N]; var ef = new UILabel[N]; var co = new UILabel[N]; var bt = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++)
+            {
+                float y = -86f - i * 31f; var p = Research.Projects[i];
+                nm[i] = k.Text(Kit.L, y, 280f, "", 10, cWhite); ef[i] = k.Text(Kit.L, y - 13f, 370f, p.effect, 8, cGrey);
+                co[i] = k.Text(Kit.L + 284f, y, 96f, "", 9, cGrey, NGUIText.Alignment.Right);
+                bt[i] = k.Button("rc|avvia|" + i, Kit.L + 392f, y + 2f, 80f, 20f, "AVVIA", k.accent, cInk, 9);
+            }
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var r = GalaxyView.Current?.research ?? new Research.Panel();
+                head.text = $"Dati di ricerca: {Good}{r.data}{End}   raccolti in tutto {r.total}   tecnologie {r.done.Count}/{N}";
+                var cp = Research.P(r.current);
+                cur.text = cp == null ? Grey + "Laboratorio libero: scegli un progetto." + End : $"In corso: {cp.name} ({r.progress}/{cp.jumps} salti)";
+                bar(cp == null ? 0f : (float)r.progress / Math.Max(1, cp.jumps), k.accent);
+                for (int i = 0; i < N; i++)
+                {
+                    var p = Research.Projects[i]; bool done = r.done.Contains(p.id), running = r.current == p.id, can = !done && r.current.Length == 0 && r.data >= p.cost;
+                    nm[i].text = done ? Good + "✓ " + p.name + End : running ? Amber + "» " + p.name + End : p.name;
+                    co[i].text = done ? Grey + "completata" + End : $"{p.cost} dati · {p.jumps} salti";
+                    bt[i].label.text = done ? "FATTO" : running ? "IN CORSO" : "AVVIA";
+                    bt[i].box.color = can ? k.accent : cPanel; bt[i].label.color = can ? cInk : cGrey;
+                }
+            });
+        }
+
+        // Indagini: segnali da triangolare e decifrare, scavo in corso, reperti (a pagine di tre), civiltà perdute.
+        static void BuildMysteries(Kit k)
+        {
+            k.Section(-4f, "Indagini e archeologia", "Ogni salto con la Scienza in servizio dà un rilevamento: tre, o una sonda, localizzano il segnale.");
+            k.Text(Kit.L, -40f, 120f, "SEGNALI", 8, cGrey); var stats = k.Text(Kit.L + 120f, -40f, Kit.W - 120f, "", 8, cGrey, NGUIText.Alignment.Right);
+            const int NS = 3; var sn = new UILabel[NS]; var s2 = new UILabel[NS]; var s3 = new UILabel[NS]; var bd = new (UITexture box, UILabel label)[NS]; var bp = new (UITexture box, UILabel label)[NS]; var br = new (UITexture box, UILabel label)[NS];
+            for (int i = 0; i < NS; i++)
+            {
+                float y = -54f - i * 40f;
+                sn[i] = k.Text(Kit.L, y, 290f, "", 10, cWhite); s2[i] = k.Text(Kit.L, y - 12f, 290f, "", 8, cGrey); s3[i] = k.Text(Kit.L, y - 23f, 290f, "", 8, cGrey);
+                bd[i] = k.Button("ind|decifra|" + i, Kit.L + 296f, y + 2f, 62f, 18f, "DECIFRA", k.accent, cInk, 8);
+                bp[i] = k.Button("ind|sonda|" + i, Kit.L + 362f, y + 2f, 52f, 18f, "SONDA", cPanel, cWhite, 8);
+                br[i] = k.Button("ind|rotta|" + i, Kit.L + 418f, y + 2f, 54f, 18f, "ROTTA", cPanel, cWhite, 8);
+            }
+            k.Rule(-176f);
+            var dg = k.Text(Kit.L, -182f, 300f, "", 9, cWhite); var dbar = k.Meter(Kit.L + 306f, -186f, 80f, 6f); var dl = k.Text(Kit.L, -195f, 380f, "", 8, cGrey);
+            var bs = k.Button("ind|scavo|0", Kit.L + 392f, -184f, 80f, 18f, "→ SCAVO", cPanel, cWhite, 8);
+            k.Rule(-210f);
+            k.Text(Kit.L, -216f, 120f, "REPERTI", 8, cGrey); var pgl = k.Text(Kit.L + 120f, -216f, 280f, "", 8, cGrey, NGUIText.Alignment.Right);
+            k.Button("ind|prev|0", Kit.L + 410f, -212f, 28f, 16f, "«", cPanel, cWhite, 9); k.Button("ind|next|0", Kit.L + 444f, -212f, 28f, 16f, "»", cPanel, cWhite, 9);
+            const int NR = 3; var rn = new UILabel[NR]; var r2 = new UILabel[NR]; var r3 = new UILabel[NR]; var rb = new (UITexture box, UILabel label)[NR, 4];
+            string[] acts = { "studia", "dona", "vendi", "getta" }; string[] labels = { "STUDIA", "DONA", "VENDI", "GETTA" }; float[] bx = { 276f, 332f, 380f, 428f }, bw = { 52f, 44f, 44f, 44f };
+            for (int j = 0; j < NR; j++)
+            {
+                float y = -232f - j * 46f;
+                rn[j] = k.Text(Kit.L, y, 270f, "", 10, cWhite); r2[j] = k.Text(Kit.L, y - 12f, 270f, "", 8, cGrey); r3[j] = k.Text(Kit.L, y - 23f, Kit.W, "", 8, cGrey);
+                for (int b = 0; b < 4; b++) rb[j, b] = k.Button($"ind|{acts[b]}|{j}", Kit.L + bx[b], y + 2f, bw[b], 18f, labels[b], cPanel, cWhite, 8);
+            }
+            var civ = k.Text(Kit.L, -372f, Kit.W, "", 8, cGrey);
+            string[] rc = { "[c8ccd8]", "[7CD992]", "[9db4ff]", "[c39bff]", "[F2A65A]" };
+            void Show((UITexture box, UILabel label) b, bool on) { if (b.box.gameObject.activeSelf != on) { b.box.gameObject.SetActive(on); b.label.gameObject.SetActive(on); } }
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var p = GalaxyView.Current?.mystery ?? new Mysteries.Panel();
+                stats.text = p.stats;
+                for (int i = 0; i < NS; i++)
+                {
+                    var s = i < p.signals.Count ? p.signals[i] : null; Show(bd[i], s != null); Show(bp[i], s != null); Show(br[i], s != null);
+                    if (s == null) { sn[i].text = i == 0 && p.signals.Count == 0 ? Grey + "Nessun segnale. La Scienza ascolta a ogni salto." + End : ""; s2[i].text = s3[i].text = ""; continue; }
+                    sn[i].text = (s.fix ? Good : s.decode >= 30 ? Amber : "") + Mysteries.Cap(s.name) + (s.fix || s.decode >= 30 ? End : "");
+                    s2[i].text = $"decifrato {s.decode}% · rilevamenti {s.bearings} · " + (s.fix ? $"origine: settore {s.source}" : s.bearings == 0 ? "direzione ignota" : $"zona: {s.zone} settori") + $" · si spegne fra {s.fade} salti";
+                    s3[i].text = s.hint.Length > 0 ? (s.hint.Length > 64 ? s.hint[..62] + "…" : s.hint) : "";
+                    bool canDec = s.decode < 100 && p.data >= 4; bd[i].box.color = canDec ? k.accent : cPanel; bd[i].label.color = canDec ? cInk : cGrey; bd[i].label.text = s.decode >= 100 ? "LETTO" : "DECIFRA";
+                    bp[i].label.text = s.fix ? "TROVATO" : "SONDA"; bp[i].label.color = s.fix ? cGrey : cWhite;
+                    br[i].box.color = s.fix ? k.accent : cPanel; br[i].label.color = s.fix ? cInk : cWhite;
+                }
+                dg.text = p.dig.Length > 0 ? Amber + p.dig + End : p.digs.Count > 0 ? "Scavi noti" : Grey + "Nessuno scavo aperto." + End;
+                dbar(p.dig.Length > 0 ? p.digProgress : 0f, k.accent); dl.text = string.Join(" · ", p.digs); Show(bs, p.digs.Count > 0);
+                int pages = Math.Max(1, (p.relics.Count + NR - 1) / NR); k.pg.MystPage = Math.Clamp(k.pg.MystPage, 0, pages - 1);
+                pgl.text = p.relics.Count == 0 ? "stiva dei reperti vuota" : $"pagina {k.pg.MystPage + 1} di {pages} · {p.relics.Count} reperti" + (p.port ? (p.shady ? " · ricettatore in porto" : " · museo in porto") : "");
+                for (int j = 0; j < NR; j++)
+                {
+                    int idx = k.pg.MystPage * NR + j; var r = idx < p.relics.Count ? p.relics[idx] : null;
+                    for (int b = 0; b < 4; b++) Show(rb[j, b], r != null);
+                    if (r == null) { rn[j].text = r2[j].text = r3[j].text = ""; continue; }
+                    rn[j].text = rc[Math.Clamp(r.rarity, 0, 4)] + r.name + End;
+                    r2[j].text = $"{new[] { "comune", "pregiato", "raro", "prezioso", "leggendario" }[Math.Clamp(r.rarity, 0, 4)]} · conservato {r.condition}% · {r.value} cr" + (r.curse.Length > 0 ? " · " + Bad + "inquieto" + End : "") + (r.studied ? " · studiato" : "");
+                    r3[j].text = r.story;
+                    rb[j, 0].label.color = r.studied ? cGrey : cWhite; rb[j, 1].label.color = rb[j, 2].label.color = p.port ? cWhite : cGrey;
+                }
+                civ.text = p.civs.Count == 0 ? "Civiltà perdute: nessuna traccia ancora." : "Civiltà perdute: " + string.Join(" · ", p.civs) + " capitoli";
+            });
+        }
+
+        // Manutenzione: stato dei sette sistemi, efficienza, ricambi, manutenzione e revisione in porto.
+        static void BuildWear(Kit k)
+        {
+            k.Section(-4f, "Usura e manutenzione", "I sistemi si consumano con l'uso: sotto l'80% rendono meno, sotto il 25% si guastano da soli.");
+            var head = k.Text(Kit.L, -42f, Kit.W, "", 10, cWhite);
+            k.Rule(-56f);
+            string[] sys = Wear.Systems; int N = sys.Length; var nm = new UILabel[N]; var l2 = new UILabel[N]; var bar = new Action<float, Color>[N]; var bt = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++)
+            {
+                float y = -64f - i * 38f;
+                nm[i] = k.Text(Kit.L, y, 220f, Wear.Name(sys[i]), 10, cWhite); l2[i] = k.Text(Kit.L + 224f, y, 150f, "", 9, cGrey, NGUIText.Alignment.Right);
+                bar[i] = k.Meter(Kit.L, y - 16f, 374f, 7f);
+                bt[i] = k.Button("wr|ripara|" + sys[i], Kit.L + 384f, y + 2f, 88f, 20f, "", cPanel, cWhite, 8);
+            }
+            k.Rule(-334f);
+            var foot = k.Text(Kit.L, -342f, 300f, "", 9, cGrey);
+            var rev = k.Button("wr|revisione|0", Kit.L + 306f, -340f, 166f, 22f, "", cPanel, cWhite, 9);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var p = GalaxyView.Current?.wear ?? new Wear.Panel();
+                head.text = $"Ricambi in stiva: {(p.parts > 0 ? Good : Bad)}{p.parts}{End}   manutenzioni {p.maint} · guasti da usura {p.failures}";
+                for (int i = 0; i < N; i++)
+                {
+                    float c = p.cond.TryGetValue(sys[i], out var v) ? v : 100f; float e = Wear.Eff(c);
+                    l2[i].text = (c <= 0f ? Bad + "IN AVARIA" + End : c <= 25f ? Bad + $"{c:0}%" + End : c < 80f ? Amber + $"{c:0}%" + End : Good + $"{c:0}%" + End) + $" · resa {e:P0}";
+                    bar[i](c / 100f, c <= 25f ? cBad : c < 80f ? cWarn : cGood);
+                    int need = Math.Max(1, (int)Math.Ceiling((100f - c) / 20f)); bool can = c < 99f && p.parts > 0;
+                    bt[i].label.text = c >= 99f ? "IN ORDINE" : $"RIPARA ({Math.Min(need, Math.Max(1, p.parts))})"; bt[i].box.color = can ? k.accent : cPanel; bt[i].label.color = can ? cInk : cGrey;
+                }
+                foot.text = p.port ? "In porto: il cantiere può revisionare tutta la nave." : "La revisione completa si fa in un cantiere di porto. I ricambi si comprano in borsa.";
+                rev.label.text = p.cost <= 0 ? "NAVE IN ORDINE" : $"REVISIONE · {p.cost} CR"; bool cr = p.port && p.cost > 0; rev.box.color = cr ? k.accent : cPanel; rev.label.color = cr ? cInk : cGrey;
+            });
+        }
+
+        // Fabbricazione: ricette con materie prime della stiva, coda di quattro lavorazioni, avanzamento della prima.
+        static void BuildFabrication(Kit k)
+        {
+            k.Section(-4f, "Fabbricazione", "L'officina lavora le materie prime della stiva. Più veloce con un ingegnere alla stazione; ferma in battaglia.");
+            var head = k.Text(Kit.L, -42f, Kit.W, "", 9, cGrey);
+            k.Rule(-56f);
+            var rs = Fabrication.Recipes; int N = rs.Length; var nm = new UILabel[N]; var l2 = new UILabel[N]; var tm = new UILabel[N]; var bt = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++)
+            {
+                float y = -62f - i * 32f;
+                nm[i] = k.Text(Kit.L, y, 250f, rs[i].name, 10, cWhite); tm[i] = k.Text(Kit.L + 250f, y, 128f, "", 9, cGrey, NGUIText.Alignment.Right);
+                l2[i] = k.Text(Kit.L, y - 13f, 378f, "", 8, cGrey);
+                bt[i] = k.Button("fb|fabbrica|" + rs[i].id, Kit.L + 384f, y + 1f, 88f, 20f, "", cPanel, cWhite, 8);
+            }
+            k.Rule(-322f);
+            var q = k.Text(Kit.L, -330f, 374f, "", 9, cWhite);
+            var bar = k.Meter(Kit.L, -348f, 374f, 6f);
+            var cancel = k.Button("fb|annulla|0", Kit.L + 384f, -330f, 88f, 22f, "ANNULLA", cPanel, cWhite, 9);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var p = GalaxyView.Current?.fab ?? new Fabrication.Panel();
+                head.text = $"Stiva: {p.stock}   capsule {p.fuelCaps}" + (p.probes > 0 ? $"   sonde pronte {Good}{p.probes}{End}" : "") + $"   velocità {(p.speed >= 1f ? Good : Amber)}{p.speed:0.0}×{End}";
+                for (int i = 0; i < N && i < p.recipes.Count; i++)
+                {
+                    var r = p.recipes[i];
+                    l2[i].text = r.unlocked ? $"{r.inputs}  →  {r.output}" : $"{Amber}Richiede la ricerca «{r.needs}»{End}";
+                    int secs = (int)Math.Ceiling(r.seconds / Math.Max(0.1f, p.speed)); tm[i].text = secs >= 60 ? $"{secs / 60}m {secs % 60:00}s" : $"{secs}s";
+                    bool can = r.unlocked && r.afford && p.queue.Count < 4;
+                    bt[i].label.text = !r.unlocked ? "BLOCCATA" : !r.afford ? "MANCA MATERIA" : p.queue.Count >= 4 ? "CODA PIENA" : "FABBRICA";
+                    bt[i].box.color = can ? k.accent : cPanel; bt[i].label.color = can ? cInk : cGrey;
+                }
+                q.text = p.queue.Count == 0 ? Grey + "Officina ferma: nessuna lavorazione in coda." + End : $"In lavorazione: {Good}{p.queue[0]}{End} {p.progress:P0}" + (p.queue.Count > 1 ? $"   poi: {string.Join(", ", p.queue.Skip(1))}" : "");
+                bar(p.queue.Count == 0 ? -1f : p.progress, cGood);
+                bool c = p.queue.Count > 0; cancel.box.color = c ? cPanel : cPanel; cancel.label.color = c ? cWhite : cGrey;
+            });
+        }
+
+        // Comando dell'equipaggio: dottrina di squadra, ordini individuali (postura, specializzazione), regole d'ingaggio, rapporto.
+        static void BuildCrewCommand(Kit k)
+        {
+            k.Section(-4f, "Comando dell'equipaggio", "Dottrina di squadra, ordini a ogni ufficiale e regole d'ingaggio: la mente dell'equipaggio li rispetta.");
+            string[] docs = CrewMind.Doctrines; string[] dl = { "EQUILIBRIO", "BATTAGLIA", "DIFESA", "DANNI", "SCORTA", "RIPOSO" };
+            float dw = (Kit.W - 5 * 4f) / 6f; var db = new (UITexture box, UILabel label)[docs.Length];
+            for (int i = 0; i < docs.Length; i++) db[i] = k.Button("cc|dottrina|" + docs[i], Kit.L + i * (dw + 4f), -40f, dw, 20f, dl[i], cPanel, cWhite, 8);
+            var status = k.Text(Kit.L, -66f, Kit.W, "", 9, cGrey);
+            k.Rule(-78f);
+            const int N = 5; var nm = new UILabel[N]; var act = new UILabel[N]; var l2 = new UILabel[N]; var hp = new Action<float, Color>[N]; var bp = new (UITexture box, UILabel label)[N]; var bf = new (UITexture box, UILabel label)[N];
+            string[] stn = { "COMANDO", "TIMONE", "SCIENZA", "ARMI", "INGEGNERIA" };
+            for (int i = 0; i < N; i++)
+            {
+                float y = -86f - i * 50f;
+                nm[i] = k.Text(Kit.L, y, 196f, "", 10, cWhite); act[i] = k.Text(Kit.L + 198f, y, 104f, "", 9, cGrey, NGUIText.Alignment.Right);
+                l2[i] = k.Text(Kit.L, y - 13f, 302f, "", 8, cGrey); hp[i] = k.Meter(Kit.L, y - 29f, 302f, 5f);
+                bp[i] = k.Button("cc|postura|" + i, Kit.L + 308f, y + 2f, 84f, 20f, "", cPanel, cWhite, 8);
+                bf[i] = k.Button("cc|specialita|" + i, Kit.L + 396f, y + 2f, 76f, 20f, "", cPanel, cWhite, 8);
+            }
+            k.Rule(-336f);
+            var br = k.Button("cc|ritirata|0", Kit.L, -344f, 150f, 22f, "", cPanel, cWhite, 9);
+            var bb = k.Button("cc|abbordaggio|0", Kit.L + 156f, -344f, 196f, 22f, "", cPanel, cWhite, 9);
+            k.Button("cc|rapporto|0", Kit.L + 358f, -344f, 114f, 22f, "RAPPORTO", k.accent, cInk, 10);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var p = GalaxyView.Current?.crewCmd ?? new CrewMind.Panel();
+                for (int i = 0; i < docs.Length; i++) { bool on = p.doctrine == docs[i]; db[i].box.color = on ? k.accent : cPanel; db[i].label.color = on ? cInk : cWhite; }
+                status.text = $"Dottrina: {Amber}{CrewMind.DoctrineName(p.doctrine)}{End} · situazione a bordo: {p.gravity} · ordini impartiti {p.given}";
+                for (int i = 0; i < N && i < p.rows.Count; i++)
+                {
+                    var r = p.rows[i];
+                    nm[i].text = !r.present ? Grey + stn[i] + " · stazione vuota" + End : (r.bot ? $"{Amber}{stn[i]}{End} {r.rank} {r.name}" : $"{Good}{stn[i]}{End} {r.name} (giocatore)");
+                    act[i].text = r.activity;
+                    l2[i].text = !r.present ? "" : (r.hp >= 0 ? $"salute {(r.hp < 0.35f ? Bad : r.hp < 0.7f ? Amber : Good)}{r.hp:P0}{End}" : "") + (r.loyalty >= 0 ? $" · lealtà {r.loyalty}" : "") + (r.best.Length > 0 ? $" · {r.best}" : "") + (r.trait.Length > 0 ? $" · {r.trait}" : "") + (r.injured ? $" · {Bad}ferito{End}" : "");
+                    hp[i](r.present && r.hp >= 0 ? r.hp : -1f, r.hp < 0.35f ? cBad : r.hp < 0.7f ? cWarn : cGood);
+                    bool ctl = r.present && r.bot; 
+                    bp[i].label.text = ctl ? CrewMind.StanceName(r.stance).ToUpperInvariant() : "—"; bp[i].box.color = ctl && r.stance != "auto" ? k.accent : cPanel; bp[i].label.color = ctl && r.stance != "auto" ? cInk : ctl ? cWhite : cGrey;
+                    bf[i].label.text = ctl ? (r.focus.Length > 0 ? r.focus.ToUpperInvariant() : "SPECIALITÀ") : "—"; bf[i].box.color = ctl && r.focus.Length > 0 ? k.second : cPanel; bf[i].label.color = ctl && r.focus.Length > 0 ? cInk : ctl ? cWhite : cGrey;
+                }
+                br.label.text = $"RITIRATA SOTTO IL {p.retreat}%";
+                bb.label.text = "ABBORDAGGI: " + (p.boarding == "armi" ? "ARMI E COMANDO" : p.boarding == "tutti" ? "TUTTI" : "NESSUNO");
+            });
+        }
+
+        // Passeggeri: cabine, gruppi a bordo con destinazione, scadenza, compenso e umore; rotta e sbarco.
+        static void BuildPassengers(Kit k)
+        {
+            k.Section(-4f, "Passeggeri", "Si imbarcano nei porti o da altre navi. Battaglie, incendi, fame e ritardi li scontentano; all'arrivo pagano secondo l'umore.");
+            var head = k.Text(Kit.L, -42f, Kit.W, "", 11, cWhite); var stats = k.Text(Kit.L, -58f, Kit.W, "", 8, cGrey);
+            k.Rule(-70f);
+            const int N = 6; var nm = new UILabel[N]; var l2 = new UILabel[N]; var bars = new Action<float, Color>[N]; var br = new (UITexture box, UILabel label)[N]; var bs = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++)
+            {
+                float y = -78f - i * 48f;
+                nm[i] = k.Text(Kit.L, y, 300f, "", 10, cWhite); l2[i] = k.Text(Kit.L, y - 13f, 330f, "", 8, cGrey);
+                bars[i] = k.Meter(Kit.L, y - 29f, 300f, 5f);
+                br[i] = k.Button("pax|rotta|" + i, Kit.L + 336f, y + 2f, 66f, 20f, "ROTTA", cPanel, cWhite, 9);
+                bs[i] = k.Button("pax|sbarca|" + i, Kit.L + 406f, y + 2f, 66f, 20f, "SBARCA", cPanel, cGrey, 9);
+            }
+            var empty = k.Text(Kit.L, -86f, Kit.W, "", 10, cGrey);
+            void Show((UITexture box, UILabel label) b, bool on) { if (b.box.gameObject.activeSelf != on) { b.box.gameObject.SetActive(on); b.label.gameObject.SetActive(on); } }
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var p = GalaxyView.Current?.pax ?? new Passengers.Panel();
+                head.text = $"Cabine occupate: {(p.aboard >= p.capacity ? Amber : Good)}{p.aboard}/{p.capacity}{End}" + (p.port ? "   " + Grey + "in porto: si può sbarcare" + End : "");
+                stats.text = p.stats;
+                empty.text = p.rows.Count == 0 ? "Nessun passeggero a bordo. Le offerte d'imbarco arrivano all'attracco." : "";
+                for (int i = 0; i < N; i++)
+                {
+                    var r = i < p.rows.Count ? p.rows[i] : null; Show(br[i], r != null); Show(bs[i], r != null);
+                    if (r == null) { nm[i].text = l2[i].text = ""; bars[i](-1f, cPanel); continue; }
+                    int left = r.deadline - p.jumps;
+                    nm[i].text = (r.illegal ? Bad : r.here ? Good : "") + Mysteries.Cap(r.label) + (r.illegal || r.here ? End : "");
+                    l2[i].text = $"→ settore {r.dest}" + (r.here ? " (siamo arrivati)" : "") + $" · {(left >= 0 ? $"entro {left} salti" : Bad + $"in ritardo di {-left}" + End)} · {r.pay} cr · {Passengers.Mood(r.mood)}";
+                    bars[i](r.mood / 100f, r.mood >= 65 ? cGood : r.mood >= 35 ? cWarn : cBad);
+                    bs[i].label.color = p.port ? cWhite : cGrey;
+                }
+            });
+        }
+
+        // Mercato: borsa delle merci, una riga per merce con prezzi del porto, stiva e miglior vendita nota.
+        static void BuildMarket(Kit k)
+        {
+            k.Section(-4f, "Borsa delle merci", "In porto: COMPRA imbarca 5 unità, VENDI scarica tutto. → traccia la rotta verso il miglior prezzo noto.");
+            k.Text(Kit.L, -40f, 150f, "MERCE", 8, cGrey); k.Text(Kit.L + 152f, -40f, 40f, "STIVA", 8, cGrey, NGUIText.Alignment.Right);
+            k.Text(Kit.L + 196f, -40f, 52f, "COMPRA", 8, cGrey, NGUIText.Alignment.Right); k.Text(Kit.L + 252f, -40f, 52f, "VENDE", 8, cGrey, NGUIText.Alignment.Right);
+            int N = Market.Goods.Length; var nm = new UILabel[N]; var hv = new UILabel[N]; var by = new UILabel[N]; var sl = new UILabel[N]; var bt = new UILabel[N];
+            var bb = new (UITexture box, UILabel label)[N]; var sb = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++)
+            {
+                float y = -54f - i * 31f;
+                nm[i] = k.Text(Kit.L, y, 150f, "", 10, cWhite); bt[i] = k.Text(Kit.L, y - 13f, 300f, "", 8, cGrey);
+                hv[i] = k.Text(Kit.L + 152f, y, 40f, "", 10, cWhite, NGUIText.Alignment.Right);
+                by[i] = k.Text(Kit.L + 196f, y, 52f, "", 10, cWhite, NGUIText.Alignment.Right); sl[i] = k.Text(Kit.L + 252f, y, 52f, "", 10, cWhite, NGUIText.Alignment.Right);
+                bb[i] = k.Button("mk|compra|" + i, Kit.L + 314f, y + 2f, 66f, 20f, "COMPRA", k.accent, cInk, 9);
+                sb[i] = k.Button("mk|vendi|" + i, Kit.L + 384f, y + 2f, 62f, 20f, "VENDI", cPanel, cWhite, 9);
+                k.Button("mk|rotta|" + i, Kit.L + 450f, y + 2f, 22f, 20f, "→", cPanel, cWhite, 10);
+            }
+            k.Rule(-332f);
+            var foot = k.Text(Kit.L, -338f, Kit.W, "", 10, cWhite); var foot2 = k.Text(Kit.L, -352f, Kit.W, "", 9, cGrey);
+            var sup = k.Text(Kit.L, -368f, 258f, "", 9, cWhite); var rp = k.Button("mk|rimborsa|0", Kit.L + 264f, -364f, 100f, 20f, "RIMBORSA", cPanel, cGrey, 9); var rs = k.Button("mk|scorte|0", Kit.L + 370f, -364f, 102f, 20f, "RIFORNISCI", cPanel, cWhite, 9);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var p = GalaxyView.Current?.market ?? new Market.Panel();
+                for (int i = 0; i < N && i < p.rows.Count; i++)
+                {
+                    var r = p.rows[i];
+                    nm[i].text = (r.contraband ? Bad : "") + r.name + (r.contraband ? End : "");
+                    bt[i].text = (r.best.Length > 0 ? $"miglior vendita nota {r.best}" : "nessun prezzo noto altrove") + (r.have > 0 ? $" · pagato {r.paid}" : "");
+                    hv[i].text = r.have > 0 ? r.have.ToString() : Grey + "-" + End;
+                    by[i].text = p.port ? r.buy.ToString() : Grey + "-" + End;
+                    sl[i].text = !p.port ? Grey + "-" + End : r.have > 0 ? (r.sell >= r.paid ? Good : Bad) + r.sell + End : r.sell.ToString();
+                    bool canBuy = p.port && p.load < p.cap, canSell = p.port && r.have > 0;
+                    bb[i].box.color = canBuy ? k.accent : cPanel; bb[i].label.color = canBuy ? cInk : cGrey;
+                    sb[i].box.color = canSell ? k.second : cPanel; sb[i].label.color = canSell ? cInk : cGrey;
+                }
+                foot.text = $"Stiva {p.load}/{p.cap}   valore del carico {p.value:N0} cr   guadagno totale {(p.profit >= 0 ? Good : Bad)}{p.profit:N0}{End} cr".Replace(",", ".");
+                foot2.text = (p.portLine.Length > 0 ? p.portLine + ". " : p.port ? $"In porto al settore {p.where}. " : "Fuori dai porti si guarda soltanto. ") + (p.orders.Length > 0 ? Amber + p.orders + End : p.npc.Length > 0 ? "Ultime: " + p.npc + "." : "");
+                sup.text = p.bank.Length > 0 ? Bad + p.bank + End : p.supplies; bool debt = p.bank.Length > 0 && p.port; rp.box.color = debt ? cBad : cPanel; rp.label.color = debt ? cInk : cGrey; rs.box.color = p.port ? k.second : cPanel; rs.label.color = p.port ? cInk : cGrey;
+            });
+        }
+
+        // Basi: atti di fondazione posseduti, fondazione nel settore corrente, elenco delle basi, lavori sul posto.
+        static void BuildBases(Kit k)
+        {
+            k.Section(-4f, "Atti di fondazione", "Con un atto, in un settore libero, si fonda una base. Le basi crescono, rendono e vanno difese.");
+            var deeds = k.Text(Kit.L, -42f, Kit.W, "", 10, cWhite);
+            k.Button("bs|prev", Kit.L, -60f, 30f, 22f, "<", cPanel, cWhite, 12); var kindLbl = k.Text(Kit.L + 36f, -62f, 220f, "", 11, k.accent); k.Button("bs|next", Kit.L + 260f, -60f, 30f, 22f, ">", cPanel, cWhite, 12);
+            var found = k.Button("bs|fonda", Kit.L + 300f, -60f, 172f, 22f, "FONDA QUI", k.accent, cInk, 11);
+            var hint = k.Text(Kit.L, -88f, Kit.W, "", 9, cGrey);
+            k.Rule(-106f); k.Section(-114f, "Le nostre basi", "");
+            const int N = 6; var nm = new UILabel[N]; var ln = new UILabel[N]; var rb = new (UITexture box, UILabel label)[N];
+            for (int i = 0; i < N; i++) { float y = -138f - i * 30f; nm[i] = k.Text(Kit.L, y, 300f, "", 10, cWhite); ln[i] = k.Text(Kit.L, y - 13f, 380f, "", 9, cGrey); rb[i] = k.Button("bs|rotta|" + i, Kit.L + 392f, y, 80f, 22f, "ROTTA", cPanel, cWhite, 10); }
+            k.Rule(-322f); var here = k.Text(Kit.L, -330f, Kit.W, "", 10, cWhite);
+            var up = k.Button("bs|migliora", Kit.L, -350f, 230f, 22f, "", k.accent, cInk, 10); var df = k.Button("bs|difese", Kit.L + 242f, -350f, 230f, 22f, "", k.accent, cInk, 10);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                var pg = k.pg; var p = GalaxyView.Current?.bases ?? new Bases.Panel(); var kind = Bases.Kinds[pg.BaseKind];
+                deeds.text = p.deeds.Count == 0 ? Grey + "Nessun atto: si comprano all'ufficio del catasto dei porti o si ottengono come ricompensa." + End : "Atti: " + string.Join("  ·  ", p.deeds.Select(x => $"{Bases.K(x.Key)?.name.ToLowerInvariant()} ×{x.Value}"));
+                int have = p.deeds.TryGetValue(kind.id, out var c) ? c : 0;
+                kindLbl.text = kind.name + (have > 0 ? $" ×{have}" : Grey + " (nessun atto)" + End);
+                string why = p.canHere.TryGetValue(kind.id, out var w) ? w : ""; bool ok = why.StartsWith("si può");
+                found.box.color = ok ? k.accent : cPanel; found.label.color = ok ? cInk : cGrey;
+                hint.text = (ok ? Good : Grey) + kind.desc + ". " + char.ToUpper(why.Length > 0 ? why[0] : ' ') + (why.Length > 1 ? why[1..] : "") + "." + End;
+                for (int i = 0; i < N; i++)
+                {
+                    var b = i < p.bases.Count ? p.bases[i] : null; bool on = b != null;
+                    if (rb[i].box.gameObject.activeSelf != on) { rb[i].box.gameObject.SetActive(on); rb[i].label.gameObject.SetActive(on); }
+                    if (!on) { nm[i].text = i == 0 && p.bases.Count == 0 ? Grey + "Nessuna base, per ora." + End : ""; ln[i].text = ""; continue; }
+                    nm[i].text = (b.raid ? Bad + "SOTTO ATTACCO " + End : "") + (b.here ? Amber : "") + b.name + (b.here ? " · qui" + End : "") + Grey + $"  settore {b.sector} ({b.jumps} salti)" + End;
+                    ln[i].text = b.line;
+                }
+                here.text = p.here.Length > 0 ? p.here : Grey + "Lavori, migliorie e difese si fanno sul posto, alla base." + End;
+                bool atBase = p.here.Length > 0;
+                up.label.text = !atBase ? "MIGLIORA" : p.upCost < 0 ? "LIVELLO MASSIMO" : $"MIGLIORA · {p.upCost:N0} CR".Replace(",", ".");
+                df.label.text = !atBase ? "DIFESE" : p.defCost < 0 ? "DIFESE AL MASSIMO" : $"DIFESE · {p.defCost:N0} CR".Replace(",", ".");
+                bool canUp = atBase && p.upCost > 0 && p.credits >= p.upCost, canDf = atBase && p.defCost > 0 && p.credits >= p.defCost;
+                up.box.color = canUp ? k.accent : cPanel; up.label.color = canUp ? cInk : cGrey;
+                df.box.color = canDf ? k.accent : cPanel; df.label.color = canDf ? cInk : cGrey;
+            });
+        }
+
+        // Cantiere navale: sette migliorie permanenti in tre livelli, acquistabili solo in porto.
+        static void BuildShipyard(Kit k)
+        {
+            var defs = Shipyard.Defs; int n = defs.Length;
+            k.Section(-4f, "Cantiere navale", "Migliorie permanenti della nave. Il cantiere lavora solo in porto.");
+            var name = new UILabel[n]; var eff = new UILabel[n]; var lvl = new UILabel[n]; var btn = new (UITexture box, UILabel label)[n];
+            for (int i = 0; i < n; i++)
+            {
+                float y = -44f - i * 42f;
+                name[i] = k.Text(Kit.L, y, 220f, defs[i].name, 12, cWhite);
+                lvl[i] = k.Text(Kit.L + 222f, y, 90f, "", 11, k.accent);
+                eff[i] = k.Text(Kit.L, y - 17f, 320f, defs[i].effect, 9, cGrey);
+                btn[i] = k.Button("yd|" + defs[i].id, Kit.L + 322f, y - 2f, 150f, 24f, "", k.accent, cInk, 10);
+            }
+            var foot = k.Text(Kit.L, -344f, Kit.W, "", 10, cWhite);
+            k.pg.Updaters.Add((id, now) =>
+            {
+                bool port = Shipyard.InPort(); int credits = 0; try { credits = PLServer.Instance.CurrentCrewCredits; } catch { }
+                for (int i = 0; i < n; i++)
+                {
+                    int l = Shipyard.Level(defs[i].id);
+                    lvl[i].text = new string('|', l) + Grey + new string('.', 3 - l) + End + $"  liv. {l}";
+                    if (l >= 3) { btn[i].label.text = "COMPLETO"; btn[i].box.color = cPanel; btn[i].label.color = cGrey; continue; }
+                    int cost = Shipyard.CostOf(l); bool ok = port && credits >= cost;
+                    btn[i].label.text = $"MIGLIORA · {cost:N0} CR".Replace(",", "."); btn[i].box.color = ok ? k.accent : cPanel; btn[i].label.color = ok ? cInk : cGrey;
+                }
+                foot.text = port ? Good + "In porto: il cantiere è aperto." + End + $"   Crediti disponibili: {credits:N0}".Replace(",", ".") : Grey + "In navigazione: il cantiere apre al prossimo attracco." + End;
+            });
+        }
+
         // Galassia: reputazione presso le fazioni, crisi in corso, personaggi ricercati.
         static void BuildGalaxy(Kit k)
         {
-            const int NF = 5, NP = 4;
+            const int NF = 5, NP = 3;
             k.Section(-4f, "Reputazione presso le fazioni", "");
             var fname = new UILabel[NF]; var fbar = new Action<float, float, float, Color>[NF]; var flvl = new UILabel[NF]; var fwar = new UILabel[NF];
             for (int i = 0; i < NF; i++)
@@ -1623,9 +2133,13 @@ namespace Melchior
                 pinfo[i] = k.Text(Kit.L + 300f, y, 172f, "", 10, cGrey, NGUIText.Alignment.Right);
                 pmem[i] = k.Text(Kit.L, y - 15f, Kit.W, "", 10, cGrey);
             }
+            var crew = k.Text(Kit.L, -342f, Kit.W, "", 10, cWhite);
+            var atlas = k.Text(Kit.L, -360f, Kit.W, "", 10, cBlue);
             k.pg.Updaters.Add((id, now) =>
             {
                 var v = GalaxyView.Current;
+                atlas.text = v.atlas;
+                crew.text = $"Morale: {(v.morale >= 60 ? Good : v.morale < 40 ? Bad : "")}{v.morale} · {Morale.Level(v.morale).ToLowerInvariant()}{(v.morale >= 60 || v.morale < 40 ? End : "")}   ·   Nei porti: " + Amber + v.fame + End + (v.wantedLevel > 0 ? "   " + Bad + $"RICERCATI {v.wantedLevel}/5" + End : "");
                 for (int i = 0; i < NF; i++)
                 {
                     var f = i < v.factions.Count ? v.factions[i] : null;
@@ -1637,7 +2151,7 @@ namespace Melchior
                     fwar[i].text = f.offensive ? Bad + $"{f.sectors} settori, attacca" + End : $"{f.sectors} settori";
                 }
                 var c = v.crisis;
-                if (c == null) { ctitle.text = Grey + "nessuna" + End; cstage.text = Grey + "La galassia è tranquilla. Per ora." + End; chint.text = chint2.text = ""; cmeter(0, cTrack); }
+                if (c == null) { ctitle.text = string.IsNullOrEmpty(v.threat) ? Grey + "nessuna" + End : Hex("#9BE35B") + v.threat + End; cstage.text = Grey + "La galassia è tranquilla. Per ora." + End; var (d1, d2) = TwoLines(string.IsNullOrEmpty(v.diplo) ? "" : "Diplomazia: " + v.diplo, 78); chint.text = d1; chint2.text = d2; cmeter(0, cTrack); }
                 else
                 {
                     ctitle.text = Hex(c.color) + c.title + End;
@@ -1735,7 +2249,7 @@ namespace Melchior
         {
             k.Section(-4f, "Bacheca dei contratti", "Scegli tu l'incarico. La fiducia dei committenti migliora le offerte.");
             var title = new UILabel[Contracts.Size]; var who = new UILabel[Contracts.Size]; var pay = new UILabel[Contracts.Size]; var desc = new UILabel[Contracts.Size]; var desc2 = new UILabel[Contracts.Size];
-            var acc = new (UITexture box, UILabel label)[Contracts.Size]; var dec = new (UITexture box, UILabel label)[Contracts.Size]; var strip = new UITexture[Contracts.Size];
+            var acc = new (UITexture box, UILabel label)[Contracts.Size]; var dec = new (UITexture box, UILabel label)[Contracts.Size]; var strip = new UITexture[Contracts.Size]; var rules = new UITexture[Contracts.Size];
             for (int i = 0; i < Contracts.Size; i++)
             {
                 float y = -44f - i * 74f;
@@ -1746,13 +2260,41 @@ namespace Melchior
                 desc[i] = k.Text(Kit.L + 10f, y - 34f, 372f, "", 10, cGrey); desc2[i] = k.Text(Kit.L + 10f, y - 48f, 372f, "", 10, cGrey);
                 acc[i] = k.Button("bc|accetta|" + i, Kit.L + 390f, y, 82f, 26f, "ACCETTA", k.accent, cInk, 11);
                 dec[i] = k.Button("bc|rifiuta|" + i, Kit.L + 390f, y - 32f, 82f, 22f, "RIFIUTA", cPanel, cWhite, 10);
-                k.Rule(y - 66f);
+                rules[i] = k.Box(Kit.L, y - 66f, Kit.W, 1f, cTrack);
             }
             var foot = k.Text(Kit.L, -344f, Kit.W, "", 10, cWhite);
-            var trust = k.Text(Kit.L, -362f, Kit.W, "", 9, cGrey);
+            var trust = k.Text(Kit.L, -360f, Kit.W, "", 9, cGrey);
+            var standings = k.Text(Kit.L, -374f, Kit.W, "", 9, cBlue);
+            // incontro con scelta: sostituisce le offerte finché il capitano non decide
+            const int EL = 6, EC = 4;
+            var eTitle = k.Text(Kit.L + 10f, -44f, Kit.W - 10f, "", 13, k.accent); var eStrip = k.Box(Kit.L, -44f, 4f, 104f, k.accent);
+            var eLine = new UILabel[EL]; for (int i = 0; i < EL; i++) eLine[i] = k.Text(Kit.L + 10f, -66f - i * 15f, Kit.W - 10f, "", 10, cWhite);
+            var eBtn = new (UITexture box, UILabel label)[EC]; var eHint = new UILabel[EC];
+            for (int i = 0; i < EC; i++) { float y = -164f - i * 42f; eBtn[i] = k.Button("enc|" + i, Kit.L, y, Kit.W, 24f, "", k.accent, cInk, 11); eHint[i] = k.Text(Kit.L + 8f, y - 26f, Kit.W - 8f, "", 9, cGrey); }
+            void Show(GameObject g, bool on) { if (g.activeSelf != on) g.SetActive(on); }
 
             k.pg.Updaters.Add((id, now) =>
             {
+                var enc = Encounters.Current; bool encOn = enc != null;
+                Show(eTitle.gameObject, encOn); Show(eStrip.gameObject, encOn);
+                for (int i = 0; i < EL; i++) Show(eLine[i].gameObject, encOn);
+                for (int i = 0; i < EC; i++)
+                {
+                    var ch = encOn && i < enc.choices.Count ? enc.choices[i] : null; bool on = ch != null;
+                    Show(eBtn[i].box.gameObject, on); Show(eBtn[i].label.gameObject, on); Show(eHint[i].gameObject, on);
+                    if (!on) continue;
+                    eBtn[i].label.text = ch.label.ToUpperInvariant(); eBtn[i].box.color = ch.ok ? k.accent : cPanel; eBtn[i].label.color = ch.ok ? cInk : cGrey;
+                    eHint[i].text = ch.ok ? "" : "Non disponibile: " + ch.hint + ".";
+                }
+                for (int i = 0; i < Contracts.Size; i++) Show(rules[i].gameObject, !encOn);
+                if (encOn)
+                {
+                    eTitle.text = "INCONTRO · " + enc.title.ToUpperInvariant();
+                    var lines = Wrap(enc.text, 72, EL); for (int i = 0; i < EL; i++) eLine[i].text = lines[i];
+                    for (int i = 0; i < Contracts.Size; i++) { title[i].text = pay[i].text = who[i].text = desc[i].text = desc2[i].text = ""; Show(acc[i].box.gameObject, false); Show(acc[i].label.gameObject, false); Show(dec[i].box.gameObject, false); Show(dec[i].label.gameObject, false); Show(strip[i].gameObject, false); }
+                    foot.text = Amber + $"Decide il capitano: {enc.left} secondi, poi si sceglie l'opzione più prudente." + End; trust.text = ""; standings.text = "";
+                    return;
+                }
                 var board = Contracts.Board;
                 for (int i = 0; i < Contracts.Size; i++)
                 {
@@ -1767,10 +2309,26 @@ namespace Melchior
                     var (l1, l2) = TwoLines(o.desc, 64); desc[i].text = l1; desc2[i].text = l2;
                 }
                 var cur = Contracts.Current;
-                foot.text = cur != null ? Good + $"In corso: {cur.title} per {cur.issuer}, {cur.reward:N0} crediti alla consegna.".Replace(",", ".") + End : Grey + "Nessun contratto in corso." + End;
+                string camp = GalaxyView.Current?.campaign ?? "";
+                foot.text = cur != null ? Good + $"In corso: {cur.title} per {cur.issuer}, {cur.reward:N0} crediti alla consegna.".Replace(",", ".") + End : camp.Length > 0 ? Amber + camp + End : Grey + "Nessun contratto in corso." + End;
+                standings.text = Competitors.Standings();
                 var tr = Saga.State.trust.Where(x => x.Value != 0).OrderByDescending(x => x.Value).Take(4).Select(x => $"{x.Key} {x.Value:+0;-0}");
                 trust.text = tr.Any() ? "Fiducia: " + string.Join("   ", tr) : "";
             });
+        }
+
+        // Divide un testo in n righe a fine parola; l'ultima finisce con i puntini se avanza.
+        static string[] Wrap(string text, int max, int n)
+        {
+            var r = new string[n]; for (int i = 0; i < n; i++) r[i] = "";
+            var words = (text ?? "").Split(' ', StringSplitOptions.RemoveEmptyEntries); int line = 0;
+            foreach (var w in words)
+            {
+                if (line >= n) { r[n - 1] = r[n - 1].TrimEnd('.') + "…"; break; }
+                if (r[line].Length + w.Length + 1 > max && r[line].Length > 0) { line++; if (line >= n) { r[n - 1] += "…"; break; } }
+                r[line] += (r[line].Length > 0 ? " " : "") + w;
+            }
+            return r;
         }
 
         // Divide un testo in due righe a fine parola; se avanza, la seconda finisce con i puntini.
@@ -1943,11 +2501,13 @@ namespace Melchior
         {
             long now = clock.ElapsedMilliseconds; if (now < nextRefresh) return;
             bool anim = false; var mine = Stations.MyShip;
-            foreach (var pg in pages.Values.ToArray())
+            foreach (var kv in pages.ToArray())
             {
+                var pg = kv.Value;
                 try
                 {
-                    if (pg.Screen == null) continue;
+                    // schermo distrutto (nave sparita, settore lasciato): la pagina e tutto ciò che tiene si rilasciano
+                    if (pg.Screen == null) { pages.Remove(kv.Key); Released++; continue; }
                     if (pg.OpenButton != null && mine != null && !pg.Open)
                     {
                         var owner = pg.Screen.MyScreenHubBase?.OptionalShipInfo; bool ours = owner == null || owner.ShipID == mine.ShipID;
@@ -2128,6 +2688,8 @@ namespace Melchior
         static void CaptainClick(PanelPage pg, string[] a, int id)
         {
             var c = Stations.Cfg.Captain; float ini = Stations.Get(id, "cpx_ini"); if (ini <= 0) { ini = c.Start; Stations.Set(id, "cpx_ini", ini); }
+            if (a[2] == "hail") { Hail.Request(a[3]); Say(pg, "Chiamata in corso..."); return; }
+            if (a[2] == "board") { Boarding.Request(a[3]); Say(pg, a[3] == "abborda" ? "Squadra al teletrasporto..." : "Richiamo della squadra..."); return; }
             if (a[2] == "order")
             {
                 int dir = int.Parse(a[3]);
@@ -2166,6 +2728,8 @@ namespace Melchior
             if (!pg.Open) return true;
             if (a[1] == "close") { SetOpen(pg, false); return true; }
             if (a[1] == "tab") { int i = int.Parse(a[2]); if (i < pg.Tabs.Count) { pg.Tab = i; for (int j = 0; j < pg.Tabs.Count; j++) pg.Tabs[j].go.SetActive(j == i); } Refresh(pg); return true; }
+            // la banca dati la sfoglia chiunque
+            if (a[1] == "cdx") { if (a[2] == "cat") { pg.CodexCat = Codex.Cats[int.Parse(a[3])]; pg.CodexIdx = 0; } else pg.CodexIdx += a[2] == "next" ? 1 : -1; Refresh(pg); return true; }
             if (mine == null || !Stations.CanEdit(pg.Station)) { Refresh(pg); return true; }
             if (a[1] == "p") Stations.ApplyPreset(mine.ShipID, Stations.Cfg.Presets[int.Parse(a[2])]);
             else if (a[1] == "core") CoreClick(pg, a, mine.ShipID);
@@ -2176,6 +2740,49 @@ namespace Melchior
             else if (a[1] == "dmg") DamageClick(pg, a, mine.ShipID);
             else if (a[1] == "wk") WorkshopClick(pg, a);
             else if (a[1] == "bc") ContractsClick(pg, a);
+            else if (a[1] == "pr") { if (a[2] == "lancia") { Probes.Request("lancia"); Say(pg, "Sonda in lancio..."); } else { int i = int.Parse(a[3]); var rows = Probes.Rows; if (i < rows.Count) { Probes.Request("rotta", rows[i].sector); Say(pg, $"Rotta verso il settore {rows[i].sector}."); } } }
+            else if (a[1] == "rc")
+            {
+                var pr = Research.Projects[Math.Clamp(int.Parse(a[3]), 0, Research.Projects.Length - 1)];
+                Research.Request("avvia", pr.id); Say(pg, "Progetto richiesto...");
+            }
+            else if (a[1] == "wr") { Wear.Request(a[2] == "revisione" ? "revisione" : "ripara", a.Length > 3 ? a[3] : ""); Say(pg, "Ordine all'officina..."); }
+            else if (a[1] == "fb") { Fabrication.Request(a[2], a.Length > 3 ? a[3] : ""); Say(pg, a[2] == "annulla" ? "Annullo l'ultima lavorazione..." : "Lavorazione richiesta..."); }
+            else if (a[1] == "cc") { CrewMind.Request(a[2], a.Length > 3 ? a[3] : ""); Say(pg, "Ordine trasmesso..."); }
+            else if (a[1] == "pax")
+            {
+                var p = GalaxyView.Current?.pax ?? new Passengers.Panel(); int i = a.Length > 3 && int.TryParse(a[3], out var x) ? x : 0;
+                if (i < p.rows.Count) { Passengers.Request(a[2], p.rows[i].id.ToString()); Say(pg, "Richiesta inviata..."); }
+            }
+            else if (a[1] == "ind")
+            {
+                var p = GalaxyView.Current?.mystery ?? new Mysteries.Panel(); int i = a.Length > 3 && int.TryParse(a[3], out var x) ? x : 0;
+                if (a[2] == "prev") pg.MystPage = Math.Max(0, pg.MystPage - 1);
+                else if (a[2] == "next") pg.MystPage++;
+                else if (a[2] is "decifra" or "sonda" or "rotta") { if (i < p.signals.Count) { Mysteries.Request(a[2], p.signals[i].id.ToString()); Say(pg, "Richiesta alla Scienza..."); } }
+                else if (a[2] == "scavo") { if (p.digSectors.Count > 0) Mysteries.Request("scavo", p.digSectors[0].ToString()); }
+                else { int idx = pg.MystPage * 3 + i; if (idx < p.relics.Count) { Mysteries.Request(a[2], p.relics[idx].id.ToString()); Say(pg, "Richiesta inviata..."); } }
+            }
+            else if (a[1] == "mk")
+            {
+                var g = Market.Goods[Math.Clamp(int.Parse(a[3]), 0, Market.Goods.Length - 1)];
+                if (a[2] == "compra") Market.Request("compra", g.id + ",5");
+                else if (a[2] == "vendi") Market.Request("vendi", g.id + ",999");
+                else if (a[2] == "rotta") Market.Request("rotta", g.id);
+                else if (a[2] == "scorte") Market.Request("scorte", g.id);
+                else if (a[2] == "rimborsa") Market.Request("rimborsa", g.id);
+            }
+            else if (a[1] == "bs")
+            {
+                var kinds = Bases.Kinds; var rows = GalaxyView.Current?.bases?.bases ?? new List<Bases.View>();
+                if (a[2] == "prev") pg.BaseKind = (pg.BaseKind + kinds.Length - 1) % kinds.Length;
+                else if (a[2] == "next") pg.BaseKind = (pg.BaseKind + 1) % kinds.Length;
+                else if (a[2] == "fonda") { Bases.Request("fonda", kinds[pg.BaseKind].id); Say(pg, "Richiesta di fondazione..."); }
+                else if (a[2] == "migliora" || a[2] == "difese") { Bases.Request(a[2]); Say(pg, "Lavori richiesti..."); }
+                else if (a[2] == "rotta") { int i = int.Parse(a[3]); if (i < rows.Count) Bases.Request("rotta", rows[i].sector.ToString()); }
+            }
+            else if (a[1] == "yd") { Shipyard.Request(a[2]); Say(pg, "Richiesta al cantiere..."); }
+            else if (a[1] == "enc") { Encounters.Request(int.Parse(a[2]), Encounters.Serial); Say(pg, "Ordine trasmesso."); }
             else if (a[1] == "c")
             {
                 var c = Stations.Find(a[2]); if (c == null) return true; float v = Stations.Get(mine.ShipID, c.Id);
@@ -2258,7 +2865,10 @@ namespace Melchior
             {
                 Calls++;
                 var vsh = __instance.Ship; if (vsh != null && Stations.Get(vsh.ShipID, "plx_evade") > 0) inDmg *= 1f - Stations.Cfg.Pilot.EvadeIncoming / 100f;
+                Wear.OnShieldHit(vsh, inDmg);
                 var atk = turret?.ShipStats?.Ship; if (atk == null) { NoTurret++; return; }
+                Traffic.NoteHit(vsh, atk);
+                inDmg *= (1f + 0.04f * Talents.R(atk, "sfondatore")) * (1f - 0.03f * Talents.R(vsh, "schermi"));
                 var me = Stations.MyShip; if (me != null && me.ShipID == atk.ShipID) Mine++;
                 int aim = (int)Stations.Get(atk.ShipID, "wpx_aim"); var w = Stations.Cfg.Weapons; LastIn = inDmg;
                 if (aim == 1) inDmg *= 1f + w.AimShieldsBonus / 100f; else if (aim == 2) inDmg *= 1f - w.AimHullShieldPenalty / 100f;

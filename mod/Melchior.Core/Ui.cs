@@ -232,6 +232,22 @@ namespace Melchior
             return "campo non trovato";
         }
 
+        // Ispezione dettagliata di un ramo dell'interfaccia uGUI: posizione, dimensioni, ancore, carattere, colori, sprite.
+        public static string Info(string path, int depth = 2)
+        {
+            var go = GameObject.Find(path); if (go == null) return "oggetto non trovato";
+            var sb = new StringBuilder(); void Walk(Transform t, int d, string ind)
+            {
+                var rt = t.TryCast<RectTransform>(); string geo = rt != null ? $"pos {rt.anchoredPosition} size {rt.sizeDelta} anc {rt.anchorMin}-{rt.anchorMax} piv {rt.pivot}" : $"pos {t.localPosition}";
+                var tx = t.GetComponent<Text>(); var im = t.GetComponent<Image>(); var ri = t.GetComponent<RawImage>();
+                sb.Append($"\n{ind}{(t.gameObject.activeSelf ? "+" : "-")} {t.name} [{geo} scala {t.localScale}]");
+                if (tx != null) sb.Append($" TEXT font {tx.font?.name} {tx.fontSize} {tx.fontStyle} col {tx.color} allinea {tx.alignment} «{tx.text?.Replace("\n", "⏎")}»");
+                if (im != null) sb.Append($" IMAGE sprite {im.sprite?.name} tipo {im.type} col {im.color}");
+                if (ri != null) sb.Append($" RAW tex {ri.texture?.name} col {ri.color}");
+                if (d < depth) for (int i = 0; i < t.childCount; i++) Walk(t.GetChild(i), d + 1, ind + "  ");
+            }
+            Walk(go.transform, 0, "      "); return sb.ToString();
+        }
         public static string FindText(string needle)
         {
             var sb = new StringBuilder(); int n = 0;

@@ -26,13 +26,17 @@ namespace Melchior
 
         static bool Ready(string key) => !ready.TryGetValue(key, out var t) || clock.ElapsedMilliseconds >= t;
         static void Wait(string key, int seconds) => ready[key] = clock.ElapsedMilliseconds + seconds * 1000L;
-        static bool Lucky(float p) => rng.NextDouble() < p;
+        static int curCls = -1; static bool curFight;
+        // la riuscita dipende anche dall'ufficiale alla stazione: grado, tratto, ferite (Officers.cs)
+        static bool Lucky(float p) => rng.NextDouble() < p * (curCls >= 0 ? Officers.Skill(curCls, curFight) : 1f);
         static void Say(string who, string what)
         {
             if (Stations.Cfg.Bots.Log) Plugin.L.LogInfo($"[bot] {who}: {what}");
             // le regolazioni di routine non finiscono nel giornale di bordo
             if (what.StartsWith("rete EPS") || what.StartsWith("sovralimentazione") || what.StartsWith("mira")) return;
-            var me = Stations.MyShip; if (me != null) Stations.LogEvent(me.ShipID, who + ": " + what);
+            int cls = Officers.ClassOf(who); bool good = !what.Contains("fallit") && !what.Contains("non riuscit") && !what.StartsWith("squadra") && !what.StartsWith("fascia") && !what.StartsWith("armonica") && !what.StartsWith("dottrina");
+            if (cls >= 0 && good) Officers.Credit(cls); // le azioni andate a buon fine fanno carriera
+            var me = Stations.MyShip; if (me != null) Stations.LogEvent(me.ShipID, Officers.Sign(who) + ": " + what);
         }
 
         static bool IsBotAt(PLShipInfo ship, int cls)
@@ -51,12 +55,14 @@ namespace Melchior
                 var ship = Stations.MyShip; if (ship == null || ship.MyStats == null) return;
                 int id = ship.ShipID; int alert = ship.m_AlertLevel; var target = ship.TargetShip;
                 bool fight = alert >= 2 || (target != null && !target.HasBeenDestroyed);
-                if (b.Engineer && IsBotAt(ship, 4)) Engineer(id, fight);
-                if (b.Scientist && IsBotAt(ship, 2)) Scientist(id, fight);
-                if (b.Weapons && IsBotAt(ship, 3)) Weapons(id, fight, target);
-                if (b.Pilot && IsBotAt(ship, 1)) Pilot(ship, id, fight);
+                curFight = fight;
+                curCls = 4; if (b.Engineer && IsBotAt(ship, 4)) Engineer(id, fight);
+                curCls = 2; if (b.Scientist && IsBotAt(ship, 2)) Scientist(id, fight);
+                curCls = 3; if (b.Weapons && IsBotAt(ship, 3)) Weapons(id, fight, target);
+                curCls = 1; if (b.Pilot && IsBotAt(ship, 1)) Pilot(ship, id, fight);
                 // il capitano spende iniziativa solo con un nemico davvero ingaggiato, non per il solo stato d'allarme
-                if (b.Captain && IsBotAt(ship, 0)) Captain(id, target != null && !target.HasBeenDestroyed);
+                curCls = 0; if (b.Captain && IsBotAt(ship, 0)) Captain(id, target != null && !target.HasBeenDestroyed);
+                curCls = -1;
             }
             catch (Exception e) { Plugin.L.LogWarning("Ufficiali automatici: " + e.Message); next = now + 15000; }
         }
