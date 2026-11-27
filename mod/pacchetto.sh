@@ -20,6 +20,7 @@ rsync -a \
   --exclude '/BepInEx/*.log' --exclude '/BepInEx/LogOutput*' \
   --exclude '/BepInEx/config/melchior.cmd*' --exclude '/BepInEx/config/melchior.service.json*' \
   --exclude '/BepInEx/config/melchior.achievements.progress.json*' --exclude '/BepInEx/config/melchior.rivals.json*' \
+  --exclude '/BepInEx/plugins/Melchior/models/prova.glb' \
   "$SRC/" "$OUT/"
 mkdir -p "$OUT/Saves"
 

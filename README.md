@@ -6,6 +6,7 @@
 ![Lingua](https://img.shields.io/badge/lingua-italiano-2ea043)
 ![Server](https://img.shields.io/badge/server-Node.js%2020-3c873a)
 ![Multigiocatore](https://img.shields.io/badge/cooperativo-LAN%20senza%20Steam-d97706)
+![Licenza](https://img.shields.io/badge/licenza-GPL--3.0-blue)
 
 Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viva e in omaggio alla fantascienza televisiva: postazioni di plancia in stile **LCARS** con vere procedure da eseguire, un **direttore** che dà ritmo alla partita, **missioni procedurali** e **archi narrativi** con conseguenze che durano, una galassia con **guerre, crisi, reputazione e personaggi ricorrenti** che si ricordano di voi, **fazioni rivali** che crescono anche mentre non giocate, un sistema di **rarità del bottino**, **obiettivi** e **stato di servizio**. Il tutto **completamente in italiano** e **senza Steam**, con un server cooperativo proprio per la rete di casa: il **Subspace Relay**.
 
@@ -45,6 +46,7 @@ Un mod che trasforma **PULSAR: Lost Colony** in un'esperienza più profonda, viv
 - [Reverse engineering](#reverse-engineering)
 - [Struttura del repository](#struttura-del-repository)
 - [Stato e limiti noti](#stato-e-limiti-noti)
+- [Licenza](#licenza)
 - [Crediti e avvertenze](#crediti-e-avvertenze)
 
 ---
@@ -825,6 +827,12 @@ Ancora da verificare o da fare:
 - dell'ultimo strato, provati solo con prove guidate da console: la spedizione rivale durante uno scavo, il pianeta d'origine di una civiltà, i guasti spontanei da usura, le voci a coppie viste a schermo, la pausa dell'officina in battaglia e il lancio della sonda fabbricata premuto dal pannello Scienza.
 
 ---
+
+## Licenza
+
+Il codice del mod (`mod/`), del Subspace Relay (`server/`) e degli strumenti (`re/tools/`, `mod/tools/`), la traduzione italiana, le icone dei nuovi obiettivi (`MEL_*`) e la documentazione sono distribuiti con la **GNU General Public License v3.0**: si possono usare, studiare, modificare e ridistribuire, purché le versioni derivate restino sotto la stessa licenza e con il codice sorgente. Il testo completo è in [`LICENSE`](LICENSE).
+
+La licenza **non** si applica al materiale di PULSAR: Lost Colony, che resta di Leafy Games: i testi originali del gioco in `mod/i18n/chunks/in_*.jsonl`, le icone originali degli obiettivi in `mod/achievements/icons/` (quelle senza il prefisso `MEL_`) e le schermate del gioco in `docs/`. Il font JetBrains Mono in `mod/fonts/` è sotto SIL Open Font License 1.1 (vedi `mod/fonts/JetBrainsMono-LICENSE.txt`).
 
 ## Crediti e avvertenze
 
